@@ -1,0 +1,12 @@
+jungle		jungle_hills		jungle					jungle_edge
+desert		desert_hills		desert
+savanna		mutated_savanna		savanna
+forrest		birch_forest_hills	forest_hills
+flower		mutated_forest
+iceberg		ice_mountains
+hills		extreme_hills		mutated_extreme_hills	taiga_hills		stone_beach
+taiga		taiga_cold_hills	ice_flats				cold_beach
+mesa		mutated_mesa		mesa					mesa_clear_rock
+underEnd	river
+hell		hell
+end			end

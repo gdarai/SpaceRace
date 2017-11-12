@@ -1,0 +1,158 @@
+dirt0		dirt		all		0,20,21,22,23,24,25,30,31,33
+gravel0		gravel		all		0,20,21,22,23,24,25,30,31,33
+granite0	granite		all		0,20,21,22,23,24,25,30,31,33
+diorite0	diorite		all		0,20,21,22,23,24,25,30,31,33
+andesite0	andesite	all		0,20,21,22,23,24,25,30,31,33
+
+deepCoal0	deepCoal	all		0
+deepRed0	deepRed		all		0
+deepCop0	deepCop		all		0
+deepIron0	deepIron	all		0
+
+poor00		poor0		all		0,20,22,23,24,25,30,31,33
+poor01		poor1		all		0,20,22,23,24,25,30,31,33
+poor02		poor2		all		0,20,22,23,24,25,30,31,33
+poor03		poor3		all		0,20,22,23,24,25,30,31,33
+poor04		poor4		all		0,20,22,23,24,25,30,31,33
+poor05		poor5		all		0,20,22,23,24,25,30,31,33
+poor06		poor6		all		0,20,22,23,24,25,30,31,33
+poor07		poor7		all		0,20,22,23,24,25,30,31,33
+
+magicInferi	magicInferi	all		0,22,25
+
+jungle00	coal		jungle		0
+jungle01	eezo		jungle		0
+jungle02	tin			jungle		0
+jungle03	nickel		jungle		0
+jungle04	lapis		jungle		0
+
+desert01	saltpeter	desert		0
+desert02	redstone	desert		0
+desert03	emerald		desert		0
+desert04	diamondS	desert		0
+
+savanna01	iron		savanna		0
+savanna02	nickel		savanna		0
+savanna03	eezo		savanna		0
+savanna04	alu			savanna		0
+
+forrest00	alu			forrest		0
+forrest01	tin			forrest		0
+forrest02	duranite	forrest		0
+forrest03	basalt		forrest		0
+
+flower00	zinc		flower		0
+flower01	coal		flower		0
+flower02	copper		flower		0
+
+iceberg00	gold		iceberg		0
+iceberg01	lead		iceberg		0
+iceberg02	osram		iceberg		0
+iceberg03	silver		iceberg		0
+
+hills00		iron		hills		0
+hills01		diamond		hills		0
+hills02		emerald		hills		0
+hills03		lapis		hills		0
+
+mesa00		prometheum	mesa		0
+mesa01		quartzN		mesa		0
+
+underEnd00	abyssum		underEnd	10
+underEnd01	palladium	underEnd	10
+underEnd02	magicProsp	underEnd	10
+
+hell00		prometheum	hell		-1
+hell01		cobaltN		hell		-1
+hell02		arditeN		hell		-1
+hell03		quartzN		hell		-1
+
+end00		abyssum		end		1
+end01		palladium	end		1
+end02		magicProsp	end		1
+end03		draconiumE	end		1
+
+space00s	ironS		all		23,24,30
+space01s	goldS		all		20,23,24,31
+space02s	redstoneS	all		20,22,24,30
+space03s	lapisS		all		20,30
+space04s	diamondS	all		31
+space05s	emeraldS	all		20,31
+space06s	aluS		all		22,24,25,33
+space07s	copperS		all		22,23,24,25,33
+space08s	tinS		all		22,23,24,25,33
+space09s	zincS		all		20,22,24,25,30,31
+space10s	leadS		all		23,24,31
+space11s	nickelS		all		20,22,25,30,31
+space13s	eezoS		all		23,24,31
+space14s	osramS		all		20,22,23
+space15s	basaltS		all		25,30
+space16s	silverS		all		20,23,24,31
+
+space00		iron		all		20,22,25,31
+space01		gold		all		22,25,30
+space02		redstone	all		23,25,31,33
+space03		lapis		all		23,24,31,33
+space04		diamond		all		23,24,25,30
+space05		emerald		all		23,24,30
+space06		alu			all		20,23,31
+space07		copper		all		20,31
+space08		tin			all		20,31
+space09		zinc		all		23
+space10		lead		all		22,24,30
+space11		nickel		all		23,24,33
+space13		eezo		all		22,30,33
+space14		osram		all		24,25,30,31,33
+space15		basalt		all		20,22,23,24,31,33
+space16		silver		all		22,25,30
+
+space12		coal		all		23,25,30,31
+space20		dilithiumS	all		22
+space21		oviumS		all		23,24,25
+space22		draconiumS	all		23
+
+space23		meteorite	all		20,22,23,24,25
+space24		apatite		all		22,23,31
+space25		osram		all		22,23,24
+space26		blackQuartz	all		24,25,33
+space27n	netherrack	all		22,25
+space27		tiberium	all		22,25
+space27a	cobaltNN	all		22,25
+space27b	arditeNN	all		22,25
+space27c	quartzNN	all		22,25
+space28		soulsand	all		25,30
+space29		uranium		all		25,30
+space30		glowstone	all		24,25
+space31		rutil		all		22,31
+
+space40		ovium		all		31
+space41		dilithium	all		30
+space42		jauxum		all		30,33
+space43		magma		all		30
+space44n	netherrack	all		30
+space44		valyrium	all		30
+space45		vibranium	all		31
+space46		uru			all		33
+space47n	endstone	all		33
+space47		aurorium	all		33
+space48		iridium		all		31
+
+ast00		ironA		all		21,32
+ast01		goldA		all		21,32
+ast02		redstoneA	all		21,32
+ast03		lapisA		all		21,32
+ast04		diamondA	all		21
+ast05		emeraldA	all		32
+ast06		aluA		all		21,32
+ast07		copperA		all		21,32
+ast08		tinA		all		21,32
+ast09		zincA		all		32
+ast11		nickelA		all		32
+ast15		basaltA		all		21
+ast16		rutilA		all		21,32
+ast17		silverA		all		21,32
+
+astN01		cobaltA		all		21,32
+astN02		arditeA		all		21,32
+astN03		quartzA		all		21,32
+

@@ -2,7 +2,7 @@ LINE         #  A         #  Basic Guides
 SIZE         #  20:20     #  100:100
 TEXT         #  Some basic description
 
-QUEST        #  A1        #  0:0       #  18    #  Log
+QUEST        #  A1        #  0:0       #  18    #  Log		#  MAIN
 QUEST        #  A2        #  10:0      #  18    #  Plank
 
 // ------->

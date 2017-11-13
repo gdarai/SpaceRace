@@ -18,6 +18,12 @@ def printWarning(text):
 def writeLine(f, intention, text):
 	f.write('\t'*intention+text+'\n');
 
+def writeLineCondition(f, intention, textNo, textYes, condition):
+	if(condition):
+		f.write('\t'*intention+textYes+'\n');
+	else:
+		f.write('\t'*intention+textNo+'\n');
+
 def	writeLineBlocks(f,intention, texts):
 	allBut = texts[0:-1]
 	last = texts[-1]
@@ -36,6 +42,17 @@ def parseName(name):
     name = re.sub(r"\_","", name)
     return name
 
+
+def writeItemLines(f, intention, item, count):
+	if(parseName(item['package'])!='ore'):
+		writeLine(f, intention, '"id": "'+item['package']+':'+item['name']'+",'):
+		writeLine(f, intention, '"Count": '+count+','):
+		writeLine(f, intention, '"OreDict": "",'):
+		writeLine(f, intention, '"Damage": '+item['damage'])
+	else:
+		printError('Cannot print item: '+str(item)+', oreDict print not yet deffined.')
+		exit()
+	
 ########
 # Data loading
 
@@ -93,6 +110,7 @@ with open('quests_in.txt') as f:
 f.closed
 
 theQ = { 'id':'' }
+nextQID = 0
 quests={}
 for line in lines:
     if(line[0:2]=='//'):
@@ -114,8 +132,11 @@ for line in lines:
             'name': m[2],
             'preqType': 'none',
             'tasks': [],
-            'rewards': []
+            'rewards': [],
+			'qid': nextQID,
+			'main': 'false'
         }
+		nextQID = nextQID + 1
     if (m[0]=='TEXT'):
         theQ['text'] = m[1]
     if (m[0]=='PREREQ'):
@@ -199,16 +220,80 @@ for line in lines:
         theL['text'] = m[1]
     if (m[0]=='QUEST'):
         if (len(m)<5):
-            printError('Skipping QUEST: '+line+', need QUEST # <quest name> # <quest pos> # <symbol size> # <symbol ico>')
+            printError('Skipping QUEST: '+line+', need QUEST # <quest name> # <quest pos> # <symbol size> # <symbol ico> # <par1> # <par2> ...')
             exit()
         newQ = {
             'id': parseName(m[1]),
             'pos': m[2].split(':'),
-            'size': m[3],
-            'ico': parseName(m[4])
+            'size': m[3]
         }
+		quests[newQ['id']]['ico'] = parseName(m[4])
+		for p in m[5:]:
+			m1 = p.split(':')
+			nm = parseName(m1[0])
+			if(nm=='main'):
+				quests[newQ['id']]['main'] = 'true'
+			else:
+				printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
         theL['quests'].append(newQ)
 
 if(theL['id']!=''):
     questlines.append(theL)
 print ('Loaded '+str(len(questlines))+' questline(s).')
+
+# Printing
+print('\nCan Print: '+str(canPrint))
+if canPrint == False:
+	exit()
+
+print('>> Printing DefaultQuests.json <<')
+f = open('DefaultQuests.json','w')
+writeLine(f,0,'{')
+writeLine(f,1,'"questSettings": {')
+writeLine(f,2,'"betterquesting": {')
+writeLine(f,3,'"livesMax": 10,')
+writeLine(f,3,'"livesDef": 3,')
+writeLine(f,3,'"home_anchor_x": 0.5,')
+writeLine(f,3,'"home_anchor_y": 0.0,')
+writeLine(f,3,'"hardcore": false,')
+writeLine(f,3,'"home_image": "betterquesting:textures/gui/default_title.png",')
+writeLine(f,3,'"editMode": false,')
+writeLine(f,3,'"home_offset_x": -128,')
+writeLine(f,3,'"home_offset_y": 0')
+writeLine(f,2,'}')
+writeLine(f,1,'},')
+writeLine(f,1,'"questDatabase": [')
+for id in quests.keys():
+	q = quests[id]
+	writeLine(f,2,'{')
+	writeLine(f,3,'"properties": {')
+	writeLine(f,4,'"betterquesting": {')
+	writeLine(f,5,'"name": "'+q['name']+'",')
+	writeLine(f,5,'"desc": "'+q['text']+'",')
+	writeLine(f,5,'"snd_complete": "minecraft:entity.player.levelup",')
+	writeLine(f,5,'"snd_update": "minecraft:entity.player.levelup",')
+	writeLine(f,5,'"icon": {')
+	writeItemLines(f,6,items[q['ico']],'1')
+	writeLine(f,5,'},')	
+	writeLine(f,5,'"autoClaim": true,')
+	writeLine(f,5,'"isSilent": false,')
+	writeLine(f,5,'"partySingleReward": false,')
+	writeLine(f,5,'"isMain": '+q['main']+',')
+	writeLine(f,5,'"simultaneous": false,')
+	writeLine(f,5,'"globalShare": false,')
+	writeLine(f,5,'"lockedProgress": false,')
+	writeLine(f,5,'"taskLogic": "AND",')
+	writeLine(f,5,'"repeatTime": -1,')
+	writeLine(f,5,'"questLogic": "AND"')
+	writeLine(f,4,'}')
+	writeLine(f,3,'},')
+	writeLine(f,3,'"tasks": [],')
+	writeLine(f,3,'"rewards": [],')
+	writeLine(f,3,'"preRequisites": [],')
+	writeLine(f,3,'"questID": '+q['qid'])
+	writeLine(f,2,'},')
+
+writeLine(f,0,'}')
+f.close()
+
+

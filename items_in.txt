@@ -3,8 +3,8 @@ LOC  #  Moon              #  0:1000:100:1000        #  10
 // ------->
 
 ITEM  #  Bread            #  minecraft:bread
-ITEM  #  WaterBottle      #  minecraft:bottle
-ITEM  #  Log              #  ore:logWood
+ITEM  #  WaterBottle      #  minecraft:bottle         #  tag:{ "liquid":"water", "amount":1000 }
+ITEM  #  Log              #  minecraft:logWood        #  ore:logWood
 ITEM  #  Plank            #  minecraft:planks:1
 ITEM  #  SaplingOak       #  minecraft:sapling
 ITEM  #  SaplingBirch     #  minecraft:sapling:1

@@ -44,15 +44,13 @@ def parseName(name):
 
 
 def writeItemLines(f, intention, item, count):
-	if(parseName(item['package'])!='ore'):
-		writeLine(f, intention, '"id": "'+item['package']+':'+item['name']'+",'):
-		writeLine(f, intention, '"Count": '+count+','):
-		writeLine(f, intention, '"OreDict": "",'):
-		writeLine(f, intention, '"Damage": '+item['damage'])
-	else:
-		printError('Cannot print item: '+str(item)+', oreDict print not yet deffined.')
-		exit()
-	
+    writeLine(f, intention, '"id": "'+item['package']+':'+item['name']+'",')
+    writeLine(f, intention, '"Count": '+count+',')
+    writeLine(f, intention, '"OreDict": "'+item['ore']+'",')
+    if(item['nbt']!='no'):
+        writeLine(f, intention, '"nbt": "'+item['nbt']+'",')
+    writeLine(f, intention, '"Damage": '+item['damage'])
+
 ########
 # Data loading
 
@@ -94,10 +92,18 @@ for line in lines:
             'package': desc[0],
             'name': desc[1],
             'damage': desc[2],
-            'nbt': 'no'
+            'nbt': 'no',
+            'ore': ''
         }
-        if(len(m)>3):
-            theItem['nbt'] = m[3]
+        for attr in m[3:]:
+            nm = parseName(attr[0:3])
+            if((nm == 'nbt')or(nm == 'tag')):
+                theItem['nbt'] = attr[4:]
+            elif(nm == 'ore'):
+                theItem['ore'] = attr[4:]
+            else:
+                printWarning('ITEM '+name+', skipping attribute: '+nm+', unknown.')
+        print(theItem)
         items[name]=theItem
 
 print ('Loaded '+str(len(list(locations.keys())))+' location(s).')
@@ -133,10 +139,10 @@ for line in lines:
             'preqType': 'none',
             'tasks': [],
             'rewards': [],
-			'qid': nextQID,
+			'qid': str(nextQID),
 			'main': 'false'
         }
-		nextQID = nextQID + 1
+        nextQID = nextQID + 1
     if (m[0]=='TEXT'):
         theQ['text'] = m[1]
     if (m[0]=='PREREQ'):
@@ -227,15 +233,15 @@ for line in lines:
             'pos': m[2].split(':'),
             'size': m[3]
         }
-		quests[newQ['id']]['ico'] = parseName(m[4])
-		for p in m[5:]:
-			m1 = p.split(':')
-			nm = parseName(m1[0])
-			if(nm=='main'):
-				quests[newQ['id']]['main'] = 'true'
-			else:
-				printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
-        theL['quests'].append(newQ)
+        quests[newQ['id']]['ico'] = parseName(m[4])
+        for p in m[5:]:
+            m1 = p.split(':')
+            nm = parseName(m1[0])
+            if(nm=='main'):
+                quests[newQ['id']]['main'] = 'true'
+            else:
+                printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
+            theL['quests'].append(newQ)
 
 if(theL['id']!=''):
     questlines.append(theL)
@@ -274,7 +280,7 @@ for id in quests.keys():
 	writeLine(f,5,'"snd_update": "minecraft:entity.player.levelup",')
 	writeLine(f,5,'"icon": {')
 	writeItemLines(f,6,items[q['ico']],'1')
-	writeLine(f,5,'},')	
+	writeLine(f,5,'},')
 	writeLine(f,5,'"autoClaim": true,')
 	writeLine(f,5,'"isSilent": false,')
 	writeLine(f,5,'"partySingleReward": false,')
@@ -287,7 +293,12 @@ for id in quests.keys():
 	writeLine(f,5,'"questLogic": "AND"')
 	writeLine(f,4,'}')
 	writeLine(f,3,'},')
-	writeLine(f,3,'"tasks": [],')
+    if(len(q['tasks'])==0):
+        writeLine(f,3,'"tasks": [],')
+    else:
+        writeLine(f,3,'"tasks": [')
+        
+        writeLine(f,3,'],')
 	writeLine(f,3,'"rewards": [],')
 	writeLine(f,3,'"preRequisites": [],')
 	writeLine(f,3,'"questID": '+q['qid'])
@@ -295,5 +306,3 @@ for id in quests.keys():
 
 writeLine(f,0,'}')
 f.close()
-
-

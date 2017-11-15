@@ -48,8 +48,138 @@ def writeItemLines(f, intention, item, count):
     writeLine(f, intention, '"Count": '+count+',')
     writeLine(f, intention, '"OreDict": "'+item['ore']+'",')
     if(item['nbt']!='no'):
-        writeLine(f, intention, '"nbt": "'+item['nbt']+'",')
+        writeLine(f, intention, '"tag": '+item['nbt']+',')
     writeLine(f, intention, '"Damage": '+item['damage'])
+
+def writeTaskLines(f, intention, task, items, locs):
+	type = task['type']
+	if(type=='TRIGGER'):
+		writeLine(f, intention, '"taskID": "bq_standard:checkbox",')
+	elif(type=='TRAVEL'):
+		loc = locs[parseName(task['items'][0])]
+		writeLine(f, intention, '"name": "'+loc['name']+'",')
+		writeLine(f, intention, '"posX": '+loc['x']+',')
+		writeLine(f, intention, '"posY": '+loc['y']+',')
+		writeLine(f, intention, '"posZ": '+loc['z']+',')
+		writeLine(f, intention, '"dimension": '+loc['dim']+',')
+		writeLine(f, intention, '"range": '+loc['radius']+',')
+		writeLine(f, intention, '"visible": true,')
+		writeLine(f, intention, '"hideInfo": false,')
+		writeLine(f, intention, '"taskID": "bq_standard:location",')
+	elif(type=='HAVE'):
+		writeLine(f, intention, '"partialMatch": true,')
+		writeLine(f, intention, '"ignoreNBT": false,')
+		writeLine(f, intention, '"consume": false,')
+		writeLine(f, intention, '"groupDetect": false,')
+		writeLine(f, intention, '"autoConsume": false,')
+		writeLine(f, intention, '"requiredItems": [')
+		iMax = len(task['items'])
+		iCnt = 0
+		for it in task['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1] 
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"taskID": "bq_standard:retrieval",')
+	elif(type=='CRAFT'):
+		writeLine(f, intention, '"partialMatch": true,')
+		writeLine(f, intention, '"ignoreNBT": false,')
+		writeLine(f, intention, '"requiredItems": [')
+		iMax = len(task['items'])
+		iCnt = 0
+		for it in task['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1] 
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"taskID": "bq_standard:crafting",')
+	else:
+		printError('Unknown task type '+type+': '+str(task))
+		exit()
+
+def writeRewardLines(f, intention, reward, items, quests):
+	type = reward['type']
+	if(type=='ALL'):
+		writeLine(f, intention, '"rewards": [')
+		iMax = len(reward['items'])
+		iCnt = 0
+		for it in reward['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1] 
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"rewardID": "bq_standard:item",')
+	elif(type=='PICK'):
+		writeLine(f, intention, '"choices": [')
+		iMax = len(reward['items'])
+		iCnt = 0
+		for it in reward['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1] 
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"rewardID": "bq_standard:choice",')
+	elif(type=='RESET'):
+		quest = quests[parseName(reward['items'][0])]
+		writeLine(f, intention, '"command": "/bq_admin reset '+quest['qid']+' VAR_NAME",')
+		writeLine(f, intention, '"hideCommand": true,')
+		writeLine(f, intention, '"viaPlayer": true,')
+		writeLine(f, intention, '"rewardID": "bq_standard:command",')
+	elif(type=='COMMAND'):
+		writeLine(f, intention, '"command": "'+reward['items'][0]+'",')
+		writeLine(f, intention, '"hideCommand": true,')
+		writeLine(f, intention, '"viaPlayer": true,')
+		writeLine(f, intention, '"rewardID": "bq_standard:command",')
+	elif(type=='XP'):
+		m = reward['items'][0].split(':')
+		val = m[0]
+		isLevels = 'false'
+		if(len(m)>1):
+			val = m[1]
+			if(parseName(m[0])=='levels'):
+				isLevels = 'true'				
+		writeLine(f, intention, '"amount": '+val+',')
+		writeLine(f, intention, '"isLevels": '+isLevels+',')
+		writeLine(f, intention, '"rewardID": "bq_standard:xp",')
+	elif(type=='SCORE'):
+		m1 = reward['items'][0].split(':')
+		m2 = reward['items'][1].split(':')
+		if(parseName(m2[0])=='set'):
+			m2[0] = 'false'
+		else:
+			m2[0] = 'true'
+		writeLine(f, intention, '"score": "'+m1[0]+'",')
+		writeLine(f, intention, '"type": "'+m1[1]+'",')
+		writeLine(f, intention, '"value": '+m2[1]+',')
+		writeLine(f, intention, '"relative": '+m2[0]+',')
+		writeLine(f, intention, '"rewardID": "bq_standard:scoreboard",')
+	else:
+		printError('Unknown reward type '+type+': '+str(reward))
+		exit()
 
 ########
 # Data loading
@@ -78,6 +208,7 @@ for line in lines:
             continue
         coords = m[2].split(":")
         theLocation = {
+			'name': m[1],
             'dim': coords[0],
             'x': coords[1],
             'y': coords[2],
@@ -165,7 +296,7 @@ for line in lines:
                 exit()
             newTask = {
                 'type': m[1],
-                'params': m[2:]
+                'items': m[2:]
             }
         theQ['tasks'].append(newTask)
     if (m[0]=='REWARD'):
@@ -174,7 +305,7 @@ for line in lines:
             exit()
         newReward = {
             'type': m[1],
-            'params': m[2:]
+            'items': m[2:]
         }
         theQ['rewards'].append(newReward)
 if(theQ['id']!=''):
@@ -269,8 +400,12 @@ writeLine(f,3,'"home_offset_y": 0')
 writeLine(f,2,'}')
 writeLine(f,1,'},')
 writeLine(f,1,'"questDatabase": [')
+iMax = len(list(quests.keys()))
+iCnt = 0
 for id in quests.keys():
+	iCnt = iCnt + 1
 	q = quests[id]
+	print(q)
 	writeLine(f,2,'{')
 	writeLine(f,3,'"properties": {')
 	writeLine(f,4,'"betterquesting": {')
@@ -293,16 +428,37 @@ for id in quests.keys():
 	writeLine(f,5,'"questLogic": "AND"')
 	writeLine(f,4,'}')
 	writeLine(f,3,'},')
-    if(len(q['tasks'])==0):
-        writeLine(f,3,'"tasks": [],')
-    else:
-        writeLine(f,3,'"tasks": [')
-        
-        writeLine(f,3,'],')
-	writeLine(f,3,'"rewards": [],')
+	jMax = len(q['tasks'])
+	jCnt = 0
+	if(jMax==0):
+		writeLine(f,3,'"tasks": [],')
+	else:
+		writeLine(f,3,'"tasks": [')
+		for t in q['tasks']:
+			jCnt = jCnt + 1
+			writeLine(f,4,'{')
+			writeTaskLines(f, 5, t, items, locations)
+			writeLine(f,5,'"index": '+str(jCnt-1))		
+			writeLineCondition(f,4,'},','}', jCnt==jMax)        
+		writeLine(f,3,'],')
+	kMax = len(q['rewards'])
+	kCnt = 0
+	if(kMax==0):
+		writeLine(f,3,'"rewards": [],')
+	else:
+		writeLine(f,3,'"rewards": [')
+		for r in q['rewards']:
+			kCnt = kCnt + 1
+			writeLine(f,4,'{')
+			writeRewardLines(f, 5, r, items, quests)
+			writeLine(f,5,'"index": '+str(kCnt-1))		
+			writeLineCondition(f,4,'},','}', kCnt==kMax)        
+		writeLine(f,3,'],')
+		
+	
 	writeLine(f,3,'"preRequisites": [],')
 	writeLine(f,3,'"questID": '+q['qid'])
-	writeLine(f,2,'},')
+	writeLineCondition(f,2,'},','}', iCnt==iMax)
 
 writeLine(f,0,'}')
 f.close()

@@ -14,5 +14,5 @@ PREREQ  #  ALL      #  A1
 TASK    #  HAVE     #  Log:4
 TASK    #  CRAFT    #  Plank:16
 REWARD  #  PICK     #  SaplingOak  #  SaplingBirch
-REWARD  #  HAVE     #  Log:16
-REWARD  #  XP       #  10
+REWARD  #  ALL      #  Log:16
+REWARD  #  XP       #  Levels:10

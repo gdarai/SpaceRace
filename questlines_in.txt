@@ -1,8 +1,8 @@
 LINE         #  A         #  Basic Guides
-SIZE         #  20:20     #  100:100
-TEXT         #  Some basic description
+SIZE         #  2:2     #  0:150
+TEXT         #  Start here and you should avoid necessary suffering
 
-QUEST        #  A1        #  0:0       #  18    #  Log		#  MAIN
-QUEST        #  A2        #  10:0      #  18    #  Plank
+QUEST        #  A0        #  -1:0       #  30    #  SleepingBag
+QUEST        #  A1        #  0:20       #  26    #  Furnace
 
 // ------->

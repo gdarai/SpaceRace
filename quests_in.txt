@@ -1,18 +1,20 @@
-QUEST   #  A1       #  Initial Warnings
-TEXT    #  Text A\nText B\n\nText C
+QUEST   #  A0       #  Initial Warnings
+TEXT    #  SOME WARNINGS for a new contestant:\n\n1) STAY OUT OF WATER !! AQUA-CREEPERS are BAD !!\n2) Build a Bed/Sleeping bag, this is ZOMBIE territory\n3) Sleep through nights\n4) Focus on food variety
 
-TASK    #  TRAVEL   #  Moon
 TASK    #  TRIGGER
-REWARD  #  PICK     #  Bread:1     #  WaterBottle
+TASK    #  HAVE     #  WoodShears
+TASK    #  HAVE     #  SleepingBag
+REWARD  #  ALL      #  Bread
 
 // ------->
 
-QUEST   #  A2       #  Quest 2
-TEXT    #  NO BIG TEXT
-PREREQ  #  ALL      #  A1
+QUEST   #  A1       #  Furnace
+TEXT    #  First steps start with fire. Don't think that you don't have to sleep any more.
+PREREQ  #  AND      #  A0
 
-TASK    #  HAVE     #  Log:4
-TASK    #  CRAFT    #  Plank:16
-REWARD  #  PICK     #  SaplingOak  #  SaplingBirch
-REWARD  #  ALL      #  Log:16
-REWARD  #  XP       #  Levels:10
+TASK    #  HAVE     #  Dirt
+TASK    #  HAVE     #  DryingRack
+TASK    #  HAVE     #  DriedBrick
+TASK    #  CRAFT    #  Furnace
+REWARD  #  PICK     #  OakLog:16 # SaplingOak  #  SaplingBirch  #  SaplingSpruce  #  SaplingJungle
+REWARD  #  XP       #  Levels:1

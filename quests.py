@@ -105,8 +105,70 @@ def writeTaskLines(f, intention, task, items, locs):
 			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"taskID": "bq_standard:crafting",')
+        # {
+          # "rf": 100000,
+          # "duration": 200,
+          # "voidExcess": true,
+          # "taskID": "bq_rf:rf_rate",
+          # "index": 0
+        # },
+        # {
+          # "rf": 100000,
+          # "taskID": "bq_rf:rf_charge",
+          # "index": 1
+        # },
+        # {
+          # "amount": 30,
+          # "isLevels": true,
+          # "consume": true,
+          # "taskID": "bq_standard:xp",
+          # "index": 2
+        # },
+        # {
+          # "target": "Zombie",
+          # "required": 10,
+          # "subtypes": true,
+          # "ignoreNBT": true,
+          # "targetNBT": {},
+          # "taskID": "bq_standard:hunt",
+          # "index": 3
+        # },
+        # {
+          # "scoreName": "Score",
+          # "scoreDisp": "Score",
+          # "type": "dummy",
+          # "target": 1,
+          # "unitConversion": 1.0,
+          # "unitSuffix": "",
+          # "operation": "MORE_OR_EQUAL",
+          # "taskID": "bq_standard:scoreboard",
+          # "index": 4
+        # },
+        # {
+          # "target": "Villager",
+          # "range": 4,
+          # "amount": 1,
+          # "subtypes": true,
+          # "ignoreNBT": true,
+          # "targetNBT": {},
+          # "taskID": "bq_standard:meeting",
+          # "index": 5
+        # },
+        # {
+          # "consume": true,
+          # "autoConsume": true,
+          # "requiredFluids": [
+            # {
+              # "FluidName": "water",
+              # "Amount": 1000
+            # }
+          # ],
+          # "taskID": "bq_standard:fluid",
+          # "index": 6
+        # }
 	else:
 		printError('Unknown task type '+type+': '+str(task))
+		print('Supported types are TRIGGER TRAVEL HAVE CRAFT')
 		exit()
 
 def writeRewardLines(f, intention, reward, items, quests):
@@ -179,6 +241,7 @@ def writeRewardLines(f, intention, reward, items, quests):
 		writeLine(f, intention, '"rewardID": "bq_standard:scoreboard",')
 	else:
 		printError('Unknown reward type '+type+': '+str(reward))
+		print('Supported types are ALL PICK RESET COMMAND XP SCORE')
 		exit()
 
 ########
@@ -234,7 +297,6 @@ for line in lines:
                 theItem['ore'] = attr[4:]
             else:
                 printWarning('ITEM '+name+', skipping attribute: '+nm+', unknown.')
-        print(theItem)
         items[name]=theItem
 
 print ('Loaded '+str(len(list(locations.keys())))+' location(s).')
@@ -281,7 +343,7 @@ for line in lines:
             printError('Skipping PREREQ: '+line+', need PREREQ # <type> # <id1> # <id2> ...')
             exit()
         theQ['preqType'] = parseName(m[1])
-        theQ['preqIds'] = map(lambda x: parseName(x),m[2:])
+        theQ['preqIds'] = list(map(lambda x: parseName(x),m[2:]))
     if (m[0]=='TASK'):
         if (len(m)<2):
             printError('Skipping TASK: '+line+', need TASK # <type>')
@@ -361,7 +423,7 @@ for line in lines:
             exit()
         newQ = {
             'id': parseName(m[1]),
-            'pos': m[2].split(':'),
+            'pos': list(map(lambda x: float(x), m[2].split(':'))),
             'size': m[3]
         }
         quests[newQ['id']]['ico'] = parseName(m[4])
@@ -372,8 +434,7 @@ for line in lines:
                 quests[newQ['id']]['main'] = 'true'
             else:
                 printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
-            theL['quests'].append(newQ)
-
+        theL['quests'].append(newQ)
 if(theL['id']!=''):
     questlines.append(theL)
 print ('Loaded '+str(len(questlines))+' questline(s).')
@@ -402,10 +463,11 @@ writeLine(f,1,'},')
 writeLine(f,1,'"questDatabase": [')
 iMax = len(list(quests.keys()))
 iCnt = 0
+print('\n== Quests ==')
 for id in quests.keys():
 	iCnt = iCnt + 1
 	q = quests[id]
-	print(q)
+	print(id+': '+q['name'])
 	writeLine(f,2,'{')
 	writeLine(f,3,'"properties": {')
 	writeLine(f,4,'"betterquesting": {')
@@ -425,7 +487,10 @@ for id in quests.keys():
 	writeLine(f,5,'"lockedProgress": false,')
 	writeLine(f,5,'"taskLogic": "AND",')
 	writeLine(f,5,'"repeatTime": -1,')
-	writeLine(f,5,'"questLogic": "AND"')
+	if(q['preqType']=='none'):
+		writeLine(f,5,'"questLogic": "AND"')
+	else:
+		writeLine(f,5,'"questLogic": "'+q['preqType'].upper()+'"')
 	writeLine(f,4,'}')
 	writeLine(f,3,'},')
 	jMax = len(q['tasks'])
@@ -455,10 +520,50 @@ for id in quests.keys():
 			writeLineCondition(f,4,'},','}', kCnt==kMax)        
 		writeLine(f,3,'],')
 		
-	
-	writeLine(f,3,'"preRequisites": [],')
+	if(q['preqType']=='none'):
+		writeLine(f,3,'"preRequisites": [],')
+	else:
+		writeLine(f,3,'"preRequisites": [ '+', '.join(map(lambda x: quests[x]['qid'], q['preqIds']))+' ],')
 	writeLine(f,3,'"questID": '+q['qid'])
 	writeLineCondition(f,2,'},','}', iCnt==iMax)
-
+writeLine(f,1,'],')
+print('\n== Quest Lines ==')
+writeLine(f,1,'"questLines": [')
+lMax = len(questlines)
+lid = 0
+for ln in questlines:
+	print(ln['id']+': '+ln['name'])
+	pos = list(map(lambda x: float(x), ln['pos']))
+	size = list(map(lambda x: float(x), ln['size']))
+	writeLine(f,2,'{')
+	writeLine(f,3,'"properties": {')
+	writeLine(f,4,'"betterquesting": {')
+	writeLine(f,5,'"name": "'+ln['name']+'",')
+	writeLine(f,5,'"bg_image": "",')
+	writeLine(f,5,'"bg_size": 256,')
+	writeLine(f,5,'"desc": "'+ln['text']+'"')
+	writeLine(f,4,'}')
+	writeLine(f,3,'},')
+	writeLine(f,3,'"quests": [')
+	iMax = len(ln['quests'])
+	iCnt = 0
+	for q in ln['quests']:
+		iCnt = iCnt + 1
+		posx = str(int(q['pos'][0]*size[0] + pos[0]))
+		posy = str(int(q['pos'][1]*size[1] + pos[1]))
+		print('\t'+q['id']+': '+posx+':'+posy)
+		writeLine(f,4,'{')
+		writeLine(f,5,'"size": '+q['size']+',')
+		writeLine(f,5,'"x": '+posx+',')
+		writeLine(f,5,'"y": '+posy+',')
+		writeLine(f,5,'"id": '+quests[q['id']]['qid'])
+		writeLineCondition(f,4,'},','}', iCnt==iMax)		
+	writeLine(f,3,'],')
+	writeLine(f,3,'"lineID": '+str(lid)+',')
+	writeLine(f,3,'"order": '+str(lid))
+	lid = lid + 1
+	writeLineCondition(f,2,'},','}', lid==lMax)		
+writeLine(f,1,'],')
+writeLine(f,1,'"format": "1.0.0"')
 writeLine(f,0,'}')
 f.close()

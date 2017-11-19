@@ -2,9 +2,15 @@ LOC  #  Moon              #  0:1000:100:1000        #  10
 
 // ------->
 
+ITEM  #  WoodShears       #  woodenshears:wshears
+ITEM  #  SleepingBag      #  sleepingbag:sleepingbag
 ITEM  #  Bread            #  minecraft:bread
-ITEM  #  WaterBottle      #  minecraft:bottle         #  tag:{ "liquid":"water", "amount":1000 }
-ITEM  #  Log              #  minecraft:logWood        #  ore:logWood
-ITEM  #  Plank            #  minecraft:planks:1
+ITEM  #  Dirt             #  minecraft:dirt
+ITEM  #  DryingRack       #  tconstruct:rack:1
+ITEM  #  DriedBrick       #  tconstruct:materials:2
+ITEM  #  Furnace          #  minecraft:furnace
+ITEM  #  OakLog           #  minecraft:log:0
 ITEM  #  SaplingOak       #  minecraft:sapling
-ITEM  #  SaplingBirch     #  minecraft:sapling:1
+ITEM  #  SaplingSpruce    #  minecraft:sapling:1
+ITEM  #  SaplingBirch     #  minecraft:sapling:2
+ITEM  #  SaplingJungle    #  minecraft:sapling:3

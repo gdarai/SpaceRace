@@ -244,14 +244,36 @@ def writeRewardLines(f, intention, reward, items, quests):
 		print('Supported types are ALL PICK RESET COMMAND XP SCORE')
 		exit()
 
+
+def getFiles( wildch ):
+	mypath = os.getcwd()
+	onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
+	filtered = []
+	for f in onlyfiles:
+		if(re.match(wildch, f) != None):
+			filtered.append(f)
+	return filtered
+
+def getLinesInFiles( wildch ):
+	print('File search pattern: '+wildch)
+	files = getFiles(wildch)
+	print(files)
+
+	lines = []
+	for nm in files:
+		with open(nm) as f:
+			lns = f.readlines()
+		f.closed
+		print('File '+nm+', '+str(len(lns))+' lines')
+		lines = lines + lns
+
+	return lines
 ########
 # Data loading
 
 # Get Items and Locations
-print('--> Items and Locations')
-with open('items_in.txt') as f:
-	lines = f.readlines()
-f.closed
+print('\n--> Items and Locations')
+lines = getLinesInFiles('items_in.*\.txt')
 
 items={}
 locations={}
@@ -303,10 +325,8 @@ print ('Loaded '+str(len(list(locations.keys())))+' location(s).')
 print ('Loaded '+str(len(list(items.keys())))+' item(s).')
 
 # Get quests
-print('--> Quests')
-with open('quests_in.txt') as f:
-	lines = f.readlines()
-f.closed
+print('\n--> Quests')
+lines = getLinesInFiles('quests_in.*\.txt')
 
 theQ = { 'id':'' }
 nextQID = 0
@@ -376,10 +396,8 @@ if(theQ['id']!=''):
 print ('Loaded '+str(len(list(quests.keys())))+' quests(s).')
 
 # Get quest lines
-print('--> Quest lines')
-with open('questlines_in.txt') as f:
-	lines = f.readlines()
-f.closed
+print('\n--> Quest lines')
+lines = getLinesInFiles('questlines_in.*\.txt')
 
 theL = { 'id':'' }
 questlines=[]
@@ -549,8 +567,9 @@ for ln in questlines:
 	iCnt = 0
 	for q in ln['quests']:
 		iCnt = iCnt + 1
-		posx = str(int(q['pos'][0]*size[0] + pos[0]))
-		posy = str(int(q['pos'][1]*size[1] + pos[1]))
+		halfSize = int(q['size'])/2
+		posx = str(int(q['pos'][0]*size[0] + pos[0])-halfSize)
+		posy = str(int(q['pos'][1]*size[1] + pos[1])-halfSize)
 		print('\t'+q['id']+': '+posx+':'+posy)
 		writeLine(f,4,'{')
 		writeLine(f,5,'"size": '+q['size']+',')

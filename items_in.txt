@@ -2,15 +2,29 @@ LOC  #  Moon              #  0:1000:100:1000        #  10
 
 // ------->
 
-ITEM  #  WoodShears       #  woodenshears:wshears
-ITEM  #  SleepingBag      #  sleepingbag:sleepingbag
-ITEM  #  Bread            #  minecraft:bread
-ITEM  #  Dirt             #  minecraft:dirt
-ITEM  #  DryingRack       #  tconstruct:rack:1
-ITEM  #  DriedBrick       #  tconstruct:materials:2
-ITEM  #  Furnace          #  minecraft:furnace
-ITEM  #  OakLog           #  minecraft:log:0
-ITEM  #  SaplingOak       #  minecraft:sapling
-ITEM  #  SaplingSpruce    #  minecraft:sapling:1
-ITEM  #  SaplingBirch     #  minecraft:sapling:2
-ITEM  #  SaplingJungle    #  minecraft:sapling:3
+ITEM  #  WoodShears     #  woodenshears:wshears
+ITEM  #  SleepingBag    #  sleepingbag:sleepingbag
+ITEM  #  Bread          #  minecraft:bread
+ITEM  #  Dirt           #  minecraft:dirt
+ITEM  #  DryingRack     #  tconstruct:rack:1
+ITEM  #  DriedBrick     #  tconstruct:materials:2
+ITEM  #  Furnace        #  minecraft:furnace
+ITEM  #  OakLog         #  minecraft:log:0
+ITEM  #  SaplingOak     #  minecraft:sapling
+ITEM  #  SaplingSpruce  #  minecraft:sapling:1
+ITEM  #  SaplingBirch   #  minecraft:sapling:2
+ITEM  #  SaplingJungle  #  minecraft:sapling:3
+ITEM  #  TTable    		#  tconstruct:tooltables
+ITEM  #  Wheet    		#  minecraft:wheat
+ITEM  #  Rope    		#  immersiveengineering:wirecoil:3
+ITEM  #  HoneyComb    	#  forestry:beeCombs
+ITEM  #  Torch    		#  minecraft:torch
+ITEM  #  SmelteryController	#  tconstruct:smeltery_controller
+ITEM  #  Clay    		#  minecraft:clay_ball
+ITEM  #  Flint    		#  minecraft:flint
+ITEM  #  Charcoal    	#  minecraft:coal:1
+ITEM  #  CraftingFrame	#  supercraftingframe:super_crafting_frame
+ITEM  #  Drawer    		#  storagedrawers:basicDrawers
+ITEM  #  TrPlank    	#  immersiveengineering:treatedWood
+ITEM  #  AACrate    	#  actuallyadditions:blockGiantChestLarge
+ITEM  #  SmelteryTank	#  tconstruct:seared_tank

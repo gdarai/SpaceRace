@@ -1,8 +1,23 @@
-LINE         #  A         #  Basic Guides
-SIZE         #  2:2     #  0:150
-TEXT         #  Start here and you should avoid necessary suffering
+LINE         #  A          #  Pre-Industrial
+SIZE         #  2:2        #  50:50
+TEXT         #  From first night to Smeltery. This is your first bunch of guides to follow.
 
-QUEST        #  A0        #  -1:0       #  30    #  SleepingBag
-QUEST        #  A1        #  0:20       #  26    #  Furnace
+QUEST        #  A00        #  -40:0   	 #  30    #  SleepingBag		# main
+QUEST        #  A10        #  -20:0      #  25    #  TTable				# main
+QUEST        #  A20        #    0:-10    #  25    #  Wheet				# main
+QUEST        #  A21        #    0:10     #  25    #  Rope				# main
+QUEST        #  A30        #   20:0      #  25    #  HoneyComb			# main
+QUEST        #  A40        #   40:0      #  25    #  Torch				# main
+QUEST        #  A50        #   60:0      #  30    #  SmelteryController	# main
+
+QUEST        #  Ax10       #  -30:25     #  20    #  Furnace
+QUEST        #  Ax11       #  -20:25     #  20    #  Clay
+QUEST        #  Ax12       #  -10:25     #  20    #  Flint
+QUEST        #  Ax20       #  -10:-25    #  20    #  Charcoal
+QUEST        #  Ax21       #    0:-25    #  20    #  CraftingFrame
+QUEST        #  Ax22       #   10:-25   #  20    #  Drawer
+QUEST        #  Ax30       #   10:25     #  20    #  TrPlank
+QUEST        #  Ax31       #   20:25     #  20    #  AACrate
+QUEST        #  Ax32       #   30:25    #  20    #  SmelteryTank
 
 // ------->

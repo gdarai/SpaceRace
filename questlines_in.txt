@@ -1,3 +1,44 @@
+LINE         #  0          #  Roadmap
+SIZE         #  2:2        #  50:50
+TEXT         #  Overall guide to this pack.
+
+QUEST        #  000        #  -40:0   	 #  30    #  ExtraLife			# main
+QUEST        #  010        #  -20:0      #  25    #  NetherStar			# main
+QUEST        #  020        #    0:0      #  25    #  GrassBlock			# main
+QUEST        #  030        #   20:0      #  25    #  SmoothEnd			# main
+QUEST        #  040        #   40:0      #  25    #  RocketEngine		# main
+QUEST        #  050        #   60:0      #  25    #  WarpCore			# main
+QUEST        #  060        #   80:0      #  25    #  EnderEye			# main
+QUEST        #  070        #  100:0      #  25    #  NetherStar			# main
+
+QUEST        #  1x1        #  -20:13     #  20    #  Skull
+QUEST        #  2x1        #  -20:-25    #  20    #  CoalOre
+QUEST        #  2x2        #  -10:-25    #  20    #  SaplingOak
+QUEST        #  2x3        #    0:-25    #  20    #  Poppy
+QUEST        #  2x4        #   10:-25    #  20    #  SaplingJungle
+QUEST        #  2x5        #   20:-25    #  20    #  DeadBush
+QUEST        #  2x6        #  -20:-13    #  20    #  SaplingAcacia
+QUEST        #  2x7        #  -10:-13    #  20    #  Ice
+QUEST        #  2x8        #    0:-13    #  20    #  Cobble
+QUEST        #  2x9        #   10:-13    #  20    #  SaplingSpruce
+QUEST        #  2x10       #   20:-13    #  20    #  HardenedClay
+
+QUEST        #  4x1        #   30:25     #  20    #  MoonTurf
+QUEST        #  4x2        #   40:25     #  20    #  FireworkStar
+QUEST        #  4x3        #   50:25     #  20    #  Firework
+QUEST        #  5x1        #   50:-25    #  20    #  LavaBlock
+QUEST        #  5x2        #   60:-25    #  20    #  SaplingAlien
+QUEST        #  5x3        #   70:-25    #  20    #  Diamond
+QUEST        #  5x4        #   50:-13    #  20    #  Sugar
+QUEST        #  5x5        #   60:-13    #  20    #  RedSand
+QUEST        #  5x6        #   70:-13    #  20    #  EndStone
+QUEST        #  7x1        #   90:25     #  20    #  Obsidian
+QUEST        #  7x2        #  100:25     #  20    #  Fish
+QUEST        #  7x3        #   90:13     #  20    #  FireworkStar
+QUEST        #  7x4        #  100:13     #  20    #  Mycelium
+
+// ------->
+
 LINE         #  A          #  Pre-Industrial
 SIZE         #  2:2        #  50:50
 TEXT         #  From first night to Smeltery. This is your first bunch of guides to follow.
@@ -15,9 +56,12 @@ QUEST        #  Ax11       #  -20:25     #  20    #  Clay
 QUEST        #  Ax12       #  -10:25     #  20    #  Flint
 QUEST        #  Ax20       #  -10:-25    #  20    #  Charcoal
 QUEST        #  Ax21       #    0:-25    #  20    #  CraftingFrame
-QUEST        #  Ax22       #   10:-25   #  20    #  Drawer
+QUEST        #  Ax22       #   10:-25    #  20    #  Drawer
 QUEST        #  Ax30       #   10:25     #  20    #  TrPlank
 QUEST        #  Ax31       #   20:25     #  20    #  AACrate
-QUEST        #  Ax32       #   30:25    #  20    #  SmelteryTank
+QUEST        #  Ax32       #   30:25     #  20    #  SmelteryTank
+QUEST        #  Ax50       #   50:-25    #  20    #  SmelteryTable
+QUEST        #  Ax51       #   60:-25    #  20    #  ConveyorBelt
+QUEST        #  Ax52       #   70:-25    #  20    #  HardendCap
 
 // ------->

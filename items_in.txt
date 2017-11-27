@@ -2,6 +2,7 @@ LOC  #  Moon              #  0:1000:100:1000        #  10
 
 // ------->
 
+// Quests Test
 ITEM  #  WoodShears     #  woodenshears:wshears
 ITEM  #  SleepingBag    #  sleepingbag:sleepingbag
 ITEM  #  Bread          #  minecraft:bread
@@ -14,6 +15,40 @@ ITEM  #  SaplingOak     #  minecraft:sapling
 ITEM  #  SaplingSpruce  #  minecraft:sapling:1
 ITEM  #  SaplingBirch   #  minecraft:sapling:2
 ITEM  #  SaplingJungle  #  minecraft:sapling:3
+ITEM  #  SaplingAcacia  #  minecraft:sapling:4
+
+
+// Quests 0
+ITEM  #  ExtraLife	 	#  betterquesting:extra_life
+ITEM  #  NetherStar	 	#  minecraft:nether_star
+ITEM  #  GrassBlock	 	#  minecraft:grass
+ITEM  #  SmoothEnd	 	#  tp:smooth_endstone
+ITEM  #  RocketEngine 	#  advancedrocketry:advRocketmotor
+ITEM  #  WarpCore	 	#  advancedrocketry:warpCore
+ITEM  #  EnderEye	 	#  minecraft:ender_eye
+
+ITEM  #  Skull			#  minecraft:skull
+ITEM  #  CoalOre		#  minecraft:coal_ore
+ITEM  #  Poppy			#  minecraft:red_flower
+ITEM  #  DeadBush		#  minecraft:deadbush
+ITEM  #  Ice			#  minecraft:ice
+ITEM  #  Cobble			#  minecraft:cobblestone
+ITEM  #  HardenedClay	#  minecraft:stained_hardened_clay:1
+
+ITEM  #  MoonTurf		#  advancedrocketry:moonTurf
+ITEM  #  FireworkStar	#  minecraft:firework_charge
+ITEM  #  Firework		#  minecraft:fireworks
+ITEM  #  LavaBlock		#  minecraft:lava_bucket
+ITEM  #  SaplingAlien	#  advancedrocketry:alienSapling
+ITEM  #  Diamond		#  minecraft:diamond
+ITEM  #  Sugar			#  minecraft:sugar
+ITEM  #  RedSand		#  advancedrocketry:hotTurf
+ITEM  #  EndStone		#  minecraft:end_stone
+ITEM  #  Obsidian		#  minecraft:obsidian
+ITEM  #  Fish			#  minecraft:fish
+ITEM  #  Mycelium		#  minecraft:mycelium
+
+// Quests A
 ITEM  #  TTable    		#  tconstruct:tooltables
 ITEM  #  Wheet    		#  minecraft:wheat
 ITEM  #  Rope    		#  immersiveengineering:wirecoil:3
@@ -28,3 +63,6 @@ ITEM  #  Drawer    		#  storagedrawers:basicDrawers
 ITEM  #  TrPlank    	#  immersiveengineering:treatedWood
 ITEM  #  AACrate    	#  actuallyadditions:blockGiantChestLarge
 ITEM  #  SmelteryTank	#  tconstruct:seared_tank
+ITEM  #  SmelteryTable	#  tconstruct:casting
+ITEM  #  ConveyorBelt	#  immersiveengineering:conveyor	#	NBT:{"conveyorType": "immersiveengineering:uncontrolled"}
+ITEM  #  HardendCap  	#  harvestcraft:hardenedleatherhelmitem

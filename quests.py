@@ -81,10 +81,10 @@ def writeTaskLines(f, intention, task, items, locs):
 			item = items[parseName(m[0])]
 			count = '1'
 			if(len(m)>1):
-				count = m[1] 
+				count = m[1]
 			writeLine(f, intention+1, '{')
 			writeItemLines(f, intention+2, item, count)
-			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"taskID": "bq_standard:retrieval",')
 	elif(type=='CRAFT'):
@@ -99,51 +99,70 @@ def writeTaskLines(f, intention, task, items, locs):
 			item = items[parseName(m[0])]
 			count = '1'
 			if(len(m)>1):
-				count = m[1] 
+				count = m[1]
 			writeLine(f, intention+1, '{')
 			writeItemLines(f, intention+2, item, count)
-			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"taskID": "bq_standard:crafting",')
-        # {
-          # "rf": 100000,
-          # "duration": 200,
-          # "voidExcess": true,
-          # "taskID": "bq_rf:rf_rate",
-          # "index": 0
-        # },
-        # {
-          # "rf": 100000,
-          # "taskID": "bq_rf:rf_charge",
-          # "index": 1
-        # },
-        # {
-          # "amount": 30,
-          # "isLevels": true,
-          # "consume": true,
-          # "taskID": "bq_standard:xp",
-          # "index": 2
-        # },
-        # {
-          # "target": "Zombie",
-          # "required": 10,
-          # "subtypes": true,
-          # "ignoreNBT": true,
-          # "targetNBT": {},
-          # "taskID": "bq_standard:hunt",
-          # "index": 3
-        # },
-        # {
-          # "scoreName": "Score",
-          # "scoreDisp": "Score",
-          # "type": "dummy",
-          # "target": 1,
-          # "unitConversion": 1.0,
-          # "unitSuffix": "",
-          # "operation": "MORE_OR_EQUAL",
-          # "taskID": "bq_standard:scoreboard",
-          # "index": 4
-        # },
+	elif(type=='RF_RATE'):
+		m = task['items'][0].split(':')
+		writeLine(f, intention, '"rf": '+m[0]+',')
+		writeLine(f, intention, '"duration": '+m[1]+',')
+		writeLine(f, intention, '"voidExcess": true,')
+		writeLine(f, intention, '"taskID": "bq_rf:rf_rate",')
+	elif(type=='RF_CHARGE'):
+		writeLine(f, intention, '"rf": '+task['items'][0]+',')
+		writeLine(f, intention, '"taskID": "bq_rf:rf_charge",')
+	elif(type=='XP'):
+		isLevels = 'false'
+		consume = 'false'
+		amount = '1'
+		for i in task['items']:
+			m = i.split(':')
+			for ii in m:
+				parii = parseName(ii)
+				if parii == 'levels':
+					isLevels = 'true'
+				elif parii == 'consume':
+					consume = 'true'
+				else:
+					amount = ii
+		writeLine(f, intention, '"amount": '+amount+',')
+		writeLine(f, intention, '"isLevels": '+isLevels+',')
+		writeLine(f, intention, '"consume": '+consume+',')
+		writeLine(f, intention, '"taskID": "bq_standard:xp",')
+	elif(type=='SCORE'):
+		m0 = task['items'][0]
+		m1 = task['items'][1].split(':')
+		m2 = task['items'][2].split(':')
+		writeLine(f, intention, '"scoreName": "'+m1[0]+'",')
+		writeLine(f, intention, '"scoreDisp": "'+m0+'",')
+		writeLine(f, intention, '"type": '+m1[1]+',')
+		writeLine(f, intention, '"operation": "'+m2[0]+'",')
+		writeLine(f, intention, '"target": '+m2[1]+',')
+		writeLine(f, intention, '"unitConversion": 1.0,')
+		writeLine(f, intention, '"unitSuffix": "'+m2[2]+'",')
+		writeLine(f, intention, '"taskID": "bq_standard:scoreboard",')
+	elif(type=='HUNT'):
+		subtypes = 'true'
+		ignoreNBT = 'true'
+		targetNBT = '{}'
+		m1 = task['items'][0].split(':')
+		for i in task['items'][1:]:
+			m = i.split(':')
+			nm = parseName(m[0])
+			if nm[1:3] == 'sub':
+				subtypes = parseName(m[1])
+			elif nm[1:3] == 'nbt' or nm[1:3] == 'tag':
+				ignoreNBT = 'false'
+				targetNBT = m[1]
+		writeLine(f, intention, '"target": "'+m1[0]+'",')
+		writeLine(f, intention, '"required": "'+m1[1]+'",')
+		writeLine(f, intention, '"subtypes": '+subtypes+',')
+		writeLine(f, intention, '"ignoreNBT": '+ignoreNBT+',')
+		writeLine(f, intention, '"targetNBT": '+targetNBT+',')
+		writeLine(f, intention, '"taskID": "bq_standard:hunt",')
         # {
           # "target": "Villager",
           # "range": 4,
@@ -183,10 +202,10 @@ def writeRewardLines(f, intention, reward, items, quests):
 			item = items[parseName(m[0])]
 			count = '1'
 			if(len(m)>1):
-				count = m[1] 
+				count = m[1]
 			writeLine(f, intention+1, '{')
 			writeItemLines(f, intention+2, item, count)
-			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"rewardID": "bq_standard:item",')
 	elif(type=='PICK'):
@@ -199,10 +218,10 @@ def writeRewardLines(f, intention, reward, items, quests):
 			item = items[parseName(m[0])]
 			count = '1'
 			if(len(m)>1):
-				count = m[1] 
+				count = m[1]
 			writeLine(f, intention+1, '{')
 			writeItemLines(f, intention+2, item, count)
-			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)        
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"rewardID": "bq_standard:choice",')
 	elif(type=='RESET'):
@@ -223,7 +242,7 @@ def writeRewardLines(f, intention, reward, items, quests):
 		if(len(m)>1):
 			val = m[1]
 			if(parseName(m[0])=='levels'):
-				isLevels = 'true'				
+				isLevels = 'true'
 		writeLine(f, intention, '"amount": '+val+',')
 		writeLine(f, intention, '"isLevels": '+isLevels+',')
 		writeLine(f, intention, '"rewardID": "bq_standard:xp",')
@@ -521,8 +540,8 @@ for id in quests.keys():
 			jCnt = jCnt + 1
 			writeLine(f,4,'{')
 			writeTaskLines(f, 5, t, items, locations)
-			writeLine(f,5,'"index": '+str(jCnt-1))		
-			writeLineCondition(f,4,'},','}', jCnt==jMax)        
+			writeLine(f,5,'"index": '+str(jCnt-1))
+			writeLineCondition(f,4,'},','}', jCnt==jMax)
 		writeLine(f,3,'],')
 	kMax = len(q['rewards'])
 	kCnt = 0
@@ -534,10 +553,10 @@ for id in quests.keys():
 			kCnt = kCnt + 1
 			writeLine(f,4,'{')
 			writeRewardLines(f, 5, r, items, quests)
-			writeLine(f,5,'"index": '+str(kCnt-1))		
-			writeLineCondition(f,4,'},','}', kCnt==kMax)        
+			writeLine(f,5,'"index": '+str(kCnt-1))
+			writeLineCondition(f,4,'},','}', kCnt==kMax)
 		writeLine(f,3,'],')
-		
+
 	if(q['preqType']=='none'):
 		writeLine(f,3,'"preRequisites": [],')
 	else:
@@ -576,12 +595,12 @@ for ln in questlines:
 		writeLine(f,5,'"x": '+posx+',')
 		writeLine(f,5,'"y": '+posy+',')
 		writeLine(f,5,'"id": '+quests[q['id']]['qid'])
-		writeLineCondition(f,4,'},','}', iCnt==iMax)		
+		writeLineCondition(f,4,'},','}', iCnt==iMax)
 	writeLine(f,3,'],')
 	writeLine(f,3,'"lineID": '+str(lid)+',')
 	writeLine(f,3,'"order": '+str(lid))
 	lid = lid + 1
-	writeLineCondition(f,2,'},','}', lid==lMax)		
+	writeLineCondition(f,2,'},','}', lid==lMax)
 writeLine(f,1,'],')
 writeLine(f,1,'"format": "1.0.0"')
 writeLine(f,0,'}')

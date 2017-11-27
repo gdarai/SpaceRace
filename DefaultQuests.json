@@ -1,0 +1,76 @@
+{
+	"questSettings": {
+		"betterquesting": {
+			"livesMax": 10,
+			"livesDef": 3,
+			"home_anchor_x": 0.5,
+			"home_anchor_y": 0.0,
+			"hardcore": false,
+			"home_image": "betterquesting:textures/gui/default_title.png",
+			"editMode": false,
+			"home_offset_x": -128,
+			"home_offset_y": 0
+		}
+	},
+	"questDatabase": [
+		{
+			"properties": {
+				"betterquesting": {
+					"name": "Initial Warnings",
+					"desc": "Text A\nText B\n\nText C",
+					"snd_complete": "minecraft:entity.player.levelup",
+					"snd_update": "minecraft:entity.player.levelup",
+					"icon": {
+						"id": "minecraft:logWood",
+						"Count": 1,
+						"OreDict": "logWood",
+						"Damage": 0
+					},
+					"autoClaim": true,
+					"isSilent": false,
+					"partySingleReward": false,
+					"isMain": true,
+					"simultaneous": false,
+					"globalShare": false,
+					"lockedProgress": false,
+					"taskLogic": "AND",
+					"repeatTime": -1,
+					"questLogic": "AND"
+				}
+			},
+			"tasks": [],
+			"rewards": [],
+			"preRequisites": [],
+			"questID": 0
+		},
+		{
+			"properties": {
+				"betterquesting": {
+					"name": "Quest 2",
+					"desc": "NO BIG TEXT",
+					"snd_complete": "minecraft:entity.player.levelup",
+					"snd_update": "minecraft:entity.player.levelup",
+					"icon": {
+						"id": "minecraft:planks",
+						"Count": 1,
+						"OreDict": "",
+						"Damage": 1
+					},
+					"autoClaim": true,
+					"isSilent": false,
+					"partySingleReward": false,
+					"isMain": false,
+					"simultaneous": false,
+					"globalShare": false,
+					"lockedProgress": false,
+					"taskLogic": "AND",
+					"repeatTime": -1,
+					"questLogic": "AND"
+				}
+			},
+			"tasks": [],
+			"rewards": [],
+			"preRequisites": [],
+			"questID": 1
+		},
+}

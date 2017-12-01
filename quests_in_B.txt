@@ -1,0 +1,98 @@
+QUEST   #  B00      #  Technical revolution
+TEXT    #  Rods, Gears and Plates are base for every machine. First you can do is start casting some Rods and Gears, For that you need a form. Basic Stone Gear and Tough Stone Rod should be enough.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  B10      #  Plates are not that easy
+TEXT    #  Plates are more tricky. To cast a plate you first have to have a plate. Now, you can build a Small Plate Press, or basic Rolling Machine to get one.
+PREREQ  #  AND      #  B00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  B20      #  Need electronics
+TEXT    #  Casting and Rolling. Fun but not enough. It is time to start including some electronics. Do you know you can cast some most basic Electron Tubes on the Smeltery.
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  B30      #  Machine to make Machines
+TEXT    #  As usual, the first thing to make is something what can make making other things easier. In this case, let's build Carpenter, Thermionic Fabricator and first motor to power them up.
+PREREQ  #  AND      #  B20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  B40      #  Steel
+TEXT    #  Most of the heavy machinery needs Steel. Arc Furnace is your entry point for this.
+PREREQ  #  AND      #  B30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Bx10     #  Presser
+TEXT    #  This may give you some better food. So don't complain and use it. You didn't forget about the food situation, right?
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Bx10     #  Tree Farm
+TEXT    #  Tired of chopping down trees? What about an automated tree farm?
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Bx10     #  Sorting, Sort of
+TEXT    #  Keeping your stuff sorted is a huge issue, I grant you that. Well, drawers can help you with that if you will make the Controller for them.
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Bx10     #  Ubgrading farms
+TEXT    #  Tree farm can be ubraded to any sort of farm, if you are up to it. Just use the soldering iron and some circuits.
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+// ------->
+
+QUEST   #  Bx10     #  Sailing away
+TEXT    #  Are you tired of your island? Do you want to find a better place to mine? Then build a ship and sail-on. You will need Steam Engine, Steering Wheel and some Floaters to make the ship going.
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Bx10     #  Improving power source
+TEXT    #  With steel, you can actually build a much powerful source of RF. Try Water Wheel, or improved Wind Mill.
+PREREQ  #  AND      #  B10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1

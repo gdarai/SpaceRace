@@ -60,9 +60,11 @@ QUEST        #  Ax22       #   10:-25    #  20    #  Drawer
 QUEST        #  Ax30       #   10:25     #  20    #  TrPlank
 QUEST        #  Ax31       #   20:25     #  20    #  AACrate
 QUEST        #  Ax32       #   30:25     #  20    #  SmelteryTank
+QUEST        #  Ax33       #   30:-15    #  20    #  Punji
 QUEST        #  Ax50       #   50:-25    #  20    #  SmelteryTable
 QUEST        #  Ax51       #   60:-25    #  20    #  ConveyorBelt
 QUEST        #  Ax52       #   70:-25    #  20    #  HardendCap
+QUEST        #  Ax53       #   60:25     #  20    #  ToolForge
 
 // ------->
 
@@ -70,4 +72,85 @@ LINE         #  B          #  Early-Industrial
 SIZE         #  2:2        #  50:50
 TEXT         #  You cannot build industry without some serious machinery and that cannot be build from sticks and leather. It is time for machines.
 
-QUEST        #  B00        #  -40:0   	 #  30    #  Furnace		# main
+QUEST        #  B00        #  -40:0   	 #  30    #  Gear		# main
+QUEST        #  B10        #  -20:0   	 #  25    #  Plate		# main
+QUEST        #  B20        #    0:0   	 #  25    #  ElTube		# main
+QUEST        #  B30        #   20:0   	 #  25    #  Carpenter	# main
+QUEST        #  B40        #   40:0   	 #  30    #  Steel		# main
+
+QUEST        #  Bx00       #  -40:-25 	 #  20    #  SoyMilk
+QUEST        #  Bx01       #  -30:-25 	 #  20    #  DrawerCont
+QUEST        #  Bx10       #  -20:25 	 #  20    #  Distributor
+QUEST        #  Bx20       #   -5:-25 	 #  20    #  FFarm
+QUEST        #  Bx21       #    5:-25 	 #  20    #  Centrifuge
+QUEST        #  Bx30       #   15:25 	 #  20    #  ShipWheel
+QUEST        #  Bx31       #   25:25 	 #  20    #  Eezo
+QUEST        #  Bx40       #   40:-25 	 #  20    #  WaterWheel
+QUEST        #  Bx41       #   30:-25 	 #  20    #  Circuit
+QUEST        #  Bx42       #   20:-25 	 #  20    #  MedKit
+QUEST        #  Bx43       #   40:25 	 #  20    #  RazorWire
+
+// ------->
+
+LINE         #  C          #  Unified-Electronics
+SIZE         #  2:2        #  50:50
+TEXT         #  Next step is heavy machinery. For that you will need some more sophisticated electronics then just electron tubes. It is time for controll circuits.
+
+QUEST        #  C00        #  -40:0   	 #  30    #  SmoothEnd	# main
+QUEST        #  C10        #  -20:0   	 #  25    #  ObsSword	# main
+QUEST        #  C20        #    0:0   	 #  25    #  FaradayCh	# main
+QUEST        #  C30        #   20:0   	 #  25    #  PallOre	# main
+QUEST        #  C40        #   40:0   	 #  25    #  IOCirc		# main
+QUEST        #  C50        #   60:0   	 #  25    #  Transistor	# main
+QUEST        #  C60        #   80:0   	 #  30    #  EngineGold	# main
+
+QUEST        #  Cx00        #  -40:-25 	 #  20    #  Rifle		# main
+QUEST        #  Cx01        #  -30:-25 	 #  20    #  HoneyComb	# main
+QUEST        #  Cx02        #  -20:-25 	 #  20    #  Hopper		# main
+QUEST        #  Cx03        #  -40:25  	 #  20    #  Turret		# main
+QUEST        #  Cx04        #  -30:25  	 #  20    #  Baloon		# main
+QUEST        #  Cx05        #  -20:25  	 #  20    #  Battery	# main
+QUEST        #  Cx10        #   -5:-25 	 #  20    #  Diamond	# main
+QUEST        #  Cx30        #   15:-25 	 #  20    #  MagicSeed	# main
+QUEST        #  Cx31        #   25:-25 	 #  20    #  MagicTool	# main
+QUEST        #  Cx32        #   15:25  	 #  20    #  LaserTr	# main
+QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod		# main
+QUEST        #  Cx50        #   60:-25 	 #  20    #  Computer	# main
+
+// ------------------>
+// Trade lines are used for obtaining score through common tasks.
+// ------------------>
+
+LINE         #  TA         #  Trading Food
+SIZE         #  2:2        #  50:50
+TEXT         #  Some players want to be more farmers then explorers and so they can. Here is a whole quest line about making Quisine. If you want to entertain our viewers by cooking. Here is your opportunity.
+
+QUEST        #  TA00        #  -40:-25 	  #  30    #  NetherStar		# main
+QUEST        #  TA01        #  -40:0      #  30    #  WaterBowl			# main
+QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed
+QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
+QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
+QUEST        #  TA13        #   40:0      #  25    #  Wheet
+QUEST        #  TA14        #   60:0      #  25    #  HCPear
+QUEST        #  TA20        #   80:0      #  30    #  Diamond			# main
+
+// ------------------>
+// Market lines are used for buying material for score
+// ------------------>
+
+LINE         #  MA         #  Buying Essentials
+SIZE         #  2:2        #  50:50
+TEXT         #  Concider this a market, where your seller is the audience. Show them something and if they will be fond of you, they may give you what you will ask for.
+
+QUEST        #  MA00        #  -40:-25 	  #  30    #  NetherStar		# main
+QUEST        #  MAreset     #   40:-25    #  30    #  WaterBowl			# main # chain
+QUEST        #  MAres2      #    0:-25    #  30    #  Skull  			# main # chain
+QUEST        #  MAhalf      #    0:10     #  30    #  OnTheWay 			# main # chain
+
+QUEST        #  MAxi00      #  -40:-10	  #  20    #  HZombie			# chain
+QUEST        #  MAxi01      #  -40:0	  #  20    #  HWitch			# chain
+
+QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
+QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
+QUEST        #  MAxo02      #   40:10	  #  20    #  ORE00				# chain
+

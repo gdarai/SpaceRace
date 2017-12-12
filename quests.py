@@ -87,6 +87,27 @@ def writeTaskLines(f, intention, task, items, locs):
 			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"taskID": "bq_standard:retrieval",')
+	elif(type=='GIVE'):
+		writeLine(f, intention, '"partialMatch": true,')
+		writeLine(f, intention, '"ignoreNBT": false,')
+		writeLine(f, intention, '"consume": true,')
+		writeLine(f, intention, '"groupDetect": false,')
+		writeLine(f, intention, '"autoConsume": false,')
+		writeLine(f, intention, '"requiredItems": [')
+		iMax = len(task['items'])
+		iCnt = 0
+		for it in task['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1]
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"taskID": "bq_standard:retrieval",')
 	elif(type=='CRAFT'):
 		writeLine(f, intention, '"partialMatch": true,')
 		writeLine(f, intention, '"ignoreNBT": false,')
@@ -287,6 +308,16 @@ def getLinesInFiles( wildch ):
 		lines = lines + lns
 
 	return lines
+	
+def expandWildchars( lst0, lstFull ):
+	lst1 = []
+	for it in lst0:
+		if((it[0]=="<")and(it[-1]==">")):
+			r = re.compile(it[1:-1])
+			lst1.extend(list(filter(r.match, lstFull)))
+		else:
+			lst1.append(it)
+	return lst1
 ########
 # Data loading
 
@@ -372,7 +403,8 @@ for line in lines:
             'tasks': [],
             'rewards': [],
 			'qid': str(nextQID),
-			'main': 'false'
+			'main': 'false',
+			'chain': False
         }
         nextQID = nextQID + 1
     if (m[0]=='TEXT'):
@@ -469,6 +501,8 @@ for line in lines:
             nm = parseName(m1[0])
             if(nm=='main'):
                 quests[newQ['id']]['main'] = 'true'
+            elif(nm=='chain'):
+                quests[newQ['id']]['chain'] = True
             else:
                 printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
         theL['quests'].append(newQ)
@@ -501,7 +535,8 @@ writeLine(f,1,'"questDatabase": [')
 iMax = len(list(quests.keys()))
 iCnt = 0
 print('\n== Quests ==')
-for id in quests.keys():
+questNames = quests.keys()
+for id in questNames:
 	iCnt = iCnt + 1
 	q = quests[id]
 	print(id+': '+q['name'])
@@ -518,6 +553,8 @@ for id in quests.keys():
 	writeLine(f,5,'"autoClaim": true,')
 	writeLine(f,5,'"isSilent": false,')
 	writeLine(f,5,'"partySingleReward": false,')
+	if(q['chain']==True):	
+		writeLine(f,5,'"visibility": "CHAIN",')
 	writeLine(f,5,'"isMain": '+q['main']+',')
 	writeLine(f,5,'"simultaneous": false,')
 	writeLine(f,5,'"globalShare": false,')
@@ -560,7 +597,7 @@ for id in quests.keys():
 	if(q['preqType']=='none'):
 		writeLine(f,3,'"preRequisites": [],')
 	else:
-		writeLine(f,3,'"preRequisites": [ '+', '.join(map(lambda x: quests[x]['qid'], q['preqIds']))+' ],')
+		writeLine(f,3,'"preRequisites": [ '+', '.join(map(lambda x: quests[x]['qid'], expandWildchars(q['preqIds'], questNames)))+' ],')
 	writeLine(f,3,'"questID": '+q['qid'])
 	writeLineCondition(f,2,'},','}', iCnt==iMax)
 writeLine(f,1,'],')

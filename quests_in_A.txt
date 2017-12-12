@@ -153,6 +153,17 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
+QUEST   #  Ax33     #  Automatic Defense
+
+
+TEXT    #  Did you heard of Punji Sticks? That is an old and simple way how to get rid of the zombies, you know? You will dig a pit and plant there some sharpened reed.
+PREREQ  #  AND      #  A30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
 QUEST   #  Ax50     #  Casting Table
 
 
@@ -179,6 +190,15 @@ QUEST   #  Ax52     #  Armor Up
 
 
 TEXT    #  Sooner or later you will need to do some fighting. Start getting ready for it by hardening some leather.
+PREREQ  #  AND      #  A50
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Ax53     #  Heavy Tools
+TEXT    #  Now you should have everything to be able to build Tool Forge and start with heavy tools like the Mining Hammer and Excavator.
 PREREQ  #  AND      #  A50
 
 TASK    #  TRIGGER

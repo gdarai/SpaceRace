@@ -104,18 +104,45 @@ QUEST        #  C40        #   40:0   	 #  25    #  IOCirc		# main
 QUEST        #  C50        #   60:0   	 #  25    #  Transistor	# main
 QUEST        #  C60        #   80:0   	 #  30    #  EngineGold	# main
 
-QUEST        #  Cx00        #  -40:-25 	 #  20    #  Rifle		# main
-QUEST        #  Cx01        #  -30:-25 	 #  20    #  HoneyComb	# main
-QUEST        #  Cx02        #  -20:-25 	 #  20    #  Hopper		# main
-QUEST        #  Cx03        #  -40:25  	 #  20    #  Turret		# main
-QUEST        #  Cx04        #  -30:25  	 #  20    #  Baloon		# main
-QUEST        #  Cx05        #  -20:25  	 #  20    #  Battery	# main
-QUEST        #  Cx10        #   -5:-25 	 #  20    #  Diamond	# main
-QUEST        #  Cx30        #   15:-25 	 #  20    #  MagicSeed	# main
-QUEST        #  Cx31        #   25:-25 	 #  20    #  MagicTool	# main
-QUEST        #  Cx32        #   15:25  	 #  20    #  LaserTr	# main
-QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod		# main
-QUEST        #  Cx50        #   60:-25 	 #  20    #  Computer	# main
+QUEST        #  Cx00        #  -40:-25 	 #  20    #  Rifle
+QUEST        #  Cx01        #  -30:-25 	 #  20    #  HoneyComb
+QUEST        #  Cx02        #  -20:-25 	 #  20    #  Hopper
+QUEST        #  Cx03        #  -40:25  	 #  20    #  Turret
+QUEST        #  Cx04        #  -30:25  	 #  20    #  Baloon
+QUEST        #  Cx05        #  -20:25  	 #  20    #  Battery
+QUEST        #  Cx10        #   -5:-25 	 #  20    #  Diamond
+QUEST        #  Cx30        #   15:-25 	 #  20    #  MagicSeed
+QUEST        #  Cx31        #   25:-25 	 #  20    #  MagicTool
+QUEST        #  Cx32        #   15:25  	 #  20    #  LaserTr
+QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod
+QUEST        #  Cx50        #   50:-25 	 #  20    #  Computer
+QUEST        #  Cx51        #   60:-25 	 #  20    #  DEChest
+QUEST        #  Cx52        #   60:25 	 #  20    #  AABlink
+
+// ------->
+
+LINE         #  D          #  Early Space Age
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have all the tech. The only thing missing is some serious amount of resources and you can... Walk the Stars. Well, more like tiny steps at the beginning.
+
+QUEST        #  D00        #  -40:0   	 #  30    #  SmoothEnd	# main
+QUEST        #  D10        #  -20:-10  	 #  25    #  SmoothEnd	# main
+QUEST        #  D11        #  -20:10   	 #  25    #  SmoothEnd	# main
+QUEST        #  D30        #    0:0   	 #  25    #  SmoothEnd	# main
+QUEST        #  D40        #   20:0   	 #  25    #  SmoothEnd	# main
+QUEST        #  D50        #   40:0   	 #  25    #  SmoothEnd	# main
+QUEST        #  D60        #   60:0   	 #  30    #  SmoothEnd	# main
+
+QUEST        #  Dx00        #  -40:25 	 #  20    #  Rifle
+QUEST        #  Dx01        #  -30:25 	 #  20    #  Rifle
+QUEST        #  Dx30        #    0:-25 	 #  20    #  Rifle
+QUEST        #  Dx40        #   25:-25 	 #  20    #  Rifle
+QUEST        #  Dx41        #   15:-25 	 #  20    #  Rifle
+QUEST        #  Dx42        #   25:25 	 #  20    #  Rifle
+QUEST        #  Dx43        #   15:25 	 #  20    #  Rifle
+QUEST        #  Dx60        #   50:-25 	 #  20    #  Rifle
+QUEST        #  Dx61        #   60:-25 	 #  20    #  Rifle
+QUEST        #  Dx62        #   60:25 	 #  20    #  Rifle
 
 // ------------------>
 // Trade lines are used for obtaining score through common tasks.
@@ -127,7 +154,7 @@ TEXT         #  Some players want to be more farmers then explorers and so they 
 
 QUEST        #  TA00        #  -40:-25 	  #  30    #  NetherStar		# main
 QUEST        #  TA01        #  -40:0      #  30    #  WaterBowl			# main
-QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed
+QUEST        #  TA10        #  -20:0	    #  25    #  HCSeed
 QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
 QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
 QUEST        #  TA13        #   40:0      #  25    #  Wheet
@@ -153,4 +180,3 @@ QUEST        #  MAxi01      #  -40:0	  #  20    #  HWitch			# chain
 QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
 QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
 QUEST        #  MAxo02      #   40:10	  #  20    #  ORE00				# chain
-

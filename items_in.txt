@@ -104,6 +104,9 @@ ITEM  #  MagicTool		#  mysticalagriculture:inferium_pickaxe
 ITEM  #  LaserTr		#  actuallyadditions:blockLaserRelayFluids
 ITEM  #  ExpRod			#  enderio:itemXpTransfer
 ITEM  #  Computer		#  opencomputers:case2
+ITEM  #  DEChest		#  draconicevolution:draconium_chest
+ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
+ITEM  #  IERadiator	#  immersiveengineering:clothDevice:1
 
 // Quests Trade A
 ITEM  #  WaterBowl		#  actuallyadditions:itemWaterBowl

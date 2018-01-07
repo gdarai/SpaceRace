@@ -1,5 +1,6 @@
 QUEST   #  B00      #  Technical revolution
 TEXT    #  Rods, Gears and Plates are base for every machine. First you can do is start casting some Rods and Gears, For that you need a form. Basic Stone Gear and Tough Stone Rod should be enough.
+PREREQ  #  AND      #  A50
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1

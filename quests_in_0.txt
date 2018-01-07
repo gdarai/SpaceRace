@@ -236,7 +236,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  5x5      #  SandMoon Moon
-TEXT    #  It orbits the Mystical Gas Giant, so it requiresthe Mystical World Orb\n\nSmall deposits of Aluminium, Copper, Tin, Zinc, Nickel, Ovium and Basalt.\n\nLarge deposites of Iron, Gold, Redstone, Diamonds, Osram, Silver and Coal.\n\nAlso Meteorite, Black Quartz, Tiberium, Cobalt, Ardite, Nether Quartz, Soul Sand, Uranium, Glowstone, Titanium and Prometheum can be found here.
+TEXT    #  It orbits the Mystical Gas Giant, so it requiresthe Mystical World Orb\n\nSmall deposits of Aluminium, Copper, Tin, Zinc, Nickel, Ovium and Basalt.\n\nLarge deposites of Iron, Gold, Redstone, Diamonds, Osram, Silver and Coal.\n\nAlso Meteorite, Black Quartz, Tiberium, Cobalt, Ardite, Nether Quartz, Soul Sand, Uranium, Uru, Glowstone, Titanium and Prometheum can be found here.
 PREREQ  #  AND      #  050
 
 TASK    #  TRIGGER

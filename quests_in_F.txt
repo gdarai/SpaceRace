@@ -1,0 +1,73 @@
+QUEST   #  F00      #  To Lava Planet
+TEXT    #  So it is finally here. Using resources from the gas giant, build the Lava World Orb and travel to your first distant planet.
+PREREQ  #  AND      #  E60
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F10      #  To Alien Planet
+TEXT    #  As you may know, Lava Planet is the best known deposit of Tiberium in this star system. Also Dilithium and Titan deposits are here. Start a mine, harvest the ores and use them to make the Alien World Orb, the key to the next planet in the row.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F20      #  Mining the Alien Planet
+TEXT    #  Since the Alien Planet is the only source of Iridium in this solar system, you should start a mine also here.
+PREREQ  #  AND      #  F10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F21      #  Mining the Crystal Moon
+TEXT    #  Did you noticed the strange little moon of the Alien Planet? You should explore it, t contains deposits of Black Quartz and some other crystal structures.
+PREREQ  #  AND      #  F10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F30      #  The Sand Moon
+TEXT    #  Your next stop should be the Red Sand Moon, orbiting the Blue Gas Giant. To get there, you need the Distant World Orb. There is also the End Moon, but don't try to go there, before you will establish your base of operations on the Sand Moon.
+PREREQ  #  AND      #  F20  #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F40      #  Unlocking the End
+TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the End, you must craft the Draconium Ingot first. Well go ahead. Do it. After you will have the achievement, to get to the End will be just a question of launching your rocket.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F41      #  Unlocking the Nether
+TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the Nether, you must craft the Uranium seed first. Well go ahead. Do it. After you will have the achievement, to get to the Nether will be your well known procedure, obsidian frame and light it up.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Fx00     #  The Crusher
+TEXT    #  The big sturdy Grinder can be now replaced by a much more compact Crusher. If you want.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1

@@ -1,5 +1,6 @@
 QUEST   #  D00      #  Space Suit
 TEXT    #  All jokes aside, Space is Cold. You need a proper suit to survive in it. You can build such suit now. You will also need a Suit Workstation to configure it, Suite Charge Pad to load it with oxygen. Oxygen can be produced in the Electrolyser.
+PREREQ  #  AND      #  C60
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1
@@ -147,6 +148,15 @@ REWARD  #  XP       #  Levels:1
 
 QUEST   #  Dx62     #  Experience Obelisk
 TEXT    #  And also you can now improve your XP storing by constructing the Experience Obelisk.
+PREREQ  #  AND      #  D60
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Dx63     #  Automatic data
+TEXT    #  Did you know that you can transfer the data from the Sattelite Monitoring Stations using Data Cables? Just apply redstone to the piece which comes out from the Monitoring Station.
 PREREQ  #  AND      #  D60
 
 TASK    #  TRIGGER

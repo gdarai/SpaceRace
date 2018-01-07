@@ -118,6 +118,7 @@ QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod
 QUEST        #  Cx50        #   50:-25 	 #  20    #  Computer
 QUEST        #  Cx51        #   60:-25 	 #  20    #  DEChest
 QUEST        #  Cx52        #   60:25 	 #  20    #  AABlink
+QUEST        #  Cx53        #   50:25 	 #  20    #  IERadiator
 
 // ------->
 
@@ -125,24 +126,56 @@ LINE         #  D          #  Early Space Age
 SIZE         #  2:2        #  50:50
 TEXT         #  So you have all the tech. The only thing missing is some serious amount of resources and you can... Walk the Stars. Well, more like tiny steps at the beginning.
 
-QUEST        #  D00        #  -40:0   	 #  30    #  SmoothEnd	# main
-QUEST        #  D10        #  -20:-10  	 #  25    #  SmoothEnd	# main
-QUEST        #  D11        #  -20:10   	 #  25    #  SmoothEnd	# main
-QUEST        #  D30        #    0:0   	 #  25    #  SmoothEnd	# main
-QUEST        #  D40        #   20:0   	 #  25    #  SmoothEnd	# main
-QUEST        #  D50        #   40:0   	 #  25    #  SmoothEnd	# main
-QUEST        #  D60        #   60:0   	 #  30    #  SmoothEnd	# main
+QUEST        #  D00        #  -40:0   	 #  30    #  ARHelm			# main
+QUEST        #  D10        #  -20:-10  	 #  25    #  ARPad			# main
+QUEST        #  D11        #  -20:10   	 #  25    #  JerryCan		# main
+QUEST        #  D30        #    0:0   	 #  25    #  RocketEngine	# main
+QUEST        #  D40        #   20:0   	 #  25    #  MoonTurf		# main
+QUEST        #  D50        #   40:0   	 #  25    #  ARLens			# main
+QUEST        #  D60        #   60:0   	 #  30    #  ARSattelite	# main
 
-QUEST        #  Dx00        #  -40:25 	 #  20    #  Rifle
-QUEST        #  Dx01        #  -30:25 	 #  20    #  Rifle
-QUEST        #  Dx30        #    0:-25 	 #  20    #  Rifle
-QUEST        #  Dx40        #   25:-25 	 #  20    #  Rifle
-QUEST        #  Dx41        #   15:-25 	 #  20    #  Rifle
-QUEST        #  Dx42        #   25:25 	 #  20    #  Rifle
-QUEST        #  Dx43        #   15:25 	 #  20    #  Rifle
-QUEST        #  Dx60        #   50:-25 	 #  20    #  Rifle
-QUEST        #  Dx61        #   60:-25 	 #  20    #  Rifle
-QUEST        #  Dx62        #   60:25 	 #  20    #  Rifle
+QUEST        #  Dx00        #  -40:25 	 #  20    #  Gear
+QUEST        #  Dx01        #  -30:25 	 #  20    #  MagicSeed
+QUEST        #  Dx30        #    0:-25 	 #  20    #  ARGadget
+QUEST        #  Dx40        #   25:-25 	 #  20    #  AACoffee
+QUEST        #  Dx41        #   15:-25 	 #  20    #  AACanola
+QUEST        #  Dx42        #   25:25 	 #  20    #  MPHelm
+QUEST        #  Dx43        #   15:25 	 #  20    #  LaserPwr
+QUEST        #  Dx60        #   50:-25 	 #  20    #  Dilithium
+QUEST        #  Dx61        #   60:-25 	 #  20    #  ZombieGen
+QUEST        #  Dx62        #   60:25 	 #  20    #  ExpStand
+QUEST        #  Dx63        #   50:25 	 #  20    #  ARDataCab
+
+// ------->
+
+LINE         #  E          #  Beyond the Speed of Light
+SIZE         #  2:2        #  50:50
+TEXT         #  Some hard tasks stands between you and your first FTL Flight. Visit the infamous Asteroid Belt and with new materials, construct your own Warp Ship.
+
+QUEST        #  E00        #  -40:0   	 #  30    #  Manyullyn		# main
+QUEST        #  E10        #  -20:0  	 #  25    #  IronBlock		# main
+QUEST        #  E20        #    5:-15  	 #  25    #  SSChip			# main
+QUEST        #  E21        #    0:0   	 #  25    #  Ventilator		# main
+QUEST        #  E22        #    5:15   	 #  25    #  WarpCore		# main
+QUEST        #  E30        #   20:0   	 #  25    #  WorldOrbHW		# main
+QUEST        #  E40        #   40:0   	 #  25    #  UAVAssembler	# main
+QUEST        #  E50        #   58:-10  	 #  25    #  ARTower		# main
+QUEST        #  E51        #   58:10   	 #  25    #  ARIntake		# main
+QUEST        #  E60        #   80:0   	 #  30    #  Nitrogen		# main
+
+QUEST        #  Ex00        #  -40:25 	 #  20    #  IOVat
+QUEST        #  Ex01        #  -30:25 	 #  20    #  IOEngine
+QUEST        #  Ex02        #  -40:-25 	 #  20    #  Mutation
+QUEST        #  Ex03        #  -30:-25 	 #  20    #  Cloche
+
+QUEST        #  Ex60        #   80:-25 	 #  20    #  AALaserR
+QUEST        #  Ex61        #   70:-25 	 #  20    #  AASolar
+QUEST        #  Ex62        #   80:-15 	 #  20    #  AALaser2
+QUEST        #  Ex63        #   70:-15 	 #  20    #  AALamp
+QUEST        #  Ex64        #   80:25 	 #  20    #  AAFarmer
+QUEST        #  Ex65        #   70:25 	 #  20    #  ARMWPower
+QUEST        #  Ex66        #   80:15 	 #  20    #  ARElevator
+QUEST        #  Ex67        #   70:15 	 #  20    #  ARSpaceLaser
 
 // ------------------>
 // Trade lines are used for obtaining score through common tasks.

@@ -1,5 +1,6 @@
 QUEST   #  C00      #  Why UnderEnd
 TEXT    #  Some wild stories are here about the mystical world of UnderEnd. Huge Cave full of dangerous enemies. Well, why in the world would you ever want to go there? I have here a simple answer. Palladium. You need palladium to make Niob which is a basic component for every higher electronic component. So, your next goal is the UnderEnd.
+PREREQ  #  AND      #  B40
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1

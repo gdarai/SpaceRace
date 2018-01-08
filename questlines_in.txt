@@ -167,7 +167,6 @@ QUEST        #  Ex00        #  -40:25 	 #  20    #  IOVat
 QUEST        #  Ex01        #  -30:25 	 #  20    #  IOEngine
 QUEST        #  Ex02        #  -40:-25 	 #  20    #  Mutation
 QUEST        #  Ex03        #  -30:-25 	 #  20    #  Cloche
-
 QUEST        #  Ex60        #   80:-25 	 #  20    #  AALaserR
 QUEST        #  Ex61        #   70:-25 	 #  20    #  AASolar
 QUEST        #  Ex62        #   80:-15 	 #  20    #  AALaser2
@@ -176,6 +175,81 @@ QUEST        #  Ex64        #   80:25 	 #  20    #  AAFarmer
 QUEST        #  Ex65        #   70:25 	 #  20    #  ARMWPower
 QUEST        #  Ex66        #   80:15 	 #  20    #  ARElevator
 QUEST        #  Ex67        #   70:15 	 #  20    #  ARSpaceLaser
+
+// ------->
+
+LINE         #  F          #  Alpha Star System Planets
+SIZE         #  2:2        #  50:50
+TEXT         #  What will you discover when you will battle your way through the first Star System?
+
+QUEST        #  F00        #  -30:0   	 #  30    #  Manyullyn		# main
+QUEST        #  F10        #  -10:0   	 #  25    #  Manyullyn		# main
+QUEST        #  F20        #   10:-10  	 #  25    #  Manyullyn		# main
+QUEST        #  F21        #   10:10   	 #  25    #  Manyullyn		# main
+QUEST        #  F30        #   30:0   	 #  30    #  Manyullyn		# main
+
+QUEST        #  Fx00       #  -60:-5   	 #  20    #  Nitrogen
+QUEST        #  Fx02       #  -50:-5   	 #  20    #  Nitrogen
+QUEST        #  Fx01       #  -60:5   	 #  20    #  Nitrogen
+QUEST        #  Fx03       #  -50:5   	 #  20    #  Nitrogen
+QUEST        #  Fx20       #  -20:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx21       #  -10:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx22       #    0:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx23       #   10:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx24       #   20:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx25       #   30:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx26       #   40:-25  	 #  20    #  Nitrogen
+QUEST        #  Fx210      #  -15:25  	 #  20    #  Nitrogen
+QUEST        #  Fx211      #   -5:25  	 #  20    #  Nitrogen
+QUEST        #  Fx212      #    5:25  	 #  20    #  Nitrogen
+QUEST        #  Fx213      #   15:25  	 #  20    #  Nitrogen
+QUEST        #  Fx214      #   25:25  	 #  20    #  Nitrogen
+QUEST        #  Fx215      #   35:25  	 #  20    #  Nitrogen
+QUEST        #  Fx30       #   60:-10  	 #  20    #  Nitrogen
+QUEST        #  Fx31       #   60:0   	 #  20    #  Nitrogen
+QUEST        #  Fx32       #   60:10  	 #  20    #  Nitrogen
+QUEST        #  Fx33       #   50:-10  	 #  20    #  Nitrogen
+QUEST        #  Fx34       #   50:0   	 #  20    #  Nitrogen
+QUEST        #  Fx35       #   50:10  	 #  20    #  Nitrogen
+
+// ------->
+
+LINE         #  G          #  Nether and End
+SIZE         #  2:2        #  50:50
+TEXT         #  Heaven and Hell lies in between the Alpha and Beta Star Systems. To get to the latter you must visit them both.
+
+QUEST        #  G00        #  -20:0   	 #  30    #  Manyullyn		# main
+QUEST        #  G30        #   20:0   	 #  30    #  Manyullyn		# main
+
+QUEST        #  Gx00       #  -60:-5   	 #  20    #  Nitrogen
+QUEST        #  Gx01       #  -60:5   	 #  20    #  Nitrogen
+QUEST        #  Gx02       #  -50:-5   	 #  20    #  Nitrogen
+QUEST        #  Gx03       #  -50:5   	 #  20    #  Nitrogen
+QUEST        #  Gx30       #   60:-5   	 #  20    #  Nitrogen
+QUEST        #  Gx31       #   60:5   	 #  20    #  Nitrogen
+QUEST        #  Gx32       #   50:-5   	 #  20    #  Nitrogen
+QUEST        #  Gx33       #   50:5   	 #  20    #  Nitrogen
+
+// ------->
+
+LINE         #  H          #  Beta Star System
+SIZE         #  2:2        #  50:50
+TEXT         #  You are finally there. But your work is not over yet.
+
+QUEST        #  H00        #  -30:0   	 #  30    #  Manyullyn		# main
+QUEST        #  H10        #  -10:0   	 #  25    #  Manyullyn		# main
+QUEST        #  H20        #   10:0   	 #  25    #  Manyullyn		# main
+QUEST        #  H30        #   30:0   	 #  30    #  Manyullyn		# main
+
+QUEST        #  Hx00       #  -40:-25 	 #  20    #  Nitrogen
+QUEST        #  Hx01       #  -30:-25  	 #  20    #  Nitrogen
+QUEST        #  Hx02       #  -20:-25  	 #  20    #  Nitrogen
+QUEST        #  Hx10       #  -20:25   	 #  20    #  Nitrogen
+QUEST        #  Hx11       #  -10:25  	 #  20    #  Nitrogen
+QUEST        #  Hx12       #    0:25  	 #  20    #  Nitrogen
+QUEST        #  Hx20       #    0:-25  	 #  20    #  Nitrogen
+QUEST        #  Hx21       #   10:-25  	 #  20    #  Nitrogen
+QUEST        #  Hx22       #   20:-25  	 #  20    #  Nitrogen
 
 // ------------------>
 // Trade lines are used for obtaining score through common tasks.

@@ -1,10 +1,11 @@
 <bqmie:icon_item>.displayName = "World Orb";
 <bqmie:icon_item:14>.addTooltip(format.gold("Lava World Orb"));
-<bqmie:icon_item:16>.addTooltip(format.gold("Alien World Orb"));
+<bqmie:icon_item:16>.addTooltip(format.gold("Home World Orb"));
+<bqmie:icon_item:17>.addTooltip(format.gold("Alien World Orb"));
 <bqmie:icon_item:13>.addTooltip(format.gold("Mystical World Orb"));
 <bqmie:icon_item:15>.addTooltip(format.gold("Distant World Orb"));
 <bqmie:icon_item:18>.addTooltip(format.gold("Ocean World Orb"));
-<bqmie:icon_item:22>.addTooltip(format.gold("Mushroom World Orb"));
+<bqmie:icon_item:22>.addTooltip(format.gold("Mooshroom World Orb"));
 val jelly = <forestry:royalJelly>;
 val obsidiorite = <taiga:obsidiorite_block>;
 

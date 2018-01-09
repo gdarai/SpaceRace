@@ -1,5 +1,13 @@
-// Disabled
-recipes.remove(<advancedrocketry:concrete>);
+// TODO
+recipes.remove(<advancedrocketry:forceFieldProjector>);
+// recipes.remove(<advancedrocketry:oreScanner>); // Prec Ass
+// recipes.remove(<advancedrocketry:atmAnalyser>); // Prec Ass
+// recipes.remove(<advancedrocketry:beacon>);
+// recipes.remove(<advancedrocketry:beaconFinder>); // Prec Ass
+// recipes.remove(<advancedrocketry:biomeChanger>); // Prec Ass
+// recipes.remove(<advancedrocketry:biomeScanner>); // Prec Ass
+// recipes.remove(<advancedrocketry:sealDetector>); // No receipt
+// recipes.remove(<advancedrocketry:oxygenDetection>);
 
 // Variables
 val glowstone = <minecraft:glowstone_dust>;
@@ -11,6 +19,7 @@ val tubeEmerald = <forestry:thermionicTubes:9>;
 val tubeDiamant = <forestry:thermionicTubes:5>;
 val tubeBlazing = <forestry:thermionicTubes:7>;
 val tubeGold = <forestry:thermionicTubes:4>;
+val tubeApa = <forestry:thermionicTubes:10>;
 val searedTank = <tconstruct:seared_tank:1>;
 val piston = <minecraft:piston>;
 val blazeRod = <ore:itemBlazeRod>;
@@ -38,6 +47,8 @@ val plateSteel = <ore:plateSteel>;
 val plateIri = <ore:plateIridium>;
 val plateTitan = <ore:plateTitanium>;
 val plateSilicon = <ore:plateSilicon>;
+val plateTitIri = <ore:plateTitaniumIridium>;
+val plateTriberium = <tconstruct:large_plate>.withTag({"Material":"triberium"});
 
 val scaffAlu = <immersiveengineering:metalDecoration1:5>;
 val scaffSteel = <immersiveengineering:metalDecoration1:1>;
@@ -78,6 +89,7 @@ val IENozzle = <immersiveengineering:toolupgrade:7>;
 val IEPump = <immersiveengineering:metalDevice0:5>;
 val IELightBlock = <immersiveengineering:metalDecoration0:4>;
 val IEHeavyBlock = <immersiveengineering:metalDecoration0:5>;
+val IERedstoneBlock = <immersiveengineering:metalDecoration0:3>;
 val IEFabric = <immersiveengineering:material:5>;
 val IRRope = <immersiveengineering:wirecoil:3>;
 
@@ -90,6 +102,7 @@ val pipeLiquid = <advancedrocketry:liquidPipe>;
 val pipeData = <advancedrocketry:dataPipe>;
 val pipeEnergy = <advancedrocketry:energyPipe>;
 val basicBlock = <libvulpes:structureMachine>;
+val advancedBlock = <libvulpes:advStructureMachine>;
 val display = <advancedrocketry:misc>;
 val ARCi0 = <advancedrocketry:ic:3>;
 val ARCi1 = <advancedrocketry:ic:4>;
@@ -113,11 +126,28 @@ val advancedTank = <advancedrocketry:liquidTank>;
 
 val airSeal = <bqmie:icon_item:24>;
 val solarCell = <powersuits:powerArmorComponent:18>;
+val magnet = <enderio:itemMagnet>;
+val infCrystal = <mysticalagriculture:infusion_crystal>.noReturn();
+val battery = <actuallyadditions:itemBattery>;
+val handle = <immersiveengineering:material:13>;
+
+val ARplug = <libvulpes:forgePowerInput>;
+val AAblockPalis = <actuallyadditions:blockCrystalEmpowered:1>;
+val AAempEmeraldBlock = <actuallyadditions:blockCrystalEmpowered:4>;
+
+// Concrete
+recipes.remove(<advancedrocketry:concrete>);
+mods.forestry.Carpenter.addRecipe(<advancedrocketry:concrete>, [[null, scaffSteel, null], [scaffSteel, <railcraft:generic:4>, scaffSteel], [null, scaffSteel, null]], 120, <liquid:tritonite_fluid> * 250);
 
 // AR Cables - Moved to Precission Assembler
 recipes.remove(pipeLiquid);
 recipes.remove(pipeData);
 recipes.remove(pipeEnergy);
+
+// AR Battery - Moved to Precission Assembler
+recipes.remove(<libvulpes:battery>);
+recipes.remove(<libvulpes:battery:1>);
+recipes.addShaped(<libvulpes:battery:1>, [[<libvulpes:battery>, plateTriberium, <libvulpes:battery>], [plateTriberium, plateTitIri, plateTriberium], [<libvulpes:battery>, plateTriberium, <libvulpes:battery>]]);
 
 // AR Coils
 recipes.remove(ARCoilCopper);
@@ -260,46 +290,72 @@ recipes.addShaped(<railcraft:armor_chestplate_steel>.withTag({ench: [{id: 128 as
 recipes.addShaped(<railcraft:armor_leggings_steel>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[ioSi, airSeal, ioSi], [ioSi, <railcraft:armor_leggings_steel>, ioSi], [ioSi, ioSi, ioSi]]);
 recipes.addShaped(<railcraft:armor_boots_steel>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[ioSi, airSeal, ioSi], [ioSi, <railcraft:armor_boots_steel>, ioSi], [ioSi, ioSi, ioSi]]);
 
-// TODO
-recipes.remove(<advancedrocketry:forceFieldProjector>);
-recipes.remove(<advancedrocketry:oreScanner>);
-recipes.remove(<advancedrocketry:atmAnalyser>);
-recipes.remove(<advancedrocketry:beacon>);
-recipes.remove(<advancedrocketry:beaconFinder>);
-recipes.remove(<advancedrocketry:biomeChanger>);
-recipes.remove(<advancedrocketry:biomeScanner>);
-recipes.remove(<advancedrocketry:sealDetector>);
-recipes.remove(<advancedrocketry:terraformer>);
-recipes.remove(<advancedrocketry:oxygenDetection>);
+recipes.addShaped(<mysticalagriculture:inferium_helmet>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:inferium_helmet>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:inferium_chestplate>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:inferium_chestplate>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:inferium_leggings>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:inferium_leggings>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:inferium_boots>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:inferium_boots>, airSeal], [null, null, null]]);
 
-// TODO - urgent
-recipes.remove(<advancedrocketry:stationMarker>);
-recipes.remove(<advancedrocketry:basicLaserGun>);
-recipes.remove(<advancedrocketry:spaceLaser>);
-recipes.remove(<advancedrocketry:smallAirlockDoor>);
-recipes.remove(<advancedrocketry:landingPad>);
-recipes.remove(<advancedrocketry:advRocketmotor>);
-recipes.remove(<advancedrocketry:altitudeController>);
-recipes.remove(<advancedrocketry:orientationController>);
-recipes.remove(<advancedrocketry:gravityController>);
-recipes.remove(<advancedrocketry:jackHammer>);
-recipes.remove(<advancedrocketry:gravityMachine>);
+recipes.addShaped(<mysticalagriculture:prudentium_helmet>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:prudentium_helmet>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:prudentium_chestplate>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:prudentium_chestplate>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:prudentium_leggings>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:prudentium_leggings>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:prudentium_boots>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:prudentium_boots>, airSeal], [null, null, null]]);
 
-// done - urgent
+recipes.addShaped(<mysticalagriculture:intermedium_helmet>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:intermedium_helmet>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:intermedium_chestplate>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:intermedium_chestplate>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:intermedium_leggings>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:intermedium_leggings>, airSeal], [null, null, null]]);
+recipes.addShaped(<mysticalagriculture:intermedium_boots>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, null, null], [airSeal, <mysticalagriculture:intermedium_boots>, airSeal], [null, null, null]]);
+
+recipes.addShaped(<mysticalagriculture:superium_helmet>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:superium_helmet>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:superium_chestplate>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:superium_chestplate>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:superium_leggings>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:superium_leggings>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:superium_boots>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:superium_boots>, airSeal], [null, airSeal, null]]);
+
+recipes.addShaped(<mysticalagriculture:supremium_helmet>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:supremium_helmet>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:supremium_chestplate>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:supremium_chestplate>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:supremium_leggings>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:supremium_leggings>, airSeal], [null, airSeal, null]]);
+recipes.addShaped(<mysticalagriculture:supremium_boots>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[null, airSeal, null], [airSeal, <mysticalagriculture:supremium_boots>, airSeal], [null, airSeal, null]]);
+
+// Not needed since DE armors are after Enchanter
+// mods.actuallyadditions.Empowerer.addRecipe(<draconicevolution:wyvern_helm>, <draconicevolution:wyvern_helm>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), airSeal, airSeal, airSeal, airSeal, 200000, 600);
+
+// DONE
 recipes.remove(<advancedrocketry:intake>);
 recipes.remove(<advancedrocketry:solarGenerator>);
 recipes.remove(<advancedrocketry:solarPanel>);
 recipes.remove(<advancedrocketry:spaceElevatorController>);
 recipes.remove(<advancedrocketry:railgun>);
 recipes.remove(<advancedrocketry:microwaveReciever>);
+recipes.remove(<advancedrocketry:stationMarker>);
+recipes.remove(<advancedrocketry:landingPad>);
+recipes.remove(<advancedrocketry:smallAirlockDoor>);
+recipes.remove(<advancedrocketry:basicLaserGun>);
+recipes.remove(<advancedrocketry:jackHammer>);
+recipes.remove(<advancedrocketry:orientationController>);
+recipes.remove(<advancedrocketry:altitudeController>);
+recipes.remove(<advancedrocketry:advRocketmotor>);
+recipes.remove(<advancedrocketry:gravityController>);
+recipes.remove(<advancedrocketry:gravityMachine>);
+recipes.remove(<advancedrocketry:spaceLaser>);
+recipes.remove(<advancedrocketry:terraformer>);
 
 recipes.addShaped(<advancedrocketry:intake>, [[IENozzle, IENozzle, IENozzle], [null, <actuallyadditions:blockLaserRelayFluids>, null], [IEPump, IEHeavyBlock, IEPump]]);
-mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarGenerator>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [IELightBlock, <libvulpes:forgePowerInput>, IELightBlock]], 120, <liquid:obsidiorite_fluid> * 2000);
+mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarGenerator>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [IELightBlock, ARplug, IELightBlock]], 120, <liquid:obsidiorite_fluid> * 2000);
 mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarPanel>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [scaffAlu, IELightBlock, scaffAlu]], 120, <liquid:nitrogen> * 1000);
-recipes.addShaped(<advancedrocketry:spaceElevatorController>, [[display ,display, display], [<actuallyadditions:blockLaserRelayAdvanced>, IEHeavyBlock, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);
-recipes.addShaped(<advancedrocketry:railgun>, [[opticalSensor ,ocRemote, opticalSensor], [<actuallyadditions:blockLaserRelayItemWhitelist>, ocRemote, <actuallyadditions:blockLaserRelayItemWhitelist>], [IEHeavyBlock, basicBlock, IEHeavyBlock]]);
-recipes.addShaped(<advancedrocketry:microwaveReciever>, [[opticalSensor ,opticalSensor, opticalSensor], [<actuallyadditions:blockLaserRelayAdvanced>, ocRemote, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);
-
+recipes.addShaped(<advancedrocketry:spaceElevatorController>, [[display, display, display], [<actuallyadditions:blockLaserRelayAdvanced>, IEHeavyBlock, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);
+recipes.addShaped(<advancedrocketry:railgun>, [[opticalSensor, ocRemote, opticalSensor], [<actuallyadditions:blockLaserRelayItemWhitelist>, ocRemote, <actuallyadditions:blockLaserRelayItemWhitelist>], [IEHeavyBlock, basicBlock, IEHeavyBlock]]);
+recipes.addShaped(<advancedrocketry:microwaveReciever>, [[opticalSensor, opticalSensor, opticalSensor], [<actuallyadditions:blockLaserRelayAdvanced>, ocRemote, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);
+recipes.addShaped(<advancedrocketry:stationMarker>, [[null, opticalSensor, <actuallyadditions:blockLaserRelay>], [basicBlock, basicBlock, magnet], [null, IERedstoneBlock, <actuallyadditions:blockLaserRelay>]]);
+recipes.addShaped(<advancedrocketry:landingPad>, [[null, null, null], [basicBlock, <advancedrocketry:launchpad>, basicBlock], [null, IERedstoneBlock, null]]);
+recipes.addShaped(<advancedrocketry:smallAirlockDoor>, [[ioSi, ioSi, ioSi], [basicBlock, hiTechDoor, basicBlock], [ioSi, IERedstoneBlock, ioSi]]);
+recipes.addShaped(<advancedrocketry:basicLaserGun>, [[battery, null, null], [ocPCB, infCrystal, infCrystal], [handle, null, null]]);
+recipes.addShaped(<advancedrocketry:jackHammer>, [[null, diamondHead, null], [infCrystal, ocPCB, infCrystal], [handle, <ore:blockObsidiorite>, handle]]);
+recipes.addShaped(<advancedrocketry:orientationController>, [[opticalSensor, IERedstoneBlock, opticalSensor], [rocketEngine1, basicBlock, rocketEngine1], [advancedTank, IERedstoneBlock, advancedTank]]);
+recipes.addShaped(<advancedrocketry:altitudeController>, [[advancedTank, opticalSensor, advancedTank], [<advancedrocketry:advRocketmotor>, basicBlock, <advancedrocketry:advRocketmotor>], [advancedTank, IERedstoneBlock, advancedTank]]);
+recipes.addShaped(<advancedrocketry:advRocketmotor>, [[pipeLiquid, pipeLiquid, pipeLiquid], [motorEnhanced, advancedTank, motorEnhanced], [IENozzle, rocketEngine1, IENozzle]]);
+recipes.addShaped(<advancedrocketry:gravityController>, [[tubeApa, ocRemote, tubeApa], [ocChip3, advancedBlock, ocChip3], [ocChip3, <opencomputers:case3>, ocChip3]]);
+recipes.addShaped(<advancedrocketry:gravityMachine>, [[motorEnhanced, <tp:flint_block>, motorEnhanced], [advancedBlock, advancedBlock, advancedBlock], [ARplug, ARplug, ARplug]]);
+recipes.addShaped(<advancedrocketry:spaceLaser>, [[plateTitIri, <tp:flint_block>, plateTitIri], [advancedBlock, <ore:blockSeismum>, advancedBlock], [AAblockPalis, <draconicevolution:draconic_core>, AAblockPalis]]);
+recipes.addShaped(<advancedrocketry:terraformer>, [[ARCoilIridium, <draconicevolution:crafting_pedestal:2>, ARCoilIridium], [advancedBlock, <draconicevolution:awakened_core>, advancedBlock], [AAempEmeraldBlock, <enderio:itemFrankenSkull:4>, AAempEmeraldBlock]]);
 
 // Done (Was most urgent)
 recipes.remove(<advancedrocketry:circleLight>);
@@ -308,12 +364,15 @@ recipes.remove(<advancedrocketry:satellite>);
 recipes.remove(satSolarPanel);
 recipes.remove(<advancedrocketry:satellitePowerSource:1>);
 recipes.remove(<advancedrocketry:jetPack>);
+recipes.remove(advancedBlock);
 recipes.addShaped(<advancedrocketry:circleLight>, [[binder, binder, binder], [binder, <immersiveengineering:metalDevice1:9>, binder], [glass, glass, glass]]); 
 recipes.addShaped(<advancedrocketry:drill>, [[diamondHead, diamondHead, diamondHead], [gearBoxSteel, IEHeavyBlock, gearBoxSteel], [scaffSteel, basicBlock, scaffSteel]]); 
 recipes.addShaped(<advancedrocketry:satellite>, [[satSolarPanel, IELightBlock, satSolarPanel], [scaffAlu, <opencomputers:case2>, scaffAlu], [satSolarPanel, IELightBlock, satSolarPanel]]); 
 recipes.addShaped(satSolarPanel, [[blockLens, blockLens, blockLens], [plateGold, basicBlock, plateGold], [pipeEnergy, pipeEnergy, pipeEnergy]]); 
 recipes.addShaped(<advancedrocketry:satellitePowerSource:1>, [[null, satSolarPanel, satSolarPanel], [scaffSteel, scaffSteel, pipeEnergy], [null, satSolarPanel, satSolarPanel]]); 
 recipes.addShaped(<advancedrocketry:jetPack>, [[medTank, <railcraft:backpack_apothecary_t1>, medTank], [pipeLiquid, pipeLiquid, pipeLiquid], [IENozzle, <minecraft:fire_charge>, IENozzle]]); 
+recipes.addShaped(advancedBlock, [[plateTitan, ocPCB, plateTitan], [ocPCB, basicBlock, ocPCB], [plateTitan, ocPCB, plateTitan]]); 
+
 // Moved to Precision Assembler
 recipes.remove(<advancedrocketry:satellitePrimaryFunction:1>);
 recipes.remove(<advancedrocketry:satellitePrimaryFunction:2>);

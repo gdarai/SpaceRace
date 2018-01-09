@@ -90,7 +90,6 @@ recipes.addShapeless(<davincisvessels:balloon:14>, [<davincisvessels:balloon:*>,
 recipes.addShapeless(<davincisvessels:balloon:15>, [<davincisvessels:balloon:*>, <minecraft:dye:0>]);
 
 // Bore Heads
-
 recipes.remove(<railcraft:borehead_bronze>);
 recipes.remove(<railcraft:borehead_iron>);
 recipes.remove(<railcraft:borehead_steel>);
@@ -101,8 +100,32 @@ mods.forestry.Carpenter.addRecipe(<railcraft:borehead_iron>, [[gearIron, gearIro
 mods.forestry.Carpenter.addRecipe(<railcraft:borehead_steel>, [[gearSteel, gearSteel, gearSteel], [gearSteel, <ore:blockSteel>, gearSteel], [gearSteel, gearSteel, gearSteel]], 120, <liquid:duranite_fluid> * 2000, null);
 mods.forestry.Carpenter.addRecipe(<railcraft:borehead_diamond>, [[gearSteel, gearSteel, gearSteel], [gearSteel, <ore:blockDiamond>, gearSteel], [gearSteel, gearSteel, gearSteel]], 120, <liquid:duranite_fluid> * 2000, null);
 
-// Tunel bore
-
+// Tunel bore and carts
 recipes.remove(<railcraft:bore>);
-recipes.addShaped(<railcraft:bore>, [[IEHeavy, gearBoxSteel, IEHeavy], [shipEngine, IEGenerator, shipEngine], [cartChest, cartChest, cartChest]]);
+recipes.remove(<railcraft:mow_track_relayer>);
+recipes.remove(<railcraft:mow_undercutter>);
 
+recipes.addShaped(<railcraft:bore>, [[IEHeavy, gearBoxSteel, IEHeavy], [shipEngine, IEGenerator, shipEngine], [cartChest, cartChest, cartChest]]);
+recipes.addShaped(<railcraft:mow_track_relayer>, [[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>], [gearBoxIron, <ore:blockSteel>, gearBoxIron], [<railcraft:gear>, cart, <railcraft:gear>]]);
+recipes.addShaped(<railcraft:mow_undercutter>, [[<ore:dyeOrange>, <minecraft:redstone_lamp>, <ore:dyeOrange>], [gearBoxIron, <ore:blockSteel>, gearBoxIron], [cart, <railcraft:borehead_bronze>,cart]]);
+
+// Posts
+recipes.addShapeless(<railcraft:post_metal:0>, [<railcraft:post_metal:*>, <minecraft:dye:15>]);
+recipes.addShapeless(<railcraft:post_metal:1>, [<railcraft:post_metal:*>, <minecraft:dye:14>]);
+recipes.addShapeless(<railcraft:post_metal:2>, [<railcraft:post_metal:*>, <minecraft:dye:13>]);
+recipes.addShapeless(<railcraft:post_metal:3>, [<railcraft:post_metal:*>, <minecraft:dye:12>]);
+recipes.addShapeless(<railcraft:post_metal:4>, [<railcraft:post_metal:*>, <minecraft:dye:11>]);
+recipes.addShapeless(<railcraft:post_metal:5>, [<railcraft:post_metal:*>, <minecraft:dye:10>]);
+recipes.addShapeless(<railcraft:post_metal:6>, [<railcraft:post_metal:*>, <minecraft:dye:9>]);
+recipes.addShapeless(<railcraft:post_metal:7>, [<railcraft:post_metal:*>, <minecraft:dye:8>]);
+recipes.addShapeless(<railcraft:post_metal:8>, [<railcraft:post_metal:*>, <minecraft:dye:7>]);
+recipes.addShapeless(<railcraft:post_metal:9>, [<railcraft:post_metal:*>, <minecraft:dye:6>]);
+recipes.addShapeless(<railcraft:post_metal:10>, [<railcraft:post_metal:*>, <minecraft:dye:5>]);
+recipes.addShapeless(<railcraft:post_metal:11>, [<railcraft:post_metal:*>, <minecraft:dye:4>]);
+recipes.addShapeless(<railcraft:post_metal:12>, [<railcraft:post_metal:*>, <minecraft:dye:3>]);
+recipes.addShapeless(<railcraft:post_metal:13>, [<railcraft:post_metal:*>, <minecraft:dye:2>]);
+recipes.addShapeless(<railcraft:post_metal:14>, [<railcraft:post_metal:*>, <minecraft:dye:1>]);
+recipes.addShapeless(<railcraft:post_metal:15>, [<railcraft:post_metal:*>, <minecraft:dye:0>]);
+
+
+// Dusts

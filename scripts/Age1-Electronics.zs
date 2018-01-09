@@ -356,3 +356,7 @@ recipes.remove(lantern);
 recipes.remove(<immersiveengineering:metalDevice1:13>);
 mods.forestry.Carpenter.addRecipe(lantern*2, [[<ore:nuggetIron>, lens, <ore:nuggetIron>], [lens, <ore:candle>, lens], [<ore:nuggetIron>, <minecraft:bowl>, <ore:nuggetIron>]], 20, <liquid:seed.oil> * 200, null);
 recipes.addShaped(<immersiveengineering:metalDevice1:13>, [[lantern, MVconn, lantern], [lens, gearBox, lens], [trPlank, <gendustry:MutagenTank>, trPlank]]);
+
+var torEndHead = <enderio:itemFrankenSkull:4>;
+var basicDECore = <draconicevolution:draconic_core>;
+mods.actuallyadditions.Empowerer.addRecipe(<minecraft:enchanting_table>, <minecraft:end_portal_frame>, torEndHead, basicDECore, torEndHead, basicDECore, 750000, 1200);

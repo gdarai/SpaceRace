@@ -7,7 +7,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  010      #  Planets and The Goal
-TEXT    #  To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the orbit of the Mooshroom Moon. And do what ever there, because I didn't ye thought about the final goal. Build me a monument using a lot of Adamant.\n\nNow Mooshroom Moon is orbitting the Blue Giant in the next Star System. And you will have to explore a lot to get there.
+TEXT    #  To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the orbit of the Mooshroom Moon. And do what ever there, because I didn't yet thought about the final goal. Build me a monument using a lot of Adamant.\n\nNow Mooshroom Moon is orbitting the Blue Giant in the next Star System. And you will have to explore a lot to get there.
 PREREQ  #  AND      #  000
 
 TASK    #  TRIGGER

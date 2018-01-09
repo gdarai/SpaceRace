@@ -1,0 +1,44 @@
+<book title="Darai's/SpaceRace/the Guide">
+  <chapter id="ch0">
+    <p bold="true" italics="true">Wellcome Player</p>
+    <p>This book you have in your hand is here for you. To make your life easier and give it some direction.</p>
+    <p>If you prefer Quest based guide it is also part of this modpack... so go ahead and follow the quests. Also there are some important notices so let me warn you about them:</p>
+    <link ref="ch1:pg0">Starting with Quests</link>
+    <link ref="ch1:pg1">What can Kill You?</link>
+    <link ref="ch1:pg2">Messed-up Recipes</link>
+    <link ref="ch1:pg3">Finding Resources</link>
+    <p>To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the orbit of the Mooshroom Moon. And do what ever there, because I didn't yet thought about the final goal. Build me a monument using a lot of Adamant.\n\nNow Mooshroom Moon is orbitting the Blue Giant in the next Star System. And you will have to explore a lot to get there.</p>
+    <p>Optionally you can go even further and get the most expensive item in the game:/The Creative Drawer Upgrade <image src="minecraft:items/coal" tw="16" th="16" /> </p>
+  </chapter>
+  <chapter id="ch1">
+    <page id="pg0">
+      <link ref="ch0">Back to Top</link>
+      <p bold="true" italics="true">Starting with Quests</p>
+      <p>The Quests can be easily accessed by the Better Questing Shortcut or by using the Questing Book.</p>
+      <p>All the information in this book here is also written into the quest book... but here in this book it is much free format with cross links. So at the end I decided to be nice to you and add here also this book. Don't throw it away, it can be a great source of info if searching in Quests will fail you.</p>
+      <p>What is in quests and isn't here is a Trading Post, where you as a Player can buy and sell resources... So if you like farming and hate mining, you can actually do a lot of farming and avoid some of the things you don't like.</p>
+    </page>
+    <page id="pg1">
+      <link ref="ch0">Back to Top</link>
+      <p bold="true" italics="true">What can Kill You?</p>
+      <p>There is a lot of danger in this modpack and I feel it would not be fair to not warn you ahead about some of them.</p>
+      <p>Avoid water... Aqua Creepers are deadly.</p>
+      <p>Beware Asteroid Belts, End, lava World and Ocean World. You can easily loose your rocket and everything on it... if you will be unlucky. So be ready for it.</p>
+      <p>Mobs get harder and harder with every planet... don't be suprised.</p>
+    </page>
+    <page id="pg2">
+      <link ref="ch0">Back to Top</link>
+      <p bold="true" italics="true">Messed-up Recipes</p>
+      <p>Some recipes displayed in the JEI are no longer valid and will not work. So by writing this chapter, I am trying to protect you from the disapointment.</p>
+      <p>You cannot make Charcoal in other way then using forestry charcoal pit.</p>
+      <p>You cannot use other fuel for Creosole than Charcoal.</p>
+      <p>You cannot smelt any Sharpening Kit, since I changed their recipes.</p>
+      <p>You cannot smelt or alloy Nihilite fluid. Only the Chemical Reactor recipe is valid.</p>
+      <p>And now the Refined Storage recipes. Following recipes are changed:</p>
+    </page>
+    <page id="pg3">
+      <link ref="ch0">Back to Top</link>
+      <p bold="true" italics="true">Finding Resourcess</p>
+    </page>
+  </chapter>
+</book>

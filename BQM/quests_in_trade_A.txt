@@ -1,0 +1,75 @@
+QUEST   #  TA00     #  Collecting Victory Points
+TEXT    #  There are multiple ways you can please our wievers. During your journey you will be given several opportunities. Each will be rewarded with victory points. You can exchange those victory points later for material or food or you can just pile them up to prove your viewers that you are the best player they ever saw.
+
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
+
+// ------->
+
+QUEST   #  TA01     #  Are you IN?
+TEXT    #  You must first prove that you are a serious farmer. Deliver 30 waterbowls and I will believe you.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  WaterBowl:30
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:100
+REWARD  #  RESET    #  TA20
+
+// ------->
+
+QUEST   #  TA10     #  Roots
+TEXT    #  Our wievers want to see you thrive. Deliver some most common seeds to prove you are the master of your land.
+PREREQ  #  XOR      #  TA01
+
+TASK    #  GIVE		#  HSeed0:64 # HSeed1:64 # HSeed2:64 # HSeed3:64 # HSeed4:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA11     #  Vegetables
+TEXT    #  So you can collect roots, Can you also collect vegetables?
+PREREQ  #  AND      #  TA10
+
+TASK    #  GIVE		#  HVegi0:64 # HVegi1:64 # HVegi2:64 # HVegi3:64 # HVegi4:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA12     #  Berries
+TEXT    #  Enough Vegetables, time for some Berries.
+PREREQ  #  AND      #  TA11
+
+TASK    #  GIVE		#  HBerry0:64 # HBerry1:64 # HBerry2:64 # HBerry3:64 # HBerry4:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA13     #  Wheats
+TEXT    #  Can your empire be built up without wheet and rice? Certainly not.
+PREREQ  #  AND      #  TA12
+
+TASK    #  GIVE		#  HWheat0:64 # HWheat1:64 # HWheat2:64 # HWheat3:64 # HWheat4:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA14     #  Fruits
+TEXT    #  And when you look up instead of down, you want to see great trees with wonderfull fruits.
+PREREQ  #  AND      #  TA13
+
+TASK    #  GIVE		#  HFruit0:64 # HFruit1:64 # HFruit2:64 # HFruit3:64 # HFruit4:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA20     #  Reset the Food Chain
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA14
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  XP       #  Levels:1
+REWARD  #  RESET    #  TA01
+REWARD  #  RESET    #  TA10
+REWARD  #  RESET    #  TA11
+REWARD  #  RESET    #  TA12
+REWARD  #  RESET    #  TA13
+REWARD  #  RESET    #  TA14

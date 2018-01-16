@@ -1,0 +1,98 @@
+<!--
+  Custom recipes that will not be over written by Ender IO are added here. Examples of recipes can be found in the
+  AlloySmelterRecipes_Core.xml and general format documentation in the SAGMillRecipes_Core/User.
+
+  As well as adding custom recipes to the operation of the Alloy Smelter, a vanilla furnace recipe can be controlled.
+  It can be disabled completely by simply adding this line:
+
+  <vanillaFurnaceRecipes enabled="false" />
+
+  It is also possible to selectively disable vanilla furnace recipes. The following example disables the smelting of iron
+  ingots, ender pearls, and any form of iron ore registered in the ore dictionary.
+
+  <vanillaFurnaceRecipes>
+
+	<exclude>
+      <itemStack modID="minecraft" itemName="iron_ingot" />
+      <itemStack modID="minecraft" itemName="ender_pearl" />
+      <itemStack oreDictionary="oreIron" />
+    </exclude>
+
+  </vanillaFurnaceRecipes>
+
+  Add this line to disable the creation of TE alloys using the Alloy Smelter.
+
+  <recipeGroup name="Thermal Expansion" enabled="false" />
+
+-->
+
+<AlloySmelterRecipes>
+  <vanillaFurnaceRecipes enabled="false" />
+  <recipeGroup name="Draconic" enabled="false" />
+  
+  <recipeGroup name="EnderIO" > <!-- Required for EnderIO to function correctly. -->
+    <recipe name="Conductive Iron" energyCost="7000" >
+      <input>
+        <itemStack modID="minecraft" itemName="redstone" />
+        <itemStack modID="minecraft" itemName="iron_ingot" />
+        <itemStack modID="taiga" itemName="ovium_nugget" />
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="4" exp="0.5" />
+      </output>
+    </recipe>
+    <recipe name="Pulsating Iron" energyCost="10000" >
+      <input>
+        <itemStack modID="taiga" itemName="imperomite_nugget" />
+        <itemStack modID="minecraft" itemName="iron_ingot" />
+        <itemStack modID="taiga" itemName="imperomite_nugget" />
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="5" exp="0.7" />
+      </output>
+    </recipe>
+    <recipe name="Soularium" energyCost="20000" >
+      <input>
+        <itemStack modID="immersiveengineering" itemName="metal" itemMeta="14" />
+        <itemStack modID="minecraft" itemName="soul_sand" />
+        <itemStack modID="immersiveengineering" itemName="metal" itemMeta="14" />
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="7" exp="0.7" />
+      </output>
+    </recipe>
+     <recipe name="Energetic Alloy" energyCost="10000" >
+      <input>
+        <itemStack modID="minecraft" itemName="redstone" />
+        <itemStack modID="immersiveengineering"  itemName="metal" itemMeta="16" />
+        <itemStack modID="minecraft" itemName="glowstone_dust" />
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="1" exp="0.7" />
+      </output>
+    </recipe>
+    <recipe name="Vibrant Alloy" energyCost="10000" >
+      <input>
+        <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="5" />
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="1" /> <!-- Energetic Alloy -->
+        <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="5" />
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="2" exp="1" />
+      </output>
+    </recipe> 
+  </recipeGroup>
+  <recipeGroup name="Custom">
+    <recipe name="Nihilite" energyCost="50000" >
+      <input>
+        <itemStack modID="taiga" itemName="vibranium_dust" />
+        <itemStack modID="taiga" itemName="solarium_dust" />
+        <itemStack modID="taiga" itemName="dilithium_crysal" />
+      </input>
+      <output>
+        <itemStack modID="taiga" itemName="nihilite_dust" exp="1" />
+      </output>
+    </recipe>  
+  </recipeGroup>
+
+</AlloySmelterRecipes>

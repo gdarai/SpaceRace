@@ -1,0 +1,253 @@
+QUEST   #  F00      #  To Lava Planet
+TEXT    #  So it is finally here. Using resources from the gas giant, build the Lava World Orb and travel to your first distant planet.
+PREREQ  #  AND      #  E60
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F10      #  To Alien Planet
+TEXT    #  As you may know, Lava Planet is the best known deposit of Tiberium in this star system. Also Dilithium and Titan deposits are here. Start a mine, harvest the ores and use them to make the Alien World Orb, the key to the next planet in the row.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F20      #  Mining the Alien Planet
+TEXT    #  Since the Alien Planet is the only source of Iridium in this solar system, you should start a mine also here.
+PREREQ  #  AND      #  F10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F21      #  Mining the Crystal Moon
+TEXT    #  Did you noticed the strange little moon of the Alien Planet? You should explore it, t contains deposits of Black Quartz and some other crystal structures.
+PREREQ  #  AND      #  F10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  F30      #  The Sand Moon
+TEXT    #  Your next stop should be the Red Sand Moon, orbiting the Blue Gas Giant. To get there, you need the Mystical World Orb. There is also the End Moon, but don't try to go there, before you will establish your base of operations on the Sand Moon.
+PREREQ  #  AND      #  F20  #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Fx00     #  Crush and Smelt
+TEXT    #  The big sturdy Grinder can be now replaced by a much more compact Crusher. If you want. Also Powered Furnace is now available. Also some other utilities, droppers, placers and breakers are now on.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx01     #  Capacitors
+TEXT    #  Some basic crystal tech allows you now to build Capacitors... a fast charge/discharge battery.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx02     #  Apiary Upgrades
+TEXT    #  Your Apiaries can be equipped with some pretty useful upgrades. Now you have the means to build those.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx03     #  Liquid Handling
+TEXT    #  Semi Automatic tank, capable of pulling and pushing the liquids from adjescent machines. This is a dream come true.
+PREREQ  #  AND      #  F00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx20     #  Chemical Reactor
+TEXT    #  So it is finally here, you can build the Chemical Reactor... the MODERN way to produce the rocket fuel.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx21     #  Better Capacitor
+TEXT    #  With new materials, you can now build much better capacitors.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx22     #  Leaf Eating Generator
+TEXT    #  Interesting application in the shape of Generator producing RF from consuming leaves is now opened for you.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx23     #  Better Factory
+TEXT    #  You can also improve your factory now.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx24     #  Dark Steel Gear
+TEXT    #  Did you noticed the strange new material Dark Steel? Do you know you can make Armor and Tools from it? Do you know that this armor can be Air Tight?
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx25     #  Conduits
+TEXT    #  Micro Conduits for Redstone Signal, Power, Fluids and even Items are now available to you.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx26     #  Inventory Panel
+TEXT    #  It seems possible now to build a much improved distributed storing system. If you want to try it out.
+PREREQ  #  AND      #  F20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx210    #  Empowering
+TEXT    #  Some weird Energy Infusing machine is available now to you. Will it be useful? Maybe.
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx211    #  Superb Capacitor
+TEXT    #  Even more improved Capacitors are now in your reach.
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx212    #  Solar Power
+TEXT    #  New Techs can also be used to improve your Solar Panels.
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx213    #  Refined Storage
+TEXT    #  It looks like, you will be able to digitize your items and store them on some portable drives. But are you sure it isn't too early for such a leap forward in tech?
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx214    #  Phantom Factory
+TEXT    #  Your understanding of the technology now jumped from the realm of Perfect to the realm of Magical.
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx215    #  Invoking Ores
+TEXT    #  Also new way of producing ores is now available. A specialized Ore Lens which changes the Atomic Reconstructor into the powerfull Ore Invoker.
+PREREQ  #  AND      #  F21
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx30     #  Draconic Energy
+TEXT    #  New Chapter of Draconic Technologies is now getting into your reach. And what is a better way to open it than with the omniscient Draconic Power Core? And Draconic Energy Crystals?
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx31     #  Enchanting with Style
+TEXT    #  You may be tired of random enchants. There is a better way with the new great Ender IO Enchanter.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx32     #  Super Farm
+TEXT    #  Another great Farming Tech is now within your reach.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx33     #  Blink?
+TEXT    #  Tired of elevators? Try Traveling Anchors and the Staff of Traveling.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx34     #  No Random Mutations
+TEXT    #  The Mutatron you used for the bees can be upgraded into the advanced version. No more randomness is necessary.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Fx35     #  Orbital Mining
+TEXT    #  It can be this easy. Aim your beam to a planet, fire and get the resources. Try it out.
+PREREQ  #  AND      #  F30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1

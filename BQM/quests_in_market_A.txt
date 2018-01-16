@@ -1,0 +1,102 @@
+QUEST   #  MA00     #  Spending Victory Points
+TEXT    #  Of course you can just pileup your victory points and at the end you will have the biggest score of all times. But, what if you could use those points to get some advantage over your competitors? Wait you don't know you have competitors? Well...
+PREREQ  #  AND      #  TA00
+
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:50
+
+// ------->
+
+QUEST   #  MAreset  #  Reset the Market
+TEXT    #  Close the market and prepare for another trading day?
+PREREQ  #  OR      #  <MAxo.*>
+
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:25
+REWARD  #  RESET    #  MAhalf
+REWARD  #  RESET    #  MAxi00
+REWARD  #  RESET    #  MAxi01
+REWARD  #  RESET    #  MAxo00
+REWARD  #  RESET    #  MAxo01
+REWARD  #  RESET    #  MAxo02
+
+// ------->
+
+QUEST   #  MAhalf   #  On the Way
+TEXT    #  Now to the market. Remember, you can buy only one thing.
+PREREQ  #  OR       #  <MAxi.*>
+
+TASK    #  TRIGGER
+REWARD  #  RESET    #  MAreset
+REWARD  #  RESET    #  MAres2
+
+// ------->
+
+QUEST   #  MAres2   #  Emergency Reset
+TEXT    #  Something went wrong? This should fix it. Normally use the reset on the right.
+
+TASK    #  TRIGGER
+REWARD  #  RESET    #  MAreset
+REWARD  #  RESET    #  MAhalf
+REWARD  #  RESET    #  MAxi00
+REWARD  #  RESET    #  MAxi01
+REWARD  #  RESET    #  MAxo00
+REWARD  #  RESET    #  MAxo01
+REWARD  #  RESET    #  MAxo02
+
+// ---------->
+// -- Market In
+// ---------->
+
+QUEST   #  MAxi00   #  Zombies
+TEXT    #  You didn't think it will be just... Here you are, take it and go, did you? Well, to earn your entance to the market, you must entertain the audience first.\n\nIn this case by killing Zombies.
+PREREQ  #  XOR      #  MA00  #  <MAxi.*>
+
+TASK    #  HUNT		#  Zombie:5
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:50
+
+// ------->
+
+QUEST   #  MAxi01   #  Witches
+TEXT    #  You can hunt for witches if you prefer them...
+PREREQ  #  XOR      #  MA00  #  <MAxi.*>
+
+TASK    #  HUNT		#  Witch:3
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:50
+
+// ---------->
+// -- Market Out
+// ---------->
+
+QUEST   #  MAxo00   #  Seeds
+TEXT    #  Are you missing some seeds? We have some available. Come and pick.
+PREREQ  #  XOR      #  <MAxo.*> # MAhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:100:
+TASK    #  TRIGGER
+REWARD  #  PICK     #  HCS000 # HCS001 # HCS002 # HCS003 # HCS004 # HCS005 # HCS006 # HCS007 # HCS008 # HCS009 # HCS010 # HCS011 # HCS012 # HCS013 # HCS014 # HCS015 # HCS016 # HCS017 # HCS018 # HCS019 # HCS020 # HCS021 # HCS022 # HCS023 # HCS024 # HCS025 # HCS026 # HCS027 # HCS028 # HCS029 # HCS030 # HCS031 # HCS032 # HCS033 # HCS034 # HCS035 # HCS036 # HCS037 # HCS038 # HCS039 # HCS040 # HCS041 # HCS042 # HCS043 # HCS044 # HCS045 # HCS046 # HCS047 # HCS048 # HCS049 # HCS050 # HCS051 # HCS052 # HCS053 # HCS054 # HCS055 # HCS056 # HCS057 # HCS058 # HCS059 # HCS060 # HCS061 # HCS062 # HCS063 # HCS064 # HCS065 # HCS066 # HCS067 # HCS068 # HCS069 # HCS070 # HCS071 # HCS072 # HCS073 # HCS074 # HCS075 # HCS076 # HCS077 # HCS078 # HCS079 # HCS080 # HCS081 # HCS082 # HCS083 # HCS084 # HCS085 # HCS086 # HCS087 # HCS088 # HCS089 # HCS090 # HCS091 # HCS092 # HCS093 # HCS094 # HCS095 # HCS096 # HCS097 # HCS098 # HCS099 # HCS100 # HCS101 # HCS102 # HCS103 # HCS104 # HCS105 # HCS106 # HCS107 # HCS108 # HCS109 # HCS110 # HCS111 # HCS112 # HCS113 # HCS114 # HCS115 # HCS116 # HCS117 # HCS118 # HCS119 # HCS120 # HCS121 # HCS122 # HCS123 # HCS124 # HCS125 # HCS126 # HCS127 # HCS128 # HCS129 # HCS130 # HCS131 # HCS132 # HCS133 # HCS134 # HCS135 # HCS136 # HCS137 # HCS138 # HCS139 # HCS140 # HCS141 # HCS142 # HCS143 # HCS144 # HCS145 # HCS146 # HCS147 # HCS148 # HCS149 # HCS150 # HCS151 # HCS152 # HCS153 # HCS154 # HCS155 # HCS156 # HCS157 # HCS158 # HCS159 # HCS160 # HCS161 # HCS162 # HCS163 # HCS164 # HCS165 # HCS166 # HCS167 # HCS168 # HCS169 # HCS170 # HCS171 # HCS172 # HCS173 # HCS174 # HCS175 # HCS176 # HCS177 # HCS178 # HCS179
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-100
+
+// ------->
+
+QUEST   #  MAxo01   #  Food
+TEXT    #  Soup? Sui vous plait?
+PREREQ  #  XOR      #  <MAxo.*> # MAhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:200:
+TASK    #  TRIGGER
+REWARD  #  PICK     #  HCSo2077:4 # HCSo2122:4 # HCSo2165:4 # HCSo2200:4 # HCSo2212:4 # HCSo2242:4 # HCSo2329:4 # HCSo2331:4 # HCSo2338:4 # HCSo2412:4 # HCSo2495:4 # HCSo2521:4 # HCSo2530:4 # HCSo2619:4 # HCSo2627:4 # HCSo2752:4 # HCSo2807:4 # HCSo2830:4 # HCSo2833:4 # HCSo2846:4 # HCSo2882:4 # HCSo2913:4 # HCSo2945:4 # HCSo2949:4 # HCSo3011:4 # HCSo3023:4 # HCSo3033:4 # HCSo10161:4 # HCSo10189:4 # HCSo10201:4 # HCSo10211:4 # HCSo10249:4 # HCSo10261:4 # HCSo10271:4 # HCSo10295:4 # HCSo10359:4 # HCSo10365:4 # HCSo10459:4 # HCSo10467:4 # HCSo10477:4 # HCSo10485:4 # HCSo10521:4 # HCSo10555:4 # HCSo10637:4 # HCSo10641:4 # HCSo10755:4 # HCSo10863:4 # HCSo10869:4 # HCSo10883:4 # HCSo11301:4 # HCSo11315:4 # HCSo11325:4 # HCSo11411:4
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-200
+
+// ------->
+
+QUEST   #  MAxo02   #  Material
+TEXT    #  Why spend time digging dirt? Would you liko to buy some instead?
+PREREQ  #  XOR      #  <MAxo.*> # MAhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:250:
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Ore00:16 # Ore10:8 # Ore11:8 # Ore12:8 # Ore13:8 # Ore14:8 # Ore15:8 # Ore16:8 # Ore20:4 #  Ore21:4 #  Ore22:4
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-200

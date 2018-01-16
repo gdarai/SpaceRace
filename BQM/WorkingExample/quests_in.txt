@@ -1,0 +1,18 @@
+QUEST   #  A1       #  Initial Warnings
+TEXT    #  Text A\nText B\n\nText C
+
+TASK    #  TRAVEL   #  Moon
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Bread:1     #  WaterBottle
+
+// ------->
+
+QUEST   #  A2       #  Quest 2
+TEXT    #  NO BIG TEXT
+PREREQ  #  AND      #  A1
+
+TASK    #  HAVE     #  Log:4
+TASK    #  CRAFT    #  Plank:16
+REWARD  #  PICK     #  SaplingOak  #  SaplingBirch
+REWARD  #  ALL      #  Log:16
+REWARD  #  XP       #  Levels:10

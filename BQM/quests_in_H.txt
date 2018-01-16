@@ -1,0 +1,118 @@
+QUEST   #  H00      #  The Distant World
+TEXT    #  Want to get to the Beta Star System? Your first destination there is the Distant World. Now, there are two Ways to get there. You can build the Uranium portal from the Nether, Or you can travel with your Warp Ship, if you will have the Distant World Orb.
+PREREQ  #  AND      #  G00  #  G30
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  H10      #  The Ocean World
+TEXT    #  Your next destination is the Ocean World. To get there, you will need the Ocean World Orb.
+PREREQ  #  AND      #  H00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  H20      #  The Mooshroom World
+TEXT    #  Your last destination is the Mooshroom Moon, orbiting the Gas Giant. The Only known source of Aurorium in this corner of the universe. To get there, you will need the Mooshroom World Orb.
+PREREQ  #  AND      #  H10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  H30      #  Winning the Race
+TEXT    #  Next to the Mooshroom Moon is a small rock called the Haven. Your final goal is to Terraform this rock and build there a Monument of Victory, using at least 1000 blocks of Violium, 1000 blocks of Astrium and 1000 blocks of Awakened Draconium. In the heart of the shrine must be displayed at least one Golden Player Head.
+PREREQ  #  AND      #  H20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Hx00     #  Draconium Gear
+TEXT    #  Using resources from this Hot World... You may be able of producing the Awakened Draconium Tools and Armor... and maybe go back and defeat the Chaos Guardian?
+PREREQ  #  AND      #  H00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx01     #  Terraforming
+TEXT    #  Advanced Rocketry Terraformer is a tool for planetary artists. Are you one of them?
+PREREQ  #  AND      #  H00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx02     #  Best Power Transfer
+TEXT    #  You may be able to reach the Draconic Power Crystals... the most ultimate RF transfer technology in the universe.
+PREREQ  #  AND      #  H00
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx10     #  Draconic Generator
+TEXT    #  Burn the Awakened Draconium? Are you insane?
+PREREQ  #  AND      #  H10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx11     #  Draconic Teleporter
+TEXT    #  Teleporters and Teleporting Gates? Are we this far?
+PREREQ  #  AND      #  H10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx12     #  Staff of Power
+TEXT    #  Did you ever felt infinitely powerful? Try this little one.
+PREREQ  #  AND      #  H10
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx20     #  Ultimate Mob Farm
+TEXT    #  There are no words to describe, what this thing can do. Just expect hordes and hordes of victims.
+PREREQ  #  AND      #  H20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx21     #  Advanced Teleporter
+TEXT    #  There are no words to describe, what this thing can do. Just expect hordes and hordes of victims.
+PREREQ  #  AND      #  H20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Hx22     #  Dimensional Transciever
+TEXT    #  What about sending your items across the dimensions? Do you want something like that?
+PREREQ  #  AND      #  H20
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1

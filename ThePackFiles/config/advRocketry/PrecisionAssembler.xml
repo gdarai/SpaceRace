@@ -1,0 +1,572 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="900" power ="100">
+		<input>
+			<oreDict>waferSilicon</oreDict>
+			<itemStack>opencomputers:material 2 11</itemStack>
+			<itemStack>opencomputers:material 1 12</itemStack>
+			<oreDict>ingotConstantan</oreDict>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemCircuitPlate</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="900" power ="100">
+		<input>
+			<oreDict>waferSilicon</oreDict>
+			<itemStack>opencomputers:material 2 11</itemStack>
+			<itemStack>opencomputers:material 1 12</itemStack>
+			<oreDict>ingotElectrum</oreDict>
+			<fluidStack>lumix_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemCircuitPlate 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="500" power ="60">
+		<input>
+			<oreDict>gemEmerald</oreDict>
+			<itemStack>advancedrocketry:ic</itemStack>
+			<oreDict>dustRedstone</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:dataUnit</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="900" power ="50">
+		<input>
+			<itemStack>advancedrocketry:itemCircuitPlate</itemStack>
+			<itemStack>minecraft:ender_eye</itemStack>
+			<oreDict>dustRedstone</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="1">
+		<input>
+			<oreDict>dustRedstone</oreDict>
+			<itemStack>minecraft:redstone_torch</itemStack>
+			<itemStack>advancedrocketry:ic</itemStack>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemUpgrade</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="1">
+		<input>
+			<itemStack>minecraft:fire_charge</itemStack>
+			<oreDict>gemDiamond</oreDict>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemUpgrade 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="1">
+		<input>
+			<itemStack>libvulpes:motor</itemStack>
+			<oreDict>rodTitanium</oreDict>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemUpgrade 1 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="1">
+		<input>
+			<itemStack>minecraft:leather_boots</itemStack>
+			<itemStack>minecraft:feather</itemStack>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemUpgrade 1 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="1">
+		<input>
+			<itemStack>libvulpes:battery</itemStack>
+			<itemStack>advancedrocketry:lens</itemStack>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemUpgrade 1 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1000" power ="1">
+		<input>
+			<itemStack>libvulpes:battery</itemStack>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<oreDict>plateTin</oreDict>
+			<itemStack>advancedrocketry:lens</itemStack>
+			<itemStack>advancedrocketry:misc</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:atmAnalyser</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1000" power ="1">
+		<input>
+			<itemStack>libvulpes:battery</itemStack>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<oreDict>plateTin</oreDict>
+			<itemStack>advancedrocketry:ic 1 1</itemStack>
+			<itemStack>advancedrocketry:misc</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:biomeChanger</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1000" power ="1">
+		<input>
+			<oreDict>stickCopper 2</oreDict>
+			<oreDict>stickTitanium</oreDict>
+			<oreDict>waferSilicon 2</oreDict>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:satellitePrimaryFunction 1 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1">
+		<input>
+			<itemStack>minecraft:glass 3</itemStack>
+			<oreDict>itemLens 3</oreDict>
+			<oreDict>stickIron</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:blockLens</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1">
+		<input>
+			<itemStack>advancedrocketry:ic 1 1</itemStack>
+			<itemStack>advancedrocketry:itemUpgrade 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:beaconFinder</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="10">
+		<input>
+			<itemStack>enderio:itemMaterial 2</itemStack>
+			<oreDict>ingotNiob</oreDict>
+			<oreDict>dustObsidian 2</oreDict>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<itemStack>opencomputers:material 1 9</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 1 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="10">
+		<input>
+			<itemStack>enderio:itemMaterial 2</itemStack>
+			<oreDict>ingotNiob</oreDict>
+			<oreDict>ingotBronze</oreDict>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<itemStack>opencomputers:material 1 8</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 1 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="10">
+		<input>
+			<itemStack>enderio:itemMaterial 2</itemStack>
+			<oreDict>ingotNiob</oreDict>
+			<oreDict>gemLapis</oreDict>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<itemStack>opencomputers:material 1 8</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 1 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="100">
+		<input>
+			<oreDict>plateSilicon</oreDict>
+			<oreDict>ingotGold</oreDict>
+			<oreDict>ingotSilver</oreDict>
+			<oreDict>ingotConstantan</oreDict>
+			<oreDict>dustRedstone 4</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 4 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="10">
+		<input>
+			<itemStack>opencomputers:material 1 3</itemStack>
+			<fluidStack>obsidiorite_fluid 250</fluidStack>
+			<itemStack>opencomputers:material 4 7</itemStack>
+			<oreDict>dustRedstone 4</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="40">
+		<input>
+			<oreDict>dustSilicon</oreDict>
+			<oreDict>nuggetIron</oreDict>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+			<itemStack>opencomputers:material 4 7</itemStack>
+			<itemStack>opencomputers:material 1 8</itemStack>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="40">
+		<input>
+			<oreDict>dustSilicon</oreDict>
+			<oreDict>nuggetGold</oreDict>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<oreDict>gemQuartz</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="160">
+		<input>
+			<itemStack>opencomputers:material 1 5</itemStack>
+			<itemStack>advancedrocketry:itemCircuitPlate</itemStack>
+			<itemStack>taiga:obsidiorite_ingot</itemStack>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="160">
+		<input>
+			<itemStack>opencomputers:material 1 5</itemStack>
+			<itemStack>advancedrocketry:itemCircuitPlate 1 1</itemStack>
+			<itemStack>taiga:ovium_ingot</itemStack>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:ic 2 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="20">
+		<input>
+			<itemStack>advancedrocketry:lens 3</itemStack>
+			<itemStack>opencomputers:material 1 8</itemStack>
+			<itemStack>opencomputers:material 2 7</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:misc</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="200">
+		<input>
+			<itemStack>immersiveengineering:faradaySuit_head</itemStack>
+			<itemStack>harvestcraft:wovencottonitem 6</itemStack>
+			<oreDict>wireSteel 10</oreDict>
+			<itemStack>opencomputers:component 1</itemStack>
+			<itemStack>advancedrocketry:misc 1</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:spaceHelmet</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="200">
+		<input>
+			<itemStack>immersiveengineering:faradaySuit_chest</itemStack>
+			<itemStack>harvestcraft:wovencottonitem 12</itemStack>
+			<oreDict>wireSteel 30</oreDict>
+			<itemStack>opencomputers:component 1</itemStack>
+			<itemStack>opencomputers:material 3 9</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:spaceChestplate</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="200">
+		<input>
+			<itemStack>immersiveengineering:faradaySuit_legs</itemStack>
+			<itemStack>harvestcraft:wovencottonitem 10</itemStack>
+			<oreDict>wireSteel 20</oreDict>
+			<itemStack>opencomputers:material 1 9</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:spaceLeggings</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="200">
+		<input>
+			<itemStack>immersiveengineering:faradaySuit_feet</itemStack>
+			<itemStack>harvestcraft:wovencottonitem 8</itemStack>
+			<oreDict>wireSteel 10</oreDict>
+			<itemStack>opencomputers:material 2 8</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:spaceBoots</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="200">
+		<input>
+			<itemStack>enderio:itemMaterial 2 1</itemStack>
+			<itemStack>immersiveengineering:material 1 5</itemStack>
+			<itemStack>immersiveengineering:wirecoil 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:energyPipe</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="200">
+		<input>
+			<itemStack>enderio:itemMaterial 2 1</itemStack>
+			<itemStack>immersiveengineering:material 1 5</itemStack>
+			<itemStack>immersiveengineering:wirecoil 4 5</itemStack>			
+		</input>
+		<output>
+			<itemStack>advancedrocketry:dataPipe</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="200">
+		<input>
+			<itemStack>enderio:itemMaterial 2 1</itemStack>
+			<itemStack>immersiveengineering:material 1 5</itemStack>
+			<itemStack>immersiveengineering:metalDevice1 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:liquidPipe</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="40">
+		<input>
+			<itemStack>enderio:itemMaterial 1</itemStack>
+			<oreDict>ingotConstantan</oreDict>
+			<oreDict>ingotIron</oreDict>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<itemStack>opencomputers:material 2 8</itemStack>
+			<itemStack>opencomputers:material 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="40">
+		<input>
+			<itemStack>enderio:itemMaterial 3 1</itemStack>
+			<itemStack>opencomputers:screen1</itemStack>
+			<itemStack>opencomputers:material 3 9</itemStack>
+			<itemStack>opencomputers:material 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>opencomputers:screen2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="40">
+		<input>
+			<itemStack>enderio:itemMaterial 3 1</itemStack>
+			<itemStack>opencomputers:screen1</itemStack>
+			<itemStack>opencomputers:material 3 10</itemStack>
+			<itemStack>opencomputers:material 2 6</itemStack>
+		</input>
+		<output>
+			<itemStack>opencomputers:screen3</itemStack>
+		</output>
+	</Recipe>	
+	<Recipe timeRequired="600" power ="50">
+		<input>
+			<oreDict>scaffoldingAluminum</oreDict>						
+			<itemStack>mysticalagriculture:inferium_tool_core</itemStack>
+			<itemStack>advancedrocketry:itemCircuitPlate 2</itemStack>
+			<itemStack>advancedrocketry:satellitePrimaryFunction 3</itemStack>
+			<fluidStack>ardite 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:satellitePrimaryFunction 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="250">
+		<input>
+			<oreDict>scaffoldingAluminum</oreDict>
+			<itemStack>mysticalagriculture:prudentium_tool_core</itemStack>
+			<itemStack>libvulpes:productcrystal 3</itemStack>
+			<itemStack>advancedrocketry:itemCircuitPlate 6</itemStack>
+			<itemStack>advancedrocketry:satellitePrimaryFunction 1</itemStack>
+			<fluidStack>cobalt 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:satellitePrimaryFunction 1 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="250">
+		<input>
+			<oreDict>beeComb 3</oreDict>
+			<itemStack>mysticalagriculture:prudentium_tool_core</itemStack>
+			<oreDict>dustMeteorite 2</oreDict>
+			<itemStack>advancedrocketry:wafer 3</itemStack>
+			<fluidStack>cobalt 500</fluidStack>
+		</input>
+		<output>
+			<itemStack>gendustry:BeeReceptacle</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="250">
+		<input>
+			<oreDict>dustArdite 3</oreDict>
+			<itemStack>opencomputers:component 1 1</itemStack>
+			<itemStack>enderio:itemMaterial 3</itemStack>
+			<itemStack>advancedrocketry:itemCircuitPlate 2</itemStack>
+			<fluidStack>nitronite_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>gendustry:GeneticsProcessor</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="500">
+		<input>
+			<itemStack>actuallyadditions:itemMisc 1 18</itemStack>
+			<fluidStack>iox_fluid 2000</fluidStack>
+			<oreDict>dustArdite 4</oreDict>
+			<oreDict>dustLapis 4</oreDict>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemColorLens</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="100">
+		<input>
+			<itemStack>actuallyadditions:itemExplosionLens</itemStack>
+			<itemStack>actuallyadditions:blockCrystal 2 0</itemStack>
+			<itemStack>actuallyadditions:blockCrystal 2 3</itemStack>			
+			<itemStack>advancedrocketry:bucketNitrogen 3 0</itemStack>			
+			<fluidStack>fractum_fluid 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemDamageLens</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="250">
+		<input>
+			<itemStack>actuallyadditions:itemCrystal 2 5</itemStack>
+			<itemStack>advancedrocketry:bucketNitrogen 1 0</itemStack>			
+			<fluidStack>seismum_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>enderio:itemBasicCapacitor</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="250">
+		<input>
+			<itemStack>enderio:itemBasicCapacitor 2 0</itemStack>
+			<itemStack>advancedrocketry:bucketNitrogen 1 0</itemStack>			
+			<itemStack>libvulpes:productdust 2 10</itemStack>			
+			<fluidStack>seismum_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>enderio:itemBasicCapacitor 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="250">
+		<input>
+			<itemStack>enderio:itemBasicCapacitor 2 1</itemStack>
+			<itemStack>advancedrocketry:bucketNitrogen 1 0</itemStack>			
+			<itemStack>enderio:itemMaterial 2 12</itemStack>			
+			<fluidStack>seismum_fluid 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>enderio:itemBasicCapacitor 1 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="500">
+		<input>
+			<itemStack>minecraft:nether_star 1 0</itemStack>
+			<itemStack>minecraft:flint 9 0</itemStack>			
+			<fluidStack>ovium_fluid 2000</fluidStack>
+		</input>
+		<output>
+			<itemStack>tp:flint_block</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="80">
+		<input>
+			<itemStack>actuallyadditions:blockCrystal 2 0</itemStack>
+			<oreDict>plateAluminum 4</oreDict>
+			<fluidStack>eezo_fluid 2000</fluidStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:battery 4 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="500">
+		<input>
+			<itemStack>actuallyadditions:blockDisplayStand</itemStack>
+			<itemStack>actuallyadditions:itemCrystal 8 0</itemStack>
+			<itemStack>actuallyadditions:itemCrystal 8 1</itemStack>
+			<itemStack>actuallyadditions:itemMisc 16 5</itemStack>
+			<itemStack>advancedrocketry:crystal 4 0</itemStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:blockEmpowerer</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="500">
+		<input>
+			<itemStack>enderio:itemTravelStaff</itemStack>
+			<itemStack>enderio:itemMachinePart</itemStack>
+			<itemStack>actuallyadditions:itemCrystal 8 3</itemStack>
+			<itemStack>advancedrocketry:crystal 16 0</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:blockTravelAnchor</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2400" power ="80">
+		<input>
+			<itemStack>gendustry:MutagenTank</itemStack>
+			<itemStack>enderio:itemBasicCapacitor</itemStack>
+			<itemStack>gendustry:GeneticsProcessor</itemStack>
+			<itemStack>advancedrocketry:crystal 2 0</itemStack>
+			<fluidStack>uranium 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>gendustry:GeneSampleBlank</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1200" power ="80">
+		<input>
+			<itemStack>enderio:itemMagnet 3 0</itemStack>
+			<itemStack>enderio:itemBasicCapacitor 2 1</itemStack>
+			<itemStack>taiga:dilithium_crystal 2 0</itemStack>
+			<fluidStack>uranium 250</fluidStack>
+		</input>
+		<output>
+			<itemStack>powersuits:powerArmorComponent 1 19</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

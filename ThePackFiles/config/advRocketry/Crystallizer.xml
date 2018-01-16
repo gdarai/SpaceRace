@@ -1,0 +1,149 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="1200" power ="1000">
+		<input>
+			<oreDict>dustDilithium</oreDict>
+			<oreDict>dustObsidiorite</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productcrystal</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotSilicon</oreDict>
+			<oreDict>nuggetSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productboule 1 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>nuggetElectrum</oreDict>
+			<oreDict>dustProxii</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="20">
+		<input>
+			<itemStack>opencomputers:material 1 7</itemStack>
+			<oreDict>dustProxii</oreDict>
+			<oreDict>nuggetIron</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="20">
+		<input>
+			<itemStack>opencomputers:material 2 7</itemStack>
+			<oreDict>dustProxii</oreDict>
+			<oreDict>ingotEezo</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="20">
+		<input>
+			<itemStack>opencomputers:material 3 7</itemStack>
+			<oreDict>dustProxii</oreDict>
+			<oreDict>dustDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 1 10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="40" power ="1000">
+		<input>
+			<oreDict>dustKarmesine 4</oreDict>
+			<itemStack>minecraft:redstone</itemStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemCrystal</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="500">
+		<input>
+			<oreDict>dustFractum 2</oreDict>
+			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
+			<oreDict>dustLapis 4</oreDict>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemCrystal 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="2000">
+		<input>
+			<oreDict>dustFractum 2</oreDict>
+			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
+			<oreDict>dustDiamond 4</oreDict>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemCrystal 1 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="1000">
+		<input>
+			<oreDict>dustFractum 2</oreDict>
+			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
+			<itemStack>actuallyadditions:itemDust 4 6</itemStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemCrystal 1 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="2000">
+		<input>
+			<oreDict>dustFractum 2</oreDict>
+			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
+			<itemStack>actuallyadditions:itemDust 4 3</itemStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:itemCrystal 1 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="1200">
+		<input>
+			<oreDict>dustKarmesine 1</oreDict>
+			<itemStack>advancedrocketry:moonTurf 3 0</itemStack>
+		</input>
+		<output>
+			<itemStack>powersuits:powerArmorComponent 1 14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="180" power ="250">
+		<input>
+			<itemStack>tp:golden_apple 4 0</itemStack>
+			<itemStack>actuallyadditions:itemCrystalEmpowered 9 4</itemStack>
+			<itemStack>tconstruct:materials 4 11</itemStack>
+		</input>
+		<output>
+			<itemStack>tp:diamond_apple 1 0</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

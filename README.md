@@ -1,2 +1,0 @@
-# SpaceRace
-Minecraft Modpack

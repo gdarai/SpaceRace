@@ -1,0 +1,62 @@
+
+{
+  "ID": 166,
+  "Name": "lavaland",
+  "Class": "net.minecraft.world.biome.BiomeMesa",
+  "Root Height": 0.45,
+  "Height Variation": 0.3,
+  "Top Block": "minecraft:lava",
+  "Filler Block": "minecraft:lava",
+  "Grass Color": "13114910",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "16777215",
+  "Temperature": 2.0,
+  "Humidity": 0.0,
+  "Water Tint": 16777215,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "HOT",
+    "DRY",
+    "SAVANNA",
+    "FOREST"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityMagmaCube",
+      "Weight": 50,
+      "Min Group Count": 2,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityBlaze",
+      "Weight": 100,
+      "Min Group Count": 3,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityGhast",
+      "Weight": 100,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityPigZombie",
+      "Weight": 100,
+      "Min Group Count": 6,
+      "Max Group Count": 15
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntitySilverfish",
+      "Weight": 100,
+      "Min Group Count": 5,
+      "Max Group Count": 8
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

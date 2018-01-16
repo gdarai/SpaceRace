@@ -1,0 +1,8 @@
+LINE         #  A         #  Basic Guides
+SIZE         #  4:4     #  0:100
+TEXT         #  Some basic description
+
+QUEST        #  A1        #  0:0       #  24    #  Log		#  MAIN
+QUEST        #  A2        #  0:10      #  24    #  Plank
+
+// ------->

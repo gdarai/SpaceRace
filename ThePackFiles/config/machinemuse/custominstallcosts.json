@@ -1,0 +1,1570 @@
+[
+	{
+		"moduleName":"3D Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"3D Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"3D Armor",
+		"itemName":"productplate",
+		"modId":"libvulpes",
+		"itemMetadata":9,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Citizen Joe Style",
+		"itemName":"plate",
+		"modId":"railcraft",
+		"itemMetadata":6,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Citizen Joe Style",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Active Camouflage",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":13,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Active Camouflage",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Active Camouflage",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Advanced Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Advanced Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Advanced Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Advanced Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Advanced Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":18,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Advanced Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Apiarist Armor",
+		"itemName":"smoker",
+		"modId":"forestry",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Apiarist Armor",
+		"itemName":"craftingMaterial",
+		"modId":"forestry",
+		"itemMetadata":3,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Apiarist Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Aqua Affinity",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Aqua Affinity",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Aqua Affinity",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Auto-Feeder",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Auto-Feeder",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":21,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Axe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Axe",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Axe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Axe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Basic Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Basic Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Basic Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Binoculars",
+		"itemName":"blockLens",
+		"modId":"advancedrocketry",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Binoculars",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Binoculars",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Blade Launcher",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Blade Launcher",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Blade Launcher",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Blade Launcher",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Blink Drive",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Blink Drive",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":13,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Blink Drive",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Blink Drive",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Chisel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Chisel",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Compass",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Compass",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Compass",
+		"itemName":"compass",
+		"modId":"bibliocraft",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Clock",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Clock",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Clock",
+		"itemName":"clock",
+		"modId":"minecraft",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Clock",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Custom Colour Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Custom Colour Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Custom Colour Module",
+		"itemName":"printerInkColor",
+		"modId":"openprinter",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Custom Colour Module",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Iron Plating",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Iron Plating",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":10,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Diamond Drill Upgrade",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Diamond Drill Upgrade",
+		"itemName":"itemDust",
+		"modId":"actuallyadditions",
+		"itemMetadata":2,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Diamond Plating",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Diamond Plating",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Diamond Plating",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":11,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Dimensional Tear Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":8,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Dimensional Tear Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":13,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Dimensional Tear Generator",
+		"itemName":"dislocator",
+		"modId":"draconicevolution",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Dimensional Tear Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Dimensional Tear Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":3,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Elite Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":8,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Elite Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Elite Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Energy Shield",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Energy Shield",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Energy Shield",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Field Tinker Module",
+		"itemName":"blockLens",
+		"modId":"advancedrocketry",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Field Tinker Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Field Tinker Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Flight Control",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Flight Control",
+		"itemName":"blockLens",
+		"modId":"advancedrocketry",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Flight Control",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Flight Control",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":19,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Flint and Steel",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Flint and Steel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Flint and Steel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Glider",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":3,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Glider",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Glider",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Glider",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Glow Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Glow Module",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Glow Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Glow Module",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Grafter",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Grafter",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Grafter",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Grafter",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Heat Sink",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":10,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Heat Sink",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"In-Place Assembler",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"In-Place Assembler",
+		"itemName":"blockLens",
+		"modId":"advancedrocketry",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"In-Place Assembler",
+		"itemName":"itemCrafterOnAStick",
+		"modId":"actuallyadditions",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Jet Boots",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Jet Boots",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Jet Boots",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Jet Boots",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Jetpack",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Jetpack",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Jetpack",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":12
+	},
+	{
+		"moduleName":"Jetpack",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Jump Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Jump Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Jump Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Jump Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Kinetic Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Kinetic Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Kinetic Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Kinetic Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Leaf Blower",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Leaf Blower",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Leaf Blower",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Leaf Blower",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":21,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Lightning Summoner",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Lightning Summoner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Lightning Summoner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Lightning Summoner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":12
+	},
+	{
+		"moduleName":"Lux Capacitor",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":4,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Lux Capacitor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Lux Capacitor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Lux Capacitor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Magnet",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Magnet",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":19,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Magnet",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Magnet",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Mechanical Assistance",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Mechanical Assistance",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Mechanical Assistance",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Mechanical Assistance",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Melee Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Melee Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Melee Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Mob Repulsor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Mob Repulsor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Mob Repulsor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Mob Repulsor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":19,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Night Vision",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Night Vision",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Night Vision",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":2,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Ore Scanner",
+		"itemName":"productcrystal",
+		"modId":"libvulpes",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Ore Scanner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Ore Scanner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Ore Scanner",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Parachute",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":9,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Parachute",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Pickaxe",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Pickaxe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Pickaxe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Plasma Cannon",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Plasma Cannon",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Plasma Cannon",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Prototype OmniProbe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Prototype OmniProbe",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Prototype OmniProbe",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Prototype OmniProbe",
+		"itemName":"resource",
+		"modId":"rscircuits",
+		"itemMetadata":4,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Prototype OmniWrench",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Prototype OmniWrench",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Prototype OmniWrench",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":1 
+	},
+	{
+		"moduleName":"Prototype OmniWrench",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Railgun",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Railgun",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":21,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Railgun",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Railgun",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Refined Storage Wireless Grid",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":20,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Refined Storage Wireless Grid",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Refined Storage Wireless Grid",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Refined Storage Wireless Grid",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":19,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Rototiller",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Rototiller",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Rototiller",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Scoop",
+		"itemName":"craftingMaterial",
+		"modId":"forestry",
+		"itemMetadata":3,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Scoop",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Scoop",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Shears",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Shears",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Shears",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Shock Absorber",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":4,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Shock Absorber",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Shock Absorber",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Shock Absorber",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Shovel",
+		"itemName":"prudentium_tool_core",
+		"modId":"mysticalagriculture",
+		"itemMetadata":0,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Shovel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Shovel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Shovel",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":18,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Solar Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Sprint Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Sprint Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Sprint Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Swim Boost",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":17,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Swim Boost",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":6
+	},
+	{
+		"moduleName":"Swim Boost",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Thermal Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":12,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Thermal Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":10
+	},
+	{
+		"moduleName":"Thermal Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":0,
+		"itemQuantity":10 
+	},
+	{
+		"moduleName":"Thermal Generator",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Transparent Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":13,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Transparent Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Transparent Armor",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":19,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Ultimate Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":8,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Ultimate Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":11,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Ultimate Battery",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Uphill Step Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":14,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Uphill Step Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":2,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Uphill Step Assist",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Water Electrolyzer",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Water Electrolyzer",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":5,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Water Electrolyzer",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":15,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Water Tank",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":10,
+		"itemQuantity":5
+	},
+	{
+		"moduleName":"Water Tank",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":6,
+		"itemQuantity":1
+	},
+	{
+		"moduleName":"Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":10,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":11,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":2
+	},
+	{
+		"moduleName":"Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Liquid Nitrogen Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":11,
+		"itemQuantity":4
+	},
+	{
+		"moduleName":"Liquid Nitrogen Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":1,
+		"itemQuantity":8
+	},
+	{
+		"moduleName":"Liquid Nitrogen Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":7,
+		"itemQuantity":3
+	},
+	{
+		"moduleName":"Liquid Nitrogen Cooling System",
+		"itemName":"powerArmorComponent",
+		"modId":"powersuits",
+		"itemMetadata":22,
+		"itemQuantity":3
+	}
+]

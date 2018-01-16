@@ -1,0 +1,24 @@
+{
+  "_name": "Zombie",
+  "drops": [],
+  "pre_stats": [],
+  "stats": [
+	{
+      "_comment": "if this mob is spawning in the overworld",
+      "function": "if_in_dimension_0",
+      "functions": [
+		{
+		  "_comment": "make all of them NOT babies",
+		  "function": "nbt",
+          "tags": [
+            {
+              "function": "boolean",
+              "name": "IsBaby",
+              "value": false
+            }
+          ]
+		}
+	  ]
+    }
+  ]
+}

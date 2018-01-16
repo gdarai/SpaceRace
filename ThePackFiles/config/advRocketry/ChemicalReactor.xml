@@ -1,0 +1,62 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="1200" power ="640">
+		<input>
+			<itemStack>advancedrocketry:carbonScrubberCartridge 1 172800</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:carbonScrubberCartridge</itemStack>
+			<itemStack>minecraft:coal 1 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1">
+		<input>
+			<itemStack>minecraft:bone</itemStack>
+			<fluidStack>nitrogen 10</fluidStack>
+		</input>
+		<output>
+			<itemStack>minecraft:dye 20 15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="1000">
+		<input>
+			<fluidStack>hydrogen 1000</fluidStack>
+			<fluidStack>nitrogen 1000</fluidStack>
+			<itemStack>actuallyadditions:itemDust 1 2</itemStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel 100</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="6000" power ="1000">
+		<input>
+			<fluidStack>solarium_fluid 1000</fluidStack>
+			<fluidStack>vibranium_fluid 1000</fluidStack>
+			<itemStack>mysticalagriculture:soul_dust</itemStack>
+		</input>
+		<output>
+			<fluidStack>nihilite_fluid 100</fluidStack>
+		</output>
+	</Recipe>	
+</Recipes>

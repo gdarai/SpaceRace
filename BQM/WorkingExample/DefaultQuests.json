@@ -1,0 +1,212 @@
+{
+	"questSettings": {
+		"betterquesting": {
+			"livesMax": 10,
+			"livesDef": 3,
+			"home_anchor_x": 0.5,
+			"home_anchor_y": 0.0,
+			"hardcore": false,
+			"home_image": "betterquesting:textures/gui/default_title.png",
+			"editMode": false,
+			"home_offset_x": -128,
+			"home_offset_y": 0
+		}
+	},
+	"questDatabase": [
+		{
+			"properties": {
+				"betterquesting": {
+					"name": "Initial Warnings",
+					"desc": "Text A\nText B\n\nText C",
+					"snd_complete": "minecraft:entity.player.levelup",
+					"snd_update": "minecraft:entity.player.levelup",
+					"icon": {
+						"id": "minecraft:log",
+						"Count": 1,
+						"OreDict": "logWood",
+						"Damage": 0
+					},
+					"autoClaim": true,
+					"isSilent": false,
+					"partySingleReward": false,
+					"isMain": true,
+					"simultaneous": false,
+					"globalShare": false,
+					"lockedProgress": false,
+					"taskLogic": "AND",
+					"repeatTime": -1,
+					"questLogic": "AND"
+				}
+			},
+			"tasks": [
+				{
+					"name": "Moon",
+					"posX": 1000,
+					"posY": 100,
+					"posZ": 1000,
+					"dimension": 0,
+					"range": 10,
+					"visible": true,
+					"hideInfo": false,
+					"taskID": "bq_standard:location",
+					"index": 0
+				},
+				{
+					"taskID": "bq_standard:checkbox",
+					"index": 1
+				}
+			],
+			"rewards": [
+				{
+					"choices": [
+						{
+							"id": "minecraft:bread",
+							"Count": 1,
+							"OreDict": "",
+							"Damage": 0
+						},
+						{
+							"id": "minecraft:potion",
+							"Count": 1,
+							"OreDict": "",
+							"tag": { "Potion":"minecraft:water" },
+							"Damage": 0
+						}
+					],
+					"rewardID": "bq_standard:choice",
+					"index": 0
+				}
+			],
+			"preRequisites": [],
+			"questID": 0
+		},
+		{
+			"properties": {
+				"betterquesting": {
+					"name": "Quest 2",
+					"desc": "NO BIG TEXT",
+					"snd_complete": "minecraft:entity.player.levelup",
+					"snd_update": "minecraft:entity.player.levelup",
+					"icon": {
+						"id": "minecraft:planks",
+						"Count": 1,
+						"OreDict": "",
+						"Damage": 1
+					},
+					"autoClaim": true,
+					"isSilent": false,
+					"partySingleReward": false,
+					"isMain": false,
+					"simultaneous": false,
+					"globalShare": false,
+					"lockedProgress": false,
+					"taskLogic": "AND",
+					"repeatTime": -1,
+					"questLogic": "AND"
+				}
+			},
+			"tasks": [
+				{
+					"partialMatch": true,
+					"ignoreNBT": false,
+					"consume": false,
+					"groupDetect": false,
+					"autoConsume": false,
+					"requiredItems": [
+						{
+							"id": "minecraft:log",
+							"Count": 4,
+							"OreDict": "logWood",
+							"Damage": 0
+						}
+					],
+					"taskID": "bq_standard:retrieval",
+					"index": 0
+				},
+				{
+					"partialMatch": true,
+					"ignoreNBT": false,
+					"requiredItems": [
+						{
+							"id": "minecraft:planks",
+							"Count": 16,
+							"OreDict": "",
+							"Damage": 1
+						}
+					],
+					"taskID": "bq_standard:crafting",
+					"index": 1
+				}
+			],
+			"rewards": [
+				{
+					"choices": [
+						{
+							"id": "minecraft:sapling",
+							"Count": 1,
+							"OreDict": "",
+							"Damage": 0
+						},
+						{
+							"id": "minecraft:sapling",
+							"Count": 1,
+							"OreDict": "",
+							"Damage": 1
+						}
+					],
+					"rewardID": "bq_standard:choice",
+					"index": 0
+				},
+				{
+					"rewards": [
+						{
+							"id": "minecraft:log",
+							"Count": 16,
+							"OreDict": "logWood",
+							"Damage": 0
+						}
+					],
+					"rewardID": "bq_standard:item",
+					"index": 1
+				},
+				{
+					"amount": 10,
+					"isLevels": true,
+					"rewardID": "bq_standard:xp",
+					"index": 2
+				}
+			],
+			"preRequisites": [ 0 ],
+			"questID": 1
+		}
+	],
+	"questLines": [
+		{
+			"properties": {
+				"betterquesting": {
+					"name": "Basic Guides",
+					"bg_image": "",
+					"bg_size": 256,
+					"desc": "Some basic description"
+				}
+			},
+			"quests": [
+				{
+					"size": 24,
+					"x": 0,
+					"y": 100,
+					"id": 0
+				},
+				{
+					"size": 24,
+					"x": 0,
+					"y": 140,
+					"id": 1
+				}
+			],
+			"lineID": 0,
+			"order": 0
+		}
+	],
+	"format": "1.0.0"
+}

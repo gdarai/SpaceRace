@@ -1,0 +1,758 @@
+<book title="Darai's SpaceRace - the Guide">
+	<include ref="gbook:xml/standard.xml" />
+
+	<chapter id="ch0">
+		<page id="pg0">
+			<title>Welcome Player</title>
+			<p>This book you have in your hand is here for you. To make your life easier and give it some direction.</p>
+			<p />
+			<p>If you prefer Quest based guide it is also part of this modpack. You can use the Better Questing Shortcut or open the Quest Book.</p> 
+			<p />
+			<p align="center">good luck, Darai</p> 
+		</page>
+		<page id="pg1">
+			<p bold="true" italics="true">Links</p>
+			<p>There are some very important points you should know:</p>
+			<link ref="ch1">Just Quests?</link>
+			<link ref="ch2">Sudden Deaths</link>
+			<link ref="ch3">Wrong Recipes</link>
+			<link ref="ch4">Finding Resources</link>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">The Goal</p>
+			<p>To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the orbit of the Mooshroom Moon.</p>
+			<p />
+			<p>Next to it is a small moon called Haven. Terraform it and build there a monument of your success.</p>			
+		</page>
+		<page id="pg3">
+			<p>For the monument, use at least following resources:</p>
+			<stack item="taiga:violium_block" count="1000" x="0"/>
+			<stack item="taiga:astrium_block" count="1000" x="40"/>
+			<stack item="draconicevolution:draconic_block" count="1000" y="40"/>
+			<stack item="tconstruct:materials"  meta="50" count="1" x="40" y="40"/>
+			<space height="60" />
+			<p>Optionally you can prove yourself by crafting the most expensive thing in this modpack:</p>
+			<stack item="storagedrawers:upgradeCreative" meta="1" x="0"/>
+		</page>
+	</chapter>
+	<chapter id="ch1">
+		<page id="pg0">
+			<title>Why not just Quests?</title>
+			<p>You can easily get lost in quests. So, the most important topics are available also here.</p>
+			<p />
+			<p>Also some people despite quests all together and I want this to be fun also for them.</p>
+		</page>
+		<page id="pg1">
+			<p>The most important chapters like "Where to look for resources" or "What can kill you" are also described in the Quest Book.</p>
+			<p />
+			<p>Wrong Recipes not so much...</p>
+			<p>Also It is much easier to write this guidebook, so it will be completed in version one of the modpack and the Quest Book will not.</p>
+		</page>
+	</chapter>
+	<chapter id="ch2">
+		<page id="pg0">
+			<title>Dumb ways to Die</title>
+			<p>There are few things in this pack which can easily and quickly kill you. Or at least kill your mood.</p>
+			<p />
+			<p>Some people do not like this so here is all the warnings I could think of.</p>
+		</page>
+		<page>
+			<link ref="ch2:d0">Aqua Creepers</link>
+			<link ref="ch2:d1">Spice of Life</link>
+			<link ref="ch2:d1a">Moving World</link>
+			<link ref="ch2:d2">Void</link>
+			<link ref="ch2:d3">Portals</link>
+			<link ref="ch2:d4">Monsters</link>
+			<link ref="ch2:d5">Warp</link>
+		</page>
+		<page id="d0">
+			<p bold="true" italics="true">Aqua Creepers</p>
+			<p>Deadly fast and living in all Homeworld oceans.</p>
+			<p />
+			<p>Beware, they can jump from the water if you stand too close.</p>
+		</page>
+		<page id="d1">
+			<p bold="true" italics="true">Spice of Life</p>
+			<p>Keep your food list rich. Everything you eat will loose it's effectiveness very quickly.</p>
+			<stack item="minecraft:fish" x="0"/>
+		</page>
+		<page id="d1a">
+			<p bold="true" italics="true">Moving the World</p>
+			<p>Big part of this modpack is Davinci's Vessels which allows you to turn some blocks into ship/airship and fly them.</p>
+			<stack item="davincisvessels:marker" x="0"/>
+			<space height="20" />
+			<p>Beware, even though this mod is great, it can crash the game. Play it safe and make yourself accustomed to this mod first.</p>
+		</page>
+		<page />
+		<page id="d2">
+			<p bold="true" italics="true">Falling into Void</p>
+			<p>Some places are dangerous to land in. Namely Asteroid Worlds, The End Ocean and Lava Worlds.</p>
+			<p></p>
+			<p>On all those places, you can easily loose your rocket on landing attempt with everything on-board. Be prepared for it and have all the spare parts in your pocket.</p>
+		</page>
+		<page>
+			<link ref="ch5:pg1">Asteroid Belt</link>
+			<link ref="ch5:pg2">Lava World</link>
+			<link ref="ch5:pg6">The End</link>
+			<link ref="ch5:pg8">Ocean World</link>
+			<link ref="ch5:pg9">Rocks In Sky</link>
+		</page>
+		<page id="d3">
+			<p bold="true" italics="true">Portals</p>
+			<p>All portals are locked by default. To unlock them, you have to:</p>
+			<p></p>
+			<p>Craft a specific ITEM, make the portal out of the correct BLOCK and activate it with the correct IGNITER.</p>
+		</page>
+		<page>
+			<p>Item, Block and Igniter:</p>
+			<p>For UnderEnd:</p>
+			<stack item="immersiveengineering:faradaySuit_chest" x="0"/>
+			<stack item="tp:smooth_endstone" x="20"/>
+			<stack item="tp:golden_scythe" x="40"/>
+			<space height="20" />
+			<p>For The Nether:</p>
+			<stack item="mysticalagriculture:uranium_seeds" x="0"/>
+			<stack item="minecraft:obsidian" x="20"/>
+			<stack item="minecraft:flint_and_steel" x="40"/>
+			<space height="20" />
+			<p>For The End is enough to unlock it. To get there use a rocket, it is a moon orbiting the Blue Gas Giant.</p>
+			<stack item="draconicevolution:draconium_ingot" x="0"/>
+		</page>
+		<page id="d4">
+			<p bold="true" italics="true">Monsters</p>
+			<p>To make the game more fun I tweaked the monsters a little bit. And to make it even more fun, I tweaked them differently on every planet.</p>
+			<p></p>
+			<p>So, don't be that much surprised, ok?</p>
+		</page>
+		<page />
+		<page id="d5">
+			<p bold="true" italics="true">Warp</p>
+			<p>I will not explain to you how a warp engine works. But there is one thing specific in this pack.</p>
+			<p></p>
+			<p>You need to put into the Warp Controller the correct World Orb, before you will be allowed to warp.</p>
+			<p></p>
+			<p>Every planet has it's own orb, with consistent-ish name.</p>
+		</page>
+		<page>
+			<p>Not like moons, once you are orbiting a planet you can use rocket to get to any moon it has.</p>
+			<p></p>
+			<p>As it is now, to get to every next planet, you need to find resources, which are specific to the previous planet, first. This is the correct sequence of World Orbs:</p>
+			<stack item="bqmie:icon_item" meta="16" x="0"/>
+			<stack item="bqmie:icon_item" meta="14" x="20"/>
+			<stack item="bqmie:icon_item" meta="17" x="40"/>
+			<stack item="bqmie:icon_item" meta="13" x="60"/>
+			<stack item="bqmie:icon_item" meta="15" x="80"/>
+			<stack item="bqmie:icon_item" meta="18" x="10" y="20"/>
+			<stack item="bqmie:icon_item" meta="22" x="30" y="20"/>
+		</page>
+	</chapter>
+	<chapter id="ch3">
+		<page id="pg0">
+			<title>Messed-up Recipes</title>
+			<p>If you don't know... I changed A LOT of recipes. JEI caught most of the changes but as I understand not all of them.</p>
+			<p />
+			<p>So about some things, it will be telling you that such receipt exists and it will not work.</p>
+		</page>
+		<page id="pg1">
+			<p>Here is the list of what is the JEI lying about:</p>
+			<link ref="ch3:pg2">Charcoal</link>
+			<link ref="ch3:pg3">Smelting</link>
+			<link ref="ch3:pg4">Refined Storage</link>
+			<link ref="ch3:pg5">Nihilite Alloy</link>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">Charcoal</p>
+			<p>Forget burning logs in a furnace. Charcoal can be now made only in the Forestry Charcoal Pit.</p>
+			<p />
+			<p>For those who don't know what that is, you build a pyramid of Loam with Piled Wood in it, light it up and wait.</p>
+			<stack item="forestry:pile_dirt" x="0"/>
+			<stack item="forestry:pile_wood" x="20"/>
+			<stack item="minecraft:flint_and_steel" x="40"/>
+		</page>
+		<page>		
+			<p>Also Charcoal is now the only fuel source for making Coal Coke and ultimately burn Iron to Steel.</p>
+		</page>
+		<page id="pg3">
+			<p bold="true" italics="true">Smelting</p>
+			<p>I removed smelting of all Sharpening Kits. Since I tweaked their recipes I put it in as the proper fix.</p>
+            <small_recipe>
+                <stack item="tconstruct:sharpening_kit"/>
+                <stack item="railcraft:nugget"/>
+                <space />
+                <space />
+                <stack item="tconstruct:sharpening_kit"/>
+            </small_recipe>
+		</page>
+		<page />
+		<page id="pg4">
+			<p bold="true" italics="true">RS Solderer</p>
+			<p>Refined Storage Solderer recipes are completely wrong. JEI just gives the original list without my changes. So here is what is different:</p>
+			<stack item="refinedstorage:processor" meta="6" x="0"/>
+			<stack item="refinedstorage:processor" meta="0" x="20"/>
+			<stack item="refinedstorage:processor" meta="1" x="40"/>
+			<stack item="refinedstorage:processor" meta="2" x="60"/>
+			<space height="20" />
+			<p>And now the new and better recipes:</p>
+			<stack item="refinedstorage:solderer" x="40" y="0"/>
+            <small_recipe>
+                <stack item="advancedrocketry:wafer"/>
+                <stack item="refinedstorage:silicon"/>
+                <stack item="actuallyadditions:itemDust" meta="7"/>
+                <space />
+                <stack item="refinedstorage:processor" meta="6"/>
+            </small_recipe>
+		</page>
+		<page>
+			<stack item="refinedstorage:solderer" x="40" y="0"/>
+            <small_recipe>
+                <stack item="opencomputers:material" meta="12"/>
+                <stack item="actuallyadditions:itemCrystalEmpowered" meta="0"/>
+                <stack item="actuallyadditions:itemDust" meta="7"/>
+                <space />
+                <stack item="refinedstorage:processor" meta="0"/>
+            </small_recipe>
+			<stack item="refinedstorage:solderer" x="40" y="0"/>
+            <small_recipe>
+                <stack item="opencomputers:material" meta="12"/>
+                <stack item="actuallyadditions:itemCrystalEmpowered" meta="3"/>
+                <stack item="taiga:uru_dust"/>
+                <space />
+                <stack item="refinedstorage:processor" meta="1"/>
+            </small_recipe>
+			<stack item="refinedstorage:solderer" x="40" y="0"/>
+            <small_recipe>
+                <stack item="opencomputers:material" meta="12"/>
+                <stack item="actuallyadditions:itemCrystalEmpowered" meta="2"/>
+                <stack item="taiga:yrdeen_dust"/>
+                <space />
+                <stack item="refinedstorage:processor" meta="2"/>
+            </small_recipe>
+		</page>
+		<page id="pg5">
+			<p bold="true" italics="true">Nihilite Alloy</p>
+			<p>Nihilite can be alloyed only in the Chemical Reactor now.</p>
+			<p />
+			<p>Nihilite Ingots and Blocks can be made in Alloy Smelter or from the fluid Nihilite alloy in the casting basin. But they cannot be re-melted to obtain the alloy fluid back.</p>
+			<stack item="taiga:nihilite_dust" x="0"/>
+			<stack item="taiga:nihilite_ingot" x="20"/>
+			<stack item="taiga:nihilite_block" x="40"/>
+		</page>
+	</chapter>
+	<chapter id="ch4">
+		<page id="pg0">
+			<title>Looking for Resources</title>
+			<p>For hardcore players ...</p>
+			<p bold="true">... Figure IT OUT :)</p>
+			<p />
+			<p>For all of you who don't like to wander without knowing what you are looking for, here is what deposits are where. It is important, believe me, there is a lot of ground to cover.</p>
+		</page>
+		<page id="pg1">
+			<p>Do not continue reading if you want to try THE HARDCORE WAY.</p>
+			<p />
+			<link ref="ch4x">Homeworld</link>
+			<link ref="ch5">Planets</link>
+			<link ref="ch6">Dimensions</link>
+		</page>
+	</chapter>
+	<chapter id="ch4x">
+		<page>
+			<title>Homeworld</title>
+			<p>Your starting planet is one big ocean full of islands.</p>
+			<p />
+			<p>Under every island (based on the biome) is different ore mix. Here are the varieties.</p>
+		</page>
+		<page>
+			<link ref="ch4x:pg0">Everywhere</link>
+			<link ref="ch4x:pg1">Forrest Islands</link>
+			<link ref="ch4x:pg2">Flower Forrest Islands</link>
+			<link ref="ch4x:pg3">Jungle Islands</link>
+			<link ref="ch4x:pg4">Desert Islands</link>
+			<link ref="ch4x:pg5">Savanna Islands</link>
+			<link ref="ch4x:pg6">Iceberg Islands</link>
+			<link ref="ch4x:pg7">Hills Islands</link>
+			<link ref="ch4x:pg8">Taiga Islands</link>
+			<link ref="ch4x:pg9">Messa Islands</link>
+		</page>
+		<page id="pg0">
+			<p bold="true" italics="true">Everywhere</p>
+			<p>Some ores are present under the whole Homeworld surface.</p>
+			<stack item="minecraft:coal" x="0"/><p indent="20" space="10">Coal [0 - 128]</p>
+			<stack item="minecraft:redstone" x="0"/><p indent="20" space="10">Redstone [0-16]</p>
+			<stack item="forestry:ingotCopper" x="0"/><p indent="20" space="10">Copper [30-120]</p>
+			<stack item="minecraft:iron_ingot" x="0"/><p indent="20" space="10">Iron [0-30]</p>
+			<stack item="taiga:duranite_ingot" x="0"/><p indent="20" space="10">Duranite [0-10]</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [30-50]</p>
+		</page>
+		<page>
+			<stack item="taiga:basalt_ingot" x="0"/><p indent="20" space="10">Basalt [0-50]</p>
+			<stack item="railcraft:ore_metal_poor" meta="0" x="0"/><p indent="20" space="10">p. Iron [0-64]</p>
+			<stack item="railcraft:ore_metal_poor" meta="1" x="0"/><p indent="20" space="10">p. Gold [0-32]</p>
+			<stack item="railcraft:ore_metal_poor" meta="2" x="0"/><p indent="20" space="10">p. Copper [40+]</p>
+			<stack item="railcraft:ore_metal_poor" meta="3" x="0"/><p indent="20" space="10">p. Tin [40+]</p>
+			<stack item="railcraft:ore_metal_poor" meta="4" x="0"/><p indent="20" space="10">p. Lead [20-50]</p>
+			<stack item="railcraft:ore_metal_poor" meta="5" x="0"/><p indent="20" space="10">p. Silver [10-42]</p>
+			<stack item="railcraft:ore_metal_poor" meta="6" x="0"/><p indent="20" space="10">p. Nickel [30-60]</p>
+			<stack item="railcraft:ore_metal_poor" meta="7" x="0"/><p indent="20" space="10">p. Zink [20-60]</p>
+		</page>
+		<page id="pg1">
+			<p bold="true" italics="true">Forrest Islands</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [40-120]</p>
+			<stack item="forestry:ingotTin" x="0"/><p indent="20" space="10">Tin [30-100]</p>
+			<stack item="forestry:ingotCopper" x="0"/><p indent="20" space="10">Copper [30-120]</p>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">Flower Forrest Islands</p>
+			<stack item="railcraft:ingot" meta="8" x="0"/><p indent="20" space="10">Zinc [30-40]</p>
+			<stack item="minecraft:coal" x="0"/><p indent="20" space="10">Coal [0-120]</p>
+			<stack item="forestry:ingotCopper" x="0"/><p indent="20" space="10">Copper [30-120]</p>
+		</page>
+		<page id="pg3">
+			<p bold="true" italics="true">Jungle Islands</p>
+			<stack item="minecraft:coal" x="0"/><p indent="20" space="10">Coal [0-120]</p>
+			<stack item="taiga:eezo_ingot" x="0"/><p indent="20" space="10">Eezo [15-40]</p>
+			<stack item="forestry:ingotTin" x="0"/><p indent="20" space="10">Tin [30-100]</p>
+			<stack item="railcraft:ingot" meta="6" x="0"/><p indent="20" space="10">Nickel [30-50]</p>
+			<stack item="minecraft:dye" meta="4" x="0"/><p indent="20" space="10">Lapis [5-25]</p>
+		</page>
+		<page id="pg4">
+			<p bold="true" italics="true">Desert Islands</p>
+			<stack item="railcraft:dust" meta="2" x="0"/><p indent="20" space="10">Saltpeter [50-80]</p>
+			<stack item="minecraft:redstone" x="0"/><p indent="20" space="10">Redstone [0-16]</p>
+			<stack item="minecraft:emerald" x="0"/><p indent="20" space="10">Emerald [40-130]</p>
+			<stack item="minecraft:diamond" x="0"/><p indent="20" space="10">Diamond [5-25]</p>
+		</page>
+		<page id="pg5">
+			<p bold="true" italics="true">Savanna Islands</p>
+			<stack item="minecraft:iron_ingot" x="0"/><p indent="20" space="10">Iron [10-55]</p>
+			<stack item="railcraft:ingot" meta="6" x="0"/><p indent="20" space="10">Nickel [30-50]</p>
+			<stack item="taiga:eezo_ingot" x="0"/><p indent="20" space="10">Eezo [15-40]</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [40-120]</p>
+		</page>
+		<page id="pg6">
+			<p bold="true" italics="true">Iceberg Islands</p>
+			<stack item="minecraft:gold_ingot" x="0"/><p indent="20" space="10">Gold [5-35]</p>
+			<stack item="railcraft:ingot" meta="3" x="0"/><p indent="20" space="10">Lead [15-40]</p>
+			<stack item="taiga:osram_ingot" x="0"/><p indent="20" space="10">Osram [0-10]</p>
+			<stack item="railcraft:ingot" meta="4" x="0"/><p indent="20" space="10">Silver [20-55]</p>
+		</page>
+		<page id="pg7">
+			<p bold="true" italics="true">Hills Islands</p>
+			<stack item="minecraft:iron_ingot" x="0"/><p indent="20" space="10">Iron [10-55]</p>
+			<stack item="minecraft:diamond" x="0"/><p indent="20" space="10">Diamond [5-25]</p>
+			<stack item="minecraft:emerald" x="0"/><p indent="20" space="10">Emerald[40-130]</p>
+			<stack item="minecraft:dye" meta="4" x="0"/><p indent="20" space="10">Lapis [5-25]</p>
+		</page>
+		<page id="pg8">
+			<p bold="true" italics="true">Taiga Islands</p>
+			<stack item="taiga:osram_ingot" x="0"/><p indent="20" space="10">Osram [0-10]</p>
+			<stack item="railcraft:ingot" meta="8" x="0"/><p indent="20" space="10">Zinc [30-40]</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [40-120]</p>
+			<stack item="minecraft:gold_ingot" x="0"/><p indent="20" space="10">Gold [5-35]</p>
+			<stack item="minecraft:diamond" x="0"/><p indent="20" space="10">Diamond [5-25]</p>
+		</page>
+		<page id="pg9">
+			<p bold="true" italics="true">Messa Islands</p>
+			<stack item="minecraft:netherrack" x="0"/><p indent="20" space="10">NETHERRACK !!</p>
+			<stack item="minecraft:quartz" x="0"/><p indent="20" space="10">Quartz [10-150]</p>
+			<stack item="minecraft:gold_ingot" x="0"/><p indent="20" space="10">Gold [5-35]</p>
+			<stack item="minecraft:dye" meta="4" x="0"/><p indent="20" space="10">Lapis [5-25]</p>
+			<stack item="railcraft:ingot" meta="4" x="0"/><p indent="20" space="10">Silver [20-55]</p>
+			<stack item="taiga:prometheum_ingot" x="0"/><p indent="20" space="10">Prometheum [2-45]</p>
+		</page>
+	</chapter>
+	<chapter id="ch5">
+		<page>
+			<title>Planets</title>
+			<p>Let's put here everything your rocket can land on.</p>
+		</page>
+		<page>
+			<link ref="ch5:pg0">The Moon</link>
+			<link ref="ch5:pg1">Asteroid Belt</link>
+			<link ref="ch5:pg2">Lava World</link>
+			<link ref="ch5:pg3">Alien World</link>
+			<link ref="ch5:pg4">Crystal Moon</link>
+			<link ref="ch5:pg5">Sand Moon</link>
+			<link ref="ch5:pg6">The End</link>
+			<link ref="ch5:pg7">Distant World</link>
+			<link ref="ch5:pg8">Ocean World</link>
+			<link ref="ch5:pg9">Rocks In Sky</link>
+			<link ref="ch5:pg10">Mooshroom World</link>
+			<link ref="ch5:pg10">The Haven</link>
+		</page>
+		<page id="pg0">
+			<p bold="true" italics="true">The Moon</p>
+			<p>Moon is your closest and easiest target.</p>
+			<p />
+			<p>Deposites of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Osram, Basalt and Silver. Also Meteorite and Karmesine.</p>
+		</page>
+		<page>
+			<stack item="minecraft:iron_ingot" x="0"/>
+			<stack item="minecraft:gold_ingot" x="20"/>
+			<stack item="minecraft:redstone" x="40"/>
+			<stack item="minecraft:dye" meta="4" x="60"/>
+			<stack item="minecraft:emerald" x="80"/>
+			<space height="20" />
+			<stack item="immersiveengineering:metal" meta="1" x="0"/>
+			<stack item="forestry:ingotCopper" x="20"/>
+			<stack item="forestry:ingotTin" x="40"/>
+			<stack item="railcraft:ingot" meta="8" x="60"/>
+			<stack item="railcraft:ingot" meta="6" x="80"/>
+			<space height="20" />
+			<stack item="taiga:osram_ingot" x="0"/>
+			<stack item="taiga:basalt_ingot" x="20"/>
+			<stack item="railcraft:ingot" meta="4" x="40"/>
+			<stack item="taiga:meteorite_ingot" x="60"/>
+			<stack item="taiga:karmesine_ingot" x="80"/>
+		</page>
+		<page id="pg1">
+			<p bold="true" italics="true">Asteroid Belt</p>
+			<p>Belt is the second Moon of your HomeWorld Giant. But before you go there here is small warning.</p>
+			<p />
+			<p>It is an Asteroid Belt. It can easily happen, that your rocket will not hit any land and just disappear into the space. But sooner or later, you will have to go there anyway. So Good Luck.</p>
+		</page>
+		<page>
+			<p>Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver. Also Cobalt, Ardite and Nether Quartz.</p>
+			<stack item="minecraft:iron_ingot" x="0"/>
+			<stack item="minecraft:gold_ingot" x="20"/>
+			<stack item="minecraft:redstone" x="40"/>
+			<stack item="minecraft:dye" meta="4" x="60"/>
+			<stack item="minecraft:diamond" x="80"/>
+			<space height="20" />
+			<stack item="immersiveengineering:metal" meta="1" x="0"/>
+			<stack item="forestry:ingotCopper" x="20"/>
+			<stack item="forestry:ingotTin" x="40"/>
+			<stack item="taiga:basalt_ingot" x="60"/>
+			<stack item="libvulpes:productingot" meta="7" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="4" x="0"/>
+			<stack item="tconstruct:ingots" x="20"/>
+			<stack item="tconstruct:ingots" meta="1" x="40"/>
+			<stack item="minecraft:quartz" x="60"/>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">Lava World</p>
+			<p>Closest planet to the Sun, Very Hot and Hostile.</p>
+			<p />
+			<p>Small deposits of Redstone, Aluminium, Copper, Tin, Zinc, Nickel and Dilithium. Large deposits of Iron, Gold, Lead, Eezo, Basalt, Silver and Karmesine. Also Meteorite, Apatite, Titanium and Osram. Neherrack, Tiberium, Cobalt, Ardite and Nether Quartz.</p>
+		</page>
+		<page>
+			<stack item="minecraft:redstone" x="0"/>
+			<stack item="immersiveengineering:metal" meta="1" x="20"/>
+			<stack item="forestry:ingotCopper" x="40"/>
+			<stack item="forestry:ingotTin" x="60"/>
+			<stack item="railcraft:ingot" meta="8" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="6" x="0"/>
+			<stack item="taiga:eezo_ingot" x="20"/>
+			<stack item="taiga:dilithium_ingot" x="40"/>
+			<stack item="minecraft:iron_ingot" x="60"/>
+			<stack item="minecraft:gold_ingot" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="3" x="0"/>
+			<stack item="taiga:basalt_ingot" x="20"/>
+			<stack item="railcraft:ingot" meta="4" x="40"/>
+			<stack item="taiga:karmesine_ingot" x="60"/>
+			<stack item="taiga:meteorite_ingot" x="80"/>
+			<space height="20" />
+			<stack item="forestry:apatite" x="0"/>
+			<stack item="libvulpes:productingot" meta="7" x="20"/>
+			<stack item="taiga:osram_ingot" x="40"/>
+			<stack item="minecraft:netherrack" x="60"/>
+			<stack item="taiga:tiberium_ingot" x="80"/>
+			<space height="20" />
+			<stack item="tconstruct:ingots" x="0"/>
+			<stack item="tconstruct:ingots" meta="1" x="20"/>
+			<stack item="minecraft:quartz" x="40"/>
+		</page>
+		<page id="pg3">
+			<p bold="true" italics="true">Alien World</p>
+			<p>Almost pleasant world.</p>
+			<p />
+			<p>Small deposits of Iron, Gold, Copper, Tin, Lead, Eezo, Osram and Silver. Large deposits of Redstone, Lapis, Diamonds, Emeralds, Aluminium, Zinc, Nickel, Basalt, Karmesine and Duranite. Some Coal, Ovium and Draconium. Meteorite, Apatite, Iridium and Osram.</p>
+		</page>
+		<page>
+			<stack item="minecraft:iron_ingot" x="0"/>
+			<stack item="minecraft:gold_ingot" x="20"/>
+			<stack item="forestry:ingotCopper" x="40"/>
+			<stack item="forestry:ingotTin" x="60"/>
+			<stack item="railcraft:ingot" meta="8" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="3" x="0"/>
+			<stack item="taiga:eezo_ingot" x="20"/>
+			<stack item="taiga:osram_ingot" x="40"/>
+			<stack item="railcraft:ingot" meta="4" x="60"/>
+			<stack item="minecraft:redstone" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:dye" meta="4" x="0"/>
+			<stack item="minecraft:diamond" x="20"/>
+			<stack item="minecraft:emerald" x="40"/>
+			<stack item="immersiveengineering:metal" meta="1" x="60"/>
+			<stack item="railcraft:ingot" meta="6" x="80"/>
+			<space height="20" />
+			<stack item="taiga:basalt_ingot" x="0"/>
+			<stack item="taiga:karmesine_ingot" x="20"/>
+			<stack item="taiga:duranite_ingot" x="40"/>
+			<stack item="minecraft:coal" x="60"/>
+			<stack item="taiga:ovium_ingot" x="80"/>
+			<space height="20" />
+			<stack item="draconicevolution:draconium_dust" x="0"/>
+			<stack item="taiga:meteorite_ingot" x="20"/>
+			<stack item="forestry:apatite" x="40"/>
+			<stack item="libvulpes:productingot" meta="10" x="60"/>
+			<stack item="taiga:osram_ingot" x="80"/>
+		</page>
+		<page id="pg4">
+			<p bold="true" italics="true">Crystal Moon</p>
+			<p>This moon is orbiting the Alien World Planet, so it has the same World Orb.</p>
+			<p />
+			<p>Natural Growth of Crystal Block Spires. Small deposites of Iron, Gold, Redstone, Aluminium, Copper, Tin, Zinc, Lead, Eezo, Ovium and Glowstone. Large deposites of Lapis, Diamonds, Emeralds, Black Quartz, Nickel, Osram, Meteorite and Karmesine.</p>
+		</page>
+		<page>
+			<stack item="advancedrocketry:crystal" x="0"/>
+			<stack item="minecraft:iron_ingot" x="20"/>
+			<stack item="minecraft:gold_ingot" x="40"/>
+			<stack item="minecraft:redstone" x="60"/>
+			<stack item="immersiveengineering:metal" meta="1" x="80"/>
+			<space height="20" />
+			<stack item="forestry:ingotCopper" x="0"/>
+			<stack item="forestry:ingotTin" x="20"/>
+			<stack item="railcraft:ingot" meta="8" x="40"/>
+			<stack item="railcraft:ingot" meta="3" x="60"/>
+			<stack item="taiga:eezo_ingot" x="80"/>
+			<space height="20" />
+			<stack item="taiga:ovium_ingot" x="0"/>
+			<stack item="minecraft:glowstone_dust" x="20"/>
+			<stack item="minecraft:dye" meta="4" x="40"/>
+			<stack item="minecraft:diamond" x="60"/>
+			<stack item="minecraft:emerald" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="6" x="0"/>
+			<stack item="taiga:osram_ingot" x="20"/>
+			<stack item="taiga:meteorite_ingot" x="40"/>
+			<stack item="taiga:karmesine_ingot" x="60"/>
+			<stack item="actuallyadditions:itemMisc" meta="5" x="80"/>
+		</page>
+		<page id="pg5">
+			<p bold="true" italics="true">Sand Moon</p>
+			<p>It orbits the Mystical Gas Giant, so it requiresthe Mystical World Orb.</p>
+			<p />
+			<p>Small deposits of Aluminium, Copper, Tin, Zinc, Nickel, Ovium and Basalt. Large deposites of Iron, Gold, Redstone, Diamonds, Osram, Silver and Coal. Also Meteorite, Black Quartz, Tiberium, Cobalt, Ardite, Nether Quartz, Soul Sand,...</p>
+		</page>
+		<page>
+			<p>... Also Uranium, Uru, Glowstone, Titanium and Prometheum can be found here.</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/>
+			<stack item="forestry:ingotCopper" x="20"/>
+			<stack item="forestry:ingotTin" x="40"/>
+			<stack item="railcraft:ingot" meta="8" x="60"/>
+			<stack item="railcraft:ingot" meta="6"  x="80"/>
+			<space height="20" />
+			<stack item="taiga:ovium_ingot" x="0"/>
+			<stack item="taiga:basalt_ingot" x="20"/>
+			<stack item="minecraft:iron_ingot" x="40"/>
+			<stack item="minecraft:gold_ingot" x="60"/>
+			<stack item="minecraft:redstone" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:diamond" x="0"/>
+			<stack item="taiga:osram_ingot" x="20"/>
+			<stack item="railcraft:ingot" meta="4" x="40"/>
+			<stack item="minecraft:coal" x="60"/>
+			<stack item="taiga:meteorite_ingot" x="80"/>
+			<space height="20" />
+			<stack item="actuallyadditions:itemMisc" meta="5" x="0"/>
+			<stack item="taiga:tiberium_ingot" x="20"/>
+			<stack item="tconstruct:ingots" x="40"/>
+			<stack item="tconstruct:ingots" meta="1" x="60"/>
+			<stack item="minecraft:quartz" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:soul_sand" x="0"/>
+			<stack item="minecraft:glowstone_dust" x="20"/>
+			<stack item="libvulpes:productingot" meta="7" x="40"/>
+			<stack item="taiga:prometheum_ingot" x="60"/>
+			<stack item="taiga:uru_ingot" x="80"/>
+			<space height="20" />
+			<stack item="immersiveengineering:metal" meta="5" x="0"/>
+		</page>
+		<page id="pg6">
+			<p bold="true" italics="true">The End</p>
+			<p>It orbits the Mystical Gas Giant, so it requires the Mystical World Orb. Large deposit of endstone, draconium, dragon hearts, dragon eggs and chaos shards.</p>
+			<p />
+			<p>Beware, Chaos Guardian Included.</p>
+			<p />
+			<stack item="minecraft:endstone" x="0"/>
+			<stack item="draconicevolution:draconium_dust" x="20"/>
+			<stack item="draconicevolution:dragon_heart" x="40"/>
+			<stack item="minecraft:dragon_egg" x="60"/>
+			<stack item="draconicevolution:chaos_shard" x="80"/>
+		</page>
+		<page />
+		<page id="pg7">
+			<p bold="true" italics="true">Distant World</p>
+			<p>This is your first planet from the Beta Star System. It requires the Distant World Orb or a Gateway through the Nether.</p>
+			<link ref="ch2:d3">Portals</link>
+			<link ref="ch6:pg2">Distant World Portal</link>
+			<space height="20" />
+			<stack item="minecraft:iron_ingot" x="0"/>
+			<stack item="minecraft:redstone" x="20"/>
+			<stack item="minecraft:dye" meta="4" x="40"/>
+			<stack item="railcraft:ingot" meta="8" x="60"/>
+			<stack item="railcraft:ingot" meta="6" x="80"/>
+			<space height="20" />
+			<stack item="taiga:basalt_ingot" x="0"/>
+			<stack item="minecraft:gold_ingot" x="20"/>
+			<stack item="minecraft:diamond" x="40"/>
+			<stack item="minecraft:emerald" x="60"/>
+			<stack item="railcraft:ingot" meta="3" x="80"/>
+		</page>
+		<page>
+			<p>Small deposites of Iron, Redstone, Lapis, Zinc, Nickel and Basalt. Large deposits of Gold, Diamonds, Emeralds, Lead, Eezo, Osram, Silver, SoulSand an Uranium. Also Coal, Dilithium, Jauxum, Magma, Netherrak and Valyrium.</p>
+			<stack item="taiga:eezo_ingot" x="0"/>
+			<stack item="taiga:osram_ingot" x="20"/>
+			<stack item="railcraft:ingot" meta="4" x="40"/>
+			<stack item="minecraft:soul_sand" x="60"/>
+			<stack item="immersiveengineering:metal" meta="5" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:coal" x="0"/>
+			<stack item="taiga:dilithium_ingot" x="20"/>
+			<stack item="taiga:jauxum_ingot" x="40"/>
+			<stack item="minecraft:magma" x="60"/>
+			<stack item="minecraft:netherrack" x="80"/>
+			<space height="20" />
+			<stack item="taiga:valyrium_ingot" x="0"/>
+		</page>
+		<page id="pg8">
+			<p bold="true" italics="true">Ocean World</p>
+			<p>It requires the Ocean World Orb.</p>
+			<p />
+			<p>Small Deposites of Gold, Diamonds, Emeralds, Zinc, Lead, Nickel, Eezo and Silver. Large deposites of Iron, Redstone, Lapis, Aluminium, Copper, Tin, Osram, Basalt and Duranite. Also Coal, Ovium, Vibranium, Iridium and Titanium.</p>
+		</page>
+		<page>
+			<stack item="minecraft:gold_ingot" x="0"/>
+			<stack item="minecraft:diamond" x="20"/>
+			<stack item="minecraft:emerald" x="40"/>
+			<stack item="railcraft:ingot" meta="8" x="60"/>
+			<stack item="railcraft:ingot" meta="3" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="6" x="0"/>
+			<stack item="taiga:eezo_ingot" x="20"/>
+			<stack item="railcraft:ingot" meta="4" x="40"/>
+			<stack item="minecraft:iron_ingot" x="60"/>
+			<stack item="minecraft:redstone" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:dye" meta="4" x="0"/>
+			<stack item="immersiveengineering:metal" meta="1" x="20"/>
+			<stack item="forestry:ingotCopper" x="40"/>
+			<stack item="forestry:ingotTin" x="60"/>
+			<stack item="taiga:osram_ingot" x="80"/>
+			<space height="20" />
+			<stack item="taiga:basalt_ingot" x="0"/>
+			<stack item="taiga:duranite_ingot" x="20"/>
+			<stack item="minecraft:coal" x="40"/>
+			<stack item="taiga:ovium_ingot" x="60"/>
+			<stack item="taiga:vibranium_ingot" x="80"/>
+			<space height="20" />
+			<stack item="libvulpes:productingot" meta="10" x="0"/>
+			<stack item="libvulpes:productingot" meta="7" x="20"/>
+		</page>
+		<page id="pg9">
+			<p bold="true" italics="true">Rocks In Sky</p>
+			<p>It orbits the Ocean World, so it requires the Ocean World Orb. It is an Asteroid Belt, so beware of the landing hazard.</p>
+			<p />
+			<p>Deposits of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Titanium, Silver, Cobalt, Ardite, Nether Quartz and Prometheum.</p>
+		</page>
+		<page>
+			<stack item="minecraft:iron_ingot" x="0"/>
+			<stack item="minecraft:gold_ingot" x="20"/>
+			<stack item="minecraft:redstone" x="40"/>
+			<stack item="minecraft:dye" meta="4" x="60"/>
+			<stack item="minecraft:emerald" x="80"/>
+			<space height="20" />
+			<stack item="immersiveengineering:metal" meta="1" x="0"/>
+			<stack item="forestry:ingotCopper" x="20"/>
+			<stack item="forestry:ingotTin" x="40"/>
+			<stack item="railcraft:ingot" meta="8" x="60"/>
+			<stack item="railcraft:ingot" meta="6" x="80"/>
+			<space height="20" />
+			<stack item="libvulpes:productingot" meta="7" x="0"/>
+			<stack item="railcraft:ingot" meta="4" x="20"/>
+			<stack item="tconstruct:ingots" x="40"/>
+			<stack item="tconstruct:ingots" meta="1" x="60"/>
+			<stack item="minecraft:quartz" x="80"/>
+			<space height="20" />
+			<stack item="taiga:prometheum_ingot" x="0"/>
+		</page>
+		<page id="pg10">
+			<p bold="true" italics="true">Mooshroom World</p>
+			<p>It orbits the BlueBall Gas Giant. But it is so important that the World Orb is named by this world, not the Planet. Mushroom World Orb.</p>
+			<p />
+			<p>Deposits of Aluminium, Copper, Tin, Redstone, Lapis, Nickel, Eezo, Osram, Basalt, Black Quartz, Jauxum, Uru and Aurorium can be found here.</p>
+		</page>
+		<page>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/>
+			<stack item="forestry:ingotCopper" x="20"/>
+			<stack item="forestry:ingotTin" x="40"/>
+			<stack item="minecraft:redstone" x="60"/>
+			<stack item="minecraft:dye" meta="4" x="80"/>
+			<space height="20" />
+			<stack item="railcraft:ingot" meta="6" x="0"/>
+			<stack item="taiga:eezo_ingot" x="20"/>
+			<stack item="taiga:osram_ingot" x="40"/>
+			<stack item="taiga:basalt_ingot" x="60"/>
+			<stack item="actuallyadditions:itemMisc" meta="5" x="80"/>
+			<space height="20" />
+			<stack item="taiga:jauxum_ingot" x="0"/>
+			<stack item="taiga:uru_ingot" x="20"/>
+			<stack item="taiga:aurorium_ingot" x="40"/>
+		</page>
+		<page id="pg11">
+			<p bold="true" italics="true">The Haven</p>
+			<p>This is the moon for your Victory Monument. It has No Ores, it just waits for your work.</p>
+			<link ref="ch0:pg2">The Goal</link>
+		</page>
+	</chapter>
+	<chapter id="ch6">
+		<page>
+			<title>Dimensions</title>
+			<p>Here is every place into which you can get only by a portal.</p>
+			<p />
+			<p>Well in the case of the Distant World it is not only... but it is a portal anyway.</p>
+		</page>
+		<page>
+			<link ref="ch6:pg0">The UnderEnd</link>
+			<link ref="ch6:pg1">The Nether</link>
+			<link ref="ch6:pg2">Distant World Portal</link>
+		</page>
+		<page id="pg0">
+			<p bold="true" italics="true">The UnderEnd</p>
+			<p>Maybe you noticed that to get into space, you are missing some End-Ores. Well the End is a moon orbiting 4th planet of the Alpha Star so no, you cannot go there yet. But you can go to the UnderEnd. That is an End-like dimension deep under the surface of your world.</p>
+			<link ref="ch2:d3">Portals</link>
+		</page>
+		<page>
+			<p>Hint: You can get endstone for the portal in deeper layers of a Roguelike Dungeon.</p>
+			<p>Available resources: Abyssum, Palladium, Duranite, Draconium and Prosperity Ore.</p>
+			<stack item="taiga:abyssum_ingot" x="0"/>
+			<stack item="taiga:palladium_ingot" x="20"/>
+			<stack item="taiga:duranite_ingot" x="40"/>
+			<stack item="draconicevolution:draconium_dust" x="60"/>
+			<stack item="mysticalagriculture:prosperity_shard" x="80"/>
+		</page>
+		<page id="pg1">
+			<p bold="true" italics="true">The Nether</p>
+			<p>If you reached the Sand Moon, which is orbiting Mystical World Blue Giant, you can go on and finally visit the Nether. Guide how to do it is here:</p>
+			<link ref="ch2:d3">Portals</link>
+			<p />
+			<p>Available resources: Prometheum, Cobalt, Ardite, Quartz and Valyrium.</p>
+			<stack item="taiga:prometheum_ingot" x="0"/>
+			<stack item="tconstruct:ingots" x="20"/>
+			<stack item="tconstruct:ingots" meta="1" x="40"/>
+			<stack item="minecraft:quartz" x="60"/>
+			<stack item="taiga:valyrium_ingot" x="80"/>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">Distant World Portal</p>
+			<p>For those who prefer portals rather than solid Warp Ship... there is a way how to build a portal from the Nether to the Distant World.</p>
+			<p>Just build a portal in the Nether, made of Chiseled Uranium Blocks and activate it using your loyal Golden Scythe.</p>
+			<stack item="chisel:blockUranium" x="0"/>
+			<stack item="tp:golden_scythe" x="20"/>
+		</page>
+	</chapter>
+</book>

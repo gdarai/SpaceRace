@@ -1,0 +1,10 @@
+LOC  #  Moon              #  0:1000:100:1000        #  10
+
+// ------->
+
+ITEM  #  Bread            #  minecraft:bread
+ITEM  #  WaterBottle      #  minecraft:potion         #  tag:{ "Potion":"minecraft:water" }
+ITEM  #  Log              #  minecraft:log:0        #  ore:logWood
+ITEM  #  Plank            #  minecraft:planks:1
+ITEM  #  SaplingOak       #  minecraft:sapling
+ITEM  #  SaplingBirch     #  minecraft:sapling:1

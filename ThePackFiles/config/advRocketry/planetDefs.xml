@@ -1,0 +1,166 @@
+<galaxy>
+    <star name="Star A" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
+        <planet name="Planet A1 LavaWorld" customIcon="marslike" DIMID="22">
+			<artifact>bqmie:icon_item 14</artifact>
+            <orbitalDistance>20</orbitalDistance>
+            <fogColor>1,1,0.8</fogColor>
+            <skyColor>1,1,0</skyColor>
+            <atmosphereDensity>0</atmosphereDensity>
+            <gravitationalMultiplier>90</gravitationalMultiplier>
+            <orbitalTheta>0</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>166</biomeIds>
+        </planet>
+        <planet name="Planet A2 AlienWorld" customIcon="earthlike" DIMID="23">
+			<artifact>bqmie:icon_item 17</artifact>
+            <orbitalDistance>70</orbitalDistance>
+            <fogColor>0,0.494,0.533</fogColor>
+            <skyColor>0.2,0.2,1</skyColor>
+            <atmosphereDensity>110</atmosphereDensity>
+            <gravitationalMultiplier>110</gravitationalMultiplier>
+            <orbitalTheta>90</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>91</biomeIds>
+            <planet name="Moon A2-1 CrystalMoon" customIcon="iceworld" DIMID="24">
+                <fogColor>1,1,1</fogColor>
+                <skyColor>0.8,0.8,1</skyColor>
+                <atmosphereDensity>70</atmosphereDensity>
+                <gravitationalMultiplier>50</gravitationalMultiplier>
+                <orbitalDistance>100</orbitalDistance>
+                <orbitalTheta>0</orbitalTheta>
+                <rotationalPeriod>20000</rotationalPeriod>
+                <biomeIds>95</biomeIds>
+            </planet>
+        </planet>
+        <planet name="Red Giant A3 HomeWorld" customIcon="gasgiantred" DIMID="18">
+			<artifact>bqmie:icon_item 16</artifact>
+            <orbitalDistance>100</orbitalDistance>
+			<GasGiant>true</GasGiant>
+			<hasRings>true</hasRings>
+			<isKnown>true</isKnown>
+			<gas>nitrogen</gas>
+			<gas>cloud_seed</gas>
+            <orbitalTheta>180</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <planet name="Planet A3-1 Home" customIcon="earthlike" DIMID="0" dimMapping="">
+                <fogColor>0.5,0.5,0.5</fogColor>
+                <skyColor>1,0.5,0.5</skyColor>
+                <atmosphereDensity>100</atmosphereDensity>
+                <gravitationalMultiplier>100</gravitationalMultiplier>
+                <orbitalDistance>50</orbitalDistance>
+                <orbitalTheta>0</orbitalTheta>
+                <rotationalPeriod>24000</rotationalPeriod>
+                <biomeIds>1</biomeIds>
+            </planet>
+            <planet name="Asteroids A3-2 AsteroidBelt" customIcon="moon" DIMID="21" dimMapping="">
+                <orbitalDistance>100</orbitalDistance>
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>30</gravitationalMultiplier>
+                <fogColor>0,0,0</fogColor>
+                <skyColor>0.1,0,0</skyColor>
+                <orbitalTheta>120</orbitalTheta>
+                <rotationalPeriod>50000</rotationalPeriod>
+            </planet>
+            <planet name="Moon A3-3 Moon" customIcon="moon" DIMID="20">
+                <fogColor>0.2,0.2,0.2</fogColor>
+                <skyColor>0,0,0</skyColor>
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>70</gravitationalMultiplier>
+                <orbitalDistance>150</orbitalDistance>
+                <orbitalTheta>240</orbitalTheta>
+                <rotationalPeriod>50000</rotationalPeriod>
+                <biomeIds>90</biomeIds>
+            </planet>
+        </planet>
+        <planet name="Blue Giant A4 MysticalWorld" customIcon="gasgiantblue" DIMID="19">
+			<artifact>bqmie:icon_item 13</artifact>
+            <orbitalDistance>200</orbitalDistance>
+			<GasGiant>true</GasGiant>
+			<hasRings>true</hasRings>
+			<gas>ender_distillation</gas>
+			<gas>vapor_of_levity</gas>
+			<gas>cloud_seed_concentrated</gas>
+            <orbitalTheta>270</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <planet name="Moon A4-1 SandMoon" customIcon="marslike" DIMID="25">
+                <fogColor>1,0.3,0</fogColor>
+                <skyColor>0.4,0.1,0</skyColor>
+                <atmosphereDensity>180</atmosphereDensity>
+                <gravitationalMultiplier>100</gravitationalMultiplier>
+                <orbitalDistance>70</orbitalDistance>
+                <orbitalTheta>0</orbitalTheta>
+                <rotationalPeriod>15000</rotationalPeriod>
+                <biomeIds>92</biomeIds>
+            </planet>
+            <planet name="Asteroids A4-2 theEnd" customIcon="iceworld" DIMID="1" dimMapping="">
+                <atmosphereDensity>180</atmosphereDensity>
+                <gravitationalMultiplier>100</gravitationalMultiplier>
+                <orbitalDistance>150</orbitalDistance>
+                <orbitalTheta>180</orbitalTheta>
+                <rotationalPeriod>24000</rotationalPeriod>
+            </planet>
+        </planet>
+    </star>
+    <star name="Star B" temp="200" x="100" y="20" numPlanets="0" numGasGiants="0">
+        <planet name="Planet B1 DistantWorld" customIcon="marslike" DIMID="30">
+			<artifact>bqmie:icon_item 15</artifact>
+            <orbitalDistance>50</orbitalDistance>
+            <fogColor>1,1,0.8</fogColor>
+            <skyColor>1,1,0</skyColor>
+            <atmosphereDensity>0</atmosphereDensity>
+            <gravitationalMultiplier>90</gravitationalMultiplier>
+            <orbitalTheta>0</orbitalTheta>
+            <rotationalPeriod>70000</rotationalPeriod>
+            <biomeIds>92</biomeIds>
+        </planet>
+        <planet name="Planet B2 OceanWorld" customIcon="earthlike" DIMID="31">
+			<artifact>bqmie:icon_item 18</artifact>
+            <orbitalDistance>100</orbitalDistance>
+            <fogColor>0,0.494,0.533</fogColor>
+            <skyColor>0.2,0.2,1</skyColor>
+            <atmosphereDensity>110</atmosphereDensity>
+            <gravitationalMultiplier>110</gravitationalMultiplier>
+            <orbitalTheta>90</orbitalTheta>
+            <rotationalPeriod>32000</rotationalPeriod>
+            <biomeIds>0</biomeIds>
+            <planet name="Asteroids B2-1 RocksInSky" customIcon="moon" DIMID="32" dimMapping="">
+                <fogColor>1,1,1</fogColor>
+                <skyColor>0.8,0.8,1</skyColor>
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>50</gravitationalMultiplier>
+                <orbitalDistance>100</orbitalDistance>
+                <orbitalTheta>0</orbitalTheta>
+                <rotationalPeriod>10000</rotationalPeriod>
+            </planet>
+        </planet>
+        <planet name="Red Giant B3 BlueBall" customIcon="gasgiantblue" DIMID="17">
+			<artifact>bqmie:icon_item 22</artifact>
+            <orbitalDistance>250</orbitalDistance>
+			<GasGiant>true</GasGiant>
+			<hasRings>true</hasRings>
+			<gas>ender</gas>
+            <orbitalTheta>180</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <planet name="Moon B3-1 MushroomWorld" customIcon="iceworld" DIMID="33">
+                <orbitalDistance>250</orbitalDistance>
+                <atmosphereDensity>80</atmosphereDensity>
+                <gravitationalMultiplier>140</gravitationalMultiplier>
+                <fogColor>0.4,0.4,0.4</fogColor>
+                <skyColor>0.6,0.6,0.8</skyColor>
+                <orbitalTheta>120</orbitalTheta>
+                <rotationalPeriod>18000</rotationalPeriod>
+				<biomeIds>14</biomeIds>
+            </planet>
+            <planet name="Moon B3-2 Haven" customIcon="moon" DIMID="34">
+                <orbitalDistance>300</orbitalDistance>
+                <atmosphereDensity>10</atmosphereDensity>
+                <gravitationalMultiplier>70</gravitationalMultiplier>
+                <fogColor>0.1,0.1,0.1</fogColor>
+                <skyColor>0.0,0.0,0.0</skyColor>
+                <orbitalTheta>100</orbitalTheta>
+                <rotationalPeriod>25000</rotationalPeriod>
+				<biomeIds>94</biomeIds>
+            </planet>
+        </planet>
+    </star>
+</galaxy>

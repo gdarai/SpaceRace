@@ -113,7 +113,7 @@ for i in instr:
 	writeLine(f,3,'"cluster-count": '+o[6]+',')
 	writeLine(f,3,'"min-height": '+o[7]+',')
 	writeLine(f,3,'"max-height": '+o[8]+',')
-	writeLine(f,3,'"retrogen": false,')
+	writeLine(f,3,'"retrogen": true,')
 	if (i['biome']=='all'):
 		writeLine(f,3,'"biome": "all",')
 	else:

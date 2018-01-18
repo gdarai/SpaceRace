@@ -74,6 +74,7 @@ recipes.addShaped(<tconstruct:seared_tank:2>, [[sIngot, sGlass, sIngot], [sIngot
 val aluRod = <immersiveengineering:material:3>;
 recipes.remove(aluRod);
 mods.tconstruct.Casting.addTableRecipe(aluRod, <liquid:aluminum> * 432, <tconstruct:cast>.withTag({PartType: "tconstruct:tough_tool_rod"}), false, 100);
+mods.tconstruct.Casting.addTableRecipe(aluRod, <liquid:aluminum> * 432, <tconstruct:clay_cast>.withTag({PartType: "tconstruct:tough_tool_rod"}), false, 100);
 
 // Iron Rod
 recipes.remove(<immersiveengineering:material:1>);
@@ -217,6 +218,9 @@ recipes.addShaped(<minecraft:hopper>, [[tinPlate, null, tinPlate],[tinPlate, <mi
 mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 144, <immersiveengineering:metalDecoration1:1>, 500);
 mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 288, <immersiveengineering:metalDecoration1>, 500);
 
+// 3rd way to get a plate
+recipes.addShapeless(<immersiveengineering:metal:32>, [<ore:blockLead>, <immersiveengineering:tool>]);
+
 // Diamond chip fix
 val chipDiamond = <opencomputers:material:30>;
 recipes.remove(chipDiamond);
@@ -337,3 +341,10 @@ recipes.addShapeless(<tconstruct:sharpening_kit>.withTag({"Material":"yrdeen"}),
 recipes.addShapeless(<tconstruct:sharpening_kit>.withTag({"Material":"meteorite"}), [<tconstruct:sharpening_kit>.withTag({"Material":"wood"}), <ore:nuggetMeteorite>]);
 recipes.addShapeless(<tconstruct:sharpening_kit>.withTag({"Material":"obsidiorite"}), [<tconstruct:sharpening_kit>.withTag({"Material":"wood"}), <ore:nuggetObsidiorite>]);
 
+// Remove gear melting
+mods.tconstruct.Smeltery.removeMelting(<forestry:gearBronze>);
+mods.tconstruct.Smeltery.removeMelting(<forestry:gearCopper>);
+mods.tconstruct.Smeltery.removeMelting(<forestry:gearTin>);
+mods.tconstruct.Smeltery.removeMelting(<railcraft:gear:1>);
+mods.tconstruct.Smeltery.removeMelting(<railcraft:gear>);
+mods.tconstruct.Smeltery.removeMelting(<libvulpes:productgear:6>);

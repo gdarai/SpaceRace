@@ -12,7 +12,7 @@ val Coil = <immersiveengineering:wirecoil:3>;
 val wax = <forestry:beeswax>;
 
 recipes.remove(alvearyBlock);
-recipes.addShaped(alvearyBlock, [[alvearyPanel, alvearyPanel, alvearyPanel], [alvearyPanel, casingWood, alvearyPanel], [alvearyPanel, alvearyPanel, alvearyPanel]]);
+recipes.addShaped(alvearyBlock, [[trStick, alvearyPanel, trStick], [alvearyPanel, casingWood, alvearyPanel], [trStick, alvearyPanel, trStick]]);
 
 mods.forestry.Carpenter.removeRecipe(alvearyPanel, <liquid:for.honey>);
 mods.forestry.Carpenter.addRecipe(alvearyPanel, [[null, null, null], [trStick, <minecraft:trapdoor>, trStick], [wax, Coil, wax]], 20, <liquid:for.honey>*125, null);
@@ -90,7 +90,7 @@ recipes.remove(stoneTorch);
 
 recipes.addShaped(torch * 4, [[wax, <actuallyadditions:itemMisc:10>, wax], [null, Coil, null], [null, <minecraft:stick>, null]]);
 recipes.addShaped(torch * 4, [[wax, <actuallyadditions:itemMisc:11>, wax], [null, Coil, null], [null, <minecraft:stick>, null]]);
-recipes.addShaped(stoneTorch, [[null, null, null], [null, <minecraft:coal>, null], [null, <ore:rodStone>, null]]);
+recipes.addShaped(stoneTorch, [[<minecraft:coal>, null, null], [<ore:rodStone>, null, null], [null, null, null]]);
 recipes.addShapeless(tinyTorch * 2, [torch, <minecraft:stick>, <minecraft:stick>]);
 recipes.addShapeless(tinyTorch, [candle]);
 

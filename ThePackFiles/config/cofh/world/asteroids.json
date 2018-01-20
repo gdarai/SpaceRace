@@ -159,7 +159,6 @@
 				]
 			}
 		},
-
 		"ast00": {
 			"distribution": "uniform",
 			"generator": {
@@ -574,7 +573,6 @@
 					32
 				]
 			}
-		}
-		
+		}		
 	}
 }

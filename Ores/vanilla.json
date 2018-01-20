@@ -1670,14 +1670,14 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "taiga:prometheum_ore"
+					"name": "minecraft:netherrack"
 				},
-				"material": "minecraft:netherrack",
-				"cluster-size": 4
+				"material": "minecraft:stone",
+				"cluster-size": 40
 			},
-			"cluster-count": 15,
-			"min-height": 25,
-			"max-height": 45,
+			"cluster-count": 30,
+			"min-height": 20,
+			"max-height": 55,
 			"retrogen": true,
 			"biome": {
 				"restriction": "whitelist",
@@ -1704,14 +1704,14 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "minecraft:quartz_ore"
+					"name": "taiga:prometheum_ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 10
+				"cluster-size": 4
 			},
-			"cluster-count": 12,
-			"min-height": 10,
-			"max-height": 150,
+			"cluster-count": 20,
+			"min-height": 20,
+			"max-height": 55,
 			"retrogen": true,
 			"biome": {
 				"restriction": "whitelist",
@@ -1735,6 +1735,40 @@
 		},
 
 		"mesa02": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "minecraft:quartz_ore"
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 10
+			},
+			"cluster-count": 20,
+			"min-height": 20,
+			"max-height": 55,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_mesa",
+							"mesa",
+							"mesa_clear_rock"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"mesa03": {
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -1768,7 +1802,7 @@
 			}
 		},
 
-		"mesa03": {
+		"mesa04": {
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -1802,7 +1836,7 @@
 			}
 		},
 
-		"mesa04": {
+		"mesa05": {
 			"distribution": "uniform",
 			"generator": {
 				"block": {

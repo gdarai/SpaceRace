@@ -23,6 +23,10 @@ diorite		minecraft:stone				0	no		minecraft:stone			uniform		33		10		0	80
 netherrack	minecraft:netherrack		0	no		minecraft:stone			uniform		70		20		45	65
 endstone	minecraft:end_stone			0	no		minecraft:stone			uniform		70		20		0	40
 
+netherrack0	minecraft:netherrack		0	no		minecraft:stone			uniform		40		30		20	55
+prometheum0	taiga:prometheum_ore		0	no		minecraft:netherrack		uniform		4		20		20	55
+quartz0		minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		10		20		20	55
+
 coal		minecraft:coal_ore			0	no		minecraft:stone			uniform		14		30		0	128
 eezo		taiga:eezo_ore				0	no		minecraft:stone			uniform		8		15		15	40
 tin			forestry:resources			2	no		minecraft:stone			uniform		8		15		30	100

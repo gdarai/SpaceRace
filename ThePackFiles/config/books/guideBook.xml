@@ -107,7 +107,7 @@
 			<p>Item, Block and Igniter:</p>
 			<p>For UnderEnd:</p>
 			<stack item="immersiveengineering:faradaySuit_chest" x="0"/>
-			<stack item="tp:smooth_endstone" x="20"/>
+			<stack item="tp:reinforced_glass" x="20"/>
 			<stack item="tp:golden_scythe" x="40"/>
 			<space height="20" />
 			<p>For The Nether:</p>

@@ -22,7 +22,7 @@ ITEM  #  SaplingAcacia  #  minecraft:sapling:4
 ITEM  #  ExtraLife	 	#  betterquesting:extra_life
 ITEM  #  NetherStar	 	#  minecraft:nether_star
 ITEM  #  GrassBlock	 	#  minecraft:grass
-ITEM  #  SmoothEnd	 	#  tp:smooth_endstone
+ITEM  #  SmoothEnd	 	#  tp:reinforced_glass
 ITEM  #  RocketEngine 	#  advancedrocketry:advRocketmotor
 ITEM  #  WarpCore	 	#  advancedrocketry:warpCore
 ITEM  #  EnderEye	 	#  minecraft:ender_eye

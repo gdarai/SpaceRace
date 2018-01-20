@@ -35,7 +35,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  B40      #  Steel
-TEXT    #  Most of the heavy machinery needs Steel. Blast Furnace is your entry point, or directly the Arc Furnace but you will have to build it without the holoprojector.
+TEXT    #  Most of the heavy machinery needs Steel. Arc Furnace is your entry point for this.
 PREREQ  #  AND      #  B30
 
 TASK    #  TRIGGER

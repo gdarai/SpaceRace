@@ -64,11 +64,12 @@ taiga02		alu			taiga		0
 taiga03		gold		taiga		0
 taiga04		diamond		taiga		0
 
-mesa00		prometheum	mesa		0
-mesa01		quartzN		mesa		0
-mesa02		gold		mesa		0
-mesa03		lapis		mesa		0
-mesa04		silver		mesa		0
+mesa00		netherrack0	mesa		0
+mesa01		prometheum0	mesa		0
+mesa02		quartz0		mesa		0
+mesa03		gold		mesa		0
+mesa04		lapis		mesa		0
+mesa05		silver		mesa		0
 
 underEnd00	abyssum		underEnd	10
 underEnd01	palladium	underEnd	10

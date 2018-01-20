@@ -24,7 +24,7 @@ mods.forestry.ThermionicFabricator.addCast(tubeCopper*2, [[null, <ore:nuggetCopp
 mods.forestry.ThermionicFabricator.removeCast(tubeTin*4);
 mods.forestry.ThermionicFabricator.addCast(tubeTin*2, [[null, <libvulpes:productnugget:5>, null], [rsDust, <libvulpes:productnugget:5>, rsDust], [ioSi, ingot, ioSi]], 250, null);
 mods.forestry.ThermionicFabricator.removeCast(tubeBronze*4);
-mods.forestry.ThermionicFabricator.addCast(tubeBronze*8, [[null, <ore:ingotBronze>, null], [rsDust, <ore:ingotBronze>, rsDust], [ioSi, ingot, ioSi]], 1500, null);
+mods.forestry.ThermionicFabricator.addCast(tubeBronze*4, [[null, <ore:nuggetBronze>, null], [rsDust, <ore:nuggetBronze>, rsDust], [ioSi, ingot, ioSi]], 1500, null);
 mods.forestry.ThermionicFabricator.removeCast(tubeIron*4);
 mods.forestry.ThermionicFabricator.addCast(tubeIron*2, [[null, <ore:nuggetIron>, null], [rsDust, <ore:nuggetIron>, rsDust], [ioSi, ingot, ioSi]], 250, null);
 mods.forestry.ThermionicFabricator.removeCast(tubeGold*4);
@@ -203,7 +203,8 @@ recipes.remove(<opencomputers:material:12>);
 val projector = <libvulpes:holoProjector>;
 
 recipes.remove(projector);
-mods.forestry.Carpenter.addRecipe(projector, [[<ore:nuggetGold>, lens, null], [ocTrans, ocChip2, null], [ocTrans, ui, null]], 20, <liquid:eezo_fluid> * 1000, null);
+mods.forestry.Carpenter.addRecipe(projector, [[<ore:nuggetGold>, lens, null], [ocTrans, ocChip2, null], [ocTrans, ui, null]], 20, <liquid:eezo_fluid> * 1000, <railcraft:plate:9>);
+mods.forestry.Carpenter.addRecipe(projector, [[<ore:nuggetGold>, lens, null], [FCi2, FCi3, null], [FCi2, ui, null]], 20, <liquid:eezo_fluid> * 4000, <railcraft:plate:9>);
 
 // AR Basic construction
 val ARBlock = <libvulpes:structureMachine>;
@@ -328,6 +329,8 @@ val blastBrick = <immersiveengineering:stoneDecoration:1>;
 val arcFurnace = <advancedrocketry:arcFurnace>;
 val abyssal = <railcraft:brick_abyssal:2>;
 val ingotSteel = <railcraft:ingot>;
+val oreingotSteel = <ore:ingotSteel>;
+
 
 val coalCoke1 = <immersiveengineering:stoneDecoration:3>;
 val coalCoke2 = <railcraft:generic:6>;
@@ -346,7 +349,7 @@ mods.tconstruct.Casting.addTableRecipe(ingotSteel, <liquid:iron> * 576, coalCoke
 // Wind and WaterPower
 val wheelSegment = <immersiveengineering:material:10>;
 recipes.remove(wheelSegment);
-recipes.addShaped(wheelSegment, [[trStick, trPlank, trStick], [trPlank, ingotSteel, trPlank], [trStick, trPlank, trStick]]);
+recipes.addShaped(wheelSegment, [[trStick, trPlank, trStick], [trPlank, oreingotSteel, trPlank], [trStick, trPlank, trStick]]);
 
 // Steel Sheet Metal
 val dustObsidiorite = <ore:dustObsidiorite>;

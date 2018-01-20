@@ -1,6 +1,6 @@
 
 val brickBlock = <minecraft:brick_block>;
-val stoneBrick = <ore:brickStone>;
+val stoneBrick = <minecraft:stonebrick>;
 val piston = <minecraft:piston>;
 val trPlank = <ore:plankTreatedWood>;
 val crystal = <mysticalagriculture:infusion_crystal>;

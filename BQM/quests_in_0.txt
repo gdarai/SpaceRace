@@ -25,7 +25,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  030      #  Under End
-TEXT    #  Maybe you noticed that to get into space, you are missing some End-Ores. Well theEnd is a moon orbiting 4th planet of the Alpha Star so no, you cannot go there yet. But you can go to UnderEnd. That is an End-like dimension deep under the surface of your world. To get there, you must:\n\n1)Unlock the portal by crafting the Faraday Suit\n2)Build the portal (standart 2*3) using Smooth Endstone. Hint: You can get endstone in deeper layers of the Roguelike Dungeon.\n3)Light the portal using the Golden Scythe.
+TEXT    #  Maybe you noticed that to get into space, you are missing some End-Ores. Well theEnd is a moon orbiting 4th planet of the Alpha Star so no, you cannot go there yet. But you can go to UnderEnd. That is an End-like dimension deep under the surface of your world. To get there, you must:\n\n1)Unlock the portal by crafting the Faraday Suit\n2)Build the portal (standart 2*3) using Reinforced Glass. Hint: You can get soulsand in deeper layers of the Roguelike Dungeon.\n3)Light the portal using the Golden Scythe.
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER

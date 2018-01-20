@@ -7,8 +7,8 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C10      #  Getting Endstone
-TEXT    #  To build the UnderEnd portal, you will need some endstone. Unfortunately the ownly place where you can find some here on this got-forgotten planet is down in the depths of the Roguelike Dungeons, which can be found in the countryside from time to time. Don't worry, you will not miss them. Huge, tower-like buildings with a suspiciously looking staircase in their middle.
+QUEST   #  C10      #  Getting Soulsand
+TEXT    #  To build the UnderEnd portal, you will need some soulsand. Unfortunately the only place where you can find some here on this got-forgotten planet is down in the depths of the Roguelike Dungeons, which can be found in the countryside from time to time. Don't worry, you will not miss them. Huge, tower-like buildings with a suspiciously looking staircase in their middle.
 PREREQ  #  AND      #  C00
 
 TASK    #  TRIGGER
@@ -17,7 +17,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  C20      #  Gear Up and Go
-TEXT    #  Before you can build the portal, you must unlock it first, by crafting the Faraday Suit. Then build the structure of 14 smooth endstone making the circle with 2*3 empty doorway in the middle and acivate it with the Golden Scythe.
+TEXT    #  Before you can build the portal, you must unlock it first, by crafting the Faraday Suit. Then build the structure of 14 Reinforced Glass making the circle with 2*3 empty doorway in the middle and activate it with the Golden Scythe.
 PREREQ  #  AND      #  C10
 
 TASK    #  TRIGGER

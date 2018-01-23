@@ -22,7 +22,6 @@ val LVconn = <immersiveengineering:connector>;
 val coil1 = <immersiveengineering:wirecoil>;
 val coil2 = <immersiveengineering:wirecoil:1>;
 val coil3 = <immersiveengineering:wirecoil:2>;
-val rcCoil = <railcraft:charge>;
 val ioSi = <enderio:itemMaterial>;
 
 val tubeCopper = <forestry:thermionicTubes>;

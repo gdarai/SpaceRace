@@ -13,7 +13,7 @@ recipes.removeShapeless(<immersiveengineering:metal:*>);
 
 // Battery
 recipes.remove(battery);
-recipes.addShaped(battery, [[null, <ore:nuggetConstantan>, null],[redCoil, <railcraft:charge:6>, redCoil],[aluPlate, redCoil, aluPlate]]);
+recipes.addShaped(battery, [[null, <ore:nuggetConstantan>, null],[redCoil, <ore:plateNickel>, redCoil],[aluPlate, redCoil, aluPlate]]);
 
 // Fixing glass
 val glassOre = <ore:blockGlassColorless>;
@@ -115,6 +115,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productrod:1>, 
 // Bronze ingots
 recipes.remove(<forestry:ingotBronze>*4);
 recipes.remove(<railcraft:ingot:5>*4);
+recipes.remove(<railcraft:ingot:7>*3);
 
 // Gears fix
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold:1>);

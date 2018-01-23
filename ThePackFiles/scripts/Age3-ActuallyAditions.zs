@@ -320,4 +320,4 @@ mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemBatteryTriple>
 
 // Utilities
 recipes.remove(<actuallyadditions:blockCoffeeMachine>);
-recipes.addShaped(<actuallyadditions:blockCoffeeMachine>, [[null, <railcraft:charge:5>, null], [null, scaffAlu, null], [inRed0, casingWood, inRed0]]);
+recipes.addShaped(<actuallyadditions:blockCoffeeMachine>, [[null, <immersiveengineering:metalDecoration0:1>, null], [null, scaffAlu, null], [inRed0, casingWood, inRed0]]);

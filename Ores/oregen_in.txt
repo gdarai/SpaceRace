@@ -76,6 +76,10 @@ underEnd01	palladium	underEnd	10
 underEnd02	magicProsp	underEnd	10
 underEnd03	duranite	underEnd	10
 underEnd04	draconiumE	underEnd	10
+underEnd05	netherrackU	underEnd	10
+underEnd06	prometheum0	underEnd	10
+underEnd07	dirt		underEnd	10
+underEnd08	obsidian	underEnd	10
 
 hell00		prometheum	hell		-1
 hell01		cobaltN		hell		-1

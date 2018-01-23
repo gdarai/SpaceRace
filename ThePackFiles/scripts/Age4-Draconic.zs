@@ -52,7 +52,7 @@ mods.actuallyadditions.Empowerer.addRecipe(theBlock, coreBasic, skelSkul, <actua
 recipes.remove(craftingCore);
 recipes.remove(ped0);
 mods.actuallyadditions.Empowerer.addRecipe(ped0, craftingCore, theEgg, theStar, theEgg, theStar, 750000, 1200);
-mods.forestry.Carpenter.addRecipe(ped0, [[theIngot, theStar, theIngot], [iobsidian, <mysticalagriculture:intermedium_furnace>, iobsidian], [skelSkul, uraniumCapsule, skelSkul]], 400, <liquid:xpjuice> * 4000, <railcraft:frame>);
+mods.forestry.Carpenter.addRecipe(ped0, [[theIngot, theStar, theIngot], [iobsidian, <mysticalagriculture:intermedium_furnace>, iobsidian], [skelSkul, uraniumCapsule, skelSkul]], 400, <liquid:xpjuice> * 4000, <mysticalagriculture:mystical_machine_frame>);
 
 // Utilities
 recipes.remove(<draconicevolution:dislocator>);

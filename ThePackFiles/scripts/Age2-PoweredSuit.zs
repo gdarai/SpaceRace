@@ -14,7 +14,7 @@ val advItemRelay = <actuallyadditions:blockLaserRelayItemWhitelist>;
 val display = <advancedrocketry:misc>;
 val ARCi0 = <advancedrocketry:ic:3>;
 val plateInvar = <railcraft:plate:9>;
-val rollingMachine = <railcraft:equipment:1>;
+val rollingMachine = <railcraft:equipment>;
 val slabSteel = <ore:slabSteel>;
 val coil1 = <actuallyadditions:itemMisc:7>;
 val ioSi = <enderio:itemMaterial>;
@@ -64,7 +64,7 @@ recipes.addShaped(<powersuits:powerArmorFeet>, [[null, null, null], [gearBoxStee
 recipes.addShaped(<powersuits:powerTool>, [[<actuallyadditions:itemSwordCrystalRed>, null, <actuallyadditions:itemSwordCrystalRed>], [plateInvar, gearBoxSteel, plateInvar], [plateInvar, ARCi0, plateInvar]]);
 
 recipes.addShaped(<powersuits:powerArmorComponent:9>, [[fabric, fabric, fabric],[fabric, fabric, fabric],[ropeCoil, null, ropeCoil]]);
-recipes.addShaped(<powersuits:powerArmorComponent:2>, [[null, wires, null],[wires, <railcraft:charge:5>, wires],[null, wires, null]]);
+recipes.addShaped(<powersuits:powerArmorComponent:2>, [[null, wires, null],[wires, <immersiveengineering:metalDecoration0:1>, wires],[null, wires, null]]);
 recipes.addShaped(<powersuits:powerArmorComponent:3>, [[null, sheetTitAlu, sheetTitAlu],[plateMan, plateMan, sheetTitAlu],[sheetTitAlu, plateMan, null]]);
 recipes.addShaped(<powersuits:powerArmorComponent:4>, [[pipeLiquid, pipeLiquid, pipeLiquid],[tankNit, IEPump, tankNit],[IENozzle, IENozzle, IENozzle]]);
 recipes.addShaped(<powersuits:powerArmorComponent:5>, [[IEconnME, wires, IEconnME],[wires, IEcapME, wires],[null, wires, null]]);

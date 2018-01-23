@@ -107,7 +107,7 @@ val chest3 = <actuallyadditions:blockGiantChestLarge>;
 val aaLens = <actuallyadditions:itemMisc:18>;
 
 val nucleumCapsule = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"nucleum_fluid", Amount:1000}});
-val eezoCan = <forestry:can>.withTag({"Fluid":{"FluidName":"eezo_fluid", Amount:1000}});
+val eezoCan = <forestry:can:1>.withTag({"Fluid":{"FluidName":"eezo_fluid", Amount:1000}});
 val plateTriberium = <tconstruct:large_plate>.withTag({"Material":"triberium"});
 val inChisGreenBL = <actuallyadditions:blockTestifiBucksGreenWall>;
 
@@ -219,7 +219,7 @@ recipes.remove(<actuallyadditions:itemTeleStaff>);
 recipes.remove(<actuallyadditions:itemDrill:3>);
 recipes.remove(pearlBlock);
 recipes.remove(<actuallyadditions:itemLeafBlowerAdvanced>);
-recipes.addShaped(<actuallyadditions:itemLaserWrench>,[[null, bowString, crystal.noReturn()],[null, rodSteel, bowString],[rodSteel, null, null]]);
+recipes.addShaped(<actuallyadditions:itemLaserWrench>,[[null, bowString.noReturn(), crystal.noReturn()],[null, rodSteel.noReturn(), bowString.noReturn()],[rodSteel.noReturn(), null, null]]);
 recipes.addShaped(<actuallyadditions:itemTeleStaff>,[[null, bowString, pearlBlock],[null, <actuallyadditions:itemLaserWrench>, bowString],[rodSteel, <actuallyadditions:itemBattery>, null]]);
 mods.forestry.ThermionicFabricator.addCast(pearlBlock, [[pearl, ioSi, pearl], [ioSi, dustDrac, ioSi], [pearl, ioSi, pearl]], 1000, null);
 recipes.addShaped(<actuallyadditions:itemDrill:3>,[[inDiamant0, <railcraft:borehead_steel>, inDiamant0],[<mysticalagriculture:intermedium_tool_core>, <actuallyadditions:itemMisc:16>, <mysticalagriculture:intermedium_tool_core>],[<immersiveengineering:material:13>, <actuallyadditions:itemBatteryDouble>, <immersiveengineering:material:13>]]);
@@ -256,10 +256,14 @@ mods.actuallyadditions.AtomicReconstructor.remove(<actuallyadditions:blockLaserR
 mods.actuallyadditions.AtomicReconstructor.remove(<actuallyadditions:blockLaserRelayItem>);
 recipes.remove(<actuallyadditions:itemFilter>);
 recipes.remove(<actuallyadditions:blockLaserRelayItemWhitelist>);
-recipes.addShaped(<actuallyadditions:blockLaserRelayFluids>*2, [[null, crystal.noReturn(), null], [bowString, eezoCan, bowString], [dustLapis, <bibliocraft:SwordPedestal:*>, dustLapis]]);
-recipes.addShaped(<actuallyadditions:blockLaserRelayItem>*2, [[null, crystal.noReturn(), null], [bowString, eezoCan, bowString], [dustLead, <bibliocraft:SwordPedestal:*>, dustLead]]);
+recipes.addShaped(<actuallyadditions:blockLaserRelayFluids>*2, [[null, crystal.noReturn(), null], [bowString.noReturn(), eezoCan.noReturn(), bowString.noReturn()], [dustLapis.noReturn(), <bibliocraft:SwordPedestal:*>.noReturn(), dustLapis.noReturn()]]);
+recipes.addShaped(<actuallyadditions:blockLaserRelayItem>*2, [[null, crystal.noReturn(), null], [bowString.noReturn(), eezoCan.noReturn(), bowString.noReturn()], [dustLead.noReturn(), <bibliocraft:SwordPedestal:*>.noReturn(), dustLead.noReturn()]]);
 recipes.addShaped(<actuallyadditions:blockLaserRelayItemWhitelist>, [[dustKarm, inRed0, dustKarm], [tankNit, <actuallyadditions:blockLaserRelayItem>, tankNit], [dustKarm, inRed0, dustKarm]]);
 recipes.addShaped(<actuallyadditions:itemFilter>, [[ironBar, prospShard, ironBar], [prospShard, null, prospShard], [ironBar, prospShard, ironBar]]);
+
+mods.immersiveengineering.BottlingMachine.addRecipe(eezoCan, <forestry:can>, <liquid:eezo_fluid> * 1000);
+
+
 
 // PowerGen
 recipes.remove(<actuallyadditions:blockCanolaPress>);

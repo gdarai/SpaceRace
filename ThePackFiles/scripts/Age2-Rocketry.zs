@@ -34,6 +34,7 @@ val ocChip2 = <opencomputers:material:9>;
 val ocChip3 = <opencomputers:material:10>;
 val ocRemote = <opencomputers:tool:2>;
 val ocPCB = <opencomputers:material:5>;
+val navigUpgrade = <opencomputers:upgrade:19>;
 
 val rodSteel = <ore:stickSteel>;
 val rodIron = <ore:stickIron>;
@@ -161,6 +162,10 @@ mods.forestry.Carpenter.addRecipe(ARCoilAlu, [[SheetBlockAlu, SheetAlu, SheetBlo
 mods.forestry.Carpenter.addRecipe(ARCoilTitan, [[plateTitan, SheetTitan, plateTitan], [SheetTitan, IESteelCoil, SheetTitan], [plateTitan, SheetTitan, plateTitan]], 120, <liquid:obsidiorite_fluid> * 1000);
 mods.forestry.Carpenter.addRecipe(ARCoilIridium, [[plateIri, SheetTitIri, plateIri], [SheetTitIri, IESteelCoil, SheetTitIri], [plateIri, SheetTitIri, plateIri]], 120, <liquid:obsidiorite_fluid> * 2000);
 
+// Copper Sheets through metal press 
+mods.immersiveengineering.MetalPress.addRecipe(SheetCopper, plateCopper, <immersiveengineering:mold>, 1500, 4);
+
+
 // AR Navigation Chips
 recipes.remove(<advancedrocketry:planetIdChip>);
 recipes.remove(<advancedrocketry:spaceStationChip>);
@@ -192,12 +197,12 @@ recipes.remove(<advancedrocketry:seat>);
 recipes.remove(<advancedrocketry:loader:1>);
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.remove(<advancedrocketry:guidanceComputer>);
-mods.forestry.Carpenter.addRecipe(rocketTank, [[IELightBlock, pipeLiquid, SheetSlabNickel], [SheetSteel, scaffAlu, SheetSteel], [SheetSlabNickel, SheetSlabNickel, SheetSlabNickel]], 120, <liquid:water> * 2000);
+mods.forestry.Carpenter.addRecipe(rocketTank, [[IELightBlock, pipeLiquid, SheetSlabNickel], [SheetSteel, scaffAlu, SheetSteel], [SheetSlabNickel, SheetSlabNickel, SheetSlabNickel]], 120, <liquid:duranite_fluid> * 2000);
 recipes.addShaped(rocketEngine1, [[pipeLiquid, scaffSteel, pipeLiquid], [IEPump, rocketTank, motorAdvanced], [IENozzle, IENozzle, IENozzle]]);
 recipes.addShaped(<advancedrocketry:seat>, [[IRRope, null, IRRope], [IEFabric, IEFabric, IEFabric], [scaffAlu, IENozzle, scaffAlu]]);
 recipes.addShaped(<advancedrocketry:loader:1>, [[hiTechDoor, hiTechDoor, hiTechDoor], [basicBlock, null, basicBlock], [scaffAlu, ARCi0, scaffAlu]]);
 recipes.addShaped(<advancedrocketry:loader:6>, [[null, hiTechDoor, null], [scaffAlu, <advancedrocketry:loader>, scaffAlu], [ARCi0, basicBlock, pipeData]]);
-recipes.addShaped(<advancedrocketry:guidanceComputer>, [[scaffAlu, ARCi0, scaffAlu], [ARCi0, basicBlock, display], [scaffAlu, pipeData, scaffAlu]]);
+recipes.addShaped(<advancedrocketry:guidanceComputer>, [[navigUpgrade, ARCi0, navigUpgrade], [ARCi0, basicBlock, display], [scaffAlu, pipeData, scaffAlu]]);
 
 // Rocket Automation
 recipes.remove(<advancedrocketry:loader:2>);

@@ -202,8 +202,8 @@ val knBlade = <actuallyadditions:itemMisc:2>;
 recipes.remove(knBlade);
 recipes.addShaped(knBlade, [[null, <ore:nuggetIron>, null], [null, <ore:nuggetIron>, null], [null, <ore:itemFlint>, null]]);
 
-// AR Fuel in Rafiner
-mods.immersiveengineering.Refinery.addRecipe(<liquid:rocketfuel> * 1, <liquid:fire_water> * 20, <liquid:bio.ethanol> * 10, 2000);
+// AR Fuel in Refiner
+mods.immersiveengineering.Refinery.addRecipe(<liquid:rocketfuel> * 1, <liquid:fire_water> * 3, <liquid:bio.ethanol> * 5, 2000);
 mods.forestry.Fermenter.addRecipe(<liquid:fire_water>, <mysticalagriculture:fire_essence>, <liquid:potion>, 500, 0.2);
 
 // Ferilizer equivalency

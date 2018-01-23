@@ -67,7 +67,7 @@ REWARD  #  XP       #  Levels:1
 
 QUEST   #  Dx00     #  Loading and Unloading
 TEXT    #  Optionally, you can add Ship Loader and Unloader and Fuel Loader and Unloader to automate your space ship handling.
-PREREQ  #  AND      #  D10
+PREREQ  #  AND      #  D11
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1
@@ -76,7 +76,7 @@ REWARD  #  XP       #  Levels:1
 
 QUEST   #  Dx01     #  Magical Flowers
 TEXT    #  So you can make a flower which will produce blaze powder for you. Interesting. Now I am intrigued to find out what other flowers you can make.
-PREREQ  #  AND      #  D10
+PREREQ  #  AND      #  D11
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1
@@ -121,6 +121,15 @@ REWARD  #  XP       #  Levels:1
 
 QUEST   #  Dx43     #  Power Lasers
 TEXT    #  The Laser transport system can be now modified to transfer also Power. And some more Power Related stuff is now available as well.
+PREREQ  #  AND      #  D40
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  Dx44     #  Computers
+TEXT    #  Some people will always think that computer is just another way to play. But you know better right? Factory controlled by computer? Yes please.
 PREREQ  #  AND      #  D40
 
 TASK    #  TRIGGER

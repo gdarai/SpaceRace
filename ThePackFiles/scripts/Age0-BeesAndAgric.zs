@@ -95,6 +95,7 @@ recipes.addShapeless(tinyTorch * 2, [torch, <minecraft:stick>, <minecraft:stick>
 recipes.addShapeless(tinyTorch, [candle]);
 
 // Mystical Agriculture
+val ess1 = <mysticalagriculture:inferium_essence>;
 val ess2 = <mysticalagriculture:prudentium_essence>;
 val ess3 = <mysticalagriculture:intermedium_essence>;
 val ess4 = <mysticalagriculture:superium_essence>;
@@ -124,3 +125,21 @@ recipes.removeShaped(<mysticalagriculture:prudentium_block>,[[null, <*>, null], 
 recipes.addShaped(ess3, [[ess2, beeSlimeMet, ess2], [infCrystalDmg, beeSlimeMet, infCrystalDmg], [ess2, beeSlimeMet, ess2]]);
 mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:intermedium_apple>, ess4, magentaHoney, colBlood, <enderio:itemFrankenSkull:1>, colBlood, 50000, 200);
 mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:superium_apple>, ess5, <forestry:craftingMaterial:7>, bloodBlock, <enderio:itemColdFireIgniter>.withTag({famount:1000}), bloodBlock, 200000, 200);
+
+// Crushing Prosperity ore
+// Crushing Inferomite ore
+mods.immersiveengineering.Crusher.addRecipe(prosperityShard * 2, <mysticalagriculture:prosperity_ore>, 2000, prosperityShard, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(prosperityShard * 2, <mysticalagriculture:nether_prosperity_ore>, 2000, prosperityShard, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(prosperityShard * 2, <mysticalagriculture:end_prosperity_ore>, 2000, prosperityShard, 0.5);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:prosperity_ore>, prosperityShard * 2, prosperityShard, 50);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:nether_prosperity_ore>, prosperityShard * 2, prosperityShard, 50);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:end_prosperity_ore>, prosperityShard * 2, prosperityShard, 50);
+
+mods.immersiveengineering.Crusher.addRecipe(ess1 * 3, <mysticalagriculture:inferium_ore>, 2000, ess1, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(ess1 * 3, <mysticalagriculture:nether_inferium_ore>, 2000, ess1, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(ess1 * 3, <mysticalagriculture:end_inferium_ore>, 2000, ess1, 0.5);
+
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:inferium_ore>, ess1 * 3, ess1, 50);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:nether_inferium_ore>, ess1 * 3, ess1, 50);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:end_inferium_ore>, ess1 * 3, ess1, 50);
+

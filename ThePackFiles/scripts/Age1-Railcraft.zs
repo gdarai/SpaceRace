@@ -67,6 +67,7 @@ mods.forestry.Carpenter.addRecipe(shipEngine,
    [scaffAlu, gearBoxIron, scaffAlu]], 20, <liquid:canolaoil> * 100);
 
 mods.forestry.Fermenter.addRecipe(<liquid:steam>, <minecraft:coal>, <liquid:water>, 500, 0.2);   
+mods.forestry.Fermenter.addRecipe(<liquid:steam>, <minecraft:coal:1>, <liquid:water>, 500, 0.2);   
 mods.forestry.Carpenter.addRecipe(<davincisvessels:balloon:0>, 
   [[fabric, fabric, fabric],
    [fabric, null, fabric], 

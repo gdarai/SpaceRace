@@ -169,6 +169,9 @@ mods.forestry.Carpenter.addRecipe(ARCi0, [[ioSi, ocTrans, ioSi], [ocTrans, ocChi
 mods.forestry.Carpenter.addRecipe(ARCi1, [[ioSi, <ore:ingotBronze>, ioSi], [ocTrans, ocChip1, ocTrans], [<ore:nuggetGold>, <ore:ingotNiob>, <ore:nuggetGold>]], 20, <liquid:eezo_fluid> * 1000, <forestry:waxCast>);
 mods.forestry.Carpenter.addRecipe(ARCi2, [[ioSi, <ore:gemLapis>, ioSi], [ocTrans, ocChip1, ocTrans], [<ore:nuggetGold>, <ore:ingotNiob>, <ore:nuggetGold>]], 20, <liquid:eezo_fluid> * 1000, <forestry:waxCast>);
 
+// Magma, needed for nitronite:
+mods.forestry.Squeezer.addRecipe(<liquid:magma_fluid> * 100, [<minecraft:magma>], 200, null);
+
 val boardRaw = <opencomputers:material:3>;
 val boardPrinted = <opencomputers:material:5>;
 val ui = <advancedrocketry:misc>;
@@ -181,6 +184,7 @@ recipes.remove(ui);
 mods.forestry.ThermionicFabricator.addCast(ui, [[null, null, null], [lens, lens, lens], [tubeIron, FCi0, tubeIron]], 250, null);
 
 // OC Components - mostly moved to Precision Assembler
+
 // Card Base
 recipes.remove(<opencomputers:material:6>);
 // Screens (2 and 3 in Prec. Assembler)
@@ -188,6 +192,7 @@ recipes.remove(<opencomputers:screen1>);
 recipes.addShaped(<opencomputers:screen1>, [[null, null, lens], [ocChip1, <ore:blockSheetmetalAluminum>, lens], [ocChip1, <ore:slabSheetmetalAluminum>, lens]]);
 recipes.remove(<opencomputers:screen2>);
 recipes.remove(<opencomputers:screen3>);
+
 // Cases
 recipes.remove(<opencomputers:case1>);
 recipes.remove(<opencomputers:case2>);
@@ -279,7 +284,7 @@ recipes.remove(experienceSolidifier);
 recipes.addShaped(experienceSolidifier, [[null, <actuallyadditions:blockSmileyCloud>, null], [gearBronze, casingWood, gearBronze], [aluScaff, <tconstruct:metal:5>, aluScaff]]);
 
 recipes.remove(experienceRod);
-recipes.addShaped(experienceRod, [[null, tubeEmerald, infCrystal], [tubeEmerald, <ore:ingotIox>, tubeEmerald], [infCrystal, tubeEmerald, null]]);
+recipes.addShaped(experienceRod, [[null, tubeEmerald.noReturn(), infCrystal], [tubeEmerald.noReturn(), <ore:ingotIox>.noReturn(), tubeEmerald.noReturn()], [infCrystal, tubeEmerald.noReturn(), null]]);
 
 // Magnet
 recipes.remove(elMagnet);
@@ -300,7 +305,7 @@ recipes.addShapeless(<railcraft:dust:3>, [<immersiveengineering:tool>.reuse(), <
 
 // Handheld Filler
 recipes.remove(handFiller);
-recipes.addShaped(handFiller, [[null, tubeObsidian, null], [<ore:plateGold>, infCrystal, <ore:plateGold>], [handle, battery, handle]]);
+recipes.addShaped(handFiller, [[null, tubeObsidian.noReturn(), null], [<ore:plateGold>.noReturn(), infCrystal, <ore:plateGold>.noReturn()], [handle.noReturn(), battery.noReturn(), handle.noReturn()]]);
 
 // Leaf Blower
 recipes.remove(leafBlower);

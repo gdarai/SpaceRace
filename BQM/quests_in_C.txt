@@ -102,7 +102,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  Cx04     #  Flying
-TEXT    #  If you are tired of evading islands, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
+TEXT    #  If you are tired of evading aqua creepers, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
 PREREQ  #  AND      #  C00
 
 TASK    #  TRIGGER
@@ -120,7 +120,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  Cx10     #  Dungeon loot
-TEXT    #  Some dungeon loot may be of great interrest to you especially the one from deeper levels. Because you cannot find this stuff anywhere else on this planet. Try to look for some Blaze Rods, or NetherWart. Maybe some Soulsand?
+TEXT    #  Some dungeon loot may be of great interrest to you especially the one from deeper levels. Because you cannot find this stuff anywhere else on this planet. Try to look for some Blaze Rods, or NetherWart. Maybe some Endstone?
 PREREQ  #  AND      #  C10
 
 TASK    #  TRIGGER
@@ -158,15 +158,6 @@ REWARD  #  XP       #  Levels:1
 QUEST   #  Cx33     #  Advanced Gadgets
 TEXT    #  Some quite useful gadgets are now available to you, like Experience Rod and Handheld Filler.
 PREREQ  #  AND      #  C30
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
-
-QUEST   #  Cx50     #  Computers
-TEXT    #  Some people will always think that computer is just another way to play. But you know better right? Factory controlled by computer? Yes please.
-PREREQ  #  AND      #  C50
 
 TASK    #  TRIGGER
 REWARD  #  XP       #  Levels:1

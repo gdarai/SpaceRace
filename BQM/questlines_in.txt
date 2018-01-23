@@ -115,7 +115,6 @@ QUEST        #  Cx30        #   15:-25 	 #  20    #  MagicSeed
 QUEST        #  Cx31        #   25:-25 	 #  20    #  MagicTool
 QUEST        #  Cx32        #   15:25  	 #  20    #  LaserTr
 QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod
-QUEST        #  Cx50        #   50:-25 	 #  20    #  Computer
 QUEST        #  Cx51        #   60:-25 	 #  20    #  DEChest
 QUEST        #  Cx52        #   60:25 	 #  20    #  AABlink
 QUEST        #  Cx53        #   50:25 	 #  20    #  IERadiator
@@ -139,8 +138,9 @@ QUEST        #  Dx01        #  -30:25 	 #  20    #  MagicSeed
 QUEST        #  Dx30        #    0:-25 	 #  20    #  ARGadget
 QUEST        #  Dx40        #   25:-25 	 #  20    #  AACoffee
 QUEST        #  Dx41        #   15:-25 	 #  20    #  AACanola
-QUEST        #  Dx42        #   25:25 	 #  20    #  MPHelm
-QUEST        #  Dx43        #   15:25 	 #  20    #  LaserPwr
+QUEST        #  Dx42        #   30:25 	 #  20    #  MPHelm
+QUEST        #  Dx43        #   20:25 	 #  20    #  LaserPwr
+QUEST        #  Dx44        #   10:25 	 #  20    #  Computer
 QUEST        #  Dx60        #   50:-25 	 #  20    #  Dilithium
 QUEST        #  Dx61        #   60:-25 	 #  20    #  ZombieGen
 QUEST        #  Dx62        #   60:25 	 #  20    #  ExpStand

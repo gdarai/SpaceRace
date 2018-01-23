@@ -17,6 +17,8 @@
 			<link ref="ch2">Sudden Deaths</link>
 			<link ref="ch3">Wrong Recipes</link>
 			<link ref="ch4">Finding Resources</link>
+			<p>There is also this chapter which can guide you through the whole modpack if you want.</p>
+			<link ref="ch7">How to progress</link>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">The Goal</p>
@@ -753,6 +755,70 @@
 			<p>Just build a portal in the Nether, made of Chiseled Uranium Blocks and activate it using your loyal Golden Scythe.</p>
 			<stack item="chisel:blockUranium" x="0"/>
 			<stack item="tp:golden_scythe" x="20"/>
+		</page>
+	</chapter>
+	<chapter id="ch7">
+		<page>
+			<title>How to make</title>
+			<p>Sometimes you just prefer someone's help... a guide how to do stuff, how was it meant.</p>
+			<p />
+			<p>Soo... when you don't know what next or you are lost, you can always look here to verify how the beta crew did it.</p>
+		</page>
+		<page>
+			<title>Age of Exploration (1/2)</title>
+			<link ref="ch7:pg0">Sleeping Bag</link>
+			<link ref="ch7:pg0">Start with Food</link>
+			<link ref="ch7:pg0">Bed, Furnace, Light</link>
+			<link ref="ch7:pg0">Basic Tools and Armor</link>
+			<link ref="ch7:pg0">Bees, Rope and Torches</link>
+			<link ref="ch7:pg0">Charcoal and Creosole Oil</link>
+			<link ref="ch7:pg0">Better Food, Meat, Leather</link>
+			<link ref="ch7:pg0">Items and Fluids</link>
+			<link ref="ch7:pg0">Starting Mining, Smeltery, Automation</link>
+			<link ref="ch7:pg0">Gears, Rods and Plates</link>
+		</page>
+		<page>
+			<title>Age of Exploration (2/2)</title>
+			<link ref="ch7:pg0">Carpenter and Thermionics</link>
+			<link ref="ch7:pg0">Why to build a Ship</link>
+			<link ref="ch7:pg0">Power Production and Distribution</link>
+			<link ref="ch7:pg0">Regular Steel</link>
+			<link ref="ch7:pg0">MedKits</link>
+			<link ref="ch7:pg0">Fighting the Dungeon</link>
+			<link ref="ch7:pg0">UnderEnd Portal</link>
+		</page>
+		<page>
+			<title>Age of Electronics</title>
+			<link ref="ch7:pg0">More Resources</link>			
+			<link ref="ch7:pg0">Cheaper Gears</link>			
+			<link ref="ch7:pg0">Industrial Potions</link>			
+			<link ref="ch7:pg0">Holo Projector</link>			
+			<link ref="ch7:pg0">Proper Electronics</link>			
+			<link ref="ch7:pg0">Automation with a Computer</link>
+			<link ref="ch7:pg0">Producing Rocket Fuel</link>
+			<link ref="ch7:pg0">Setting up Assembler</link>
+			<link ref="ch7:pg0">Getting Space Suit</link>
+			<link ref="ch7:pg0">Your Launch Site</link>
+			<link ref="ch7:pg0">Your Rocket to the Moon</link>
+		</page>
+		<page id="pg0">
+			<p bold="true" italics="true">Sleeping Bag</p>
+			<p>So you are in the game... good, first thing: don't try to survive night. Make a sleeping bag.</p>
+			<stack item="sleepingbag:sleepingbag" x="0"/>
+			<space height="20" />
+			<p>For that you will need sticks, leaves and planks.</p>
+			<stack item="minecraft:plank" x="0"/>
+			<stack item="minecraft:stick" x="20"/>
+			<stack item="minecraft:leaves" x="40"/>
+			<space height="20" />
+			<p>Most of it easy, just the leaves, right? Wrong. The pack has in the Wooden Shears mod. So, take sapling, planks and sticks and make yourself shears.</p>
+			<stack item="woodenshears:wshears" x="0"/>
+			<space height="20" />
+			<p>You don't have a tree nearby? Start another game. This is not the environment you can survive in. Or just teleport somewhere if you have cheats on.</p>
+			<p />
+			<p></p>
+			<p />
+			<p></p>
 		</page>
 	</chapter>
 </book>

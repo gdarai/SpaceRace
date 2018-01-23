@@ -8,7 +8,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  B10      #  Plates are not that easy
-TEXT    #  Plates are more tricky. To cast a plate you first have to have a plate. Now, you can build a Small Plate Press, or basic Rolling Machine to get one.
+TEXT    #  Plates are more tricky. To cast a plate you first have to have a plate. Now, you can build a Small Plate Press, or basic Rolling Machine to get one. Or... if you have enough lead, lead is soft enough that you can hammer a plate out of it.
 PREREQ  #  AND      #  B00
 
 TASK    #  TRIGGER

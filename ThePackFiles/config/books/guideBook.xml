@@ -6,9 +6,9 @@
 			<title>Welcome Player</title>
 			<p>This book you have in your hand is here for you. To make your life easier and give it some direction.</p>
 			<p />
-			<p>If you prefer Quest based guide it is also part of this modpack. You can use the Better Questing Shortcut or open the Quest Book.</p> 
+			<p>If you prefer Quest based guide it is also part of this modpack. You can use the Better Questing Shortcut or open the Quest Book.</p>
 			<p />
-			<p align="center">good luck, Darai</p> 
+			<p align="center">good luck, Darai</p>
 		</page>
 		<page id="pg1">
 			<p bold="true" italics="true">Links</p>
@@ -24,7 +24,7 @@
 			<p bold="true" italics="true">The Goal</p>
 			<p>To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the orbit of the Mooshroom Moon.</p>
 			<p />
-			<p>Next to it is a small moon called Haven. Terraform it and build there a monument of your success.</p>			
+			<p>Next to it is a small moon called Haven. Terraform it and build there a monument of your success.</p>
 		</page>
 		<page id="pg3">
 			<p>For the monument, use at least following resources:</p>
@@ -171,7 +171,7 @@
 			<stack item="forestry:pile_wood" x="20"/>
 			<stack item="minecraft:flint_and_steel" x="40"/>
 		</page>
-		<page>		
+		<page>
 			<p>Also Charcoal is now the only fuel source for making Coal Coke and ultimately burn Iron to Steel.</p>
 		</page>
 		<page id="pg3">
@@ -767,33 +767,33 @@
 		<page>
 			<title>Age of Exploration (1/2)</title>
 			<link ref="ch7:pg0">Sleeping Bag</link>
-			<link ref="ch7:pg0">Start with Food</link>
-			<link ref="ch7:pg0">Bed, Furnace, Light</link>
-			<link ref="ch7:pg0">Basic Tools and Armor</link>
-			<link ref="ch7:pg0">Bees, Rope and Torches</link>
-			<link ref="ch7:pg0">Charcoal and Creosole Oil</link>
-			<link ref="ch7:pg0">Better Food, Meat, Leather</link>
-			<link ref="ch7:pg0">Items and Fluids</link>
-			<link ref="ch7:pg0">Starting Mining, Smeltery, Automation</link>
-			<link ref="ch7:pg0">Gears, Rods and Plates</link>
+			<link ref="ch7:pg1">Start with Food</link>
+			<link ref="ch7:pg2">Bed, Furnace, Light</link>
+			<link ref="ch7:pg3">Basic Tools and Armor</link>
+			<link ref="ch7:pg4">Bees and Ropes</link>
+			<link ref="ch7:pg5">Charcoal and Creosole Oil</link>
+			<link ref="ch7:pg6">Better Food, Meat, Leather</link>
+			<link ref="ch7:pg7">Store and Transfer</link>
+			<link ref="ch7:pg8">Starting Mining, Smeltery, Automation</link>
+			<link ref="ch7:pg9">Gears, Rods and Plates</link>
 		</page>
 		<page>
 			<title>Age of Exploration (2/2)</title>
-			<link ref="ch7:pg0">Carpenter and Thermionics</link>
-			<link ref="ch7:pg0">Why to build a Ship</link>
-			<link ref="ch7:pg0">Power Production and Distribution</link>
-			<link ref="ch7:pg0">Regular Steel</link>
-			<link ref="ch7:pg0">MedKits</link>
-			<link ref="ch7:pg0">Fighting the Dungeon</link>
-			<link ref="ch7:pg0">UnderEnd Portal</link>
+			<link ref="ch7:pg10">Carpenter and Thermionics</link>
+			<link ref="ch7:pg11">Why to build a Ship</link>
+			<link ref="ch7:pg12">Power Production and Distribution</link>
+			<link ref="ch7:pg13">Regular Steel</link>
+			<link ref="ch7:pg14">MedKits</link>
+			<link ref="ch7:pg15">Fighting the Dungeon</link>
+			<link ref="ch7:pg16">UnderEnd Portal</link>
 		</page>
 		<page>
 			<title>Age of Electronics</title>
-			<link ref="ch7:pg0">More Resources</link>			
-			<link ref="ch7:pg0">Cheaper Gears</link>			
-			<link ref="ch7:pg0">Industrial Potions</link>			
-			<link ref="ch7:pg0">Holo Projector</link>			
-			<link ref="ch7:pg0">Proper Electronics</link>			
+			<link ref="ch7:pg0">More Resources</link>
+			<link ref="ch7:pg0">Cheaper Gears</link>
+			<link ref="ch7:pg0">Industrial Potions</link>
+			<link ref="ch7:pg0">Holo Projector</link>
+			<link ref="ch7:pg0">Proper Electronics</link>
 			<link ref="ch7:pg0">Automation with a Computer</link>
 			<link ref="ch7:pg0">Producing Rocket Fuel</link>
 			<link ref="ch7:pg0">Setting up Assembler</link>
@@ -818,6 +818,89 @@
 			<p />
 			<p></p>
 			<p />
+			<p></p>
+		</page>
+		<page id="pg1">
+			<p bold="true" italics="true">Start with Food</p>
+			<p>Food is essential. With Spice of Life every type of food will feed you only 8x and it will take you 1000 hunger to forget you ate it. So, collect new seeds and focus on variety. Start with collecting HarvestCraft seeds. You can get them from Gardens, or by breaking Grass.</p>
+			<p>First you can eat raw products, later on, you can start cooking. Some kitchen appliance even does not need metals. Just wood.</p>
+			<p>See how to make fresh water and salt.</p>
+		</page>
+		<page id="pg2">
+			<p bold="true" italics="true">Bed, Furnace, Light</p>
+			<p>You don't need bed for sleeping, Sleeping Bag is enough for start. But when you will get some wool make bed so you have spawnpoint in case of death.</p>
+			<p>Easiest furnace is made from clay bricks. Dry some dirt. With 12 drying racks it takes 2 cycles to dry enough bricks for one furnace.</p>
+			<p>Light is not cheap. You don't need it as long as you sleep through night. But you need it when you want to get underground to find first metals.</p>
+			<p>You can make regular Torches only if you have Rope Coils, Wax and Coal or Charcoal. If you have some Coal but no Wax or Rope, you can make Stone Torches. Othewise you can make Harvestcraft candles and convert those directly into Tiny Torches.</p>
+		</page>
+		<page id="pg3">
+			<p bold="true" italics="true">Basic Tools and Armor</p>
+			<p>Tools are focusing on the Tinker's Construct mod. Start with Wood tools and then switch to Stone or Flint tools. If you will want something more, you will need casting.</p>
+			<p>You can start with Wooden or Stone armor. When you want to switch to Leather, you can use Cloth instead. Later on you can use combination of Hardened Leather and Obsidian.</p>
+		</page>
+		<page id="pg4">
+			<p bold="true" italics="true">Bees and Ropes</p>
+			<p>When you get some Wool, you can make Scoop. Break beehives with scoop and get Princesses,  Drones and Combs. Use the Combs to build Bee Houses. You can get Wax and Later on Honey.</p>
+			<p>For ropes, you need Strings and Hemp Fibres. It is good to actually grow all three String-Like plants, Hemp, Cotton and String. Rope Coils replace String in most common recipes.</p>
+		</page>
+		<page id="pg5">
+			<p bold="true" italics="true">Charcoal and Creosole Oil</p>
+			<p>To get Charcoal you need Wood, Loam (mostly made of Clay) and an Igniter (Flint and Steel). To make Creosole, you need the Coke Furnace. Creosole is important to get the Treated Wood, basic material for technological advancement.</p>
+		</page>
+		<page id="pg6">
+			<p bold="true" italics="true">Better Food, Meat, Leather</p>
+			<p>When you have Treated Wood and Rope Coils you can build Ground Traps and Fish Traps. Those will catch animals for you automatically. Just place them in water/ground and give them some Bait. You can get Meat and Animal products like Feathers and Leather. Leather can be also made by drying.</p>
+		</page>
+		<page id="pg7">
+			<p bold="true" italics="true">Store and Transfer</p>
+			<p>Big leap up from Chests is a Storage Crate made using Treated Wood.</p>
+			<p>Water can be collected in Bowls, Clay and Metal Buckets.</p>
+			<p>For storing liquids, use seared tanks. Later you can switch for Immersive Engineering Tanks and Barrels.</p>
+		</page>
+		<page id="pg8">
+			<p bold="true" italics="true">Starting Mining, Smeltery, Automation</p>
+			<p>Smeltery increases your gain by 1.5. Get Duranite as soon as possible to be able to cast ingots. It can be mined with Flint tools.</p>
+			<p>You can use Conveyor Belts for your first automation.</p>
+		</page>
+		<page id="pg9">
+			<p bold="true" italics="true">Gears, Rods and Plates</p>
+			<p>First machine parts will be casted.</p>
+			<p>Gear cast can be made using Stone Gear.</p>
+			<p>Rod cast is the Tough Tool Rod cast from the Tinker's Construct.</p>
+			<p>Metal cast needs some first Plate to be made by other means. Check Small Plate Press, Rolling Machine or the Lead Plate receipt.</p>
+		</page>
+		<page id="pg10">
+			<p bold="true" italics="true">Carpenter and Thermionics</p>
+			<p>When you want to get into electronics you will need Carpenter and Thermionic Fabricator first.</p>
+			<p>First electron tubes can be made in the smeltery.</p>
+			<p>You can use the Clockwork Engine to power your first machines.</p>
+		</page>
+		<page id="pg11">
+			<p bold="true" italics="true">Why to build a Ship</p>
+			<p>Some resources are much more common in different biomes then in the one you live in.</p>
+			<p>With a ship, you can find those biomes, build a mining camp there and carry your collected resources back to your base safely.</p>
+			<p>Every ship needs a Steering Wheel and a Steam Engine.</p>
+			<p>It is recommended to add Floaters to make your ship more stable and an Anchor to make it park more securely.</p>
+			<p>Take enough (Char)Coal for your ship. When it has no fuel it is dead in the water.</p>
+		</page>
+		<page id="pg12">
+			<p bold="true" italics="true">Power Production and Distribution</p>
+			<p></p>
+		</page>
+		<page id="pg13">
+			<p bold="true" italics="true">Regular Steel</p>
+			<p></p>
+		</page>
+		<page id="pg14">
+			<p bold="true" italics="true">MedKits</p>
+			<p></p>
+		</page>
+		<page id="pg15">
+			<p bold="true" italics="true">Fighting the Dungeon</p>
+			<p></p>
+		</page>
+		<page id="pg16">
+			<p bold="true" italics="true">UnderEnd Portal</p>
 			<p></p>
 		</page>
 	</chapter>

@@ -47,7 +47,6 @@ recipes.addShaped(piston, [[trPlank, trPlank, trPlank], [cobble, rodAlu, cobble]
 recipes.remove(<railcraft:equipment:*>);
 
 recipes.addShaped(<railcraft:equipment>, [[gearBoxIron, piston, gearBoxIron], [piston, casingWood, piston], [gearBoxIron, piston, gearBoxIron]]);
-recipes.addShaped(<railcraft:equipment:1>, [[gearSteel, plateAlu, gearSteel], [gearBoxSteel, <railcraft:equipment>, gearBoxSteel], [scaffAlu, <railcraft:charge:5>, scaffAlu]]);
 
 // Gear Bushing and Brass
 

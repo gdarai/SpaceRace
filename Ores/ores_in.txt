@@ -22,6 +22,7 @@ andesite	minecraft:stone				5	no		minecraft:stone			uniform		70		10		0	255
 diorite		minecraft:stone				0	no		minecraft:stone			uniform		33		10		0	80
 netherrack	minecraft:netherrack		0	no		minecraft:stone			uniform		70		20		45	65
 endstone	minecraft:end_stone			0	no		minecraft:stone			uniform		70		20		0	40
+obsidian	minecraft:obsidian			0	no		minecraft:end_stone		uniform		10		15		0	150
 
 netherrack0	minecraft:netherrack		0	no		minecraft:stone			uniform		40		30		20	55
 prometheum0	taiga:prometheum_ore		0	no		minecraft:netherrack		uniform		4		20		20	55
@@ -71,14 +72,14 @@ silverS		railcraft:ore_metal			3	no		minecraft:stone			uniform		5		2		20	55
 
 prometheum	taiga:prometheum_ore			0	no		minecraft:netherrack		uniform		4		15		25	45
 
-abyssum		taiga:abyssum_ore			0	no		minecraft:end_stone		uniform		4		10		0	70
-palladium	taiga:palladium_ore			0	no		minecraft:end_stone		uniform		8		6		60	150
-magicProsp	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		1		2		20	50
+abyssum		taiga:abyssum_ore			0	no		minecraft:end_stone		uniform		4		20		0	70
+palladium	taiga:palladium_ore			0	no		minecraft:end_stone		uniform		8		12		60	150
+magicProsp	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		20	50
 
 dilithiumS	taiga:dilithium_ore			0	no		minecraft:stone			uniform		2		4		0	15
 oviumS		taiga:ovium_ore				0	no		minecraft:stone			uniform		2		4		10	50
 draconiumS	draconicevolution:draconium_ore		0	no		minecraft:stone			uniform		1		1		0	40
-draconiumE	draconicevolution:draconium_ore		0	no		minecraft:end_stone		uniform		2		15		50	150
+draconiumE	draconicevolution:draconium_ore		2	no		minecraft:end_stone		uniform		2		25		50	150
 uruS		taiga:uru_ore				0	no		minecraft:stone			uniform		2		4		25	45
 
 cobaltN		tconstruct:ore				0	no		minecraft:netherrack		uniform		1		10		10	50
@@ -125,6 +126,7 @@ basaltA		taiga:basalt_block			0	no		minecraft:stone			uniform		10		30		50	150
 rutilA		libvulpes:ore0				8	no		minecraft:stone			uniform		5		30		50	150
 silverA		railcraft:ore_metal			3	no		minecraft:stone			uniform		10		30		50	150
 
+netherrackU	minecraft:netherrack		0	no		minecraft:end_stone			uniform		30		20		20	55
 
 cobaltA		tconstruct:ore				0	no		minecraft:netherrack		uniform		10		30		50	150
 arditeA		tconstruct:ore				1	no		minecraft:netherrack		uniform		10		30		50	150

@@ -19,7 +19,7 @@ val LVconn = <immersiveengineering:connector>;
 val coil1 = <immersiveengineering:wirecoil>;
 val coil2 = <immersiveengineering:wirecoil:1>;
 val coil3 = <immersiveengineering:wirecoil:2>;
-val rcCoil = <railcraft:charge>;
+val rcCoil =  <immersiveengineering:metalDecoration0:1>;
 val ocRemote = <opencomputers:tool:2>;
 
 val aaRed0 = <actuallyadditions:itemCrystal>;

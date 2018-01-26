@@ -81,7 +81,7 @@ mods.actuallyadditions.Empowerer.addRecipe(bookCase, <bibliocraft:BookcaseCreati
 // Gadgets
 // creative_exchanger moved to Infusion Crafting
 mods.forestry.ThermionicFabricator.addCast(goldenHead, [[decayWheat, notchApple, decayWheat], [bookCase1, <minecraft:skull:3>, bookCase1], [decayWheat, notchApple, decayWheat]], 2000, <forestry:waxCast>);
-mods.forestry.Carpenter.addRecipe(loco, [[iridiumBlock, goldenHead, iridiumBlock], [goldenHead, <railcraft:locomotive_electric>, goldenHead], [iridiumBlock, goldenHead, iridiumBlock]], 3600, <liquid:dilithium_fluid> * 10000, knSlimeBlock);
+mods.forestry.Carpenter.addRecipe(loco, [[iridiumBlock, goldenHead, iridiumBlock], [goldenHead, <railcraft:locomotive_steam_solid>, goldenHead], [iridiumBlock, goldenHead, iridiumBlock]], 3600, <liquid:dilithium_fluid> * 10000, knSlimeBlock);
 mods.actuallyadditions.Empowerer.addRecipe(<refinedstorage:wireless_grid>, <refinedstorage:wireless_grid:1>, goldenHead, nihilTank, goldenHead, nihilTank, 750000, 600);
 mods.actuallyadditions.Empowerer.addRecipe(<refinedstorage:wireless_crafting_monitor>, <refinedstorage:wireless_crafting_monitor:1>, goldenHead, nihilTank, goldenHead, nihilTank, 750000, 600);
 

@@ -789,17 +789,17 @@
 		</page>
 		<page>
 			<title>Age of Electronics</title>
-			<link ref="ch7:pg0">More Resources</link>
-			<link ref="ch7:pg0">Cheaper Gears</link>
-			<link ref="ch7:pg0">Industrial Potions</link>
-			<link ref="ch7:pg0">Holo Projector</link>
-			<link ref="ch7:pg0">Proper Electronics</link>
-			<link ref="ch7:pg0">Automation with a Computer</link>
-			<link ref="ch7:pg0">Producing Rocket Fuel</link>
-			<link ref="ch7:pg0">Setting up Assembler</link>
-			<link ref="ch7:pg0">Getting Space Suit</link>
-			<link ref="ch7:pg0">Your Launch Site</link>
-			<link ref="ch7:pg0">Your Rocket to the Moon</link>
+			<link ref="ch7:pg17">More Resources</link>
+			<link ref="ch7:pg18">Cheaper Gears</link>
+			<link ref="ch7:pg19">Industrial Potions</link>
+			<link ref="ch7:pg20">Holo Projector</link>
+			<link ref="ch7:pg21">Proper Electronics</link>
+			<link ref="ch7:pg22">Automation with a Computer</link>
+			<link ref="ch7:pg23">Producing Rocket Fuel</link>
+			<link ref="ch7:pg24">Setting up Assembler</link>
+			<link ref="ch7:pg25">Getting Space Suit</link>
+			<link ref="ch7:pg26">Your Launch Site</link>
+			<link ref="ch7:pg27">Your Rocket to the Moon</link>
 		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
@@ -885,23 +885,91 @@
 		</page>
 		<page id="pg12">
 			<p bold="true" italics="true">Power Production and Distribution</p>
-			<p></p>
+			<p>Befor steel you can make WindMills or use ClockWork Engines.</p>
+			<p>Store and transfer power the Industrial Engineering way.</p>
+			<p>With steel, you can use Improved Windmill, Water Wheel, Stirling Engines or Peat Fired Engines.</p>
+			<p>When you will have trouble connecting IE and Forestry, connect forestry directly to a Capacitor with no Connectors in between.</p>
 		</page>
 		<page id="pg13">
 			<p bold="true" italics="true">Regular Steel</p>
-			<p></p>
+			<p>Make Blast Furnace if you want to save material. The catch is you need Abbyssal stone, that means mine one of the boulders on the sea bed.</p>
+			<p>Make Arc Furnace instead if you have enough material and energy. You will need this one anyway in the near future.</p>
 		</page>
 		<page id="pg14">
 			<p bold="true" italics="true">MedKits</p>
-			<p></p>
+			<p>Medkits give you Regeneration. They are fast and quite cheap to make. You just have to set up a production line. You will need Protein liquifier (Food -> Protein) and an Industrial Bottler.</p>
 		</page>
 		<page id="pg15">
 			<p bold="true" italics="true">Fighting the Dungeon</p>
-			<p></p>
+			<p>You can get many treasures from every dungeon. But beware, some places are hard to fight through.</p>
+			<p>Use light to prevent monsters from spawning.</p>
+			<p>Look for spawners and destroy them with pickaxe.</p>
+			<p>Have Food, Medkits and a good weapon.</p>
+			<p>Use Razor Wires, Spikes or Turets to improve your chances.</p>
 		</page>
 		<page id="pg16">
 			<p bold="true" italics="true">UnderEnd Portal</p>
-			<p></p>
+			<p>3 Steps to get to UnderEnd:</p>
+			<p>Craft Faraday Armor, Build the Portal, Activate with the Scythe.</p>
+			<p>There is usually missing back portal on the other end. Bring the material to build it with you.</p>
+		</page>
+		<page id="pg17">
+			<p bold="true" italics="true">More Resources</p>
+			<p>Grind your ores in the Industrial Crusher.</p>
+			<p>Try to get to Metalic Bees. You can get the ores from bees.</p>
+			<p>Try Mystical Agriculture Seeds. You can grow the ores.</p>
+		</page>
+		<page id="pg18">
+			<p bold="true" italics="true">Cheaper Gears</p>
+			<p>First step is the Industrial Press.</p>
+			<p>Second step will be the Rolling Machine and Lathe. But for that it is better to have proper electronics first.</p>
+		</page>
+		<page id="pg19">
+			<p bold="true" italics="true">Industrial Potions</p>
+			<p>Industrial Mixer can make the brewing much cheaper.</p>
+		</page>
+		<page id="pg20">
+			<p bold="true" italics="true">Holo Projector</p>
+			<p>All Advanced Rocketry machines starting with the Arc Furnace can be easily built using the Holo Projector.</p>
+		</page>
+		<page id="pg21">
+			<p bold="true" italics="true">Proper Electronics</p>
+			<p>Build the Crystalizer. Make Transistors and Microchips there.</p>
+			<p>They are cheaper and quicker variants for the Electron Tubes.</p>
+		</page>
+		<page id="pg22">
+			<p bold="true" italics="true">Automation with a Computer</p>
+			<p>Computer can be connected to a lot of extensions doing some item transfering and crafting for you.</p>
+		</page>
+		<page id="pg23">
+			<p bold="true" italics="true">Producing Rocket Fuel</p>
+			<p>Industrial Mixer turns water into Potion. Press it through some tank to make it a plain Potion.</p>
+			<p>Use Fermenter to turn Potion with Fire Essence and Fertilizer into Fire Water.</p>
+			<p>Use Fermenter and Still to turn Water or Juice with some Fruit and Fertilizer into Ethanol.</p>
+			<p>With Industrial Refinery process Fire Water and Ethanol into the Rocket Fuel.</p>
+		</page>
+		<page id="pg24">
+			<p bold="true" italics="true">Setting up Assembler</p>
+			<p>Precission Assembler is a crutial part of your technology base. Build it.</p>
+			<p>You will need it for your Space Suit.</p>
+			<p>Also some Electronics recipes have their Assembler variant.</p>
+		</page>
+		<page id="pg25">
+			<p bold="true" italics="true">Getting Space Suit</p>
+			<p>Space suit is made in the Precission Assebler.</p>
+			<p>It is based on the Faraday Suit.</p>
+		</page>
+		<page id="pg26">
+			<p bold="true" italics="true">Your Launch Site</p>
+			<p>You will need Launch Platform Base Blocks, made out of Concrete. Platform must be Rectangle and bigger than the rocket on all 4 sides.</p>
+			<p>Also make some Structure Tower blocks. Tower starts on the same level as the platform and goes up to be taller than nthe rocket.</p>
+			<p>Place Rocket Assembler next to the Platform, touching the platform with its edge.</p>
+		</page>
+		<page id="pg27">
+			<p bold="true" italics="true">Your Rocket to the Moon</p>
+			<p>For rocket you need: Engines, Fuel Tanks, Seat and Guidance Computer with a blank Planet ID Chip inside.</p>
+			<p>Scan the rocket with the Rocket Assembler.</p>
+			<p>It must have Acceleration >0 and be Ready to Lift Off.</p>
 		</page>
 	</chapter>
 </book>

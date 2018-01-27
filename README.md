@@ -1,6 +1,8 @@
 # SpaceRace
 Minecraft Modpack
 
+Version 0.60 is out. Beware, it contains a new mod Dep Resonance, either install that mod yourself, or update the game using curse, that should add that mod for you. The game is perfectly playable even without the mod, and it is more like end game stuff anyway.
+
 Instalation notes
 The files here does not contain info about what mods are in which versions, So you cannot install the modpack from here.
 However that can be done through Curse link: https://www.curseforge.com/minecraft/modpacks/darais-space-race

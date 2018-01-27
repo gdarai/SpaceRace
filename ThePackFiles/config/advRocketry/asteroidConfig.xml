@@ -1,5 +1,5 @@
 <Asteroids>
-	<asteroid name="Normal Asteroid" distance="100" mass="400" massVariability="0.1" minLevel="0" probability="10" richness="0.3" richnessVariability="0.1">
+	<asteroid name="Normal Asteroid" distance="50" mass="400" massVariability="0.1" minLevel="0" probability="10" richness="0.3" richnessVariability="0.1">
 		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 1" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 2" chance="2" />

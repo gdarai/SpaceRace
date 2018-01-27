@@ -56,7 +56,6 @@ recipes.remove(<railcraft:gear:3>);
 recipes.addShaped(<railcraft:gear:3>, [[null, ingotBrass, null], [ingotBrass, trStick, ingotBrass], [null, ingotBrass, null]]);
 
 // Davinci's airships and engines
-
 recipes.remove(shipEngine);
 recipes.remove(<davincisvessels:balloon:*>);
 

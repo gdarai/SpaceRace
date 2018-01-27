@@ -78,7 +78,7 @@
 			<itemStack>opencomputers:material 1 10</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="40" power ="1000">
+	<Recipe timeRequired="60" power ="1000">
 		<input>
 			<oreDict>dustKarmesine 4</oreDict>
 			<itemStack>minecraft:redstone</itemStack>

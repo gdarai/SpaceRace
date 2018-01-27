@@ -94,4 +94,112 @@
 			<itemStack>refinedstorage:quartz_enriched_iron 9 0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockIron</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockSteel</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockTin</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockCopper</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockLead</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockSilver</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockBronze</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockGold</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockNickel</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockInvar</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockZinc</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
+			<oreDict>blockBrass</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:plate 8 11</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

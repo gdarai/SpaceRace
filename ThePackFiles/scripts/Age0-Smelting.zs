@@ -115,7 +115,12 @@ mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productrod:1>, 
 // Bronze ingots
 recipes.remove(<forestry:ingotBronze>*4);
 recipes.remove(<railcraft:ingot:5>*4);
+
+// Invar ingots
 recipes.remove(<railcraft:ingot:7>*3);
+mods.tconstruct.Casting.addTableRecipe(<railcraft:ingot:7>, <liquid:iron> * 288, <railcraft:ingot:6>, true, 100);
+mods.tconstruct.Casting.addTableRecipe(<railcraft:ingot:7>, <liquid:iron> * 288, <immersiveengineering:metal:4>, true, 100);
+
 
 // Gears fix
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold:1>);
@@ -349,3 +354,8 @@ mods.tconstruct.Smeltery.removeMelting(<forestry:gearTin>);
 mods.tconstruct.Smeltery.removeMelting(<railcraft:gear:1>);
 mods.tconstruct.Smeltery.removeMelting(<railcraft:gear>);
 mods.tconstruct.Smeltery.removeMelting(<libvulpes:productgear:6>);
+
+// Remove Lathe-Sticks melting
+mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:1>);
+mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:4>);
+mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:6>);

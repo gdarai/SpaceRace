@@ -10,7 +10,7 @@ recipes.remove(<powersuits:powerTool>);
 recipes.remove(<powersuits:tile.tinkerTable>);
 recipes.remove(<powersuits:powerArmorComponent:*>);
 
-val advItemRelay = <actuallyadditions:blockLaserRelayItemWhitelist>;
+val advItemRelay = <actuallyadditions:blockLaserRelayItem>;
 val display = <advancedrocketry:misc>;
 val ARCi0 = <advancedrocketry:ic:3>;
 val plateInvar = <railcraft:plate:9>;
@@ -54,6 +54,10 @@ val insulGlass = <immersiveengineering:stoneDecoration:8>;
 
 val dustKarm = <ore:dustKarmesine>;
 val dustObsidi = <ore:dustObsidiorite>;
+
+// Fixing Steel Slab
+recipes.addShaped(<immersiveengineering:storageSlab:8>*6, [[null, null, null], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [null, null, null]]);
+
 
 // New recipes
 recipes.addShaped(<powersuits:tile.tinkerTable>, [[advItemRelay, display, advItemRelay], [null, rollingMachine, null], [slabSteel, coil1, slabSteel]]);

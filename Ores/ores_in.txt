@@ -33,7 +33,7 @@ eezo		taiga:eezo_ore				0	no		minecraft:stone			uniform		8		15		15	40
 tin			forestry:resources			2	no		minecraft:stone			uniform		8		15		30	100
 nickel		immersiveengineering:ore	4	no		minecraft:stone			uniform		4		15		30	50
 lapis		minecraft:lapis_ore			0	no		minecraft:stone			uniform		5		15		5	25
-saltpeter	railcraft:ore				1	no		minecraft:sandstone		uniform		3		15		50	80
+saltpeter	railcraft:ore				1	no		minecraft:sandstone		uniform		4		25		50	80
 redstone	minecraft:redstone_ore		0	no		minecraft:stone			uniform		5		10		0	16
 emerald		minecraft:emerald_ore		0	no		minecraft:stone			uniform		2		12		40	130
 diamond		minecraft:diamond_ore		0	no		minecraft:stone			uniform		4		8		5	25
@@ -49,7 +49,6 @@ osram		taiga:osram_ore				0	no		minecraft:stone			uniform		2		15		0	10
 rutil		libvulpes:ore0				8	no		minecraft:stone			uniform		3		6		30	60
 iridium		libvulpes:ore0				10	no		minecraft:stone			uniform		2		5		20	35
 karmesine	taiga:karmesine_ore			0	no		minecraft:stone			uniform		6		3		40	70
-
 
 ironS		minecraft:iron_ore			0	no		minecraft:stone			uniform		5		5		10	55
 goldS		minecraft:gold_ore			0	no		minecraft:stone			uniform		5		2		5	35
@@ -109,7 +108,7 @@ jauxum		taiga:jauxum_ore			0	no		minecraft:stone			uniform		2		8		10	50
 magma		minecraft:magma				0	no		minecraft:stone			uniform		3		13		10	50
 vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		1		3		10	50
 uru			taiga:uru_ore				0	no		minecraft:stone			uniform		4		12		30	60
-aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone			uniform		2		3		0	20
+aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		3		10		10	30
 
 ironA		minecraft:iron_ore			0	no		minecraft:stone			uniform		10		30		50	150
 goldA		minecraft:gold_ore			0	no		minecraft:stone			uniform		10		30		50	150
@@ -133,6 +132,15 @@ arditeA		tconstruct:ore				1	no		minecraft:netherrack		uniform		10		30		50	150
 quartzA		minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		15		30		50	150
 prometheumA	taiga:prometheum_ore		0	no		minecraft:netherrack		uniform		5		30		50	150
 
-cobaltNN	tconstruct:ore				0	no		minecraft:netherrack		uniform		1		2		45	65
-arditeNN	tconstruct:ore				1	no		minecraft:netherrack		uniform		1		3		45	65
-quartzNN	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		4		45	65
+cobaltNN	tconstruct:ore				0	no		minecraft:netherrack		uniform		2		8		45	65
+arditeNN	tconstruct:ore				1	no		minecraft:netherrack		uniform		2		12		45	65
+quartzNN	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		16		45	65
+
+resonanceA	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		4		30		50	150
+resonanceS	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		3		10		20	40
+resonanceN	deepresonance:resonating_ore	1	no		minecraft:netherrack	uniform		3		10		100	140
+
+resonanceE	deepresonance:resonating_ore	2	no		minecraft:end_stone		uniform		4		30		0	100
+abyssumE	taiga:abyssum_ore				0	no		minecraft:end_stone		uniform		4		20		0	100
+palladiumE	taiga:palladium_ore				0	no		minecraft:end_stone		uniform		8		12		0	100
+magicProspE	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		0	100

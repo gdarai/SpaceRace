@@ -158,8 +158,11 @@
 		<page id="pg1">
 			<p>Here is the list of what is the JEI lying about:</p>
 			<link ref="ch3:pg2">Charcoal</link>
+			<link ref="ch3:pg2a">Tinkers Book</link>
 			<link ref="ch3:pg3">Smelting</link>
+			<link ref="ch3:pg3a">Carpenter and ThFab</link>
 			<link ref="ch3:pg4">Refined Storage</link>
+			<link ref="ch3:pg4a">Empoweer</link>
 			<link ref="ch3:pg5">Nihilite Alloy</link>
 		</page>
 		<page id="pg2">
@@ -174,6 +177,17 @@
 		<page>
 			<p>Also Charcoal is now the only fuel source for making Coal Coke and ultimately burn Iron to Steel.</p>
 		</page>
+		<page id="pg2a">
+			<p bold="true" italics="true">Tinkers Book</p>
+			<p>Records in the Tinkers Manual are unfortunately hardcoded so our changes to Material Harvestability are not there reflected.</p>
+			<stack item="tconstruct:book" x="0"/>
+			<space height="20" />
+			<p>Namely Early materials, Duranite, Eezo, Ovium and Abyssum were tinkered so they are easy minable.</p>
+			<stack item="taiga:duranite_ore" x="0"/>
+			<stack item="taiga:eezo_ore" x="20"/>
+			<stack item="taiga:ovium_ore" x="40"/>
+			<stack item="taiga:abyssum_ore" x="60"/>
+		</page>
 		<page id="pg3">
 			<p bold="true" italics="true">Smelting</p>
 			<p>I removed smelting of all Sharpening Kits. Since I tweaked their recipes I put it in as the proper fix.</p>
@@ -185,7 +199,21 @@
                 <stack item="tconstruct:sharpening_kit"/>
             </small_recipe>
 		</page>
-		<page />
+		<page id="pg3a">
+			<p bold="true" italics="true">Carpenter and Thermionic Fabricator</p>
+			<p>JEI is remembering all the recipes, old ones and new ones. So expect, that the easier recipes for Electron Tubes and Forestry Circuits do not work.</p>
+			<stack item="forestry:carpenter" x="0"/>
+			<stack item="forestry:fabricator" x="20"/>
+			<space height="20" />
+			<stack item="forestry:thermionicTubes" x="0"/>
+			<stack item="forestry:thermionicTubes" meta="1" x="20"/>
+			<stack item="forestry:thermionicTubes" meta="2" x="40"/>
+			<stack item="forestry:thermionicTubes" meta="3" x="60"/>
+			<stack item="forestry:chipsets" x="80"/>
+			<space height="20" />
+			<p>Only those using Silicon are valid and working.</p>
+			<stack item="enderio:itemMaterial" x="0"/>
+		</page>
 		<page id="pg4">
 			<p bold="true" italics="true">RS Solderer</p>
 			<p>Refined Storage Solderer recipes are completely wrong. JEI just gives the original list without my changes. So here is what is different:</p>
@@ -230,6 +258,12 @@
                 <stack item="refinedstorage:processor" meta="2"/>
             </small_recipe>
 		</page>
+		<page id="pg4a">
+			<p bold="true" italics="true">Empowerer</p>
+			<p>Empowerer JEI is not showing power requirements. You will have to figure it yourself.</p>
+			<stack item="actuallyadditions:blockEmpowerer"/>
+		</page>
+		<page />
 		<page id="pg5">
 			<p bold="true" italics="true">Nihilite Alloy</p>
 			<p>Nihilite can be alloyed only in the Chemical Reactor now.</p>
@@ -413,7 +447,7 @@
 			<p>It is an Asteroid Belt. It can easily happen, that your rocket will not hit any land and just disappear into the space. But sooner or later, you will have to go there anyway. So Good Luck.</p>
 		</page>
 		<page>
-			<p>Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver. Also Cobalt, Ardite and Nether Quartz.</p>
+			<p>Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver. Also Cobalt, Ardite, Magma and Nether Quartz.</p>
 			<stack item="minecraft:iron_ingot" x="0"/>
 			<stack item="minecraft:gold_ingot" x="20"/>
 			<stack item="minecraft:redstone" x="40"/>
@@ -429,7 +463,8 @@
 			<stack item="railcraft:ingot" meta="4" x="0"/>
 			<stack item="tconstruct:ingots" x="20"/>
 			<stack item="tconstruct:ingots" meta="1" x="40"/>
-			<stack item="minecraft:quartz" x="60"/>
+			<stack item="minecraft:magma" x="60"/>
+			<stack item="minecraft:quartz" x="80"/>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">Lava World</p>
@@ -580,7 +615,7 @@
 			<p />
 			<p>Beware, Chaos Guardian Included.</p>
 			<p />
-			<stack item="minecraft:endstone" x="0"/>
+			<stack item="minecraft:end_stone" x="0"/>
 			<stack item="draconicevolution:draconium_dust" x="20"/>
 			<stack item="draconicevolution:dragon_heart" x="40"/>
 			<stack item="minecraft:dragon_egg" x="60"/>
@@ -730,24 +765,28 @@
 		</page>
 		<page>
 			<p>Hint: You can get endstone for the portal in deeper layers of a Roguelike Dungeon.</p>
-			<p>Available resources: Abyssum, Palladium, Duranite, Draconium and Prosperity Ore.</p>
+			<p>Available resources: Abyssum, Palladium, Duranite, Draconium, Magma and Prosperity Ore.</p>
 			<stack item="taiga:abyssum_ingot" x="0"/>
 			<stack item="taiga:palladium_ingot" x="20"/>
 			<stack item="taiga:duranite_ingot" x="40"/>
 			<stack item="draconicevolution:draconium_dust" x="60"/>
 			<stack item="mysticalagriculture:prosperity_shard" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:magma" x="0"/>
 		</page>
 		<page id="pg1">
 			<p bold="true" italics="true">The Nether</p>
 			<p>If you reached the Sand Moon, which is orbiting Mystical World Blue Giant, you can go on and finally visit the Nether. Guide how to do it is here:</p>
 			<link ref="ch2:d3">Portals</link>
 			<p />
-			<p>Available resources: Prometheum, Cobalt, Ardite, Quartz and Valyrium.</p>
+			<p>Available resources: Prometheum, Cobalt, Ardite, Quartz, Magma and Valyrium.</p>
 			<stack item="taiga:prometheum_ingot" x="0"/>
 			<stack item="tconstruct:ingots" x="20"/>
 			<stack item="tconstruct:ingots" meta="1" x="40"/>
 			<stack item="minecraft:quartz" x="60"/>
 			<stack item="taiga:valyrium_ingot" x="80"/>
+			<space height="20" />
+			<stack item="minecraft:magma" x="0"/>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">Distant World Portal</p>
@@ -789,17 +828,17 @@
 		</page>
 		<page>
 			<title>Age of Electronics</title>
-			<link ref="ch7:pg17">More Resources</link>
-			<link ref="ch7:pg18">Cheaper Gears</link>
-			<link ref="ch7:pg19">Industrial Potions</link>
-			<link ref="ch7:pg20">Holo Projector</link>
-			<link ref="ch7:pg21">Proper Electronics</link>
-			<link ref="ch7:pg22">Automation with a Computer</link>
-			<link ref="ch7:pg23">Producing Rocket Fuel</link>
-			<link ref="ch7:pg24">Setting up Assembler</link>
-			<link ref="ch7:pg25">Getting Space Suit</link>
-			<link ref="ch7:pg26">Your Launch Site</link>
-			<link ref="ch7:pg27">Your Rocket to the Moon</link>
+			<link ref="ch7:pg0">More Resources</link>
+			<link ref="ch7:pg0">Cheaper Gears</link>
+			<link ref="ch7:pg0">Industrial Potions</link>
+			<link ref="ch7:pg0">Holo Projector</link>
+			<link ref="ch7:pg0">Proper Electronics</link>
+			<link ref="ch7:pg0">Automation with a Computer</link>
+			<link ref="ch7:pg0">Producing Rocket Fuel</link>
+			<link ref="ch7:pg0">Setting up Assembler</link>
+			<link ref="ch7:pg0">Getting Space Suit</link>
+			<link ref="ch7:pg0">Your Launch Site</link>
+			<link ref="ch7:pg0">Your Rocket to the Moon</link>
 		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
@@ -807,111 +846,250 @@
 			<stack item="sleepingbag:sleepingbag" x="0"/>
 			<space height="20" />
 			<p>For that you will need sticks, leaves and planks.</p>
-			<stack item="minecraft:plank" x="0"/>
+			<stack item="minecraft:planks" x="0"/>
 			<stack item="minecraft:stick" x="20"/>
 			<stack item="minecraft:leaves" x="40"/>
 			<space height="20" />
-			<p>Most of it easy, just the leaves, right? Wrong. The pack has in the Wooden Shears mod. So, take sapling, planks and sticks and make yourself shears.</p>
+			<p>Most of it easy, just the leaves, right?</p>
 			<stack item="woodenshears:wshears" x="0"/>
-			<space height="20" />
-			<p>You don't have a tree nearby? Start another game. This is not the environment you can survive in. Or just teleport somewhere if you have cheats on.</p>
-			<p />
-			<p></p>
-			<p />
-			<p></p>
 		</page>
 		<page id="pg1">
 			<p bold="true" italics="true">Start with Food</p>
-			<p>Food is essential. With Spice of Life every type of food will feed you only 8x and it will take you 1000 hunger to forget you ate it. So, collect new seeds and focus on variety. Start with collecting HarvestCraft seeds. You can get them from Gardens, or by breaking Grass.</p>
-			<p>First you can eat raw products, later on, you can start cooking. Some kitchen appliance even does not need metals. Just wood.</p>
-			<p>See how to make fresh water and salt.</p>
+			<p>Food is essential. With Spice of Life every type of food will feed you only 8x and it will take you 1000 hunger to forget you ate it. So, collect new seeds and focus on variety.</p>
+			<p>Start with collecting HarvestCraft seeds. You can get them from Gardens, or by breaking Grass.</p>
+			<stack item="harvestcraft:blackberryseeditem" x="0"/>
+			<stack item="harvestcraft:windygarden" x="20"/>
+			<stack item="minecraft:tallgrass" meta="1" x="40"/>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">Bed, Furnace, Light</p>
-			<p>You don't need bed for sleeping, Sleeping Bag is enough for start. But when you will get some wool make bed so you have spawnpoint in case of death.</p>
-			<p>Easiest furnace is made from clay bricks. Dry some dirt. With 12 drying racks it takes 2 cycles to dry enough bricks for one furnace.</p>
-			<p>Light is not cheap. You don't need it as long as you sleep through night. But you need it when you want to get underground to find first metals.</p>
-			<p>You can make regular Torches only if you have Rope Coils, Wax and Coal or Charcoal. If you have some Coal but no Wax or Rope, you can make Stone Torches. Othewise you can make Harvestcraft candles and convert those directly into Tiny Torches.</p>
+			<p>You don't need bed for sleeping, Sleeping Bag is enough for start.</p>
+			<stack item="sleepingbag:sleepingbag" x="0"/>
+			<stack item="minecraft:bed" x="20"/>
+			<space height="20" />
+			<p>But when you will get some wool make bed so you have respawnpoint in case of death.</p>
+		</page>
+		<page>
+			<p>For furnace dry some dirt. With 12 drying racks it takes 2 cycles to dry enough bricks for one furnace.</p>
+			<stack item="tconstruct:rack" meta="1" count="12" x="0"/>
+			<stack item="minecraft:dirt" count="24" x="20"/>
+			<stack item="tconstruct:materials" meta="2" count="24" x="40"/>
+			<stack item="tconstruct:dried_clay" meta="1" count="6" x="60"/>
+			<stack item="minecraft:furnace" count="1" x="80"/>
+			<space height="20" />			
+			<p>You can make Torches, Stone Torches or Harvestcraft candles and convert those directly into Tiny Torches.</p>
+			<stack item="minecraft:torch" x="0"/>
+			<stack item="tconstruct:stone_torch" x="20"/>
+			<stack item="actuallyadditions:blockTinyTorch" x="40"/>
 		</page>
 		<page id="pg3">
 			<p bold="true" italics="true">Basic Tools and Armor</p>
-			<p>Tools are focusing on the Tinker's Construct mod. Start with Wood tools and then switch to Stone or Flint tools. If you will want something more, you will need casting.</p>
-			<p>You can start with Wooden or Stone armor. When you want to switch to Leather, you can use Cloth instead. Later on you can use combination of Hardened Leather and Obsidian.</p>
+			<p>Tools are focusing on the Tinker's Construct mod. Start with Wood tools and then switch to Stone or Flint tools. If you will want something more, you will need a casting table.</p>
+			<stack item="tconstruct:tooltables" meta="2" x="0"/>
+			<stack item="minecraft:planks" x="20"/>
+			<stack item="minecraft:flint" x="40"/>
+			<stack item="minecraft:cobblestone" x="60"/>
+			<stack item="tconstruct:casting" x="80"/>
+		</page>
+		<page>
+			<p>You can start with Wooden or Stone armor.</p>
+			<stack item="tp:wooden_chestplate" x="0"/>
+			<stack item="tp:stone_chestplate" x="20"/>
+			<space height="20" />			
+			<p>When you want to switch to Leather, you can use Cloth instead.</p>
+			<stack item="minecraft:leather_chestplate" x="0"/>
+			<stack item="minecraft:leather" x="20"/>
+			<stack item="harvestcraft:wovencottonitem" x="40"/>
+			<space height="20" />			
+			<p>Later on you can use combination of Hardened Leather and Obsidian.</p>
+			<stack item="harvestcraft:hardenedleatherchestitem" x="0"/>
+			<stack item="actuallyadditions:itemChestObsidian" x="20"/>
 		</page>
 		<page id="pg4">
 			<p bold="true" italics="true">Bees and Ropes</p>
-			<p>When you get some Wool, you can make Scoop. Break beehives with scoop and get Princesses,  Drones and Combs. Use the Combs to build Bee Houses. You can get Wax and Later on Honey.</p>
+			<p>When you get some Wool, you can make Scoop. Break beehives with scoop and get Princesses,  Drones and Combs.</p>
+			<stack item="forestry:scoop" x="0"/>
+			<stack item="forestry:beeDroneGE" x="20"/>
+			<stack item="forestry:beePrincessGE" x="40"/>
+			<stack item="forestry:beeCombs" x="60"/>
+			<space height="20" />			
+			<p>Use the Combs to build Bee Houses. You can get Wax and later on Honey.</p>
+			<stack item="forestry:bee_house" x="0"/>
+			<stack item="forestry:beeswax" x="20"/>
+			<stack item="forestry:honeyDrop" x="40"/>
+		</page>
+		<page>
 			<p>For ropes, you need Strings and Hemp Fibres. It is good to actually grow all three String-Like plants, Hemp, Cotton and String. Rope Coils replace String in most common recipes.</p>
+			<stack item="immersiveengineering:seed" x="0"/>
+			<stack item="harvestcraft:cottonseeditem" x="20"/>
+			<stack item="actuallyadditions:itemFlaxSeed" x="40"/>
+			<space height="20" />			
+			<stack item="immersiveengineering:material" meta="4" x="0"/>
+			<stack item="harvestcraft:cottonitem" x="20"/>
+			<stack item="minecraft:string" x="40"/>
+			<space height="20" />			
+			<stack item="immersiveengineering:wirecoil" meta="3" x="0"/>
 		</page>
 		<page id="pg5">
 			<p bold="true" italics="true">Charcoal and Creosole Oil</p>
-			<p>To get Charcoal you need Wood, Loam (mostly made of Clay) and an Igniter (Flint and Steel). To make Creosole, you need the Coke Furnace. Creosole is important to get the Treated Wood, basic material for technological advancement.</p>
+			<p>To get Charcoal you need Wood, Loam (mostly made of Clay) and an Igniter (Flint and Steel). Build a pyramit and set it on fire.</p>
+			<stack item="forestry:pile_wood" meta="1" count="4" x="0"/>
+			<stack item="forestry:pile_dirt" count="16" x="20"/>
+			<stack item="minecraft:flint_and_steel" meta="2" x="40"/>
+			<stack item="minecraft:coal" meta="1" count="20" x="75"/>
+			<space height="20" />			
+			<p>To make Creosote, you need the Coke Furnace. Creosote is important to get the Treated Wood, your next big step.</p>
+			<stack item="actuallyadditions:blockMisc" meta="5" count="1" x="0"/>
+			<stack item="immersiveengineering:stoneDecoration" count="27" x="20"/>
+			<stack item="immersiveengineering:tool" count="1" x="40"/>
+			<stack item="immersiveengineering:treatedWood" count="8" x="75"/>
+			<stack item="immersiveengineering:stoneDecoration" meta="3" count="1" x="95"/>
 		</page>
 		<page id="pg6">
 			<p bold="true" italics="true">Better Food, Meat, Leather</p>
-			<p>When you have Treated Wood and Rope Coils you can build Ground Traps and Fish Traps. Those will catch animals for you automatically. Just place them in water/ground and give them some Bait. You can get Meat and Animal products like Feathers and Leather. Leather can be also made by drying.</p>
+			<p>Make fresh water, salt and kitchen tools.</p>
+			<stack item="harvestcraft:freshwateritem" x="0"/>
+			<stack item="harvestcraft:saltitem" x="20"/>
+			<stack item="harvestcraft:cuttingboarditem" x="40"/>
+			<stack item="harvestcraft:potitem" x="60"/>
+			<stack item="harvestcraft:skilletitem" x="80"/>
+			<stack item="harvestcraft:saucepanitem" x="100"/>
+			<space height="20" />			
+			<stack item="harvestcraft:bakewareitem" x="0"/>
+			<stack item="harvestcraft:mortarandpestleitem" x="20"/>
+			<stack item="harvestcraft:juiceritem" x="40"/>
+			<stack item="harvestcraft:mixingbowlitem" x="60"/>
+			<stack item="harvestcraft:groundtrap" x="80"/>
+			<stack item="harvestcraft:watertrap" x="100"/>
+			<space height="20" />			
+			<p>Build Ground Traps and Fish Traps. Those will catch animals for you automatically. Just place them in water/ground and give them some Bait.Get Meat, Feathers, Leather and more.</p>
 		</page>
 		<page id="pg7">
 			<p bold="true" italics="true">Store and Transfer</p>
 			<p>Big leap up from Chests is a Storage Crate made using Treated Wood.</p>
-			<p>Water can be collected in Bowls, Clay and Metal Buckets.</p>
+			<p>Water can be also collected in Bowls and Clay Buckets.</p>
 			<p>For storing liquids, use seared tanks. Later you can switch for Immersive Engineering Tanks and Barrels.</p>
+			<stack item="actuallyadditions:blockGiantChest" x="0"/>
+			<stack item="actuallyadditions:itemWaterBowl" x="20"/>
+			<stack item="claybucket:claybucket" meta="1" x="40"/>
+			<stack item="tconstruct:seared_tank" x="60"/>
+			<stack item="immersiveengineering:woodenDevice0" meta="1" x="80"/>
+			<stack item="immersiveengineering:metalDevice0" meta="4" x="100"/>
 		</page>
 		<page id="pg8">
 			<p bold="true" italics="true">Starting Mining, Smeltery, Automation</p>
 			<p>Smeltery increases your gain by 1.5. Get Duranite as soon as possible to be able to cast ingots. It can be mined with Flint tools.</p>
 			<p>You can use Conveyor Belts for your first automation.</p>
+			<stack item="taiga:duranite_ore" x="0"/>
+			<stack item="tconstruct:casting" x="20"/>
+			<stack item="tconstruct:cast_custom" x="40"/>
+			<stack item="immersiveengineering:conveyor" x="60"/>
+			<stack item="minecraft:tripwire_hook" x="80"/>
 		</page>
 		<page id="pg9">
 			<p bold="true" italics="true">Gears, Rods and Plates</p>
-			<p>First machine parts will be casted.</p>
-			<p>Gear cast can be made using Stone Gear.</p>
-			<p>Rod cast is the Tough Tool Rod cast from the Tinker's Construct.</p>
-			<p>Metal cast needs some first Plate to be made by other means. Check Small Plate Press, Rolling Machine or the Lead Plate receipt.</p>
+			<p>First machine parts will be casted. Use Stone Gear and Tough Tool Rod.</p>
+			<stack item="enderio:itemMachinePart" meta="1" x="0"/>
+			<stack item="tconstruct:tough_tool_rod" x="20"/>
+			<space height="20" />			
+			<p>For First Plate check Small Plate Press, Rolling Machine or the Lead Plate receipt.</p>
+			<stack item="advancedrocketry:platePress" x="0"/>
+			<stack item="railcraft:equipment" x="20"/>
+			<stack item="railcraft:generic" meta="2" x="40"/>
 		</page>
 		<page id="pg10">
 			<p bold="true" italics="true">Carpenter and Thermionics</p>
-			<p>When you want to get into electronics you will need Carpenter and Thermionic Fabricator first.</p>
-			<p>First electron tubes can be made in the smeltery.</p>
+			<p>When you want to get into electronics you will need Carpenter and Thermionic Fabricator. sFirst electron tubes can be made in the smeltery.</p>
+			<stack item="forestry:thermionicTubes" x="0"/>
+			<stack item="forestry:thermionicTubes" meta="1" x="20"/>
+			<space height="20" />			
 			<p>You can use the Clockwork Engine to power your first machines.</p>
+			<stack item="forestry:fabricator" x="0"/>
+			<stack item="forestry:carpenter" x="20"/>
+			<stack item="forestry:engine_clockwork" x="50"/>
 		</page>
 		<page id="pg11">
 			<p bold="true" italics="true">Why to build a Ship</p>
 			<p>Some resources are much more common in different biomes then in the one you live in.</p>
 			<p>With a ship, you can find those biomes, build a mining camp there and carry your collected resources back to your base safely.</p>
+		</page>
+		<page>
 			<p>Every ship needs a Steering Wheel and a Steam Engine.</p>
+			<stack item="davincisvessels:marker" x="0"/>
+			<stack item="davincisvessels:engine" x="20"/>
+			<space height="20" />			
 			<p>It is recommended to add Floaters to make your ship more stable and an Anchor to make it park more securely.</p>
 			<p>Take enough (Char)Coal for your ship. When it has no fuel it is dead in the water.</p>
+			<stack item="davincisvessels:anchorPoint" x="0"/>
+			<stack item="davincisvessels:floater" x="20"/>
 		</page>
 		<page id="pg12">
 			<p bold="true" italics="true">Power Production and Distribution</p>
-			<p>Befor steel you can make WindMills or use ClockWork Engines.</p>
+			<p>Before steel you have WindMills or use ClockWork Engines.</p>
+			<stack item="immersiveengineering:metalDevice1" meta="2" x="0"/>
+			<stack item="immersiveengineering:woodenDevice1" meta="1" x="20"/>
+			<stack item="forestry:engine_clockwork" x="40"/>
+			<stack item="immersiveengineering:connector" x="60"/>
+			<stack item="immersiveengineering:wirecoil" x="80"/>
+			<stack item="immersiveengineering:metalDevice0" x="100"/>
+			<space height="20" />			
 			<p>Store and transfer power the Industrial Engineering way.</p>
 			<p>With steel, you can use Improved Windmill, Water Wheel, Stirling Engines or Peat Fired Engines.</p>
+			<stack item="immersiveengineering:woodenDevice1" meta="2" x="0"/>
+			<stack item="immersiveengineering:woodenDevice1" x="20"/>
+			<stack item="enderio:blockStirlingGenerator" x="40"/>
+			<stack item="forestry:engine_peat" x="60"/>
+		</page>
+		<page>
+			<p>Use hammer to alter connection setting. Don't forget about Shift+Click</p>
 			<p>When you will have trouble connecting IE and Forestry, connect forestry directly to a Capacitor with no Connectors in between.</p>
 		</page>
 		<page id="pg13">
 			<p bold="true" italics="true">Regular Steel</p>
 			<p>Make Blast Furnace if you want to save material. The catch is you need Abbyssal stone, that means mine one of the boulders on the sea bed.</p>
+			<stack item="railcraft:generic" meta="8" count="432" x="0"/>
+			<stack item="immersiveengineering:stoneDecoration" count="27" x="20"/>
+			<stack item="advancedrocketry:blastBrick" count="73" x="60"/>
+			<stack item="libvulpes:coil0" count="3" meta="4" x="80"/>
+			<space height="20" />			
 			<p>Make Arc Furnace instead if you have enough material and energy. You will need this one anyway in the near future.</p>
 		</page>
 		<page id="pg14">
 			<p bold="true" italics="true">MedKits</p>
 			<p>Medkits give you Regeneration. They are fast and quite cheap to make. You just have to set up a production line. You will need Protein liquifier (Food -> Protein) and an Industrial Bottler.</p>
+			<stack item="minecraft:chicken" x="0"/>
+			<stack item="forestry:crate" x="20"/>
+			<stack item="gendustry:Liquifier" x="40"/>
+			<stack item="immersiveengineering:metalDevice0" meta="5" x="60"/>
+			<stack item="tp:medkit" x="80"/>
 		</page>
 		<page id="pg15">
 			<p bold="true" italics="true">Fighting the Dungeon</p>
-			<p>You can get many treasures from every dungeon. But beware, some places are hard to fight through.</p>
-			<p>Use light to prevent monsters from spawning.</p>
-			<p>Look for spawners and destroy them with pickaxe.</p>
-			<p>Have Food, Medkits and a good weapon.</p>
+			<p>Fight dungeons to get missing resources.</p>
+			<stack item="minecraft:nether_wart" x="0"/>
+			<stack item="minecraft:soul_sand" x="20"/>
+			<stack item="minecraft:end_stone" x="40"/>
+			<stack item="minecraft:blaze_rod" x="60"/>
+			<stack item="minecraft:brewing_stand" x="80"/>
+			<space height="20" />
+			<p>Use light to prevent spawning. Destroy spawners. Have Food, Medkits and a good weapon.</p>
+			<stack item="immersiveengineering:metalDecoration2" meta="5" x="0"/>
+			<stack item="tconstruct:punji" x="20"/>
+			<stack item="immersiveengineering:metalDevice1" meta="11" x="40"/>
+			<stack item="immersiveengineering:revolver" x="60"/>
+			<stack item="immersiveengineering:railgun" x="80"/>
+			<space height="20" />
 			<p>Use Razor Wires, Spikes or Turets to improve your chances.</p>
 		</page>
 		<page id="pg16">
 			<p bold="true" italics="true">UnderEnd Portal</p>
 			<p>3 Steps to get to UnderEnd:</p>
 			<p>Craft Faraday Armor, Build the Portal, Activate with the Scythe.</p>
-			<p>There is usually missing back portal on the other end. Bring the material to build it with you.</p>
+			<stack item="immersiveengineering:faradaySuit_chest" x="0"/>
+			<stack item="tp:reinforced_glass" x="20"/>
+			<stack item="tp:golden_scythe" x="40"/>
+			<space height="20" />
+			<p>There is usually missing return portal on the other end. Bring the material to build it with you.</p>
 		</page>
 		<page id="pg17">
 			<p bold="true" italics="true">More Resources</p>
@@ -943,10 +1121,10 @@
 		</page>
 		<page id="pg23">
 			<p bold="true" italics="true">Producing Rocket Fuel</p>
-			<p>Industrial Mixer turns water into Potion. Press it through some tank to make it a plain Potion.</p>
-			<p>Use Fermenter to turn Potion with Fire Essence and Fertilizer into Fire Water.</p>
-			<p>Use Fermenter and Still to turn Water or Juice with some Fruit and Fertilizer into Ethanol.</p>
-			<p>With Industrial Refinery process Fire Water and Ethanol into the Rocket Fuel.</p>
+			<p>Industrial Mixer + Tank: Water -> Potion -> Plain Potion.</p>
+			<p>Fermenter: Plain Potion + Fire Essence -> Fire Water.</p>
+			<p>Fermenter + Still: Water + Fruit -> Ethanol.</p>
+			<p>And Industrial Refinery: Fire Water + Ethanol -> Rocket Fuel.</p>
 		</page>
 		<page id="pg24">
 			<p bold="true" italics="true">Setting up Assembler</p>
@@ -961,8 +1139,8 @@
 		</page>
 		<page id="pg26">
 			<p bold="true" italics="true">Your Launch Site</p>
-			<p>You will need Launch Platform Base Blocks, made out of Concrete. Platform must be Rectangle and bigger than the rocket on all 4 sides.</p>
-			<p>Also make some Structure Tower blocks. Tower starts on the same level as the platform and goes up to be taller than nthe rocket.</p>
+			<p>25+ Launch Platform Blocks (from Concrete). It must be Rectangle and bigger than the rocket.</p>
+			<p>Also Structure Tower blocks. Tower starts on the same level as the platform and goes up above the rocket.</p>
 			<p>Place Rocket Assembler next to the Platform, touching the platform with its edge.</p>
 		</page>
 		<page id="pg27">

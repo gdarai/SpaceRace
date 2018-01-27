@@ -244,7 +244,7 @@ recipes.addShaped(<advancedrocketry:crystallizer>, [[ARCi1, display, ARCi2], [ba
 recipes.addShaped(<advancedrocketry:observatory>, [[display, display, display], [basicBlock, ARCi0, basicBlock], [scaffAlu, basicBlock, scaffAlu]]);
 recipes.addShaped(<advancedrocketry:planetSelector>, [[plateAlu, plateAlu, plateAlu], [pipeData, display, pipeData], [<opencomputers:case1>, basicBlock, <opencomputers:case1>]]);
 recipes.addShaped(<advancedrocketry:planetHoloSelector>, [[null, <actuallyadditions:itemCrystal:2>, null], [pipeData, <opencomputers:hologram2>, pipeData], [<opencomputers:case2>, basicBlock, <opencomputers:case2>]]);
-recipes.addShaped(<advancedrocketry:satelliteControlCenter>, [[opticalSensor, ocRemote, opticalSensor], [pipeData, basicBlock, pipeData], [<opencomputers:diskDrive>, <opencomputers:case2>, <opencomputers:diskDrive>]]);
+recipes.addShaped(<advancedrocketry:satelliteControlCenter>, [[opticalSensor, ocRemote, opticalSensor], [pipeData, basicBlock, pipeData], [<opencomputers:diskDrive>, <opencomputers:case1>, <opencomputers:diskDrive>]]);
 recipes.addShaped(<advancedrocketry:planetAnalyser>, [[display, ocRemote, display], [pipeData, basicBlock, pipeData], [<opencomputers:diskDrive>, <opencomputers:case1>, <opencomputers:diskDrive>]]);
 recipes.addShaped(<advancedrocketry:platePress>, [[<minecraft:stone>, <ore:blockInferium>, <minecraft:stone>], [rodIron, rodSteel, rodIron], [piston, piston, piston]]);
 recipes.addShaped(<advancedrocketry:stationBuilder>, [[circuitBasic ,display, circuitBasic], [scaffSteel, <advancedrocketry:rocketBuilder>, scaffSteel], [IEHeavyBlock, IEHeavyBlock, IEHeavyBlock]]);
@@ -357,8 +357,8 @@ recipes.addShaped(<advancedrocketry:microwaveReciever>, [[opticalSensor, optical
 recipes.addShaped(<advancedrocketry:stationMarker>, [[null, opticalSensor, <actuallyadditions:blockLaserRelay>], [basicBlock, basicBlock, magnet], [null, IERedstoneBlock, <actuallyadditions:blockLaserRelay>]]);
 recipes.addShaped(<advancedrocketry:landingPad>, [[null, null, null], [basicBlock, <advancedrocketry:launchpad>, basicBlock], [null, IERedstoneBlock, null]]);
 recipes.addShaped(<advancedrocketry:smallAirlockDoor>, [[ioSi, ioSi, ioSi], [basicBlock, hiTechDoor, basicBlock], [ioSi, IERedstoneBlock, ioSi]]);
-recipes.addShaped(<advancedrocketry:basicLaserGun>, [[battery, null, null], [ocPCB, infCrystal, infCrystal], [handle, null, null]]);
-recipes.addShaped(<advancedrocketry:jackHammer>, [[null, diamondHead, null], [infCrystal, ocPCB, infCrystal], [handle, <ore:blockObsidiorite>, handle]]);
+recipes.addShaped(<advancedrocketry:basicLaserGun>, [[battery.noReturn(), null, null], [ocPCB.noReturn(), infCrystal, infCrystal], [handle.noReturn(), null, null]]);
+recipes.addShaped(<advancedrocketry:jackHammer>, [[null, diamondHead.noReturn(), null], [infCrystal, ocPCB.noReturn(), infCrystal], [handle.noReturn(), <ore:blockObsidiorite>.noReturn(), handle.noReturn()]]);
 recipes.addShaped(<advancedrocketry:orientationController>, [[opticalSensor, IERedstoneBlock, opticalSensor], [rocketEngine1, basicBlock, rocketEngine1], [advancedTank, IERedstoneBlock, advancedTank]]);
 recipes.addShaped(<advancedrocketry:altitudeController>, [[advancedTank, opticalSensor, advancedTank], [<advancedrocketry:advRocketmotor>, basicBlock, <advancedrocketry:advRocketmotor>], [advancedTank, IERedstoneBlock, advancedTank]]);
 recipes.addShaped(<advancedrocketry:advRocketmotor>, [[pipeLiquid, pipeLiquid, pipeLiquid], [motorEnhanced, advancedTank, motorEnhanced], [IENozzle, rocketEngine1, IENozzle]]);
@@ -377,7 +377,7 @@ recipes.remove(<advancedrocketry:jetPack>);
 recipes.remove(advancedBlock);
 recipes.addShaped(<advancedrocketry:circleLight>, [[binder, binder, binder], [binder, <immersiveengineering:metalDevice1:9>, binder], [glass, glass, glass]]); 
 recipes.addShaped(<advancedrocketry:drill>, [[diamondHead, diamondHead, diamondHead], [gearBoxSteel, IEHeavyBlock, gearBoxSteel], [scaffSteel, basicBlock, scaffSteel]]); 
-recipes.addShaped(<advancedrocketry:satellite>, [[satSolarPanel, IELightBlock, satSolarPanel], [scaffAlu, <opencomputers:case2>, scaffAlu], [satSolarPanel, IELightBlock, satSolarPanel]]); 
+recipes.addShaped(<advancedrocketry:satellite>, [[satSolarPanel, IELightBlock, satSolarPanel], [scaffAlu, <opencomputers:case1>, scaffAlu], [satSolarPanel, IELightBlock, satSolarPanel]]); 
 recipes.addShaped(satSolarPanel, [[blockLens, blockLens, blockLens], [plateGold, basicBlock, plateGold], [pipeEnergy, pipeEnergy, pipeEnergy]]); 
 recipes.addShaped(<advancedrocketry:satellitePowerSource:1>, [[null, satSolarPanel, satSolarPanel], [scaffSteel, scaffSteel, pipeEnergy], [null, satSolarPanel, satSolarPanel]]); 
 recipes.addShaped(<advancedrocketry:jetPack>, [[medTank, <railcraft:backpack_apothecary_t1>, medTank], [pipeLiquid, pipeLiquid, pipeLiquid], [IENozzle, <minecraft:fire_charge>, IENozzle]]); 

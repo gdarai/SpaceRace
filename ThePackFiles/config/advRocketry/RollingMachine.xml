@@ -244,4 +244,13 @@
 			<itemStack>powersuits:powerArmorComponent 1 1</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="200" power ="80">
+		<input>
+			<oreDict>nuggetSteel 4</oreDict>
+			<itemStack>railcraft:rebar 6 0</itemStack>
+		</input>
+		<output>
+			<itemStack>railcraft:post_metal 12 15</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

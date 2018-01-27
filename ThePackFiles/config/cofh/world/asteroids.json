@@ -159,6 +159,7 @@
 				]
 			}
 		},
+
 		"ast00": {
 			"distribution": "uniform",
 			"generator": {
@@ -468,6 +469,29 @@
 				},
 				"material": "minecraft:stone",
 				"cluster-size": 10
+			},
+			"cluster-count": 30,
+			"min-height": 50,
+			"max-height": 150,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					21,
+					32
+				]
+			}
+		},
+
+		"ast18": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "deepresonance:resonating_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
 			},
 			"cluster-count": 30,
 			"min-height": 50,

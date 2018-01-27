@@ -105,4 +105,73 @@
 			<itemStack>powersuits:powerArmorComponent 4 0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="150" power ="80">
+		<input>
+			<oreDict>ingotBronze 4</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rail 4 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="80">
+		<input>
+			<oreDict>ingotInvar 4</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rail 8 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="80">
+		<input>
+			<oreDict>stickSteel 2</oreDict>
+			<oreDict>ingotGold 2</oreDict>
+			<oreDict>dustRedstone 2</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rail 6 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="80">
+		<input>
+			<oreDict>stickSteel 2</oreDict>
+			<oreDict>ingotGold 2</oreDict>
+			<oreDict>itemBlazePowder 2</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rail 6 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="160">
+		<input>
+			<oreDict>stickSteel 2</oreDict>
+			<oreDict>dustObsidian 6</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rail 6 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="80">
+		<input>
+			<oreDict>nuggetInvar 9</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rebar 2 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="80">
+		<input>
+			<oreDict>nuggetBronze 9</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:rebar 1 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="80">
+		<input>
+			<oreDict>nuggetSteel 6</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:track_parts 6 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

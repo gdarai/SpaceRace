@@ -86,11 +86,13 @@ hell01		cobaltN		hell		-1
 hell02		arditeN		hell		-1
 hell03		quartzN		hell		-1
 hell04		valyriumN	hell		-1
+hell05		resonanceN	hell		-1
 
-end00		abyssum		end		1
-end01		palladium	end		1
-end02		magicProsp	end		1
+end00		abyssumE	end		1
+end01		palladiumE	end		1
+end02		magicProspE	end		1
 end03		draconiumE	end		1
+end04		resonanceE	end		1
 
 space00s	ironS		all		23,24,30
 space01s	goldS		all		20,23,24,31
@@ -160,6 +162,7 @@ space46x	uruS		all		25
 space47n	endstone	all		33
 space47		aurorium	all		33
 space48		iridium		all		31,23
+space49		resonanceS	all		22,24,30
 
 ast00		ironA		all		21,32
 ast01		goldA		all		21,32
@@ -175,6 +178,7 @@ ast11		nickelA		all		32
 ast15		basaltA		all		21
 ast16		rutilA		all		21,32
 ast17		silverA		all		21,32
+ast18		resonanceA	all		21,32
 
 astN01		cobaltA		all		21,32
 astN02		arditeA		all		21,32

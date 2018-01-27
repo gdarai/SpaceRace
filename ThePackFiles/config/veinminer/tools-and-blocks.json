@@ -167,6 +167,7 @@
       ],
       "blocklist": [
         "actuallyadditions:blockMisc/3",
+        "deepresonance:resonating_ore/0",
         "draconicevolution:draconium_ore/0",
         "forestry:resources/0",
         "forestry:resources/1",

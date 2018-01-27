@@ -39,7 +39,7 @@
 			<itemStack>opencomputers:material 2 11</itemStack>
 			<itemStack>opencomputers:material 1 12</itemStack>
 			<oreDict>ingotElectrum</oreDict>
-			<fluidStack>lumix_fluid 250</fluidStack>
+			<fluidStack>manyullyn 250</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemCircuitPlate 1 1</itemStack>
@@ -271,7 +271,7 @@
 		<input>
 			<itemStack>opencomputers:material 1 5</itemStack>
 			<itemStack>advancedrocketry:itemCircuitPlate 1 1</itemStack>
-			<itemStack>taiga:ovium_ingot</itemStack>
+			<itemStack>taiga:abyssum_dust 4</itemStack>
 			<fluidStack>nitronite_fluid 250</fluidStack>
 		</input>
 		<output>
@@ -403,9 +403,10 @@
 		<input>
 			<oreDict>scaffoldingAluminum</oreDict>						
 			<itemStack>mysticalagriculture:inferium_tool_core</itemStack>
+			<itemStack>minecraft:diamond 2</itemStack>
 			<itemStack>advancedrocketry:itemCircuitPlate 2</itemStack>
 			<itemStack>advancedrocketry:satellitePrimaryFunction 3</itemStack>
-			<fluidStack>ardite 1000</fluidStack>
+			<fluidStack>karmesine_fluid 1000</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:satellitePrimaryFunction 1 1</itemStack>
@@ -415,10 +416,10 @@
 		<input>
 			<oreDict>scaffoldingAluminum</oreDict>
 			<itemStack>mysticalagriculture:prudentium_tool_core</itemStack>
-			<itemStack>libvulpes:productcrystal 3</itemStack>
+			<itemStack>actuallyadditions:itemCrystal 6</itemStack>
 			<itemStack>advancedrocketry:itemCircuitPlate 6</itemStack>
 			<itemStack>advancedrocketry:satellitePrimaryFunction 1</itemStack>
-			<fluidStack>cobalt 1000</fluidStack>
+			<fluidStack>karmesine_fluid 1000</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:satellitePrimaryFunction 1 2</itemStack>

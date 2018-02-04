@@ -1,5 +1,5 @@
 <Asteroids>
-	<asteroid name="Normal Asteroid" distance="50" mass="400" massVariability="0.1" minLevel="0" probability="10" richness="0.3" richnessVariability="0.1">
+	<asteroid name="Small" distance="20" mass="1000" massVariability="0.1" minLevel="0" probability="5" richness="0.3" richnessVariability="0.1">
 		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 1" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 2" chance="2" />
@@ -24,7 +24,7 @@
 		<ore itemStack="taiga:meteorite_block 0" chance="10" />
 		<ore itemStack="railcraft:ore_metal 3" chance="10" />
 	</asteroid>
-	<asteroid name="Special Asteroid" distance="100" mass="400" massVariability="0.1" minLevel="0" probability="2" richness="0.6" richnessVariability="0.1">
+	<asteroid name="Large" distance="100" mass="10000" massVariability="0.1" minLevel="0" probability="5" richness="0.3" richnessVariability="0.1">
 		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 1" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 2" chance="2" />
@@ -33,6 +33,71 @@
 		<ore itemStack="railcraft:ore_metal_poor 5" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 6" chance="2" />
 		<ore itemStack="railcraft:ore_metal_poor 7" chance="2" />
+		<ore itemStack="minecraft:iron_ore 0" chance="10" />
+		<ore itemStack="minecraft:gold_ore 0" chance="10" />
+		<ore itemStack="minecraft:redstone_ore 0" chance="10" />
+		<ore itemStack="minecraft:lapis_ore 0" chance="10" />
+		<ore itemStack="immersiveengineering:ore 1" chance="10" />
+		<ore itemStack="forestry:resources 1" chance="10" />
+		<ore itemStack="forestry:resources 2" chance="10" />
+		<ore itemStack="railcraft:ore_metal 5" chance="10" />
+		<ore itemStack="immersiveengineering:ore 4" chance="10" />
+		<ore itemStack="taiga:eezo_ore 0" chance="10" />
+		<ore itemStack="taiga:osram_ore 0" chance="10" />
+		<ore itemStack="taiga:basalt_block 0" chance="10" />
+		<ore itemStack="taiga:dilithium_ore 0" chance="10" />
+		<ore itemStack="taiga:meteorite_block 0" chance="10" />
+		<ore itemStack="libvulpes:ore0 8" chance="10" />
+		<ore itemStack="railcraft:ore_metal 3" chance="10" />
+	</asteroid>
+	<asteroid name="Magnetic" distance="70" mass="1000" massVariability="0.1" minLevel="0" probability="7" richness="0.25" richnessVariability="0.05">
+		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 2" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 3" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 4" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 6" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 7" chance="2" />
+		<ore itemStack="minecraft:iron_ore 0" chance="10" />
+		<ore itemStack="minecraft:redstone_ore 0" chance="10" />
+		<ore itemStack="immersiveengineering:ore 1" chance="10" />
+		<ore itemStack="immersiveengineering:ore 2" chance="10" />
+		<ore itemStack="forestry:resources 1" chance="10" />
+		<ore itemStack="forestry:resources 2" chance="10" />
+		<ore itemStack="railcraft:ore_metal 5" chance="10" />
+		<ore itemStack="immersiveengineering:ore 4" chance="10" />
+		<ore itemStack="taiga:eezo_ore 0" chance="10" />
+		<ore itemStack="taiga:meteorite_block 0" chance="10" />
+	</asteroid>
+	<asteroid name="Precious" distance="70" mass="1000" massVariability="0.1" minLevel="0" probability="4" richness="0.25" richnessVariability="0.05">
+		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 1" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 5" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 6" chance="2" />
+		<ore itemStack="minecraft:iron_ore 0" chance="10" />
+		<ore itemStack="minecraft:gold_ore 0" chance="10" />
+		<ore itemStack="minecraft:lapis_ore 0" chance="10" />
+		<ore itemStack="taiga:osram_ore 0" chance="10" />
+		<ore itemStack="taiga:dilithium_ore 0" chance="10" />
+		<ore itemStack="taiga:meteorite_block 0" chance="10" />
+		<ore itemStack="libvulpes:ore0 8" chance="10" />
+		<ore itemStack="railcraft:ore_metal 3" chance="10" />
+	</asteroid>
+	<asteroid name="Basalt" distance="70" mass="1000" massVariability="0.1" minLevel="0" probability="7" richness="0.25" richnessVariability="0.05">
+		<ore itemStack="railcraft:ore_metal_poor 0" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 1" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 2" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 3" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 4" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 5" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 6" chance="2" />
+		<ore itemStack="railcraft:ore_metal_poor 7" chance="2" />
+		<ore itemStack="minecraft:redstone_ore 0" chance="10" />
+		<ore itemStack="minecraft:lapis_ore 0" chance="10" />
+		<ore itemStack="taiga:basalt_block 0" chance="10" />
+		<ore itemStack="taiga:dilithium_ore 0" chance="10" />
+		<ore itemStack="taiga:meteorite_block 0" chance="10" />
+	</asteroid>
+	<asteroid name="Rich" distance="100" mass="5000" massVariability="0.1" minLevel="0" probability="3" richness="0.6" richnessVariability="0.1">
 		<ore itemStack="minecraft:iron_ore 0" chance="10" />
 		<ore itemStack="minecraft:gold_ore 0" chance="10" />
 		<ore itemStack="minecraft:redstone_ore 0" chance="10" />

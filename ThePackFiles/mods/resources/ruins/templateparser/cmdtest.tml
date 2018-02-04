@@ -2,7 +2,7 @@
 # Created by Ruins mod version 12.6 Ingame Parser
 # authoring Player: AtomicStryker
 
-weight=1
+weight=20
 embed_into_distance=0
 acceptable_target_blocks=stone,grass,dirt,sand,gravel,snow_layer,clay
 dimensions=6,7,7

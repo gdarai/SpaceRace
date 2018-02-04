@@ -2,5 +2,40 @@
   "_name": "Skeleton",
   "drops": [],
   "pre_stats": [],
-  "stats": []
+  "stats": [
+    {
+      "function": "all",
+      "_comment": "list of skeleton tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_25",
+		  "_comment": "DIM 25 - Deset World, make them resilient, quick and giving more damage",
+		  "count": 1,
+		  "functions": [
+			{
+			  "_comment": "set the skeleton's attack strength to 3",
+			  "function": "modifier",
+			  "attribute": "generic.attackDamage",
+			  "value": 2.5~3.5,
+			  "override": true
+			},
+			{
+			  "_comment": "double the skeleton's max health",
+			  "function": "modifier",
+			  "attribute": "generic.maxHealth",
+			  "value": 0.5~1.5,
+			  "operator": 1
+			},
+            {
+			  "_comment": "increase the skeleton's speed",
+              "function": "modifier",
+              "attribute": "generic.movementSpeed",
+              "value": 0.4~0.6,
+              "operator": 1
+            }
+		  ]
+		}
+  	  ]
+	}
+  ]
 }

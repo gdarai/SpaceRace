@@ -2,7 +2,7 @@
 # From: Default Template
 
 biomesToSpawnIn=jungle,junglehills,mini jungle
-weight=15
+weight=205
 embed_into_distance=0
 acceptable_target_blocks=grass,dirt,sand
 dimensions=20,11,12

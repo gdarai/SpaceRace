@@ -286,6 +286,10 @@ recipes.addShaped(<advancedrocketry:satelliteBuilder>, [[ocRemote, display, <adv
 mods.immersiveengineering.Crusher.addRecipe(<taiga:dilithium_crystal> * 2, <taiga:dilithium_ore>, 10000);
 mods.actuallyadditions.Crusher.addRecipe(<taiga:dilithium_ore>, <taiga:dilithium_crystal>*1, <taiga:dilithium_crystal>, 80);
 
+// AR Fuel in Refiner
+mods.immersiveengineering.Refinery.addRecipe(<liquid:rocketfuel> * 1, <liquid:fire_water> * 3, <liquid:bio.ethanol> * 5, 2000);
+mods.forestry.Fermenter.addRecipe(<liquid:fire_water>, <mysticalagriculture:fire_essence>, <liquid:potion>, 500, 0.2);
+
 // AirTight Space Suits
 mods.forestry.Carpenter.addRecipe(airSeal, [[glowstone, ioSi, glowstone], [ioSi, <minecraft:diamond>, ioSi], [glowstone, ioSi, glowstone]], 120, <liquid:obsidiorite_fluid> * 2000);
 <bqmie:icon_item:24>.addTooltip(format.gold("Air Tight Orb"));

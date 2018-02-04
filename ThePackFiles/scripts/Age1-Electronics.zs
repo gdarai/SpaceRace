@@ -141,6 +141,7 @@ recipes.remove(<libvulpes:productgear:6>);
 recipes.remove(gearBoxIron);
 recipes.remove(gearBox);
 recipes.addShaped(gearBoxIron, [[null, ironRod, null], [aluRod, gearCopper, aluRod], [gearBronze, <ore:gearTin>, gearBronze]]);
+recipes.addShaped(gearBoxIron, [[null, ironRod, null], [aluRod, gearCopper, aluRod], [gearBronze, <ore:gearBrass>, gearBronze]]);
 recipes.addShaped(gearBox, [[null, steelRod, null], [plateAlu, gearSteel, plateAlu], [gearBronze, <ore:gearTin>, gearBronze]]);
 
 recipes.remove(<immersiveengineering:metalDecoration0:*>);

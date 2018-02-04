@@ -1,0 +1,81 @@
+50		50
+200		80
+10		30
+100		60
+150		70
+1		20
+30		40
+
+-- Jungle Island
+jungle_hills
+jungle
+jungle_edge
+
+-- Desert Island
+desert_hills
+desert
+
+-- Savanna Island
+mutated_savanna
+savanna
+
+-- Flower Forrest Island
+mutated_forest
+plains
+
+-- Iceberg
+ice_mountains
+
+-- Hills Island
+extreme_hills
+mutated_extreme_hills
+taiga_hills
+
+-- Taiga Island
+taiga_cold_hills
+ice_flats
+
+-- Mesa Island
+mutated_mesa
+mesa
+mesa_clear_rock
+
+-- Forest Island
+birch_forest_hills
+forest_hills
+plains
+mutated_plains
+
+-- Oceans and Beaches
+ocean
+deep_ocean
+beach
+stone_beach
+mutated_desert
+
+-- Space
+Space
+-- Moon
+Moon
+-- Asteroid Belt
+void
+-- Lava world
+mutated_mesa_rock
+-- Alien World
+Alien Forest
+-- Crystal Moon
+CrystalChasms
+-- Red World
+Hot Dry Rock
+-- the End
+sky
+-- the Nether
+hell
+-- Distant World
+Hot Dry Rock
+-- Ocean World
+ocean
+-- Mushroom World
+mushroom_island
+-- the Haven
+Stormland

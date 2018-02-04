@@ -1,7 +1,8 @@
 # Created by Ruins mod version 12.8 Ingame Parser
 # authoring Player: AtomicStryker
 
-weight=2
+weight=70
+uniqueMinDistance=100
 embed_into_distance=0
 acceptable_target_blocks=
 

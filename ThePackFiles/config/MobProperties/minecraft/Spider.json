@@ -1,6 +1,82 @@
 {
+  "_comment": "this file gives spiders a 5% chance to spawn 2 to 5 weakened cave spiders that do not drop string",
   "_name": "Spider",
-  "drops": [],
-  "pre_stats": [],
-  "stats": []
+  "drops": [
+    {
+      "function": "all",
+      "_comment": "list of spider tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_23",
+		  "_comment": "Tweaks for dimension 23 - AlienWorld",
+		  "count": 0.75,
+		  "functions": [
+			{
+			  "function": "spawn",
+			  "id": "Spider",
+			  "count": "1",
+			  "stats": [
+				{
+				  "_comment": "set the spider's attack strength to 4",
+				  "function": "modifier",
+				  "attribute": "generic.attackDamage",
+				  "value": 4,
+				  "override": true
+				},
+				{
+				  "_comment": "double the spider's max health",
+				  "function": "modifier",
+				  "attribute": "generic.maxHealth",
+				  "value": 1,
+				  "operator": 1
+				}
+			  ]
+			},
+			{
+			  "function": "spawn",
+			  "id": "CaveSpider",
+			  "count": "3~5",
+			  "stats": [
+				{
+				  "_comment": "set the cave spider's attack strength to 3",
+				  "function": "modifier",
+				  "attribute": "generic.attackDamage",
+				  "value": 3,
+				  "override": true
+				},
+				{
+				  "_comment": "halve the cave spider's max health",
+				  "function": "modifier",
+				  "attribute": "generic.maxHealth",
+				  "value": -0.5,
+				  "operator": 1
+				}
+			  ]
+			}
+		  ]
+		}
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "function": "all",
+      "_comment": "list of spider tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_23",
+		  "_comment": "Tweaks for dimension 23 - AlienWorld",
+		  "functions": [
+			{
+			  "_comment": "double the mob's max health",
+			  "function": "modifier",
+			  "attribute": "generic.maxHealth",
+			  "value": 1,
+			  "operator": 1
+			}
+		  ]
+		}
+      ]
+    }
+  ]
 }

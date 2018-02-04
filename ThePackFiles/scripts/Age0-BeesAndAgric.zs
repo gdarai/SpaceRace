@@ -90,7 +90,7 @@ recipes.remove(stoneTorch);
 
 recipes.addShaped(torch * 4, [[wax, <actuallyadditions:itemMisc:10>, wax], [null, Coil, null], [null, <minecraft:stick>, null]]);
 recipes.addShaped(torch * 4, [[wax, <actuallyadditions:itemMisc:11>, wax], [null, Coil, null], [null, <minecraft:stick>, null]]);
-recipes.addShaped(stoneTorch, [[<minecraft:coal>, null, null], [<ore:rodStone>, null, null], [null, null, null]]);
+recipes.addShaped(stoneTorch, [[<minecraft:coal:*>, null], [<ore:rodStone>, null]]);
 recipes.addShapeless(tinyTorch * 2, [torch, <minecraft:stick>, <minecraft:stick>]);
 recipes.addShapeless(tinyTorch, [candle]);
 

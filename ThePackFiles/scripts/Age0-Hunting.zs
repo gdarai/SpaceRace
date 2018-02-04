@@ -12,6 +12,10 @@ val FishTrap = <harvestcraft:watertrap>;
 val GroundTrap = <harvestcraft:groundtrap>;
 val Chest = <minecraft:chest>;
 
+val woodenFrame = <actuallyadditions:blockMisc:4>;
+val leather = <ore:leather>;
+val stoneGear = <ore:gearStone>;
+
 recipes.remove(FishingRod);
 recipes.remove(FishTrap);
 recipes.remove(GroundTrap);
@@ -27,3 +31,6 @@ recipes.addShapeless(<harvestcraft:vinegaritem>, [<harvestcraft:potitem>, <ore:f
 
 recipes.remove(<sleepingbag:sleepingbag>);
 recipes.addShaped(<sleepingbag:sleepingbag>, [[grass, grass, grass],[leaves, leaves, leaves],[Stick, Stick, Stick]]);
+
+recipes.remove(<harvestcraft:presser>);
+recipes.addShaped(<harvestcraft:presser>, [[null, leather, null],[leather, woodenFrame, leather],[stoneGear, leather, stoneGear]]);

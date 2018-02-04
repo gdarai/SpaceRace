@@ -4073,6 +4073,29 @@
 					30
 				]
 			}
+		},
+
+		"space50": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "tp:ender_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 10,
+			"min-height": 45,
+			"max-height": 65,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					23,
+					31
+				]
+			}
 		}
 
 	}

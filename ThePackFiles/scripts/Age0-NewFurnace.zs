@@ -18,3 +18,4 @@ furnace.addRecipe(<mysticalagriculture:inferium_essence>, <mysticalagriculture:n
 furnace.addRecipe(<mysticalagriculture:prosperity_shard>, <mysticalagriculture:nether_prosperity_ore>);
 furnace.addRecipe(<mysticalagriculture:inferium_essence>, <mysticalagriculture:end_inferium_ore>);
 furnace.addRecipe(<mysticalagriculture:prosperity_shard>, <mysticalagriculture:end_prosperity_ore>);
+

@@ -1,0 +1,54 @@
+Half Drawers 2x2 (storagedrawers:basicDrawers - 1739:4) has a TileEntity
+Hardness: 5.0000, Resistance: 25.0000, Material: WOOD
+IBlockState properties, including getActualState():
+PropertyEnum{name=block, clazz=class com.jaquadro.minecraft.storagedrawers.api.storage.EnumBasicDrawer, values=[full1, full2, full4, half2, half4]}: half4
+PropertyDirection{name=facing, clazz=class net.minecraft.util.EnumFacing, values=[north, south, west, east]}: east
+PropertyEnum{name=variant, clazz=class net.minecraft.block.BlockPlanks$EnumType, values=[oak, spruce, birch, jungle, acacia, dark_oak]}: oak
+IExtendedBlockState properties:
+com.jaquadro.minecraft.chameleon.block.properties.UnlistedModelData@12e0a85f: Optional.of(com.jaquadro.minecraft.storagedrawers.block.modeldata.DrawerStateModelData@1)
+
+TAG_Compound (10) ('')
+{
+    TAG_String (8) ('Mat'): "oak"
+    TAG_List (9) ('Slots') (4 entries of TAG_Compound (10))
+    {
+        TAG_Compound (10) ('')
+        {
+            TAG_Short (2) ('Item'): 4487
+            TAG_Short (2) ('Meta'): 0
+            TAG_Int (3) ('Count'): 0
+        }
+        TAG_Compound (10) ('')
+        {
+            TAG_Short (2) ('Item'): 5757
+            TAG_Short (2) ('Meta'): 29
+            TAG_Int (3) ('Count'): 0
+        }
+        TAG_Compound (10) ('')
+        {
+            TAG_Short (2) ('Item'): 4434
+            TAG_Short (2) ('Meta'): 0
+            TAG_Int (3) ('Count'): 0
+        }
+        TAG_Compound (10) ('')
+        {
+        }
+    }
+    TAG_List (9) ('Upgrades') (1 entries of TAG_Compound (10))
+    {
+        TAG_Compound (10) ('')
+        {
+            TAG_Byte (1) ('Slot'): 0
+            TAG_String (8) ('id'): "storagedrawers:upgradeCreative"
+            TAG_Byte (1) ('Count'): 1
+            TAG_Short (2) ('Damage'): 1
+        }
+    }
+    TAG_Int (3) ('Cap'): 4
+    TAG_Int (3) ('x'): 6604
+    TAG_Int (3) ('y'): 77
+    TAG_Int (3) ('z'): 655
+    TAG_String (8) ('id'): "storagedrawers:basicDrawers"
+    TAG_Byte (1) ('Dir'): 5
+    TAG_String (8) ('Lock'): ""
+}

@@ -1,6 +1,57 @@
 {
   "_name": "PigZombie",
-  "drops": [],
+  "drops": [
+    {
+      "function": "all",
+      "_comment": "list of pigmen tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_22",
+		  "_comment": "DIM 22 - Lava World, spawn lava block",
+		  "count": 1,
+		  "functions": [
+			{
+			  "function": "set_block",
+			  "id": "minecraft:lava",
+			  "y":"2",
+			  "override": "true",
+			  "update":"1"
+			},
+			{
+			  "function": "set_block",
+			  "id": "minecraft:netherrack",
+			  "y":"1",
+			  "override": "true"
+			}
+		  ]
+		}
+      ]
+    }
+  ],
   "pre_stats": [],
-  "stats": []
+  "stats": [
+    {
+      "function": "all",
+      "_comment": "list of pigmen tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_22",
+		  "_comment": "DIM 22 - Lava World, make them angry - does not work",
+		  "count": 1,
+		  "functions": [
+			{
+			  "function": "nbt",
+			  "tags": [
+				{
+				  "function": "int",
+				  "name": "Anger",
+				  "value": "1"
+				}
+			  ]
+			}
+		  ]
+		}
+  	  ]
+	}
+  ]
 }

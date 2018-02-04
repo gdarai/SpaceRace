@@ -208,10 +208,6 @@ val knBlade = <actuallyadditions:itemMisc:2>;
 recipes.remove(knBlade);
 recipes.addShaped(knBlade, [[null, <ore:nuggetIron>, null], [null, <ore:nuggetIron>, null], [null, <ore:itemFlint>, null]]);
 
-// AR Fuel in Refiner
-mods.immersiveengineering.Refinery.addRecipe(<liquid:rocketfuel> * 1, <liquid:fire_water> * 3, <liquid:bio.ethanol> * 5, 2000);
-mods.forestry.Fermenter.addRecipe(<liquid:fire_water>, <mysticalagriculture:fire_essence>, <liquid:potion>, 500, 0.2);
-
 // Ferilizer equivalency
 recipes.addShapeless(<forestry:fertilizerCompound>, [<actuallyadditions:itemFertilizer>]);
 recipes.addShapeless(<actuallyadditions:itemFertilizer>, [<forestry:fertilizerCompound>]);
@@ -359,3 +355,6 @@ mods.tconstruct.Smeltery.removeMelting(<libvulpes:productgear:6>);
 mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:1>);
 mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:4>);
 mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:6>);
+
+// Remove Bucket melting
+mods.tconstruct.Smeltery.removeMelting(<minecraft:bucket>);

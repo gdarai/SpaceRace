@@ -1,6 +1,68 @@
 {
   "_name": "Silverfish",
-  "drops": [],
+   "drops": [
+    {
+      "function": "all",
+      "_comment": "list of silverfish tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_22",
+		  "_comment": "DIM 22 - Lava World, spawn fused dynamite",
+		  "count": 1,
+		  "functions": [
+			{
+			  "function": "set_block",
+			  "id": "minecraft:tnt",
+			  "y":"2",
+			  "override": "true",
+			  "update":"2",
+			  "tags": [
+				{
+				  "function": "int",
+				  "name": "Fuse",
+				  "value": "10"
+				}
+			  ]
+			},
+			{
+			  "function": "set_block",
+			  "id": "minecraft:redstone_block",
+			  "y":"1",
+			  "override": "true"
+			}
+		  ]
+		}
+      ]
+    }
+  ],
   "pre_stats": [],
-  "stats": []
+  "stats": [
+    {
+      "function": "all",
+      "_comment": "list of silverfish tweaks",
+      "functions": [
+		{
+		  "function": "if_in_dimension_25",
+		  "_comment": "DIM 25 - Deset World, make them resilient and a lot quicker",
+		  "count": 1,
+		  "functions": [
+			{
+			  "_comment": "double the silverfish's max health",
+			  "function": "modifier",
+			  "attribute": "generic.maxHealth",
+			  "value": 0.5~1.5,
+			  "operator": 1
+			},
+            {
+			  "_comment": "increase the silverfish's speed",
+              "function": "modifier",
+              "attribute": "generic.movementSpeed",
+              "value": 0.8~1.2,
+              "operator": 1
+            }
+		  ]
+		}
+	  ]
+	}
+  ]
 }

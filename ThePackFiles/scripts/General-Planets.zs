@@ -9,16 +9,19 @@
 val jelly = <forestry:royalJelly>;
 val obsidiorite = <taiga:obsidiorite_block>;
 
-val triberium = <taiga:triberium_block>;
-val dilithiumDust = <ore:dustDilithium>;
+val apple2 = <mysticalagriculture:prudentium_apple>;
+val apple3 = <mysticalagriculture:intermedium_apple>;
+val dilithium = <taiga:dilithium_block>;
+val apatine = <forestry:resourceStorage>;
 
 val blackQuartz = <actuallyadditions:blockMisc:2>;
 val blueSlime = <tconstruct:slime:1>;
 
 val uranium = <immersiveengineering:storage:5>;
 val chorus = <minecraft:chorus_fruit_popped>;
-recipes.addShaped(<bqmie:icon_item:14>, [[jelly, obsidiorite, jelly], [obsidiorite, <ore:blockQuartz>, obsidiorite], [jelly, obsidiorite,jelly]]);
-recipes.addShaped(<bqmie:icon_item:16>, [[dilithiumDust, triberium, dilithiumDust], [triberium, <ore:blockDiamond>, triberium], [dilithiumDust, triberium, dilithiumDust]]);
+recipes.addShaped(<bqmie:icon_item:14>, [[jelly, obsidiorite, jelly], [obsidiorite, <advancedrocketry:bucketNitrogen>, obsidiorite], [jelly, obsidiorite,jelly]]);
+recipes.addShaped(<bqmie:icon_item:16>, [[apple2, dilithium, apple2], [dilithium, <ore:blockDiamond>, dilithium], [apple2, dilithium, apple2]]);
 recipes.addShaped(<bqmie:icon_item:13>, [[blackQuartz, blueSlime, blackQuartz], [blueSlime, <ore:blockEnergeticAlloy>, blueSlime], [blackQuartz, blueSlime, blackQuartz]]);
 mods.actuallyadditions.Empowerer.addRecipe(uranium, <bqmie:icon_item:15>, chorus, chorus, chorus, chorus, 500000, 1200);
+recipes.addShaped(<bqmie:icon_item:17>, [[apple3, apatine, apple3], [apatine, <ore:blockTriberium>, apatine], [apple3, apatine, apple3]]);
 

@@ -137,12 +137,26 @@ val plateSteel = <ore:plateSteel>;
 val gearSteel = <ore:gearSteel>;
 val gearCopper = <ore:gearCopper>;
 
+val gearSoft = <ore:gearSoft>;
+
+gearSoft.addAll(<ore:gearCopper>);
+gearSoft.addAll(<ore:gearBronze>);
+gearSoft.addAll(<ore:gearBrass>);
+gearSoft.addAll(<ore:gearIron>);
+
+val gearHard = <ore:gearHard>;
+gearHard.addAll(<ore:gearSteel>);
+gearHard.addAll(<ore:gearInvar>);
+gearHard.addAll(<ore:gearTitanium>);
+gearHard.addAll(<ore:gearTitaniumAluminide>);
+gearHard.addAll(<ore:gearTitaniumIridium>);
+
 recipes.remove(<libvulpes:productgear:6>);
 recipes.remove(gearBoxIron);
 recipes.remove(gearBox);
-recipes.addShaped(gearBoxIron, [[null, ironRod, null], [aluRod, gearCopper, aluRod], [gearBronze, <ore:gearTin>, gearBronze]]);
-recipes.addShaped(gearBoxIron, [[null, ironRod, null], [aluRod, gearCopper, aluRod], [gearBronze, <ore:gearBrass>, gearBronze]]);
-recipes.addShaped(gearBox, [[null, steelRod, null], [plateAlu, gearSteel, plateAlu], [gearBronze, <ore:gearTin>, gearBronze]]);
+recipes.addShaped(gearBoxIron, [[null, aluRod, null], [ironRod, gearBronze, ironRod], [null, gearSoft, null]]);
+recipes.addShaped(gearBoxIron, [[null, aluRod, null], [ironRod, <ore:gearBrass>, ironRod], [null, gearSoft, null]]);
+recipes.addShaped(gearBox, [[null, steelRod, null], [plateAlu, gearSteel, plateAlu], [null, gearHard, null]]);
 
 recipes.remove(<immersiveengineering:metalDecoration0:*>);
 recipes.addShaped(IECopperCoil * 2, [[coil1, coil1, coil1], [coil1, ironRod, coil1], [coil1, coil1, coil1]]);
@@ -171,7 +185,7 @@ mods.forestry.Carpenter.addRecipe(ARCi1, [[ioSi, <ore:ingotBronze>, ioSi], [ocTr
 mods.forestry.Carpenter.addRecipe(ARCi2, [[ioSi, <ore:gemLapis>, ioSi], [ocTrans, ocChip1, ocTrans], [<ore:nuggetGold>, <ore:ingotNiob>, <ore:nuggetGold>]], 20, <liquid:eezo_fluid> * 1000, <forestry:waxCast>);
 
 // Magma, needed for nitronite:
-mods.forestry.Squeezer.addRecipe(<liquid:magma_fluid> * 100, [<minecraft:magma>], 200, null);
+mods.forestry.Squeezer.addRecipe(<liquid:magma_fluid> * 100, [<minecraft:magma>], 200);
 
 val boardRaw = <opencomputers:material:3>;
 val boardPrinted = <opencomputers:material:5>;

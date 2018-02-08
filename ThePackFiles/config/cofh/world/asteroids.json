@@ -159,6 +159,7 @@
 				]
 			}
 		},
+		
 		"ast00": {
 			"distribution": "uniform",
 			"generator": {
@@ -166,9 +167,9 @@
 					"name": "minecraft:iron_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -189,9 +190,9 @@
 					"name": "minecraft:gold_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -212,9 +213,9 @@
 					"name": "minecraft:redstone_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -235,9 +236,9 @@
 					"name": "minecraft:lapis_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -258,9 +259,9 @@
 					"name": "minecraft:diamond_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -280,9 +281,9 @@
 					"name": "minecraft:emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -303,9 +304,9 @@
 					"metadata": 1,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -327,9 +328,9 @@
 					"metadata": 1,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -351,9 +352,9 @@
 					"metadata": 2,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -375,9 +376,9 @@
 					"metadata": 5,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -398,9 +399,9 @@
 					"metadata": 4,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -420,9 +421,9 @@
 					"name": "taiga:basalt_block"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -443,9 +444,9 @@
 					"metadata": 8,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 5
+				"cluster-size": 15
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -467,9 +468,9 @@
 					"metadata": 3,
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -490,9 +491,9 @@
 					"name": "deepresonance:resonating_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 15
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -513,9 +514,9 @@
 					"name": "tp:ender_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 5
+				"cluster-size": 15
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -536,9 +537,9 @@
 					"name": "tconstruct:ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -560,9 +561,9 @@
 					"metadata": 1,
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 10
+				"cluster-size": 30
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -583,9 +584,9 @@
 					"name": "minecraft:quartz_ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 15
+				"cluster-size": 50
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -606,9 +607,9 @@
 					"name": "taiga:prometheum_ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 5
+				"cluster-size": 15
 			},
-			"cluster-count": 30,
+			"cluster-count": 60,
 			"min-height": 50,
 			"max-height": 150,
 			"retrogen": true,
@@ -620,6 +621,5 @@
 				]
 			}
 		}
-		
 	}
 }

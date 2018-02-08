@@ -12,7 +12,6 @@ deepDur0	duranite	all		0
 deepBasalt0	basalt		all		0
 deepAlu0	deepAlu		all		0
 
-
 poor00		poor0		all		0,20,22,23,24,25,30,31,33
 poor01		poor1		all		0,20,22,23,24,25,30,31,33
 poor02		poor2		all		0,20,22,23,24,25,30,31,33
@@ -163,6 +162,7 @@ space47n	endstone	all		33
 space47		aurorium	all		33
 space48		iridium		all		31,23
 space49		resonanceS	all		22,24,30
+space50		enderS		all		23,31
 
 ast00		ironA		all		21,32
 ast01		goldA		all		21,32
@@ -179,9 +179,9 @@ ast15		basaltA		all		21
 ast16		rutilA		all		21,32
 ast17		silverA		all		21,32
 ast18		resonanceA	all		21,32
+ast19		enderA		all		21,32
 
 astN01		cobaltA		all		21,32
 astN02		arditeA		all		21,32
 astN03		quartzA		all		21,32
 astN04		prometheumA	all		32
-

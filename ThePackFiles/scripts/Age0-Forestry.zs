@@ -66,3 +66,8 @@ recipes.addShaped(<forestry:still>, [[searedTank, pipe, searedTank],[pipe, <mine
 recipes.addShaped(<forestry:moistener>, [[searedTank, barrelWood, searedTank], [IRRope, barrelIron, IRRope], [scaffAlu, tubeCopper, scaffAlu]]);
 mods.forestry.Carpenter.addRecipe(<forestry:portableAlyzer>, [[<forestry:pipette>, <advancedrocketry:lens>, <minecraft:book>], [honeyPot, <forestry:can>, honeyPot], [ioSi, FCi1, ioSi]], 20, <liquid:seed.oil> * 500, <forestry:waxCast>);
 recipes.addShaped(<forestry:bottler>, [[aaRed, searedTank, aaRed], [aaRed, hopper, aaRed], [scaffAlu, powerM, scaffAlu]]);
+
+// Industrial Oil and Ethanol from Forestry items
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 200, <forestry:fruits:2>, 160);
+mods.immersiveengineering.Refinery.addRecipe(<liquid:biodiesel> * 20, <liquid:plantoil> * 8, <liquid:bio.ethanol> * 8, 340);
+mods.immersiveengineering.Refinery.addRecipe(<liquid:biodiesel> * 16, <liquid:seed.oil> * 8, <liquid:bio.ethanol> * 8, 340);

@@ -41,7 +41,8 @@
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">
 		<input>
-			<oreDict>sheetAluminum 2</oreDict>
+			<oreDict>sheetSteel 2</oreDict>
+			<oreDict>sheetAluminum 6</oreDict>
 			<itemStack>immersiveengineering:wirecoil 5 5</itemStack>
 		</input>
 		<output>

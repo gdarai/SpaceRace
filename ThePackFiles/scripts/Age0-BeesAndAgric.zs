@@ -12,7 +12,7 @@ val Coil = <immersiveengineering:wirecoil:3>;
 val wax = <forestry:beeswax>;
 
 recipes.remove(alvearyBlock);
-recipes.addShaped(alvearyBlock, [[trStick, alvearyPanel, trStick], [alvearyPanel, casingWood, alvearyPanel], [trStick, alvearyPanel, trStick]]);
+recipes.addShaped(alvearyBlock*3, [[trStick, alvearyPanel, trStick], [alvearyPanel, casingWood, alvearyPanel], [trStick, alvearyPanel, trStick]]);
 
 mods.forestry.Carpenter.removeRecipe(alvearyPanel, <liquid:for.honey>);
 mods.forestry.Carpenter.addRecipe(alvearyPanel, [[null, null, null], [trStick, <minecraft:trapdoor>, trStick], [wax, Coil, wax]], 20, <liquid:for.honey>*125, null);

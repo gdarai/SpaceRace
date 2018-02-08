@@ -45,8 +45,7 @@ recipes.addShaped(piston, [[trPlank, trPlank, trPlank], [cobble, rodIron, cobble
 recipes.addShaped(piston, [[trPlank, trPlank, trPlank], [cobble, rodAlu, cobble], [cobble, <minecraft:redstone>, cobble]]);
 
 recipes.remove(<railcraft:equipment:*>);
-
-recipes.addShaped(<railcraft:equipment>, [[gearBoxIron, piston, gearBoxIron], [piston, casingWood, piston], [gearBoxIron, piston, gearBoxIron]]);
+recipes.addShaped(<railcraft:equipment>, [[piston, casingWood, piston], [gearBoxIron, null, gearBoxIron], [<ore:gearStone>, casingWood, <ore:gearStone>]]);
 
 // Gear Bushing and Brass
 

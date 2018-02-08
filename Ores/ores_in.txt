@@ -108,35 +108,37 @@ jauxum		taiga:jauxum_ore			0	no		minecraft:stone			uniform		2		8		10	50
 magma		minecraft:magma				0	no		minecraft:stone			uniform		3		13		10	50
 vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		1		3		10	50
 uru			taiga:uru_ore				0	no		minecraft:stone			uniform		4		12		30	60
+enderS		tp:ender_ore				0	no		minecraft:stone			uniform		3		10		45	65
 aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		3		10		10	30
 
-ironA		minecraft:iron_ore			0	no		minecraft:stone			uniform		10		30		50	150
-goldA		minecraft:gold_ore			0	no		minecraft:stone			uniform		10		30		50	150
-redstoneA	minecraft:redstone_ore		0	no		minecraft:stone			uniform		10		30		50	150
-lapisA		minecraft:lapis_ore			0	no		minecraft:stone			uniform		10		30		50	150
-diamondA	minecraft:diamond_ore		0	no		minecraft:stone			uniform		10		30		50	150
-emeraldA	minecraft:emerald_ore		0	no		minecraft:stone			uniform		10		30		50	150
-aluA		immersiveengineering:ore	1	no		minecraft:stone			uniform		10		30		50	150
-copperA		forestry:resources			1	no		minecraft:stone			uniform		10		30		50	150
-tinA		forestry:resources			2	no		minecraft:stone			uniform		10		30		50	150
-zincA		railcraft:ore_metal			5	no		minecraft:stone			uniform		10		30		50	150
-nickelA		immersiveengineering:ore	4	no		minecraft:stone			uniform		10		30		50	150
-basaltA		taiga:basalt_block			0	no		minecraft:stone			uniform		10		30		50	150
-rutilA		libvulpes:ore0				8	no		minecraft:stone			uniform		5		30		50	150
-silverA		railcraft:ore_metal			3	no		minecraft:stone			uniform		10		30		50	150
+ironA		minecraft:iron_ore			0	no		minecraft:stone			uniform		30		60		50	150
+goldA		minecraft:gold_ore			0	no		minecraft:stone			uniform		30		60		50	150
+redstoneA	minecraft:redstone_ore		0	no		minecraft:stone			uniform		30		60		50	150
+lapisA		minecraft:lapis_ore			0	no		minecraft:stone			uniform		30		60		50	150
+diamondA	minecraft:diamond_ore		0	no		minecraft:stone			uniform		30		60		50	150
+emeraldA	minecraft:emerald_ore		0	no		minecraft:stone			uniform		30		60		50	150
+aluA		immersiveengineering:ore	1	no		minecraft:stone			uniform		30		60		50	150
+copperA		forestry:resources			1	no		minecraft:stone			uniform		30		60		50	150
+tinA		forestry:resources			2	no		minecraft:stone			uniform		30		60		50	150
+zincA		railcraft:ore_metal			5	no		minecraft:stone			uniform		30		60		50	150
+nickelA		immersiveengineering:ore	4	no		minecraft:stone			uniform		30		60		50	150
+basaltA		taiga:basalt_block			0	no		minecraft:stone			uniform		30		60		50	150
+rutilA		libvulpes:ore0				8	no		minecraft:stone			uniform		15		60		50	150
+silverA		railcraft:ore_metal			3	no		minecraft:stone			uniform		30		60		50	150
+enderA		tp:ender_ore				0	no		minecraft:stone			uniform		15		60		50	150
 
 netherrackU	minecraft:netherrack		0	no		minecraft:end_stone			uniform		30		20		20	55
 
-cobaltA		tconstruct:ore				0	no		minecraft:netherrack		uniform		10		30		50	150
-arditeA		tconstruct:ore				1	no		minecraft:netherrack		uniform		10		30		50	150
-quartzA		minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		15		30		50	150
-prometheumA	taiga:prometheum_ore		0	no		minecraft:netherrack		uniform		5		30		50	150
+cobaltA		tconstruct:ore				0	no		minecraft:netherrack		uniform		30		60		50	150
+arditeA		tconstruct:ore				1	no		minecraft:netherrack		uniform		30		60		50	150
+quartzA		minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		50		60		50	150
+prometheumA	taiga:prometheum_ore		0	no		minecraft:netherrack		uniform		15		60		50	150
 
 cobaltNN	tconstruct:ore				0	no		minecraft:netherrack		uniform		2		8		45	65
 arditeNN	tconstruct:ore				1	no		minecraft:netherrack		uniform		2		12		45	65
 quartzNN	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		16		45	65
 
-resonanceA	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		4		30		50	150
+resonanceA	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		15		60		50	150
 resonanceS	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		3		10		20	40
 resonanceN	deepresonance:resonating_ore	1	no		minecraft:netherrack	uniform		3		10		100	140
 

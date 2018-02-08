@@ -159,6 +159,7 @@
 			<p>Here is the list of what is the JEI lying about:</p>
 			<link ref="ch3:pg2">Charcoal</link>
 			<link ref="ch3:pg2a">Tinkers Book</link>
+			<link ref="ch3:pg2b">Harvestcraft Machines</link>
 			<link ref="ch3:pg3">Smelting</link>
 			<link ref="ch3:pg3a">Carpenter and ThFab</link>
 			<link ref="ch3:pg4">Refined Storage</link>
@@ -187,6 +188,17 @@
 			<stack item="taiga:eezo_ore" x="20"/>
 			<stack item="taiga:ovium_ore" x="40"/>
 			<stack item="taiga:abyssum_ore" x="60"/>
+		</page>
+		<page id="pg2b">
+			<p bold="true" italics="true">Harvestcraft Machines</p>
+			<p>JEI totally ignores Harvestcraft Presser recipes. Find them on the wiki, it is a good source of wax, honey and more.</p>
+			<stack item="harvestcraft:presser" x="0"/>
+			<stack item="harvestcraft:apiary" x="40"/>
+			<stack item="harvestcraft:groundtrap" x="60"/>
+			<stack item="harvestcraft:watertrap" x="80"/>
+			<space height="20" />
+			<link href="http://www.harvestcraftmod.wikia.com/wiki/Presser">Presser on Wiki</link>
+			<p>Pressed can be Combs, Soy things, Fruits and some Nuts.</p>
 		</page>
 		<page id="pg3">
 			<p bold="true" italics="true">Smelting</p>
@@ -287,7 +299,7 @@
 			<p />
 			<link ref="ch4x">Homeworld</link>
 			<link ref="ch5">Planets</link>
-			<link ref="ch6">Dimensions</link>
+			<link ref="ch6">Dimensions and Extra</link>
 		</page>
 	</chapter>
 	<chapter id="ch4x">
@@ -748,15 +760,22 @@
 	</chapter>
 	<chapter id="ch6">
 		<page>
-			<title>Dimensions</title>
+			<title>Dimensions and Extra</title>
 			<p>Here is every place into which you can get only by a portal.</p>
+			<p />
+			<p>Or just get resources there with no access "In Persona".</p>
 			<p />
 			<p>Well in the case of the Distant World it is not only... but it is a portal anyway.</p>
 		</page>
 		<page>
 			<link ref="ch6:pg0">The UnderEnd</link>
 			<link ref="ch6:pg1">The Nether</link>
+			<space height="20" />
 			<link ref="ch6:pg2">Distant World Portal</link>
+			<space height="20" />
+			<link ref="ch6:pg3">Asteroid Mining</link>
+			<link ref="ch6:pg4">Gas Giant Mining</link>
+			<link ref="ch6:pg5">Other Means</link>
 		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">The UnderEnd</p>
@@ -794,6 +813,88 @@
 			<p>Just build a portal in the Nether, made of Chiseled Uranium Blocks and activate it using your loyal Golden Scythe.</p>
 			<stack item="chisel:blockUranium" x="0"/>
 			<stack item="tp:golden_scythe" x="20"/>
+		</page>
+		<page id="pg3">
+			<p bold="true" italics="true">Asteroid Mining</p>
+			<p>After visiting the moon, the Asteroid Mining Mission is available. Start by crafting the Satellite Builder and make in it some SATs using Chassis, Solar panels, Data Sticks, ID Chip and a Sensor</p>
+			<stack item="advancedrocketry:satelliteBuilder" x="0"/>
+			<stack item="advancedrocketry:satellite" x="20"/>
+			<stack item="advancedrocketry:satellitePowerSource" x="40"/>
+			<stack item="advancedrocketry:dataUnit" x="60"/>
+			<stack item="advancedrocketry:satelliteIdChip" x="80"/>
+			<space height="20" />
+			<stack item="advancedrocketry:satellitePrimaryFunction" x="0"/>
+			<stack item="advancedrocketry:satellitePrimaryFunction" meta="1" x="20"/>
+			<stack item="advancedrocketry:satellitePrimaryFunction" meta="2" x="40"/>
+			<space height="20" />
+			<p>Keep the ID chip, put SATs in sat bays on top of a rocket.</p>
+		</page>
+		<page>
+			<p>Launch them. Put the chips in Sat Terminals. Start transferring the data into an Astrobody Data Processor (ADP).</p>
+			<stack item="advancedrocketry:loader" meta="1" x="0"/>
+			<stack item="libvulpes:linker" x="20"/>
+			<stack item="advancedrocketry:monitoringStation" x="40"/>
+			<stack item="advancedrocketry:satelliteControlCenter" x="60"/>
+			<stack item="advancedrocketry:dataPipe" x="80"/>
+			<stack item="advancedrocketry:planetAnalyser" x="100"/>
+			<space height="20" />
+			<p>Now Telescope, add some Distance Data into it. Used Motor and Lens do matter. Make Asteroid ID Chip and tune it in the Telescope to some Asteroid.</p>
+			<stack item="libvulpes:motor" x="0"/>
+			<stack item="libvulpes:advancedMotor" x="20"/>
+			<stack item="libvulpes:enhancedMotor" x="40"/>
+			<stack item="minecraft:glass" x="60"/>
+			<stack item="advancedrocketry:blockLens" x="80"/>
+			<stack item="advancedrocketry:asteroidChip" x="100"/>
+			<space height="20" />
+		</page>
+		<page>
+			<p>Fill the Asteroid Chip with ADP data. Put full chip in a harvesting rocket. With drills and storage space. Link it to the Rocket Monitor and off you go.</p>
+			<stack item="advancedrocketry:drill" x="0"/>
+			<stack item="advancedrocketry:asteroidChip" x="20"/>
+			<stack item="minecraft:chest" x="40"/>
+			<stack item="libvulpes:linker" x="60"/>
+			<stack item="advancedrocketry:monitoringStation" x="80"/>
+		</page>
+		<page>
+			<p bold="true" italics="true">Available Resources</p>
+			<p>All the poor ores and ores available on your homeworld. But also:</p>
+			<stack item="taiga:dilithium_crystal" x="0"/>
+			<stack item="libvulpes:productingot" meta="7" x="20"/>
+			<stack item="taiga:meteorite_block" x="40"/>
+			<stack item="railcraft:generic" x="60"/>
+			<space height="20" />
+			<p>With better Telescope, also UnderEnd ores could be available.</p>			
+		</page>
+		<page id="pg4">
+			<p bold="true" italics="true">Gas Giant Mining</p>
+			<p>You can mine gases from any Gas Giant planet. To do that you must be on it's orbit, so you need a Warp Ship.</p>
+			<stack item="advancedrocketry:stationBuilder" x="0"/>
+			<stack item="advancedrocketry:spaceStationChip" x="20"/>
+			<stack item="advancedrocketry:warpCore" x="40"/>
+			<stack item="advancedrocketry:warpMonitor" x="60"/>
+			<stack item="libvulpes:productcrystal" x="80"/>
+			<space height="20" />
+			<p>Harvester will drop down from a dock. Build Dock. Unmanned Vehicle Builder and Arms spreading left, right, up and over. No Floor.</p>
+			<stack item="advancedrocketry:deployableRocketBuilder" x="0"/>
+			<stack item="advancedrocketry:structureTower" x="20"/>
+			<stack item="advancedrocketry:monitoringStation" x="40"/>
+			<stack item="libvulpes:linker" x="60"/>
+		</page>
+		<page>
+			<p>Build Harvester with Tanks and Intakes. Must be facing away from the UV Builder.</p>
+			<stack item="advancedrocketry:liquidTank" x="0"/>
+			<stack item="advancedrocketry:intake" x="20"/>
+			<space height="20" />
+			<p>Select Gas in the Harvester GUI, link it to the Monitoring station and off you go.</p>
+			<space height="10" />
+			<p>Following gases are available: oxygen, hydrogen, nitrogen, cloud seed, nutrient distillation and hootch.</p>			
+		</page>
+		<page id="pg5">
+			<p bold="true" italics="true">Other Means</p>
+			<p>Later in the game, other means of obtaining resources might be available. It is only important to know that those are here and you should figure out yourself when you can have them.</p>
+			<stack item="immersiveengineering:metalDevice1" meta="7" x="0"/>
+			<stack item="actuallyadditions:itemMiningLens" x="20"/>
+			<stack item="advancedrocketry:spaceLaser" x="40"/>
 		</page>
 	</chapter>
 	<chapter id="ch7">

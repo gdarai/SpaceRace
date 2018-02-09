@@ -863,7 +863,7 @@
 			<stack item="taiga:meteorite_block" x="40"/>
 			<stack item="railcraft:generic" x="60"/>
 			<space height="20" />
-			<p>With better Telescope, also UnderEnd ores could be available.</p>			
+			<p>With better Telescope, also UnderEnd ores could be available.</p>
 		</page>
 		<page id="pg4">
 			<p bold="true" italics="true">Gas Giant Mining</p>
@@ -887,7 +887,7 @@
 			<space height="20" />
 			<p>Select Gas in the Harvester GUI, link it to the Monitoring station and off you go.</p>
 			<space height="10" />
-			<p>Following gases are available: oxygen, hydrogen, nitrogen, cloud seed, nutrient distillation and hootch.</p>			
+			<p>Following gases are available: oxygen, hydrogen, nitrogen, cloud seed, nutrient distillation and hootch.</p>
 		</page>
 		<page id="pg5">
 			<p bold="true" italics="true">Other Means</p>
@@ -977,7 +977,7 @@
 			<stack item="tconstruct:materials" meta="2" count="24" x="40"/>
 			<stack item="tconstruct:dried_clay" meta="1" count="6" x="60"/>
 			<stack item="minecraft:furnace" count="1" x="80"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>You can make Torches, Stone Torches or Harvestcraft candles and convert those directly into Tiny Torches.</p>
 			<stack item="minecraft:torch" x="0"/>
 			<stack item="tconstruct:stone_torch" x="20"/>
@@ -996,12 +996,12 @@
 			<p>You can start with Wooden or Stone armor.</p>
 			<stack item="tp:wooden_chestplate" x="0"/>
 			<stack item="tp:stone_chestplate" x="20"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>When you want to switch to Leather, you can use Cloth instead.</p>
 			<stack item="minecraft:leather_chestplate" x="0"/>
 			<stack item="minecraft:leather" x="20"/>
 			<stack item="harvestcraft:wovencottonitem" x="40"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>Later on you can use combination of Hardened Leather and Obsidian.</p>
 			<stack item="harvestcraft:hardenedleatherchestitem" x="0"/>
 			<stack item="actuallyadditions:itemChestObsidian" x="20"/>
@@ -1013,7 +1013,7 @@
 			<stack item="forestry:beeDroneGE" x="20"/>
 			<stack item="forestry:beePrincessGE" x="40"/>
 			<stack item="forestry:beeCombs" x="60"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>Use the Combs to build Bee Houses. You can get Wax and later on Honey.</p>
 			<stack item="forestry:bee_house" x="0"/>
 			<stack item="forestry:beeswax" x="20"/>
@@ -1024,11 +1024,11 @@
 			<stack item="immersiveengineering:seed" x="0"/>
 			<stack item="harvestcraft:cottonseeditem" x="20"/>
 			<stack item="actuallyadditions:itemFlaxSeed" x="40"/>
-			<space height="20" />			
+			<space height="20" />
 			<stack item="immersiveengineering:material" meta="4" x="0"/>
 			<stack item="harvestcraft:cottonitem" x="20"/>
 			<stack item="minecraft:string" x="40"/>
-			<space height="20" />			
+			<space height="20" />
 			<stack item="immersiveengineering:wirecoil" meta="3" x="0"/>
 		</page>
 		<page id="pg5">
@@ -1038,7 +1038,7 @@
 			<stack item="forestry:pile_dirt" count="16" x="20"/>
 			<stack item="minecraft:flint_and_steel" meta="2" x="40"/>
 			<stack item="minecraft:coal" meta="1" count="20" x="75"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>To make Creosote, you need the Coke Furnace. Creosote is important to get the Treated Wood, your next big step.</p>
 			<stack item="actuallyadditions:blockMisc" meta="5" count="1" x="0"/>
 			<stack item="immersiveengineering:stoneDecoration" count="27" x="20"/>
@@ -1055,14 +1055,14 @@
 			<stack item="harvestcraft:potitem" x="60"/>
 			<stack item="harvestcraft:skilletitem" x="80"/>
 			<stack item="harvestcraft:saucepanitem" x="100"/>
-			<space height="20" />			
+			<space height="20" />
 			<stack item="harvestcraft:bakewareitem" x="0"/>
 			<stack item="harvestcraft:mortarandpestleitem" x="20"/>
 			<stack item="harvestcraft:juiceritem" x="40"/>
 			<stack item="harvestcraft:mixingbowlitem" x="60"/>
 			<stack item="harvestcraft:groundtrap" x="80"/>
 			<stack item="harvestcraft:watertrap" x="100"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>Build Ground Traps and Fish Traps. Those will catch animals for you automatically. Just place them in water/ground and give them some Bait.Get Meat, Feathers, Leather and more.</p>
 		</page>
 		<page id="pg7">
@@ -1092,7 +1092,7 @@
 			<p>First machine parts will be casted. Use Stone Gear and Tough Tool Rod.</p>
 			<stack item="enderio:itemMachinePart" meta="1" x="0"/>
 			<stack item="tconstruct:tough_tool_rod" x="20"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>For First Plate check Small Plate Press, Rolling Machine or the Lead Plate receipt.</p>
 			<stack item="advancedrocketry:platePress" x="0"/>
 			<stack item="railcraft:equipment" x="20"/>
@@ -1103,7 +1103,7 @@
 			<p>When you want to get into electronics you will need Carpenter and Thermionic Fabricator. sFirst electron tubes can be made in the smeltery.</p>
 			<stack item="forestry:thermionicTubes" x="0"/>
 			<stack item="forestry:thermionicTubes" meta="1" x="20"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>You can use the Clockwork Engine to power your first machines.</p>
 			<stack item="forestry:fabricator" x="0"/>
 			<stack item="forestry:carpenter" x="20"/>
@@ -1118,7 +1118,7 @@
 			<p>Every ship needs a Steering Wheel and a Steam Engine.</p>
 			<stack item="davincisvessels:marker" x="0"/>
 			<stack item="davincisvessels:engine" x="20"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>It is recommended to add Floaters to make your ship more stable and an Anchor to make it park more securely.</p>
 			<p>Take enough (Char)Coal for your ship. When it has no fuel it is dead in the water.</p>
 			<stack item="davincisvessels:anchorPoint" x="0"/>
@@ -1133,7 +1133,7 @@
 			<stack item="immersiveengineering:connector" x="60"/>
 			<stack item="immersiveengineering:wirecoil" x="80"/>
 			<stack item="immersiveengineering:metalDevice0" x="100"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>Store and transfer power the Industrial Engineering way.</p>
 			<p>With steel, you can use Improved Windmill, Water Wheel, Stirling Engines or Peat Fired Engines.</p>
 			<stack item="immersiveengineering:woodenDevice1" meta="2" x="0"/>
@@ -1152,7 +1152,7 @@
 			<stack item="immersiveengineering:stoneDecoration" count="27" x="20"/>
 			<stack item="advancedrocketry:blastBrick" count="73" x="60"/>
 			<stack item="libvulpes:coil0" count="3" meta="4" x="80"/>
-			<space height="20" />			
+			<space height="20" />
 			<p>Make Arc Furnace instead if you have enough material and energy. You will need this one anyway in the near future.</p>
 		</page>
 		<page id="pg14">
@@ -1197,28 +1197,60 @@
 			<p>Grind your ores in the Industrial Crusher.</p>
 			<p>Try to get to Metalic Bees. You can get the ores from bees.</p>
 			<p>Try Mystical Agriculture Seeds. You can grow the ores.</p>
+			<stack item="immersiveengineering:tool" x="0"/>
+			<stack item="morebees:propolisMetallic" x="20"/>
+			<stack item="mysticalagriculture:aluminum_seeds" x="40"/>
 		</page>
 		<page id="pg18">
 			<p bold="true" italics="true">Cheaper Gears</p>
 			<p>First step is the Industrial Press.</p>
 			<p>Second step will be the Rolling Machine and Lathe. But for that it is better to have proper electronics first.</p>
+			<stack item="immersiveengineering:tool" x="0"/>
+			<stack item="immersiveengineering:mold" x="20"/>
+			<stack item="advancedrocketry:lathe" x="40"/>
+			<stack item="advancedrocketry:rollingMachine" x="60"/>
 		</page>
 		<page id="pg19">
 			<p bold="true" italics="true">Industrial Potions</p>
 			<p>Industrial Mixer can make the brewing much cheaper.</p>
+			<stack item="immersiveengineering:tool" x="0"/>
+			<stack item="immersiveengineering:metalDevice0" meta="5" x="20"/>
+			<stack item="minecraft:nether_wart" x="40"/>
 		</page>
 		<page id="pg20">
 			<p bold="true" italics="true">Holo Projector</p>
 			<p>All Advanced Rocketry machines starting with the Arc Furnace can be easily built using the Holo Projector.</p>
+			<stack item="libvulpes:holoProjector" x="0"/>
+			<stack item="advancedrocketry:blastBrick" x="20"/>
+			<stack item="advancedrocketry:arcFurnace" x="40"/>
 		</page>
 		<page id="pg21">
 			<p bold="true" italics="true">Proper Electronics</p>
 			<p>Build the Crystalizer. Make Transistors and Microchips there.</p>
+			<stack item="libvulpes:holoProjector" x="0"/>
+			<stack item="advancedrocketry:crystallizer" x="20"/>
+			<space height="20" />
 			<p>They are cheaper and quicker variants for the Electron Tubes.</p>
+			<stack item="oc:material" meta="7" x="0"/>
+			<stack item="oc:material" meta="8" x="20"/>
+			<stack item="oc:material" meta="9" x="40"/>
+			<stack item="oc:material" meta="10" x="60"/>
 		</page>
 		<page id="pg22">
 			<p bold="true" italics="true">Automation with a Computer</p>
 			<p>Computer can be connected to a lot of extensions doing some item transfering and crafting for you.</p>
+			<stack item="oc:case2" x="0"/>
+			<stack item="oc:motionSensor" x="20"/>
+			<stack item="oc:redstone" x="40"/>
+			<stack item="oc:relay" x="60"/>
+			<stack item="oc:transposer" x="80"/>
+			<stack item="oc:manual" x="100"/>
+			<space height="20" />
+			</p>If computer is not enough, Drone sure can do it.</p>
+			<stack item="oc:assembler" x="0"/>
+			<stack item="oc:material" meta="24" x="20"/>
+			<stack item="oc:upgrade" meta="11" x="40"/>
+			<stack item="oc:upgrade" meta="17" x="60"/>
 		</page>
 		<page id="pg23">
 			<p bold="true" italics="true">Producing Rocket Fuel</p>
@@ -1230,25 +1262,46 @@
 		<page id="pg24">
 			<p bold="true" italics="true">Setting up Assembler</p>
 			<p>Precission Assembler is a crutial part of your technology base. Build it.</p>
-			<p>You will need it for your Space Suit.</p>
-			<p>Also some Electronics recipes have their Assembler variant.</p>
+			<stack item="advancedrocketry:precisionassemblingmachine" x="0"/>
+			<stack item="libvulpes:hatch" x="20"/>
+			<stack item="libvulpes:hatch" meta="1" x="40"/>
+			<stack item="libvulpes:hatch" meta="2" x="60"/>
+			<stack item="libvulpes:hatch" meta="3" x="80"/>
+			<space height="20" />
+			<p>You will need it for your Space Suit. Also some Electronics recipes have their Assembler variant.</p>
 		</page>
 		<page id="pg25">
 			<p bold="true" italics="true">Getting Space Suit</p>
 			<p>Space suit is made in the Precission Assebler.</p>
-			<p>It is based on the Faraday Suit.</p>
+			<stack item="advancedrocketry:suitWorkStation" x="0"/>
+			<stack item="advancedrocketry:spaceHelmet" x="20"/>
+			<stack item="advancedrocketry:spaceChestplate" x="40"/>
+			<stack item="advancedrocketry:spaceLeggings" x="60"/>
+			<stack item="advancedrocketry:spaceBoots" x="80"/>
+			<space height="20" />
+			<p>You need to add at least some oxygen tanks and pump in some O2.</p>
+			<stack item="advancedrocketry:electrolyser" x="0"/>
+			<stack item="advancedrocketry:oxygenCharger" x="20"/>
+			<stack item="advancedrocketry:bucketOxygen" x="40"/>
+			<stack item="advancedrocketry:pressureTank" x="60"/>
 		</page>
 		<page id="pg26">
 			<p bold="true" italics="true">Your Launch Site</p>
-			<p>25+ Launch Platform Blocks (from Concrete). It must be Rectangle and bigger than the rocket.</p>
-			<p>Also Structure Tower blocks. Tower starts on the same level as the platform and goes up above the rocket.</p>
-			<p>Place Rocket Assembler next to the Platform, touching the platform with its edge.</p>
+			<p>Build rectangular platform bigger than the rocket. Add Structure Tower. Tower starts on the same level as the platform and goes up above the rocket. Place the Rocket Assembler next to the Platform, touching the platform with its edge.</p>
+			<stack item="advancedrocketry:launchpad" x="0"/>
+			<stack item="advancedrocketry:structureTower" x="20"/>
+			<stack item="advancedrocketry:rocketBuilder" x="40"/>
 		</page>
 		<page id="pg27">
 			<p bold="true" italics="true">Your Rocket to the Moon</p>
-			<p>For rocket you need: Engines, Fuel Tanks, Seat and Guidance Computer with a blank Planet ID Chip inside.</p>
-			<p>Scan the rocket with the Rocket Assembler.</p>
-			<p>It must have Acceleration >0 and be Ready to Lift Off.</p>
+			<p>For rocket you need Engines, Fuel Tanks, Seat and Guidance Computer with a blank Planet ID Chip inside.</p>
+			<stack item="advancedrocketry:rocketmotor" x="0"/>
+			<stack item="advancedrocketry:fuelTank" x="20"/>
+			<stack item="advancedrocketry:seat" x="40"/>
+			<stack item="advancedrocketry:guidanceComputer" x="60"/>
+			<stack item="advancedrocketry:planetIdChip" x="80"/>			
+			<space height="20" />
+			<p>Scan the rocket with the Rocket Assembler. It must have Acceleration >0 and be Ready to Lift Off.</p>
 		</page>
 	</chapter>
 </book>

@@ -191,8 +191,8 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Fx215    #  Invoking Ores
-TEXT    #  Also new way of producing ores is now available. A specialized Ore Lens which changes the Atomic Reconstructor into the powerfull Ore Invoker.
+QUEST   #  Fx215    #  Orbital Mining
+TEXT    #  It can be this easy. Aim your beam to a planet, fire and get the resources. Try it out.
 PREREQ  #  AND      #  F21
 
 TASK    #  TRIGGER
@@ -245,8 +245,8 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Fx35     #  Orbital Mining
-TEXT    #  It can be this easy. Aim your beam to a planet, fire and get the resources. Try it out.
+QUEST   #  Fx35     #  Invoking Ores
+TEXT    #  Also new way of producing ores is now available. A specialized Ore Lens which changes the Atomic Reconstructor into the powerfull Ore Invoker.
 PREREQ  #  AND      #  F30
 
 TASK    #  TRIGGER

@@ -204,13 +204,13 @@ QUEST        #  Fx211      #   -5:25  	 #  20    #  ioCapac2
 QUEST        #  Fx212      #    5:25  	 #  20    #  aaSolar
 QUEST        #  Fx213      #   15:25  	 #  20    #  rsIron
 QUEST        #  Fx214      #   25:25  	 #  20    #  aaPhantomF
-QUEST        #  Fx215      #   35:25  	 #  20    #  aaOreLens
+QUEST        #  Fx215      #   35:25  	 #  20    #  arSpaceMine
 QUEST        #  Fx30       #   60:-10  	 #  20    #  dePowerS
 QUEST        #  Fx31       #   60:0   	 #  20    #  ioEnchanter
 QUEST        #  Fx32       #   60:10  	 #  20    #  ioFarm
 QUEST        #  Fx33       #   50:-10  	 #  20    #  ioTravelStaff
 QUEST        #  Fx34       #   50:0   	 #  20    #  Mutation
-QUEST        #  Fx35       #   50:10  	 #  20    #  arSpaceMine
+QUEST        #  Fx35       #   50:10  	 #  20    #  aaOreLens
 
 // ------->
 

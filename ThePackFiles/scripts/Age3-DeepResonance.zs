@@ -9,6 +9,14 @@ val DRobsidian = <deepresonance:dense_obsidian>;
 val DRfilter = <deepresonance:spent_filter>;
 val DRframe = <deepresonance:machine_frame>;
 
+// Adding missing OreDict categories
+
+val oreNetherResonating = <ore:oreNetherResonating>;
+oreNetherResonating.add(<deepresonance:resonating_ore:1>);
+
+val oreEndResonating = <ore:oreEndResonating>;
+oreEndResonating.add(<deepresonance:resonating_ore:2>);
+
 // Materials
 furnace.remove(plate*8);
 recipes.remove(<deepresonance:filter>);

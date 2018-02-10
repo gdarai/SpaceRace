@@ -929,17 +929,17 @@
 		</page>
 		<page>
 			<title>Age of Electronics</title>
-			<link ref="ch7:pg0">More Resources</link>
-			<link ref="ch7:pg0">Cheaper Gears</link>
-			<link ref="ch7:pg0">Industrial Potions</link>
-			<link ref="ch7:pg0">Holo Projector</link>
-			<link ref="ch7:pg0">Proper Electronics</link>
-			<link ref="ch7:pg0">Automation with a Computer</link>
-			<link ref="ch7:pg0">Producing Rocket Fuel</link>
-			<link ref="ch7:pg0">Setting up Assembler</link>
-			<link ref="ch7:pg0">Getting Space Suit</link>
-			<link ref="ch7:pg0">Your Launch Site</link>
-			<link ref="ch7:pg0">Your Rocket to the Moon</link>
+			<link ref="ch7:pg17">More Resources</link>
+			<link ref="ch7:pg18">Cheaper Gears</link>
+			<link ref="ch7:pg19">Industrial Potions</link>
+			<link ref="ch7:pg20">Holo Projector</link>
+			<link ref="ch7:pg21">Proper Electronics</link>
+			<link ref="ch7:pg22">Automation with a Computer</link>
+			<link ref="ch7:pg23">Producing Rocket Fuel</link>
+			<link ref="ch7:pg24">Setting up Assembler</link>
+			<link ref="ch7:pg25">Getting Space Suit</link>
+			<link ref="ch7:pg26">Your Launch Site</link>
+			<link ref="ch7:pg27">Your Rocket to the Moon</link>
 		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
@@ -1231,26 +1231,26 @@
 			<stack item="advancedrocketry:crystallizer" x="20"/>
 			<space height="20" />
 			<p>They are cheaper and quicker variants for the Electron Tubes.</p>
-			<stack item="oc:material" meta="7" x="0"/>
-			<stack item="oc:material" meta="8" x="20"/>
-			<stack item="oc:material" meta="9" x="40"/>
-			<stack item="oc:material" meta="10" x="60"/>
+			<stack item="opencomputers:material" meta="7" x="0"/>
+			<stack item="opencomputers:material" meta="8" x="20"/>
+			<stack item="opencomputers:material" meta="9" x="40"/>
+			<stack item="opencomputers:material" meta="10" x="60"/>
 		</page>
 		<page id="pg22">
 			<p bold="true" italics="true">Automation with a Computer</p>
 			<p>Computer can be connected to a lot of extensions doing some item transfering and crafting for you.</p>
-			<stack item="oc:case2" x="0"/>
-			<stack item="oc:motionSensor" x="20"/>
-			<stack item="oc:redstone" x="40"/>
-			<stack item="oc:relay" x="60"/>
-			<stack item="oc:transposer" x="80"/>
-			<stack item="oc:manual" x="100"/>
+			<stack item="opencomputers:case2" x="0"/>
+			<stack item="opencomputers:motionSensor" x="20"/>
+			<stack item="opencomputers:redstone" x="40"/>
+			<stack item="opencomputers:relay" x="60"/>
+			<stack item="opencomputers:transposer" x="80"/>
+			<stack item="opencomputers:manual" x="100"/>
 			<space height="20" />
-			</p>If computer is not enough, Drone sure can do it.</p>
-			<stack item="oc:assembler" x="0"/>
-			<stack item="oc:material" meta="24" x="20"/>
-			<stack item="oc:upgrade" meta="11" x="40"/>
-			<stack item="oc:upgrade" meta="17" x="60"/>
+			<p>If computer is not enough, Drone sure can do it.</p>
+			<stack item="opencomputers:assembler" x="0"/>
+			<stack item="opencomputers:material" meta="24" x="20"/>
+			<stack item="opencomputers:upgrade" meta="11" x="40"/>
+			<stack item="opencomputers:upgrade" meta="17" x="60"/>
 		</page>
 		<page id="pg23">
 			<p bold="true" italics="true">Producing Rocket Fuel</p>
@@ -1283,7 +1283,8 @@
 			<stack item="advancedrocketry:electrolyser" x="0"/>
 			<stack item="advancedrocketry:oxygenCharger" x="20"/>
 			<stack item="advancedrocketry:bucketOxygen" x="40"/>
-			<stack item="advancedrocketry:pressureTank" x="60"/>
+			<space height="20" />
+			<p>To hold the oxygen, add some pressure tanks to your suit's chest.</p>
 		</page>
 		<page id="pg26">
 			<p bold="true" italics="true">Your Launch Site</p>

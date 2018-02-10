@@ -3,6 +3,10 @@ val netherStar = <minecraft:nether_star>;
 val ingotDyonite = <taiga:dyonite_block>;
 val intermediumApple = <mysticalagriculture:intermedium_apple>;
 
+// Add mising OreDict
+val oreEnder = <ore:oreEnder>;
+oreEnder.add(<tp:ender_ore>);
+
 // Remove Old Recipes
 recipes.remove(<tp:flint_boots>);
 recipes.remove(<tp:flint_chestplate>);

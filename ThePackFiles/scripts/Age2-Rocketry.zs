@@ -368,7 +368,7 @@ recipes.addShaped(<advancedrocketry:altitudeController>, [[advancedTank, optical
 recipes.addShaped(<advancedrocketry:advRocketmotor>, [[pipeLiquid, pipeLiquid, pipeLiquid], [motorEnhanced, advancedTank, motorEnhanced], [IENozzle, rocketEngine1, IENozzle]]);
 recipes.addShaped(<advancedrocketry:gravityController>, [[tubeApa, ocRemote, tubeApa], [ocChip3, advancedBlock, ocChip3], [ocChip3, <opencomputers:case3>, ocChip3]]);
 recipes.addShaped(<advancedrocketry:gravityMachine>, [[motorEnhanced, <tp:flint_block>, motorEnhanced], [advancedBlock, advancedBlock, advancedBlock], [ARplug, ARplug, ARplug]]);
-recipes.addShaped(<advancedrocketry:spaceLaser>, [[plateTitIri, <tp:flint_block>, plateTitIri], [advancedBlock, <ore:blockSeismum>, advancedBlock], [AAblockPalis, <draconicevolution:draconic_core>, AAblockPalis]]);
+recipes.addShaped(<advancedrocketry:spaceLaser>, [[plateTitIri, <tp:flint_block>, plateTitIri], [advancedBlock, <ore:blockSeismum>, advancedBlock], [AAblockPalis, <actuallyadditions:blockEmpowerer>, AAblockPalis]]);
 recipes.addShaped(<advancedrocketry:terraformer>, [[ARCoilIridium, <draconicevolution:crafting_pedestal:2>, ARCoilIridium], [advancedBlock, <draconicevolution:awakened_core>, advancedBlock], [AAempEmeraldBlock, <enderio:itemFrankenSkull:4>, AAempEmeraldBlock]]);
 
 // Done (Was most urgent)

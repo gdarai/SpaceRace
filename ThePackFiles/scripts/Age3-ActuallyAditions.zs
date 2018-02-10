@@ -189,7 +189,7 @@ recipes.remove(<actuallyadditions:itemDisenchantingLens>);
 mods.forestry.ThermionicFabricator.addCast(aaLens, [[nugTitan, nugSilver, nugTitan], [nugSilver, inEmeraldBL0, nugSilver], [nugTitan, nugSilver, nugTitan]], 2000, <tconstruct:cast>.withTag({"PartType":"tconstruct:pan_head"}));
 mods.forestry.ThermionicFabricator.addCast(<actuallyadditions:itemExplosionLens>, [[blockLens, blockLens, blockLens], [blockLens, aaLens, blockLens], [blockLens, blockLens, blockLens]], 1000, null);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemDamageLens>, <actuallyadditions:itemMoreDamageLens>, agriSword3, agriScythe3, agriSword3, agriScythe3, 250000, 600);
-mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemColorLens>, <actuallyadditions:itemMiningLens>, agriPick3, inCoal, agriPick3, inCoal, 500000, 600);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemColorLens>, <actuallyadditions:itemMiningLens>, agriPick3, inCoalBL, agriPick3, <taiga:uru_block>, 500000, 600);
 mods.forestry.Carpenter.addRecipe(<actuallyadditions:itemDisenchantingLens>, [[inCoal0, crystal, inCoal0], [<minecraft:enchanting_table>, aaLens, <minecraft:enchanting_table>], [inCoal0, crystal, inCoal0]], 300, <liquid:dyonite_fluid> * 2000, blockLens);
 
 // AA Advanced Factory

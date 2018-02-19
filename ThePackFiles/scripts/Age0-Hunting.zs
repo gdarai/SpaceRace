@@ -15,6 +15,7 @@ val Chest = <minecraft:chest>;
 val woodenFrame = <actuallyadditions:blockMisc:4>;
 val leather = <ore:leather>;
 val stoneGear = <ore:gearStone>;
+val steel = <ore:ingotSteel>;
 
 recipes.remove(FishingRod);
 recipes.remove(FishTrap);
@@ -34,3 +35,7 @@ recipes.addShaped(<sleepingbag:sleepingbag>, [[grass, grass, grass],[leaves, lea
 
 recipes.remove(<harvestcraft:presser>);
 recipes.addShaped(<harvestcraft:presser>, [[null, leather, null],[leather, woodenFrame, leather],[stoneGear, leather, stoneGear]]);
+
+recipes.remove(<immersiveengineering:toolupgrade:4>);
+recipes.addShaped(<immersiveengineering:toolupgrade:4>, [[<tconstruct:sword_blade>.withTag({Material:"iron"}), steel],[steel, <immersiveengineering:wirecoil:3>]]);
+

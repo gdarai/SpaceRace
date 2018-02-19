@@ -5,6 +5,9 @@ val tinPlate = <ore:plateTin>;
 val battery = <actuallyadditions:itemBattery>;
 val redCoil = <immersiveengineering:wirecoil:5>;
 
+val steelIng = <ore:ingotSteel>;
+val steelRod = <ore:stickSteel>;
+
 recipes.remove(raintank);
 recipes.addShaped(raintank, [[ironPlate, null, ironPlate],[ironPlate, null, ironPlate],[ironPlate, <minecraft:heavy_weighted_pressure_plate>, ironPlate]]);
 
@@ -84,11 +87,11 @@ recipes.remove(<libvulpes:productrod:1>);
 // Steel Rod
 recipes.remove(<immersiveengineering:material:2>);
 recipes.remove(<libvulpes:productrod:6>);
-<ore:stickSteel>.add(<tconstruct:tough_tool_rod>.withTag({Material:"steel"}));
+steelRod.add(<tconstruct:tough_tool_rod>.withTag({Material:"steel"}));
 
 // Copper Rod
 recipes.remove(<libvulpes:productrod:4>);
-<ore:stickSteel>.add(<tconstruct:tough_tool_rod>.withTag({Material:"copper"}));
+<ore:stickCopper>.add(<tconstruct:tough_tool_rod>.withTag({Material:"copper"}));
 
 // Titanium + Iridium rods
 recipes.remove(<libvulpes:productrod:7>);
@@ -104,7 +107,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:4>);
 mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:7>);
 mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:10>);
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:1>, <ore:ingotIron>, <immersiveengineering:mold:2>, 500);
-mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:2>, <ore:ingotSteel>, <immersiveengineering:mold:2>, 1500);
+mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:2>, steelIng, <immersiveengineering:mold:2>, 1500);
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:3>, <ore:ingotAluminum>, <immersiveengineering:mold:2>, 500);
 mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productrod:4>, <ore:ingotCopper>, <immersiveengineering:mold:2>, 500);
 mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productrod:7>, <ore:ingotTitanium>, <immersiveengineering:mold:2>, 25000);
@@ -125,13 +128,16 @@ mods.tconstruct.Casting.addTableRecipe(<railcraft:ingot:7>, <liquid:iron> * 288,
 // Gears fix
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold:1>);
 
-mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productgear:6>, <ore:ingotSteel>, <immersiveengineering:mold:1>, 500, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productgear:6>, steelIng, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productgear:7>, <ore:ingotTitanium>, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productgear>, <ore:ingotTitaniumAluminide>, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productgear:1>, <ore:ingotTitaniumIridium>, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<forestry:gearBronze>, <ore:ingotBronze>, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<forestry:gearCopper>, <ore:ingotCopper>, <immersiveengineering:mold:1>, 500, 2);
 mods.immersiveengineering.MetalPress.addRecipe(<forestry:gearTin>, <ore:ingotTin>, <immersiveengineering:mold:1>, 500, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<railcraft:gear>, <ore:ingotBrass>, <immersiveengineering:mold:1>, 500, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<railcraft:gear:1>, <ore:ingotIron>, <immersiveengineering:mold:1>, 500, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<railcraft:gear:5>, <ore:ingotInvar>, <immersiveengineering:mold:1>, 500, 2);
 
 recipes.remove(<advancedrocketry:productgear>);
 recipes.remove(<advancedrocketry:productgear:1>);
@@ -212,9 +218,18 @@ recipes.addShaped(knBlade, [[null, <ore:nuggetIron>, null], [null, <ore:nuggetIr
 recipes.addShapeless(<forestry:fertilizerCompound>, [<actuallyadditions:itemFertilizer>]);
 recipes.addShapeless(<actuallyadditions:itemFertilizer>, [<forestry:fertilizerCompound>]);
 
+val softIngot = <ore:ingotSoft>;
+
+softIngot.addAll(<ore:ingotCoper>);
+softIngot.addAll(<ore:ingotTin>);
+softIngot.addAll(<ore:ingotAluminum>);
+softIngot.addAll(<ore:ingotBronze>);
+softIngot.addAll(<ore:ingotBrass>);
+softIngot.addAll(<ore:ingotNickel>);
+softIngot.addAll(<ore:ingotZinc>);
+softIngot.addAll(<ore:ingotAlubrass>);
 // Hoppers
-recipes.addShaped(<minecraft:hopper>, [[aluPlate, null, aluPlate],[aluPlate, <minecraft:chest>, aluPlate],[null, aluPlate, null]]);
-recipes.addShaped(<minecraft:hopper>, [[tinPlate, null, tinPlate],[tinPlate, <minecraft:chest>, tinPlate],[null, tinPlate, null]]);
+recipes.addShaped(<minecraft:hopper>, [[softIngot, null, softIngot],[softIngot, <minecraft:chest>, softIngot],[null, softIngot, null]]);
 
 // Steel smelting
 mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 144, <immersiveengineering:metalDecoration1:1>, 500);
@@ -222,6 +237,10 @@ mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 288, <immersiveengineering:
 
 // 3rd way to get a plate
 recipes.addShapeless(<immersiveengineering:metal:32>, [<ore:blockLead>, <immersiveengineering:tool>]);
+
+// Way how to make obsidian dust without crusher
+// Lets use small plate presser and furnace
+furnace.addRecipe(<enderio:itemPowderIngot:7>, <tp:reinforced_obsidian_ingot>);
 
 // Diamond chip fix
 val chipDiamond = <opencomputers:material:30>;
@@ -371,3 +390,9 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:proxii_ingot>*3, <taiga:ee
 mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:niob_ingot>*3, <taiga:osram_dust>, <forestry:ash>*1, 1200, 2500, [<taiga:duranite_dust>*1, <taiga:palladium_dust>*3], "Refracting");
 mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ovium_dust>, <forestry:ash>*4, 1200, 2500, [<taiga:jauxum_dust>*1, <taiga:karmesine_dust>*1], "Rebasing");
 mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ovium_dust>, <forestry:ash>*4, 1200, 2500, [<taiga:jauxum_dust>*1, <taiga:karmesine_dust>*1], "Rebasing");
+
+// Fixing steel fence
+recipes.remove(<immersiveengineering:metalDecoration1>);
+recipes.addShaped(<immersiveengineering:metalDecoration1>*9,[[null, null, null], [steelIng, steelRod, steelIng], [steelIng, null, steelIng]]);
+
+// Adding missing Gear Metal press Recipes for Brass and Invar

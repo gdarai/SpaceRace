@@ -389,6 +389,7 @@
 			<stack item="minecraft:diamond" x="0"/><p indent="20" space="10">Diamond [5-25]</p>
 			<stack item="minecraft:emerald" x="0"/><p indent="20" space="10">Emerald[40-130]</p>
 			<stack item="minecraft:dye" meta="4" x="0"/><p indent="20" space="10">Lapis [5-25]</p>
+			<stack item="railcraft:dust" meta="1" x="0"/><p indent="20" space="10">Sulfur [5-30]</p>
 		</page>
 		<page id="pg8">
 			<p bold="true" italics="true">Taiga Islands</p>

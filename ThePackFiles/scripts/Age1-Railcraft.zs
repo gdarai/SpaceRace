@@ -36,6 +36,7 @@ val fabric = <immersiveengineering:material:5>;
 
 val cart = <minecraft:minecart>;
 val cartChest = <minecraft:chest_minecart>;
+val goldCarrot = <minecraft:golden_carrot>;
 
 // Piston and Rolling machines
 
@@ -87,6 +88,12 @@ recipes.addShapeless(<davincisvessels:balloon:13>, [<davincisvessels:balloon:*>,
 recipes.addShapeless(<davincisvessels:balloon:14>, [<davincisvessels:balloon:*>, <minecraft:dye:1>]);
 recipes.addShapeless(<davincisvessels:balloon:15>, [<davincisvessels:balloon:*>, <minecraft:dye:0>]);
 
+// Gun Powder
+recipes.addShapeless(<minecraft:gunpowder>*2, [<railcraft:dust:2>, <railcraft:dust:1>, <minecraft:redstone>, <minecraft:redstone>]);
+recipes.addShapeless(<minecraft:gunpowder>, [<railcraft:dust:2>, <railcraft:dust:1>, <forestry:ash>]);
+recipes.addShapeless(<minecraft:gunpowder>*2, [<railcraft:dust:2>, <railcraft:dust:2>, <railcraft:dust:1>, <railcraft:dust:1>, <minecraft:gravel>]);
+recipes.addShapeless(<minecraft:gunpowder>*2, [<railcraft:dust:2>, <railcraft:dust:2>, <railcraft:dust:1>, <ore:dustCoal>]);
+
 // Bore Heads
 recipes.remove(<railcraft:borehead_bronze>);
 recipes.remove(<railcraft:borehead_iron>);
@@ -124,6 +131,9 @@ recipes.addShapeless(<railcraft:post_metal:12>, [<railcraft:post_metal:*>, <mine
 recipes.addShapeless(<railcraft:post_metal:13>, [<railcraft:post_metal:*>, <minecraft:dye:2>]);
 recipes.addShapeless(<railcraft:post_metal:14>, [<railcraft:post_metal:*>, <minecraft:dye:1>]);
 recipes.addShapeless(<railcraft:post_metal:15>, [<railcraft:post_metal:*>, <minecraft:dye:0>]);
+
+// Feeder
+recipes.addShaped(<railcraft:equipment:2>, [[trPlank, goldCarrot, trPlank], [goldCarrot, <ore:gearBrass>, goldCarrot],[trPlank, goldCarrot, trPlank]]);
 
 
 // Dusts

@@ -41,41 +41,41 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
-			<oreDict>nuggetElectrum</oreDict>
+			<oreDict>nuggetElectrum 3</oreDict>
 			<oreDict>dustProxii</oreDict>
 		</input>
 		<output>
-			<itemStack>opencomputers:material 1 7</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="600" power ="20">
-		<input>
-			<itemStack>opencomputers:material 1 7</itemStack>
-			<oreDict>dustProxii</oreDict>
-			<oreDict>nuggetIron</oreDict>
-		</input>
-		<output>
-			<itemStack>opencomputers:material 1 8</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="600" power ="20">
-		<input>
-			<itemStack>opencomputers:material 2 7</itemStack>
-			<oreDict>dustProxii</oreDict>
-			<oreDict>ingotEezo</oreDict>
-		</input>
-		<output>
-			<itemStack>opencomputers:material 1 9</itemStack>
+			<itemStack>opencomputers:material 3 7</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="600" power ="20">
 		<input>
 			<itemStack>opencomputers:material 3 7</itemStack>
 			<oreDict>dustProxii</oreDict>
-			<oreDict>dustDiamond</oreDict>
+			<oreDict>nuggetIron 3</oreDict>
 		</input>
 		<output>
-			<itemStack>opencomputers:material 1 10</itemStack>
+			<itemStack>opencomputers:material 3 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="20">
+		<input>
+			<itemStack>opencomputers:material 6 7</itemStack>
+			<oreDict>dustProxii</oreDict>
+			<oreDict>nuggetEezo 3</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 3 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="20">
+		<input>
+			<itemStack>opencomputers:material 9 7</itemStack>
+			<oreDict>dustProxii</oreDict>
+			<oreDict>dustDiamond 3</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 3 10</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="60" power ="1000">

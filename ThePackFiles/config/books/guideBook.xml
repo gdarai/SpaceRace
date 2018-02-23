@@ -85,7 +85,14 @@
 			<space height="20" />
 			<p>Beware, even though this mod is great, it can crash the game. Play it safe and make yourself accustomed to this mod first.</p>
 		</page>
-		<page />
+		<page>			
+			<p>Know death causes:</p>
+			<space height="10" />
+			<p>Flat ship with Helm close to water. Safe is 4+ blocks.</p>
+			<p>Parking ship on AquaCreeper.</p>
+			<p>Ship without means to climb on it.</p>
+			<p>Ship without enough fuel.</p>
+		</page>
 		<page id="d2">
 			<p bold="true" italics="true">Falling into Void</p>
 			<p>Some places are dangerous to land in. Namely Asteroid Worlds, The End Ocean and Lava Worlds.</p>
@@ -101,9 +108,9 @@
 		</page>
 		<page id="d3">
 			<p bold="true" italics="true">Portals</p>
-			<p>All portals are locked by default. To unlock them, you have to:</p>
-			<p></p>
-			<p>Craft a specific ITEM, make the portal out of the correct BLOCK and activate it with the correct IGNITER.</p>
+			<p>Portals are DANGEROUS. You may materialize inside a wall or in the air above a lavapool. Carry material for a spare portal.</p>
+			<space height="10" />
+			<p>Craft a specific ITEM to unlock a portal, make the portal out of the correct BLOCK and activate it with the correct IGNITER.</p>
 		</page>
 		<page>
 			<p>Item, Block and Igniter:</p>
@@ -930,17 +937,20 @@
 		</page>
 		<page>
 			<title>Age of Electronics</title>
-			<link ref="ch7:pg17">More Resources</link>
+			<link ref="ch7:pg17">Cheaper Resources</link>
+			<link ref="ch7:pg17a">Bees #1</link>
+			<link ref="ch7:pg17b">Bees #2</link>
 			<link ref="ch7:pg18">Cheaper Gears</link>
 			<link ref="ch7:pg19">Industrial Potions</link>
 			<link ref="ch7:pg20">Holo Projector</link>
 			<link ref="ch7:pg21">Proper Electronics</link>
-			<link ref="ch7:pg22">Automation with a Computer</link>
-			<link ref="ch7:pg23">Producing Rocket Fuel</link>
-			<link ref="ch7:pg24">Setting up Assembler</link>
-			<link ref="ch7:pg25">Getting Space Suit</link>
+			<link ref="ch7:pg21a">Automatic Farm</link>
+			<link ref="ch7:pg22">Computer Automation</link>
+			<link ref="ch7:pg23">Rocket Fuel</link>
+			<link ref="ch7:pg24">Assembler</link>
+			<link ref="ch7:pg25">Space Suit</link>
 			<link ref="ch7:pg26">Your Launch Site</link>
-			<link ref="ch7:pg27">Your Rocket to the Moon</link>
+			<link ref="ch7:pg27">Moon Rocket</link>
 		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
@@ -1114,6 +1124,8 @@
 			<p bold="true" italics="true">Why to build a Ship</p>
 			<p>Some resources are much more common in different biomes then in the one you live in.</p>
 			<p>With a ship, you can find those biomes, build a mining camp there and carry your collected resources back to your base safely.</p>
+			<space height="10" />
+			<link ref="ch2:d1a">But Beware The Warning</link>
 		</page>
 		<page>
 			<p>Every ship needs a Steering Wheel and a Steam Engine.</p>
@@ -1191,16 +1203,58 @@
 			<stack item="tp:reinforced_glass" x="20"/>
 			<stack item="tp:golden_scythe" x="40"/>
 			<space height="20" />
-			<p>There is usually missing return portal on the other end. Bring the material to build it with you.</p>
+			<p>BIG WARNING about using portals. Read it and be prepared.</p>
+			<link ref="ch2:d3">Portals chapter</link>
 		</page>
 		<page id="pg17">
-			<p bold="true" italics="true">More Resources</p>
-			<p>Grind your ores in the Industrial Crusher.</p>
-			<p>Try to get to Metalic Bees. You can get the ores from bees.</p>
-			<p>Try Mystical Agriculture Seeds. You can grow the ores.</p>
-			<stack item="immersiveengineering:tool" x="0"/>
-			<stack item="morebees:propolisMetallic" x="20"/>
-			<stack item="mysticalagriculture:aluminum_seeds" x="40"/>
+			<p bold="true" italics="true">Cheaper Resources</p>
+			<p>Smeltery gives 1.5x more ores than furnace. Industrial crusher can give you 2x more than furnace.</p>
+			<p>But costs a lot of Steel.</p>
+			<stack item="immersiveengineering:metalDecoration0" meta="4" count="10" x="0"/>
+			<stack item="immersiveengineering:metalDecoration0" meta="3" count="1" x="20"/>
+			<stack item="immersiveengineering:metalDecoration1" count="8" x="40"/>
+			<stack item="immersiveengineering:metalDecoration1" meta="1" count="10" x="60"/>
+			<stack item="minecraft:hopper" count="9" x="80"/>
+			<space height="20" />
+			<p>Also try Tier 1 Mystical Seeds.</p>
+			<stack item="mysticalagriculture:tier1_crafting_seed" x="0"/>
+			<stack item="mysticalagriculture:dirt_seeds" x="30"/>
+			<stack item="mysticalagriculture:nature_seeds" x="50"/>
+			<stack item="mysticalagriculture:wood_seeds" x="70"/>
+			<stack item="mysticalagriculture:water_seeds" x="90"/>
+		</page>
+		<page id="pg17a">
+			<p bold="true" italics="true">Mutating Bees</p>
+			<p>Mutate bees to get honeydew.With that get Tier 2 Mystical Seeds.</p>
+			<stack item="forestry:honeydew" x="0"/>
+			<stack item="mysticalagriculture:infusion_crystal" x="20"/>
+			<stack item="mysticalagriculture:tier2_crafting_seed" x="40"/>
+			<stack item="mysticalagriculture:copper_seeds" x="70"/>
+			<stack item="mysticalagriculture:iron_seeds" x="90"/>
+			<space height="20" />
+			<p>You will need Apiaries, Bee Frames, Analyzer and Honey Drops.</p>
+			<stack item="forestry:apiary" x="0"/>
+			<stack item="forestry:frameUntreated" count="3" x="20"/>
+			<stack item="forestry:portableAlyzer" x="40"/>
+			<stack item="forestry:honeyDrop" count="100" x="60"/>
+			<space height="20" />
+			<p>Mutate Meadows + Forest bees to get common. Check JEI how to get the Noble Bees.</p>
+		</page>
+		<page id="pg17b">
+			<p bold="true" italics="true">Advanced Beebreading</p>
+			<p>For Tier 3 Mystical Seeds you need metallic propolis.</p>
+			<stack item="morebees:propolisMetallic" x="0"/>
+			<stack item="mysticalagriculture:tier3_crafting_seed" x="20"/>
+			<stack item="mysticalagriculture:redstone_seeds" x="50"/>
+			<stack item="mysticalagriculture:tin_seeds" x="70"/>
+			<stack item="mysticalagriculture:lead_seeds" x="90"/>
+			<space height="20" />
+			<p>That means Metallic bees. Just remember that Hellish biome can be simulated on the Desert using Alveary with 3 heaters.</p>
+			<stack item="forestry:alveary.plain" count="24" x="0"/>
+			<stack item="forestry:alveary.heater" count="3" x="20"/>
+			<stack item="mineraft:wooden_slab" count="9" x="40"/>
+			<stack item="minecraft:sand" x="70"/>
+			<stack item="minecraft:cactus" x="90"/>
 		</page>
 		<page id="pg18">
 			<p bold="true" italics="true">Cheaper Gears</p>
@@ -1210,6 +1264,11 @@
 			<stack item="immersiveengineering:mold" x="20"/>
 			<stack item="advancedrocketry:lathe" x="40"/>
 			<stack item="advancedrocketry:rollingMachine" x="60"/>
+			<space height="20" />
+			<p>Remember that there is also receipt for all basic Dusts if you don't have the Crusher</p>
+			<stack item="enderio:itemPowderIngot" meta="7" x="0"/>
+			<stack item="taiga:proxii_dust" x="20"/>
+			<stack item="actuallyadditions:itemDust" meta="2" x="40"/>
 		</page>
 		<page id="pg19">
 			<p bold="true" italics="true">Industrial Potions</p>
@@ -1236,6 +1295,29 @@
 			<stack item="opencomputers:material" meta="8" x="20"/>
 			<stack item="opencomputers:material" meta="9" x="40"/>
 			<stack item="opencomputers:material" meta="10" x="60"/>
+		</page>
+		<page id="pg21a">
+			<p bold="true" italics="true">Automatic Farm</p>
+			<p>Mini farm is 3x3x4. Power directly from capacitor.</p>
+			<stack item="forestry:ffarm" x="0" count="35"/>
+			<stack item="forestry:ffarm" meta="2" x="20" count="1"/>
+			<stack item="immersiveengineering:connector" x="40"/>
+			<stack item="immersiveengineering:wirecoil" x="60"/>
+			<stack item="immersiveengineering:metalDevice0" x="80"/>
+			<space height="20" />
+			<p>Add platform. Supply dirt, water, fertilizer and seeds.</p>
+			<stack item="minecraft:stonebrick" count="100" x="0"/>
+			<stack item="minecraft:dirt" count="100" x="30"/>
+			<stack item="minecraft:water_bucket" count="5" x="50"/>
+			<stack item="forestry:fertilizerCompound" count="64" x="70"/>
+			<stack item="minecraft:sapling" count="100" x="90"/>
+			<space height="20" />
+			<p>Program a circuit.</p>
+			<stack item="forestry:solderingIron" x="0"/>
+			<stack item="forestry:chipsets" x="20"/>
+			<stack item="forestry:thermionicTubes" x="40"/>
+			<space height="20" />
+			<p>Crop farm (Bronze Tube) also supports Cotton and Magic Plants.</p>
 		</page>
 		<page id="pg22">
 			<p bold="true" italics="true">Automation with a Computer</p>

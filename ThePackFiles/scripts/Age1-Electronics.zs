@@ -184,6 +184,10 @@ mods.forestry.Carpenter.addRecipe(ARCi0, [[ioSi, ocTrans, ioSi], [ocTrans, ocChi
 mods.forestry.Carpenter.addRecipe(ARCi1, [[ioSi, <ore:ingotBronze>, ioSi], [ocTrans, ocChip1, ocTrans], [<ore:nuggetGold>, <ore:ingotNiob>, <ore:nuggetGold>]], 20, <liquid:eezo_fluid> * 1000, <forestry:waxCast>);
 mods.forestry.Carpenter.addRecipe(ARCi2, [[ioSi, <ore:gemLapis>, ioSi], [ocTrans, ocChip1, ocTrans], [<ore:nuggetGold>, <ore:ingotNiob>, <ore:nuggetGold>]], 20, <liquid:eezo_fluid> * 1000, <forestry:waxCast>);
 
+// IE blocks using OC electronics
+recipes.addShaped(IERedstone * 2, [[plateSteel, plateAlu, plateSteel], [ocTrans, ocChip2, ocTrans], [plateSteel, gearBox, plateSteel]]);
+recipes.addShaped(IELight * 2, [[plateAlu, plateSteel, plateAlu], [ocTrans, gearBox, ocTrans], [plateAlu, trStick, plateAlu]]);
+
 // Magma, needed for nitronite:
 mods.forestry.Squeezer.addRecipe(<liquid:magma_fluid> * 100, [<minecraft:magma>], 200);
 

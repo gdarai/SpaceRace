@@ -38,8 +38,6 @@
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>
 			<isKnown>true</isKnown>
-			<gas>nitrogen</gas>
-			<gas>cloud_seed</gas>
             <orbitalTheta>180</orbitalTheta>
             <rotationalPeriod>24000</rotationalPeriod>
             <planet name="Planet A3-1 Home" customIcon="earthlike" DIMID="0" dimMapping="">
@@ -77,9 +75,6 @@
             <orbitalDistance>200</orbitalDistance>
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>
-			<gas>ender_distillation</gas>
-			<gas>vapor_of_levity</gas>
-			<gas>cloud_seed_concentrated</gas>
             <orbitalTheta>270</orbitalTheta>
             <rotationalPeriod>24000</rotationalPeriod>
             <planet name="Moon A4-1 SandMoon" customIcon="marslike" DIMID="25">
@@ -138,7 +133,6 @@
             <orbitalDistance>250</orbitalDistance>
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>
-			<gas>ender</gas>
             <orbitalTheta>180</orbitalTheta>
             <rotationalPeriod>24000</rotationalPeriod>
             <planet name="Moon B3-1 MushroomWorld" customIcon="iceworld" DIMID="33">

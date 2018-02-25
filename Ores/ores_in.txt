@@ -72,7 +72,7 @@ silverS		railcraft:ore_metal			3	no		minecraft:stone			uniform		5		2		20	55
 prometheum	taiga:prometheum_ore			0	no		minecraft:netherrack		uniform		4		15		25	45
 
 abyssum		taiga:abyssum_ore			0	no		minecraft:end_stone		uniform		4		20		0	70
-palladium	taiga:palladium_ore			0	no		minecraft:end_stone		uniform		8		12		60	150
+palladium	taiga:palladium_ore			0	no		minecraft:end_stone		uniform		8		20		60	150
 magicProsp	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		20	50
 
 dilithiumS	taiga:dilithium_ore			0	no		minecraft:stone			uniform		2		4		0	15
@@ -143,6 +143,6 @@ resonanceS	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		3		10		
 resonanceN	deepresonance:resonating_ore	1	no		minecraft:netherrack	uniform		3		10		100	140
 
 resonanceE	deepresonance:resonating_ore	2	no		minecraft:end_stone		uniform		4		30		0	100
-abyssumE	taiga:abyssum_ore				0	no		minecraft:end_stone		uniform		4		20		0	100
-palladiumE	taiga:palladium_ore				0	no		minecraft:end_stone		uniform		8		12		0	100
+abyssumE	taiga:abyssum_ore				0	no		minecraft:end_stone		uniform		4		40		0	100
+palladiumE	taiga:palladium_ore				0	no		minecraft:end_stone		uniform		8		30		0	100
 magicProspE	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		0	100

@@ -10,13 +10,14 @@
   "Grass Color": "Not set. Check in-game.",
   "Foliage Color": "Not set. Check in-game.",
   "Water Color": "16777215",
-  "Temperature": 0.1,
+  "Temperature": 0.0,
   "Humidity": 0.2,
   "Water Tint": 16777215,
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
     "COLD",
+    "END",
     "PLAINS"
   ],
   "BiomeManager Entries": {},

@@ -1249,7 +1249,7 @@
 			<stack item="mysticalagriculture:tin_seeds" x="70"/>
 			<stack item="mysticalagriculture:lead_seeds" x="90"/>
 			<space height="20" />
-			<p>That means Metallic bees. Just remember that Hellish biome can be simulated on the Desert using Alveary with 3 heaters.</p>
+			<p>That means Metallic bees. Just remember that Hellish biome is also Mesa Bryce and Desert Hills.</p>
 			<stack item="forestry:alveary.plain" count="24" x="0"/>
 			<stack item="forestry:alveary.heater" count="3" x="20"/>
 			<stack item="mineraft:wooden_slab" count="9" x="40"/>

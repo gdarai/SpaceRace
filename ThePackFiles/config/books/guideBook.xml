@@ -85,7 +85,7 @@
 			<space height="20" />
 			<p>Beware, even though this mod is great, it can crash the game. Play it safe and make yourself accustomed to this mod first.</p>
 		</page>
-		<page>			
+		<page>
 			<p>Know death causes:</p>
 			<space height="10" />
 			<p>Flat ship with Helm close to water. Safe is 4+ blocks.</p>
@@ -952,6 +952,22 @@
 			<link ref="ch7:pg26">Your Launch Site</link>
 			<link ref="ch7:pg27">Moon Rocket</link>
 		</page>
+		<page>
+			<title>Homeworld Courtyard</title>
+			<link ref="ch7:pg28">Tricky Near Space</link>
+			<link ref="ch7:pg29">Why the Moon</link>
+			<link ref="ch7:pg30">Space Armor</link>
+			<link ref="ch7:pg31">Hunting Rocks</link>
+			<link ref="ch7:pg32">Getting Dilithium</link>
+			<link ref="ch7:pg33">Asteroid Belt</link>
+			<link ref="ch7:pg34">Excavating</link>
+			<link ref="ch7:pg35">Arc Smelting</link>
+			<link ref="ch7:pg36">Bees #3</link>
+			<link ref="ch7:pg37">Warp Tricks</link>
+			<link ref="ch7:pg38">Mining the Gas</link>
+			<link ref="ch7:pg39">Moar Power</link>
+			<link ref="ch7:pg40">Leaving Home</link>
+		</page>
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
 			<p>So you are in the game... good, first thing: don't try to survive night. Make a sleeping bag.</p>
@@ -1383,9 +1399,73 @@
 			<stack item="advancedrocketry:fuelTank" x="20"/>
 			<stack item="advancedrocketry:seat" x="40"/>
 			<stack item="advancedrocketry:guidanceComputer" x="60"/>
-			<stack item="advancedrocketry:planetIdChip" x="80"/>			
+			<stack item="advancedrocketry:planetIdChip" x="80"/>
 			<space height="20" />
 			<p>Scan the rocket with the Rocket Assembler. It must have Acceleration >0 and be Ready to Lift Off.</p>
+		</page>
+		<page id="pg28">
+			<p bold="true" italics="true">Tricky Near Space</p>
+			<p>Where is no Oxygen is usually freezing cold.</p>
+			<p>No Torches or candles work in space.</p>
+			<p>Asteroids are islands above VOID. Be ready to fall.</p>
+		</page>
+		<page id="pg29">
+			<p bold="true" italics="true">Why the Moon</p>
+			<p>Easy enough for begginer. Learn to live in space.</p>
+			<p>Learn to build a base.</p>
+			<p>Get Meteorite and Karmesine. Make Restonia Crystals.</p>
+		</page>
+		<page id="pg30">
+			<p bold="true" italics="true">Space Armor</p>
+			<p>Steel and Magic Armor can be Air Tight.</p>
+			<p>Power Armor can be Air Tight. And upgradable, A LOT.</p>
+		</page>
+		<page id="pg31">
+			<p bold="true" italics="true">Hunting Rocks</p>
+			<p>Did you know that one Asteroid gives like 300 ore? The small one.</p>
+			<p>Your only source of Dilithium for now.</p>
+		</page>
+		<page id="pg32">
+			<p bold="true" italics="true">Getting Dilithium</p>
+			<p>Dilithium ore is not enough for your Warp Engine.</p>
+			<p>You must Crush it and Recrystalize It.</p>
+		</page>
+		<page id="pg33">
+			<p bold="true" italics="true">Asteroid Belt</p>
+			<p>Miners Paradise. Expect Death and Chaos... and Tones of Ores.</p>
+			<p>You need Manyullyn and Magma from there.</p>
+		</page>
+		<page id="pg34">
+			<p bold="true" italics="true">Excavating</p>
+			<p>Looking for better way how to get ores? You can make Steel Sheets now.</p>
+			<p>Try Core Sampler and Excavator.</p>
+		</page>
+		<page id="pg35">
+			<p bold="true" italics="true">Arc Smelting</p>
+			<p>First alternative to Smeltery.</p>
+			<p>Can make Steel and some Exotic alloys as well.</p>
+			<p>Try Electrical Steel and Redstone Alloy.</p>
+		</page>
+		<page id="pg36">
+			<p bold="true" italics="true">Bees #3</p>
+			<p>No more waiting. Gendustry is here. Try Mutatron.</p>
+			<p>You will need also Mutagen and Labware.</p>
+		</page>
+		<page id="pg37">
+			<p bold="true" italics="true">Warp Tricks</p>
+			<p></p>
+		</page>
+		<page id="pg38">
+			<p bold="true" italics="true">Mining the Gas</p>
+			<p></p>
+		</page>
+		<page id="pg39">
+			<p bold="true" italics="true">Moar Power</p>
+			<p></p>
+		</page>
+		<page id="pg40">
+			<p bold="true" italics="true">Leaving Home</p>
+			<p></p>
 		</page>
 	</chapter>
 </book>

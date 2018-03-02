@@ -146,4 +146,44 @@
 			<itemStack>tp:diamond_apple 1 0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="100" power ="1000">
+		<input>
+			<oreDict>dustRedstone 2</oreDict>
+			<oreDict>nuggetConstantan 2</oreDict>
+			<oreDict>nuggetCopper 3</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:thermionicTubes 3 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1000">
+		<input>
+			<oreDict>dustRedstone 2</oreDict>
+			<oreDict>nuggetConstantan 2</oreDict>
+			<oreDict>nuggetTin 3</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:thermionicTubes 3 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1000">
+		<input>
+			<oreDict>dustRedstone 2</oreDict>
+			<oreDict>nuggetConstantan 2</oreDict>
+			<oreDict>nuggetIron 3</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:thermionicTubes 3 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="1000">
+		<input>
+			<oreDict>dustRedstone 2</oreDict>
+			<oreDict>nuggetConstantan 2</oreDict>
+			<oreDict>nuggetBronze 3</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:thermionicTubes 3 2</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

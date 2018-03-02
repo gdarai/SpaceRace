@@ -32,6 +32,7 @@ val tubeBlazing = <forestry:thermionicTubes:7>;
 val plateCopper = <ore:plateCopper>;
 val plateIron = <ore:plateIron>;
 val plateElectrum = <tconstruct:large_plate>.withTag({"Material":"electrum"});
+val plateNickel = <ore:plateNickel>;
 
 val scaffAlu = <immersiveengineering:metalDecoration1:5>;
 
@@ -171,10 +172,12 @@ recipes.remove(<actuallyadditions:blockMiner>);
 recipes.remove(grinder);
 recipes.remove(aaCasing);
 recipes.remove(<actuallyadditions:blockDropper>);
+recipes.remove(<actuallyadditions:blockItemViewer>);
 recipes.addShaped(<actuallyadditions:blockMiner>, [[casingIron, IEHeavyBlock, casingIron], [gearBoxSteel, reconstructor, gearBoxSteel], [casingIron, <actuallyadditions:itemDrill:*>, casingIron]]);
 recipes.addShaped(aaCasing, [[dustIox, plateTriberium, dustIox], [plateTriberium, inEmerald0, plateTriberium], [dustIox, plateTriberium, dustIox]]);
 recipes.addShaped(grinder, [[casingIron, gearBoxSteel, casingIron], [aaCasing, <railcraft:borehead_diamond>, aaCasing], [IEHeavyBlock, GDpowerM, IEHeavyBlock]]);
 recipes.addShaped(<actuallyadditions:blockDropper>, [[null, inLapis0, null], [inLapis0, <minecraft:dropper>, inLapis0], [null, inLapis0, null]]);
+recipes.addShaped(<actuallyadditions:blockItemViewer>, [[null, <minecraft:hopper>, null], [plateNickel, <storagedrawers:trim:*>, plateNickel], [null, gearBoxSteel, null]]);
 
 // Lenses
 // Color, Damage moved into Precision Assembler
@@ -211,7 +214,8 @@ recipes.remove(<actuallyadditions:blockPhantomLiquiface>);
 recipes.addShaped(<actuallyadditions:blockPhantomLiquiface>, [[null, inCoal0, null], [inCoal0, <actuallyadditions:blockPhantomface>, inCoal0], [null, inCoal0, null]]);
 
 // inRed0, inLapis0, inDiamant0, inCoal0, inEmerald0 all added through crystalizer
-mods.actuallyadditions.AtomicReconstructor.addRecipe(<forestry:refractory:1>.withTag({"Fluid":{"FluidName": "cloud_seed", "Amount":1000}}), inIron0, 5000);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<forestry:refractory:1>.withTag({"Fluid":{"FluidName": "cloud_seed", "Amount":1000}}), inIron0, 2500);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<forestry:capsule:1>.withTag({"Fluid":{"FluidName": "cloud_seed", "Amount":1000}}), inIron0, 10000);
 
 // Tools
 recipes.remove(<actuallyadditions:itemLaserWrench>);

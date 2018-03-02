@@ -968,6 +968,7 @@
 			<link ref="ch7:pg39">Moar Power</link>
 			<link ref="ch7:pg40">Leaving Home</link>
 		</page>
+		<page />
 		<page id="pg0">
 			<p bold="true" italics="true">Sleeping Bag</p>
 			<p>So you are in the game... good, first thing: don't try to survive night. Make a sleeping bag.</p>
@@ -978,16 +979,17 @@
 			<stack item="minecraft:stick" x="20"/>
 			<stack item="minecraft:leaves" x="40"/>
 			<space height="20" />
-			<p>Most of it easy, just the leaves, right?</p>
+			<p>Most of it is easy, just the leaves, right?</p>
 			<stack item="woodenshears:wshears" x="0"/>
 		</page>
 		<page id="pg1">
 			<p bold="true" italics="true">Start with Food</p>
-			<p>Food is essential. With Spice of Life every type of food will feed you only 8x and it will take you 1000 hunger to forget you ate it. So, collect new seeds and focus on variety.</p>
-			<p>Start with collecting HarvestCraft seeds. You can get them from Gardens, or by breaking Grass.</p>
-			<stack item="harvestcraft:blackberryseeditem" x="0"/>
-			<stack item="harvestcraft:windygarden" x="20"/>
-			<stack item="minecraft:tallgrass" meta="1" x="40"/>
+			<p>Food is essential. Food looses saturation. It will take you 1000 hunger to forget you ate it. Collect new seeds and focus on variety.</p>
+			<p>Conserve energy, build stairs, do not jump. Start with collecting HarvestCraft seeds. Try Gardens, or brake Grass.</p>
+			<stack item="minecraft:oak_stairs" x="0"/>
+			<stack item="harvestcraft:blackberryseeditem" x="20"/>
+			<stack item="harvestcraft:windygarden" x="40"/>
+			<stack item="minecraft:tallgrass" meta="1" x="60"/>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">Bed, Furnace, Light</p>
@@ -1268,7 +1270,7 @@
 			<p>That means Metallic bees. Just remember that Hellish biome is also Mesa Bryce and Desert Hills.</p>
 			<stack item="forestry:alveary.plain" count="24" x="0"/>
 			<stack item="forestry:alveary.heater" count="3" x="20"/>
-			<stack item="mineraft:wooden_slab" count="9" x="40"/>
+			<stack item="minecraft:wooden_slab" count="9" x="40"/>
 			<stack item="minecraft:sand" x="70"/>
 			<stack item="minecraft:cactus" x="90"/>
 		</page>

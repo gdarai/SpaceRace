@@ -110,6 +110,10 @@ val bloodBlock = <tconstruct:slime:3>;
 val lemon = <forestry:fruits:3>;
 val plum = <forestry:fruits:4>;
 
+val esNatur = <mysticalagriculture:nature_essence>;
+val esCoal = <mysticalagriculture:coal_essence>;
+val esCreeper = <mysticalagriculture:creeper_essence>;
+
 recipes.removeShaped(<mysticalagriculture:superium_apple>);
 recipes.addShaped(<mysticalagriculture:superium_apple>, [[plum, ess4, plum], [ess4, <mysticalagriculture:intermedium_apple>, ess4], [plum, ess4, plum]]);
 recipes.removeShaped(<mysticalagriculture:intermedium_apple>);
@@ -142,4 +146,6 @@ mods.immersiveengineering.Crusher.addRecipe(ess1 * 3, <mysticalagriculture:end_i
 mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:inferium_ore>, ess1 * 3, ess1, 50);
 mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:nether_inferium_ore>, ess1 * 3, ess1, 50);
 mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:end_inferium_ore>, ess1 * 3, ess1, 50);
-
+// Adding agric. recipes
+recipes.addShaped(<minecraft:coal:1>*8, [[esCoal, esNatur, esCoal], [esNatur, <forestry:royalJelly>, esNatur], [esCoal, esNatur, esCoal]]);
+recipes.addShaped(<minecraft:flint>*2, [[esCreeper, esCreeper, esCreeper], [esCreeper, <ore:gravel>, esCreeper], [esCreeper, esCreeper, esCreeper]]);

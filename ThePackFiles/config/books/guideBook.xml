@@ -1453,19 +1453,24 @@
 		</page>
 		<page id="pg37">
 			<p bold="true" italics="true">Warp Tricks</p>
-			<p></p>
+			<p>Ship needs Warp Core And Warp Controller.</p>
+			<p>Controller needs correct World Orb. Core needs Dilithium Crystals.</p>
+			<p>Don't get stuck on orbit with no crystals and mean to make rocket fuel.</p>
 		</page>
 		<page id="pg38">
 			<p bold="true" italics="true">Mining the Gas</p>
-			<p></p>
+			<p>Warp directly to orbit of the Gas Gian.</p>
+			<p>Send Drone, get Cloud Seed, Nitrogen and Nutrient Distillation.</p>
+			<p>Try the Bottler.</p>
 		</page>
 		<page id="pg39">
 			<p bold="true" italics="true">Moar Power</p>
-			<p></p>
+			<p>Try Zombie Generator or Combustion Engine.</p>
 		</page>
 		<page id="pg40">
 			<p bold="true" italics="true">Leaving Home</p>
-			<p></p>
+			<p>You must have on your ship: Lava World Orb, Dilithium.</p>
+			<p>Should also have: Rocket Fuel Production, Dilithium Production, Food.</p>
 		</page>
 	</chapter>
 </book>

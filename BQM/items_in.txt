@@ -505,3 +505,109 @@ ITEM # Ore16     # railcraft:ore_metal:5
 ITEM # Ore20     # minecraft:gold_ore
 ITEM # Ore21     # minecraft:redstone_ore
 ITEM # Ore22     # immersiveengineering:ore:3
+ITEM # Ore23     # minecraft:diamond_ore
+ITEM # Ore24     # minecraft:emerald_ore
+
+ITEM # FlintPickAxe # tconstruct:pick_head # NBT:{ "Material": "flint" }
+ITEM # PoorNickel 	# railcraft:ore_metal_poor:6
+ITEM # PoorZinc 	# railcraft:ore_metal_poor:7
+ITEM # AluOre 		# immersiveengineering:ore:1
+ITEM # IronOre 		# minecraft:iron_ore
+ITEM # RedstoneDust # minecraft:redstone
+ITEM # DuraniumDust # taiga:duranite_dust
+ITEM # BasaltWhite 	# taiga:basalt_block
+ITEM # BasaltBlack 	# chisel:basaltextra:7
+ITEM # GoldOre 		# minecraft:gold_ore
+ITEM # SilverOre 	# railcraft:ore_metal:3
+ITEM # OsramOre 	# taiga:osram_ore
+ITEM # EezoOre 		# taiga:eezo_ore
+ITEM # AbyssumOre 	# taiga:abyssum_ore
+ITEM # DracoDust 	# draconicevolution:draconium_dust
+
+ITEM # ChiselTool 	# chisel:chisel_iron
+ITEM # BrickBlDried	# tconstruct:dried_clay:1
+ITEM # BrickClay 	# minecraft:brick_block
+ITEM # BrickMud 	# tconstruct:deco_ground
+ITEM # BrickStone 	# minecraft:stonebrick
+
+ITEM # OakStais 	# minecraft:oak_stairs
+ITEM # OakSlabs 	# minecraft:wooden_slab
+ITEM # OakBookshelf	# bibliocraft:Bookcase
+ITEM # OakChest 	# bibliocraft:FramedChest
+ITEM # OakFancySign	# bibliocraft:FancySign
+
+ITEM # GetLog0 # minecraft:log:1
+ITEM # GetLog1 # minecraft:log:2
+ITEM # GetLog2 # minecraft:log:3
+ITEM # GetLog3 # minecraft:log2
+
+ITEM # FactoryRusty # chisel:factory
+ITEM # TyrianPurple # chisel:tyrian:3
+ITEM # OrnateBricks # chisel:bricks1:1
+ITEM # CelticMossy # chisel:cobblestonemossy1:7
+
+ITEM # AccWorkbench	# bibliocraft:FancyWorkbench:4
+ITEM # AccSeat		# bibliocraft:Seat:4
+ITEM # SpruceTable	# bibliocraft:Table:1
+ITEM # BirchDesk	# bibliocraft:Desk:2
+ITEM # JunglePotShelf # bibliocraft:PotionShelf:3
+
+ITEM # FancyLamp 	# bibliocraft:LampGold
+ITEM # Typewriter 	# bibliocraft:Typewriter
+ITEM # DinnerPlate 	# bibliocraft:DinnerPlate
+
+ITEM # OreSpec01 	# taiga:duranite_ore
+ITEM # OreSpec02 	# taiga:basalt_block
+ITEM # OreSpec03 	# taiga:eezo_ore
+ITEM # OreSpec04 	# taiga:osram_ore
+ITEM # OreSpec05 	# taiga:prometheum_ore
+ITEM # OreSpec06 	# minecraft:quartz_ore
+ITEM # SoulSand 	# minecraft:soul_sand
+
+ITEM # essInferi 	# mysticalagriculture:inferium_essence
+ITEM # xpBottle	 	# supercraftingframe:super_xp_bottle
+
+ITEM # stickAlu	 	# immersiveengineering:material:3
+ITEM # stickIron 	# libvulpes:productrod:1
+ITEM # stickSteel 	# libvulpes:productrod:6
+ITEM # plateAlu	 	# libvulpes:productplate:9
+ITEM # plateCopper 	# libvulpes:productplate:4
+ITEM # plateTin 	# libvulpes:productplate:5
+ITEM # plateIron 	# libvulpes:productplate:1
+ITEM # plateNickel 	# railcraft:plate:8
+ITEM # plateSteel 	# libvulpes:productplate:6
+ITEM # gearIron 	# railcraft:gear:1
+ITEM # gearCopper 	# forestry:gearCopper
+ITEM # gearTin	 	# forestry:gearTin
+ITEM # gearBronze 	# railcraft:gear:4
+ITEM # gearSteel 	# railcraft:gear:2
+
+ITEM # engBlLight 	# immersiveengineering:metalDecoration0:4
+ITEM # engBlHeavy 	# immersiveengineering:metalDecoration0:5
+ITEM # engBlRed 	# immersiveengineering:metalDecoration0:3
+ITEM # engBlRad 	# immersiveengineering:metalDecoration0:7
+ITEM # engBlGen 	# immersiveengineering:metalDecoration0:6
+
+ITEM # iePump 		# immersiveengineering:metalDevice0:5
+ITEM # iePipe 		# immersiveengineering:metalDevice1:6
+ITEM # bucket 		# minecraft:bucket
+
+ITEM # TFabricator 	# forestry:fabricator
+ITEM # Squeezer 	# forestry:squeezer
+ITEM # ClockEngine 	# forestry:engine_clockwork
+
+ITEM # iePower00 	# immersiveengineering:connector
+ITEM # iePower01 	# immersiveengineering:connector:1
+ITEM # iePower02 	# immersiveengineering:wirecoil
+ITEM # iePower03 	# immersiveengineering:metalDevice1:2
+ITEM # iePower04 	# immersiveengineering:woodenDevice1:1
+ITEM # iePower05 	# immersiveengineering:metalDevice0
+ITEM # iePower06 	# immersiveengineering:woodenDevice1:3
+
+ITEM # spLeather 	# minecraft:leather
+ITEM # spHLeather 	# harvestcraft:hardenedleatheritem
+ITEM # spTorch 		# minecraft:torch
+ITEM # spFabric 	# immersiveengineering:material:5
+ITEM # spPlank 		# immersiveengineering:treatedWood
+ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material": "flint" }
+ITEM # spWool 		# minecraft:wool

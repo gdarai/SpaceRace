@@ -255,18 +255,37 @@ QUEST        #  Hx22       #   20:-25  	 #  20    #  ioDimenTrans
 // Trade lines are used for obtaining score through common tasks.
 // ------------------>
 
-LINE         #  TA         #  Trading Food
+LINE         #  TA         #  Basic Trading
 SIZE         #  2:2        #  50:50
 TEXT         #  Some players want to be more farmers then explorers and so they can. Here is a whole quest line about making Quisine. If you want to entertain our viewers by cooking. Here is your opportunity.
 
 QUEST        #  TA00        #  -40:-25 	  #  30    #  NetherStar		# main
+
 QUEST        #  TA01        #  -40:0      #  30    #  WaterBowl			# main
-QUEST        #  TA10        #  -20:0	    #  25    #  HCSeed
+QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed
 QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
 QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
 QUEST        #  TA13        #   40:0      #  25    #  Wheet
 QUEST        #  TA14        #   60:0      #  25    #  HCPear
-QUEST        #  TA20        #   80:0      #  30    #  Diamond			# main
+QUEST        #  TA19        #   80:0      #  30    #  Diamond			# main
+
+QUEST        #  TA02        #  -40:15     #  30    #  FlintPickAxe		# main
+QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel
+QUEST        #  TA21        #    0:15  	  #  25    #  AluOre
+QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust
+QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack
+QUEST        #  TA24        #   60:15     #  25    #  GoldOre
+QUEST        #  TA25        #   80:15     #  25    #  DracoDust
+QUEST        #  TA29        #  100:15     #  30    #  Diamond			# main
+
+QUEST        #  TA03        #  -40:30     #  30    #  ChiselTool		# main
+QUEST        #  TA30        #  -20:30     #  25    #  BrickClay
+QUEST        #  TA31        #    0:30  	  #  25    #  OakStais
+QUEST        #  TA32        #   20:30     #  25    #  GetLog3
+QUEST        #  TA33        #   40:30     #  25    #  CelticMossy
+QUEST        #  TA34        #   60:30     #  25    #  BirchDesk
+QUEST        #  TA35        #   80:30     #  25    #  Typewriter
+QUEST        #  TA39        #  100:30     #  30    #  Diamond			# main
 
 // ------------------>
 // Market lines are used for buying material for score
@@ -277,13 +296,20 @@ SIZE         #  2:2        #  50:50
 TEXT         #  Concider this a market, where your seller is the audience. Show them something and if they will be fond of you, they may give you what you will ask for.
 
 QUEST        #  MA00        #  -40:-25 	  #  30    #  NetherStar		# main
-QUEST        #  MAreset     #   40:-25    #  30    #  WaterBowl			# main # chain
+QUEST        #  MAreset     #   50:-25    #  30    #  WaterBowl			# main # chain
 QUEST        #  MAres2      #    0:-25    #  30    #  Skull  			# main # chain
 QUEST        #  MAhalf      #    0:10     #  30    #  OnTheWay 			# main # chain
 
-QUEST        #  MAxi00      #  -40:-10	  #  20    #  HZombie			# chain
-QUEST        #  MAxi01      #  -40:0	  #  20    #  HWitch			# chain
+QUEST        #  MAxi00      #  -40:-5	  #  40    #  HZombie			# chain
+QUEST        #  MAxi01      #  -40:25	  #  40    #  HWitch			# chain
 
 QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
 QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
-QUEST        #  MAxo02      #   40:10	  #  20    #  ORE00				# chain
+QUEST        #  MAxo02      #   40:10	  #  20    #  Ore00				# chain
+QUEST        #  MAxo03      #   40:20	  #  20    #  Ore22				# chain
+QUEST        #  MAxo04      #   40:30	  #  20    #  gearCopper		# chain
+QUEST        #  MAxo05      #   60:-10	  #  20    #  engBlLight		# chain
+QUEST        #  MAxo06      #   60:0	  #  20    #  bucket			# chain
+QUEST        #  MAxo07      #   60:10	  #  20    #  Carpenter			# chain
+QUEST        #  MAxo08      #   60:20	  #  20    #  iePower02			# chain
+QUEST        #  MAxo09      #   60:30	  #  20    #  spTorch			# chain

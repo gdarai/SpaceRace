@@ -36,7 +36,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  A30      #  Bees and Traps
-TEXT    #  Next goal is wax and leather. So yes... bees from the begginning. Are you excited? The land and water traps can also supply the so much missing meat for your diet.
+TEXT    #  Next goal is wax and leather. So yes... bees from the beginning. Are you excited? The land and water traps can also supply the so much missing meat for your diet.
 PREREQ  #  AND      #  A20 # A21
 
 TASK    #  TRIGGER

@@ -1,26 +1,28 @@
 QUEST   #  TA00     #  Collecting Victory Points
-TEXT    #  There are multiple ways you can please our wievers. During your journey you will be given several opportunities. Each will be rewarded with victory points. You can exchange those victory points later for material or food or you can just pile them up to prove your viewers that you are the best player they ever saw.
+TEXT    #  There are multiple ways you can please our viewers. During your journey you will be given several opportunities. Each will be rewarded with victory points. You can exchange those victory points later for material or food or you can just pile them up to prove your viewers that you are the best player they ever saw.
 
 TASK    #  TRIGGER
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
 
 // ------->
+// Farming Chain
+// ------->
 
-QUEST   #  TA01     #  Are you IN?
+QUEST   #  TA01     #  Are you Farmer?
 TEXT    #  You must first prove that you are a serious farmer. Deliver 30 waterbowls and I will believe you.
 PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  WaterBowl:30
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:100
-REWARD  #  RESET    #  TA20
+REWARD  #  RESET    #  TA19
 
 // ------->
 
 QUEST   #  TA10     #  Roots
-TEXT    #  Our wievers want to see you thrive. Deliver some most common seeds to prove you are the master of your land.
+TEXT    #  Our viewers want to see you thrive. Deliver some most common seeds to prove you are the master of your land.
 PREREQ  #  XOR      #  TA01
 
-TASK    #  GIVE		#  HSeed0:64 # HSeed1:64 # HSeed2:64 # HSeed3:64 # HSeed4:64
+TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
@@ -29,7 +31,7 @@ QUEST   #  TA11     #  Vegetables
 TEXT    #  So you can collect roots, Can you also collect vegetables?
 PREREQ  #  AND      #  TA10
 
-TASK    #  GIVE		#  HVegi0:64 # HVegi1:64 # HVegi2:64 # HVegi3:64 # HVegi4:64
+TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
@@ -38,7 +40,7 @@ QUEST   #  TA12     #  Berries
 TEXT    #  Enough Vegetables, time for some Berries.
 PREREQ  #  AND      #  TA11
 
-TASK    #  GIVE		#  HBerry0:64 # HBerry1:64 # HBerry2:64 # HBerry3:64 # HBerry4:64
+TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
@@ -47,7 +49,7 @@ QUEST   #  TA13     #  Wheats
 TEXT    #  Can your empire be built up without wheet and rice? Certainly not.
 PREREQ  #  AND      #  TA12
 
-TASK    #  GIVE		#  HWheat0:64 # HWheat1:64 # HWheat2:64 # HWheat3:64 # HWheat4:64
+TASK    #  GIVE		#  HWheat0:16 # HWheat1:16 # HWheat2:16 # HWheat3:16 # HWheat4:16
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
@@ -56,12 +58,12 @@ QUEST   #  TA14     #  Fruits
 TEXT    #  And when you look up instead of down, you want to see great trees with wonderfull fruits.
 PREREQ  #  AND      #  TA13
 
-TASK    #  GIVE		#  HFruit0:64 # HFruit1:64 # HFruit2:64 # HFruit3:64 # HFruit4:64
+TASK    #  GIVE		#  HFruit0:16 # HFruit1:16 # HFruit2:16 # HFruit3:16 # HFruit4:16
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA20     #  Reset the Food Chain
+QUEST   #  TA19     #  Reset the Food Chain
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TA14
 
@@ -73,3 +75,167 @@ REWARD  #  RESET    #  TA11
 REWARD  #  RESET    #  TA12
 REWARD  #  RESET    #  TA13
 REWARD  #  RESET    #  TA14
+
+// ------->
+// Mining Chain
+// ------->
+
+QUEST   #  TA02     #  Are you Miner?
+TEXT    #  You must first prove that you are a serious miner. Deliver 10 flint pickaxe heads to prove it.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  FlintPickAxe:10
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:100
+REWARD  #  RESET    #  TA29
+
+// ------->
+
+QUEST   #  TA20     #  Poor Ores
+TEXT    #  Look around and deliver some poor nickel ore and poor zinc ore.
+PREREQ  #  AND      #  TA02
+
+TASK    #  GIVE		#  PoorNickel:8 # PoorZinc:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA21     #  Regular Ores
+TEXT    #  Let's increase the load. We want to see some real Digging.
+PREREQ  #  AND      #  TA20
+
+TASK    #  GIVE		#  AluOre:8 # IronOre:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA22     #  Deep Dusts
+TEXT    #  Can you go deeper and get some Redstone and Duranium dusts?
+PREREQ  #  AND      #  TA21
+
+TASK    #  GIVE		#  RedstoneDust:64 # DuraniumDust:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA23     #  Basalt
+TEXT    #  There are two variants of basalt on this world. Deliver both to please the viewers.
+PREREQ  #  AND      #  TA22
+
+TASK    #  GIVE		#  BasaltWhite:16 # BasaltBlack:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA24     #  Going Exotic
+TEXT    #  Some unique and precious metals should buy our attention.
+PREREQ  #  AND      #  TA23
+
+TASK    #  GIVE		#  GoldOre:16 # SilverOre:16 # OsramOre:8 # EezoOre:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA25     #  Going Wild
+TEXT    #  And what about going DEEP under?
+PREREQ  #  AND      #  TA24
+
+TASK    #  GIVE		#  AbyssumOre:16 # DracoDust:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+
+// ------->
+
+QUEST   #  TA29     #  Reset the Miners Chain
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA25
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  XP       #  Levels:1
+REWARD  #  RESET    #  TA02
+REWARD  #  RESET    #  TA20
+REWARD  #  RESET    #  TA21
+REWARD  #  RESET    #  TA22
+REWARD  #  RESET    #  TA23
+REWARD  #  RESET    #  TA24
+REWARD  #  RESET    #  TA25
+
+// ------->
+// Building Chain
+// ------->
+
+QUEST   #  TA03     #  Are you Builder?
+TEXT    #  You must first prove that you are a serious builder. Deliver a chisel tool.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  ChiselTool:1
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:50
+REWARD  #  RESET    #  TA39
+
+// ------->
+
+QUEST   #  TA30     #  Bricks
+TEXT    #  If you mean it, you must know how to make bricks.
+PREREQ  #  AND      #  TA03
+
+TASK    #  GIVE		#  BrickBlDried:32 # BrickClay:32 # BrickMud:32 # BrickStone:32
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA31     #  Oak Wood Parts
+TEXT    #  Wood and Stone, Stone And Wood. That is what you need for a good building.
+PREREQ  #  AND      #  TA30
+
+TASK    #  GIVE		#  OakStais:64 # OakSlabs:64 # OakBookshelf:16 # OakChest:16 # OakFancySign:12
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA32     #  Luxury Wood Parts
+TEXT    #  To make things nice, you must add some colors and shades, right?
+PREREQ  #  AND      #  TA31
+
+TASK    #  GIVE		#  GetLog0:64 # GetLog1:64 # GetLog2:64 # GetLog3:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA33     #  Chiseled Decorations
+TEXT    #  It is time to add some fanciness to this world. 
+PREREQ  #  AND      #  TA32
+
+TASK    #  GIVE		#  FactoryRusty:64 # TyrianPurple:64 # OrnateBricks:32 # CelticMossy:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA34     #  Furniture 1
+TEXT    #  Four walls, roof and floor is what makes house. Furniture is what makes home.
+PREREQ  #  AND      #  TA33
+
+TASK    #  GIVE		#  AccWorkbench:4 # AccSeat:16 # SpruceTable:16 # BirchDesk:8 # JunglePotShelf:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA35     #  Furniture 2
+TEXT    #  Well, there is furniture and then there is luxus.
+PREREQ  #  AND      #  TA34
+
+TASK    #  GIVE		#  FancyLamp:2 # Typewriter:1 # DinnerPlate:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+
+// ------->
+
+QUEST   #  TA39     #  Reset the Builders Chain
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA35
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  ALL      #  AccWorkbench:1 # BirchDesk:1 # OakChest:4
+REWARD  #  RESET    #  TA03
+REWARD  #  RESET    #  TA30
+REWARD  #  RESET    #  TA31
+REWARD  #  RESET    #  TA32
+REWARD  #  RESET    #  TA33
+REWARD  #  RESET    #  TA34
+REWARD  #  RESET    #  TA35

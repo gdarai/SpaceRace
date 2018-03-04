@@ -1,0 +1,142 @@
+#GROUP BIOME ocean <MC|Ocean:MC|Deep Ocean>
+#GROUP BIOME beach <MC|Beach>
+#GROUP BIOME jungle <MC|JungleHills:>
+#GROUP BIOME desert <MC|DesertHills:>
+#GROUP BIOME savanna <MC|Savanna M:>
+#GROUP BIOME forest <MC|Flower Forest:MC|Birch Forest Hills:MC|ForestHills>
+#GROUP BIOME iceberg <MC|Ice Mountains:>
+#GROUP BIOME hills <MC|Extreme Hills:MC|Extreme Hills M>
+#GROUP BIOME taiga <MC|Cold Taiga Hills:>
+#GROUP BIOME mesa <MC|Mesa (Bryce):>
+
+#GROUP BIOME land <#|beach:#|jungle:#|desert:#|savanna:#|forest:#|iceberg:#|hills:#|taiga:#|mesa>
+#GROUP BIOME all <#|land:#|ocean>
+
+#GROUP general
+    S:biomegroups=all
+    B:canSpawn=true
+    I:frequency=5
+    I:maxChunk=8
+    I:maxLightlevel=-1
+    I:maxSpawn=4
+    I:maxSpawnHeight=256
+    I:minLightlevel=-1
+    I:minSpawn=4
+    I:minSpawnHeight=0
+    S:opaqueBlock=all
+    S:spawnBlockBlacklist <>
+    S:type=CREATURE
+
+    D:chunkgenspawnchance=0.0
+    I:mobspawnrange=8
+    S:shouldseesky=UNDEFINED
+    I:spawncap=0
+    I:spawntickrate=0
+    I:maxspawnheight=256
+    I:minspawnheight=0
+
+#GROUP TYPE ambient
+#PARENT general
+    I:spawncap=20
+    I:spawntickrate=100
+
+#GROUP TYPE creature
+#PARENT general
+    D:chunkgenspawnchance=0.1
+    I:spawncap=40
+    I:spawntickrate=400
+    S:shouldseesky=true
+
+#GROUP TYPE monster
+#PARENT general
+    I:spawncap=70
+    I:spawntickrate=1
+
+#GROUP TYPE underground
+#PARENT general
+    I:spawncap=15
+    I:spawntickrate=400
+    I:maxspawnheight=63
+    S:shouldseesky=false
+
+#GROUP TYPE water_creature
+#PARENT general
+    I:spawncap=25
+
+
+
+#IN_GROUP ant, bee, butterfly, cricket, dragonfly, bird, bunny, crab, firefly, fly, maggot, mole, mouse, roach, snail
+#PARENT  general
+#SPAWN_FREQUENCY 5
+#
+
+## FishSmall
+clownfish, anchovies, anglers, manderin, angelfish, hippotang, goldfish, fishy, jellyfish
+## FishMedium
+cod, salmon, bass, piranha
+## FishBig
+dolphin, mantaray, shark, stingray
+## Ambient
+
+## Golem
+biggolem, minigolem
+## AnimalSmall
+rat, snake, kitty, goat, fox, duck, turkey, turtle
+## AnimalLarge
+blackbear, boar, crocodile, deer, elephant, ent, grizzlybear, horsemob, komododragon
+leopard, liard, liger, lion, lither, ostrich, pandabear, panthard, panther, polarbear
+raccoon, scorpion, tiger, wildhorse, wwolf
+## Hell
+hellrat, 
+## Ogre
+caveogre, fireogre, greenogre
+## Magic
+flamewraith, manticore, silverskeleton, werewolf, wraith, wyvern
+## CannotSpawn
+egg, kittybed, litterbox, manticorepet, petscorpion
+
+wolf {
+    S:biomegroups <WOLF_DEFAULT>
+    B:canSpawn=true
+    I:frequency=5
+    I:maxChunk=8
+    I:maxLightlevel=-1
+    I:maxSpawn=4
+    I:maxSpawnHeight=256
+    I:minLightlevel=-1
+    I:minSpawn=4
+    I:minSpawnHeight=0
+    S:opaqueBlock=all
+    S:spawnBlockBlacklist <>
+    S:type=CREATURE
+}
+
+● S:biomegroups - Contains a list seperated by ':' of all biome groups that this entity should spawn in.
+● B:canSpawn - Toggles whether or not this entity should be allowed to spawn
+● I:frequency - Sets the frequency for the spawn list entry. The higher this is, the greater chance it has to be picked during spawning.
+● I:maxChunk - Sets the max pack size for this entity in a specific chunk.
+● I:maxLightLevel - Sets the max light level this entity should spawn in.
+● I:minSpawn - Used during world gen spawning to determine the minimum amount of spawns for this entity in a chunk.
+● I:maxSpawn - Used during world gen spawning to determine the maximum amount of spawns for this entity in a chunk.
+● I:minSpawnHeight - determines how low this entity can spawn. Height = Y
+● I:maxSpawnHeight - determins how high this entity can spawn.
+● S:opaqueBlock - *Not currently working* Basically determines if this entity can spawn on an opaque block or not.
+● S:spawnBlockBlacklist <> - *Not currently working* Basically determines what blocks this entity should NOT be allowed to spawn on. The format is ID-meta, if only ID is used the it assumes all meta.
+● S:type - the Entity Spawn Type used for the entity. Vanilla default types are AMBIENT, WATERCREATURE, CREATURE, MONSTER. CMS allows you to create your own types in EntitySpawnTypes.cfg. Types have their own spawn settings such as tick rates etc.
+
+ambient {
+    D:chunkgenspawnchance=0.0
+    I:mobspawnrange=8
+    S:shouldseesky=UNDEFINED
+    I:spawncap=20
+    I:spawntickrate=100
+    I:maxspawnheight=256
+    I:minspawnheight=0
+}
+
+● D:chunkgenspawnchance - The chance that a worldgen spawn can occur in a biome. Default is 0.1 which is 10%.
+● I:maxspawnheight - The max spawn height allowed for ALL entities tied to this spawn type. Default is 256.
+● I:minspawnheight - The mininum spawn height allowed for ALL entities tied to this spawn type. Default is 0.
+● S:shouldseesky - Toggles whether or not this entities of this spawn type require sky to be seen in order to spawn. Default true for all types except undeground.
+● I:spawncap - The spawn cap for the type. The higher the spawn cap, the more spawns.
+● I:spawntickrate - The spawn tick rate for type. The higher the tick rate, the less spawning. Lower tick rate if you want more frequent spawns.

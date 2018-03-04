@@ -252,10 +252,10 @@ ITEM  #  HWheat3		#  harvestcraft:barleyitem
 ITEM  #  HWheat4		#  minecraft:wheat
 
 ITEM  #  HFruit0		#  harvestcraft:lemonitem
-ITEM  #  HFruit1		#  harvestcraft:pampear
-ITEM  #  HFruit2		#  harvestcraft:pamolive
-ITEM  #  HFruit3		#  harvestcraft:pamgrapefruit
-ITEM  #  HFruit4		#  harvestcraft:pampomegranate
+ITEM  #  HFruit1		#  harvestcraft:pearitem
+ITEM  #  HFruit2		#  harvestcraft:oliveitem
+ITEM  #  HFruit3		#  harvestcraft:grapefruititem
+ITEM  #  HFruit4		#  harvestcraft:pomegranateitem
 
 ITEM # HCS000 # harvestcraft:artichokeseeditem
 ITEM # HCS001 # harvestcraft:asparagusseeditem

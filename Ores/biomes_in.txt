@@ -7,6 +7,7 @@ iceberg		ice_mountains
 hills		extreme_hills		mutated_extreme_hills	taiga_hills		stone_beach
 taiga		taiga_cold_hills	ice_flats				cold_beach
 mesa		mutated_mesa		mesa					mesa_clear_rock
+swamp		mutated_swampland	swampland
 underEnd	river
 hell		hell
 end			end

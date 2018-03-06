@@ -1024,6 +1024,207 @@
 			}
 		},
 
+		"swamp00": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "minecraft:coal_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 14
+			},
+			"cluster-count": 30,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"swamp01": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "minecraft:redstone_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 16,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"swamp02": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "forestry:resources",
+					"metadata": 2,
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 15,
+			"min-height": 30,
+			"max-height": 100,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"swamp03": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "immersiveengineering:ore",
+					"metadata": 1,
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 60,
+			"min-height": 40,
+			"max-height": 120,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"swamp04": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "minecraft:iron_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 15,
+			"min-height": 10,
+			"max-height": 55,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"swamp05": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "immersiveengineering:ore",
+					"metadata": 2,
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 10,
+			"min-height": 15,
+			"max-height": 40,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_swampland",
+							"swampland"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
 		"forrest00": {
 			"distribution": "uniform",
 			"generator": {
@@ -1912,7 +2113,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 12,
+			"cluster-count": 20,
 			"min-height": 60,
 			"max-height": 150,
 			"retrogen": true,
@@ -2363,7 +2564,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 20,
+			"cluster-count": 40,
 			"min-height": 0,
 			"max-height": 100,
 			"retrogen": true,
@@ -2395,7 +2596,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 12,
+			"cluster-count": 30,
 			"min-height": 0,
 			"max-height": 100,
 			"retrogen": true,

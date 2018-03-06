@@ -39,6 +39,13 @@ savanna02	nickel		savanna		0
 savanna03	eezo		savanna		0
 savanna04	alu			savanna		0
 
+swamp00		coal		swamp		0
+swamp01		redstone	swamp		0
+swamp02		tin			swamp		0
+swamp03		alu			swamp		0
+swamp04		iron		swamp		0
+swamp05		lead		swamp		0
+
 forrest00	alu			forrest		0
 forrest01	tin			forrest		0
 forrest02	copper		forrest		0

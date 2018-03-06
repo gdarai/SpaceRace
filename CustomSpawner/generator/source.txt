@@ -13,7 +13,7 @@ BIOME # land    # <beach:jungle:desert:savanna:forest:iceberg:hills:taiga:mesa>
 BIOME # all     # <land:ocean>
 
 TYPE # general
-    S:biomegroups=all
+    S:biomegroups <all>
     B:canSpawn=true
     I:frequency=5
     I:maxChunk=8
@@ -64,5 +64,6 @@ PARENT # general
     I:spawncap=25
 
 TYPE # ambient_common
-IN_GROUP ant # bee # butterfly # cricket # dragonfly # bird # bunny # crab # firefly # fly # maggot # mole # mouse # roach # snail
 PARENT # general
+OWNER # DRZHARK
+CREATURES # ant # bee # butterfly # cricket # dragonfly # bird # bunny # crab # firefly # fly # maggot # mole # mouse # roach # snail

@@ -21,7 +21,7 @@ TYPE # GENERAL
     I:maxSpawn=4
     I:maxSpawnHeight=256
     I:minLightlevel=-1
-    I:minSpawn=4
+    I:minSpawn=1
     I:minSpawnHeight=0
     S:opaqueBlock=all
     S:spawnBlockBlacklist <>
@@ -37,13 +37,13 @@ TYPE # GENERAL
 
 TYPE # AMBIENT
 PARENT # GENERAL
-    I:spawncap=20
+    I:spawncap=40
     I:spawntickrate=100
 
 TYPE # CREATURE
 PARENT # GENERAL
     D:chunkgenspawnchance=0.1
-    I:spawncap=40
+    I:spawncap=30
     I:spawntickrate=400
     S:shouldseesky=true
 
@@ -54,16 +54,85 @@ PARENT # GENERAL
 
 TYPE # UNDERGROUND
 PARENT # GENERAL
-    I:spawncap=15
+    I:spawncap=30
     I:spawntickrate=400
     I:maxspawnheight=63
     S:shouldseesky=false
 
 TYPE # WATER_CREATURE
 PARENT # GENERAL
-    I:spawncap=25
+    S:biomegroups <ocean>
+    I:spawncap=100
 
-TYPE # ambient_common
+TYPE # FishSmall
+PARENT # WATER_CREATURE
+OWNER # DRZHARK
+    I:frequency=10
+    I:maxChunk=4
+    I:maxSpawn=6
+CREATURES # clownfish # anchovies # anglers # manderin # angelfish # hippotang # goldfish # fishy # jellyfish
+
+TYPE # FishMedium
+PARENT # WATER_CREATURE
+OWNER # DRZHARK
+    I:frequency=15
+    I:maxChunk=4
+    I:maxSpawn=6
+CREATURES # cod # salmon # bass # piranha
+
+TYPE # FishBig
+PARENT # WATER_CREATURE
+OWNER # DRZHARK
+    I:frequency=20
+    I:maxChunk=4
+    I:maxSpawn=3
+CREATURES # dolphin # mantaray # stingray
+
+TYPE # FishEvil
+PARENT # WATER_CREATURE
+OWNER # DRZHARK
+    I:frequency=5
+    I:maxChunk=10
+    I:maxSpawn=7
+    I:minSpawn=4
+CREATURES # shark
+
+TYPE # Ambient
 PARENT # AMBIENT
 OWNER # DRZHARK
 CREATURES # ant # bee # butterfly # cricket # dragonfly # bird # bunny # crab # firefly # fly # maggot # mole # mouse # roach # snail
+
+TYPE # Golem
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # biggolem # minigolem
+
+TYPE # AnimalSmall
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # rat # snake # kitty # goat # fox # duck # turkey # turtle
+
+TYPE # AnimalLarge
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # blackbear # boar # crocodile # deer # elephant # ent # grizzlybear # horsemob # komododragon # leopard # liard # liger # lion # lither # ostrich # pandabear # panthard # panther # polarbear # raccoon # scorpion # tiger # wildhorse # wwolf
+
+TYPE # Hell
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # hellrat
+
+TYPE # Ogre
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # caveogre # fireogre # greenogre
+
+TYPE # Magic
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # flamewraith # manticore # silverskeleton # werewolf # wraith # wyvern
+
+TYPE # CannotSpawn
+PARENT # AMBIENT
+OWNER # DRZHARK
+CREATURES # egg # kittybed # litterbox # manticorepet # petscorpion

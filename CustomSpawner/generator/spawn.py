@@ -8,7 +8,7 @@ import shutil
 canPrint = True;
 
 typeParams = ['D:chunkgenspawnchance', 'I:mobspawnrange', 'S:shouldseesky', 'I:spawncap', 'I:spawntickrate', 'I:maxspawnheight', 'I:minspawnheight']
-entitParams = ['B:canSpawn', 'I:frequency', 'I:maxChunk', 'I:maxLightlevel', 'I:maxSpawn', 'I:maxSpawnHeight', 'I:minLightlevel', 'I:minSpawn', 'I:minSpawnHeight', 'S:opaqueBlock', 'S:spawnBlockBlacklist ']
+entitParams = ['B:canSpawn', 'I:frequency', 'I:maxChunk', 'I:maxLightlevel', 'I:maxSpawn', 'I:maxSpawnHeight', 'I:minLightlevel', 'I:minSpawn', 'I:minSpawnHeight', 'S:opaqueBlock', 'S:spawnBlockBlacklist ', 'S:type']
 # + 'S:biomegroups ' + 'S:type' #
 ########
 # Superglobals
@@ -163,6 +163,9 @@ for line in lines:
             else:
                 data['owners'][owner] = [newObject['name']]
         else:
+            parName = readParam(line[0:-1])[0]
+            if parName in typeParams:
+                newObject['params']['S:type'] = '    S:type='+newObject['name']
             newObject['params'] = addParameter(newObject['params'], line[0:-1]);
             print(line[0:-1])
 data = processLastObject(data, newObject)
@@ -192,7 +195,6 @@ for owner in data['owners'].keys():
     writeLine(f,0,'# Configuration file')
     for entityType in data['owners'][owner]:
         print(' - Entity '+entityType)
-        data['usedTypes'][entityType] = 'used'
         d = data['types'][entityType]
         for anim in d['entities']:
             print(' - - '+anim)
@@ -216,7 +218,8 @@ for owner in data['owners'].keys():
             biom = readParam(d['params']['S:biomegroups '])
             for b in biom[1:]:
                 data['usedBiomes'][biomName] = 'used'
-            writeLine(f,1,'S:type='+entityType)
+            usedType = readParam(d['params']['S:type'])[1]
+            data['usedTypes'][usedType] = 'used'
             writeLine(f,0,'}')
     f.close()
 # Print EntitySpawnTypes file

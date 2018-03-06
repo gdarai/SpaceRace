@@ -12,7 +12,7 @@ BIOME # mesa    # <MC|Mesa (Bryce):>
 BIOME # land    # <beach:jungle:desert:savanna:forest:iceberg:hills:taiga:mesa>
 BIOME # all     # <land:ocean>
 
-TYPE # general
+TYPE # GENERAL
     S:biomegroups <all>
     B:canSpawn=true
     I:frequency=5
@@ -35,35 +35,35 @@ TYPE # general
     I:maxspawnheight=256
     I:minspawnheight=0
 
-TYPE # ambient
-PARENT # general
+TYPE # AMBIENT
+PARENT # GENERAL
     I:spawncap=20
     I:spawntickrate=100
 
-TYPE # creature
-PARENT # general
+TYPE # CREATURE
+PARENT # GENERAL
     D:chunkgenspawnchance=0.1
     I:spawncap=40
     I:spawntickrate=400
     S:shouldseesky=true
 
-TYPE # monster
-PARENT # general
+TYPE # MONSTER
+PARENT # GENERAL
     I:spawncap=70
     I:spawntickrate=1
 
-TYPE # underground
-PARENT # general
+TYPE # UNDERGROUND
+PARENT # GENERAL
     I:spawncap=15
     I:spawntickrate=400
     I:maxspawnheight=63
     S:shouldseesky=false
 
-TYPE # water_creature
-PARENT # general
+TYPE # WATER_CREATURE
+PARENT # GENERAL
     I:spawncap=25
 
 TYPE # ambient_common
-PARENT # general
+PARENT # AMBIENT
 OWNER # DRZHARK
 CREATURES # ant # bee # butterfly # cricket # dragonfly # bird # bunny # crab # firefly # fly # maggot # mole # mouse # roach # snail

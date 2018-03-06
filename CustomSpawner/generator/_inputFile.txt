@@ -1,18 +1,18 @@
-#GROUP BIOME ocean <MC|Ocean:MC|Deep Ocean>
-#GROUP BIOME beach <MC|Beach>
-#GROUP BIOME jungle <MC|JungleHills:>
-#GROUP BIOME desert <MC|DesertHills:>
-#GROUP BIOME savanna <MC|Savanna M:>
-#GROUP BIOME forest <MC|Flower Forest:MC|Birch Forest Hills:MC|ForestHills>
-#GROUP BIOME iceberg <MC|Ice Mountains:>
-#GROUP BIOME hills <MC|Extreme Hills:MC|Extreme Hills M>
-#GROUP BIOME taiga <MC|Cold Taiga Hills:>
-#GROUP BIOME mesa <MC|Mesa (Bryce):>
+BIOME # ocean   # <MC|Ocean:MC|Deep Ocean>
+BIOME # beach   # <MC|Beach>
+BIOME # jungle  # <MC|JungleHills:>
+BIOME # desert  # <MC|DesertHills:>
+BIOME # savanna # <MC|Savanna M:>
+BIOME # forest  # <MC|Flower Forest:MC|Birch Forest Hills:MC|ForestHills>
+BIOME # iceberg # <MC|Ice Mountains:>
+BIOME # hills   # <MC|Extreme Hills:MC|Extreme Hills M>
+BIOME # taiga   # <MC|Cold Taiga Hills:>
+BIOME # mesa    # <MC|Mesa (Bryce):>
 
-#GROUP BIOME land <#|beach:#|jungle:#|desert:#|savanna:#|forest:#|iceberg:#|hills:#|taiga:#|mesa>
-#GROUP BIOME all <#|land:#|ocean>
+BIOME # land    # <beach:jungle:desert:savanna:forest:iceberg:hills:taiga:mesa>
+BIOME # all     # <land:ocean>
 
-#GROUP general
+TYPE general
     S:biomegroups=all
     B:canSpawn=true
     I:frequency=5
@@ -35,39 +35,39 @@
     I:maxspawnheight=256
     I:minspawnheight=0
 
-#GROUP TYPE ambient
-#PARENT general
+TYPE ambient
+PARENT general
     I:spawncap=20
     I:spawntickrate=100
 
-#GROUP TYPE creature
-#PARENT general
+TYPE creature
+PARENT general
     D:chunkgenspawnchance=0.1
     I:spawncap=40
     I:spawntickrate=400
     S:shouldseesky=true
 
-#GROUP TYPE monster
-#PARENT general
+TYPE monster
+PARENT general
     I:spawncap=70
     I:spawntickrate=1
 
-#GROUP TYPE underground
-#PARENT general
+TYPE underground
+PARENT general
     I:spawncap=15
     I:spawntickrate=400
     I:maxspawnheight=63
     S:shouldseesky=false
 
-#GROUP TYPE water_creature
-#PARENT general
+TYPE water_creature
+PARENT general
     I:spawncap=25
 
 
 
-#IN_GROUP ant, bee, butterfly, cricket, dragonfly, bird, bunny, crab, firefly, fly, maggot, mole, mouse, roach, snail
-#PARENT  general
-#SPAWN_FREQUENCY 5
+IN_GROUP ant, bee, butterfly, cricket, dragonfly, bird, bunny, crab, firefly, fly, maggot, mole, mouse, roach, snail
+PARENT  general
+SPAWN_FREQUENCY 5
 #
 
 ## FishSmall
@@ -87,7 +87,7 @@ blackbear, boar, crocodile, deer, elephant, ent, grizzlybear, horsemob, komododr
 leopard, liard, liger, lion, lither, ostrich, pandabear, panthard, panther, polarbear
 raccoon, scorpion, tiger, wildhorse, wwolf
 ## Hell
-hellrat, 
+hellrat,
 ## Ogre
 caveogre, fireogre, greenogre
 ## Magic

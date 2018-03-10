@@ -1,0 +1,29 @@
+    S:BEACH <MC|Beach:MC|Cold Beach:MC|MushroomIslandShore:MC|Stone Beach>
+    S:COLD <MC|Asteroids:MC|Cold Beach:MC|Cold Taiga:MC|Cold Taiga Hills:MC|Cold Taiga M:MC|FrozenOcean:MC|Ice Mountains:MC|Ice Plains:MC|Ice Plains Spikes:MC|Mega Taiga:MC|Mega Taiga Hills:MC|Taiga:MC|TaigaHills:MC|The End>
+    S:CONIFEROUS <MC|Cold Taiga:MC|Cold Taiga Hills:MC|Cold Taiga M:MC|Mega Taiga:MC|Mega Taiga Hills:MC|Taiga:MC|TaigaHills>
+    S:DEAD <>
+    S:DENSE <MC|Birch Forest Hills M:MC|Birch Forest M:MC|Cold Taiga M:MC|Jungle:MC|Jungle M:MC|JungleHills:MC|Mega Spruce Taiga:MC|Redwood Taiga Hills M:MC|Roofed Forest:MC|Taiga M>
+    S:DRY <MC|Desert:MC|Desert M:MC|DesertHills:MC|Hell:MC|Lavaland:MC|Mesa (Bryce):MC|Mesa Plateau M:MC|Savanna M:MC|Savanna Plateau M:MC|The End>
+    S:END <MC|Asteroids:MC|The End:MC|Under End>
+    S:FOREST <DRZHARK|WyvernLair:MC|Birch Forest:MC|Birch Forest Hills:MC|Birch Forest Hills M:MC|Birch Forest M:MC|Cold Taiga:MC|Cold Taiga Hills:MC|Cold Taiga M:MC|Extreme Hills+:MC|Flower Forest:MC|Forest:MC|ForestHills:MC|JungleEdge:MC|Lavaland:MC|Mega Spruce Taiga:MC|Mega Taiga:MC|Mega Taiga Hills:MC|Redwood Taiga Hills M:MC|Roofed Forest:MC|Taiga:MC|Taiga M:MC|TaigaHills>
+    S:HILLS <MC|Birch Forest Hills:MC|Birch Forest Hills M:MC|Birch Forest M:MC|Cold Taiga Hills:MC|Cold Taiga M:MC|DesertHills:MC|Extreme Hills:MC|Extreme Hills M:MC|Extreme Hills+ M:MC|Flower Forest:MC|ForestHills:MC|Ice Plains Spikes:MC|Jungle M:MC|JungleEdge M:MC|JungleHills:MC|Mega Taiga Hills:MC|Roofed Forest M:MC|Savanna M:MC|Savanna Plateau M:MC|Taiga M:MC|TaigaHills>
+    S:HOT <MC|Desert:MC|Desert M:MC|DesertHills:MC|Hell:MC|Jungle:MC|Jungle M:MC|JungleEdge:MC|JungleEdge M:MC|JungleHills:MC|Lavaland:MC|Mesa (Bryce):MC|Mesa Plateau M:MC|Savanna:MC|Savanna M:MC|Savanna Plateau:MC|Savanna Plateau M>
+    S:JUNGLE <MC|Jungle:MC|Jungle M:MC|JungleEdge:MC|JungleHills>
+    S:LUSH <>
+    S:MAGICAL <>
+    S:MESA <MC|Mesa:MC|Mesa Plateau:MC|Mesa Plateau F>
+    S:MOUNTAIN <DRZHARK|WyvernLair:MC|Extreme Hills:MC|Extreme Hills Edge:MC|Extreme Hills+:MC|Ice Mountains>
+    S:MUSHROOM <MC|MushroomIsland:MC|MushroomIslandShore>
+    S:NETHER <MC|DesertHills:MC|Hell:MC|Lavaland:MC|Mesa (Bryce)>
+    S:OCEAN <MC|Deep Ocean:MC|FrozenOcean:MC|Ocean>
+    S:PLAINS <MC|Desert M:MC|Mesa (Bryce):MC|Mesa Plateau M:MC|Plains:MC|Savanna:MC|Savanna Plateau:MC|Sunflower Plains:MC|The Void:ZMASTER587|OceanSpires>
+    S:RIVER <MC|Asteroids:MC|Under End:ZMASTER587|OceanSpires>
+    S:SANDY <MC|Desert:MC|DesertHills:MC|Mesa:MC|Mesa Plateau:MC|Mesa Plateau F>
+    S:SAVANNA <MC|Desert M:MC|Lavaland:MC|Mesa (Bryce):MC|Mesa Plateau M:MC|Savanna:MC|Savanna M:MC|Savanna Plateau:MC|Savanna Plateau M>
+    S:SNOWY <MC|Asteroids:MC|Cold Beach:MC|Cold Taiga:MC|Cold Taiga Hills:MC|Cold Taiga M:MC|FrozenOcean:MC|Ice Mountains:MC|Ice Plains:MC|Ice Plains Spikes>
+    S:SPARSE <MC|Extreme Hills+:MC|JungleEdge M:MC|Mesa Plateau F:MC|Savanna:MC|Savanna M:MC|Savanna Plateau:MC|Savanna Plateau M:MC|Swampland M>
+    S:SPOOKY <MC|Roofed Forest>
+    S:SWAMP <MC|Swampland:MC|Swampland M>
+    S:WASTELAND <MC|Ice Plains>
+    S:WATER <>
+    S:WET <MC|Jungle:MC|Jungle M:MC|JungleEdge:MC|JungleHills:MC|Swampland:MC|Swampland M>

@@ -1,3 +1,5 @@
+FOLDERS # end # nether # overworld # space # wyvernend
+
 BIOME # ocean   # <MC|Ocean:MC|Deep Ocean>
 BIOME # beach   # <MC|Beach:MC|JungleEdge:MC|Stone Beach:MC|Desert M>
 BIOME # jungle  # <MC|JungleHills:MC|Jungle>
@@ -19,7 +21,7 @@ BIOME # blueLand # <ZMASTER587|Alien Forest>
 BIOME # crystalMoon # <ZMASTER587|CrystalChasms>
 BIOME # moon # <ZMASTER587|Moon>
 BIOME # space # <ZMASTER587|Space>
-BIOME # redWords # <ZMASTER587|Hot Dry Rock>
+BIOME # redWorlds # <ZMASTER587|Hot Dry Rock>
 BIOME # mushroom # <MC|MushroomIsland>
 BIOME # haven # <ZMASTER587|Stormland>
 
@@ -31,6 +33,7 @@ BIOME # land    # <beach:jungle:desert:savanna:forest:iceberg:hills:taiga:mesa:s
 BIOME # normal  # <land:ocean>
 BIOME # breathable # <blueLand:wyvernLair:land>
 BIOME # landWarm  # <beach:jungle:desert:savanna:mesa:swamp:mushroom:plains>
+BIOME # roughLand # <jungle:desert:savanna:forest:hills:taiga:mesa:swamp:mushroom>
 
 TYPE # GENERAL
     S:biomegroups <land>
@@ -45,20 +48,19 @@ TYPE # GENERAL
     I:minSpawnHeight=0
     S:opaqueBlock=all
     S:spawnBlockBlacklist <>
-    S:type=CREATURE
+    S:type=GENERAL
 
     D:chunkgenspawnchance=0.0
     I:mobspawnrange=8
     S:shouldseesky=UNDEFINED
     I:spawncap=0
-    I:spawntickrate=0
+    I:spawntickrate=100
     I:maxspawnheight=256
     I:minspawnheight=0
 
 TYPE # AMBIENT
 PARENT # GENERAL
     I:spawncap=40
-    I:spawntickrate=100
 
 TYPE # CREATURE
 PARENT # GENERAL
@@ -86,7 +88,7 @@ PARENT # GENERAL
 
 TYPE # FishSmall
 PARENT # WATER_CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <ocean:MC|Swampland>
     I:frequency=10
     I:maxChunk=4
@@ -95,7 +97,7 @@ CREATURES # clownfish # anchovies # anglers # manderin # angelfish # hippotang #
 
 TYPE # FishMedium
 PARENT # WATER_CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     I:frequency=15
     I:maxChunk=4
     I:maxSpawn=6
@@ -103,7 +105,7 @@ CREATURES # cod # salmon # bass # piranha
 
 TYPE # FishBig
 PARENT # WATER_CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     I:frequency=20
     I:maxChunk=4
     I:maxSpawn=3
@@ -111,186 +113,181 @@ CREATURES # dolphin # mantaray # stingray
 
 TYPE # FishEvil
 PARENT # WATER_CREATURE
-OWNER # DRZHARK
-    I:frequency=3
-    I:maxChunk=10
-    I:maxSpawn=7
-    I:minSpawn=4
+OWNER # DRZHARK|DRZHARK
+    I:frequency=100
 CREATURES # shark
 
-TYPE # Ambient
+TYPE # AmbientAll
 PARENT # AMBIENT
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <breathable>
 CREATURES # ant # dragonfly # bunny # firefly # maggot # roach
 
-TYPE # Ambient
+TYPE # AmbientWarm
 PARENT # AMBIENT
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <warm>
 CREATURES # fly # bee # butterfly # cricket # mole # snail # bird
 
-TYPE # Ambient
+TYPE # AmbientBeach
 PARENT # AMBIENT
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <beach>
 CREATURES # crab
 
-TYPE # Ambient
-PARENT # AMBIENT
-OWNER # DRZHARK
+TYPE # AmbientUnderground
+PARENT # UNDERGROUND
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <breathable>
-    S:shouldseesky=false
 CREATURES # mouse
 
 TYPE # Golem
 PARENT # MONSTER
-OWNER # DRZHARK
-    S:biomegroups <redWords>
+OWNER # DRZHARK|DRZHARK
+    S:biomegroups <redWorlds>
 CREATURES # biggolem # minigolem
 
 TYPE # AnimalSmallWarm
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <landWarm>
 CREATURES # turtle # turkey
 
 TYPE # AnimalSmallLand
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <land>
 CREATURES # kitty # goat # fox # duck
 
 TYPE # AnimalSmallWarmAndWyvern
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <landWarm:wyvernLair>
 CREATURES # snake
 
 TYPE # AnimalUndergound
 PARENT # UNDERGROUND
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <breathable>
 CREATURES # rat
 
 TYPE # AnimalLargeSwamp
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <swamp:mushroom>
 CREATURES # crocodile # komododragon # leopard
 
 TYPE # AnimalLargeDesertSavanna
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <savanna:desert>
 CREATURES # ostrich # pandabear
 
 TYPE # AnimalLargeDesertSnow
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <taiga:desert:iceberg>
 CREATURES # elephant
 
-TYPE # AnimalLargeDesert
+TYPE # AnimalLargeDesertHell
 PARENT # CREATURE
-OWNER # DRZHARK
-    S:biomegroups <desert>
-CREATURES # horsemob # scorpion
+OWNER # DRZHARK|DRZHARK
+    S:biomegroups <desert:nether>
+CREATURES # horsemob # scorpion # petscorpion
 
 TYPE # AnimalLargePolar
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <taiga:iceberg:crystalMoon>
 CREATURES # deer # polarbear
 
 TYPE # AnimalLargeHillsForest
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <hills:forest:blueLand>
 CREATURES # blackbear # boar # raccoon # wwolf
 
 TYPE # AnimalLargeHillsAndSnow
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <hills:taiga>
 CREATURES # grizzlybear # panthard
 
 TYPE # AnimalLargeJungle
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <jungle>
 CREATURES # panther # tiger # liard # liger
 
 TYPE # AnimalLargeSavanna
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <savanna>
 CREATURES # lion # lither
 
 TYPE # AnimalLargeLand
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <land:blueLand>
 CREATURES # wildhorse
 
 TYPE # HellCreature
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <nether:underEnd>
 CREATURES # hellrat
 
 TYPE # CaveOgre
-PARENT # MONSTER
-OWNER # DRZHARK
-    S:shouldseesky=false
+PARENT # UNDERGROUND
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <hills:underEnd>
 CREATURES # caveogre
 
 TYPE # FireOgre
 PARENT # MONSTER
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <nether:underEnd:lavaLand>
 CREATURES # fireogre
 
 TYPE # GreenOgre
 PARENT # MONSTER
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <hills:underEnd>
 CREATURES # greenogre
 
 TYPE # MagicWraight
 PARENT # MONSTER
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <desert:underEnd:end:crystalMoon:moon>
 CREATURES # wraith
 
 TYPE # MagicFlameWr
 PARENT # MONSTER
-OWNER # DRZHARK
-    S:biomegroups <lavaLand:nether:asteroids:redWords>
+OWNER # DRZHARK|DRZHARK
+    S:biomegroups <lavaLand:nether:asteroids:redWorlds>
 CREATURES # flamewraith
 
 TYPE # MagicFantastic
 PARENT # MONSTER
-OWNER # DRZHARK
-    S:biomegroups <crystalMoon:haven:redWords>
+OWNER # DRZHARK|DRZHARK
+    S:biomegroups <crystalMoon:haven:redWorlds>
 CREATURES # manticore # silverskeleton
 
 TYPE # MagicForest
 PARENT # MONSTER
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <blueLand:mushroom>
 CREATURES # werewolf # ent
 
 TYPE # CannotSpawn
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     B:canSpawn=false
 CREATURES # egg # kittybed # litterbox # manticorepet # petscorpion
 
 TYPE # Wyvern
 PARENT # CREATURE
-OWNER # DRZHARK
+OWNER # DRZHARK|DRZHARK
     S:biomegroups <wyvernLair>
     I:frequency=10
     I:maxChunk=4
@@ -299,95 +296,165 @@ CREATURES # wyvern
 
 TYPE # VanAmbient
 PARENT # AMBIENT
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <breathable>
 CREATURES # bat # rabbit
 
 TYPE # VanCattle
 PARENT # CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <land:blueLand:mushroom>
 CREATURES # chicken # cow # entityhorse # pig # sheep
 
 TYPE # VanCattleMushroom
 PARENT # CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <mushroom>
 CREATURES # mushroomcow
 
 TYPE # VanCattleWolf
 PARENT # CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <savanna:forest:hills:taiga:blueLand>
 CREATURES # wolf
 
 TYPE # VanCattleOzelot
 PARENT # CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <savanna:jungle>
 CREATURES # ozelot
 
 TYPE # VanCattlePolarB
 PARENT # CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
     S:biomegroups <taiga:iceberg:crystalMoon>
 CREATURES # polarbear
 
 TYPE # VanWaterCattle
 PARENT # WATER_CREATURE
-OWNER # Vanilla
+OWNER # MC|Vanilla
 CREATURES # squid
 
-TYPE # VanNormalMonster
+TYPE # VanNormalMonsterSnowSpace
 PARENT # MONSTER
-OWNER # Vanilla
-CREATURES # cavespider # creeper # enderman # endermite # giant # shulker # silverfish # skeleton # slime # snowman # spider # witch # zombie
+OWNER # MC|Vanilla
+    S:biomegroups <crystalMoon>
+CREATURES # snowman
+
+TYPE # VanUndergroundMonster
+PARENT # UNDERGROUND
+OWNER # MC|Vanilla
+    S:biomegroups <normal:blueLand:mushroom:underEnd>
+CREATURES # slime # cavespider
+
+TYPE # VanNormalMonsterEndOnly
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <end:haven>
+CREATURES # endermite # enderdragon # shulker
+
+TYPE # VanNormalMonsterEnderman
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <end:haven:roughLand:redWorlds>
+CREATURES # enderman
+
+TYPE # VanNormalMonsterZombieWitch
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <normal:blueLand:mushroom:underEnd>
+CREATURES # witch # zombie
+
+TYPE # VanNormalMonsterCreeper
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <roughLand:iceberg:underEnd:asteroids:blueLand:crystalMoon:mushroom>
+CREATURES # creeper
+
+TYPE # VanNormalMonsterGiant
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <hills:swamp:blueLand>
+CREATURES # giant
+
+TYPE # VanNormalMonsterSilverfish
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <lavaLand:redWorlds:mushroom>
+CREATURES # silverfish
+
+TYPE # VanNormalMonsterSkeleton
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <roughLand:iceberg:underEnd:beach:redWorlds:mushroom:nether>
+CREATURES # skeleton
+
+TYPE # VanNormalMonsterSpider
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    S:biomegroups <roughLand:blueLand>
+CREATURES # spider
 
 TYPE # VanWaterMonster
 PARENT # MONSTER
-OWNER # Vanilla
+OWNER # MC|Vanilla
+    S:biomegroups <ocean>
 CREATURES # guardian
 
-TYPE # VanNetherMonster
+TYPE # VanNetherMonsterLava
 PARENT # MONSTER
-OWNER # Vanilla
-CREATURES # blaze # ghast # lavaslime # pigzombie # petscorpion
+OWNER # MC|Vanilla
+    S:biomegroups <nether:lavaLand>
+CREATURES # blaze # pigzombie
 
-TYPE # EnderDragon
+TYPE # VanNetherMonsterLavaRed
 PARENT # MONSTER
-OWNER # Vanilla
-CREATURES # enderdragon
+OWNER # MC|Vanilla
+    S:biomegroups <nether:lavaLand:redWorlds>
+CREATURES # lavaslime
+
+TYPE # VanNetherMonsterGhast
+PARENT # MONSTER
+OWNER # MC|Vanilla
+    I:maxSpawn=2
+    S:biomegroups <nether:lavaLand:asteroids>
+CREATURES # ghast
 
 TYPE # WitherBoss
 PARENT # MONSTER
-OWNER # Vanilla
+OWNER # MC|Vanilla
+    I:maxSpawn=2
+    S:biomegroups <haven>
 CREATURES # witherboss
 
 TYPE # Villager
 PARENT # MONSTER
-OWNER # Vanilla
+OWNER # MC|Vanilla
     B:canSpawn=false
 CREATURES # villager # villagergolem
 
 TYPE # ChaosGuardian
 PARENT # MONSTER
-OWNER # BRANDON3055
+OWNER # BRANDON3055|BRANDON3055
+    I:maxSpawn=1
+    S:biomegroups <>
 CREATURES # chaosguardian
 
 TYPE # PlayerGhost
 PARENT # MONSTER
-OWNER # DE
+OWNER # DE|DE
+    S:biomegroups <haven>
 CREATURES # playerghost
 
 TYPE # ButterflyGE
-PARENT # MONSTER
-OWNER # FORESTRY
+PARENT # AMBIENT
+OWNER # FORESTRY|FORESTRY
+    I:maxSpawn=1
+    S:biomegroups <breathable>
 CREATURES # butterflyge
 
 TYPE # BlueSlime
 PARENT # MONSTER
-OWNER # SLIMEKNIGHTS
+OWNER # SLIMEKNIGHTS|SLIMEKNIGHTS
+    S:biomegroups <blueLand:mushroom>
 CREATURES # blueslime
-
-
-

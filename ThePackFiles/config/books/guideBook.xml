@@ -321,6 +321,7 @@
 			<link ref="ch4x:pg1">Forrest Islands</link>
 			<link ref="ch4x:pg2">Flower Forrest Islands</link>
 			<link ref="ch4x:pg3">Jungle Islands</link>
+			<link ref="ch4x:pg3a">Swamp Islands</link>
 			<link ref="ch4x:pg4">Desert Islands</link>
 			<link ref="ch4x:pg5">Savanna Islands</link>
 			<link ref="ch4x:pg6">Iceberg Islands</link>
@@ -368,6 +369,15 @@
 			<stack item="forestry:ingotTin" x="0"/><p indent="20" space="10">Tin [30-100]</p>
 			<stack item="railcraft:ingot" meta="6" x="0"/><p indent="20" space="10">Nickel [30-50]</p>
 			<stack item="minecraft:dye" meta="4" x="0"/><p indent="20" space="10">Lapis [5-25]</p>
+		</page>
+		<page id="pg3a">
+			<p bold="true" italics="true">Swamp Islands</p>
+			<stack item="minecraft:coal" x="0"/><p indent="20" space="10">Coal [0-120]</p>
+			<stack item="minecraft:redstone" x="0"/><p indent="20" space="10">Redstone [0-16]</p>
+			<stack item="forestry:ingotTin" x="0"/><p indent="20" space="10">Tin [30-100]</p>
+			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [40-120]</p>
+			<stack item="minecraft:iron_ingot" x="0"/><p indent="20" space="10">Iron [10-55]</p>
+			<stack item="railcraft:ingot" meta="3" x="0"/><p indent="20" space="10">Lead [15-40]</p>
 		</page>
 		<page id="pg4">
 			<p bold="true" italics="true">Desert Islands</p>

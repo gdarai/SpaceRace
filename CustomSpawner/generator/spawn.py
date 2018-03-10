@@ -82,7 +82,7 @@ def expandWildchars( lst0, lstFull ):
 	return lst1
 
 def processLastObject( data, newObject ):
-    if (newObject == {}):
+    if (newObject == {} or newObject['type'] == 'none'):
         return data
     if (newObject['type'] == 'type'):
         data['types'][newObject['name']]=copy.deepcopy(newObject)
@@ -107,6 +107,16 @@ def addParameter( parDict, newPar ):
     parName = readParam(newPar)[0]
     parDict[parName] = newPar
     return parDict
+
+def copytree(src, dst, symlinks=False, ignore=None):
+    for item in os.listdir(src):
+        s = os.path.join(src, item)
+        d = os.path.join(dst, item)
+        if os.path.isdir(s):
+            shutil.copytree(s, d, symlinks, ignore)
+        else:
+            shutil.copy2(s, d)    
+    
 ########
 # Data loading
 
@@ -118,7 +128,9 @@ data = {}
 data['biomes'] = {}
 data['owners'] = {}
 data['types'] = {}
+data['folders'] = []
 newObject={}
+newObject['type'] = 'none'
 for line in lines:
     if(line[0:2]=='//'):
         continue
@@ -135,6 +147,9 @@ for line in lines:
         newObject['entities'] = []
         newObject['owner'] = ''
         print('NEW Type Group '+ln[1])
+    elif(cmd=='FOLDERS'):
+        print('NEW Folder list '+str(parseLine(line)[1:]))
+        data['folders'] = data['folders'] + parseLine(line)[1:]
     elif(cmd=='BIOME'):
         data = processLastObject(data, newObject)
         newObject = {}
@@ -185,56 +200,69 @@ if not os.path.exists(directory):
 # Let's do it
 data['usedTypes'] = {}
 data['usedBiomes'] = {}
-crDir = directory+'/'+'Creatures'
+crDir = directory+'/source/'+'Creatures'
 
 os.makedirs(crDir)
 # Print Creatures files
-for owner in data['owners'].keys():
+for ownerStr in data['owners'].keys():
+    ownerLst = ownerStr.split("|")
+    owner = ownerLst[1]
+    abbrev = ownerLst[0]
+    print('Owner '+owner+', biome abbrevation '+abbrev)	
     f = open(crDir+'/'+owner+'.cfg','w')
     print('Printing '+crDir+'/'+owner+'.cfg')
     writeLine(f,0,'# Configuration file')
-    for entityType in data['owners'][owner]:
+    entList = {}
+    for entityType in data['owners'][ownerStr]:	
         print(' - Entity '+entityType)
         d = data['types'][entityType]
         for anim in d['entities']:
-            print(' - - '+anim)
-            writeLine(f,0,'')
-            writeLine(f,0,'####################')
-            writeLine(f,0,'# '+anim)
-            writeLine(f,0,'####################')
-            writeLine(f,0,'')
-            writeLine(f,0,anim+' {')
+            lines = []
+            print(' - - '+anim)            
             if 'S:biomegroups ' not in d['params']:
                 printError('entity '+entityType+' is missing parameter S:biomegroups ')
             biom = readParam(d['params']['S:biomegroups '])
-            biomName = owner+'_'+anim.upper()+'_DEFAULT'
+            biomName = abbrev+'_'+anim.upper()+'_DEFAULT'
             data['biomes'][biomName] = biom[1:]
-            writeLine(f,1,'S:biomegroups <'+biomName+'>')
+            if(biomName == 'DRZHARK_ELEPHANT_DEFAULT'):
+                print(str(biom))
+                print(str(data['biomes'][biomName]))
+            data['usedBiomes'][biomName] = 'used'
+            lines.append('    S:biomegroups <'+anim.upper()+'_DEFAULT>')
             for param in entitParams:
                 if param not in d['params']:
                     printError('entity '+entityType+' is missing parameter '+param)
                 else:
-                    writeLine(f,0,d['params'][param])
-            biom = readParam(d['params']['S:biomegroups '])
-            for b in biom[1:]:
-                data['usedBiomes'][biomName] = 'used'
+                    lines.append(d['params'][param])
             usedType = readParam(d['params']['S:type'])[1]
             data['usedTypes'][usedType] = 'used'
-            writeLine(f,0,'}')
+            entList[anim] = lines
+    animList = list(entList.keys())
+    animList.sort()
+    for anim in animList:
+        writeLine(f,0,'')
+        writeLine(f,0,'####################')
+        writeLine(f,0,'# '+anim)
+        writeLine(f,0,'####################')
+        writeLine(f,0,'')
+        writeLine(f,0,anim+' {')
+        for ln in entList[anim]:
+            writeLine(f,0,ln)
+        writeLine(f,0,'}')
     f.close()
 # Print EntitySpawnTypes file
-f = open(directory+'/EntitySpawnTypes.cfg','w')
-print('Printing '+directory+'/EntitySpawnTypes.cfg')
+f = open(directory+'/source/EntitySpawnTypes.cfg','w')
+print('Printing '+directory+'/source/EntitySpawnTypes.cfg')
 writeLine(f,0,'# Configuration file')
 for typ in data['usedTypes'].keys():
     print(' - typ '+typ)
     writeLine(f,0,'')
     d = data['types'][typ]
     writeLine(f,0,'####################')
-    writeLine(f,0,'# '+typ)
+    writeLine(f,0,'# '+typ.lower())
     writeLine(f,0,'####################')
     writeLine(f,0,'')
-    writeLine(f,0,typ+' {')
+    writeLine(f,0,typ.lower()+' {')
     for param in typeParams:
         if param not in d['params']:
             printError('entity '+typ+' is missing parameter '+param)
@@ -243,8 +271,8 @@ for typ in data['usedTypes'].keys():
     writeLine(f,0,'}')
 f.close()
 # Print EntityBiomeGroups file
-f = open(directory+'/EntityBiomeGroups.cfg','w')
-print('Printing '+directory+'/EntityBiomeGroups.cfg')
+f = open(directory+'/source/EntityBiomeGroups.cfg','w')
+print('Printing '+directory+'/source/EntityBiomeGroups.cfg')
 writeLine(f,0,'# Configuration file')
 writeLine(f,0,'')
 writeLine(f,0,'####################')
@@ -255,8 +283,11 @@ writeLine(f,0,'biomegroup-defaults {')
 for biom in data['usedBiomes'].keys():
     print(' - biome '+biom)
     biomOut = {}
-    biomOut[data['biomes'][biom][0]]='ok'
+    biomOut[biom]='ok'
     parseBiom = True
+    if(biom=='DRZHARK_ELEPHANT_DEFAULT'):
+        print(biom)
+        print(str(biomOut.keys()))
     while parseBiom:
         parseBiom = False
         biomIn = biomOut.keys()
@@ -273,7 +304,17 @@ for biom in data['usedBiomes'].keys():
                     biomOut[b] = 'ok'
                 parseBiom = True
     biomeListString = ":".join(biomOut.keys())
-    writeLine(f,1,biom+' <'+biomeListString+'>')
+    if(biom=='DRZHARK_ELEPHANT_DEFAULT'):
+        print(biomeListString)
+    writeLine(f,1,'S:'+biom+' <'+biomeListString+'>')
 writeLine(f,0,'}')
 writeLine(f,0,'')
 f.close()
+
+for fld in data['folders']:
+    outDir = directory+'/'+fld
+    if not os.path.exists(outDir):
+        os.makedirs(outDir)
+    copytree(directory+'/source', outDir)
+
+shutil.rmtree(directory+'/source')

@@ -1,5 +1,5 @@
 QUEST   #  A00      #  Initial Warnings
-TEXT    #  SOME WARNINGS for a new contestant:\n\n1) STAY OUT OF WATER !! AQUA-CREEPERS are BAD !!\n2) Build a Bed/Sleeping bag, this is ZOMBIE territory\n3) Sleep through nights\n4) Focus on food variety
+TEXT    #  SOME WARNINGS for a new contestant:\n\n1) STAY OUT OF WATER !! Piranha are BAD !!\n2) Build a Bed/Sleeping bag, this is ZOMBIE territory\n3) Sleep through nights\n4) Focus on food variety\n\nTry reading the GuideBook. It contains a lot of useful information.
 
 TASK    #  TRIGGER
 TASK    #  HAVE     #  WoodShears

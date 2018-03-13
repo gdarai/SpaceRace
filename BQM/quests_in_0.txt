@@ -16,7 +16,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  020      #  Your Home
-TEXT    #  Your home is a moon orbitting the HomeWorld gas giant, 3rd planet of the star A. I call this moon Home. Speciality of the Home is that it is an Ocean moon with a lot of islands. Another speciality is that it's mineral deposits are spreaded based on the biome, which dominates each island.\n\n Meaning find a tropical island and it will have different ores underneath than a desert island. For your ease, I will give you here list of know island types and their ores so you don't have to just guess. A pro po, Boats are disabled and Ocean is full of aqua-creepers. Build yourself a Ship or AirShip.
+TEXT    #  Your home is a moon orbitting the HomeWorld gas giant, 3rd planet of the star A. I call this moon Home. Speciality of the Home is that it is an Ocean moon with a lot of islands. Another speciality is that it's mineral deposits are spreaded based on the biome, which dominates each island.\n\nMeaning find a tropical island and it will have different ores underneath than a desert island. For your ease, I will give you here list of know island types and their ores so you don't have to just guess. A pro po, Boats are disabled and Ocean is full of aqua-creepers. Build yourself a Ship or AirShip.
 PREREQ  #  AND      #  010
 
 TASK    #  TRIGGER
@@ -117,7 +117,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  2x5      #  Desert Islands
-TEXT    #  Saltpeter [50-80]\n Redstone [0-16]\n Emerald [40-130]\nDiamond [5-25]
+TEXT    #  Saltpeter [50-80]\nRedstone [0-16]\nEmerald [40-130]\nDiamond [5-25]
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER
@@ -126,7 +126,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  2x6      #  Savanna Islands
-TEXT    #  Iron [10-55]\n Nickel [30-50]\n Eezo [15-40]\n Aluminium [40-120]
+TEXT    #  Iron [10-55]\nNickel [30-50]\nEezo [15-40]\nAluminium [40-120]
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER
@@ -135,7 +135,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  2x7      #  Iceberg Island
-TEXT    #  Gold [5-35]\nLead [15-40]\nOsram [0-10]\n Silver [20-55]
+TEXT    #  Gold [5-35]\nLead [15-40]\nOsram [0-10]\nSilver [20-55]
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER
@@ -153,7 +153,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  2x9      #  Taiga Island
-TEXT    #  Osram [0-10]\nZinc [30-40]\n Aluminium [40-120]\n Gold [5-35]\n Diamond [5-25]
+TEXT    #  Osram [0-10]\nZinc [30-40]\nAluminium [40-120]\nGold [5-35]\nDiamond [5-25]
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER
@@ -162,7 +162,16 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  2x10     #  Messa Island
-TEXT    #  NETHERRACK !!\nNether quartz [10-150]\nGold [5-35]\nLapis [5-25]\nSilver [20-55]\n Prometheum [2-45]
+TEXT    #  NETHERRACK !!\nNether quartz [10-150]\nGold [5-35]\nLapis [5-25]\nSilver [20-55]\nPrometheum [2-45]
+PREREQ  #  AND      #  020
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  2x11     #  Swamp Island
+TEXT    #  Coal [0-120]\nRedstone [0-16]\nTin [30-100]\nAluminium [40-120]\nIron [10-55]\nLead [15-40]
 PREREQ  #  AND      #  020
 
 TASK    #  TRIGGER
@@ -182,7 +191,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  4x2      #  Asteroid Belt
-TEXT    #  Belt is the second Moon of your HomeWorld Giant. But before you go there here is small warning. It is an Asteroid Belt. It can easily happen, that your rocket will not hit any land and just disappear into the space. But sooner or later, you will have to go there anyway. So Good Luck.\n\nAnd Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver.\n\n Also Cobalt, Ardite and Nether Quartz.
+TEXT    #  Belt is the second Moon of your HomeWorld Giant. But before you go there here is small warning. It is an Asteroid Belt. It can easily happen, that your rocket will not hit any land and just disappear into the space. But sooner or later, you will have to go there anyway. So Good Luck.\n\nAnd Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver.\n\nAlso Cobalt, Ardite and Nether Quartz.
 PREREQ  #  AND      #  040
 
 TASK    #  TRIGGER
@@ -200,7 +209,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  5x1      #  LavaWorld Planet
-TEXT    #  Closest planet to the Sun, Very Hot and Hostile.\n\nNeeds Lava World Orb\n\nSmall deposits of Redstone, Aluminium, Copper, Tin, Zinc, Nickel, Eezo and Dilithium\n\nLarge deposits of Iron, Gold, Lead, Eezo, Basalt, Silver and Carmesine\n\n Also Meteorite, Apatite, Titanium and Osram\n\nNeherrack, Tiberium, Cobalt, Ardite and Nether Quartz
+TEXT    #  Closest planet to the Sun, Very Hot and Hostile.\n\nNeeds Lava World Orb\n\nSmall deposits of Redstone, Aluminium, Copper, Tin, Zinc, Nickel, Eezo and Dilithium\n\nLarge deposits of Iron, Gold, Lead, Eezo, Basalt, Silver and Carmesine\n\nAlso Meteorite, Apatite, Titanium and Osram\n\nNeherrack, Tiberium, Cobalt, Ardite and Nether Quartz
 PREREQ  #  AND      #  050
 
 TASK    #  TRIGGER
@@ -272,7 +281,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  7x3      #  RocksInSky Asteroid Belt
-TEXT    #  It orbits the OceanWorld, so it requires the Ocean World Orb.\n\nIt is an Asteroid Belt, so beware of the landing hazard.\n\n Deposits of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Titanium, Silver, Cobalt, Ardite, Nether Quartz and Prometheum.
+TEXT    #  It orbits the OceanWorld, so it requires the Ocean World Orb.\n\nIt is an Asteroid Belt, so beware of the landing hazard.\n\nDeposits of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Titanium, Silver, Cobalt, Ardite, Nether Quartz and Prometheum.
 PREREQ  #  AND      #  070
 
 TASK    #  TRIGGER

@@ -17,11 +17,12 @@ QUEST        #  2x2        #  -10:-25    #  20    #  SaplingOak
 QUEST        #  2x3        #    0:-25    #  20    #  Poppy
 QUEST        #  2x4        #   10:-25    #  20    #  SaplingJungle
 QUEST        #  2x5        #   20:-25    #  20    #  DeadBush
-QUEST        #  2x6        #  -20:-13    #  20    #  SaplingAcacia
-QUEST        #  2x7        #  -10:-13    #  20    #  Ice
-QUEST        #  2x8        #    0:-13    #  20    #  Cobble
-QUEST        #  2x9        #   10:-13    #  20    #  SaplingSpruce
-QUEST        #  2x10       #   20:-13    #  20    #  HardenedClay
+QUEST        #  2x6        #  -25:-13    #  20    #  SaplingAcacia
+QUEST        #  2x7        #  -15:-13    #  20    #  Ice
+QUEST        #  2x8        #   -5:-13    #  20    #  Cobble
+QUEST        #  2x9        #    5:-13    #  20    #  SaplingSpruce
+QUEST        #  2x10       #   15:-13    #  20    #  HardenedClay
+QUEST        #  2x11       #   25:-13    #  20    #  Lillypad
 
 QUEST        #  4x1        #   30:25     #  20    #  MoonTurf
 QUEST        #  4x2        #   40:25     #  20    #  FireworkStar
@@ -313,3 +314,25 @@ QUEST        #  MAxo06      #   60:0	  #  20    #  bucket			# chain
 QUEST        #  MAxo07      #   60:10	  #  20    #  Carpenter			# chain
 QUEST        #  MAxo08      #   60:20	  #  20    #  iePower02			# chain
 QUEST        #  MAxo09      #   60:30	  #  20    #  spTorch			# chain
+
+// ------------------>
+// Hoarding quests
+// ------------------>
+
+LINE         #  HA         #  Hoading for beginners
+SIZE         #  2:2        #  50:50
+TEXT         #  What would it be if this Questing Modpack would not have hoarding quests.
+
+QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main
+QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main
+QUEST        #  HA20        #   10:-15 	  #  40    #  SoulSand  		# main
+
+QUEST        #  HAx0        #  -58:10	  #  25    #  SearedFurnace
+QUEST        #  HAx1        #  -42:10	  #  25    #  HEggplant
+QUEST        #  HAx2        #  -58:30	  #  25    #  Fish
+QUEST        #  HAx3        #  -42:30	  #  25    #  BrickClay
+
+QUEST        #  HAx10       #  -28:10	  #  25    #  HZombie
+QUEST        #  HAx11       #  -12:10	  #  25    #  Reef0
+QUEST        #  HAx12       #  -28:30	  #  25    #  RabbitFoot
+QUEST        #  HAx13       #  -12:30	  #  25    #  ObsidianShard

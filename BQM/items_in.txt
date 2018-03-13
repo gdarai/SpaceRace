@@ -34,6 +34,7 @@ ITEM  #  DeadBush		#  minecraft:deadbush
 ITEM  #  Ice			#  minecraft:ice
 ITEM  #  Cobble			#  minecraft:cobblestone
 ITEM  #  HardenedClay	#  minecraft:stained_hardened_clay:1
+ITEM  #  Lillypad   	#  minecraft:waterlily
 
 ITEM  #  MoonTurf		#  advancedrocketry:moonTurf
 ITEM  #  FireworkStar	#  minecraft:firework_charge
@@ -611,3 +612,14 @@ ITEM # spFabric 	# immersiveengineering:material:5
 ITEM # spPlank 		# immersiveengineering:treatedWood
 ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material": "flint" }
 ITEM # spWool 		# minecraft:wool
+
+// Hoarding quests A
+
+ITEM # SteelIngDict # immersiveengineering:metal:8 # ORE:ingotSteel
+ITEM # SearedBrick  # tconstruct:seared:3
+ITEM # SearedFurnace # tconstruct:seared_furnace_controller
+ITEM # HEggplant # harvestcraft:eggplantitem
+ITEM # Reef0 # coralreef:reef
+ITEM # Reef1 # coralreef:reef:1
+ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material": "obsidian" }
+ITEM # RabbitFoot #  minecraft:rabbit_foot

@@ -64,10 +64,10 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "aquacreeper.entities.EntityAquaCreeper",
-      "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
+      "Entity Class": "animalium.entities.EntityPiranha",
+      "Weight": 20,
+      "Min Group Count": 3,
+      "Max Group Count": 5
     }
   ],
   "Spawnable Water Creatures": [

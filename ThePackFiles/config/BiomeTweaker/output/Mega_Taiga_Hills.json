@@ -102,6 +102,24 @@
       "Weight": 5,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "animalium.entities.EntityWildDog",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "animalium.entities.EntityBear",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "animalium.entities.EntityRat",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 2
     }
   ],
   "Spawnable Water Creatures": [

@@ -59,7 +59,7 @@
 			<p>Some people do not like this so here is all the warnings I could think of.</p>
 		</page>
 		<page>
-			<link ref="ch2:d0">Aqua Creepers</link>
+			<link ref="ch2:d0">Swimming</link>
 			<link ref="ch2:d1">Spice of Life</link>
 			<link ref="ch2:d1a">Moving World</link>
 			<link ref="ch2:d2">Void</link>
@@ -68,8 +68,8 @@
 			<link ref="ch2:d5">Warp</link>
 		</page>
 		<page id="d0">
-			<p bold="true" italics="true">Aqua Creepers</p>
-			<p>Deadly fast and living in all Homeworld oceans.</p>
+			<p bold="true" italics="true">Swimming</p>
+			<p>Deadly fast and living in all Homeworld oceans. That is Piranha.</p>
 			<p />
 			<p>Beware, they can jump from the water if you stand too close.</p>
 		</page>
@@ -88,8 +88,8 @@
 		<page>
 			<p>Know death causes:</p>
 			<space height="10" />
-			<p>Flat ship with Helm close to water. Safe is 4+ blocks.</p>
-			<p>Parking ship on AquaCreeper.</p>
+			<p>Flat ship with Helm close to water. Beware Piranha.</p>
+			<p>Parking ship on Flowing Water. You will loose it.</p>
 			<p>Ship without means to climb on it.</p>
 			<p>Ship without enough fuel.</p>
 		</page>
@@ -160,7 +160,7 @@
 			<title>Messed-up Recipes</title>
 			<p>If you don't know... I changed A LOT of recipes. JEI caught most of the changes but as I understand not all of them.</p>
 			<p />
-			<p>So about some things, it will be telling you that such receipt exists and it will not work.</p>
+			<p>So about some things, it will be telling you that such receipt exists and it will not be true.</p>
 		</page>
 		<page id="pg1">
 			<p>Here is the list of what is the JEI lying about:</p>
@@ -170,7 +170,7 @@
 			<link ref="ch3:pg3">Smelting</link>
 			<link ref="ch3:pg3a">Carpenter and ThFab</link>
 			<link ref="ch3:pg4">Refined Storage</link>
-			<link ref="ch3:pg4a">Empoweer</link>
+			<link ref="ch3:pg4a">Empowerer</link>
 			<link ref="ch3:pg5">Nihilite Alloy</link>
 		</page>
 		<page id="pg2">
@@ -198,7 +198,7 @@
 		</page>
 		<page id="pg2b">
 			<p bold="true" italics="true">Harvestcraft Machines</p>
-			<p>JEI totally ignores Harvestcraft Presser recipes. Find them on the wiki, it is a good source of wax, honey and more.</p>
+			<p>I installed JEI addon for those, but in case it is still missing something:</p>
 			<stack item="harvestcraft:presser" x="0"/>
 			<stack item="harvestcraft:apiary" x="40"/>
 			<stack item="harvestcraft:groundtrap" x="60"/>
@@ -938,6 +938,7 @@
 		<page>
 			<title>Age of Exploration (2/2)</title>
 			<link ref="ch7:pg10">Carpenter and Thermionics</link>
+			<link ref="ch7:pg10a">Carpenter is bugged</link>
 			<link ref="ch7:pg11">Why to build a Ship</link>
 			<link ref="ch7:pg12">Power Production and Distribution</link>
 			<link ref="ch7:pg13">Regular Steel</link>
@@ -1147,6 +1148,12 @@
 			<stack item="forestry:fabricator" x="0"/>
 			<stack item="forestry:carpenter" x="20"/>
 			<stack item="forestry:engine_clockwork" x="50"/>
+		</page>
+		<page id="pg10a">
+			<p bold="true" italics="true">Carpenter is bugged</p>
+			<p>Carpenter has small issue. Whenever you close and reopen the game it stops accept different liquids than: Water, Seed Oil and Honey.</p>
+			<space height="20" />
+			<p>That is why all important recipes have also Off-Carpenter variant suitable for auto-crafting.</p>
 		</page>
 		<page id="pg11">
 			<p bold="true" italics="true">Why to build a Ship</p>

@@ -102,7 +102,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  Cx04     #  Flying
-TEXT    #  If you are tired of evading aqua creepers, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
+TEXT    #  If you are tired of evading piranha, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
 PREREQ  #  AND      #  C00
 
 TASK    #  TRIGGER
@@ -129,7 +129,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  Cx30     #  Magic Seeds
-TEXT    #  If you are tired of evading islands, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
+TEXT    #  Mystical agriculture gives you opportunity to grow ores. At first, Wood, Dirt, Stone or Water... but later on all Metals and other useful stuff. What you need is Prosperity Ore, which can be found in the UnderEnd. Also, Mystical plants can be harvested by forestry farm, if you will set it on crop.
 PREREQ  #  AND      #  C30
 
 TASK    #  TRIGGER
@@ -138,7 +138,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  Cx31     #  Magic Tools
-TEXT    #  If you are tired of evading islands, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
+TEXT    #  Mystical agriculture gives you also access to new levels of tools, weapons and armor. Inferium and Prudentium armor should be now in your reach. They can be also later on changed to Air Tight - space capable versions.
 PREREQ  #  AND      #  C30
 
 TASK    #  TRIGGER

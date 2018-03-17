@@ -667,6 +667,37 @@
     },
     {
         "mode": "ADD",
+        "result": "opencomputers:upgrade,1,32",
+        "catalyst": "opencomputers:component,1,5",
+        "energy": 10000000,
+        "tier": 2,
+        "ingredients": [
+            "tp:emerald_apple",
+            "tp:emerald_apple",
+            "tconstruct:materials,1,50",
+            "tconstruct:materials,1,50",
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "railcraft:locomotive_creative",
+        "catalyst": "railcraft:locomotive_steam_solid",
+        "energy": 10000000,
+        "tier": 1,
+        "ingredients": [
+            "libvulpes:metal0,1,10",
+            "libvulpes:metal0,1,10",
+            "libvulpes:metal0,1,10",
+            "libvulpes:metal0,1,10",
+            "tconstruct:materials,1,50",
+            "tconstruct:materials,1,50",
+            "tconstruct:materials,1,50",
+            "tconstruct:materials,1,50",
+            "advancedrocketry:liquidTank,1,0,{Fluid:{FluidName:dilithium_fluid, Amount:64000}}"
+        ]
+    },
+    {
+        "mode": "ADD",
         "result": "draconicevolution:creative_rf_source",
         "catalyst": "draconicevolution:reactor_core",
         "energy": 100000000,
@@ -682,6 +713,55 @@
             "draconicevolution:dislocator_advanced,1,0,{}",
             "tconstruct:materials,1,50",
             "tconstruct:materials,1,50"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:draconium_block",
+        "catalyst": "actuallyadditions:itemMisc,1,18",
+        "energy": 10000,
+        "tier": 0,
+        "ingredients": [
+            "mysticalagriculture:charm_rainbow,1,0",
+            "draconicevolution:draconium_ingot,1,0",
+            "draconicevolution:draconium_ingot,1,0",
+            "draconicevolution:draconium_ingot,1,0",
+            "draconicevolution:draconium_ingot,1,0",
+            "draconicevolution:infused_obsidian,1,0",
+            "draconicevolution:infused_obsidian,1,0",
+            "draconicevolution:infused_obsidian,1,0",
+            "draconicevolution:infused_obsidian,1,0",
+            "forestry:refractory,1,1,{Fluid:{FluidName:uranium, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:uranium, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:uranium, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:uranium, Amount:1000}}"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "minecraft:golden_apple,1,1",
+        "catalyst": "minecraft:golden_apple",
+        "energy": 50000,
+        "tier": 1,
+        "ingredients": [
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "ore:blockGold",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
+            "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}"
         ]
     }
 ]

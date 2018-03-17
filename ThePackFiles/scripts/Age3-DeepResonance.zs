@@ -25,7 +25,7 @@ mods.actuallyadditions.AtomicReconstructor.addRecipe(<deepresonance:resonating_o
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<deepresonance:resonating_ore:1>, plate*4, 50000);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<deepresonance:resonating_ore:2>, plate*4, 50000);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<immersiveengineering:material:7>, <deepresonance:filter>, 10000);
-mods.forestry.Carpenter.addRecipe(DRframe, [[leadPlate, strongGlass, leadPlate], [plate, <advancedrocketry:productgear>, plate], [leadPlate, <advancedrocketry:ic:3>, leadPlate]], 300, <liquid:eezo_fluid> * 1000, null);
+mods.forestry.Carpenter.addRecipe(DRframe, [[leadPlate, strongGlass, leadPlate], [plate, <advancedrocketry:productgear>, plate], [leadPlate, <advancedrocketry:ic:3>, leadPlate]], 300, <liquid:seed.oil> * 1000, <forestry:can:1>.withTag({"Fluid":{"FluidName":"eezo_fluid", Amount:1000}}));
 
 // Armor
 recipes.remove(<deepresonance:helmet>);
@@ -41,8 +41,8 @@ recipes.addShaped(<deepresonance:boots>, [[null, null, null], [plate, <forestry:
 // Basic Blocks
 recipes.remove(DRobsidian);
 recipes.remove(DRglass);
-mods.forestry.Carpenter.addRecipe(DRobsidian, [[plate, leadPlate, plate], [leadPlate, <draconicevolution:infused_obsidian>, leadPlate], [plate, leadPlate, plate]], 300, <liquid:tiberium_fluid> * 250, <forestry:waxCast>);
-mods.forestry.Carpenter.addRecipe(DRglass, [[DRfilter, strongGlass, DRfilter], [strongGlass, DRobsidian, strongGlass], [DRfilter, strongGlass, DRfilter]], 300, <liquid:glass> * 1000, null);
+mods.forestry.Carpenter.addRecipe(DRobsidian, [[plate, leadPlate, plate], [leadPlate, <draconicevolution:infused_obsidian>, leadPlate], [plate, leadPlate, plate]], 300, <liquid:seed.oil> * 250, <taiga:tiberium_dust>);
+mods.forestry.ThermionicFabricator.addCast(DRglass, [[DRfilter, strongGlass, DRfilter], [strongGlass, DRobsidian, strongGlass], [DRfilter, strongGlass, DRfilter]], 1000, null);
 
 //Utils
 recipes.remove(<deepresonance:lens>);

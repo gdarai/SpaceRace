@@ -570,4 +570,50 @@
 			<itemStack>powersuits:powerArmorComponent 1 19</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="1200" power ="80">
+		<input>
+            <itemStack>railcraft:plate 1 9</itemStack>
+            <itemStack>advancedrocketry:misc</itemStack>
+			<itemStack>opencomputers:material 2 7</itemStack>
+			<itemStack>opencomputers:material 1 9</itemStack>
+			<itemStack>advancedrocketry:lens</itemStack>
+			<fluidStack>eezo_fluid 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:holoProjector</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="40">
+		<input>
+            <itemStack>minecraft:glass_bottle</itemStack>
+            <oreDict>nuggetBrass 3</oreDict>
+            <oreDict>nuggetSilver 3</oreDict>
+			<fluidStack>nutrient_distillation 500</fluidStack>
+		</input>
+		<output>
+			<itemStack>gendustry:PollenKit</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1000" power ="250">
+		<input>
+            <itemStack>immersiveengineering:metalDecoration0 1 2</itemStack>
+            <oreDict>plateTitanium 4</oreDict>
+            <itemStack>libvulpes:productsheet 4 7</itemStack>
+			<fluidStack>obsidiorite_fluid 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:coil0 1 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="500">
+		<input>
+            <itemStack>immersiveengineering:metalDecoration0 1 2</itemStack>
+            <oreDict>plateIridium 4</oreDict>
+            <itemStack>advancedrocketry:productsheet 4 1</itemStack>
+			<fluidStack>obsidiorite_fluid 2000</fluidStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:coil0 1 10</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

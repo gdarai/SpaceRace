@@ -24,13 +24,17 @@ val gearBoxIron = <immersiveengineering:material:8>;
 val plateAlu = <ore:plateAluminum>;
 val FCi3 = <forestry:chipsets:3>.withTag({T: 3 as short});
 val FCi1 = <forestry:chipsets:1>.withTag({T: 1 as short});
+val ARCi0 = <advancedrocketry:ic:3>;
+
 val piston = <minecraft:piston>;
 
 recipes.remove(<forestry:analyzer>);
 recipes.addShaped(<forestry:analyzer>, [[<advancedrocketry:misc>, aluScaff, ironBarrel], [plateAlu, FCi3, plateAlu], [aluScaff, gearBoxIron, aluScaff]]);
+recipes.addShaped(<forestry:analyzer>, [[<advancedrocketry:misc>, aluScaff, ironBarrel], [plateAlu, ARCi0, plateAlu], [aluScaff, gearBoxIron, aluScaff]]);
 
 recipes.remove(<forestry:squeezer>);
 recipes.addShaped(<forestry:squeezer>, [[piston, piston, piston], [gearBoxIron, ironBarrel, gearBoxIron], [aluScaff, FCi1, aluScaff]]);
+recipes.addShaped(<forestry:squeezer>, [[piston, piston, piston], [gearBoxIron, ironBarrel, gearBoxIron], [aluScaff, ARCi0, aluScaff]]);
 
 // Armor
 recipes.addShapeless(<harvestcraft:beeswaxitem>, [<harvestcraft:potitem>, <forestry:beeswax>, <forestry:beeswax>, <forestry:beeswax>]);

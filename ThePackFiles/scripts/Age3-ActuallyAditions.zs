@@ -265,10 +265,6 @@ recipes.addShaped(<actuallyadditions:blockLaserRelayItem>*2, [[null, crystal.noR
 recipes.addShaped(<actuallyadditions:blockLaserRelayItemWhitelist>, [[dustKarm, inRed0, dustKarm], [tankNit, <actuallyadditions:blockLaserRelayItem>, tankNit], [dustKarm, inRed0, dustKarm]]);
 recipes.addShaped(<actuallyadditions:itemFilter>, [[ironBar, prospShard, ironBar], [prospShard, null, prospShard], [ironBar, prospShard, ironBar]]);
 
-mods.immersiveengineering.BottlingMachine.addRecipe(eezoCan, <forestry:can>, <liquid:eezo_fluid> * 1000);
-
-
-
 // PowerGen
 recipes.remove(<actuallyadditions:blockCanolaPress>);
 recipes.remove(<actuallyadditions:blockFermentingBarrel>);
@@ -282,7 +278,7 @@ recipes.remove(<actuallyadditions:blockFurnaceSolar>);
 recipes.addShaped(<actuallyadditions:blockCanolaPress>, [[stoneBrick, piston, stoneBrick], [stoneBrick, null, stoneBrick], [brickBlock, casingWood, brickBlock]]);
 recipes.addShaped(<actuallyadditions:blockFermentingBarrel>, [[plateCopper, <ore:trapdoorWood>, plateCopper], [plateCopper, null, plateCopper], [scaffAlu, casingWood, scaffAlu]]);
 recipes.addShaped(<actuallyadditions:blockBioReactor>, [[MVconn, coil1, MVconn], [plateCopper, barrelIron, plateCopper], [scaffAlu, coil1, scaffAlu]]);
-mods.forestry.Carpenter.addRecipe(<actuallyadditions:blockLaserRelay>*2, [[null, crystal, null], [inRed0, <immersiveengineering:connector:5>, inRed0], [inRed0, <bibliocraft:SwordPedestal:*>, inRed0]], 20, <liquid:eezo_fluid> * 200, null);
+mods.forestry.Carpenter.addRecipe(<actuallyadditions:blockLaserRelay>*2, [[null, crystal, null], [inRed0, <immersiveengineering:connector:5>, inRed0], [inRed0, <bibliocraft:SwordPedestal:*>, inRed0]], 20, <liquid:seed.oil> * 200, <taiga:abyssum_dust>);
 recipes.addShaped(<actuallyadditions:blockLaserRelayAdvanced>, [[inRed0, plateCopper, inRed0], [tankNit, <actuallyadditions:blockLaserRelay>, tankNit], [inRed0, plateCopper, inRed0]]);
 recipes.addShaped(<actuallyadditions:blockLaserRelayExtreme>, [[ingotCobalt, inRed0, ingotCobalt], [tankNit, <actuallyadditions:blockLaserRelayAdvanced>, tankNit], [ingotCobalt, inRed0, ingotCobalt]]);
 recipes.addShaped(<actuallyadditions:blockEnergizer>, [[<taiga:meteorite_ingot>, inRed0, inRed0], [scaffAlu, coil1, null], [<taiga:meteorite_ingot>, scaffAlu, scaffAlu]]);

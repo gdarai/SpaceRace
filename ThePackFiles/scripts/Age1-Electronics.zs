@@ -371,6 +371,7 @@ recipes.remove(furnaceBricks);
 recipes.addShaped(furnaceBricks*2, [[basalt, brickBlock, basalt],[brickBlock, lavaWood, brickBlock], [basalt, brickBlock, basalt]]);
 recipes.remove(arcFurnace);
 recipes.addShaped(arcFurnace, [[basalt, furnaceBricks, basalt],[furnaceBricks, <minecraft:furnace>, furnaceBricks], [gearBronze, FCi0, gearBronze]]);
+recipes.addShaped(arcFurnace, [[basalt, furnaceBricks, basalt],[furnaceBricks, <minecraft:furnace>, furnaceBricks], [gearBronze, ocChip1, gearBronze]]);
 recipes.remove(blastBrick);
 recipes.addShaped(blastBrick, [[saltpeter, abyssal, saltpeter],[abyssal, furnaceBricks, abyssal], [saltpeter, abyssal, saltpeter]]);
 

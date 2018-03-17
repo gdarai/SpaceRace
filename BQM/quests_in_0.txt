@@ -16,7 +16,7 @@ REWARD  #  XP       #  Levels:1
 // ------->
 
 QUEST   #  020      #  Your Home
-TEXT    #  Your home is a moon orbitting the HomeWorld gas giant, 3rd planet of the star A. I call this moon Home. Speciality of the Home is that it is an Ocean moon with a lot of islands. Another speciality is that it's mineral deposits are spreaded based on the biome, which dominates each island.\n\nMeaning find a tropical island and it will have different ores underneath than a desert island. For your ease, I will give you here list of know island types and their ores so you don't have to just guess. A pro po, Boats are disabled and Ocean is full of aqua-creepers. Build yourself a Ship or AirShip.
+TEXT    #  Your home is a moon orbiting the HomeWorld gas giant, 3rd planet of the star A. I call this moon Home. Speciality of the Home is that it is an Ocean moon with a lot of islands. Another speciality is that it's mineral deposits are spreaded based on the biome, which dominates each island.\n\nMeaning find a tropical island and it will have different ores underneath than a desert island. For your ease, I will give you here list of know island types and their ores so you don't have to just guess. A pro po, Boats are disabled and Ocean is full of player-eating piranha. Build yourself a Ship or AirShip.
 PREREQ  #  AND      #  010
 
 TASK    #  TRIGGER

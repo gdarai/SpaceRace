@@ -3,7 +3,6 @@ val bookCase = <bibliocraft:BookcaseCreative:6>;
 val bookCase1 = <bibliocraft:BookcaseCreative:2>;
 val goldenHead = <tconstruct:materials:50>;
 val exch = <draconicevolution:creative_exchanger>;
-val loco = <railcraft:locomotive_creative>;
 val drawer1 = <storagedrawers:upgradeCreative>;
 val arPlug = <libvulpes:creativePowerBattery>;
 val rfCont1 = <refinedstorage:controller:1>;
@@ -25,8 +24,11 @@ val saw = <bibliocraft:FramingSaw>;
 val decayWheat = <forestry:decayingWheat>;
 val iridiumBlock = <libvulpes:metal0:10>;
 val nihilTank = <advancedrocketry:liquidTank>.withTag({"Fluid":{"FluidName":"nihilite_fluid", "Amount":64000}});
+val XPwax = <forestry:capsule:1>.withTag({"Fluid":{"FluidName":"xpjuice", Amount:1000}});
+val goldCan = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"gold", Amount:1000}});
+val dnaCan = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"liquiddna", Amount:1000}});
 val coral = <coralreef:coral:*>;
-val aaIron = <actuallyadditions:itemCrystalEmpowered:5>;
+val aaIronBlock = <actuallyadditions:blockCrystalEmpowered:5>;
 
 val apple1 = <tp:golden_apple>;
 val apple2 = <tp:diamond_apple>;
@@ -49,15 +51,15 @@ val bucket = <minecraft:bucket>;
 val deAdvDisl = <draconicevolution:dislocator_advanced>;
 
 // Notch Apple
-mods.forestry.Carpenter.addRecipe(<minecraft:golden_apple>, [[gold, gold, gold], [gold, <mysticalagriculture:prudentium_apple>, gold], [gold, gold, gold]], 400, <liquid:xpjuice> * 5000, null);
+mods.forestry.Carpenter.addRecipe(<minecraft:golden_apple>, [[XPwax, goldBlock, XPwax], [XPwax, <mysticalagriculture:prudentium_apple>, XPwax], [XPwax, goldBlock, XPwax]], 200, <liquid:for.honey> * 2000, <forestry:phosphor>);
 recipes.remove(notchApple);
-mods.forestry.Carpenter.addRecipe(notchApple, [[goldBlock, goldBlock, goldBlock], [goldBlock, <minecraft:golden_apple>, goldBlock], [goldBlock, goldBlock, goldBlock]], 400, <liquid:silver> * 10000, null);
+// Notch apple is moved to infusion crafter
 
 // TP Apples
 recipes.remove(apple1);
 recipes.remove(apple2); // moved to Crystalizer
 recipes.remove(apple3); // moved to Fusion Crafting
-mods.forestry.Carpenter.addRecipe(apple1, [[coral, aaIron, coral], [aaIron, <mysticalagriculture:prudentium_apple>, aaIron], [coral, aaIron, coral]], 400, <liquid:gold> * 5000, null);
+mods.forestry.Carpenter.addRecipe(apple1, [[coral, goldCan, coral], [goldCan, aaIronBlock, goldCan], [coral, goldCan, coral]], 400, <liquid:for.honey> * 2000, <mysticalagriculture:prudentium_apple>);
 
 
 // Nihilite moved to Alloy Smeltery and Chemical Reactor
@@ -70,7 +72,7 @@ mods.tconstruct.Smeltery.removeMelting(<taiga:nihilite_dust>);
 mods.actuallyadditions.Empowerer.addRecipe(<storagedrawers:personalKey>, lockKey, notchApple, notchApple, notchApple, notchApple, 750000, 600);
 
 // Creative Bookcase - oak, spruce, birch, jungle, acacia, darkOak, frame 
-mods.forestry.Carpenter.addRecipe(bookCase, [[knSlimeBlock, lockKey, knSlimeBlock], [lockKey, <bibliocraft:Bookcase:6>, lockKey], [knSlimeBlock, lockKey, knSlimeBlock]], 400, <liquid:liquiddna> * 10000, null);
+mods.forestry.Carpenter.addRecipe(bookCase, [[dnaCan, lockKey, dnaCan], [lockKey, <bibliocraft:Bookcase:6>, lockKey], [dnaCan, lockKey, dnaCan]], 400, <liquid:seed.oil> * 10000, knSlimeBlock);
 mods.actuallyadditions.Empowerer.addRecipe(bookCase, <bibliocraft:BookcaseCreative:0>, <forestry:pile_wood>.withTag({"TreeSpecies":"forestry.treeOak"}), flintIngot, saw, flintIngot, 500000, 200);
 mods.actuallyadditions.Empowerer.addRecipe(bookCase, <bibliocraft:BookcaseCreative:1>, <forestry:pile_wood>.withTag({"TreeSpecies":"forestry.treeSpruce"}), flintIngot, saw, flintIngot, 500000, 200);
 mods.actuallyadditions.Empowerer.addRecipe(bookCase, <bibliocraft:BookcaseCreative:2>, <forestry:pile_wood>.withTag({"TreeSpecies":"forestry.treeBirch"}), flintIngot, saw, flintIngot, 500000, 200);
@@ -81,7 +83,7 @@ mods.actuallyadditions.Empowerer.addRecipe(bookCase, <bibliocraft:BookcaseCreati
 // Gadgets
 // creative_exchanger moved to Infusion Crafting
 mods.forestry.ThermionicFabricator.addCast(goldenHead, [[decayWheat, notchApple, decayWheat], [bookCase1, <minecraft:skull:3>, bookCase1], [decayWheat, notchApple, decayWheat]], 2000, <forestry:waxCast>);
-mods.forestry.Carpenter.addRecipe(loco, [[iridiumBlock, goldenHead, iridiumBlock], [goldenHead, <railcraft:locomotive_steam_solid>, goldenHead], [iridiumBlock, goldenHead, iridiumBlock]], 3600, <liquid:dilithium_fluid> * 10000, knSlimeBlock);
+// creative locomotive moved to infusion
 mods.actuallyadditions.Empowerer.addRecipe(<refinedstorage:wireless_grid>, <refinedstorage:wireless_grid:1>, goldenHead, nihilTank, goldenHead, nihilTank, 750000, 600);
 mods.actuallyadditions.Empowerer.addRecipe(<refinedstorage:wireless_crafting_monitor>, <refinedstorage:wireless_crafting_monitor:1>, goldenHead, nihilTank, goldenHead, nihilTank, 750000, 600);
 

@@ -78,11 +78,12 @@ recipes.remove(<gendustry:EjectCover>);
 recipes.remove(<gendustry:ErrorSensorCover>);
 recipes.remove(<gendustry:UpgradeFrame>);
 mods.forestry.Carpenter.addRecipe(<gendustry:UpgradeFrame>, [[dustTiberium, aaRed0, dustTiberium], [aaRed0, <tconstruct:fancy_frame:1>, aaRed0], [dustTiberium, aaRed0, dustTiberium]], 120, <liquid:creosote> * 500);
+mods.forestry.Carpenter.addRecipe(<gendustry:UpgradeFrame>, [[dustTiberium, aaRed0, dustTiberium], [aaRed0, <tconstruct:fancy_frame:1>, aaRed0], [dustTiberium, aaRed0, dustTiberium]], 120, <liquid:seed.oil> * 500);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(procGen, <gendustry:EnvProcessor>, 150000);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<forestry:greenhouse.climate_control>, <gendustry:ClimateModule>, 150000);
-mods.forestry.Carpenter.addRecipe(<gendustry:ImportCover>, [[woodPulp, aaLapis, woodPulp], [aaLapis, <opencomputers:upgrade:18>, aaLapis], [woodPulp, aaLapis, woodPulp]], 120, <liquid:proxii_fluid> * 500);
-mods.forestry.Carpenter.addRecipe(<gendustry:EjectCover>, [[woodPulp, aaRed, woodPulp], [aaRed, <opencomputers:upgrade:18>, aaRed], [woodPulp, aaRed, woodPulp]], 120, <liquid:proxii_fluid> * 500);
-mods.forestry.Carpenter.addRecipe(<gendustry:ErrorSensorCover>, [[woodPulp, aaIron, woodPulp], [aaIron, <opencomputers:upgrade:18>, aaIron], [woodPulp, aaIron, woodPulp]], 120, <liquid:proxii_fluid> * 500);
+mods.forestry.Carpenter.addRecipe(<gendustry:ImportCover>, [[woodPulp, aaLapis, woodPulp], [aaLapis, <opencomputers:upgrade:18>, aaLapis], [woodPulp, aaLapis, woodPulp]], 120, <liquid:for.honey> * 500);
+mods.forestry.Carpenter.addRecipe(<gendustry:EjectCover>, [[woodPulp, aaRed, woodPulp], [aaRed, <opencomputers:upgrade:18>, aaRed], [woodPulp, aaRed, woodPulp]], 120, <liquid:for.honey> * 500);
+mods.forestry.Carpenter.addRecipe(<gendustry:ErrorSensorCover>, [[woodPulp, aaIron, woodPulp], [aaIron, <opencomputers:upgrade:18>, aaIron], [woodPulp, aaIron, woodPulp]], 120, <liquid:for.honey> * 500);
 
 
 // Utilities

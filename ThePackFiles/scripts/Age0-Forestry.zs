@@ -45,10 +45,15 @@ val FCi1 = <forestry:chipsets:1>.withTag({T: 1 as short});
 val FCi2 = <forestry:chipsets:2>.withTag({T: 2 as short});
 val FCi3 = <forestry:chipsets:3>.withTag({T: 3 as short});
 
+val ocChip1 = <opencomputers:material:8>;
+
 val powerM = <gendustry:PowerModule>;
 val honeyPot = <forestry:honeyPot>;
 
 val aaRed = <actuallyadditions:itemCrystal>;
+
+// Removing pipette
+recipes.remove(<forestry:pipette>);
 
 // Recipes
 recipes.remove(<forestry:engine_biogas>);
@@ -60,11 +65,12 @@ mods.forestry.Carpenter.removeRecipe(<forestry:portableAlyzer>);
 // Engines
 recipes.addShaped(<forestry:engine_peat>, [[trPlank, trPlank, trPlank], [rodSteel, null, rodSteel], [tubeCopper, <minecraft:piston>, tubeTin]]);
 recipes.addShaped(<forestry:engine_biogas>, [[trPlank, trPlank, trPlank], [rodSteel, null, rodSteel], [FCi0, gearBoxIron, FCi0]]);
+recipes.addShaped(<forestry:engine_biogas>, [[trPlank, trPlank, trPlank], [rodSteel, null, rodSteel], [ocChip1, gearBoxIron, ocChip1]]);
 
 // Machines
 recipes.addShaped(<forestry:still>, [[searedTank, pipe, searedTank],[pipe, <minecraft:furnace>, pipe],[scaffAlu, powerM, scaffAlu]]);
 recipes.addShaped(<forestry:moistener>, [[searedTank, barrelWood, searedTank], [IRRope, barrelIron, IRRope], [scaffAlu, tubeCopper, scaffAlu]]);
-mods.forestry.Carpenter.addRecipe(<forestry:portableAlyzer>, [[<forestry:pipette>, <advancedrocketry:lens>, <minecraft:book>], [honeyPot, <forestry:can>, honeyPot], [ioSi, FCi1, ioSi]], 20, <liquid:seed.oil> * 500, <forestry:waxCast>);
+mods.forestry.Carpenter.addRecipe(<forestry:portableAlyzer>, [[<advancedrocketry:lens>, <advancedrocketry:lens>, <minecraft:book>], [honeyPot, <forestry:can>, honeyPot], [ioSi, FCi1, ioSi]], 20, <liquid:seed.oil> * 500, <forestry:waxCast>);
 recipes.addShaped(<forestry:bottler>, [[aaRed, searedTank, aaRed], [aaRed, hopper, aaRed], [scaffAlu, powerM, scaffAlu]]);
 
 // Industrial Oil and Ethanol from Forestry items

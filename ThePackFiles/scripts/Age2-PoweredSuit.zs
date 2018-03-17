@@ -72,11 +72,11 @@ recipes.addShaped(<powersuits:powerArmorComponent:2>, [[null, wires, null],[wire
 recipes.addShaped(<powersuits:powerArmorComponent:3>, [[null, sheetTitAlu, sheetTitAlu],[plateMan, plateMan, sheetTitAlu],[sheetTitAlu, plateMan, null]]);
 recipes.addShaped(<powersuits:powerArmorComponent:4>, [[pipeLiquid, pipeLiquid, pipeLiquid],[tankNit, IEPump, tankNit],[IENozzle, IENozzle, IENozzle]]);
 recipes.addShaped(<powersuits:powerArmorComponent:5>, [[IEconnME, wires, IEconnME],[wires, IEcapME, wires],[null, wires, null]]);
-mods.forestry.Carpenter.addRecipe(<powersuits:powerArmorComponent:15>, [[null, wires, null], [ARCi0, wires, ARCi0], [ioSi, wires, ioSi]], 20, <liquid:eezo_fluid> * 500, <forestry:waxCast>);
+mods.forestry.Carpenter.addRecipe(<powersuits:powerArmorComponent:15>, [[null, wires, null], [ARCi0, wires, ARCi0], [ioSi, wires, ioSi]], 20, <liquid:seed.oil> * 500, <forestry:waxCast>);
 recipes.addShaped(<powersuits:powerArmorComponent:12>, [[wires, crystal, wires],[null, tankNit, null],[ARCi0, IEcapME, ARCi0]]);
 mods.forestry.ThermionicFabricator.addCast(<powersuits:powerArmorComponent:16>, [[null, null, null], [rsDust, rsDust, rsDust], [ioSi, ioSi, ioSi]], 250, null);
 recipes.addShaped(<powersuits:powerArmorComponent:17>, [[wires, fibre, wires],[fibre, <powersuits:powerArmorComponent:16>, fibre],[wires, fibre, wires]]);
-mods.forestry.Carpenter.addRecipe(<powersuits:powerArmorComponent:18>, [[blockLens, blockLens, blockLens], [dustKarm, dustKarm, dustKarm], [ioSi, <powersuits:powerArmorComponent:16>, ioSi]], 20, <liquid:eezo_fluid> * 500, <forestry:waxCast>);
+mods.forestry.ThermionicFabricator.addCast(<powersuits:powerArmorComponent:18>, [[blockLens, blockLens, blockLens], [dustKarm, dustKarm, dustKarm], [ioSi, <powersuits:powerArmorComponent:16>, ioSi]], 500, <forestry:waxCast>);
 mods.forestry.ThermionicFabricator.addCast(<powersuits:powerArmorComponent:21>, [[ioSi, fibre, ioSi], [fibre, plateMan, fibre], [ioSi, fibre, ioSi]], 500, null);
 mods.forestry.Carpenter.addRecipe(<powersuits:powerArmorComponent:10>, [[dustObsidi, plateSteel, dustObsidi], [plateSteel, plateSi, plateSteel], [dustObsidi, plateSteel, dustObsidi]], 20, <liquid:karmesine_fluid> * 1000, null);
 mods.forestry.Carpenter.addRecipe(<powersuits:powerArmorComponent:11>, [[dustObsidi, sheetTitAlu, dustObsidi], [plateMan, plateSi, plateMan], [dustObsidi, sheetTitAlu, dustObsidi]], 20, <liquid:karmesine_fluid> * 2000, null);

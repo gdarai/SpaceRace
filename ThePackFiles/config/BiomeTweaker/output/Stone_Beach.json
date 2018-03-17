@@ -19,7 +19,32 @@
     "BEACH"
   ],
   "BiomeManager Entries": {},
-  "Spawnable Creatures": [],
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "animalium.entities.EntityWildDog",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "animalium.entities.EntityRat",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "animalium.entities.EntityWildDog",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "animalium.entities.EntityRat",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    }
+  ],
   "Spawnable Monsters": [
     {
       "Entity Class": "net.minecraft.entity.monster.EntityZombie",

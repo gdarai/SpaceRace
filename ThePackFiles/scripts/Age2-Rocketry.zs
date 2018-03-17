@@ -138,7 +138,7 @@ val AAempEmeraldBlock = <actuallyadditions:blockCrystalEmpowered:4>;
 
 // Concrete
 recipes.remove(<advancedrocketry:concrete>);
-mods.forestry.Carpenter.addRecipe(<advancedrocketry:concrete>, [[null, scaffSteel, null], [scaffSteel, <railcraft:generic:4>, scaffSteel], [null, scaffSteel, null]], 120, <liquid:tritonite_fluid> * 250);
+mods.forestry.Carpenter.addRecipe(<advancedrocketry:concrete>, [[null, scaffSteel, null], [scaffSteel, <railcraft:generic:4>, scaffSteel], [null, scaffSteel, null]], 120, <liquid:water> * 1000, <taiga:tritonite_dust>);
 
 // AR Cables - Moved to Precission Assembler
 recipes.remove(pipeLiquid);
@@ -159,8 +159,8 @@ recipes.remove(ARCoilIridium);
 recipes.addShaped(ARCoilCopper, [[SheetBlockCopper, SheetCopper, SheetBlockCopper], [SheetCopper, IECopperCoil, SheetCopper], [SheetBlockCopper, SheetCopper, SheetBlockCopper]]);
 recipes.addShaped(ARCoilGold, [[SheetBlockGold, SheetIron, SheetBlockGold], [SheetIron, IECopperCoil, SheetIron], [SheetBlockGold, SheetIron, SheetBlockGold]]);
 mods.forestry.Carpenter.addRecipe(ARCoilAlu, [[SheetBlockAlu, SheetAlu, SheetBlockAlu], [SheetAlu, IEElectrumCoil, SheetAlu], [SheetBlockAlu, SheetAlu, SheetBlockAlu]], 120, <liquid:oil> * 1000);
-mods.forestry.Carpenter.addRecipe(ARCoilTitan, [[plateTitan, SheetTitan, plateTitan], [SheetTitan, IESteelCoil, SheetTitan], [plateTitan, SheetTitan, plateTitan]], 120, <liquid:obsidiorite_fluid> * 1000);
-mods.forestry.Carpenter.addRecipe(ARCoilIridium, [[plateIri, SheetTitIri, plateIri], [SheetTitIri, IESteelCoil, SheetTitIri], [plateIri, SheetTitIri, plateIri]], 120, <liquid:obsidiorite_fluid> * 2000);
+mods.forestry.Carpenter.addRecipe(ARCoilAlu, [[SheetBlockAlu, SheetAlu, SheetBlockAlu], [SheetAlu, IEElectrumCoil, SheetAlu], [SheetBlockAlu, SheetAlu, SheetBlockAlu]], 120, <liquid:seed.oil> * 1000);
+// Iridium and Titan coil moved to Precision Assembler
 
 // Copper Sheets through metal press 
 mods.immersiveengineering.MetalPress.addRecipe(SheetCopper, plateCopper, <immersiveengineering:mold>, 1500, 4);
@@ -197,7 +197,7 @@ recipes.remove(<advancedrocketry:seat>);
 recipes.remove(<advancedrocketry:loader:1>);
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.remove(<advancedrocketry:guidanceComputer>);
-mods.forestry.Carpenter.addRecipe(rocketTank, [[IELightBlock, pipeLiquid, SheetSlabNickel], [SheetSteel, scaffAlu, SheetSteel], [SheetSlabNickel, SheetSlabNickel, SheetSlabNickel]], 120, <liquid:duranite_fluid> * 2000);
+mods.forestry.Carpenter.addRecipe(rocketTank, [[IELightBlock, pipeLiquid, SheetSlabNickel], [SheetSteel, scaffAlu, SheetSteel], [SheetSlabNickel, SheetSlabNickel, SheetSlabNickel]], 120, <liquid:seed.oil> * 1000, <forestry:can:1>.withTag({"Fluid":{"FluidName":"duranite_fluid", Amount:1000}}));
 recipes.addShaped(rocketEngine1, [[pipeLiquid, scaffSteel, pipeLiquid], [IEPump, rocketTank, motorAdvanced], [IENozzle, IENozzle, IENozzle]]);
 recipes.addShaped(<advancedrocketry:seat>, [[IRRope, null, IRRope], [IEFabric, IEFabric, IEFabric], [scaffAlu, IENozzle, scaffAlu]]);
 recipes.addShaped(<advancedrocketry:loader:1>, [[hiTechDoor, hiTechDoor, hiTechDoor], [basicBlock, null, basicBlock], [scaffAlu, ARCi0, scaffAlu]]);
@@ -279,7 +279,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<advancedrocketry:bucketNitr
 // Sattelite Components
 recipes.remove(opticalSensor);
 recipes.remove(<advancedrocketry:satelliteBuilder>);
-mods.forestry.Carpenter.addRecipe(opticalSensor, [[blockLens, blockLens, blockLens], [glowstone, daySensor, glowstone], [ocChip1, SheetBlockAlu, ocChip1]], 120, <liquid:eezo_fluid> * 250);
+mods.forestry.Carpenter.addRecipe(opticalSensor, [[blockLens, blockLens, blockLens], [glowstone, daySensor, glowstone], [ocChip1, SheetBlockAlu, ocChip1]], 120, <liquid:seed.oil> * 250);
 recipes.addShaped(<advancedrocketry:satelliteBuilder>, [[ocRemote, display, <advancedrocketry:precisionassemblingmachine>], [IEHeavyBlock, basicBlock, IEHeavyBlock], [IEHeavyBlock, motorAdvanced, IEHeavyBlock]]);
 
 // Dilithium
@@ -291,7 +291,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:rocketfuel> * 1, <liquid:fi
 mods.forestry.Fermenter.addRecipe(<liquid:fire_water>, <mysticalagriculture:fire_essence>, <liquid:potion>, 500, 0.2);
 
 // AirTight Space Suits
-mods.forestry.Carpenter.addRecipe(airSeal, [[glowstone, ioSi, glowstone], [ioSi, <minecraft:diamond>, ioSi], [glowstone, ioSi, glowstone]], 120, <liquid:obsidiorite_fluid> * 2000);
+mods.forestry.Carpenter.addRecipe(airSeal, [[glowstone, ioSi, glowstone], [ioSi, <minecraft:diamond>, ioSi], [glowstone, ioSi, glowstone]], 120, <liquid:for.honey> * 2000, <forestry:can:1>.withTag({"Fluid":{"FluidName":"obsidiorite_fluid", Amount:1000}}));
 <bqmie:icon_item:24>.addTooltip(format.gold("Air Tight Orb"));
 
 recipes.addShaped(<railcraft:armor_helmet_steel>.withTag({ench: [{id: 128 as short, lvl: 1 as short}]}), [[ioSi, airSeal, ioSi], [ioSi, <railcraft:armor_helmet_steel>, ioSi], [ioSi, ioSi, ioSi]]);
@@ -354,7 +354,7 @@ recipes.remove(<advancedrocketry:terraformer>);
 
 recipes.addShaped(<advancedrocketry:intake>, [[IENozzle, IENozzle, IENozzle], [null, <actuallyadditions:blockLaserRelayFluids>, null], [IEPump, IEHeavyBlock, IEPump]]);
 mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarGenerator>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [IELightBlock, ARplug, IELightBlock]], 120, <liquid:obsidiorite_fluid> * 2000);
-mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarPanel>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [scaffAlu, IELightBlock, scaffAlu]], 120, <liquid:nitrogen> * 1000);
+mods.forestry.Carpenter.addRecipe(<advancedrocketry:solarPanel>, [[solarCell, solarCell, solarCell], [solarCell, ARCoilCopper, solarCell], [scaffAlu, IELightBlock, scaffAlu]], 120, <liquid:seed.oil> * 1000, <advancedrocketry:bucketNitrogen>);
 recipes.addShaped(<advancedrocketry:spaceElevatorController>, [[display, display, display], [<actuallyadditions:blockLaserRelayAdvanced>, IEHeavyBlock, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);
 recipes.addShaped(<advancedrocketry:railgun>, [[opticalSensor, ocRemote, opticalSensor], [<actuallyadditions:blockLaserRelayItemWhitelist>, ocRemote, <actuallyadditions:blockLaserRelayItemWhitelist>], [IEHeavyBlock, basicBlock, IEHeavyBlock]]);
 recipes.addShaped(<advancedrocketry:microwaveReciever>, [[opticalSensor, opticalSensor, opticalSensor], [<actuallyadditions:blockLaserRelayAdvanced>, ocRemote, <actuallyadditions:blockLaserRelayAdvanced>], [basicBlock, IEHeavyBlock, basicBlock]]);

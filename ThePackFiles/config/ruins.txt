@@ -30,7 +30,7 @@ templateInstancesMinDistance=300
 # minimum distance a template must have from any other template
 anyRuinsMinDistance=50
 # dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
-allowedDimensions=0,1,21,22,23,24,25,30,31,32,33,34
+allowedDimensions=0,1,20,21,22,23,24,25,30,31,32,33,34
 
 # tileentity blocks, those (nonvanilla)blocks which cannot function without storing their nbt data, full name as stick dictates, seperated by commata
 teblocks=

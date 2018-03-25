@@ -336,3 +336,19 @@ QUEST        #  HAx10       #  -28:10	  #  25    #  HZombie
 QUEST        #  HAx11       #  -12:10	  #  25    #  Reef0
 QUEST        #  HAx12       #  -28:30	  #  25    #  RabbitFoot
 QUEST        #  HAx13       #  -12:30	  #  25    #  ObsidianShard
+
+// ------------------>
+// Cheat lines are used when nothing else works
+// ------------------>
+
+LINE         #  CH         #  Cheats
+SIZE         #  2:2        #  50:50
+TEXT         #  You should not open this tab unless you feel REALLY REALLY in deep trouble.
+
+QUEST        #  CHreset     #    0:-25 	  #  30    #  WaterBowl  		# main
+
+QUEST        #  CH1         #  -30:-20    #  20    #  CHboat
+
+QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
+QUEST        #  CH11        #   15:-20    #  20    #  CHglider
+QUEST        #  CH12        #   45:-20    #  20    #  CHengine

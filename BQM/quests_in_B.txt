@@ -1,4 +1,4 @@
-QUEST   #  B00      #  Technical revolution
+QUEST   #  B00      #  Technical revolution # 200
 TEXT    #  Rods, Gears and Plates are base for every machine. First you can do is start casting some Rods and Gears, For that you need a form. Basic Stone Gear and Tough Stone Rod should be enough.
 PREREQ  #  AND      #  A50
 
@@ -7,7 +7,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  B10      #  Plates are not that easy
+QUEST   #  B10      #  Plates are not that easy # 201
 TEXT    #  Plates are more tricky. To cast a plate you first have to have a plate. Now, you can build a Small Plate Press, or basic Rolling Machine to get one. Or... if you have enough lead, lead is soft enough that you can hammer a plate out of it.
 PREREQ  #  AND      #  B00
 
@@ -16,7 +16,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  B20      #  Need electronics
+QUEST   #  B20      #  Need electronics # 202
 TEXT    #  Casting and Rolling. Fun but not enough. It is time to start including some electronics. Do you know you can cast some most basic Electron Tubes on the Smeltery.
 PREREQ  #  AND      #  B10
 
@@ -25,7 +25,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  B30      #  Machine to make Machines
+QUEST   #  B30      #  Machine to make Machines # 203
 TEXT    #  As usual, the first thing to make is something what can make making other things easier. In this case, let's build Carpenter, Thermionic Fabricator and first motor to power them up.
 PREREQ  #  AND      #  B20
 
@@ -34,7 +34,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  B40      #  Steel
+QUEST   #  B40      #  Steel # 204
 TEXT    #  Most of the heavy machinery needs Steel. Arc Furnace is your entry point for this.
 PREREQ  #  AND      #  B30
 
@@ -47,7 +47,7 @@ REWARD  #  XP       #  Levels:1
 // ----------------------------->
 // ------->
 
-QUEST   #  Bx00     #  Presser
+QUEST   #  Bx00     #  Presser # 251
 TEXT    #  This may give you some better food. So don't complain and use it. You didn't forget about the food situation, right?
 PREREQ  #  AND      #  B00
 
@@ -56,7 +56,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx01     #  Sorting, Sort of
+QUEST   #  Bx01     #  Sorting, Sort of # 252
 TEXT    #  Keeping your stuff sorted is a huge issue, I grant you that. Well, drawers can help you with that if you will make the Controller for them.
 PREREQ  #  AND      #  B00
 
@@ -65,7 +65,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx10     #  Distributing
+QUEST   #  Bx10     #  Distributing # 253
 TEXT    #  Now you have some automation and mechanical components. By icluding Item Routers, you can start building your first distribution system.
 PREREQ  #  AND      #  B10
 
@@ -74,7 +74,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx20     #  Tree Farm
+QUEST   #  Bx20     #  Tree Farm # 254
 TEXT    #  Tired of chopping down trees? What about an automated tree farm?
 PREREQ  #  AND      #  B20
 
@@ -83,7 +83,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx21     #  Bees Again
+QUEST   #  Bx21     #  Bees Again # 255
 TEXT    #  Maybe bees can have more use then just wax. If you build Centrifuge, you may be process their prducts more reliably.
 PREREQ  #  AND      #  B20
 
@@ -92,7 +92,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx30     #  Sailing away
+QUEST   #  Bx30     #  Sailing away # 256
 TEXT    #  Are you tired of your island? Do you want to find a better place to mine? Then build a ship and sail-on. You will need Steam Engine, Steering Wheel and some Floaters to make the ship going.
 PREREQ  #  AND      #  B30
 
@@ -101,7 +101,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx31     #  Eezo
+QUEST   #  Bx31     #  Eezo # 257
 TEXT    #  To get anywhere with your electronics you will have to find a stable source of Eezo. Check the Roadmap guide to figure out where to find it. You will most probably have to get there.
 PREREQ  #  AND      #  B30
 
@@ -110,7 +110,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx40     #  Improving power source
+QUEST   #  Bx40     #  Improving power source # 258
 TEXT    #  With steel, you can actually build a much powerful source of RF. Try Water Wheel, or improved Wind Mill.
 PREREQ  #  AND      #  B40
 
@@ -119,7 +119,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx41     #  Ubgrading farms
+QUEST   #  Bx41     #  Ubgrading farms # 259
 TEXT    #  Tree farm can be ubgraded to any sort of farm, if you are up to it. Just use the soldering iron and some circuits.
 PREREQ  #  AND      #  B40
 
@@ -128,7 +128,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx42     #  Med Kit
+QUEST   #  Bx42     #  Med Kit # 260
 TEXT    #  Small thing that may help you in your effort. If you start liquify your excess bees in Protein Liquifier, you may start producing the MedKits. Isn't it great?
 PREREQ  #  AND      #  B40
 
@@ -137,7 +137,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Bx43     #  Better Defeses
+QUEST   #  Bx43     #  Better Defeses # 261
 TEXT    #  Early Industrial age also brings some upgrades in weaponry and passive defences available to you. Try out Razor Wire, Engineers Workbench and Revolver.
 PREREQ  #  AND      #  B40
 

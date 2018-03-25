@@ -9,8 +9,9 @@ canPrint = True;
 # Superglobals
 
 def printError(text):
+	global canPrint
 	print('!ERR '+text);
-	canPrint = False;
+	canPrint = False
 
 def printWarning(text):
 	print('WARN '+text);
@@ -379,8 +380,9 @@ print('\n--> Quests')
 lines = getLinesInFiles('quests_in.*\.txt')
 
 theQ = { 'id':'' }
-nextQID = 0
 quests={}
+qids={}
+confliktQIDs=[]
 for line in lines:
     if(line[0:2]=='//'):
         continue
@@ -393,8 +395,8 @@ for line in lines:
     if (m[0]=='QUEST'):
         if(theQ['id']!=''):
             quests[theQ['id']]=theQ;
-        if (len(m)<3):
-            printError('Skipping QUEST: '+line+', need QUEST # <id> # <name>')
+        if (len(m)<4):
+            printError('Skipping QUEST: '+line+', need QUEST # <id> # <name> # <#id>')
             exit()
         theQ = {
             'id': parseName(m[1]),
@@ -402,11 +404,15 @@ for line in lines:
             'preqType': 'none',
             'tasks': [],
             'rewards': [],
-			'qid': str(nextQID),
+			'qid': m[3],
 			'main': 'false',
 			'chain': False
         }
-        nextQID = nextQID + 1
+        if (m[3] in qids):
+            confliktQIDs.append(m[3])
+            qids[m[3]].append(parseName(m[1])+'-'+m[2])
+        else:
+            qids[m[3]] = [parseName(m[1])+'-'+m[2]]
     if (m[0]=='TEXT'):
         theQ['text'] = m[1]
     if (m[0]=='PREREQ'):
@@ -443,7 +449,6 @@ for line in lines:
         theQ['rewards'].append(newReward)
 if(theQ['id']!=''):
     quests[theQ['id']]=theQ;
-
 print ('Loaded '+str(len(list(quests.keys())))+' quests(s).')
 
 # Get quest lines
@@ -510,6 +515,18 @@ if(theL['id']!=''):
     questlines.append(theL)
 print ('Loaded '+str(len(questlines))+' questline(s).')
 
+if(len(confliktQIDs) > 0):
+    printError('Conflikt QUESTIDs detected: '+str(confliktQIDs))
+    for id0 in confliktQIDs:
+        print('qid '+id0+': '+str(qids[id0]))
+        found = []
+        needIDs = len(qids[id0]);
+        id = int(id0)		
+        while len(found) < needIDs:
+            if(str(id) not in qids):
+                found.append(id)
+            id = id + 1
+        print('free ids: '+str(found))
 # Printing
 print('\nCan Print: '+str(canPrint))
 if canPrint == False:

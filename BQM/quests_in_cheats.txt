@@ -1,0 +1,52 @@
+QUEST   #  CHreset  #  Big Reset # 1300
+TEXT    #  When you are in so deep trouble that you need to use some of the cheats the second time, this reset is here for you.
+
+TASK    #  TRIGGER
+REWARD  #  RESET    #  CH1
+REWARD  #  RESET    #  CH11
+REWARD  #  RESET    #  CH12
+
+// ------->
+// The most basic
+// ------->
+
+QUEST   #  CH1      #  The Biggest Cheat # 1301
+TEXT    #  You understand that this is the BIGGEST POSSIBLE cheat and you should not use this if you are not in the DEEPEST DESPAIR, right?\n\nWell, let's get over it so you can get back to your normal play.
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  CHboat:1
+REWARD  #  RESET    #  CHreset
+
+// ------->
+// Around home
+// ------->
+
+QUEST   #  CH10     #  Was in space # 1305
+TEXT    #  Congrats, you did the biggest step. You don't know that yet, but space is much more dangerous than ocean. That is why we open here for you a whole new chapter of safelines.
+
+TASK    #  HAVE     #  MoonTurf:1
+REWARD  #  XP       #  Levels:1
+REWARD  #  RESET    #  CHreset
+
+// --->
+
+QUEST   #  CH11     #  Wanna go Home # 1306
+TEXT    #  If you are really, really stuck. Wherever you are. You may want this one-time teleport to get back home.\n\nYes, you are looser, BUT think about how much viewers you pulled when you were getting into this situation. 
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  CHteleportHome:1 # CHglider
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  RESET    #  CHreset
+
+// --->
+
+QUEST   #  CH12     #  Rocket Gone? # 1307
+TEXT    #  So you lost your toy-rocket. And now you are crying and you want to give up. Well, I have here million viewers who are telling you:\n\nPlease, don't.\n\nThey are willing to buy you a new one, if you try once more.
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  CHtank:25 # CHengine:5 # CHseat:1 # CHguidance:1 # CHplanetChip:1 # CHfuel:20
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  RESET    #  CHreset
+

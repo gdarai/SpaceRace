@@ -1,4 +1,4 @@
-QUEST   #  C00      #  Why UnderEnd
+QUEST   #  C00      #  Why UnderEnd # 300
 TEXT    #  Some wild stories are here about the mystical world of UnderEnd. Huge Cave full of dangerous enemies. Well, why in the world would you ever want to go there? I have here a simple answer. Palladium. You need palladium to make Niob which is a basic component for every higher electronic component. So, your next goal is the UnderEnd.
 PREREQ  #  AND      #  B40
 
@@ -7,7 +7,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C10      #  Getting Soulsand
+QUEST   #  C10      #  Getting Soulsand # 301
 TEXT    #  To build the UnderEnd portal, you will need some soulsand. Unfortunately the only place where you can find some here on this got-forgotten planet is down in the depths of the Roguelike Dungeons, which can be found in the countryside from time to time. Don't worry, you will not miss them. Huge, tower-like buildings with a suspiciously looking staircase in their middle.
 PREREQ  #  AND      #  C00
 
@@ -16,7 +16,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C20      #  Gear Up and Go
+QUEST   #  C20      #  Gear Up and Go # 302
 TEXT    #  Before you can build the portal, you must unlock it first, by crafting the Faraday Suit. Then build the structure of 14 Reinforced Glass making the circle with 2*3 empty doorway in the middle and activate it with the Golden Scythe.
 PREREQ  #  AND      #  C10
 
@@ -25,7 +25,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C30      #  UnderEnd Ores
+QUEST   #  C30      #  UnderEnd Ores # 303
 TEXT    #  There are several ores specific to the UnderEnd only. Collect some samples of Draconium, Abyssum, Palladium and Prosperity Shards.
 PREREQ  #  AND      #  C20
 
@@ -34,7 +34,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C40      #  Advanced Circuits
+QUEST   #  C40      #  Advanced Circuits # 304
 TEXT    #  With proper metals, you can now build your first Rocketry Circuits (Controll, Item IO and Liquid IO Circuit Boards). They are expensive and crude, but they work.
 PREREQ  #  AND      #  C30
 
@@ -43,7 +43,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C50      #  Tranzistors
+QUEST   #  C50      #  Tranzistors # 305
 TEXT    #  Your first Advanced Circuits should be invested into making Crystalizer, which can produce Tranzistors and Microchips. Sure, you will have to look for some resources first, like Prometheum, but it is worth the effort, beleive me.
 PREREQ  #  AND      #  C40
 
@@ -52,7 +52,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  C60      #  Proper Advanced Circuits
+QUEST   #  C60      #  Proper Advanced Circuits # 306
 TEXT    #  You must realize by now that there sure is a better way to make those tedious Circuits. Well, there is. You must build a machine, called Precision Assembler and you will be green to go.
 PREREQ  #  AND      #  C50
 
@@ -65,7 +65,7 @@ REWARD  #  XP       #  Levels:1
 // ----------------------------->
 // ------->
 
-QUEST   #  Cx00     #  Gauss Rifle
+QUEST   #  Cx00     #  Gauss Rifle # 350
 TEXT    #  If you need better firepower, and you like the techno-approach, this may be the tool for you. It needs the Charging Station and rods to fire.
 PREREQ  #  AND      #  C00
 
@@ -74,7 +74,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx01     #  Automatic Bees
+QUEST   #  Cx01     #  Automatic Bees # 351
 TEXT    #  Bees now can be easily automated building Alvearies, you know? You even don't need to breed them to Industrious any more.
 PREREQ  #  AND      #  C00
 
@@ -83,7 +83,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx02     #  Ore Processing
+QUEST   #  Cx02     #  Ore Processing # 352
 TEXT    #  Smeltery is a great approach but by grinding the ore using the Crusher, you can gain even more. Go ahead and try it.
 PREREQ  #  AND      #  C00
 
@@ -92,7 +92,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx03     #  Automatic Defences
+QUEST   #  Cx03     #  Automatic Defences # 353
 TEXT    #  You now have tech base strong enough to build some Gun Turrets or Tesla Coils if you want.
 PREREQ  #  AND      #  C00
 
@@ -101,7 +101,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx04     #  Flying
+QUEST   #  Cx04     #  Flying # 354
 TEXT    #  If you are tired of evading piranha, you can try an AirShip instead of the common Ship. What you need for this is a lot of baloons. For that you will need Steam, which means, Fermenter. This simple it is.
 PREREQ  #  AND      #  C00
 
@@ -110,7 +110,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx05     #  Gadgets
+QUEST   #  Cx05     #  Gadgets # 355
 TEXT    #  Basic and usefull utilities like Battery and Leafblower are totally within your reach now.
 PREREQ  #  AND      #  C00
 
@@ -119,7 +119,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx10     #  Dungeon loot
+QUEST   #  Cx10     #  Dungeon loot # 356
 TEXT    #  Some dungeon loot may be of great interrest to you especially the one from deeper levels. Because you cannot find this stuff anywhere else on this planet. Try to look for some Blaze Rods, or NetherWart. Maybe some Endstone?
 PREREQ  #  AND      #  C10
 
@@ -128,7 +128,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx30     #  Magic Seeds
+QUEST   #  Cx30     #  Magic Seeds # 357
 TEXT    #  Mystical agriculture gives you opportunity to grow ores. At first, Wood, Dirt, Stone or Water... but later on all Metals and other useful stuff. What you need is Prosperity Ore, which can be found in the UnderEnd. Also, Mystical plants can be harvested by forestry farm, if you will set it on crop.
 PREREQ  #  AND      #  C30
 
@@ -137,7 +137,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx31     #  Magic Tools
+QUEST   #  Cx31     #  Magic Tools # 358
 TEXT    #  Mystical agriculture gives you also access to new levels of tools, weapons and armor. Inferium and Prudentium armor should be now in your reach. They can be also later on changed to Air Tight - space capable versions.
 PREREQ  #  AND      #  C30
 
@@ -146,7 +146,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx32     #  Laser Transport
+QUEST   #  Cx32     #  Laser Transport # 359
 TEXT    #  Conveyor Belts are fun, but now that you have access to UnderEnd tech, you can start thinking of a more advanced tech. One, which is available to you right now is Laser Transportation technology. You can beam Energy, but also Items and Fluids.
 PREREQ  #  AND      #  C30
 
@@ -155,7 +155,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx33     #  Advanced Gadgets
+QUEST   #  Cx33     #  Advanced Gadgets # 360
 TEXT    #  Some quite useful gadgets are now available to you, like Experience Rod and Handheld Filler.
 PREREQ  #  AND      #  C30
 
@@ -164,7 +164,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx51     #  Draconic Basics
+QUEST   #  Cx51     #  Draconic Basics # 361
 TEXT    #  If you were lucky, you might step over some draconium dust in the UnderEnd. If that is true, there are some application of this dust you might consider interresting. Like Draconic Chest, which can automatically Input, Output, Filter and Smelt.
 PREREQ  #  AND      #  C50
 
@@ -173,7 +173,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx52     #  Blink
+QUEST   #  Cx52     #  Blink # 362
 TEXT    #  It looks like some early teleportation is also available to you now.
 PREREQ  #  AND      #  C50
 
@@ -182,7 +182,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Cx53     #  Diesel power
+QUEST   #  Cx53     #  Diesel power # 363
 TEXT    #  You cannot a rocket ship, using power of wind and water, can you? Well, building a regular diesel generator is the next option for you.
 PREREQ  #  AND      #  C50
 

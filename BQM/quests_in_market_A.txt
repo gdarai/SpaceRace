@@ -1,4 +1,4 @@
-QUEST   #  MA00     #  Spending Victory Points
+QUEST   #  MA00     #  Spending Victory Points # 1100
 TEXT    #  Of course you can just pileup your victory points and at the end you will have the biggest score of all times. But, what if you could use those points to get some advantage over your competitors? Wait you don't know you have competitors? Well...
 PREREQ  #  AND      #  TA00
 
@@ -7,7 +7,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:50
 
 // ------->
 
-QUEST   #  MAreset  #  Reset the Market
+QUEST   #  MAreset  #  Reset the Market # 1101
 TEXT    #  Close the market and set it up for another business day?
 PREREQ  #  OR      #  <MAxo.*>
 
@@ -29,7 +29,7 @@ REWARD  #  RESET    #  MAxo09
 
 // ------->
 
-QUEST   #  MAhalf   #  Entering the Market
+QUEST   #  MAhalf   #  Entering the Market # 1102
 TEXT    #  Now to the market. Remember, you can buy only one thing.
 PREREQ  #  OR       #  <MAxi.*>
 
@@ -39,7 +39,7 @@ REWARD  #  RESET    #  MAres2
 
 // ------->
 
-QUEST   #  MAres2   #  Emergency Reset
+QUEST   #  MAres2   #  Emergency Reset # 1103
 TEXT    #  Something went wrong? This should fix it. Normally use the reset on the right.
 
 TASK    #  TRIGGER
@@ -62,7 +62,7 @@ REWARD  #  RESET    #  MAxo09
 // -- Market In
 // ---------->
 
-QUEST   #  MAxi00   #  Zombies
+QUEST   #  MAxi00   #  Zombies # 1104
 TEXT    #  You didn't think it will be just... Here you are, take it and go, did you? Well, to earn your entance to the market, you must entertain the audience first.\n\nIn this case by killing Zombies.
 PREREQ  #  XOR      #  MA00  #  <MAxi.*>
 
@@ -72,7 +72,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:50
 
 // ------->
 
-QUEST   #  MAxi01   #  Witches
+QUEST   #  MAxi01   #  Witches # 1105
 TEXT    #  You can hunt for witches if you prefer them...
 PREREQ  #  XOR      #  MA00  #  <MAxi.*>
 
@@ -84,7 +84,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:50
 // -- Market Out
 // ---------->
 
-QUEST   #  MAxo00   #  Seeds
+QUEST   #  MAxo00   #  Seeds # 1106
 TEXT    #  Are you missing some seeds? We have some available. Come and pick.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -95,7 +95,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-100
 
 // ------->
 
-QUEST   #  MAxo01   #  Food
+QUEST   #  MAxo01   #  Food # 1107
 TEXT    #  Soup? Sui vous plait?
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -106,7 +106,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-200
 
 // ------->
 
-QUEST   #  MAxo02   #  Materials
+QUEST   #  MAxo02   #  Materials # 1108
 TEXT    #  Why spend time digging dirt? Would you like to buy some instead?
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -117,7 +117,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-250
 
 // ------->
 
-QUEST   #  MAxo03   #  Precious Materials
+QUEST   #  MAxo03   #  Precious Materials # 1109
 TEXT    #  This is the place to buy the shiny little things.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -129,7 +129,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-300
 
 // ------->
 
-QUEST   #  MAxo04   #  Machine Components
+QUEST   #  MAxo04   #  Machine Components # 1110
 TEXT    #  When the clock engine breaks and you need a quick replacement part, you come here.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -141,7 +141,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
 
 // ------->
 
-QUEST   #  MAxo05   #  Machine Parts
+QUEST   #  MAxo05   #  Machine Parts # 1111
 TEXT    #  Maybe even some full machine parts are on sale today.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -153,7 +153,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-750
 
 // ------->
 
-QUEST   #  MAxo06   #  Fluid Transporting
+QUEST   #  MAxo06   #  Fluid Transporting # 1112
 TEXT    #  Do you want to buy some basic fluid storage and transport?
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -165,7 +165,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-600
 
 // ------->
 
-QUEST   #  MAxo07   #  Forestry Machines
+QUEST   #  MAxo07   #  Forestry Machines # 1113
 TEXT    #  Our viewers love watching you... you can pick your reward for their happiness.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -178,7 +178,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000
 
 // ------->
 
-QUEST   #  MAxo08   #  Powering Up
+QUEST   #  MAxo08   #  Powering Up # 1114
 TEXT    #  Need some more power gadgets?
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 
@@ -190,7 +190,7 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-750
 
 // ------->
 
-QUEST   #  MAxo09   #  Simple Products
+QUEST   #  MAxo09   #  Simple Products # 1115
 TEXT    #  Need some Leather? Cloth? Treated Wood? We have some for you.
 PREREQ  #  XOR      #  <MAxo.*> # MAhalf
 

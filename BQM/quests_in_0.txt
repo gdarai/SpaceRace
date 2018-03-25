@@ -1,4 +1,4 @@
-QUEST   #  000      #  No quests mandatory
+QUEST   #  000      #  No quests mandatory # 0
 TEXT    #  Some people just don't like quests. Fair enough, I want this to be pure joy (or suffering what ever you prefer) even for you. That is why the most important information is pulled out of the common questline and put here. So you can read it and play even without the other quests.
 
 TASK    #  TRIGGER
@@ -6,7 +6,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  010      #  Planets and The Goal
+QUEST   #  010      #  Planets and The Goal # 1
 TEXT    #  To complete this modpack (if you need a final task for a sandbox game) you must build your spaceship and reach the Haven, moon orbiting the Gas Giant in the Beta Star System. Terraform this moon and build there your Victory Monument. Using a lot of expensive reources... Let's say Violium, Astrium and Awakend Draconium, using Golden Player Heads as decorations.
 PREREQ  #  AND      #  000
 
@@ -15,7 +15,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  020      #  Your Home
+QUEST   #  020      #  Your Home # 2
 TEXT    #  Your home is a moon orbiting the HomeWorld gas giant, 3rd planet of the star A. I call this moon Home. Speciality of the Home is that it is an Ocean moon with a lot of islands. Another speciality is that it's mineral deposits are spreaded based on the biome, which dominates each island.\n\nMeaning find a tropical island and it will have different ores underneath than a desert island. For your ease, I will give you here list of know island types and their ores so you don't have to just guess. A pro po, Boats are disabled and Ocean is full of player-eating piranha. Build yourself a Ship or AirShip.
 PREREQ  #  AND      #  010
 
@@ -24,7 +24,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  030      #  Under End
+QUEST   #  030      #  Under End # 3
 TEXT    #  Maybe you noticed that to get into space, you are missing some End-Ores. Well theEnd is a moon orbiting 4th planet of the Alpha Star so no, you cannot go there yet. But you can go to UnderEnd. That is an End-like dimension deep under the surface of your world. To get there, you must:\n\n1)Unlock the portal by crafting the Faraday Suit\n2)Build the portal (standart 2*3) using Reinforced Glass. Hint: You can get soulsand in deeper layers of the Roguelike Dungeon.\n3)Light the portal using the Golden Scythe.
 PREREQ  #  AND      #  020
 
@@ -33,7 +33,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  040      #  Leaving your Home
+QUEST   #  040      #  Leaving your Home # 4
 TEXT    #  So you can go into space... what now? Well Now you need to teach your ship to WARP. For that you will need to visit the other moons of your HomeWorld Gas Giant and start Asteroid Mining missions. I will make it easier for you by giving here some hints for each of those.
 PREREQ  #  AND      #  030
 
@@ -42,7 +42,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  050      #  Star System A
+QUEST   #  050      #  Star System A # 5
 TEXT    #  Now you have a Warp Ship which can go nowhere. Well. For your ship to be able to warp, you must put correct WorldOrb into the Warp Controller. I will give you here the list of Planets with their resources and required Orbs. Figure it out yourself. Small hint. Your final goal in StarSystem A is to get to the Blue Giant MysticalWorld.
 PREREQ  #  AND      #  040
 
@@ -51,7 +51,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  060      #  Heaven and Hell
+QUEST   #  060      #  Heaven and Hell # 6
 TEXT    #  If you reached SandMoon, which is orbiting MysticalWorld Blue Giant, you can go on and finally visit the Nether and the End. Portal to the nether is unlocked by crafting Uranium Seed. Shape and igniter are unchanged, Obsidian 2*3, FlintandSteel. The End has no portal. Just point there your rocket and pray.
 PREREQ  #  AND      #  050
 
@@ -60,7 +60,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  070      #  Star System B
+QUEST   #  070      #  Star System B # 7
 TEXT    #  The gate into star system B is the DistantWorld planet. You can get there through its WorldOrb, or you can build a portal from the Nether. The portal is standard 2*3, made from chiseled Blocks of Uranium. Ignited by the Golden Scythe again. Description of individual Star System B worlds are here for you to read.
 PREREQ  #  AND      #  060
 
@@ -71,7 +71,7 @@ REWARD  #  XP       #  Levels:1
 // Individual Ore Islands
 // ---------------------->
 
-QUEST   #  1x1      #  Don't try Nether/End
+QUEST   #  1x1      #  Don't try Nether/End # 50
 TEXT    #  Nether and End works differently then you are used to. So just please don't try to go there without my guidence. The attempt to open a portal will probably be fatal.
 PREREQ  #  AND      #  010
 
@@ -80,7 +80,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x1      #  Ores which are everywhere
+QUEST   #  2x1      #  Ores which are everywhere # 51
 TEXT    #  Coal [0 - 128]\nRedstone [0-16]\nCopper [30-120]\nIron[0-30]\nDuranite[0-10]\nBasalt[0-50]\n\nPoor Iron[0-64]\nPoor Gold[0-32]\nPoor Copper[40-255]\nPoor Tin[40-255]\nPoor Lead[20-50]\nPoor Silver[10-42]\nPoor Nickel[30-60]\nPoor Zink[20-60]
 PREREQ  #  AND      #  020
 
@@ -89,7 +89,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x2      #  Forrest Islands
+QUEST   #  2x2      #  Forrest Islands # 52
 TEXT    #  Aluminium [40-120]\nTin [30-100]\nCopper [30-120]
 PREREQ  #  AND      #  020
 
@@ -98,7 +98,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x3      #  Flower Forrest Islands
+QUEST   #  2x3      #  Flower Forrest Islands # 53
 TEXT    #  Zinc [30-40]\nCoal [0-120]\nCopper [30-120]
 PREREQ  #  AND      #  020
 
@@ -107,7 +107,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x4      #  Jungle Islands
+QUEST   #  2x4      #  Jungle Islands # 54
 TEXT    #  Coal [0-120]\nEezo [15-40]\nTin [30-100]\nNickel [30-50]\nLapis [5-25]
 PREREQ  #  AND      #  020
 
@@ -116,7 +116,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x5      #  Desert Islands
+QUEST   #  2x5      #  Desert Islands # 55
 TEXT    #  Saltpeter [50-80]\nRedstone [0-16]\nEmerald [40-130]\nDiamond [5-25]
 PREREQ  #  AND      #  020
 
@@ -125,7 +125,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x6      #  Savanna Islands
+QUEST   #  2x6      #  Savanna Islands # 56
 TEXT    #  Iron [10-55]\nNickel [30-50]\nEezo [15-40]\nAluminium [40-120]
 PREREQ  #  AND      #  020
 
@@ -134,7 +134,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x7      #  Iceberg Island
+QUEST   #  2x7      #  Iceberg Island # 57
 TEXT    #  Gold [5-35]\nLead [15-40]\nOsram [0-10]\nSilver [20-55]
 PREREQ  #  AND      #  020
 
@@ -143,7 +143,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x8      #  Hills Island
+QUEST   #  2x8      #  Hills Island # 58
 TEXT    #  Iron [10-55]\nDiamond [5-25]\nEmerald[40-130]\nLapis [5-25]
 PREREQ  #  AND      #  020
 
@@ -152,7 +152,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x9      #  Taiga Island
+QUEST   #  2x9      #  Taiga Island # 59
 TEXT    #  Osram [0-10]\nZinc [30-40]\nAluminium [40-120]\nGold [5-35]\nDiamond [5-25]
 PREREQ  #  AND      #  020
 
@@ -161,7 +161,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x10     #  Messa Island
+QUEST   #  2x10     #  Messa Island # 60
 TEXT    #  NETHERRACK !!\nNether quartz [10-150]\nGold [5-35]\nLapis [5-25]\nSilver [20-55]\nPrometheum [2-45]
 PREREQ  #  AND      #  020
 
@@ -170,7 +170,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  2x11     #  Swamp Island
+QUEST   #  2x11     #  Swamp Island # 61
 TEXT    #  Coal [0-120]\nRedstone [0-16]\nTin [30-100]\nAluminium [40-120]\nIron [10-55]\nLead [15-40]
 PREREQ  #  AND      #  020
 
@@ -181,7 +181,7 @@ REWARD  #  XP       #  Levels:1
 // Individual Planets
 // ------------------>
 
-QUEST   #  4x1      #  Moon
+QUEST   #  4x1      #  Moon # 62
 TEXT    #  Moon is your closest and easiest target.\n\nDeposites of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Osram, Basalt and Silver.\n\nAlso Meteorite and Karmesine.
 PREREQ  #  AND      #  040
 
@@ -190,7 +190,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  4x2      #  Asteroid Belt
+QUEST   #  4x2      #  Asteroid Belt # 63
 TEXT    #  Belt is the second Moon of your HomeWorld Giant. But before you go there here is small warning. It is an Asteroid Belt. It can easily happen, that your rocket will not hit any land and just disappear into the space. But sooner or later, you will have to go there anyway. So Good Luck.\n\nAnd Deposites: Iron, Gold, Redstone, Lapis, Diamond, Aluminium, Copper, Tin, Basalt, Titanium, Silver.\n\nAlso Cobalt, Ardite and Nether Quartz.
 PREREQ  #  AND      #  040
 
@@ -199,7 +199,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  4x3      #  Mining Asteroids
+QUEST   #  4x3      #  Mining Asteroids # 64
 TEXT    #  Another way how to get some resources is to launch asteroid mining mission. Following ores can be gathered.\n\nIron, Gold, Redstone, Lapis, Aluminium, Copper, Tin, Zinc, Silver, Nickel, Eezo, Osram, Basalt, Dilithium and Meteorite.
 PREREQ  #  AND      #  040
 
@@ -208,7 +208,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x1      #  LavaWorld Planet
+QUEST   #  5x1      #  LavaWorld Planet # 65
 TEXT    #  Closest planet to the Sun, Very Hot and Hostile.\n\nNeeds Lava World Orb\n\nSmall deposits of Redstone, Aluminium, Copper, Tin, Zinc, Nickel, Eezo and Dilithium\n\nLarge deposits of Iron, Gold, Lead, Eezo, Basalt, Silver and Carmesine\n\nAlso Meteorite, Apatite, Titanium and Osram\n\nNeherrack, Tiberium, Cobalt, Ardite and Nether Quartz
 PREREQ  #  AND      #  050
 
@@ -217,7 +217,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x2      #  AlienWorld Planet
+QUEST   #  5x2      #  AlienWorld Planet # 66
 TEXT    #  Almost pleasant world.\n\nNeeds Alien World Orb\n\nSmall deposits of Iron, Gold, Copper, Tin, Zinc, Lead, Eezo, Osram and Silver\n\nLarge deposits of Redstone, Lapis, Diamonds, Emeralds, Aluminium, Zinc, Nickel, Basalt, Karmesine and Duranite.\n\nSome Coal, Ovium and Draconium. Meteorite, Apatite, Iridium and Osram.
 PREREQ  #  AND      #  050
 
@@ -226,7 +226,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x3      #  CrystalMoon Moon
+QUEST   #  5x3      #  CrystalMoon Moon # 67
 TEXT    #  This moon is orbiting the AlienWorld Planet, so it has the same World Orb.\n\nNatural Growth of Crystal Block Spires.\n\nSmall deposites of Iron, Gold, Redstone, Aluminium, Copper, Tin, Zinc, Lead, Eezo, Ovium and Glowstone.\n\nLarge deposites of Lapis, Diamonds, Emeralds, Lead, Nickel, Osram, Meteorite and Karmesine.
 PREREQ  #  AND      #  050
 
@@ -235,7 +235,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x4      #  HomeWorld Gas Giant
+QUEST   #  5x4      #  HomeWorld Gas Giant # 68
 TEXT    #  It requires the Home World Orb\n\nWell it is a Gas Giant so you don't mine any minerals here, but it is a good source of Oxygen, Hydrogen, Nitrogen, Cloud Seed, Nutrient Destilation and Hootch.
 PREREQ  #  AND      #  050
 
@@ -244,7 +244,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x5      #  SandMoon Moon
+QUEST   #  5x5      #  SandMoon Moon # 69
 TEXT    #  It orbits the Mystical Gas Giant, so it requiresthe Mystical World Orb\n\nSmall deposits of Aluminium, Copper, Tin, Zinc, Nickel, Ovium and Basalt.\n\nLarge deposites of Iron, Gold, Redstone, Diamonds, Osram, Silver and Coal.\n\nAlso Meteorite, Black Quartz, Tiberium, Cobalt, Ardite, Nether Quartz, Soul Sand, Uranium, Uru, Glowstone, Titanium and Prometheum can be found here.
 PREREQ  #  AND      #  050
 
@@ -253,7 +253,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  5x6      #  The End Asteroid Belt
+QUEST   #  5x6      #  The End Asteroid Belt # 70
 TEXT    #  It orbits the Mystical Gas Giant, so it requires the Mystical World Orb\n\nLarge deposit of draconium, Chaos shards. Beware, Chaos Guardian Included.
 PREREQ  #  AND      #  050
 
@@ -262,7 +262,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  7x1      #  DistantWorld Planet
+QUEST   #  7x1      #  DistantWorld Planet # 71
 TEXT    #  It requires the Distant World Orb or Gateway through the Nether\n\nSmall deposites of Iron, Redstone, Lapis, Zinc, Nickel and Basalt.\n\nLarge deposits of Gold, Diamonds, Emeralds, Lead, Eezo, Osram, Silver, SoulSand an Uranium.\n\nAlso Coal, Dilithium, Jauxum, Magma, Netherrak and Valyrium.
 PREREQ  #  AND      #  070
 
@@ -271,7 +271,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  7x2      #  OceanWorld Planet
+QUEST   #  7x2      #  OceanWorld Planet # 72
 TEXT    #  It requires the Ocean World Orb\n\nSmall Deposites of Gold, Diamonds, Emeralds, Zinc, Lead, Nickel, Eezo and Silver.\n\nLarge deposites of Iron, Redstone, Lapis, Aluminium, Copper, Tin, Osram, Basalt and Duranite.\n\nAlso Coal, Ovium, Vibranium, Iridium and Titanium.
 PREREQ  #  AND      #  070
 
@@ -280,7 +280,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  7x3      #  RocksInSky Asteroid Belt
+QUEST   #  7x3      #  RocksInSky Asteroid Belt # 73
 TEXT    #  It orbits the OceanWorld, so it requires the Ocean World Orb.\n\nIt is an Asteroid Belt, so beware of the landing hazard.\n\nDeposits of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Titanium, Silver, Cobalt, Ardite, Nether Quartz and Prometheum.
 PREREQ  #  AND      #  070
 
@@ -289,7 +289,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  7x4      #  MushroomWorld Moon
+QUEST   #  7x4      #  MushroomWorld Moon # 74
 TEXT    #  It orbits the BlueBall Gas Giant. But it is so important that the World Orb is named by this world, not the Planet. Mushroom World Orb.\n\nDeposits of Aluminium, Copper, Tin, Redstone, Lapis, Nickel, Eezo, Osram, Basalt, Black Quartz, Jauxum, Uru and Aurorium can be found here.
 PREREQ  #  AND      #  070
 

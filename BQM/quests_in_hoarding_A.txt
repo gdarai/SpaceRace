@@ -1,4 +1,4 @@
-QUEST   #  HA00     #  Initial Warnings
+QUEST   #  HA00     #  Initial Warnings # 1200
 TEXT    #  Beware. Every quest in this chapter has certain time when it can be fulfilled. Like initial bunch. When you will acquire first duranite ore your time will be over and you will never be able to return to those quests.\n\nYour reward will be victory points so you will be able to pick whatever you want for them on the market.
 
 TASK    #  HAVE     #  OreSpec01:1
@@ -6,7 +6,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  HA10     #  Age of Casting
+QUEST   #  HA10     #  Age of Casting # 1201
 TEXT    #  Ok, Duranite Ore, the Initial Age is over and new hoarding tasks are here for you. But since this day on... don't expect to keep the items. Next age starts after you receive your first Steel Ingot.
 PREREQ  #  AND      #  HA00
 
@@ -15,7 +15,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  HA20     #  Age of Steel
+QUEST   #  HA20     #  Age of Steel # 1202
 TEXT    #  So you are now having Steel. This certainly improves your hoarding chances. Next mile for you is Soul Sand. Finish your hoarding quests in time buddy.
 PREREQ  #  AND      #  HA10
 
@@ -28,7 +28,7 @@ REWARD  #  XP       #  Levels:1
 // ----------------------------->
 // ------->
 
-QUEST   #  HAx0     #  Hells Furnace
+QUEST   #  HAx0     #  Hells Furnace # 1250
 TEXT    #  Don't think small, build lava powered furnace early and be cool.
 PREREQ  #  NAND     #  HA00
 
@@ -37,7 +37,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  HAx1     #  Zealous Farmer
+QUEST   #  HAx1     #  Zealous Farmer # 1251
 TEXT    #  Who says you cannot have chests full of Eggplants? 
 PREREQ  #  NAND     #  HA00
 
@@ -46,7 +46,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  HAx2     #  Zealous fisher
+QUEST   #  HAx2     #  Zealous Fisher # 1252
 TEXT    #  Do you like fishing? A lot?
 PREREQ  #  NAND     #  HA00
 
@@ -55,7 +55,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  HAx3     # Bricks for Everybody 
+QUEST   #  HAx3     # Bricks for Everybody # 1253
 TEXT    #  You don't plan to live in a mud shad right? Get material for a solid brick home and you will get some astonished viewers here.
 PREREQ  #  NAND     #  HA00
 
@@ -64,7 +64,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  HAx10    #  Zombie Hunter
+QUEST   #  HAx10    #  Zombie Hunter # 1254
 TEXT    #  Well hunting zombies is great and all but this? You had to do this on purpose.
 PREREQ  #  NAND     #  HA10
 
@@ -73,7 +73,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
 
 // ------->
 
-QUEST   #  HAx11    #  Master Diver
+QUEST   #  HAx11    #  Supreme Diver # 1255
 TEXT    #  Are you really going to dive there? Just to get the fame?
 PREREQ  #  NAND     #  HA10
 
@@ -82,7 +82,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
 
 // ------->
 
-QUEST   #  HAx12    #  Luck for everybody
+QUEST   #  HAx12    #  Luck for everybody # 1256
 TEXT    #  And you thought those rabbit foots will be worthless. Well, from today on, probably yes.
 PREREQ  #  NAND     #  HA10
 
@@ -91,8 +91,8 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
 
 // ------->
 
-QUEST   #  HAx13    #  Master Caster
-TEXT    #  You don't want to do this by hand... I hope.
+QUEST   #  HAx13    #  Master Caster # 1257
+TEXT    #  You don't plan to do this by your own hands... I hope.
 PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  ObsidianShard:128

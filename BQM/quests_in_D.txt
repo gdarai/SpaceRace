@@ -1,4 +1,4 @@
-QUEST   #  D00      #  Space Suit
+QUEST   #  D00      #  Space Suit # 400
 TEXT    #  All jokes aside, Space is Cold. You need a proper suit to survive in it. You can build such suit now. You will also need a Suit Workstation to configure it, Suite Charge Pad to load it with oxygen. Oxygen can be produced in the Electrolyser.
 PREREQ  #  AND      #  C60
 
@@ -7,7 +7,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D10      #  Launching Pad
+QUEST   #  D10      #  Launching Pad # 401
 TEXT    #  Space Ship Start need some infrastructure as well. You must construct a concrete based pad with controll tower next to it. This tower must be higher than your final rocket. You also must add a Rocket Assembling Machine, which will allow you to build your space ship.
 PREREQ  #  AND      #  D00
 
@@ -16,7 +16,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D11      #  Space Fuel
+QUEST   #  D11      #  Space Fuel # 402
 TEXT    #  So you have some crude oil to run your diesel generators. Well that is not enough to get you into space. You know how to make a proper Rocket Fuel, but for that you need a proper Chemical Reactor and that is something you can not build just yet.\n\nSo here is an alternative road. Using Industrial Mixer and Forestry Fermenter, you can get a fluid powerful enough that you can turn it into Rocket Fuel in the basic Industrial Refinery.\n\nIt is expensive but doable.
 PREREQ  #  AND      #  D00
 
@@ -25,7 +25,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D30      #  To the Moon
+QUEST   #  D30      #  To the Moon # 403
 TEXT    #  You have space suit, launch pad and rocket fuel. What next? Well, build the damned rocket. For your first mission to the Moon, you will need just a simple rocket. With Basic Rocket Engines, Some Fuel Tanks, one Guidance Computer and a Seat. I also recommend to add some storing options like Storage Crates.\n\nBuild the rocket on the platform and link it with the Assembler using the Linker. Scan the rocket and if everything is green, build it. Fuel it up, sit into the chair and set the Moon as your destination. Don't forget your Space Suit. Don't forget enough material to refuel the rocket for your journey back. Don't forget your mining tools. Spare Oxygen and Gas Charge Pad.\n\nAnd Blast Off.
 PREREQ  #  AND      #  D10 # D11
 
@@ -34,7 +34,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D40      #  Moon Metals
+QUEST   #  D40      #  Moon Metals # 404
 TEXT    #  So you are on the moon. Good. But why? Right? Well, for one, the Moon is quite rich for nearly all the metals, you were mining on the surface. Second and even more important, there are deposits of Moon Rock, Karmesine and Meteorite. Find those and take them with you if you can. They will be crucial for your next progress.
 PREREQ  #  AND      #  D30
 
@@ -43,7 +43,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D50      #  Asteroids Scanning
+QUEST   #  D50      #  Asteroids Scanning # 405
 TEXT    #  Back Home again? Good. It is time to focus on your next mission. You need Dilithium and the only good ore for this is scattered on asteroids in the interplanetary space. So your next goal is to launch a series of Satellites equipped with Optical, Composition and Mass sensors.\n\nBuild a Satellite Assembly machine. Construct in it a Satellite with an Optical Sensor and a pair of Basic Solar Panels. Keep the Satellite ID Chip.\n\nBuild a rocket which will not have a seat, but a Satellite Bay instead. Put the Satellite into that bay and launch the rocket. For remote launching a rocket, you will need a Rocket Monitoring Station been linked to that rocket.\n\nBuild a Satellite Monitoring Station. Put in the Satellite ID chip and watch the data slowly flow in.
 PREREQ  #  AND      #  D40
 
@@ -52,7 +52,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  D60      #  Asteroids Mining
+QUEST   #  D60      #  Asteroids Mining # 406
 TEXT    #  You have your first satellite out? Good. It is recommended to have at least 2 Optical, 2 Composition and 2 Mass Satellites in the orbit. Build an Astrobody Data Processor to have a place to collect the data. But what for?\n\nBuild an Observatory. At night, when the Observatory will open, scan the sky for asteroids. Make an Asteroid ID chip there. Fill this chip with data in the AD-Processor. Recommended is to have a full 3x1000 data inside.\n\nNow it is time to send a rocket to mine that piece of rock. This rocker must have some serious storage compartment, Guidance Computer with the programmed Asteroid ID chip and some Mining Drills.
 PREREQ  #  AND      #  D50
 
@@ -65,7 +65,7 @@ REWARD  #  XP       #  Levels:1
 // ----------------------------->
 // ------->
 
-QUEST   #  Dx00     #  Loading and Unloading
+QUEST   #  Dx00     #  Loading and Unloading # 450
 TEXT    #  Optionally, you can add Ship Loader and Unloader and Fuel Loader and Unloader to automate your space ship handling.
 PREREQ  #  AND      #  D11
 
@@ -74,7 +74,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx01     #  Magical Flowers
+QUEST   #  Dx01     #  Magical Flowers # 451
 TEXT    #  So you can make a flower which will produce blaze powder for you. Interesting. Now I am intrigued to find out what other flowers you can make.
 PREREQ  #  AND      #  D11
 
@@ -83,7 +83,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx30     #  Space Suit Gadgets
+QUEST   #  Dx30     #  Space Suit Gadgets # 452
 TEXT    #  Do you want your space suit to be more than just basic cloth bubble of oxygen? Add some gadgets to it.
 PREREQ  #  AND      #  D30
 
@@ -92,7 +92,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx40     #  Coffee
+QUEST   #  Dx40     #  Coffee # 453
 TEXT    #  You were without a proper coffee long enough. It looks like, now the real game starts.
 PREREQ  #  AND      #  D40
 
@@ -101,7 +101,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx41     #  Plant Power
+QUEST   #  Dx41     #  Plant Power # 454
 TEXT    #  Some new power generation options are now available. Canola Oil Generator and Bio Generator.
 PREREQ  #  AND      #  D40
 
@@ -110,7 +110,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx42     #  Super Suit
+QUEST   #  Dx42     #  Super Suit # 455
 TEXT    #  Armor, Shields, Gadgets, Tools... all in one package. Well it is an idea, so why not to try to make it real? Build your Suit Workstation.
 PREREQ  #  AND      #  D40
 
@@ -119,7 +119,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx43     #  Power Lasers
+QUEST   #  Dx43     #  Power Lasers # 456
 TEXT    #  The Laser transport system can be now modified to transfer also Power. And some more Power Related stuff is now available as well.
 PREREQ  #  AND      #  D40
 
@@ -128,7 +128,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx44     #  Computers
+QUEST   #  Dx44     #  Computers # 457
 TEXT    #  Some people will always think that computer is just another way to play. But you know better right? Factory controlled by computer? Yes please.
 PREREQ  #  AND      #  D40
 
@@ -137,7 +137,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx60     #  Dilithium Crystals
+QUEST   #  Dx60     #  Dilithium Crystals # 458
 TEXT    #  Now, the basic ore has to be purified to get the real dilithium crystals, so you better start soon.
 PREREQ  #  AND      #  D60
 
@@ -146,7 +146,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx61     #  Zombie Power
+QUEST   #  Dx61     #  Zombie Power # 459
 TEXT    #  With Dilithium, you may try to push zombies to power your stuff. Only if you would have a good source of nutrient distillation.
 PREREQ  #  AND      #  D60
 
@@ -155,7 +155,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx62     #  Experience Obelisk
+QUEST   #  Dx62     #  Experience Obelisk # 460
 TEXT    #  And also you can now improve your XP storing by constructing the Experience Obelisk.
 PREREQ  #  AND      #  D60
 
@@ -164,7 +164,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Dx63     #  Automatic data
+QUEST   #  Dx63     #  Automatic data # 461
 TEXT    #  Did you know that you can transfer the data from the Sattelite Monitoring Stations using Data Cables? Just apply redstone to the piece which comes out from the Monitoring Station.
 PREREQ  #  AND      #  D60
 

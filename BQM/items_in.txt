@@ -623,3 +623,16 @@ ITEM # Reef0 # coralreef:reef
 ITEM # Reef1 # coralreef:reef:1
 ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material": "obsidian" }
 ITEM # RabbitFoot #  minecraft:rabbit_foot
+
+// Cheat quests
+
+ITEM # CHteleportHome # draconicevolution:dislocator:19 # NBT:{"IsSet": 1, "Dimension":0, "DimentionName":"Overworld", "X":0, "Y":70, "Z":0, "Yaw":0, "Pitch":0}
+
+ITEM # CHtank         # advancedrocketry:fuelTank
+ITEM # CHengine       # advancedrocketry:rocketmotor
+ITEM # CHseat         # advancedrocketry:seat
+ITEM # CHguidance     # advancedrocketry:guidanceComputer
+ITEM # CHplanetChip   # advancedrocketry:planetIdChip
+ITEM # CHfuel         # advancedrocketry:bucketRocketFuel
+ITEM # CHglider       # openglider:hang_glider_basic
+ITEM # CHboat         # minecraft:acacia_boat

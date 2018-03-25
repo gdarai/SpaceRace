@@ -1,4 +1,4 @@
-QUEST   #  TA00     #  Collecting Victory Points
+QUEST   #  TA00     #  Collecting Victory Points # 1000
 TEXT    #  There are multiple ways you can please our viewers. During your journey you will be given several opportunities. Each will be rewarded with victory points. You can exchange those victory points later for material or food or you can just pile them up to prove your viewers that you are the best player they ever saw.
 
 TASK    #  TRIGGER
@@ -8,7 +8,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
 // Farming Chain
 // ------->
 
-QUEST   #  TA01     #  Are you Farmer?
+QUEST   #  TA01     #  Are you Farmer? # 1001
 TEXT    #  You must first prove that you are a serious farmer. Deliver 30 waterbowls and I will believe you.
 PREREQ  #  AND      #  TA00
 
@@ -18,7 +18,7 @@ REWARD  #  RESET    #  TA19
 
 // ------->
 
-QUEST   #  TA10     #  Roots
+QUEST   #  TA10     #  Roots # 1002
 TEXT    #  Our viewers want to see you thrive. Deliver some most common seeds to prove you are the master of your land.
 PREREQ  #  XOR      #  TA01
 
@@ -27,7 +27,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA11     #  Vegetables
+QUEST   #  TA11     #  Vegetables # 1003
 TEXT    #  So you can collect roots, Can you also collect vegetables?
 PREREQ  #  AND      #  TA10
 
@@ -36,7 +36,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA12     #  Berries
+QUEST   #  TA12     #  Berries # 1004
 TEXT    #  Enough Vegetables, time for some Berries.
 PREREQ  #  AND      #  TA11
 
@@ -45,7 +45,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA13     #  Wheats
+QUEST   #  TA13     #  Wheats # 1005
 TEXT    #  Can your empire be built up without wheet and rice? Certainly not.
 PREREQ  #  AND      #  TA12
 
@@ -54,7 +54,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA14     #  Fruits
+QUEST   #  TA14     #  Fruits # 1006
 TEXT    #  And when you look up instead of down, you want to see great trees with wonderfull fruits.
 PREREQ  #  AND      #  TA13
 
@@ -63,7 +63,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA19     #  Reset the Food Chain
+QUEST   #  TA19     #  Reset the Food Chain # 1007
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TA14
 
@@ -80,7 +80,7 @@ REWARD  #  RESET    #  TA14
 // Mining Chain
 // ------->
 
-QUEST   #  TA02     #  Are you Miner?
+QUEST   #  TA02     #  Are you Miner? # 1008
 TEXT    #  You must first prove that you are a serious miner. Deliver 10 flint pickaxe heads to prove it.
 PREREQ  #  AND      #  TA00
 
@@ -90,7 +90,7 @@ REWARD  #  RESET    #  TA29
 
 // ------->
 
-QUEST   #  TA20     #  Poor Ores
+QUEST   #  TA20     #  Poor Ores # 1009
 TEXT    #  Look around and deliver some poor nickel ore and poor zinc ore.
 PREREQ  #  AND      #  TA02
 
@@ -99,7 +99,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA21     #  Regular Ores
+QUEST   #  TA21     #  Regular Ores # 1010
 TEXT    #  Let's increase the load. We want to see some real Digging.
 PREREQ  #  AND      #  TA20
 
@@ -108,7 +108,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA22     #  Deep Dusts
+QUEST   #  TA22     #  Deep Dusts # 1011
 TEXT    #  Can you go deeper and get some Redstone and Duranium dusts?
 PREREQ  #  AND      #  TA21
 
@@ -117,7 +117,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA23     #  Basalt
+QUEST   #  TA23     #  Basalt # 1012
 TEXT    #  There are two variants of basalt on this world. Deliver both to please the viewers.
 PREREQ  #  AND      #  TA22
 
@@ -126,7 +126,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA24     #  Going Exotic
+QUEST   #  TA24     #  Going Exotic # 1013
 TEXT    #  Some unique and precious metals should buy our attention.
 PREREQ  #  AND      #  TA23
 
@@ -135,7 +135,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA25     #  Going Wild
+QUEST   #  TA25     #  Going Wild # 1014
 TEXT    #  And what about going DEEP under?
 PREREQ  #  AND      #  TA24
 
@@ -144,7 +144,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  TA29     #  Reset the Miners Chain
+QUEST   #  TA29     #  Reset the Miners Chain # 1015
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TA25
 
@@ -162,7 +162,7 @@ REWARD  #  RESET    #  TA25
 // Building Chain
 // ------->
 
-QUEST   #  TA03     #  Are you Builder?
+QUEST   #  TA03     #  Are you Builder? # 1016
 TEXT    #  You must first prove that you are a serious builder. Deliver a chisel tool.
 PREREQ  #  AND      #  TA00
 
@@ -172,7 +172,7 @@ REWARD  #  RESET    #  TA39
 
 // ------->
 
-QUEST   #  TA30     #  Bricks
+QUEST   #  TA30     #  Bricks # 1017
 TEXT    #  If you mean it, you must know how to make bricks.
 PREREQ  #  AND      #  TA03
 
@@ -181,7 +181,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA31     #  Oak Wood Parts
+QUEST   #  TA31     #  Oak Wood Parts # 1018
 TEXT    #  Wood and Stone, Stone And Wood. That is what you need for a good building.
 PREREQ  #  AND      #  TA30
 
@@ -190,7 +190,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
 
 // ------->
 
-QUEST   #  TA32     #  Luxury Wood Parts
+QUEST   #  TA32     #  Luxury Wood Parts # 1019
 TEXT    #  To make things nice, you must add some colors and shades, right?
 PREREQ  #  AND      #  TA31
 
@@ -199,7 +199,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA33     #  Chiseled Decorations
+QUEST   #  TA33     #  Chiseled Decorations # 1020
 TEXT    #  It is time to add some fanciness to this world. 
 PREREQ  #  AND      #  TA32
 
@@ -208,7 +208,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA34     #  Furniture 1
+QUEST   #  TA34     #  Furniture 1 # 1021
 TEXT    #  Four walls, roof and floor is what makes house. Furniture is what makes home.
 PREREQ  #  AND      #  TA33
 
@@ -217,7 +217,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
 
 // ------->
 
-QUEST   #  TA35     #  Furniture 2
+QUEST   #  TA35     #  Furniture 2 # 1022
 TEXT    #  Well, there is furniture and then there is luxus.
 PREREQ  #  AND      #  TA34
 
@@ -226,7 +226,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
-QUEST   #  TA39     #  Reset the Builders Chain
+QUEST   #  TA39     #  Reset the Builders Chain # 1023
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TA35
 

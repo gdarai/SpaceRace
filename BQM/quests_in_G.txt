@@ -1,4 +1,4 @@
-QUEST   #  G00      #  Unlocking the Nether
+QUEST   #  G00      #  Unlocking the Nether # 700
 TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the Nether, you must craft the Uranium seed first. Well go ahead. Do it. After you will have the achievement, to get to the Nether will be your well known procedure, obsidian frame and light it up.
 PREREQ  #  AND      #  F30
 
@@ -7,7 +7,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  G30      #  Unlocking the End
+QUEST   #  G30      #  Unlocking the End # 701
 TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the End, you must craft the Draconium Ingot first. Well go ahead. Do it. After you will have the achievement, to get to the End will be just a question of launching your rocket.
 PREREQ  #  AND      #  G00
 
@@ -20,7 +20,7 @@ REWARD  #  XP       #  Levels:1
 // ----------------------------->
 // ------->
 
-QUEST   #  Gx00     #  Best Magic Tools
+QUEST   #  Gx00     #  Best Magic Tools # 750
 TEXT    #  Did you noticed that you may be able to build the Supremium Gear now?
 PREREQ  #  AND      #  G00
 
@@ -29,7 +29,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx01     #  True Refined Storage
+QUEST   #  Gx01     #  True Refined Storage # 751
 TEXT    #  Now you feel confident that you can reproduce all from the Refined Storage realm.
 PREREQ  #  AND      #  G00
 
@@ -38,7 +38,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx02     #  Spawning on Demand
+QUEST   #  Gx02     #  Spawning on Demand # 752
 TEXT    #  You also know about a very powerful Spawning system you may be able to reproduce now. Also some monster Attractors and Repulsors should be now in your reach.
 PREREQ  #  AND      #  G00
 
@@ -47,7 +47,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx03     #  Bee Genome
+QUEST   #  Gx03     #  Bee Genome # 753
 TEXT    #  Really? Genes? You might be able to improve your bees immensely with this. So why not try it?
 PREREQ  #  AND      #  G00
 
@@ -56,7 +56,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx30     #  Fusion Crafting
+QUEST   #  Gx30     #  Fusion Crafting # 754
 TEXT    #  Yet another powerful Energy Infusion crafting technique is now available to you.
 PREREQ  #  AND      #  G30
 
@@ -65,7 +65,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx31     #  Wyvern Gear
+QUEST   #  Gx31     #  Wyvern Gear # 755
 TEXT    #  It may be possible that you discovered a way how to improve your gear with the power of a Wyvern.
 PREREQ  #  AND      #  G30
 
@@ -74,7 +74,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx32     #  Celestial Manipulator
+QUEST   #  Gx32     #  Celestial Manipulator # 756
 TEXT    #  Let be day. You might know a way to move the stars now... maybe.
 PREREQ  #  AND      #  G30
 
@@ -83,7 +83,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  Gx33     #  Telepads
+QUEST   #  Gx33     #  Telepads # 757
 TEXT    #  Teleporting. Nothing more, nothing less. You may be finally able to teleport. Isn't it great?
 PREREQ  #  AND      #  G30
 

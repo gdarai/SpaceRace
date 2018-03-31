@@ -1,0 +1,19 @@
+The generator is Python program. It can be started using python oregen.py and it will take the _in.tt files and generate new vanilla.json
+
+----------------------
+ores_in.txt contains description of ores used in the pack.
+
+deepCoal	minecraft:coal_ore			0	no		minecraft:stone			uniform		8		25		0	128
+Means, deepCoal will be minecraft:coal_ore:0, it will generate in minecraft:stone and it will generate 25 blobs per chunk with blob size of 8 in the heights 0 - 128
+
+----------------------
+biomes_in.txt is a biome group setting file in case you want to spread the ores also biome-wise.
+
+jungle		jungle_hills		jungle					jungle_edge
+means create biomegroup jungle containing biomes jungle_hills, jungle, jungle_edge
+
+----------------------
+oregen_in.txt is the main configuration summarizes all together
+
+dirt0		dirt		all		0,20,21,22,23,24,25,30,31,33
+means that create generation group dirt0, use dirt defined in ore_in.txt and generate it in all biomes of dimension 0,20,21,... etc.

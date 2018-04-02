@@ -2,17 +2,17 @@ QUEST   #  E00      #  Mining in the Belt # 500
 TEXT    #  There is also another moon orbiting this gas giant. The Belt. Asteroid belt is an unbelievably dangerous place. Unfortunately it is also the only place near by where you can find Ardite and Cobalt. Before you will go there understand this.\n\nIt is very hard to land there. Expect that you may loose your rocket and everything on it in your landing attempt. It will simply miss all the asteroids and fall into the void.\n\nSo, it is recommended to be able to fly or glide, so you can leave the rocket in case of emergency. And it is also good to have everything you need to build a second rocket in your pocket so you will be able to get out of there. Good trick is to move your launch platform so your next rockets will not be lost or just build a base on the place where you expect to land next time. 
 PREREQ  #  AND      #  D60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  CobaltOre
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
 QUEST   #  E10      #  Building your Warp Ship # 501
-TEXT    #  The next step is to build a Warp Ship, because all the other materials you need are not in this Gas Giants vicinity. Start by building a launch pad similar to the one you have for your ship, but larger. Place Space Station Assembling Machine next to it instead of the Rocket Assembling Machine.\n\nBuild the core of your space station on this platform. Your first rocket flying to your space station will land on this platform, so be careful with the design. Also you may want to put there a Landing Pad which will tells your rocket, where to land exactly.\n\nTo pack the station, put in the Assembler a Space Station ID chip and a Satellite Bay.
+TEXT    #  The next step is to build a Warp Ship, because all the other materials you need are not in this Gas Giant's vicinity. Start by building a launch pad similar to the one you have for your ship, but larger. Place Space Station Assembling Machine next to it instead of the Rocket Assembling Machine.\n\nBuild the core of your space station on this platform. Your first rocket flying to your space station will land on this platform, so be careful with the design. Also you may want to put there a Landing Pad which will tells your rocket, where to land exactly.\n\nTo pack the station, put in the Assembler a Space Station ID chip and a Satellite Bay.
 PREREQ  #  AND      #  E00
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  SSChip # SatBay # SSBuilder
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -20,8 +20,8 @@ QUEST   #  E20      #  Deploy and visit the Station # 502
 TEXT    #  To Deploy the Station, just put it into the same type of rocket, you are using for satellites. To visit the station, put in your rockets Guidance Computer the Station's ID Chip.
 PREREQ  #  AND      #  E10
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  SatBay # CHtank # CHengine # CHseat # CHguidance
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -29,8 +29,8 @@ QUEST   #  E21      #  Expanding the station # 503
 TEXT    #  Sure you didn't put on all the things. Now it is time to expand the station. Add there the Oxygen Scrubbers and Oxygen Producer so you will not need the Space Suit there any more.\n\nThis way... One by one you will add all the things to your Station-Ship that it will become your final, big, mobile base.
 PREREQ  #  AND      #  E10
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  Ventilator # ARScrubber
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -38,8 +38,8 @@ QUEST   #  E22      #  Warp Drive # 504
 TEXT    #  The single most important part of your Space Ship is the Warp Drive. Build a Warp Core and place somewhere on your Ship a Warp Controller, the Helm of your Ship.
 PREREQ  #  AND      #  E10
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  WarpCore
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -47,8 +47,8 @@ QUEST   #  E30      #  World Orb # 505
 TEXT    #  The trial run of your Ship should go to the orbit of the Red Gas Giant itself. It is a super-short jump, so you will not have to put many Dilithium Crystals (the white ones) into the Warp Core.\n\nBut you will have to put the correct World Orb into the Warp Controller. in this case it is the Homeworld World Orb.
 PREREQ  #  AND      #  E20  #  E21  #  E22
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  WorldOrbHW
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -56,8 +56,8 @@ QUEST   #  E40      #  The Red Gas Giant # 506
 TEXT    #  If you used the Orb the right way, you should be now in the orbit of your Red Gas Giant. Your next mission is to harvest some Nitrogen out of it. Harvesting Gas Giants is a good way for obtaining specific liquids. Start by building an Unmanned Vehicle Assembler. 
 PREREQ  #  AND      #  E30
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  UAVAssembler
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -65,8 +65,8 @@ QUEST   #  E50      #  The Dockyard # 507
 TEXT    #  Unmanned vehicle Dockyard does not need Launch Pad... what it does need are arms from Structure Tower blocks, which expands from the Assembler to the left, right, up and down, and from the end of the up arm also forward. Those arms shows, how big will be your future Drone.
 PREREQ  #  AND      #  E40
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  ARTower
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -74,17 +74,17 @@ QUEST   #  E51      #  The Drone # 508
 TEXT    #  Drone must be built in the Dockyard in the similar manner as the Rocket is on the Launch Pad. When built, It will face away from the Assembler, so put it's Engines as the closest thing to the Assembler. The Drone will first drop down from your Dockyard, then it will ignite it's engines and fly towards it's goal. Each Drone must have Engines, Fuel Tanks, Guidance Computer, Hard Tanks for the collected fluid and Gas Intakes. 
 PREREQ  #  AND      #  E40
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  ARIntake # ARPresTank
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
 QUEST   #  E60      #  Gas Giant Mining # 509
-TEXT    #  Drone is ready in your Dockyard? Program it to collect Nitrogen and let it work. When it returns, you can pump the nitrogen out using the Rocket Unloader.
+TEXT    #  Drone is ready in your Dockyard? Program it to collect Nitrogen and let it work. When it returns, you can pump the nitrogen out using the Rocket Unloader. If you put it through the bottling machine, you can make the so much needed Nitrogen Tanks.
 PREREQ  #  AND      #  E50  #  E51
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  Nitrogen
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 // ----------------------------->
@@ -96,8 +96,8 @@ QUEST   #  Ex00     #  The Vat # 550
 TEXT    #  You have now much efficient way to process some liquids. The new machine is called The Vat. Build it.
 PREREQ  #  AND      #  E00
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  IOVat
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -105,8 +105,8 @@ QUEST   #  Ex01     #  Liquid Fuel Engine # 551
 TEXT    #  You also see a way to miniaturize the Liquid Fuel Engine. Build one.
 PREREQ  #  AND      #  E00
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  IOEngine
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -114,26 +114,26 @@ QUEST   #  Ex02     #  Bee Advancement # 552
 TEXT    #  With new materials, you may be able to produce Industrial Apiaries and some Bee Mutation equipment like Mutatron and Mutagen Producer.
 PREREQ  #  AND      #  E00
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  GEMutatron # GEProducer # GEApiary
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
 QUEST   #  Ex03     #  Mini Farm # 553
-TEXT    #  Also Farms should be possible to miniaturize now. Build a Clothe.
+TEXT    #  Also Farms should be possible to miniaturize now. Build a Clothe. Read about it in the engineers manual, it is an awesome machine.
 PREREQ  #  AND      #  E00
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  Cloche
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
 QUEST   #  Ex60     #  Laser Reconstruction # 554
-TEXT    #  With an Atomic Reconstructor a whole new world opens for you. Build one and explore it's capabilities.
+TEXT    #  With the Atomic Reconstructor a whole new world opens for you. Build one and explore it's capabilities.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  AALaserR
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -141,8 +141,8 @@ QUEST   #  Ex61     #  Solar Power # 555
 TEXT    #  There is no water or air flow in the space so how to produce a free power? Well, maybe you are far enough for your first Solar Generator. Try to build one.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  AASolar
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -150,8 +150,8 @@ QUEST   #  Ex62     #  Improved Beam Transfer # 556
 TEXT    #  Your power and Item transfering beams can now be upgraded too.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  AALaser2
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -159,8 +159,8 @@ QUEST   #  Ex63     #  Lamps # 557
 TEXT    #  If you are looking for a good source of light for your space ship, Power Lamps are now available.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  AALamp # AALampC
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -168,17 +168,17 @@ QUEST   #  Ex64     #  Farmer # 558
 TEXT    #  Another improved farming technology is also available now. Try to make a Farmer.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  AAFarmer
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
 QUEST   #  Ex65     #  MicroWave Power # 559
-TEXT    #  If you are tired of building a Power Plant o every planet you go, there is a solution. Build a network of Solar Satellites and MicroWave Receiver in your base. And voila, you have a portable power source.\n\nIf you launch those satellites from Homeworld, will you be able to catch their transmission also on the Moon? Or the Hot Planet?
+TEXT    #  If you are tired of building a Power Plant on every planet you go, there is a solution. Build a network of Solar Satellites and MicroWave Receiver in your base. And voila, you have a portable power source.\n\nIf you launch those satellites from Homeworld, will you be able to catch their transmission also on the Moon? Yes. Or on the Lava World? Probably not.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  ARMWPower
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -186,8 +186,8 @@ QUEST   #  Ex66     #  Space Elevator # 560
 TEXT    #  If you are tired of flying a rocket to your Space Ship and back to Surface, you may want to try to build a Space Elevator.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  ARElevator
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2
 
 // ------->
 
@@ -195,5 +195,5 @@ QUEST   #  Ex67     #  Space Cannon # 561
 TEXT    #  Tired of Rockets, but Space Elevator is too slow? What about a Rail Gun, firing your load directly into the orbit.
 PREREQ  #  AND      #  E60
 
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
+TASK    #  HAVE     #  ARSpaceLaser
+REWARD  #  PICK     #  HCSo2619:4 # HCSo2627:4 # MedKit:4 # RocketFuelBucket:16 # ARRocketMachine:1 # Alveary:27 # ZombieGen:2 # Dilithium:2

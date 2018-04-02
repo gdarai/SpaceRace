@@ -17,7 +17,6 @@ ITEM  #  SaplingBirch   #  minecraft:sapling:2
 ITEM  #  SaplingJungle  #  minecraft:sapling:3
 ITEM  #  SaplingAcacia  #  minecraft:sapling:4
 
-
 // Quests 0
 ITEM  #  ExtraLife	 	#  betterquesting:extra_life
 ITEM  #  NetherStar	 	#  minecraft:nether_star
@@ -54,6 +53,7 @@ ITEM  #  TTable    		#  tconstruct:tooltables
 ITEM  #  Wheet    		#  minecraft:wheat
 ITEM  #  Rope    		#  immersiveengineering:wirecoil:3
 ITEM  #  HoneyComb    	#  forestry:beeCombs
+ITEM  #  BeeHouse       #  forestry:bee_house
 ITEM  #  Torch    		#  minecraft:torch
 ITEM  #  SmelteryController	#  tconstruct:smeltery_controller
 ITEM  #  Clay    		#  minecraft:clay_ball
@@ -67,8 +67,19 @@ ITEM  #  SmelteryTank	#  tconstruct:seared_tank
 ITEM  #  SmelteryTable	#  tconstruct:casting
 ITEM  #  ConveyorBelt	#  immersiveengineering:conveyor	#	NBT:{"conveyorType": "immersiveengineering:uncontrolled"}
 ITEM  #  HardendCap  	#  harvestcraft:hardenedleatherhelmitem
+ITEM  #  HardendLeather #  harvestcraft:hardenedleatheritem
 ITEM  #  Punji		  	#  tconstruct:punji
 ITEM  #  ToolForge	 	#  tconstruct:toolforge				#	NBT:{"textureBlock:10": {"id:8": "tconstruct:metal", "Count:1": 1, "Damage:2": 3 }}
+ITEM  #  WoodToughRod   #  tconstruct:tough_tool_rod        #   NBT:{ "Material": "wood" }
+
+ITEM  #  HcCandle	  	#  harvestcraft:candledeco2
+ITEM  #  FrBee0 	  	#  forestry:beehives:0
+ITEM  #  FrBee1 	  	#  forestry:beehives:1
+ITEM  #  FrBee2 	  	#  forestry:beehives:2
+ITEM  #  FrBee3 	  	#  forestry:beehives:3
+ITEM  #  FrBee4 	  	#  forestry:beehives:5
+ITEM  #  FrBee5 	  	#  forestry:beehives:6
+ITEM  #  HcBeeHive	  	#  harvestcraft:beehive
 
 // Quests B
 ITEM  #  Gear    		#  enderio:itemMachinePart:1
@@ -87,6 +98,18 @@ ITEM  #  MedKit			#  tp:med_kit
 ITEM  #  Centrifuge		#  forestry:centrifuge
 ITEM  #  Distributor	#  immersiveengineering:woodenDevice0:3
 ITEM  #  RazorWire		#  immersiveengineering:metalDecoration2:5
+
+ITEM  #  CastGear       #  tconstruct:cast_custom:4
+ITEM  #  CastPlate      #  tconstruct:cast_custom:3
+ITEM  #  SteelIngot     #  libvulpes:productingot:6
+ITEM  #  Presser        #  harvestcraft:presser
+ITEM  #  SoldIron       #  forestry:solderingIron
+ITEM  #  Revolver       #  immersiveengineering:revolver
+
+ITEM  #  SpawnB0        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Pig"}}
+ITEM  #  SpawnB1        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Cow"}}
+ITEM  #  SpawnB2        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Chicken"}}
+ITEM  #  SpawnB3        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Sheep"}}
 
 // Quests C
 ITEM  #  ObsSword		#  actuallyadditions:itemSwordObsidian
@@ -109,6 +132,20 @@ ITEM  #  DEChest		#  draconicevolution:draconium_chest
 ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
 ITEM  #  IERadiator		#  immersiveengineering:metalDecoration0:7
 
+ITEM  #  GoldScythe		#  tp:golden_scythe
+ITEM  #  PrecAssembler  #  advancedrocketry:precisionassemblingmachine
+ITEM  #  Alveary        #  forestry:alveary.plain
+ITEM  #  DvBaloon		#  davincisvessels:balloon
+ITEM  #  Magnet         #  enderio:itemMagnet
+ITEM  #  BlazeRod       #  minecraft:blaze_rod
+ITEM  #  SeedNature     #  mysticalagriculture:nature_seeds
+ITEM  #  InfArmor       #  mysticalagriculture:inferium_armor_core
+
+ITEM  #  SpawnC0        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Horse"}}
+ITEM  #  SpawnC1        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Villager"}}
+ITEM  #  SpawnC2        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Slime"}}
+ITEM  #  SpawnC3        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Ozelot"}}
+
 // Quests D
 ITEM  #  ARHelm			#  advancedrocketry:spaceHelmet
 ITEM  #  ARPad			#  advancedrocketry:landingPad
@@ -124,6 +161,32 @@ ITEM  #  Dilithium		#  libvulpes:productcrystal
 ITEM  #  ZombieGen		#  enderio:blockZombieGenerator
 ITEM  #  ExpStand		#  enderio:blockExperienceObelisk
 ITEM  #  ARDataCab		#  advancedrocketry:energyPipe
+
+ITEM  #  RocketFuelBucket #  advancedrocketry:bucketRocketFuel
+ITEM  #  ARRocketMachine  #  advancedrocketry:rocketBuilder
+ITEM  #  MeteoCobble    #  taiga:meteoritecobble_block
+ITEM  #  KarmeOre       #  taiga:karmesine_ore
+ITEM  #  SatOptScanner  #  advancedrocketry:satellitePrimaryFunction
+ITEM  #  SatPanel       #  advancedrocketry:satellitePowerSource
+ITEM  #  SatChip        #  advancedrocketry:satelliteIdChip
+ITEM  #  SatData        #  advancedrocketry:dataUnit
+ITEM  #  SatBuilder     #  advancedrocketry:satelliteBuilder
+ITEM  #  SatMonitor     #  advancedrocketry:satelliteControlCenter
+ITEM  #  SatBay         #  advancedrocketry:loader:1
+ITEM  #  RocketMonitor  #  advancedrocketry:monitoringStation
+ITEM  #  Linker         #  libvulpes:linker
+
+ITEM  #  SuitStation    #  advancedrocketry:suitWorkStation
+ITEM  #  GasFiller      #  advancedrocketry:oxygenCharger
+ITEM  #  Electrolyser   #  advancedrocketry:electrolyser
+ITEM  #  Observatory    #  advancedrocketry:observatory
+ITEM  #  DataProcessor  #  advancedrocketry:planetAnalyser
+ITEM  #  Drill          #  advancedrocketry:drill
+ITEM  #  FuelLoader     #  advancedrocketry:fuelingStation
+ITEM  #  ItemsUnloader  #  advancedrocketry:loader:2
+ITEM  #  IronSeeds      #  mysticalagriculture:iron_seeds
+ITEM  #  OilGenerator   #  actuallyadditions:blockOilGenerator
+ITEM  #  PowerTinkerTab #  powersuits:tile.tinkerTable
 
 // Quests E
 ITEM  #  Manyullyn		#  tconstruct:metal:2
@@ -149,6 +212,15 @@ ITEM  #  ARMWPower		#  advancedrocketry:solarGenerator
 ITEM  #  ARElevator		#  advancedrocketry:spaceElevatorController
 ITEM  #  ARSpaceLaser	#  advancedrocketry:railgun
 
+ITEM  #  CobaltOre   	#  tconstruct:ore:0
+ITEM  #  SSBuilder   	#  advancedrocketry:stationBuilder
+ITEM  #  ARScrubber   	#  advancedrocketry:oxygenScrubber
+ITEM  #  ARPresTank     #  advancedrocketry:liquidTank
+ITEM  #  GEMutatron     #  gendustry:Mutatron
+ITEM  #  GEApiary       #  gendustry:IndustrialApiary
+ITEM  #  GEProducer     #  gendustry:MutagenProducer
+ITEM  #  AALampC        #  actuallyadditions:blockLampPowerer
+
 // Quests F
 ITEM  #  LavaOrb		#  bqmie:icon_item:14
 ITEM  #  AlienOrb		#  bqmie:icon_item:17
@@ -169,7 +241,7 @@ ITEM  #  yetaWrench		#  enderio:itemYetaWrench
 ITEM  #  ioInventory	#  enderio:blockInventoryPanel
 ITEM  #  aaEmpower		#  actuallyadditions:blockEmpowerer
 ITEM  #  ioCapac2		#  enderio:itemBasicCapacitor:2
-ITEM  #  aaSolar		#  actuallyadditions:blockFurnaceSolar
+ITEM  #  ioSolar		#  enderio:blockSolarPanel
 ITEM  #  rsIron			#  refinedstorage:processor:3
 ITEM  #  aaOreLens		#  actuallyadditions:itemMiningLens
 ITEM  #  dePowerS		#  draconicevolution:energy_storage_core
@@ -178,6 +250,13 @@ ITEM  #  ioFarm			#  enderio:blockFarmStation
 ITEM  #  ioTravelStaff	#  enderio:itemTravelStaff
 ITEM  #  arSpaceMine	#  advancedrocketry:spaceLaser
 ITEM  #  aaPhantomF		#  actuallyadditions:blockPhantomface
+
+ITEM  #  RsController   #  refinedstorage:controller
+ITEM  #  RsDisk         #  refinedstorage:disk_drive
+ITEM  #  RsSolderer     #  refinedstorage:solderer
+ITEM  #  RsGrid         #  refinedstorage:grid
+ITEM  #  ioAnchor       #  enderio:blockTravelAnchor
+ITEM  #  GEMutAdv       #  gendustry:MutatronAdv
 
 // Quests G
 ITEM  #  Nether			#  chisel:netherbrick:8
@@ -192,12 +271,19 @@ ITEM  #  deHelm0		#  draconicevolution:wyvern_helm
 ITEM  #  deWeather		#  draconicevolution:celestial_manipulator
 ITEM  #  ioTelepad		#  enderio:blockTelePad
 
+ITEM  #  uranSeed       #  mysticalagriculture:uranium_seeds
+ITEM  #  dracoIngot     #  draconicevolution:draconium_ingot
+ITEM  #  RSInterface    #  refinedstorage:interface
+ITEM  #  GDSample       #  gendustry:GeneSampleBlank
+ITEM  #  GDImprinter    #  gendustry:Imprinter
+ITEM  #  GDSampler      #  gendustry:Sampler
+ITEM  #  DracoTablet    #  draconicevolution:info_tablet
+
 // Quests H
 ITEM  #  DistantOrb		#  bqmie:icon_item:15
 ITEM  #  OceanOrb		#  bqmie:icon_item:18
 ITEM  #  MooshroomOrb	#  bqmie:icon_item:22
 ITEM  #  goldHead		#  tconstruct:materials:50
-
 
 ITEM  #  deHelm1		#  draconicevolution:draconic_helm
 ITEM  #  arTerra		#  advancedrocketry:terraformer
@@ -208,14 +294,9 @@ ITEM  #  deStaff		#  draconicevolution:draconic_staff_of_power
 ITEM  #  deMobFarm		#  draconicevolution:grinder
 ITEM  #  deTeleport1	#  draconicevolution:dislocator_advanced
 ITEM  #  ioDimenTrans	#  enderio:blockTransceiver
-ITEM  #  deTeleport		#  draconicevolution:dislocator
-ITEM  #  deTeleport		#  draconicevolution:dislocator
-ITEM  #  deTeleport		#  draconicevolution:dislocator
-ITEM  #  deTeleport		#  draconicevolution:dislocator
-ITEM  #  deTeleport		#  draconicevolution:dislocator
-
 
 // Quests Trade A
+ITEM  #  TradeCoinA     #  bqmie:icon_item:4
 ITEM  #  WaterBowl		#  actuallyadditions:itemWaterBowl
 ITEM  #  HCSeed			#  harvestcraft:eggplantseeditem
 ITEM  #  HCOnion		#  harvestcraft:onionitem
@@ -636,3 +717,5 @@ ITEM # CHplanetChip   # advancedrocketry:planetIdChip
 ITEM # CHfuel         # advancedrocketry:bucketRocketFuel
 ITEM # CHglider       # openglider:hang_glider_basic
 ITEM # CHboat         # minecraft:acacia_boat
+
+ITEM # SoftTofu       # harvestcraft:silkentofuitem

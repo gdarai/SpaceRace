@@ -202,7 +202,7 @@ QUEST        #  Fx25       #   30:-25  	 #  20    #  yetaWrench
 QUEST        #  Fx26       #   40:-25  	 #  20    #  ioInventory
 QUEST        #  Fx210      #  -15:25  	 #  20    #  aaEmpower
 QUEST        #  Fx211      #   -5:25  	 #  20    #  ioCapac2
-QUEST        #  Fx212      #    5:25  	 #  20    #  aaSolar
+QUEST        #  Fx212      #    5:25  	 #  20    #  ioSolar
 QUEST        #  Fx213      #   15:25  	 #  20    #  rsIron
 QUEST        #  Fx214      #   25:25  	 #  20    #  aaPhantomF
 QUEST        #  Fx215      #   35:25  	 #  20    #  arSpaceMine

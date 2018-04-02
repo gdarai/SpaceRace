@@ -167,17 +167,19 @@ recipes.addShaped(reconstructor, [[tubeBlazing, blockLens, tubeBlazing], [tankNi
 recipes.addShaped(<actuallyadditions:blockFarmer>, [[inChisGreenBL, nucleumCapsule, inChisGreenBL], [inChisGreenBL, <actuallyadditions:blockBioReactor>, inChisGreenBL], [IEHeavyBlock, tankNit, IEHeavyBlock]]);
 
 // AA Factory
-// Ok: Item Interface, Powered Furnace, Auto Breaker/ Placer, Ranged Collector, Auto Feeder, Sacks, Advanced leafBlower
+// Ok: Item Interface, Powered Furnace, Auto Breaker/ Placer, Ranged Collector, Auto Feeder, Sacks, Advanced leafBlower, hopper
 recipes.remove(<actuallyadditions:blockMiner>);
 recipes.remove(grinder);
 recipes.remove(aaCasing);
 recipes.remove(<actuallyadditions:blockDropper>);
 recipes.remove(<actuallyadditions:blockItemViewer>);
+recipes.remove(<actuallyadditions:blockInputter>);
 recipes.addShaped(<actuallyadditions:blockMiner>, [[casingIron, IEHeavyBlock, casingIron], [gearBoxSteel, reconstructor, gearBoxSteel], [casingIron, <actuallyadditions:itemDrill:*>, casingIron]]);
 recipes.addShaped(aaCasing, [[dustIox, plateTriberium, dustIox], [plateTriberium, inEmerald0, plateTriberium], [dustIox, plateTriberium, dustIox]]);
 recipes.addShaped(grinder, [[casingIron, gearBoxSteel, casingIron], [aaCasing, <railcraft:borehead_diamond>, aaCasing], [IEHeavyBlock, GDpowerM, IEHeavyBlock]]);
 recipes.addShaped(<actuallyadditions:blockDropper>, [[null, inLapis0, null], [inLapis0, <minecraft:dropper>, inLapis0], [null, inLapis0, null]]);
 recipes.addShaped(<actuallyadditions:blockItemViewer>, [[null, <minecraft:hopper>, null], [plateNickel, <storagedrawers:trim:*>, plateNickel], [null, gearBoxSteel, null]]);
+recipes.addShaped(<actuallyadditions:blockInputter>, [[null, inRed0, null], [inRed0, <minecraft:hopper>, inRed0], [plateNickel, coil1, plateNickel]]);
 
 // Lenses
 // Color, Damage moved into Precision Assembler

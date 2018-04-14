@@ -170,6 +170,7 @@
 			<link ref="ch3:pg3">Smelting</link>
 			<link ref="ch3:pg3a">Carpenter and ThFab</link>
 			<link ref="ch3:pg4">Refined Storage</link>
+			<link ref="ch3:pg4aa">Deep Resonance</link>
 			<link ref="ch3:pg4a">Empowerer</link>
 			<link ref="ch3:pg5">Nihilite Alloy</link>
 		</page>
@@ -277,9 +278,17 @@
                 <stack item="refinedstorage:processor" meta="2"/>
             </small_recipe>
 		</page>
+		<page id="pg4aa">
+			<p bold="true" italics="true">Deep Resonance</p>
+			<p>Deep resonance manual is not showing correct values. For crystal you need 5b of fluid. One Laser Process upgrades 1,5b of the fluid.</p>
+			<p />
+			<p>Ores for the laser have different values but in general, they are divided by the tier of their Mystical Aggriculture seed.</p>
+			<p />
+			<p>See the guides chapter for more details.</p>
+		</page>
 		<page id="pg4a">
 			<p bold="true" italics="true">Empowerer</p>
-			<p>Empowerer JEI is not showing power requirements. You will have to figure it yourself.</p>
+			<p>Empowerer JEI is not showing power requirements. You will have to figure it yourself. Usually they are quite high.</p>
 			<stack item="actuallyadditions:blockEmpowerer"/>
 		</page>
 		<page />

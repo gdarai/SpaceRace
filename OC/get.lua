@@ -3,13 +3,11 @@ local source = "wget https://raw.githubusercontent.com/gdarai/SpaceRace/master/O
 print("\n== Darai's Space Race Downloader ==")
 print("  -- Basic OC programs for you --\n")
 
--- function which takes care of one download operation
-function downloadProgram(prgObj)
-
 cmp   = require("component")
 shell = require("shell")
 io    = require("io")
 fs    = require("filesystem")
+
 -- Test if we have internet card available
 test = false
 for _, a in pairs(cmp.list()) do
@@ -18,6 +16,28 @@ end
 if test == false then
     print("Sorry, this computer doesn't have internet access. How did you get this program here anyway?")
     return 1
+end
+
+-- Check the daraiLib presence
+prgTgt = "/lib/daraiLib.lua"
+if not fs.exists(prgTgt) then
+    print("Missing crucial library daraiLib.lua. Can I download it from SpaceRace repo?")
+    io.write("?? [Yn]: ")
+    if io.read() ~="Y" then
+        print("Without this lib, no program here will work.")
+    else
+        -- Jump to target directory
+        wd = shell.getWorkingDirectory()
+        shell.setWorkingDirectory("/lib")
+        -- Download the program
+        prgCmd = source .. "daraiLib.lua"
+        print("Saving library daraiLib into the path /lib")
+        print(prgCmd)
+        shell.execute(prgCmd)
+        -- Jump back
+        shell.setWorkingDirectory(wd)
+        print("Done\n")
+    end
 end
 
 -- Set the table of known programs

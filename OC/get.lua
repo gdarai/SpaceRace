@@ -43,7 +43,7 @@ end
 -- Set the table of known programs
 programs = {}
 programs['debug'] = {origin="InitialPrograms/", file="debug.lua", target="/bin"}
-programs['torch'] = {origin="InitialPrograms/", file="torch.lua", target="/home"}
+programs['filter'] = {origin="Programs/", file="filter.lua", target="/home"}
 
 -- If we don't have program selected, give the list
 if #args==0 then

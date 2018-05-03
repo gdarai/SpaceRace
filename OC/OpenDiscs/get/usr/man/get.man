@@ -1,0 +1,17 @@
+NAME
+  get - download programs from Darai's Space Race repository
+
+SYNOPSIS
+  get PROGRAM
+
+DESCRIPTION
+  
+  This program downloads the custom programs predesigned by the Darai's Space Race Modpack. Note that it requires the internet card to be installed in the computer.
+  
+  The programs are ment to be useful applications of computers and robots without the need to write any code and they come with a guidebook how to actually use them. 
+
+OPTIONS
+
+EXAMPLES
+  get filter
+    Downloads the filter program on your computer

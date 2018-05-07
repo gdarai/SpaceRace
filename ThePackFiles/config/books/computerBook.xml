@@ -1,0 +1,193 @@
+<book title="Darai's SpaceRace - Computer Manual" fontSize="0.6">
+	<include ref="gbook:xml/standard.xml" />
+
+	<chapter id="ch0">
+        <page>
+            <p color="#606060" space="8">This book is a work in progress.</p>
+			<p color="#606060" space="8">This guidebook should give every player the shortest possible guide, how to utilize computers in your base-building.</p>
+        </page>
+        <page>
+            <space height="33%" />
+            <p space="0" align="center">Welcome Player</p>
+            <p space="0" align="center">to</p>
+            <p space="0" align="center">Open Computer Guidebook</p>
+            <p space="6" align="center">__________</p>
+            <p align="center">by G. Darai</p>
+        </page>
+		<page>
+			<p>This is a second guide book of the Space Race modpack. Goal of this book is to give you players some simple way how to make computers useful in your base.</p>
+			<p />
+			<p>Goal of this book is to give you Start-To-End manual how you can use a Computer in practical applications, without any programming and minimum setup effort.</p>
+			<p />
+			<p>We will teach your computer:</p>
+			<p indent="8">Sort your Items</p>
+			<p indent="8">Autocraft for you</p>
+			<p />
+			<p space="20" align="center">Best, Darai</p>
+		</page>
+		<page>
+			<p bold="true" italics="true">Available Topics</p>            
+			<p space="6">Start by picking up the program you would like to use. It will tell you what computer it can run on. Then use the manual to assemble the computer, install and run the program.</p>
+            <link ref="program">Available Programs</link>
+                <link indent="8" ref="program:filter">Filter</link>
+                <link indent="8" ref="program:crafter">Crafter (R)</link>
+                <link indent="8" ref="program:get" space="6">Downloader Get</link>
+            <link ref="computer">Picking the Computer</link>
+                <link indent="8" ref="computer:pc">Setting up Computer</link>
+                <link indent="8" ref="computer:robot" space="6">Setting up Robot</link>
+            <link ref="install">Installing programs</link>
+                <link indent="8" ref="install:os">Installing Operation System (OS)</link>
+                <link indent="8" ref="install:floppy">Installing from Flopy Disc</link>
+                <link indent="8" ref="install:get">Installing from "get"</link>
+                <link indent="8" ref="install:web">If everything fails</link>
+		</page>
+	</chapter>
+	<chapter id="program">
+		<page>
+            <p bold="true" italics="true">Picking the program</p>
+            <p space="8">First step is to pick, what for do you want to use the computer. What program (software or SW) you want it to run. That is what decides, what type of computer (hardware or HW) you need.</p>
+            <p space="8">Since this guidebook is ment for total non-programmers, it will offer you multiple SW's which can help you in your everyday life, like automatic sorter, or even automatic crafter.</p>
+            <p space="8">Read basic descriptions on the available programs and pick one. Then follow the instructions there written.</p>
+		</page>
+		<page id="filter">
+            <p bold="true" italics="true">Filter</p>
+            <p space="8">Filter is an item translocating program. It follows rules given by the player and moves items from input inventories into the output inventories. It can be used as part of a factory or some sorting system.</p>
+            <p space="8">It requires Computer + Item Transposer or Robot + Inventory Controller Module.</p>
+            <stack item="opencomputers:cable" meta="0" count="1"  x="10"/>
+            <stack item="opencomputers:transposer" meta="0" count="1"  x="30"/>
+            <stack item="opencomputers:upgrade" meta="18" count="1"  x="120"/>
+			<space height="20" />
+            <p>Place the input and output inventories around the robot or the transposer.</p>
+            <image src="gbook:ocmanual/filter01" x="0"   w="70" h="70" tw="70" th="70" />
+            <image src="gbook:ocmanual/filter02" x="100" w="70" h="70" tw="70" th="70" />
+			<space height="80" />
+            <link indent="8" ref="computer:pc">Go here to set up the Computer</link>
+            <link indent="8" ref="computer:robot" space="6">Go here to set up Robot</link>
+		</page>
+		<page id="crafter">
+            <p bold="true" italics="true">Crafter (Robots Only)</p>
+            <p space="8">Crafter is crafting automat. You place the robot above some inventory and supply list of recipes. The robot will craft items you want from available resources.</p>
+            <p space="8">Crafter needs the inventory controller upgrade and crafting upgrade to work.</p>
+            <stack item="opencomputers:upgrade" meta="18" count="1"  x="10"/>
+            <stack item="opencomputers:upgrade" meta="11" count="1"  x="30"/>
+			<space height="25" />
+            <p space="8">Every receipt has "max" value so the crafter stop crafting that item if the limit is reached.</p>
+            <p space="8">Every receipt has also "weight", saying how many times this receipt should be crafted before it moves to the other receipt in the list.</p>
+            <link indent="8" ref="computer:robot" space="6">Go here to set up Robot</link>
+		</page>
+		<page id="get">
+            <p bold="true" italics="true">Get - the Downloader</p>
+            <p space="8">Downloader "get" is all-in-one program installer. It is here if you have some issues with getting the programs using the Floppy Discs.</p>
+            <p space="8">If you run the downloader, it will offer you all the programs it knows andonce you pick one, it will download it into the computer.</p>
+            <p space="8">For proper working, the downloader needs the internet card.</p>
+            <stack item="opencomputers:card" meta="8" count="1"  x="10"/>
+			<space height="25" />
+            <link indent="8" ref="install:get">More info: Installing from "get"</link>
+            <link indent="8" ref="computer:pc">Go here to set up the Computer</link>
+            <link indent="8" ref="computer:robot" space="6">Go here to set up Robot</link>
+		</page>
+	</chapter>
+	<chapter id="computer">
+		<page>
+            <p bold="true" italics="true">Building the computer</p>
+            <p space="8">So you know which program you want to install. That also means that you know if you need Computer or Robot and if there are some extra components. If not, read the SW's instructions once more.</p>
+            <p space="8">This part of guidebook will skip all the fine things about diversity of OpenComputers (OC) mod. In a nutshell we will try to lead you directly to the one computer assembly you need.</p>
+            <p space="8">If you will want to explore the depths, read the full OC manual.</p>
+		</page>
+		<page id="pc">
+            <p bold="true" italics="true">Building .. The Computer</p>
+            <p space="8">There are more simple types of computers but the most common one you will want is a Tier II computer, the gold one. So let's build this one. Here is what you need to craft:</p>
+            <stack item="opencomputers:case2" meta="0" count="1"  x="10"/>
+            <stack item="opencomputers:screen2" meta="0" count="1"  x="30"/>
+            <stack item="opencomputers:keyboard" meta="0" count="1"  x="50"/>
+            <stack item="opencomputers:diskDrive" meta="0" count="1"  x="70"/>
+			<space height="20" />
+            <p space="8">Assemble it as shown on the image, if you did it correctly, you can now click on the screen.</p>
+            <image src="gbook:ocmanual/pc01" x="0"     w="50" h="50" tw="50" th="50" />
+            <image src="gbook:ocmanual/pc02" x="55"    w="50" h="50" tw="50" th="50" />
+            <image src="gbook:ocmanual/pc03" x="110"   w="50" h="50" tw="50" th="50" />
+			<space height="55" />
+            <p space="8">Fill in the components, the EEPROM has to be the one with Lua BIOS, craft the blank one with the OC Manual to achieve that. You should now be able to press the Power button and see the blue screen of death.</p>
+            <stack item="opencomputers:component" meta="1" count="1"  x="10"/>
+            <stack item="opencomputers:component" meta="8" count="2"  x="30"/>
+            <stack item="opencomputers:card"      meta="2" count="1"  x="50"/>
+            <stack item="opencomputers:storage"   meta="3" count="1"  x="70"/>
+            <stack item="opencomputers:storage"   meta="0" count="1"  x="120"/>
+            <stack item="opencomputers:tool"      meta="4" count="1"  x="140"/>
+			<space height="25" />
+		</page>
+		<page id="robot">
+            <p bold="true" italics="true">Building .. The Robot</p>
+            <p space="8">Every robot is built in the Electronics assembler. Insert all the components and press the ASSEMBLE button. Once built you cannot replace its components, so think first.</p>
+            <p space="8">All the following components are good to have in your most basic Robot. Add all the components the program specifically asks for. Craft Blank EEPROM with the Manual to get the Lua BIOS EEPROM.</p>
+            <stack item="opencomputers:assembler" meta="0" count="1"  x="10"/>
+            <stack item="opencomputers:case2"     meta="0" count="1"  x="30"/>
+            <stack item="opencomputers:screen1"   meta="0" count="1"  x="50"/>
+            <stack item="opencomputers:keyboard"  meta="0" count="1"  x="70"/>
+            <stack item="opencomputers:diskDrive" meta="0" count="1"  x="90"/>
+            <stack item="opencomputers:card"      meta="1" count="1"  x="110"/>
+            <stack item="opencomputers:component" meta="1" count="1"  x="130"/>
+            <stack item="opencomputers:component" meta="8" count="2"  x="10" y="20"/>
+            <stack item="opencomputers:storage"   meta="3" count="1"  x="30" y="20"/>
+            <stack item="opencomputers:upgrade"   meta="17" count="1"  x="50" y="20"/>
+            <stack item="opencomputers:storage"   meta="0" count="1"  x="100" y="20"/>
+            <stack item="opencomputers:tool"      meta="4" count="1"  x="120" y="20"/>
+			<space height="45" />
+            <p space="8">Every robot, when you asseble it, is blank and need some software. Same way as the computer does. If you press the POWER button in it's interface it should show you error about missing OS.</p>
+            <link indent="8" ref="install:os">Next Step: Installation.</link>            
+		</page>
+	</chapter>
+	<chapter id="install">
+		<page>
+            <p bold="true" italics="true">Installing on your computer</p>
+            <p space="8">Assembling computer, placing all the bloks and inserting all the components is not the end. You didn't install the program yet, remember?</p>
+            <p space="8">To make any computer do your job, you must install the Operating System (OS)... and the program you want to run.</p>
+            <p space="8">Yes this is true even for the computer you are running minecraft on.</p>
+            <p space="8">Yes, even for a tablet.</p>
+		</page>
+		<page id="os">
+            <p bold="true" italics="true">Installing operating system</p>
+            <p space="8">You now need operating system (simmilar to Linux/Windows/Android). Craft the OpenOS floppy (the green one) and insert it into your computer/robot.</p>
+            <stack item="opencomputers:storage"   meta="1" count="1"  x="10"/>
+            <stack item="opencomputers:tool"      meta="4" count="1"  x="30"/>
+			<space height="25" />
+            <p space="8">Computer has this slot in the Disk Drive, Robot in its interface. Press the Power button (!) again.</p>
+            <p space="8">A lot of text should run on the screen now, ending with command line saying "/Home #". This is the place where you can start typing commands. Don't warry there will be only one.</p>
+            <p space="8">Type "install", press ENTER .. and "Y" and ENTER when it will want confirmation. Wait until it is done.</p>
+            <p space="8">At the end, pull out the Floppy and reboot the computer by pushing the Power button.</p>
+            <link indent="8" ref="install:floppy">Now program installation.</link>
+		</page>
+		<page id="floppy">
+            <p bold="true" italics="true">Installing from Floppy</p>
+            <p space="8">The easiest way. Get the correct floppy. By crafting the default Black Floppy with some item. Like with Hopper for the Filter Program, or Crafting Table for the Crafter.</p>
+            <stack item="opencomputers:storage"   meta="1" count="1"  x="10"/>
+            <stack item="minecraft:hopper"      meta="0" count="1"  x="30"/>
+			<space height="25" />
+            <p space="8">Insert the floppy and do the "install", ENTER, "Y", ENTER as with the OS.</p>
+            <p space="8">Voilla, done. Pull the floppy out be sure you have everything ready and you are good to go.</p>
+            <p space="8">Read details about how to use every program in their own sections of this manual.</p>
+            <p space="8">To start every program just type it's name and press ENTER. (synopsis &lt;name&gt;) The name is the most simple one, like "filter" or "crafter" or "get".</p>
+            <p space="8">Also in computer manual is available, type "man &lt;name&gt;" and ENTER.</p>
+		</page>
+		<page id="get">
+            <p bold="true" italics="true">Installing from Get</p>
+            <p space="8">If you have the Get program installed it is easy to get any program you want. There is small issue, you need the internet capable computer.</p>
+            <p space="8">Internet card must be in the Computer/Robot. With robot, that can be done only in the phase, when you are assembling the robot. With computer you can insert it and remove it whenever you want.</p>
+            <stack item="opencomputers:card" meta="1" count="1"  x="10"/>
+            <stack item="opencomputers:card" meta="8" count="1"  x="30"/>
+            <stack item="opencomputers:storage"   meta="1" count="1"  x="100"/>
+            <stack item="minecraft:ender_pearl"      meta="0" count="1"  x="120"/>
+			<space height="25" />
+            <p space="8">Internet card is a Tier II card, so to put it into computer, you need a free Tier II card slot. To achieve that you need to replace the Tier II Graphic card with simpler Tier I which can be placed into the bottom slot.</p>
+            <p space="8">Now your computer is ready, if you will be done with installing "get" you can start it by typing "get" and hitting ENTER and install whichever program you want.</p>
+		</page>
+		<page id="web">
+			<p bold="true" italics="true">Installing directly from Web</p>
+            <p space="8">If for any reason you don't want to or cannot use the Floppy Discs, there is also way how to get the programs yourself from the internet.</p>
+            <p space="8">You need to have internet capable computer. And I expect you installed the operating system. Get following WGET command.</p>
+            <link href="https://raw.githubusercontent.com/gdarai/SpaceRace/master/OC/theLink.txt">The Command</link>
+            <p space="8">In the computer screen, you can use "SHIFT+INSERT" to paste the command. And ENTER to start it. It should download the "get" program from the web.</p>
+            <p space="8">By Typing "get" and pressing ENTER you now can start the same get program you would normally get from the "SpaceRace-get" floppy disc.</p>
+		</page>
+	</chapter>
+</book>

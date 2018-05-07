@@ -1,0 +1,29 @@
+NAME
+  crafter - craft recipes
+
+SYNOPSIS
+  crafter
+
+DESCRIPTION
+  Needs robot with Inventory, Inventory Controller Upgrade and Crafting Upgrade.
+  Makes the robot probe inventory below him for necessary resources and use them to craft the reqested items.
+  The crafter setting is stored in the crafter.config file, best use the configurator in the program itself to set it up.
+  To get back the default configuration, just erase the crafter.config file.
+  
+CONFIGURATION
+  recipes: List or recipes objects
+    { input, receipt, output, max, weight }
+        input: List of item objects used in the receipt, 1st is refferenced in the receipt as '1' etc.
+          { name, damage, label }
+            name: Minecraft name of the item, string (minecraft:stone)
+            damage: Damage value, number, use -1 to ignore damage (0)
+            label: Just a call name, string (MyStone)
+        receipt: String of 9 letters representing the receipt, use 'n' to skip a slot use numbers to reffer to items in the input list (n1nn1nn2n) Example is the minecraft sword.
+        output: An item which we expect as the output, (see input)
+        max: The maximum number of this items to have in the managed inventory (16)
+        weight: Priprity of this receipt, now many times shoud the robot try this receipt before he moves to the next one
+  useWeight: Switch to turn off weights entirely ('Y'/ 'n') if 'Y' it will behave like if weights would be infinite
+  
+EXAMPLES
+  crafter
+    Starts the crafter program

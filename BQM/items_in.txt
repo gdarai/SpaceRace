@@ -131,6 +131,7 @@ ITEM  #  Computer		#  opencomputers:case2
 ITEM  #  DEChest		#  draconicevolution:draconium_chest
 ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
 ITEM  #  IERadiator		#  immersiveengineering:metalDecoration0:7
+ITEM  #  CompMan	 	#  gbook:guidebook				#	NBT:{"Book":"gbook:computerBook.xml"}
 
 ITEM  #  GoldScythe		#  tp:golden_scythe
 ITEM  #  PrecAssembler  #  advancedrocketry:precisionassemblingmachine

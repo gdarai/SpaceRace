@@ -26,7 +26,7 @@ REWARD  #  PICK     #  HCSo10869:4 # HCSo10637:4 # MedKit:4 # RazorWire:8 # Ore1
 // ------->
 
 QUEST   #  D30      #  To the Moon # 403
-TEXT    #  You have space suit, launch pad and rocket fuel. What next? Well, build the damned rocket. For your first mission to the Moon, you will need just a simple rocket. With Basic Rocket Engines, Some Fuel Tanks, one Guidance Computer and a Seat. I also recommend to add some storing options like Storage Crates.\n\nBuild the rocket on the platform and link it with the Assembler using the Linker. Scan the rocket and if everything is green, build it. Fuel it up, sit into the chair and set the Moon as your destination. Don't forget your Space Suit. Don't forget enough material to refuel the rocket for your journey back. Don't forget your mining tools. Spare Oxygen and Gas Charge Pad.\n\nAnd Blast Off.\n\nBeware that this is not some childs play so forget 1engine with one tank and your seat on top of it. Our test rocket needed 11 engines and 30 tanks to be able to lift you up. Oh... you will also need a Planet ID Chip in your on board computer.
+TEXT    #  You have space suit, launch pad and rocket fuel. What next? Well, build the damned rocket. For your first mission to the Moon, you will need just a simple rocket. With Basic Rocket Engines, Some Fuel Tanks, one Guidance Computer and a Seat. I also recommend to add some storing options like Storage Crates.\n\nBuild the rocket on the platform and link it with the Assembler using the Linker. Scan the rocket and if everything is green, build it. Fuel it up, sit into the chair and set the Moon as your destination. Don't forget your Space Suit. Don't forget enough material to refuel the rocket for your journey back. Don't forget your mining tools. Spare Oxygen and Gas Charge Pad.\n\nAnd Blast Off.\n\nBeware that this is not some childs play so forget 1engine with one tank and your seat on top of it. Our test rocket needed 7 engines and 30 tanks to be able to lift you up. Oh... you will also need a Planet ID Chip in your on board computer.
 PREREQ  #  AND      #  D10 # D11
 
 TASK    #  HAVE     #  CHtank # CHengine # CHseat # CHguidance # CHplanetChip
@@ -129,10 +129,10 @@ REWARD  #  PICK     #  HCSo10869:4 # HCSo10637:4 # MedKit:4 # RazorWire:8 # Ore1
 // ------->
 
 QUEST   #  Dx44     #  Computers # 457
-TEXT    #  Some people will always think that computer is just another way to play. But you know better right? Factory controlled by computer? Yes please.
+TEXT    #  Some people will always think that computer is just a toy. They cannot be more wrong. This modpack comes with handy manual and example floppy discs. You can use the computers doing work for you without writing a single line of code. How? Just craft the Computer Manual, it will show you everything in few simple steps.
 PREREQ  #  AND      #  D40
 
-TASK    #  HAVE     #  Computer
+TASK    #  HAVE     #  Computer # CompMan
 REWARD  #  PICK     #  HCSo10869:4 # HCSo10637:4 # MedKit:4 # RazorWire:8 # Ore10:8 # Ore11:8 # Ore12:8 # Ore13:8
 
 // ------->

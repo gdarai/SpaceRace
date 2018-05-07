@@ -395,4 +395,10 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ov
 recipes.remove(<immersiveengineering:metalDecoration1>);
 recipes.addShaped(<immersiveengineering:metalDecoration1>*9,[[null, null, null], [steelIng, steelRod, steelIng], [steelIng, null, steelIng]]);
 
-// Adding missing Gear Metal press Recipes for Brass and Invar
+// Adding missing recipes for constantan
+recipes.addShapeless(<immersiveengineering:metal:26>*9, [<ore:ingotConstantan>]);
+recipes.addShapeless(<immersiveengineering:metal:6>*9, [<ore:blockConstantan>]);
+
+// Adding missing recipes for bronze
+recipes.addShapeless(<railcraft:nugget:6>*9, [<ore:ingotBronze>]);
+recipes.addShapeless(<railcraft:ingot:5>*9, [<ore:blockBronze>]);

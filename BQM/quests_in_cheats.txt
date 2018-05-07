@@ -46,7 +46,7 @@ TEXT    #  So you lost your toy-rocket. And now you are crying and you want to g
 PREREQ  #  AND      #  CH10
 
 TASK    #  TRIGGER
-REWARD  #  ALL      #  CHtank:25 # CHengine:5 # CHseat:1 # CHguidance:1 # CHplanetChip:1 # CHfuel:20
+REWARD  #  ALL      #  CHtank:30 # CHengine:7 # CHseat:1 # CHguidance:1 # CHplanetChip:1 # CHfuel:20
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
 REWARD  #  RESET    #  CHreset
 

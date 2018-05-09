@@ -59,7 +59,7 @@ function daraiLib.config(fileName, texts, default, silent)
         io.close(f)
     end
     local f = io.open(fullFileName, "r")
-    local setting = sz.unserialize(f:read())
+    local setting = sz.unserialize(f:read("*all"))
     if not silent then
         print(daraiLib.strFmt('r', "Current setting:"))
         print(sz.serialize(setting))
@@ -169,7 +169,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                     io.write("  :")
                     input[1] = mm.floor(tonumber(io.read()))
                 elseif texts.type == "side" then
-                    input[1] = daraiLib.listInput("Side", {"north", "south", "east", "west", "up", "down"}, false, false)
+                    input[1] = daraiLib.listInput("Side", daraiLib.getAvailableSides(), false, false)
                 elseif texts.type == "bool" then
                     input[1] = daraiLib.input("Yes/no", "Yn", false)
                 elseif texts.type == "item" then
@@ -179,12 +179,12 @@ function daraiLib.editTableKey(input, texts, default, keys)
                             print(daraiLib.strFmt('e', "No Inventory Controller is Available."))
                         else
                             local sel = {}
-                            for _, side in pairs({"north", "south", "east", "west", "up", "down"}) do
-                                local mx = ic.getInventorySize(sd[side])
+                            for _, side in pairs(daraiLib.getAvailableSides()) do
+                                local mx = daraiLib.getInventorySize(ic, side)
                                 if mx ~= nil then
                                     print(daraiLib.strFmt('i', side .. ": " .. mx .. " slots"))
                                     for slot = 1,mx do
-                                        local item = ic.getStackInSlot(sd[side], slot)
+                                        local item = daraiLib.stackInSlot(ic, side, slot)
                                         if item ~=nil then
                                             sel[#sel+1] = {name=item.name, label=item.label, damage=item.damage, side=side}
                                         end
@@ -421,6 +421,14 @@ function daraiLib.getInventoryController()
         ic = cc.transposer
     end
     return {ic, rc}
+end
+
+-- return the side list you can use with this computer
+function daraiLib.getAvailableSides()
+    if daraiLib.isRobot() then
+        return {"front", "up", "down"}
+    end
+    return {"north", "south", "east", "west", "up", "down"}
 end
 
 -- returns the size of inventory independent on the type of IC

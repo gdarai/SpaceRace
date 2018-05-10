@@ -40,7 +40,7 @@ end
 --  - - default is the default config table
 --  - - texts table contains required seting file format
 --  - - - in this table, every key has
---  - - - - text key giving the description 
+--  - - - - text key giving the description
 --  - - - - type key giving the field type
 --  - - Known key types:
 --  - - - array requires extra key "object" containing whole subTable of keys
@@ -54,9 +54,7 @@ function daraiLib.config(fileName, texts, default, silent)
     local fullFileName = sh.getWorkingDirectory() .. "/" .. fileName
     local haveOne = fs.exists(fullFileName)
     if not haveOne then
-        local f = io.open(fullFileName, "w")
-        f:write(sz.serialize(default))
-        io.close(f)
+        daraiLib.saveConfigFile(fullFileName, default)
     end
     local f = io.open(fullFileName, "r")
     local setting = sz.unserialize(f:read("*all"))
@@ -65,12 +63,17 @@ function daraiLib.config(fileName, texts, default, silent)
         print(sz.serialize(setting))
         if daraiLib.input("Keep or Change", "kc", false) == "c" then
             setting = daraiLib.editTableKey(setting, texts, default, {})
-            local f1 = io.open(fullFileName, "w")
-            f1:write(sz.serialize(setting))
-            io.close(f1)
+            daraiLib.saveConfigFile(fullFileName, setting)
         end
     end
     return setting
+end
+
+-- Just save config file
+function daraiLib.saveConfigFile(fullFileName, setting)
+  local f1 = io.open(fullFileName, "w")
+  f1:write(sz.serialize(setting))
+  io.close(f1)
 end
 
 -- Recursive settings table editor
@@ -83,16 +86,19 @@ function daraiLib.editTableKey(input, texts, default, keys)
         -- Print the current location
         print("Now in " .. texts.type .. ": " .. address)
         print(daraiLib.strFmt('r', texts.text))
-        
+
         -- Print info and options based on the type of the current node
         local keysClone = sz.unserialize(sz.serialize(keys))
         if texts.type == "table" then
             print(daraiLib.strFmt('r', "Pick key to edit or ENTER:"));
+            local keyList = {}
             for keyName, val in pairs(input) do
-                print(daraiLib.strFmt('i', keyName .. ": " .. daraiLib.getVarPrint(texts[keyName], input[keyName])))            
+                keyList[#keyList+1] = keyName
+                print(daraiLib.strFmt('i', "(" .. #keyList .. ")" .. keyName .. ": " .. daraiLib.getVarPrint(texts[keyName], input[keyName])))
             end
-            local now = daraiLib.listInput("Key to edit", daraiLib.tableKeys(input), false, true)
-            if now ~= "" then
+            local keyIndex = daraiLib.inputIndex("Key to edit", 1, #keyList, true)
+            if keyIndex ~= nil then
+                local now = keyList[keyIndex]
                 keysClone[#keysClone+1] = now
                 print()
                 orElse = daraiLib.editTableKey(input[now], texts[now], default[now], keysClone)
@@ -100,11 +106,11 @@ function daraiLib.editTableKey(input, texts, default, keys)
                 orElse = daraiLib.input("Print, Back, Reset or Exit", "pbrx", false)
             end
         elseif texts.type == "list" then
-            local now = daraiLib.input("Pick, New, List, Delete, Reset, Back or Exit", "pnldrbx", false)
+            local now = daraiLib.input("Pick, New, Clone, List, Delete, Reset, Back or Exit", "pnldrbx", false)
             if now == "p" then
                 local idx = daraiLib.inputIndex("Index ", 1, #input, true)
                 if idx ~= nil then
-                    keysClone[#keysClone+1] = now
+                    keysClone[#keysClone+1] = idx
                     print()
                     orElse = daraiLib.editTableKey(input[idx], texts.object, default[1], keysClone)
                 else
@@ -113,7 +119,18 @@ function daraiLib.editTableKey(input, texts, default, keys)
             elseif now == "n" then
                 local idx = daraiLib.inputIndex("Index ", 1, #input+1, true)
                 if idx ~= nil then
-                    table.insert(input, idx, default[1])
+                    table.insert(input, idx, daraiLib.cloneConfig(default[1]))
+                    keysClone[#keysClone+1] = idx
+                    print()
+                    orElse = daraiLib.editTableKey(input[idx], texts.object, default[1], keysClone)
+                else
+                    print(daraiLib.strFmt('e', "Operation canceled."))
+                end
+            elseif now == "c" then
+                local idxFrom = daraiLib.inputIndex("Copy From ", 1, #input, true)
+                local idxTo = daraiLib.inputIndex("Copy To ", 1, #input+1, true)
+                if idxTo ~= nil and idxFrom ~= nil then
+                    table.insert(input, idxTo, daraiLib.cloneConfig(input[idxFrom]))
                 else
                     print(daraiLib.strFmt('e', "Operation canceled."))
                 end
@@ -144,20 +161,18 @@ function daraiLib.editTableKey(input, texts, default, keys)
             print("  " .. daraiLib.getVarPrint(texts, input))
             orElse = daraiLib.input("Edit, Back, Reset or Exit", "ebrx", false)
         end
-        
+
         -- In case orElse was selected, evaluate
         if orElse ~= "" then
             if orElse == "p" then
                 print(daraiLib.strFmt('i', sz.serialize(input)))
-                io.write(daraiLib.strFmt('?', "<Press ENTER>"))
-                io.read()
+                daraiLib.enterToContinue()
             elseif orElse == "b" then
                 returnVal = ""
             elseif orElse == "r" then
-                input = sz.unserialize(sz.serialize(default))
+                input = daraiLib.cloneConfig(default)
                 print(sz.serialize(input))
-                io.write(daraiLib.strFmt('?', "<Press ENTER>"))
-                io.read()
+                daraiLib.enterToContinue()
             elseif orElse == "e" then
                 if texts.type == "str" then
                     io.write("  :")
@@ -200,8 +215,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                                     cnt = cnt - 1
                                     print(t)
                                     if cnt == 0 then
-                                        io.write(daraiLib.strFmt('?', "<Press ENTER>"))
-                                        io.read()
+                                        daraiLib.enterToContinue()
                                         cnt = 5
                                     end
                                 end
@@ -237,6 +251,17 @@ function daraiLib.editTableKey(input, texts, default, keys)
     end
 end
 
+-- Clone a structure for simplicity just use serialization for now
+function daraiLib.cloneConfig(source)
+    return sz.unserialize(sz.serialize(source))
+end
+
+-- Simple press enter to continue automat
+function daraiLib.enterToContinue()
+  io.write(daraiLib.strFmt('?', "<Press ENTER>"))
+  return io.read()
+end
+
 -- Function to get a printout of content of a variable based on it's type
 function daraiLib.getVarPrint(varObj, data)
     if varObj.type == "table"     then return "<TABLE>"
@@ -261,7 +286,7 @@ function daraiLib.input(text, answers, getIndex)
         index = string.find(answers, io.read())
     end
     if getIndex then return index end
-    return string.sub(answers, index, index)    
+    return string.sub(answers, index, index)
 end
 
 -- forces player to pick a number or "nothing" given min and max
@@ -299,11 +324,16 @@ function daraiLib.listInput(text, answers, getIndex, allowEmpty)
             for i, opt in pairs(answers) do
                 if opt == input then index = i end
             end
+            if index == nil do
+                for i, opt in pairs(answers) do
+                    if i == input then index = i end
+                end
+            end
         end
     end
     if getIndex then return index end
     if index == -1 then return "" end
-    return answers[index]    
+    return answers[index]
 end
 
 -- Return table keys as an array
@@ -362,7 +392,7 @@ function daraiLib.countItems(ic, side, item)
     local size = daraiLib.getInventorySize(ic, side)
     local count = 0
     for slot = 1,size do
-        local stack = daraiLib.stackInSlot(ic, side, slot)        
+        local stack = daraiLib.stackInSlot(ic, side, slot)
         if daraiLib.compareItem(stack, item) then count = count + stack["size"] end
     end
     return count
@@ -386,13 +416,13 @@ function daraiLib.addElements(target, source, keys)
         for _,val in pairs(source) do target[#target+1] = val end
         return target
     end
-    
+
     for _,item in pairs(source) do
         local tgtVal = item
-        for _,key in pairs(keys) do tgtVal = tgtVal[key] end        
+        for _,key in pairs(keys) do tgtVal = tgtVal[key] end
         target[#target+1] = tgtVal
     end
-    return target    
+    return target
 end
 
 -- check wether it is computer or robot
@@ -471,7 +501,7 @@ function daraiLib.moveItems(ic, sideFrom, slotFrom, sideTo, slotTo, count)
         local ret = false
         if sideFrom ~= nil then
             ret = ic[1].suckFromSlot(sd[sideFrom], slotFrom, count)
-        end        
+        end
         if sideTo ~= nil then
             ret = ic[1].dropIntoSlot(sd[sideTo], slotTo, count)
         end

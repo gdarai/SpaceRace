@@ -271,6 +271,7 @@ function daraiLib.getVarPrint(varObj, data)
     elseif varObj.type == "str"   then return "<STRING " .. data[1] .. ">"
     elseif varObj.type == "int"   then return "<INT " .. tostring(data[1]) .. ">"
     elseif varObj.type == "num"   then return "<NUM " .. tostring(data[1]) .. ">"
+    elseif varObj.type == "bool"  then return "<BOOL " .. tostring(data[1]) .. ">"
     end
     return "<UNKNOWN TYPE " .. varObj.type .. ">"
 end
@@ -301,8 +302,11 @@ function daraiLib.inputIndex(text, minI, maxI, canNil)
             out = nil
             if not canNil then inp = nil end
         else
-            out = mm.floor(tonumber(inp))
-            if (( out < minI ) or ( out > maxI )) then inp = nil end
+            local toNum = tonumber(inp)
+            if toNum ~= nil then
+                out = mm.floor(toNum)
+                if (( out < minI ) or ( out > maxI )) then inp = nil end
+            end
         end
     end
     return out
@@ -324,7 +328,7 @@ function daraiLib.listInput(text, answers, getIndex, allowEmpty)
             for i, opt in pairs(answers) do
                 if opt == input then index = i end
             end
-            if index == nil do
+            if index == nil then
                 for i, opt in pairs(answers) do
                     if i == input then index = i end
                 end

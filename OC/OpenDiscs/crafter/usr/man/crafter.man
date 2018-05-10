@@ -10,6 +10,8 @@ DESCRIPTION
   The crafter setting is stored in the crafter.config file, best use the configurator in the program itself to set it up.
   To get back the default configuration, just erase the crafter.config file.
   
+  It is also possible to use internal configurator to auto-load recipes from adjescent inventory. Just consider every 3x4 rectangle (4 slots x 3 rows) to be a receipt, where  columns 2-4 are the real 3x3 receipt. Column 1 is the receipt's clasification. There in the top slot is the expected output item. Middle and bottom slots are optional and it does not matter what item is in them, the only thing which matters is the stack size. The middle slot stack size sais how many outputs should be crafted. The bottom stack size is weight of this receipt. In case of empty slot, max is 0 and weight 1. 
+  
 CONFIGURATION
   recipes: List or recipes objects
     { input, receipt, output, max, weight }

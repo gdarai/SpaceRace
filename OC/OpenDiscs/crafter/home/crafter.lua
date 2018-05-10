@@ -50,8 +50,8 @@ local texts = {
                 }
             },
             receipt = {
-                type="string",
-                text="Representation of the receipt, 9 chars [n0-8]"
+                type="str",
+                text="Representation of the receipt, 9 chars [n1-9]"
             },
             output = {
                     type="item",
@@ -73,21 +73,21 @@ local texts = {
     }
 }
 
-function configureRecipes(setting)
+function configureTool(setting)
     print(dl.strFmt("t", "Setting configurator"))
     local i1 = ""
-    while i1 != "x" do
+    while i1 ~= "x" do
         i1 = dl.input("Recipes, UseWeights, Detailed or Exit", "rudx", false)
         if i1 == "r" then -- Edit Recipes
             local i2 = ""
-            while i2 != "b" do
+            while i2 ~= "b" do
                 print(dl.strFmt("t", "Recipes List"))
-                for idx, f in pairs(setting["filters"]) do
+                for idx, f in pairs(setting["recipes"]) do
                     print(dl.strFmt("i", idx .. ") " .. f["output"]["label"] .. " x " .. f["weight"][1] .. "(max ".. f["max"][1] ..")"))
                 end
                 i2 = dl.input("Edit, Load, Clear, Delete or Back", "elcdb", false)
                 if i2 == "e" then      -- Edit
-                    local idx = dl.inputIndex("Receipt to edit", 1, #setting["filters"], true)
+                    local idx = dl.inputIndex("Receipt to edit", 1, #setting["recipes"], true)
                     if idx ~= nil then
                         local f = setting["receipts"][idx]
                         print(dl.strFmt("t", "Editting receipt " .. idx .. " " .. f["output"]["label"]))
@@ -100,7 +100,7 @@ function configureRecipes(setting)
                         print(dl.strFmt("i", "Out: " .. f["output"]["label"]))
                         if dl.input("Change the receipt", "Yn", false) == "Y" then
                             io.write("  :")
-                            f["receipt"] = io.read()
+                            f["receipt"][1] = io.read()
                         end
                         print(dl.strFmt("i", texts["recipes"]["object"]["weight"]["text"]))
                         local newWeight = dl.inputIndex("New Weight (now ".. f["weight"][1] ..")", 0, 32900, true)
@@ -109,13 +109,13 @@ function configureRecipes(setting)
                         local newMax = dl.inputIndex("New Max (now ".. f["max"][1] ..")", 0, 32900, true)
                         if newMax ~= nil then f["max"][1] = newMax end
                     end
-                else if i2 == "l" then -- Load
+                elseif i2 == "l" then -- Load
                     print(dl.strFmt("t", "Receipt loader"))
-                    print(dl.strFmt("i", "This utility will add receipts you configured in adjescent inventory"))
+                    print(dl.strFmt("i", "This utility will add recipes you configured in adjescent inventory"))
                     print(dl.strFmt("i", "You shape every receipt in 4x3 space, 3 rows, 4 slots each"))
-                    print(dl.strFmt("i", "the [2-4] column 3x3 area is the receipt"))
+                    print(dl.strFmt("i", "the [2-4] columns (3x3 area) is the receipt"))
                     dl.enterToContinue()
-                    print(dl.strFmt("i", "the first column represents the other parameters, for max and weight only the number of items matter"))
+                    print(dl.strFmt("i", "the first column represents the other parameters, for max and weight only the number of items matters"))
                     print(dl.strFmt("i", "Slot 1: Output"))
                     print(dl.strFmt("i", "Slot 2: Max value (empty for max=0)"))
                     print(dl.strFmt("i", "Slot 3: Weight value (empty for weight = 1)"))
@@ -125,23 +125,26 @@ function configureRecipes(setting)
                         local side = dl.listInput("Robot Side", dl.getAvailableSides(), false, false)
                         local invSize = dl.getInventorySize(ic, side)
                         if invSize ~= nil then
-                           local maxRLines = mm.floor(invSize / maxi)
+                           local maxRLines = mm.floor(invSize / (maxi*3))
                            local maxROnLine = mm.floor(maxi / 4)
                            for j=1,maxRLines do
                            for i=1,maxROnLine do
                                print(dl.strFmt("t", "Receipt " .. j .. "x" .. i))
-                               local startI = (maxi * 3 * (j - 1)) + (4 * i) + 1 -- TopLeft Index of this receipt
+                               local startI = (maxi * 3 * (j - 1)) + (4 * (i-1)) + 1 -- TopLeft Index of this receipt
                                local idxs = {startI+1, startI+2, startI+3, startI+1+maxi, startI+2+maxi, startI+3+maxi, startI+1+maxi+maxi, startI+2+maxi+maxi, startI+3+maxi+maxi}
                                local slOutput = dl.stackInSlot(ic, side, startI)
                                local slMax = dl.stackInSlot(ic, side, startI + maxi)
                                local slWeight = dl.stackInSlot(ic, side, startI + maxi + maxi)
                                if slOutput ~= nil then
                                    local r = {}
-                                   setting["receipts"][#setting["receipts"]+1] = r
+                                   setting["recipes"][#setting["recipes"]+1] = r
+                                   r["max"] = {0}
+                                   r["weight"] = {1}
+                                   r["receipt"] = {"nnnnnnnnn"}
                                    print(dl.strFmt("i", "Adding receipt for " .. slOutput["label"]))
                                    r["output"] = {name=slOutput["name"], label=slOutput["label"], damage=slOutput["damage"]}
-                                   if slMax ~= nil then r["max"][1] = slMax["size"] else r["max"][1] = 0 end
-                                   if slWeight ~= nil then r["weight"][1] = slWeight["size"] else r["weight"][1] = 1 end
+                                   if slMax ~= nil then r["max"][1] = slMax["size"] end
+                                   if slWeight ~= nil then r["weight"][1] = slWeight["size"] end
                                    print(dl.strFmt("i", "Receipt max: " .. r["max"][1]))
                                    print(dl.strFmt("i", "Receipt weight: " .. r["weight"][1]))
                                    r["input"] = {}
@@ -161,7 +164,7 @@ function configureRecipes(setting)
                                            end
                                        end
                                    end
-                                   r["receipt"] = receipt
+                                   r["receipt"][1] = receipt
                                    print(dl.strFmt("i", "Receipt: " .. string.sub(receipt, 1, 3) .. " " .. string.sub(receipt, 4, 6) .. " " .. string.sub(receipt, 7, 9)))
                                    dl.enterToContinue()
                                else
@@ -174,11 +177,11 @@ function configureRecipes(setting)
                           dl.enterToContinue()
                         end
                     end
-                else if i2 == "c" then -- Clear
+                elseif i2 == "c" then -- Clear
                     print(dl.strFmt("e", "Deleting all recipes"))
                     setting["filters"] = {}
                     dl.enterToContinue()
-                else if i2 == "d" then -- Delete One
+                elseif i2 == "d" then -- Delete One
                     local idx = dl.inputIndex("Receipt to delete", 1, #setting["filters"], true)
                     if idx ~= nil then
                         print(dl.strFmt("e", "Removing receipt " .. idx))
@@ -187,16 +190,17 @@ function configureRecipes(setting)
                     end
                 end
             end
-        else if i1 == "u" then -- Edit Use Weights
+        elseif i1 == "u" then -- Edit Use Weights
             print(dl.strFmt("t", "Use Weights Switch"))
             print(dl.strFmt("i", texts["useWeights"]["text"]))
             setting["useWeights"][1] = daraiLib.input("Pick value (current ".. setting["useWeights"][1] ..")", "Yn", false)
-        else if i1 == "u" then -- Do thorrough edit
+        elseif i1 == "d" then -- Do thorrough edit
             print(dl.strFmt("t", "Full Configuration Editor"))
-            setting = daraiLib.editTableKey(setting, texts, default, {})
+            setting = dl.editTableKey(setting, texts, default, {})
         end
     end
-    daraiLib.saveConfigFile(configFileName, setting)
+    dl.saveConfigFile(configFileName, setting)
+    return setting
 end
 
 function emptyCraftingGrid(ctlStr)
@@ -270,20 +274,19 @@ if ic[1] == nil then
     return 1
 end
 
-local rowL = ic[2].inventorySize() / 4
-if rowL < 3 then
+if ic[2].inventorySize() < 16 then
     print(dl.strFmt('e', "The robot needs internal invenory."))
     return 1
 end
 
 if dl.input("Change the configuration", "Yn", false) == "Y" then
-    config = configureRecipes(config)
+    config = configureTool(config)
 end
 
 local controlStructure = {
     receipt = 1,
     cycle = 1,
-    rowL = rowL,
+    rowL = 4,
     receiptL = #config["recipes"]
 }
 

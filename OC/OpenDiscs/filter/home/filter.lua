@@ -4,16 +4,24 @@ local sd = require("sides")
 local ic = dl.getInventoryController()
 local ev = require("event")
 
+local configFileName = "filter.config"
+
 local default = {
     filters={
     {
         item={name="minecraft:stone", damage=0, label="stone"},
-        target={"north"},
+        target={"down"},
         max={0}
     }},
     defaultOut={"down"},
-    ignoredSides={{"up"}}
+    ignoredSides={{"up"}},
+    sideNames={{"a name"}}
 }
+
+for i,nm in pairs(dl.getAvailableSides()) do
+    default["sideNames"][i] = {}
+    default["sideNames"][i][1] = nm
+end
 
 local texts = {
     type="table",
@@ -50,7 +58,31 @@ local texts = {
             text="One ignored side"
         }
     }
+    sideNames={
+        type="list",
+        text="List of names for individual sides, just descriptive for better understanding",
+        object = {
+            type="str",
+            text="One side name"
+        }
+    }
 }
+
+function configureTool(setting)
+    print(dl.strFmt("t", "Setting configurator"))
+    local i1 = ""
+    while i1 ~= "x" do
+        i1 = dl.input("Filters, Ouput(Def), Ignored, Sides, Detailed or Exit", "foisdx", false)
+        if i1 == "d" then -- Do thorrough edit
+            print(dl.strFmt("t", "Full Configuration Editor"))
+            setting = dl.editTableKey(setting, texts, default, {})
+        end
+    end
+    dl.saveConfigFile(configFileName, setting)
+    return setting
+end
+
+
 
 function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, defaultOut)    
     -- For every side and slot
@@ -90,11 +122,20 @@ end
 
 print(dl.strFmt('T', "Filter Program"))
 print(dl.strFmt('t', "Configuration"))
-local config = dl.config("filter.config", texts, default, false)
+local config = dl.config(configFileName, texts, default, true)
 
 if ic[1] == nil then
     print(dl.strFmt('e', "No Inventory Controller is Available. Program cannot run without transposer or inventory controller card."))
     return 1
+end
+
+if ic[2] ~=nil and ic[2].inventorySize() < 16 then
+    print(dl.strFmt('e', "The robot needs internal invenory."))
+    return 1
+end
+
+if dl.input("Change the configuration", "Yn", false) == "Y" then
+    config = configureTool(config)
 end
 
 if dl.input("Run program or Terminate", "rt", false) == "r" then

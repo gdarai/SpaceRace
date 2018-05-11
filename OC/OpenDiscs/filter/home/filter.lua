@@ -69,13 +69,84 @@ local texts = {
 }
 
 function configureTool(setting)
-    print(dl.strFmt("t", "Setting configurator"))
+    dl.printFmt("t", "Setting configurator")
     local i1 = ""
     while i1 ~= "x" do
-        i1 = dl.input("Filters, Ouput(Def), Ignored, Sides, Detailed or Exit", "foisdx", false)
+        i1 = dl.input("Filters, Sides, Detailed or Exit", "fsdx", false)
         if i1 == "d" then -- Do thorrough edit
-            print(dl.strFmt("t", "Full Configuration Editor"))
+            dl.printFmt("t", "Full Configuration Editor")
             setting = dl.editTableKey(setting, texts, default, {})
+
+        elseif i1 == "f" then -- Edit Filters
+            
+
+        elseif i1 == "s" then -- Edit Sides
+            local info = {}
+            local ignored = dl.addElements({}, setting["ignoredSides"], {1})
+            local availableSides = dl.getAvailableSides()
+            for i,side in pairs(availableSides) do info[i] = {count = 0} end
+
+            for _,f in pairs(setting["filters"]) do
+                local idx = dl.checkForKey(availableSides, f["target"][1], false)
+                info[idx]["count"] = info[idx]["count"] + 1
+            end
+
+            for i,side in pairs(availableSides) do
+                info[i]["side"] = side
+                info[i]["name"] = setting["sideNames"][i][1]
+                info[i]["role"] = "input"
+                if dl.checkForKey(ignored, side, false) ~= false then info[i]["role"] = "ignored" end
+                if info[idx]["count"] > 0 then info[i]["role"] = "output" end
+                if setting["defaultOut"][1] == side then info[i]["role"] = "primary output" end
+            end
+
+            local i2 = 0
+            while i2 ~= -1 do
+                dl.printFmt("t", "Sides description")
+                for idx,i in pairs(info) do dl.printFmt("i", idx .. ") " .. i["side"] .. "'" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"])
+                i2 = dl.listInput("Edit", availableSides, true, true)
+                if i2 > 0 then
+                    local i3 = ""
+                    while i3 ~= "b" do
+                        local i = info[i2]
+                        dl.printFmt("i", i2 .. ") " .. i["side"] .. "'" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"])
+                        i3 = dl.input("Rename, (un)Ignore(as input), Default(out), List(filters) or Back", "ridlb", false)
+                        if i3 == "r" then -- Rename
+                            local new = dl.stringInput()
+                            info[i2]["name"] = new
+                            setting["sideNames"][i2][1] = new
+
+                        elseif i3 == "i" then -- Ignore
+                            local role = info[i2]["role"]
+
+                            if role == "input" then
+                                info[i2]["role"] = "ignored"
+                            elseif role == "ignored" then
+                                info[i2]["role"] = "input"
+                            end
+
+                            local ignIdx = dl.checkForKey(ignored, i["side"], false)
+                            if ignIdx ~= false then
+                                table.remove(setting["ignoredSides"], ignIdx)
+                                table.remove(ignored, ignIdx)
+                            else
+                                setting["ignoredSides"][#setting["ignoredSides"]+1] = {i["side"]}
+                                ignored[#ignored+1] = i["side"]
+                            end
+                        elseif i3 == "d" then -- Default
+                            info[i2]["role"] = "primary output"
+                            setting["defaultOut"] = {info[i2]["side"]}
+
+                        elseif i3 == "l" then -- List filters
+                            local side = info[i2]["side"]
+                            for _,f in pairs(setting["filters"]) do
+                                if f["target"][1] == side then dl.printFmt("i", f["item"]["label"] .. "(max ".. f["max"] ..")") end
+                                dl.enterToContinue()
+                            end
+                        end
+                    end
+                end
+            end
         end
     end
     dl.saveConfigFile(configFileName, setting)
@@ -84,7 +155,7 @@ end
 
 
 
-function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, defaultOut)    
+function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, defaultOut)
     -- For every side and slot
     for _, side in pairs(inputSides) do
         for slot = 1,side["slots"] do
@@ -95,7 +166,7 @@ function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, def
                 local target = defaultOut
                 local idx = dl.itemIndex(filteredItems, item)
                 if idx ~= -1 then target = filteredSides[idx] end
-                print(dl.strFmt('i', "Moving " .. item["label"] .. " - " .. target))
+                dl.printFmt('i', "Moving " .. item["label"] .. " - " .. target)
                 -- Check if max reached
                 local mntToMove = item["maxSize"]
                 if filteredMax[idx] > 0 then
@@ -108,10 +179,10 @@ function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, def
                     local check = dl.moveItems(ic, side["side"], slot, target, freeSlot, mntToMove)
                     -- Print error
                     if not check then
-                        print(dl.strFmt('e', "Failed to move to " .. target))
+                        dl.printFmt('e', "Failed to move to " .. target)
                     end
                 else
-                    print(dl.strFmt('e', "Requested # "..filteredMax[idx].." reached"))
+                    dl.printFmt('e', "Requested # "..filteredMax[idx].." reached")
                 end
             end
         end
@@ -120,17 +191,17 @@ end
 
 
 
-print(dl.strFmt('T', "Filter Program"))
-print(dl.strFmt('t', "Configuration"))
+dl.printFmt('T', "Filter Program")
+dl.printFmt('t', "Configuration")
 local config = dl.config(configFileName, texts, default, true)
 
 if ic[1] == nil then
-    print(dl.strFmt('e', "No Inventory Controller is Available. Program cannot run without transposer or inventory controller card."))
+    dl.printFmt('e', "No Inventory Controller is Available. Program cannot run without transposer or inventory controller card.")
     return 1
 end
 
 if ic[2] ~=nil and ic[2].inventorySize() < 16 then
-    print(dl.strFmt('e', "The robot needs internal invenory."))
+    dl.printFmt('e', "The robot needs internal invenory.")
     return 1
 end
 
@@ -143,14 +214,14 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     local filteredItems = dl.addElements({}, config["filters"], {"item"})
     local filteredSides = dl.addElements({}, config["filters"], {"target", 1})
     local filteredMax   = dl.addElements({}, config["filters"], {"max", 1})
-    
-    local ignoredSides = {config["defaultOut"][1]}        
+
+    local ignoredSides = {config["defaultOut"][1]}
     ignoredSides = dl.addElements(ignoredSides, config["ignoredSides"], {1})
     ignoredSides = dl.addElements(ignoredSides, filteredSides, nil)
-    
-    local inputSides = {}    
+
+    local inputSides = {}
     for _, side in pairs(dl.getAvailableSides()) do
-        local ignored = dl.checkForKey(ignoredSides, side)
+        local ignored = dl.checkForKey(ignoredSides, side) ~= false
         local slotCount = dl.getInventorySize(ic, side)
         if (not ignored) and slotCount ~= nil and slotCount>0 then
                 inputSides[#inputSides+1] = {side=side, slots=slotCount}
@@ -158,14 +229,14 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     end
 
     -- Print inputs on the screen
-    print(dl.strFmt('t', "Input Sides:"))
+    dl.printFmt('t', "Input Sides:")
     for _, side in pairs(inputSides) do
-        print(dl.strFmt('i', side["side"] .. " - " .. side["slots"] .. " slots"))
+        dl.printFmt('i', side["side"] .. " - " .. side["slots"] .. " slots")
     end
-    
+
     -- Filter cycle
     while true do
-        print(dl.strFmt('n', "CTRL+C to terminate"))
+        dl.printFmt('n', "CTRL+C to terminate")
         local id, _ = ev.pull(1,"interrupted")
         if id == "interrupted" then
             print("soft interrupt, closing")
@@ -173,7 +244,7 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
         else
             oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, config["defaultOut"][1])
         end
-    end    
+    end
 end
 
-print(dl.strFmt('t', "Thank you for using filter program."))
+dl.printFmt('t', "Thank you for using filter program.")

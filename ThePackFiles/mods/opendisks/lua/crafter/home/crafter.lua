@@ -127,24 +127,24 @@ function oneCrafterRun(useWeights, receipt, ctlStr)
     end
 end
 
-print(dl.strFmt('T', "Crafter Program"))
-print(dl.strFmt('t', "Configuration"))
+dl.printFmt('T', "Crafter Program"))
+dl.printFmt('t', "Configuration"))
 
 local config = dl.config("crafter.config", texts, default, false)
 
 if ic[2] == nil then
-    print(dl.strFmt('e', "This program is for ROBOTS only. Sorry."))
+    dl.printFmt('e', "This program is for ROBOTS only. Sorry."))
     return 1
 end
 
 if ic[1] == nil then
-    print(dl.strFmt('e', "No Inventory Controller is Available. Program cannot run without inventory controller card."))
+    dl.printFmt('e', "No Inventory Controller is Available. Program cannot run without inventory controller card."))
     return 1
 end
 
 local rowL = ic[2].inventorySize() / 4
 if rowL < 3 then
-    print(dl.strFmt('e', "The robot needs internal invenory."))
+    dl.printFmt('e', "The robot needs internal invenory."))
     return 1
 end
 
@@ -157,7 +157,7 @@ local controlStructure = {
 
 ic[3] = dl.getComponent("crafting")
 if ic[3] == nil then
-    print(dl.strFmt('e', "The robot needs a crafting upgrade."))
+    dl.printFmt('e', "The robot needs a crafting upgrade."))
     return 1
 end
 
@@ -169,8 +169,8 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     emptyCraftingGrid(controlStructure)
     while true do
         receipt = config["recipes"][controlStructure["receipt"]]
-        print(dl.strFmt('n', "Crafting " .. receipt["output"]["label"] .. " #" .. controlStructure["cycle"]))
-        print(dl.strFmt('n', "CTRL+C to terminate"))
+        dl.printFmt('n', "Crafting " .. receipt["output"]["label"] .. " #" .. controlStructure["cycle"]))
+        dl.printFmt('n', "CTRL+C to terminate"))
         local id, _ = ev.pull(1,"interrupted")
         if id == "interrupted" then
             print("soft interrupt, closing")
@@ -181,4 +181,4 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     end    
 end
 
-print(dl.strFmt('t', "Thank you for using crafter program."))
+dl.printFmt('t', "Thank you for using crafter program."))

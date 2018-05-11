@@ -32,6 +32,8 @@ function daraiLib.strFmt(fmtCh, s)
     end
 end
 
+function daraiLib.printFmt(fmtCh, s) print(daraiLib.strFmt(fmtCh, s)) end
+
 -- Config Setting function
 --  - Saves default setting if none saved
 --  - Gives option to tweak the setting
@@ -59,7 +61,7 @@ function daraiLib.config(fileName, texts, default, silent)
     local f = io.open(fullFileName, "r")
     local setting = sz.unserialize(f:read("*all"))
     if not silent then
-        print(daraiLib.strFmt('r', "Current setting:"))
+        daraiLib.printFmt('r', "Current setting:")
         print(sz.serialize(setting))
         if daraiLib.input("Keep or Change", "kc", false) == "c" then
             setting = daraiLib.editTableKey(setting, texts, default, {})
@@ -85,16 +87,16 @@ function daraiLib.editTableKey(input, texts, default, keys)
         local orElse = ""
         -- Print the current location
         print("Now in " .. texts.type .. ": " .. address)
-        print(daraiLib.strFmt('r', texts.text))
+        daraiLib.printFmt('r', texts.text)
 
         -- Print info and options based on the type of the current node
         local keysClone = sz.unserialize(sz.serialize(keys))
         if texts.type == "table" then
-            print(daraiLib.strFmt('r', "Pick key to edit or ENTER:"));
+            daraiLib.printFmt('r', "Pick key to edit or ENTER:")
             local keyList = {}
             for keyName, val in pairs(input) do
                 keyList[#keyList+1] = keyName
-                print(daraiLib.strFmt('i', "(" .. #keyList .. ")" .. keyName .. ": " .. daraiLib.getVarPrint(texts[keyName], input[keyName])))
+                daraiLib.printFmt('i', "(" .. #keyList .. ")" .. keyName .. ": " .. daraiLib.getVarPrint(texts[keyName], input[keyName]))
             end
             local keyIndex = daraiLib.inputIndex("Key to edit", 1, #keyList, true)
             if keyIndex ~= nil then
@@ -114,7 +116,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                     print()
                     orElse = daraiLib.editTableKey(input[idx], texts.object, default[1], keysClone)
                 else
-                    print(daraiLib.strFmt('e', "Operation canceled."))
+                    daraiLib.printFmt('e', "Operation canceled.")
                 end
             elseif now == "n" then
                 local idx = daraiLib.inputIndex("Index ", 1, #input+1, true)
@@ -124,7 +126,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                     print()
                     orElse = daraiLib.editTableKey(input[idx], texts.object, default[1], keysClone)
                 else
-                    print(daraiLib.strFmt('e', "Operation canceled."))
+                    daraiLib.printFmt('e', "Operation canceled.")
                 end
             elseif now == "c" then
                 local idxFrom = daraiLib.inputIndex("Copy From ", 1, #input, true)
@@ -132,7 +134,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                 if idxTo ~= nil and idxFrom ~= nil then
                     table.insert(input, idxTo, daraiLib.cloneConfig(input[idxFrom]))
                 else
-                    print(daraiLib.strFmt('e', "Operation canceled."))
+                    daraiLib.printFmt('e', "Operation canceled.")
                 end
             elseif now == "l" then
                 local cnt = 5
@@ -152,7 +154,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                 if idx ~= nil then
                     table.remove(input, idx)
                 else
-                    print(daraiLib.strFmt('e', "Operation canceled."))
+                    daraiLib.printFmt('e', "Operation canceled.")
                 end
             else
                 orElse = now
@@ -165,7 +167,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
         -- In case orElse was selected, evaluate
         if orElse ~= "" then
             if orElse == "p" then
-                print(daraiLib.strFmt('i', sz.serialize(input)))
+                daraiLib.printFmt('i', sz.serialize(input))
                 daraiLib.enterToContinue()
             elseif orElse == "b" then
                 returnVal = ""
@@ -175,14 +177,11 @@ function daraiLib.editTableKey(input, texts, default, keys)
                 daraiLib.enterToContinue()
             elseif orElse == "e" then
                 if texts.type == "str" then
-                    io.write("  :")
-                    input[1] = io.read()
+                    input[1] = daraiLib.stringInput()
                 elseif texts.type == "num" then
-                    io.write("  :")
-                    input[1] = tonumber(io.read())
+                    input[1] = daraiLib.numberInput()
                 elseif texts.type == "int" then
-                    io.write("  :")
-                    input[1] = mm.floor(tonumber(io.read()))
+                    input[1] = mm.floor(daraiLib.numberInput())
                 elseif texts.type == "side" then
                     input[1] = daraiLib.listInput("Side", daraiLib.getAvailableSides(), false, false)
                 elseif texts.type == "bool" then
@@ -191,13 +190,13 @@ function daraiLib.editTableKey(input, texts, default, keys)
                     if daraiLib.input("Pick or Write", "pw", false) == "p" then
                         local ic = daraiLib.getInventoryController()
                         if ic == nil then
-                            print(daraiLib.strFmt('e', "No Inventory Controller is Available."))
+                            daraiLib.printFmt('e', "No Inventory Controller is Available.")
                         else
                             local sel = {}
                             for _, side in pairs(daraiLib.getAvailableSides()) do
                                 local mx = daraiLib.getInventorySize(ic, side)
                                 if mx ~= nil then
-                                    print(daraiLib.strFmt('i', side .. ": " .. mx .. " slots"))
+                                    daraiLib.printFmt('i', side .. ": " .. mx .. " slots")
                                     for slot = 1,mx do
                                         local item = daraiLib.stackInSlot(ic, side, slot)
                                         if item ~=nil then
@@ -207,7 +206,7 @@ function daraiLib.editTableKey(input, texts, default, keys)
                                 end
                             end
                             if #sel == 0 then
-                                print(daraiLib.strFmt('e', "Sorry, no items in adjescent directories."))
+                                daraiLib.printFmt('e', "Sorry, no items in adjescent directories.")
                             else
                                 local cnt = 5
                                 for i = 1, #sel do
@@ -258,9 +257,20 @@ end
 
 -- Simple press enter to continue automat
 function daraiLib.enterToContinue()
-  io.write(daraiLib.strFmt('?', "<Press ENTER>"))
-  return io.read()
+    io.write(daraiLib.strFmt('?', "<Press ENTER>"))
+    return io.read()
 end
+
+function daraiLib.stringInput()
+    io.write("  :")
+    return io.read()
+end
+
+function daraiLib.numberInput()
+    io.write("  :")
+    return tonumber(io.read())
+end
+
 
 -- Function to get a printout of content of a variable based on it's type
 function daraiLib.getVarPrint(varObj, data)
@@ -353,16 +363,16 @@ function daraiLib.tableKeys(input)
 end
 
 -- Check for key in a list or table
-function daraiLib.checkForKey(tab, key)
+function daraiLib.checkForKey(tab, key, alsoNames)
     local res = false
     for k, l in pairs(tab) do
-        if k == key then
+        if k == key and alsoNames then
             res = true
             return true
         end
         if l == key then
-            res = true
-            return true
+            res = k
+            return k
         end
     end
     return res
@@ -449,9 +459,9 @@ function daraiLib.getInventoryController()
     local rc = nil
     if isRobot then rc = require("robot") end
     local ic = nil
-    if daraiLib.checkForKey(cc, "inventory_controller") then
+    if daraiLib.checkForKey(cc, "inventory_controller", true) ~= false then
         ic = cc.inventory_controller
-    elseif daraiLib.checkForKey(cc, "transposer") then
+    elseif daraiLib.checkForKey(cc, "transposer", true) ~= false then
         ic = cc.transposer
     end
     return {ic, rc}

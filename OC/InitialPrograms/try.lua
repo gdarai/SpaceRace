@@ -42,7 +42,7 @@ local texts = {
         }
     }
 }
-print(dl.strFmt('T', "Test Program"))
-print(dl.strFmt('t', "Configuration"))
+dl.printFmt('T', "Test Program")
+dl.printFmt('t', "Configuration")
 local config = dl.config("try.config", texts, default, false)
-print(dl.strFmt('r', sz.serialize(config)))
+dl.printFmt('r', sz.serialize(config))

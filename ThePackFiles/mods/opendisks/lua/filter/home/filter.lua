@@ -58,13 +58,13 @@ function oneFilterRun(inputSides, filteredItems, filteredSides, defaultOut)
                 local target = defaultOut
                 local idx = dl.itemIndex(filteredItems, item)
                 if idx ~= -1 then target = filteredSides[idx] end
-                print(dl.strFmt('i', "Moving " .. item["label"] .. " - " .. target))
+                dl.printFmt('i', "Moving " .. item["label"] .. " - " .. target))
                 -- Find free slot
                 local freeSlot = dl.getFreeSlot(ic, target, nil)
                 local check = dl.moveItems(ic, side["side"], slot, target, freeSlot, item["maxSize"])
                 -- Print error
                 if not check then
-                    print(dl.strFmt('e', "Failed to move to " .. target))
+                    dl.printFmt('e', "Failed to move to " .. target))
                 end
             end
         end
@@ -73,12 +73,12 @@ end
 
 
 
-print(dl.strFmt('T', "Filter Program"))
-print(dl.strFmt('t', "Configuration"))
+dl.printFmt('T', "Filter Program"))
+dl.printFmt('t', "Configuration"))
 local config = dl.config("filter.config", texts, default, false)
 
 if ic[1] == nil then
-    print(dl.strFmt('e', "No Inventory Controller is Available. Program cannot run without transposer or inventory controller card."))
+    dl.printFmt('e', "No Inventory Controller is Available. Program cannot run without transposer or inventory controller card."))
     return 1
 end
 
@@ -101,14 +101,14 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     end
 
     -- Print inputs on the screen
-    print(dl.strFmt('t', "Input Sides:"))
+    dl.printFmt('t', "Input Sides:"))
     for _, side in pairs(inputSides) do
-        print(dl.strFmt('i', side["side"] .. " - " .. side["slots"] .. " slots"))
+        dl.printFmt('i', side["side"] .. " - " .. side["slots"] .. " slots"))
     end
     
     -- Filter cycle
     while true do
-        print(dl.strFmt('n', "CTRL+C to terminate"))
+        dl.printFmt('n', "CTRL+C to terminate"))
         local id, _ = ev.pull(1,"interrupted")
         if id == "interrupted" then
             print("soft interrupt, closing")
@@ -119,4 +119,4 @@ if dl.input("Run program or Terminate", "rt", false) == "r" then
     end    
 end
 
-print(dl.strFmt('t', "Thank you for using filter program."))
+dl.printFmt('t', "Thank you for using filter program."))

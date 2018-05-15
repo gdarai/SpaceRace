@@ -22,7 +22,7 @@ CONFIGURATION
         max: Maximum required items in output inventory
   defaultOut: side which should be used if there is no rule for this item (see target)
   ignoredSides: List of sides which should not be probed (see target)
-  
+  sideNames: table containing nicknames for every side. Used for more userfriendly setup
 EXAMPLES
   filter
     Starts the filter program

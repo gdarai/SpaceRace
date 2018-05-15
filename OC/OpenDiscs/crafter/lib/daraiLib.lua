@@ -306,7 +306,7 @@ function daraiLib.inputIndex(text, minI, maxI, canNil)
     local inp = nil
     local out = nil
     while inp == nil do
-        io.write(daraiLib.strFmt('?', text .. " [" .. minI .. "-" .. maxI .. "] "))
+        io.write(daraiLib.strFmt('?', text .. " [" .. minI .. "," .. maxI .. "] "))
         inp = io.read()
         if(inp == "")then
             out = nil
@@ -330,13 +330,16 @@ end
 function daraiLib.listInput(text, answers, getIndex, allowEmpty)
     local index = nil
     while index == nil do
-        io.write(daraiLib.strFmt('?', text .. " " .. sz.serialize(answers)))
+        io.write(daraiLib.strFmt('?', text .. " " .. sz.serialize(answers) .. " "))
         local input = io.read()
         if (input == "") and allowEmpty then
             index = -1
         else
             for i, opt in pairs(answers) do
                 if opt == input then index = i end
+            end
+            for i, opt in pairs(answers) do
+                if tostring(i) == input then index = i end
             end
             if index == nil then
                 for i, opt in pairs(answers) do

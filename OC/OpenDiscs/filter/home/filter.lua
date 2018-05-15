@@ -57,7 +57,7 @@ local texts = {
             type="side",
             text="One ignored side"
         }
-    }
+    },
     sideNames={
         type="list",
         text="List of names for individual sides, just descriptive for better understanding",
@@ -84,7 +84,7 @@ function getSidesInfo(setting)
         info[i]["name"] = setting["sideNames"][i][1]
         info[i]["role"] = "input"
         if dl.checkForKey(ignored, side, false) ~= false then info[i]["role"] = "ignored" end
-        if info[idx]["count"] > 0 then info[i]["role"] = "output" end
+        if info[i]["count"] > 0 then info[i]["role"] = "output" end
         if setting["defaultOut"][1] == side then info[i]["role"] = "primary output" end
     end
     return info
@@ -93,8 +93,9 @@ end
 function getFilterIndexMap(filters, side)
     local indexMap = {}
     for i,f in pairs(filters) do
-        if side == nil or f["target"] == side then indexMap[#indexMap+1] = i
+        if side == nil or f["target"][1] == side then indexMap[#indexMap+1] = i end
     end
+    return indexMap
 end
 
 function listFilters(filters, indexMap)
@@ -109,6 +110,18 @@ function listFilters(filters, indexMap)
             cnt = 0
             dl.enterToContinue()
         end
+    end
+end
+
+function printSideInfo(idx, i)
+    dl.printFmt("i", idx .. ") " .. i["side"] .. "'" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"])
+end
+
+function printFilterInfo(idx, f)
+    if f["item"]["damage"] < 0 then
+        dl.printFmt("i", idx .. ") " .. f["target"][1] .. "(" .. f["max"][1] ..") " .. f["item"]["label"] .. "FUZZY")
+    else
+        dl.printFmt("i", idx .. ") " .. f["target"][1] .. "(" .. f["max"][1] ..") " .. f["item"]["label"])
     end
 end
 
@@ -127,7 +140,7 @@ function configureTool(setting)
                 local info = getSidesInfo(setting)
                 dl.printFmt("i", "SIDE 'NAME' ROLE / COUNT")
                 dl.printFmt("i", "Count = how many filters are directed there")
-                for idx,i in pairs(info) do dl.printFmt("i", idx .. ") " .. i["side"] .. " '" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"]) end
+                for idx,i in pairs(info) do printSideInfo(idx, i) end
                 i2 = dl.input("Edit, Delete, Load or Back", "edlb", false)
                 if i2 == "e" then -- Edit Filter
                     local i3 = dl.inputIndex("Pick side (0 for all)", 0, #info, true)
@@ -142,24 +155,23 @@ function configureTool(setting)
                                 listFilters(setting["filters"], indexMap)
                             elseif i4 > 0 then -- Filter Picked
                                 local f = setting["filters"][indexMap[i4]]
-                                dl.printFmt("i", i4 .. ") " .. f["target"][1] .. "(" .. f["max"][1] ..") " .. f["item"]["label"])
+                                printFilterInfo(i4, f)
                                 local i5 = dl.input("Delete, Max, IgnoreDmg, Back", "dmib", false)
                                 if i5 == "d" then -- Delete Filter
                                     table.remove(setting["filters"], indexMap[i4])
-                                    i4 == 0
+                                    i4 = 0
                                 elseif i5 == "m" then -- Change Max
                                     local newMax = dl.inputIndex("Pick requested maximum of items (0 for ALL, ENTER for no change)", 0, 9999, true)
-                                    if newMax ~= nil then setting["filters"][i4]["max"][1] = newMax end
+                                    if newMax ~= nil then setting["filters"][indexMap[i4]]["max"][1] = newMax end
                                 elseif i5 == "i" then -- Change Damage
-                                    local newDmg = dl.inputIndex("Change requested Damage (-1 for Ignore, ENTER for no change, current ".. setting["filters"][i4]["item"]["damage"] ..")", -1, 9999, true)
-                                    if newDmg ~= nil then setting["filters"][i4]["item"]["damage"] = newDmg end
+                                    setting["filters"][indexMap[i4]]["item"]["damage"] = -1
                                 end
                             end
                         end
                     end
                 elseif i2 == "d" then -- Delete Filter(s)
                     local info = getSidesInfo(setting)
-                    for idx,i in pairs(info) do dl.printFmt("i", idx .. ") " .. i["side"] .. " '" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"]) end
+                    for idx,i in pairs(info) do printSideInfo(idx, i) end
                     local i3 = dl.inputIndex("Pick side (0 for all)", 0, #info, true)
                     local side = nil
                     if i3 > 0 then side = info[i3]["side"] end
@@ -190,12 +202,14 @@ function configureTool(setting)
                     end
                 elseif i2 == "l" then -- Load Filter
                     dl.printFmt("i", "Loader is a powerfull tool. Place your items in their TARGET inventories.")
+                    local useCount = dl.input("Use stack sizes for precise filtering?", "Yn", false) == "Y"
+                    local clearFirst = dl.input("Clear ALL filters first?", "Yn", false) == "Y"
+                    local resetIgnSides = dl.input("Reset list of ignored sides?", "Yn", false) == "Y"
                     if dl.input("Ready?", "Yn", false) == "Y" then
-                        local useCount = dl.input("Use stack sizes for precise filtering?", "Yn", false) == "Y"
-                        if dl.input("Clear ALL filters first?", "Yn", false) == "Y" then
+                        if clearFirst then
                             setting["filters"] = {}
                         end
-                        if dl.input("Reset list of ignored sides?", "Yn", false) == "Y" then
+                        if resetIgnSides then
                             setting["ignoredSides"] = {}
                         end
 
@@ -206,9 +220,10 @@ function configureTool(setting)
 
                         for idx,i in pairs(info) do
                             local side = i["side"]
-                            dl.printFmt("t", idx .. ") " .. side .. " '" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"])
-                            if
+                            printSideInfo(idx, i)
                             local maxSlot = dl.getInventorySize(ic, side)
+                            local sideNames = setting["sideNames"]
+                            
                             if (i["role"] ~= "ignored") and (maxSlot ~= nil) then
                                 for slot=1,maxSlot do
                                     local stack = dl.stackInSlot(ic, side, slot)
@@ -220,13 +235,13 @@ function configureTool(setting)
                                             dl.printFmt("r", "(" .. maxSize .. ")" .. stack["label"])
                                             setting["filters"][#setting["filters"]+1] = {
                                                 item={name=stack["name"], damage=stack["damage"], label=stack["label"]},
-                                                target={side}
-                                                max=maxSize
+                                                target={side},
+                                                max={maxSize}
                                             }
                                             targets[#targets+1] = side
                                             items[#items+1] = {name=stack["name"], damage=stack["damage"], label=stack["label"]}
                                         else -- SKIPPING
-                                            dl.printFmt("e", "Skipping duplicate (now " .. targets[currIdx] .. ")" .. stack["label"])
+                                            dl.printFmt("e", "Skipping duplicate (now " .. sideNames[targets[currIdx]][1] .. ")" .. stack["label"])
                                         end
                                     end
                                 end
@@ -234,6 +249,7 @@ function configureTool(setting)
                                 dl.printFmt("e", "No inventory on this side, adding to ignored")
                                 setting["ignoredSides"][#setting["ignoredSides"]+1]={side}
                             end
+                            dl.enterToContinue()
                         end
                     end
                 end
@@ -246,13 +262,13 @@ function configureTool(setting)
             local i2 = 0
             while i2 ~= -1 do
                 dl.printFmt("t", "Sides description")
-                for idx,i in pairs(info) do dl.printFmt("i", idx .. ") " .. i["side"] .. " '" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"]) end
+                for idx,i in pairs(info) do printSideInfo(idx, i) end
                 i2 = dl.listInput("Edit", availableSides, true, true)
                 if i2 > 0 then
                     local i3 = ""
                     while i3 ~= "b" do
                         local i = info[i2]
-                        dl.printFmt("i", i2 .. ") " .. i["side"] .. "'" .. i["name"] .. "' " .. i["role"] .. "/" .. i["count"])
+                        printSideInfo(i2, i)
                         i3 = dl.input("Rename, (un)Ignore(as input), Default(out), List(filters) or Back", "ridlb", false)
                         if i3 == "r" then -- Rename
                             local new = dl.stringInput()
@@ -277,13 +293,12 @@ function configureTool(setting)
                                 ignored[#ignored+1] = i["side"]
                             end
                         elseif i3 == "d" then -- Default
-                            info[i2]["role"] = "primary output"
                             setting["defaultOut"] = {info[i2]["side"]}
-
+                            info = getSidesInfo(setting)
                         elseif i3 == "l" then -- List filters
                             local side = info[i2]["side"]
-                            for _,f in pairs(setting["filters"]) do
-                                if f["target"][1] == side then dl.printFmt("i", f["item"]["label"] .. "(max ".. f["max"] ..")") end
+                            for idx,f in pairs(setting["filters"]) do
+                                if f["target"][1] == side then printFilterInfo(idx, f) end
                                 dl.enterToContinue()
                             end
                         end
@@ -308,13 +323,17 @@ function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, def
             if item ~=nil then
                 local target = defaultOut
                 local idx = dl.itemIndex(filteredItems, item)
-                if idx ~= -1 then target = filteredSides[idx] end
+                local filteredMaxStack = 9999
+                if idx ~= -1 then
+                    target = filteredSides[idx]
+                    filteredMaxStack = filteredMax[idx]
+                end
                 dl.printFmt('i', "Moving " .. item["label"] .. " - " .. target)
                 -- Check if max reached
                 local mntToMove = item["maxSize"]
-                if filteredMax[idx] > 0 then
+                if filteredMaxStack > 0 then
                     local curCount = dl.countItems(ic, target, item)
-                    mntToMove = filteredMax[idx] - curCount
+                    mntToMove = filteredMaxStack - curCount
                 end
                 if mntToMove > 0 then
                     -- Find free slot
@@ -325,7 +344,7 @@ function oneFilterRun(inputSides, filteredItems, filteredSides, filteredMax, def
                         dl.printFmt('e', "Failed to move to " .. target)
                     end
                 else
-                    dl.printFmt('e', "Requested # "..filteredMax[idx].." reached")
+                    dl.printFmt('e', "Requested # "..filteredMaxStack.." reached")
                 end
             end
         end

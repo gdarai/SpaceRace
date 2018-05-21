@@ -12,16 +12,17 @@ DESCRIPTION
   
 CONFIGURATION
   filters: List or rules for filtering
-    { item, target }
+    { item, target, max }
         item: Item object which is the target of this rule
           { name, damage, label }
             name: Minecraft name of the item, string (minecraft:stone)
             damage: Damage value, number, use -1 to ignore damage (0)
             label: Just a call name, string (MyStone)
         target: side to which this item should be moved to ('up', 'down', 'north', 'south', 'east', west')
+        max: Maximum required items in output inventory
   defaultOut: side which should be used if there is no rule for this item (see target)
   ignoredSides: List of sides which should not be probed (see target)
-  
+  sideNames: table containing nicknames for every side. Used for more userfriendly setup
 EXAMPLES
   filter
     Starts the filter program

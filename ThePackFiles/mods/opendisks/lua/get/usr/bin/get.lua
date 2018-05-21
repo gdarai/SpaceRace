@@ -30,7 +30,7 @@ if not fs.exists(prgTgt) then
         wd = shell.getWorkingDirectory()
         shell.setWorkingDirectory("/lib")
         -- Download the program
-        prgCmd = source .. "daraiLib.lua"
+        prgCmd = source .. "OpenDiscs/filter/lib/daraiLib.lua"
         print("Saving library daraiLib into the path /lib")
         print(prgCmd)
         shell.execute(prgCmd)
@@ -43,7 +43,8 @@ end
 -- Set the table of known programs
 programs = {}
 programs['debug'] = {origin="InitialPrograms/", file="debug.lua", target="/bin"}
-programs['filter'] = {origin="Programs/", file="filter.lua", target="/home"}
+programs['filter'] = {origin="OpenDiscs/filter/home", file="filter.lua", target="/home"}
+programs['crafter'] = {origin="OpenDiscs/crafter/home", file="crafter.lua", target="/home"}
 
 -- If we don't have program selected, give the list
 if #args==0 then

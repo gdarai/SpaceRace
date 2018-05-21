@@ -178,13 +178,13 @@ function configureTool(setting)
                     end
                 elseif i2 == "c" then -- Clear
                     dl.printFmt("e", "Deleting all recipes")
-                    setting["filters"] = {}
+                    setting["recipes"] = {}
                     dl.enterToContinue()
                 elseif i2 == "d" then -- Delete One
-                    local idx = dl.inputIndex("Receipt to delete", 1, #setting["filters"], true)
+                    local idx = dl.inputIndex("Receipt to delete", 1, #setting["recipes"], true)
                     if idx ~= nil then
                         dl.printFmt("e", "Removing receipt " .. idx)
-                        table.remove(setting["filters"], idx)
+                        table.remove(setting["recipes"], idx)
                         dl.enterToContinue()
                     end
                 end

@@ -348,6 +348,9 @@ TEXT         #  You should not open this tab unless you feel REALLY REALLY in de
 QUEST        #  CHreset     #    0:-25 	  #  30    #  WaterBowl  		# main
 
 QUEST        #  CH1         #  -30:-20    #  20    #  CHboat
+QUEST        #  CH2         #  -45:-20    #  20    #  Mutation
+QUEST        #  CH3         #  -45:-5     #  20    #  LemonFruit
+QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain
 
 QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
 QUEST        #  CH11        #   15:-20    #  20    #  CHglider

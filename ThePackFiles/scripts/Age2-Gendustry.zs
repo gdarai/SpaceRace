@@ -116,3 +116,4 @@ recipes.addShaped(<gendustry:Transposer>, [[<actuallyadditions:blockDisplayStand
 // Addons
 recipes.remove(<gendustry:GeneSampleBlank>);
 recipes.remove(<gendustry:GeneTemplate>);
+mods.actuallyadditions.Empowerer.addRecipe(procGen, <gendustry:GeneTemplate>, <gendustry:GeneSampleBlank>, zombSkul2, <gendustry:GeneSampleBlank>, <gendustry:GeneSampleBlank>, 50000, 200);

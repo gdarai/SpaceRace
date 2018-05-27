@@ -1,7 +1,7 @@
 <galaxy>
     <star name="Star A" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
         <planet name="Planet A1 LavaWorld" customIcon="marslike" DIMID="22">
-			<artifact>bqmie:icon_item 14</artifact>
+			<artifact>bqmie:icon_item 14 1</artifact>
             <orbitalDistance>20</orbitalDistance>
             <fogColor>1,1,0.8</fogColor>
             <skyColor>1,1,0</skyColor>
@@ -12,7 +12,7 @@
             <biomeIds>166</biomeIds>
         </planet>
         <planet name="Planet A2 AlienWorld" customIcon="earthlike" DIMID="23">
-			<artifact>bqmie:icon_item 17</artifact>
+			<artifact>bqmie:icon_item 17 1</artifact>
             <orbitalDistance>70</orbitalDistance>
             <fogColor>0,0.494,0.533</fogColor>
             <skyColor>0.2,0.2,1</skyColor>
@@ -33,7 +33,7 @@
             </planet>
         </planet>
         <planet name="Red Giant A3 HomeWorld" customIcon="gasgiantred" DIMID="18">
-			<artifact>bqmie:icon_item 16</artifact>
+			<artifact>bqmie:icon_item 16 1</artifact>
             <orbitalDistance>100</orbitalDistance>
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>
@@ -71,7 +71,7 @@
             </planet>
         </planet>
         <planet name="Blue Giant A4 MysticalWorld" customIcon="gasgiantblue" DIMID="19">
-			<artifact>bqmie:icon_item 13</artifact>
+			<artifact>bqmie:icon_item 13 1</artifact>
             <orbitalDistance>200</orbitalDistance>
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>
@@ -98,7 +98,7 @@
     </star>
     <star name="Star B" temp="200" x="100" y="20" numPlanets="0" numGasGiants="0">
         <planet name="Planet B1 DistantWorld" customIcon="marslike" DIMID="30">
-			<artifact>bqmie:icon_item 15</artifact>
+			<artifact>bqmie:icon_item 15 1</artifact>
             <orbitalDistance>50</orbitalDistance>
             <fogColor>1,1,0.8</fogColor>
             <skyColor>1,1,0</skyColor>
@@ -109,7 +109,7 @@
             <biomeIds>92</biomeIds>
         </planet>
         <planet name="Planet B2 OceanWorld" customIcon="earthlike" DIMID="31">
-			<artifact>bqmie:icon_item 18</artifact>
+			<artifact>bqmie:icon_item 18 1</artifact>
             <orbitalDistance>100</orbitalDistance>
             <fogColor>0,0.494,0.533</fogColor>
             <skyColor>0.2,0.2,1</skyColor>
@@ -129,7 +129,7 @@
             </planet>
         </planet>
         <planet name="Red Giant B3 BlueBall" customIcon="gasgiantblue" DIMID="17">
-			<artifact>bqmie:icon_item 22</artifact>
+			<artifact>bqmie:icon_item 22 1</artifact>
             <orbitalDistance>250</orbitalDistance>
 			<GasGiant>true</GasGiant>
 			<hasRings>true</hasRings>

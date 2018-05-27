@@ -18,6 +18,33 @@ REWARD  #  ALL      #  CHboat:1
 REWARD  #  RESET    #  CHreset
 
 // ------->
+
+QUEST   #  CH2      #  Bee Cheating # 1302
+TEXT    #  Some people just don't like waiting for genetics to happend. Well... if you are in this show for the 3rd time I don't blame you. Ok, here you are, but you owe me one.
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  GEProducer:1 # GEMutatron:1
+REWARD  #  RESET    #  CHreset
+
+// ------->
+
+QUEST   #  CH3      #  Lemons!!! # 1303
+TEXT    #  Why would anyone want to cheat in lemons? Does it make any sense?
+
+TASK    #  TRIGGER
+REWARD  #  SAPLING  #  LemonSapling:4
+REWARD  #  RESET    #  CHreset
+
+// ------->
+
+QUEST   #  CH4      #  Serious Bee # 1304
+TEXT    #  Believe me, you will need them in one point.
+
+TASK    #  TRIGGER
+REWARD  #  BEE      #  MetallicQueen:4
+REWARD  #  RESET    #  CHreset
+
+// ------->
 // Around home
 // ------->
 

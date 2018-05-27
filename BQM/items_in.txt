@@ -720,3 +720,9 @@ ITEM # CHglider       # openglider:hang_glider_basic
 ITEM # CHboat         # minecraft:acacia_boat
 
 ITEM # SoftTofu       # harvestcraft:silkentofuitem
+
+ITEM    # LemonFruit   # forestry:fruits:3
+SAPLING # LemonSapling # 1 # treeLemon:growthLightlevel:heightSmall:saplingsAverage:fruitLemon:yieldLower # plantTypeNone:sappinessAverage:territoryAverage:leavesNone:maturationFaster # i1d:i20d:i4d # fireproofFalse
+
+ITEM # MetallicGrain   # morebees:grainMetallic
+BEE  # MetallicQueen   # 1 # Queen:20 # morebees.speciesMetallic:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth1:boolTrue:toleranceBoth2 # boolFalse:boolTrue:morebees.flowersOre:floweringSlowest:territoryAverage:effectNone

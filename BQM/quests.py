@@ -230,6 +230,38 @@ def writeRewardLines(f, intention, reward, items, quests):
 			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"rewardID": "bq_standard:item",')
+	elif(type=='SAPLING'):
+		writeLine(f, intention, '"rewards": [')
+		iMax = len(reward['items'])
+		iCnt = 0
+		for it in reward['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1]
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"rewardID": "forestryquesting:reward.tree",')
+	elif(type=='BEE'):
+		writeLine(f, intention, '"rewards": [')
+		iMax = len(reward['items'])
+		iCnt = 0
+		for it in reward['items']:
+			iCnt = iCnt + 1
+			m = it.split(':')
+			item = items[parseName(m[0])]
+			count = '1'
+			if(len(m)>1):
+				count = m[1]
+			writeLine(f, intention+1, '{')
+			writeItemLines(f, intention+2, item, count)
+			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"rewardID": "forestryquesting:reward.bee",')
 	elif(type=='PICK'):
 		writeLine(f, intention, '"choices": [')
 		iMax = len(reward['items'])
@@ -282,7 +314,7 @@ def writeRewardLines(f, intention, reward, items, quests):
 		writeLine(f, intention, '"rewardID": "bq_standard:scoreboard",')
 	else:
 		printError('Unknown reward type '+type+': '+str(reward))
-		print('Supported types are ALL PICK RESET COMMAND XP SCORE')
+		print('Supported types are ALL PICK RESET COMMAND XP SCORE SAPLING BEE')
 		exit()
 
 
@@ -371,6 +403,83 @@ for line in lines:
             else:
                 printWarning('ITEM '+name+', skipping attribute: '+nm+', unknown.')
         items[name]=theItem
+    if (m[0]=='SAPLING'):
+        name = parseName(m[1])
+        if (len(m)<7):
+            printWarning('Skipping SAPLING: '+name+', need parameters SAPLING # <name> # <isAnalyzed0/1> # <tree:growthLight/Dark:height:saplings:fruit:yield> # <plantType:sappiness:territory:leaves:maturation> # <i1d:i20:i4d> # <fireproof>')
+            continue
+        props1 = m[3].split(":")
+        props2 = m[4].split(":")
+        props3 = m[5].split(":")
+        if (len(props1)<5):
+            printWarning('Skipping SAPLING: '+name+', parameter 2 must be <tree:growthLight/Dark:height:saplings:fruit:yield>')
+            continue
+        if (len(props2)<5):
+            printWarning('Skipping SAPLING: '+name+', parameter 3 must be <plantType:sappiness:territory:leaves:maturation>')
+            continue
+        if (len(props3)<3):
+            printWarning('Skipping SAPLING: '+name+', parameter 4 must be <i1d:i20:i4d>')
+            continue
+        chromozomes = []
+        for attr in props1:
+            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        for attr in props2:
+            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        for attr in props3:
+            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        chromozomes.append('{ "UID1:8": "forestry.'+m[6]+'", "UID0:8": "forestry.'+m[6]+'", "Slot:1": '+str(len(chromozomes))+' }')
+        nbt = '{ "IsAnalyzed:1": '+m[2]+', "Genome:10": { "Chromosomes:9": ['+', '.join(chromozomes)+'] } }'
+
+        theItem = {
+            'package': 'forestry',
+            'name': 'sapling',
+            'damage': '0',
+            'nbt': nbt,
+            'ore': ''
+        }
+        items[name]=theItem
+    if (m[0]=='BEE'):
+        name = parseName(m[1])
+        if (len(m)<7):
+            printWarning('Skipping BEE: '+name+', need parameters BEE # <name> # <isAnalyzed0/1> # <Queen/Princess/Drone:health> # <species:speed:lifespan:fertility> # <temp_tolerance:diurnal(bool):hum_tolerance> # <raintolerant(bool):noctural(bool):flowers:flowering:territory:effect>')
+            continue
+        props0 = m[3].split(":")
+        props1 = m[4].split(":")
+        props2 = m[5].split(":")
+        props3 = m[6].split(":")
+        if (len(props0)<2):
+            printWarning('Skipping BEE: '+name+', parameter 2 must be <Queen/Princess/Drone:health>')
+            continue
+        if (len(props1)<4):
+            printWarning('Skipping BEE: '+name+', parameter 3 must be <species:speed:lifespan:fertility>')
+            continue
+        if (len(props2)<3):
+            printWarning('Skipping BEE: '+name+', parameter 4 must be <hum_tolerance:noctural:temp_tolerance>')
+            continue
+        if (len(props3)<6):
+            printWarning('Skipping BEE: '+name+', parameter 5 must be <bool:bool:flowers:flowering:territory:effect>')
+            continue
+        chromozomes = []
+        for attr0 in props1:
+            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
+            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        for attr0 in props2:
+            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
+            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        for attr0 in props3:
+            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
+            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
+        nbt = '{ "MaxH:3": '+props0[1]+', "Health:3": '+props0[1]+', "IsAnalyzed:1": '+m[2]+', "Genome:10": { "Chromosomes:9": ['+', '.join(chromozomes)+'] } }'
+
+        theItem = {
+            'package': 'forestry',
+            'name': 'bee'+props0[0]+'GE',
+            'damage': '0',
+            'nbt': nbt,
+            'ore': ''
+        }
+        items[name]=theItem
+        
 
 print ('Loaded '+str(len(list(locations.keys())))+' location(s).')
 print ('Loaded '+str(len(list(items.keys())))+' item(s).')

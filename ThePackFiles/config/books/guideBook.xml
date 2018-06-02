@@ -1490,6 +1490,10 @@
 			<p bold="true" italics="true">Leaving Home</p>
 			<p>You must have on your ship: Lava World Orb, Dilithium.</p>
 			<p>Should also have: Rocket Fuel Production, Dilithium Production, Food.</p>
+			<space height="5" />
+			<p>So this is good bye. You are big now and you don't need guidebooks.</p>
+			<space height="5" />
+            <p>Good Luck.</p>
 		</page>
 	</chapter>
 </book>

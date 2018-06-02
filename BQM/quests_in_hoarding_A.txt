@@ -23,6 +23,15 @@ TASK    #  HAVE     #  SoulSand
 REWARD  #  XP       #  Levels:1
 
 // ------->
+
+QUEST   #  HA30     #  Age of Plants # 1203
+TEXT    #  Last chance to prove how good you are in mining... Next time, you will probably grow metals. So your next milestone is the 
+PREREQ  #  AND      #  HA20
+
+TASK    #  HAVE     #  BaseSeed
+REWARD  #  XP       #  Levels:1
+
+// ------->
 // ----------------------------->
 // -------> Now the hoarding quests
 // ----------------------------->

@@ -33,6 +33,10 @@ val shipEngine = <davincisvessels:engine>;
 val cart = <minecraft:minecart>;
 val cartChest = <minecraft:chest_minecart>;
 val goldCarrot = <minecraft:golden_carrot>;
+val theString = <minecraft:string>;
+val slag = <railcraft:dust:4>;
+val dracoNugget = <draconicevolution:nugget>;
+val experienceCapsule = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"xpjuice", Amount:1000}});
 
 val canDuranite = <forestry:can:1>.withTag({"Fluid":{"FluidName":"duranite_fluid", Amount:1000}});
 
@@ -105,3 +109,11 @@ mods.tconstruct.Casting.addTableRecipe(<railcraft:dust:6>, <liquid:ender> * 32, 
 mods.immersiveengineering.Crusher.addRecipe(<forestry:ash> * 2, <minecraft:end_stone>, 2000, <railcraft:dust:6>, 0.15);
 mods.tconstruct.Smeltery.addMelting(<liquid:ender> * 4, <minecraft:end_stone>, 100);
 
+// Firestone
+mods.immersiveengineering.Crusher.addRecipe(<railcraft:firestone_raw>, <railcraft:ore_magic>, 2000, <forestry:ash> * 4, 1);
+mods.actuallyadditions.Crusher.addRecipe(<railcraft:ore_magic>, <railcraft:firestone_raw>, <forestry:ash>, 100);
+
+// Slag and Ender Eggs
+recipes.addShaped(slag, [[null, theString, null], [theString, <immersiveengineering:material:7>, theString],[null, theString, null]]);
+recipes.remove(<railcraft:dust:7>);
+recipes.addShaped(<railcraft:dust:7>*42, [[slag, dracoNugget, slag], [dracoNugget, <minecraft:dragon_egg>, dracoNugget],[slag, experienceCapsule, slag]]);

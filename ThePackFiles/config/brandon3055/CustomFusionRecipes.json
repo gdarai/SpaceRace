@@ -81,140 +81,170 @@
         "mode": "ADD",
         "result": "draconicevolution:crafting_pedestal,1,1",
         "catalyst": "draconicevolution:crafting_pedestal",
-        "energy": 10000000,
+        "energy": 8000000,
         "tier": 0,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "ore:blockDiamond",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_helm",
         "catalyst": "mysticalagriculture:superium_helmet",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_chest",
         "catalyst": "mysticalagriculture:superium_chestplate",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_legs",
         "catalyst": "mysticalagriculture:superium_leggings",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_boots",
         "catalyst": "mysticalagriculture:superium_boots",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_bow",
         "catalyst": "mysticalagriculture:superium_bow",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_sword",
         "catalyst": "mysticalagriculture:superium_sword",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_axe",
         "catalyst": "mysticalagriculture:superium_axe",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_pick",
         "catalyst": "mysticalagriculture:superium_pickaxe",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
         "mode": "ADD",
         "result": "draconicevolution:wyvern_shovel",
         "catalyst": "mysticalagriculture:superium_shovel",
-        "energy": 2000000,
+        "energy": 1500000,
         "tier": 1,
         "ingredients": [
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_core",
             "draconicevolution:wyvern_energy_core",
             "ore:blockEmerald",
-            "minecraft:prismarine,4,2"
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2",
+            "minecraft:prismarine,1,2"
         ]
     },
     {
@@ -533,14 +563,14 @@
         "result": "draconicevolution:reactor_core",
         "catalyst": "draconicevolution:chaos_shard",
         "energy": 100000000,
-        "tier": 2,
+        "tier": 1,
         "ingredients": [
-            "draconicevolution:chaotic_core",
-            "draconicevolution:chaotic_core",
+            "draconicevolution:awakened_core",
+            "draconicevolution:awakened_core",
             "ore:blockNihilite",
             "ore:blockNihilite",
-            "enderio:itemMaterial,9,9",
-            "enderio:itemMaterial,9,9",
+            "bqmie:icon_item,1,19",
+            "bqmie:icon_item,1,19",
 			"actuallyadditions:blockCrystalEmpowered,1,5",
 			"actuallyadditions:blockCrystalEmpowered,1,5"
         ]
@@ -559,12 +589,12 @@
         "ingredients": [
             "draconicevolution:draconic_pick",
             "draconicevolution:draconic_shovel",
-            "draconicevolution:draconic_sword",
+            "draconicevolution:draconic_axe",
             "draconicevolution:draconic_sword",
             "draconicevolution:chaotic_core",
             "draconicevolution:chaotic_core",
-            "taiga:adamant_dust,8",
-            "taiga:adamant_dust,8"
+            "tconstruct:large_plate,1,0,{Material:adamant}",
+            "tconstruct:large_plate,1,0,{Material:adamant}"
         ]
     },
     {
@@ -576,12 +606,13 @@
         "mode": "ADD",
         "result": "draconicevolution:crafting_pedestal,1,3",
         "catalyst": "draconicevolution:draconic_staff_of_power",
-        "energy": 300000000,
+        "energy": 200000000,
         "tier": 2,
         "ingredients": [
             "draconicevolution:crafting_pedestal,1,2",
             "draconicevolution:crafting_pedestal,1,2",
-            "taiga:aurorium_block,2"
+            "taiga:aurorium_block",
+            "taiga:aurorium_block"
         ]
     },
     {
@@ -762,6 +793,60 @@
             "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
             "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}",
             "forestry:refractory,1,1,{Fluid:{FluidName:silver, Amount:1000}}"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:chaos_shard,2,0",
+        "catalyst": "taiga:astrium_block",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+			"draconicevolution:chaotic_core"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:reactor_component,1,1",
+        "catalyst": "draconicevolution:wyvern_core"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:reactor_component,1,1",
+        "catalyst": "actuallyadditions:blockLaserRelayExtreme",
+        "energy": 30000000,
+        "tier": 1,
+        "ingredients": [
+			"draconicevolution:wyvern_core",
+			"draconicevolution:wyvern_core",
+            "draconicevolution:reactor_part,1,1",
+            "draconicevolution:reactor_part,1,1",
+            "draconicevolution:reactor_part,1,2",
+            "draconicevolution:reactor_part,1,2"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:reactor_component",
+        "catalyst": "draconicevolution:reactor_part"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:reactor_component",
+        "catalyst": "draconicevolution:reactor_part",
+        "energy": 20000000,
+        "tier": 1,
+        "ingredients": [
+			"draconicevolution:wyvern_core",
+			"draconicevolution:wyvern_core",
+            "draconicevolution:reactor_part,1,3",
+            "draconicevolution:reactor_part,1,3",
+            "draconicevolution:reactor_part,1,4",
+            "draconicevolution:reactor_part,1,4",
+            "powersuits:powerArmorComponent,1,12",
+            "powersuits:powerArmorComponent,1,12",
+            "powersuits:powerArmorComponent,1,12",
+            "powersuits:powerArmorComponent,1,12"
         ]
     }
 ]

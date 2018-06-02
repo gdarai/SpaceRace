@@ -21,6 +21,8 @@ val uraniumCapsule = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"uran
 val ghastTear = <minecraft:ghast_tear>;
 val theEgg = <minecraft:dragon_egg>;
 val theStar = <minecraft:nether_star>;
+val plateElectrum = <immersiveengineering:metal:37>;
+val plateInvar = <railcraft:plate:9>;
 
 val enCrystal = <draconicevolution:energy_crystal>;
 val wyvEC = <draconicevolution:wyvern_energy_core>;
@@ -38,20 +40,20 @@ recipes.remove(theBlock);
 recipes.remove(partGen);
 mods.immersiveengineering.ArcFurnace.removeRecipe(theIngot);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(theBlock, theBlockCH, 200000);
-mods.actuallyadditions.Empowerer.addRecipe(iobsidian, theIngot, uraniumCapsule, ghastTear, <forestry:craftingMaterial:1>, <minecraft:prismarine:2>, 100000, 100);
-mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:blockMisc:8>, partGen, uraniumCapsule, theBlockCH, uraniumCapsule, theBlockCH, 200000, 1200);
+mods.actuallyadditions.Empowerer.addRecipe(iobsidian, theIngot, uraniumCapsule, ghastTear, <forestry:craftingMaterial:1>, <minecraft:prismarine:2>, 100000, 100, 1, 0, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:blockMisc:8>, partGen, uraniumCapsule, theBlockCH, uraniumCapsule, theBlockCH, 200000, 1200, 1, 0.9, 0.3);
 mods.forestry.Carpenter.addRecipe(theBlock, [[theIngot, iobsidian, theIngot], [iobsidian, <mysticalagriculture:charm_rainbow>, iobsidian], [theIngot, iobsidian, theIngot]], 400, <liquid:uranium> * 4000, <actuallyadditions:itemMisc:18>);
 
 // Cores
 recipes.remove(coreWyvern); // Moved to infusion Crafter
 
 recipes.remove(coreBasic);
-mods.actuallyadditions.Empowerer.addRecipe(theBlock, coreBasic, skelSkul, <actuallyadditions:blockPhantomEnergyface>, skelSkul, soulVial, 500000, 200);
+mods.actuallyadditions.Empowerer.addRecipe(theBlock, coreBasic, skelSkul, <actuallyadditions:blockPhantomEnergyface>, skelSkul, soulVial, 500000, 200, 1, 1, 1);
 
 // Components
 recipes.remove(craftingCore);
 recipes.remove(ped0);
-mods.actuallyadditions.Empowerer.addRecipe(ped0, craftingCore, theEgg, theStar, theEgg, theStar, 750000, 1200);
+mods.actuallyadditions.Empowerer.addRecipe(ped0, craftingCore, theEgg, theStar, theEgg, theStar, 750000, 1200, 1, 1, 0.9);
 mods.forestry.Carpenter.addRecipe(ped0, [[theIngot, theStar, theIngot], [iobsidian, <mysticalagriculture:intermedium_furnace>, iobsidian], [skelSkul, uraniumCapsule, skelSkul]], 400, <liquid:xpjuice> * 4000, <mysticalagriculture:mystical_machine_frame>);
 
 // Utilities
@@ -71,6 +73,11 @@ recipes.addShaped(<draconicevolution:energy_storage_core>, [[partGen, coreBasic,
 recipes.addShaped(enWyvCrystal*4, [[enCrystal, wyvEC, enCrystal], [wyvEC, coreWyvern, wyvEC], [enCrystal, wyvEC, enCrystal]]);
 
 recipes.addShaped(<draconicevolution:energy_crystal:2>*4, [[enWyvCrystal, avaEC, enWyvCrystal], [avaEC, dragonHeart, avaEC], [enWyvCrystal, avaEC, enWyvCrystal]]);
+
+recipes.remove(<draconicevolution:reactor_part:1>);
+recipes.remove(<draconicevolution:reactor_part:2>);
+recipes.addShaped(<draconicevolution:reactor_part:1>, [[null, null, null], [plateElectrum, plateElectrum, plateElectrum], [coreBasic, theIngot, theIngot]]);
+recipes.addShaped(<draconicevolution:reactor_part:2>, [[null, null, null], [plateInvar, plateInvar, plateInvar], [coreBasic, theIngot, theIngot]]);
 
 //Wyvern Tools and Armor
 recipes.remove(<draconicevolution:wyvern_helm>);

@@ -3,8 +3,13 @@ TEXT    #  When you are in so deep trouble that you need to use some of the chea
 
 TASK    #  TRIGGER
 REWARD  #  RESET    #  CH1
+REWARD  #  RESET    #  CH2
+REWARD  #  RESET    #  CH3
+REWARD  #  RESET    #  CH4
 REWARD  #  RESET    #  CH11
 REWARD  #  RESET    #  CH12
+REWARD  #  RESET    #  CH13
+REWARD  #  RESET    #  CH14
 
 // ------->
 // The most basic
@@ -75,5 +80,27 @@ PREREQ  #  AND      #  CH10
 TASK    #  TRIGGER
 REWARD  #  ALL      #  CHtank:30 # CHengine:7 # CHseat:1 # CHguidance:1 # CHplanetChip:1 # CHfuel:20
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  RESET    #  CHreset
+
+// ------->
+
+QUEST   #  CH13      #  Early Crystal # 1310
+TEXT    #  Ok, I still think the new way is much more fun... but if you insist, here you are.
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  MasterCrystal:1
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000
+REWARD  #  RESET    #  CHreset
+
+// ------->
+
+QUEST   #  CH14      #  End Trophy # 1311
+TEXT    #  It takes guts to kill the Dragon, right? But for this time, you can skip it.
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  PICK     #  DragonHeart:1 # ChaosShard:1
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-2000
 REWARD  #  RESET    #  CHreset
 

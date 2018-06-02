@@ -507,7 +507,7 @@
 	<Recipe timeRequired="600" power ="500">
 		<input>
 			<itemStack>minecraft:nether_star 1 0</itemStack>
-			<itemStack>minecraft:flint 9 0</itemStack>			
+			<itemStack>minecraft:flint 27 0</itemStack>			
 			<fluidStack>ovium_fluid 2000</fluidStack>
 		</input>
 		<output>

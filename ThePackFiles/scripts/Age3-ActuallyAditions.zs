@@ -120,6 +120,7 @@ val agriPick3 = <mysticalagriculture:intermedium_pickaxe>;
 
 val coilIridium = <libvulpes:coil0:10>;
 val magmaCapsule = <forestry:refractory:1>.withTag({"Fluid":{"FluidName":"magma_fluid", Amount:1000}});
+val MPCapHV = <powersuits:powerArmorComponent:7>;
 
 // Materials
 
@@ -148,12 +149,12 @@ mods.actuallyadditions.AtomicReconstructor.remove(inIronBLX);
 mods.actuallyadditions.Empowerer.remove(<actuallyadditions:itemCrystal:5>, <actuallyadditions:itemCrystalEmpowered:5>);
 mods.actuallyadditions.Empowerer.remove(<actuallyadditions:blockCrystal:5>, <actuallyadditions:blockCrystalEmpowered:5>);
 
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:25>, inIron, inIron0, <minecraft:ice>, inIron0, <mysticalagriculture:coal:2>, 100000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:11>, inRed, inRed0, <advancedrocketry:crystal:3>, inRed0, <mysticalagriculture:coal:2>, 100000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:22>, inLapis, inLapis0, <advancedrocketry:crystal:1>, inLapis0, <mysticalagriculture:coal:2>, 100000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:16>, inDiamant, inDiamant0, <tconstruct:slime:1>, inDiamant0, <mysticalagriculture:coal:2>, 100000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:18>, inCoal, inCoal0, <advancedrocketry:crystal:5>, inCoal0, <mysticalagriculture:coal:2>, 100000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:20>, inEmerald, inEmerald0, <advancedrocketry:crystal:2>, inEmerald0, <mysticalagriculture:coal:2>, 100000, 200);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:25>, inIron, inIron0, <minecraft:ice>, inIron0, <mysticalagriculture:coal:2>, 100000, 200, 1, 1, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:11>, inRed, inRed0, <advancedrocketry:crystal:3>, inRed0, <mysticalagriculture:coal:2>, 100000, 200, 1, 0, 0);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:22>, inLapis, inLapis0, <advancedrocketry:crystal:1>, inLapis0, <mysticalagriculture:coal:2>, 100000, 200, 0, 0, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:16>, inDiamant, inDiamant0, <tconstruct:slime:1>, inDiamant0, <mysticalagriculture:coal:2>, 100000, 200, 0, 1, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:18>, inCoal, inCoal0, <advancedrocketry:crystal:5>, inCoal0, <mysticalagriculture:coal:2>, 100000, 200, 0, 0, 0);
+mods.actuallyadditions.Empowerer.addRecipe(<gendustry:HoneyDrop:20>, inEmerald, inEmerald0, <advancedrocketry:crystal:2>, inEmerald0, <mysticalagriculture:coal:2>, 100000, 200, 0, 1, 0);
 
 recipes.remove(coil1); // Moved to Lathe
 recipes.remove(coil2); // Moved to Lathe
@@ -193,16 +194,18 @@ recipes.remove(<actuallyadditions:itemMiningLens>);
 recipes.remove(<actuallyadditions:itemDisenchantingLens>);
 mods.forestry.ThermionicFabricator.addCast(aaLens, [[nugTitan, nugSilver, nugTitan], [nugSilver, inEmeraldBL0, nugSilver], [nugTitan, nugSilver, nugTitan]], 2000, <tconstruct:cast>.withTag({"PartType":"tconstruct:pan_head"}));
 mods.forestry.ThermionicFabricator.addCast(<actuallyadditions:itemExplosionLens>, [[blockLens, blockLens, blockLens], [blockLens, aaLens, blockLens], [blockLens, blockLens, blockLens]], 1000, null);
-mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemDamageLens>, <actuallyadditions:itemMoreDamageLens>, agriSword3, agriScythe3, agriSword3, agriScythe3, 250000, 600);
-mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemColorLens>, <actuallyadditions:itemMiningLens>, agriPick3, inCoalBL, agriPick3, <taiga:uru_block>, 500000, 600);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemDamageLens>, <actuallyadditions:itemMoreDamageLens>, agriSword3, agriScythe3, agriSword3, agriScythe3, 250000, 600, 1, 0.6, 0.3);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemColorLens>, <actuallyadditions:itemMiningLens>, agriPick3, inCoalBL, agriPick3, <taiga:uru_block>, 500000, 600, 1, 0.6, 0.3);
 mods.forestry.Carpenter.addRecipe(<actuallyadditions:itemDisenchantingLens>, [[inCoal0, crystal, inCoal0], [<minecraft:enchanting_table>, aaLens, <minecraft:enchanting_table>], [inCoal0, crystal, inCoal0]], 300, <liquid:dyonite_fluid> * 2000, blockLens);
 
 // AA Advanced Factory
+recipes.remove(<actuallyadditions:blockMisc:8>);
 recipes.remove(<actuallyadditions:blockGrinderDouble>);
 recipes.remove(<actuallyadditions:blockPhantomBooster>);
 recipes.remove(<actuallyadditions:blockDirectionalBreaker>);
 recipes.remove(<actuallyadditions:blockGreenhouseGlass>);
 recipes.remove(<actuallyadditions:blockLavaFactoryController>);
+recipes.addShaped(<actuallyadditions:blockMisc:8>, [[pearlBlock, inDiamant, pearlBlock], [inDiamant, <actuallyadditions:blockMisc:2>, inDiamant], [pearlBlock, inDiamant, pearlBlock]]);
 recipes.addShaped(<actuallyadditions:blockGrinderDouble>, [[coil2, grinder, coil2], [coil2, grinder, coil2], [scaffAlu, casingIron, scaffAlu]]);
 recipes.addShaped(<actuallyadditions:blockPhantomBooster>, [[coil2, inDiamant0, coil2], [inDiamant0, aaCasing, inDiamant0], [coil2, inDiamant0, coil2]]);
 recipes.addShaped(<actuallyadditions:blockDirectionalBreaker>, [[null, coil2, null], [coil2, <actuallyadditions:blockBreaker>, coil2], [null, casingIron, null]]);
@@ -318,7 +321,8 @@ recipes.remove(<actuallyadditions:itemBatteryQuadruple>);
 recipes.remove(<actuallyadditions:itemBatteryQuintuple>);
 recipes.addShaped(<actuallyadditions:itemBatteryDouble>, [[inIron0, inIron0, inIron0], [inIron0, <actuallyadditions:itemBattery>, inIron0], [inIron0, inIron0, inIron0]]);
 recipes.addShaped(<actuallyadditions:itemBatteryTriple>, [[inEmerald0, inEmerald0, inEmerald0], [inEmerald0, <actuallyadditions:itemBatteryDouble>, inEmerald0], [inEmerald0, inEmerald0, inEmerald0]]);
-mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemBatteryTriple>, <actuallyadditions:itemBatteryQuadruple>, inIronBL, <libvulpes:battery:1>, inIronBL, <libvulpes:battery:1>, 100000, 1200);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemBatteryTriple>, <actuallyadditions:itemBatteryQuadruple>, inIronBL, <libvulpes:battery:1>, inIronBL, <libvulpes:battery:1>, 100000, 1200, 0, 0.1, 0.8);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:itemBatteryQuadruple>, <actuallyadditions:itemBatteryQuintuple>, MPCapHV, MPCapHV, MPCapHV, MPCapHV, 200000, 1200, 0, 0.1, 0.8);
 
 // Utilities
 recipes.remove(<actuallyadditions:blockCoffeeMachine>);

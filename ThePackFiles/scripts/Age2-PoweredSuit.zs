@@ -88,9 +88,9 @@ mods.forestry.ThermionicFabricator.addCast(<powersuits:powerArmorComponent:7>, [
 mods.forestry.ThermionicFabricator.addCast(<powersuits:powerArmorComponent:8>, [[prismarine, <enderio:itemBasicCapacitor:2>, prismarine], [<powersuits:powerArmorComponent:7>, <enderio:itemMaterial:5>, <powersuits:powerArmorComponent:7>], [prismarine, <enderio:itemBasicCapacitor:2>, prismarine]], 250, <actuallyadditions:itemCrystal:4>);
 
 //Components
-mods.actuallyadditions.Empowerer.addRecipe(<enderio:blockEndermanSkull:2>, <powersuits:powerArmorComponent:13>, insulGlass, <immersiveengineering:metal:35>, insulGlass, <powersuits:powerArmorComponent:12>, 200000, 300);
-mods.actuallyadditions.Empowerer.addRecipe(<advancedrocketry:itemCircuitPlate:1>, <powersuits:powerArmorComponent:20>, <enderio:itemBasicCapacitor:1>, <refinedstorage:processor:3>, <enderio:itemBasicCapacitor:1>, <refinedstorage:processor:3>, 50000, 300);
-mods.actuallyadditions.Empowerer.addRecipe(<enderio:blockTank:1>, <powersuits:powerArmorComponent:22>, tankNit, tankNit, tankNit, tankNit, 100000, 600);
+mods.actuallyadditions.Empowerer.addRecipe(<enderio:blockEndermanSkull:2>, <powersuits:powerArmorComponent:13>, insulGlass, <immersiveengineering:metal:35>, insulGlass, <powersuits:powerArmorComponent:12>, 200000, 300, 0.5, 0.3, 0.2);
+mods.actuallyadditions.Empowerer.addRecipe(<advancedrocketry:itemCircuitPlate:1>, <powersuits:powerArmorComponent:20>, <enderio:itemBasicCapacitor:1>, <refinedstorage:processor:3>, <enderio:itemBasicCapacitor:1>, <refinedstorage:processor:3>, 50000, 300, 0.5, 0.3, 0.2);
+mods.actuallyadditions.Empowerer.addRecipe(<enderio:blockTank:1>, <powersuits:powerArmorComponent:22>, tankNit, tankNit, tankNit, tankNit, 100000, 600, 0.5, 0.3, 0.2);
 
 // Component 0 and 1 moved to Lathe
 // Component 14 moved to Crystalizer

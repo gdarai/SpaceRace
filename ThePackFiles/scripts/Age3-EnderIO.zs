@@ -63,6 +63,7 @@ val skelSkul = <enderio:itemFrankenSkull:5>;
 val endeSkul = <enderio:blockEndermanSkull:2>;
 val endeSkul2 = <enderio:blockEndermanSkull:4>;
 val frankEndeSkul = <enderio:itemFrankenSkull:4>;
+val eCrystal = <enderio:itemMaterial:9>;
 
 val wyvernCore = <draconicevolution:wyvern_core>;
 
@@ -129,7 +130,7 @@ mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>
 mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>, null], [<actuallyadditions:itemMisc:11>, <minecraft:clay_ball>, <actuallyadditions:itemMisc:11>], [null, <ore:sand>, null]], 20, <liquid:water> * 250, <taiga:osram_dust>);
 recipes.addShaped(<enderio:blockSagMill>, [[machineBlock, darkSteelCapsule, machineBlock], [gearTitIri, gearTitIri, gearTitIri], [machineBlock, <actuallyadditions:blockMisc:8>, machineBlock]]);
 recipes.addShaped(<enderio:blockSliceAndSplice>, [[plateTriberium, plateUru, plateTriberium], [<ore:plateUranium>, <advancedrocketry:sawBladeIron>, <ore:plateUranium>], [machineBlock, darkSteelCapsule, machineBlock]]);
-recipes.addShaped(<enderio:blockSoulBinder>, [[plateYrdeen, <railcraft:firestone_refined>, plateYrdeen], [<ore:plateUranium>, <actuallyadditions:blockEmpowerer>, <ore:plateUranium>], [machineBlock, experienceCapsule, machineBlock]]);
+recipes.addShaped(<enderio:blockSoulBinder>, [[plateYrdeen, <railcraft:firestone_refined>.noReturn(), plateYrdeen], [<ore:plateUranium>, <actuallyadditions:blockEmpowerer>, <ore:plateUranium>], [machineBlock, experienceCapsule, machineBlock]]);
 
 // Gadgets
 recipes.remove(<enderio:blockPoweredSpawner>);
@@ -141,8 +142,8 @@ recipes.remove(<enderio:itemRemoteInvAccess:1>);
 recipes.remove(<enderio:itemRemoteInvAccess:2>);
 recipes.addShaped(<enderio:blockExperienceObelisk>, [[null, <enderio:itemXpTransfer>, null], [null, plateTitan, null], [plateTitan, <taiga:dilithium_crystal>, plateTitan]]);
 recipes.addShaped(<enderio:blockEnchanter>, [[endeSkul, <taiga:dilithium_crystal>, endeSkul], [ingotDark, ingotSoularium, ingotDark], [null, ingotSoularium, null]]);
-mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemRemoteInvAccess>, <enderio:itemRemoteInvAccess:1>, uraniumCapsule, <taiga:uru_dust>, endeSkul, netherStar, 250000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemRemoteInvAccess:1>, <enderio:itemRemoteInvAccess:2>, uraniumCapsule, <taiga:yrdeen_dust>, <enderio:itemFrankenSkull:3>, <railcraft:firestone_raw>, 250000, 200);
+mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemRemoteInvAccess>, <enderio:itemRemoteInvAccess:1>, uraniumCapsule, <taiga:uru_dust>, endeSkul, netherStar, 250000, 200, 0.6, 0.2, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemRemoteInvAccess:1>, <enderio:itemRemoteInvAccess:2>, uraniumCapsule, <taiga:yrdeen_dust>, <enderio:itemFrankenSkull:3>, <railcraft:firestone_raw>, 250000, 200, 0.6, 0.2, 1);
 recipes.addShaped(<enderio:blockPoweredSpawner>, [[<enderio:blockReinforcedObsidian>, uraniumCapsule, <enderio:blockReinforcedObsidian>], [plateYrdeen, machineBlock, plateYrdeen], [<enderio:itemMaterial:9>, <enderio:itemFrankenSkull:2>, <enderio:itemMaterial:9>]]);
 recipes.addShaped(<enderio:blockSpawnGuard>, [[null, <enderio:itemMaterial:8>, null], [ingotSoularium, ingotDark, ingotSoularium], [ingotDark, machineBlock, ingotDark]]);
 
@@ -155,5 +156,9 @@ recipes.remove(<enderio:itemTravelStaff>);
 recipes.remove(<enderio:blockTravelAnchor>); // Moved to Precision Assembler
 
 recipes.addShaped(<enderio:itemTravelStaff>, [[null, ingotSoularium, endeSkul], [<taiga:dilithium_crystal>, rodPrometheum, ingotSoularium], [rodPrometheum, <taiga:dilithium_crystal>, null]]);
-mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemTravelStaff>, <enderio:itemRodOfReturn>, uraniumCapsule, netherStar, uraniumCapsule, netherStar, 500000, 100);
-mods.actuallyadditions.Empowerer.addRecipe(<draconicevolution:crafting_pedestal:1>, <enderio:blockTelePad>, frankEndeSkul, <draconicevolution:reactor_part:4>, frankEndeSkul, <draconicevolution:reactor_part:4>, 500000, 600);
+mods.actuallyadditions.Empowerer.addRecipe(<enderio:itemTravelStaff>, <enderio:itemRodOfReturn>, uraniumCapsule, netherStar, uraniumCapsule, netherStar, 500000, 100, 0.6, 0.2, 1);
+mods.actuallyadditions.Empowerer.addRecipe(<draconicevolution:crafting_pedestal:1>, <enderio:blockTelePad>, frankEndeSkul, <draconicevolution:reactor_part:4>, frankEndeSkul, <draconicevolution:reactor_part:4>, 500000, 600, 0.6, 0.2, 1);
+
+// Adding crystal cluster
+recipes.addShaped(<bqmie:icon_item:19>, [[eCrystal, eCrystal, eCrystal], [eCrystal, <tconstruct:materials:11>, eCrystal], [eCrystal, eCrystal, eCrystal]]);
+<bqmie:icon_item:19>.addTooltip(format.gold("Crystal Key Cluster"));

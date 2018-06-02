@@ -4125,9 +4125,9 @@
 					"name": "taiga:vibranium_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"cluster-size": 2
 			},
-			"cluster-count": 3,
+			"cluster-count": 5,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4213,9 +4213,9 @@
 					"name": "taiga:aurorium_ore"
 				},
 				"material": "minecraft:end_stone",
-				"cluster-size": 3
+				"cluster-size": 4
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 30,
 			"retrogen": true,

@@ -113,13 +113,14 @@ val bloodBlock = <tconstruct:slime:3>;
 
 val lemon = <forestry:fruits:3>;
 val plum = <forestry:fruits:4>;
+val superWood = <forestry:logs.fireproof.3:2>;
 
 val esNatur = <mysticalagriculture:nature_essence>;
 val esCoal = <mysticalagriculture:coal_essence>;
 val esCreeper = <mysticalagriculture:creeper_essence>;
 
 recipes.removeShaped(<mysticalagriculture:superium_apple>);
-recipes.addShaped(<mysticalagriculture:superium_apple>, [[plum, ess4, plum], [ess4, <mysticalagriculture:intermedium_apple>, ess4], [plum, ess4, plum]]);
+recipes.addShaped(<mysticalagriculture:superium_apple>, [[superWood, ess4, superWood], [ess4, <mysticalagriculture:intermedium_apple>, ess4], [superWood, ess4, superWood]]);
 recipes.removeShaped(<mysticalagriculture:intermedium_apple>);
 recipes.addShaped(<mysticalagriculture:intermedium_apple>, [[lemon, ess3, lemon], [ess3, <mysticalagriculture:prudentium_apple>, ess3], [lemon, ess3, lemon]]);
 
@@ -131,8 +132,8 @@ recipes.removeShaped(<mysticalagriculture:superium_block>,[[null, <*>, null], [<
 recipes.removeShaped(<mysticalagriculture:intermedium_block>,[[null, <*>, null], [<*>, <mysticalagriculture:master_infusion_crystal>, <*>], [null, <*>, null]]);
 recipes.removeShaped(<mysticalagriculture:prudentium_block>,[[null, <*>, null], [<*>, <mysticalagriculture:master_infusion_crystal>, <*>], [null, <*>, null]]);
 recipes.addShaped(ess3, [[ess2, beeSlimeMet, ess2], [infCrystalDmg, beeSlimeMet, infCrystalDmg], [ess2, beeSlimeMet, ess2]]);
-mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:intermedium_apple>, ess4, magentaHoney, colBlood, <enderio:itemFrankenSkull:1>, colBlood, 50000, 200);
-mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:superium_apple>, ess5, <forestry:craftingMaterial:7>, bloodBlock, <enderio:itemColdFireIgniter>.withTag({famount:1000}), bloodBlock, 200000, 200);
+mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:intermedium_apple>, ess4, magentaHoney, colBlood, <enderio:itemFrankenSkull:1>, colBlood, 50000, 200, 1, 0.5, 0.5);
+mods.actuallyadditions.Empowerer.addRecipe(<mysticalagriculture:superium_apple>, ess5, <forestry:craftingMaterial:7>, bloodBlock, <enderio:itemColdFireIgniter>.withTag({famount:1000}), bloodBlock, 200000, 200, 1, 0.5, 0.5);
 
 // Crushing Prosperity ore
 // Crushing Inferomite ore

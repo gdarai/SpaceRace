@@ -705,6 +705,7 @@ ITEM # Reef0 # coralreef:reef
 ITEM # Reef1 # coralreef:reef:1
 ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material": "obsidian" }
 ITEM # RabbitFoot #  minecraft:rabbit_foot
+ITEM # BaseSeed #  mysticalagriculture:base_crafting_seed
 
 // Cheat quests
 
@@ -726,3 +727,7 @@ SAPLING # LemonSapling # 1 # treeLemon:growthLightlevel:heightSmall:saplingsAver
 
 ITEM # MetallicGrain   # morebees:grainMetallic
 BEE  # MetallicQueen   # 1 # Queen:20 # morebees.speciesMetallic:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth1:boolTrue:toleranceBoth2 # boolFalse:boolTrue:morebees.flowersOre:floweringSlowest:territoryAverage:effectNone
+
+ITEM # MasterCrystal   # mysticalagriculture:master_infusion_crystal
+ITEM # DragonHeart # draconicevolution:dragon_heart
+ITEM # ChaosShard # draconicevolution:chaos_shard

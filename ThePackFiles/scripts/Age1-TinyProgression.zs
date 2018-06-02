@@ -7,6 +7,9 @@ val intermediumApple = <mysticalagriculture:intermedium_apple>;
 val oreEnder = <ore:oreEnder>;
 oreEnder.add(<tp:ender_ore>);
 
+mods.actuallyadditions.Crusher.addRecipe(<tp:ender_ore>, <railcraft:dust:6>*16, <railcraft:dust:6>*8, 50);
+mods.immersiveengineering.Crusher.addRecipe(<railcraft:dust:6>*16, <tp:ender_ore>, 5000, <railcraft:dust:6>*8, 0.2);
+
 // Remove Old Recipes
 recipes.remove(<tp:flint_boots>);
 recipes.remove(<tp:flint_chestplate>);
@@ -21,7 +24,7 @@ recipes.remove(<tp:flint_block>);
 
 // Adding Back What make Sense
 recipes.addShaped(<tp:watering_can_upgrade>, [[flintIngot, netherStar, null], [flintIngot, <tp:watering_can>, flintIngot], [null, flintIngot, null]]);
-mods.actuallyadditions.Empowerer.addRecipe(<tp:growth_block>, <tp:growth_upgrade>, ingotDyonite, intermediumApple, ingotDyonite, intermediumApple, 100000, 200);
+mods.actuallyadditions.Empowerer.addRecipe(<tp:growth_block>, <tp:growth_upgrade>, ingotDyonite, intermediumApple, ingotDyonite, intermediumApple, 100000, 200, 0.5, 1, 0.5);
 mods.immersiveengineering.BottlingMachine.addRecipe(<tp:med_kit>, <forestry:crate>, <liquid:protein> * 200);
 
 // Apples and Hardened blocks used for Creative recipes

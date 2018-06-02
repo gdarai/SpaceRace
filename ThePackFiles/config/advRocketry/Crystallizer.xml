@@ -186,4 +186,14 @@
 			<itemStack>forestry:thermionicTubes 3 2</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="3000" power ="1000">
+		<input>
+			<itemStack>railcraft:dust 25 7</itemStack>
+			<itemStack>immersiveengineering:metal 3 37</itemStack>
+			<itemStack>minecraft:golden_apple 3 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:dragon_egg 1 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

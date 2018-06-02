@@ -398,4 +398,4 @@ recipes.addShaped(<immersiveengineering:metalDevice1:13>, [[lantern, MVconn, lan
 
 var torEndHead = <enderio:itemFrankenSkull:4>;
 var basicDECore = <draconicevolution:draconic_core>;
-mods.actuallyadditions.Empowerer.addRecipe(<minecraft:enchanting_table>, <minecraft:end_portal_frame>, torEndHead, basicDECore, torEndHead, basicDECore, 750000, 1200);
+mods.actuallyadditions.Empowerer.addRecipe(<minecraft:enchanting_table>, <minecraft:end_portal_frame>, torEndHead, basicDECore, torEndHead, basicDECore, 750000, 1200, 0, 0, 0);

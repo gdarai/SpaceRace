@@ -326,6 +326,7 @@ TEXT         #  What would it be if this Questing Modpack would not have hoardin
 QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main
 QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main
 QUEST        #  HA20        #   10:-15 	  #  40    #  SoulSand  		# main
+QUEST        #  HA30        #   40:-15 	  #  40    #  BaseSeed  		# main
 
 QUEST        #  HAx0        #  -58:10	  #  25    #  SearedFurnace
 QUEST        #  HAx1        #  -42:10	  #  25    #  HEggplant
@@ -355,3 +356,5 @@ QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain
 QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
 QUEST        #  CH11        #   15:-20    #  20    #  CHglider
 QUEST        #  CH12        #   45:-20    #  20    #  CHengine
+QUEST        #  CH13        #   30:-5     #  20    #  MasterCrystal
+QUEST        #  CH14        #   45:-5     #  20    #  DragonHeart

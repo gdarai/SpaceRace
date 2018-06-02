@@ -106,10 +106,10 @@ glowstone	minecraft:glowstone			0	no		minecraft:stone			uniform		2		6		0	30
 
 jauxum		taiga:jauxum_ore			0	no		minecraft:stone			uniform		2		8		10	50
 magma		minecraft:magma				0	no		minecraft:stone			uniform		3		13		10	50
-vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		1		3		10	50
+vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		2		5		10	50
 uru			taiga:uru_ore				0	no		minecraft:stone			uniform		4		12		30	60
 enderS		tp:ender_ore				0	no		minecraft:stone			uniform		3		10		45	65
-aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		3		10		10	30
+aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		4		20		10	30
 
 ironA		minecraft:iron_ore			0	no		minecraft:stone			uniform		30		60		50	150
 goldA		minecraft:gold_ore			0	no		minecraft:stone			uniform		30		60		50	150

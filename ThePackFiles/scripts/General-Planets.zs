@@ -22,6 +22,6 @@ val chorus = <minecraft:chorus_fruit_popped>;
 recipes.addShaped(<bqmie:icon_item:14>, [[jelly, obsidiorite, jelly], [obsidiorite, <advancedrocketry:bucketNitrogen>, obsidiorite], [jelly, obsidiorite,jelly]]);
 recipes.addShaped(<bqmie:icon_item:16>, [[apple2, dilithium, apple2], [dilithium, <ore:blockDiamond>, dilithium], [apple2, dilithium, apple2]]);
 recipes.addShaped(<bqmie:icon_item:13>, [[blackQuartz, blueSlime, blackQuartz], [blueSlime, <ore:blockEnergeticAlloy>, blueSlime], [blackQuartz, blueSlime, blackQuartz]]);
-mods.actuallyadditions.Empowerer.addRecipe(uranium, <bqmie:icon_item:15>, chorus, chorus, chorus, chorus, 500000, 1200);
+mods.actuallyadditions.Empowerer.addRecipe(uranium, <bqmie:icon_item:15>, chorus, chorus, chorus, chorus, 500000, 1200, 0.6, 0.6, 1);
 recipes.addShaped(<bqmie:icon_item:17>, [[apple3, apatine, apple3], [apatine, <ore:blockTriberium>, apatine], [apple3, apatine, apple3]]);
 

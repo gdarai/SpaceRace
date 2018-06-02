@@ -136,7 +136,7 @@
             <orbitalTheta>180</orbitalTheta>
             <rotationalPeriod>24000</rotationalPeriod>
             <planet name="Moon B3-1 MushroomWorld" customIcon="iceworld" DIMID="33">
-                <orbitalDistance>250</orbitalDistance>
+                <orbitalDistance>150</orbitalDistance>
                 <atmosphereDensity>80</atmosphereDensity>
                 <gravitationalMultiplier>140</gravitationalMultiplier>
                 <fogColor>0.4,0.4,0.4</fogColor>
@@ -146,7 +146,7 @@
 				<biomeIds>14</biomeIds>
             </planet>
             <planet name="Moon B3-2 Haven" customIcon="moon" DIMID="34">
-                <orbitalDistance>300</orbitalDistance>
+                <orbitalDistance>250</orbitalDistance>
                 <atmosphereDensity>10</atmosphereDensity>
                 <gravitationalMultiplier>70</gravitationalMultiplier>
                 <fogColor>0.1,0.1,0.1</fogColor>

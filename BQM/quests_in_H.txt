@@ -29,8 +29,8 @@ QUEST   #  H30      #  Winning the Race # 803
 TEXT    #  Next to the Mooshroom Moon is a small rock called the Haven. Your final goal is to Terraform this rock and build there a Monument of Victory, using at least 1000 blocks of Violium, 1000 blocks of Astrium and 1000 blocks of Awakened Draconium. In the heart of the shrine must be displayed at least one Golden Player Head.
 PREREQ  #  AND      #  H20
 
-TASK    #  HAVE     #  goldHead
-REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+TASK    #  GIVE     #  goldHead:1 # egVioliomBl:1000 # egAstriumBl:1000 # eqAWDracoBl:1000
+REWARD  #  ALL      #  eqKey:1 # goldHead:1 # egVioliomBl:1000 # egAstriumBl:1000 # eqAWDracoBl:1000
 
 // ------->
 // ----------------------------->

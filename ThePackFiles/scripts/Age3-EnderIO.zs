@@ -122,6 +122,7 @@ recipes.remove(<enderio:itemItemConduit>);
 recipes.remove(<enderio:itemMaterial:2>); // Binding composite
 recipes.remove(<enderio:blockSliceAndSplice>);
 recipes.remove(<enderio:blockSoulBinder>);
+recipes.remove(<enderio:blockCrafter>);
 
 recipes.addShaped(<enderio:blockAlloySmelter>, [[AALaser, <storagedrawers:controller>, AALaser], [coilIridium, machineBlock, coilIridium], [capacBasic, plateTriberium, capacBasic]]);
 recipes.addShaped(<enderio:blockInventoryPanel>, [[plateTitIri, ocRemote, plateTitIri], [darkSteelCapsule, <enderio:itemFunctionUpgrade>, darkSteelCapsule], [gearTitAlu, liquidTank, gearTitAlu]]);
@@ -131,6 +132,7 @@ mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>
 recipes.addShaped(<enderio:blockSagMill>, [[machineBlock, darkSteelCapsule, machineBlock], [gearTitIri, gearTitIri, gearTitIri], [machineBlock, <actuallyadditions:blockMisc:8>, machineBlock]]);
 recipes.addShaped(<enderio:blockSliceAndSplice>, [[plateTriberium, plateUru, plateTriberium], [<ore:plateUranium>, <advancedrocketry:sawBladeIron>, <ore:plateUranium>], [machineBlock, darkSteelCapsule, machineBlock]]);
 recipes.addShaped(<enderio:blockSoulBinder>, [[plateYrdeen, <railcraft:firestone_refined>.noReturn(), plateYrdeen], [<ore:plateUranium>, <actuallyadditions:blockEmpowerer>, <ore:plateUranium>], [machineBlock, experienceCapsule, machineBlock]]);
+recipes.addShaped(<enderio:blockCrafter>, [[plateTriberium, <ore:craftingTableWood>, plateTriberium], [<ore:craftingPiston>, machineBlock, <ore:craftingPiston>], [capacDouble, machineBlock, capacDouble]]);
 
 // Gadgets
 recipes.remove(<enderio:blockPoweredSpawner>);

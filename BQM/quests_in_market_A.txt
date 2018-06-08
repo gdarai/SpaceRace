@@ -16,6 +16,8 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:25
 REWARD  #  RESET    #  MAhalf
 REWARD  #  RESET    #  MAxi00
 REWARD  #  RESET    #  MAxi01
+REWARD  #  RESET    #  MAxi02
+REWARD  #  RESET    #  MAxi03
 REWARD  #  RESET    #  MAxo00
 REWARD  #  RESET    #  MAxo01
 REWARD  #  RESET    #  MAxo02
@@ -48,6 +50,8 @@ REWARD  #  RESET    #  MAreset
 REWARD  #  RESET    #  MAhalf
 REWARD  #  RESET    #  MAxi00
 REWARD  #  RESET    #  MAxi01
+REWARD  #  RESET    #  MAxi02
+REWARD  #  RESET    #  MAxi03
 REWARD  #  RESET    #  MAxo00
 REWARD  #  RESET    #  MAxo01
 REWARD  #  RESET    #  MAxo02
@@ -65,7 +69,7 @@ REWARD  #  RESET    #  MAxo09
 
 QUEST   #  MAxi00   #  Zombies # 1104
 TEXT    #  You didn't think it will be just... Here you are, take it and go, did you? Well, to earn your entance to the market, you must entertain the audience first.\n\nIn this case by killing Zombies.
-PREREQ  #  XOR      #  MA00  #  <MAxi.*>
+PREREQ  #  AND      #  MA00
 
 TASK    #  HUNT		#  Zombie:5
 TASK    #  TRIGGER
@@ -75,9 +79,30 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:50
 
 QUEST   #  MAxi01   #  Witches # 1105
 TEXT    #  You can hunt for witches if you prefer them...
-PREREQ  #  XOR      #  MA00  #  <MAxi.*>
+PREREQ  #  AND      #  MA00
 
 TASK    #  HUNT		#  Witch:3
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:50
+
+// ------->
+
+QUEST   #  MAxi02   #  Milk and Eggs # 1116
+TEXT    #  So ok, if you soo insist, you don't have to hunt. But it won't be cheap.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE     #  HCMilk:32 # spEgg:8 # Fish:8
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:dummy  #  add:50
+
+// ------->
+
+QUEST   #  MAxi03   #  Sheep Hearder # 1117
+TEXT    #  And the gold third way is to hunt your own animals, like sheeps.
+PREREQ  #  AND      #  MA00
+
+TASK    #  HUNT		#  Sheep:1
+TASK    #  GIVE     #  spWool:16
 TASK    #  TRIGGER
 REWARD  #  SCORE    #  SCORE:dummy  #  add:50
 

@@ -36,6 +36,8 @@ REWARD  #  XP       #  Levels:1
 // -------> Now the hoarding quests
 // ----------------------------->
 // ------->
+// Part A
+// ------->
 
 QUEST   #  HAx0     #  Hells Furnace # 1250
 TEXT    #  Don't think small, build lava powered furnace early and be cool.
@@ -72,6 +74,8 @@ TASK    #  HAVE     #  BrickClay:300
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
+// Part B
+// ------->
 
 QUEST   #  HAx10    #  Zombie Hunter # 1254
 TEXT    #  Well hunting zombies is great and all but this? You had to do this on purpose.
@@ -106,3 +110,79 @@ PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  ObsidianShard:128
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+
+// ------->
+// Part C
+// ------->
+
+QUEST   #  HAx20    #  Electron maddness # 1260
+TEXT    #  So they asked you to make some electron tubes but did not tell you how many? Really?
+PREREQ  #  NAND     #  HA20
+
+TASK    #  HAVE     #  ElTubeLapis:512
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+
+// ------->
+
+QUEST   #  HAx21    #  Prepper # 1261
+TEXT    #  They say you are getting ready for the bad time. What do you expect... a zombie appocalypse?
+PREREQ  #  NAND     #  HA20
+
+TASK    #  HAVE     #  RazorWire:192
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+
+// ------->
+
+QUEST   #  HAx22    #  Up and Down # 1262
+TEXT    #  So I get it, you don't want to bore us by climbing ladders. But do you realize that this is almost enough to build a Space Elevator?
+PREREQ  #  NAND     #  HA20
+
+TASK    #  HAVE     #  ElevatorTrack:512
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+
+// ------->
+
+QUEST   #  HAx23    #  Mood Music # 1263
+TEXT    #  I almost forgot... you just love bees, right?
+PREREQ  #  NAND     #  HA20
+
+TASK    #  GIVE     #  IceSpikes:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+
+// ------->
+// Part D
+// ------->
+
+QUEST   #  HAx30    #  Lava Walker # 1265
+TEXT    #  You should try to explore the Underend a little bit. There are many nice places there.
+PREREQ  #  NAND     #  HA30
+
+TASK    #  GIVE     #  MagmaSapling:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+
+// ------->
+
+QUEST   #  HAx31    #  Wither Killer # 1266
+TEXT    #  So, it is now or never... CAN - YOU - DO - IT ?
+PREREQ  #  NAND     #  HA30
+
+TASK    #  HUNT		#  WitherBoss:1
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+
+// ------->
+
+QUEST   #  HAx32    #  Over the Abyss # 1267
+TEXT    #  They say you can get almost infinite ammount of abyssum down there. Can you?
+PREREQ  #  NAND     #  HA30
+
+TASK    #  GIVE     #  AbyssumDust:128
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+
+// ------->
+
+QUEST   #  HAx33    #  Magma Master # 1268
+TEXT    #  Sure you can get one tank full of lava, but, can you get 256 of them?
+PREREQ  #  NAND     #  HA30
+
+TASK    #  GIVE     #  MagmaSearedTank:256
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000

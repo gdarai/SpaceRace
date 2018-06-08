@@ -189,10 +189,11 @@ QUEST        #  F20        #   10:-10  	 #  25    #  IridiumDust	# main
 QUEST        #  F21        #   10:10   	 #  25    #  arCrystal		# main
 QUEST        #  F30        #   30:0   	 #  30    #  MysticalOrb	# main
 
-QUEST        #  Fx00       #  -60:-5   	 #  20    #  aaGrinder
-QUEST        #  Fx01       #  -50:-5   	 #  20    #  ioCapac0
-QUEST        #  Fx02       #  -60:5   	 #  20    #  gdFrame
-QUEST        #  Fx03       #  -50:5   	 #  20    #  ioTank
+QUEST        #  Fx00       #  -60:-10  	 #  20    #  aaGrinder
+QUEST        #  Fx01       #  -50:-10  	 #  20    #  ioCapac0
+QUEST        #  Fx02       #  -60:0   	 #  20    #  gdFrame
+QUEST        #  Fx03       #  -50:0   	 #  20    #  ioTank
+QUEST        #  Fx04       #  -55:10   	 #  20    #  DRCrystal
 QUEST        #  Fx20       #  -20:-25  	 #  20    #  arReactor
 QUEST        #  Fx21       #  -10:-25  	 #  20    #  ioCapac1
 QUEST        #  Fx22       #    0:-25  	 #  20    #  aaLeafGen
@@ -301,8 +302,10 @@ QUEST        #  MAreset     #   50:-25    #  30    #  WaterBowl			# main # chain
 QUEST        #  MAres2      #    0:-25    #  30    #  Skull  			# main # chain
 QUEST        #  MAhalf      #    0:10     #  30    #  OnTheWay 			# main # chain
 
-QUEST        #  MAxi00      #  -40:-5	  #  40    #  HZombie			# chain
-QUEST        #  MAxi01      #  -40:25	  #  40    #  HWitch			# chain
+QUEST        #  MAxi00      #  -55:-5	  #  40    #  HZombie			# chain
+QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			# chain
+QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			# chain
+QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			# chain
 
 QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
 QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
@@ -316,12 +319,35 @@ QUEST        #  MAxo08      #   60:20	  #  20    #  iePower02			# chain
 QUEST        #  MAxo09      #   60:30	  #  20    #  spTorch			# chain
 
 // ------------------>
+// Market B
+// ------------------>
+
+LINE         #  MB         #  Buying Space Items
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have some experience with market... here is advanced market for you Space travelling folk.
+
+QUEST        #  MB00        #  -40:-25 	  #  30    #  NetherStar		# main
+QUEST        #  MBreset     #   50:-25    #  30    #  WaterBowl			# main # chain
+QUEST        #  MBres2      #    0:-25    #  30    #  Skull  			# main # chain
+QUEST        #  MBhalf      #    0:10     #  30    #  OnTheWay2			# main # chain
+
+QUEST        #  MBxi00      #  -55:-5	  #  40    #  GhastTear			# chain
+QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			# chain
+QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2 			# chain
+QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal    	# chain
+
+QUEST        #  MBxo00      #   40:-10    #  20    #  OxygenTank		# chain
+QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank		# chain
+QUEST        #  MBxo02      #   40:0      #  20    #  dataUnit0 		# chain
+QUEST        #  MBxo03      #   60:0      #  20    #  MASeed00  		# chain
+
+// ------------------>
 // Hoarding quests
 // ------------------>
 
 LINE         #  HA         #  Hoading for beginners
 SIZE         #  2:2        #  50:50
-TEXT         #  What would it be if this Questing Modpack would not have hoarding quests.
+TEXT         #  What would it be if this Questing Modpack had no hoarding quests?
 
 QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main
 QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main
@@ -337,6 +363,16 @@ QUEST        #  HAx10       #  -28:10	  #  25    #  HZombie
 QUEST        #  HAx11       #  -12:10	  #  25    #  Reef0
 QUEST        #  HAx12       #  -28:30	  #  25    #  RabbitFoot
 QUEST        #  HAx13       #  -12:30	  #  25    #  ObsidianShard
+
+QUEST        #  HAx20       #    2:10	  #  25    #  ElTubeLapis
+QUEST        #  HAx21       #   18:10	  #  25    #  RazorWire
+QUEST        #  HAx22       #    2:30	  #  25    #  ElevatorTrack
+QUEST        #  HAx23       #   18:30	  #  25    #  IceSpikes
+
+QUEST        #  HAx30       #   32:10	  #  25    #  MagmaSapling
+QUEST        #  HAx31       #   48:10	  #  25    #  NetherStar
+QUEST        #  HAx32       #   32:30	  #  25    #  AbyssumDust
+QUEST        #  HAx33       #   48:30	  #  25    #  LavaBlock
 
 // ------------------>
 // Cheat lines are used when nothing else works
@@ -356,5 +392,7 @@ QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain
 QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
 QUEST        #  CH11        #   15:-20    #  20    #  CHglider
 QUEST        #  CH12        #   45:-20    #  20    #  CHengine
-QUEST        #  CH13        #   30:-5     #  20    #  MasterCrystal
+QUEST        #  CH13        #   15:-5     #  20    #  MasterCrystal
+QUEST        #  CH16        #   25:-5     #  20    #  InfArmor1
+QUEST        #  CH15        #   35:-5     #  20    #  DRCrystal
 QUEST        #  CH14        #   45:-5     #  20    #  DragonHeart

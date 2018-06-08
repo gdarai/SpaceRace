@@ -10,6 +10,7 @@ REWARD  #  RESET    #  CH11
 REWARD  #  RESET    #  CH12
 REWARD  #  RESET    #  CH13
 REWARD  #  RESET    #  CH14
+REWARD  #  RESET    #  CH15
 
 // ------->
 // The most basic
@@ -104,3 +105,24 @@ REWARD  #  PICK     #  DragonHeart:1 # ChaosShard:1
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-2000
 REWARD  #  RESET    #  CHreset
 
+// ------->
+
+QUEST   #  CH15      #  Crystal-Free # 1312
+TEXT    #  So ok, you want more power but you don't want to wait for crystal to grow. All right, here is one decent for you.
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  DRCrystal:1
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-2000
+REWARD  #  RESET    #  CHreset
+
+// ------->
+
+QUEST   #  CH16      #  Moar Time # 1313
+TEXT    #  Oxygen is runnig out, and no base near by. Really deep trouble, isn't it. But you don't want just to run Home... here you have your second chance if you want it.
+PREREQ  #  AND      #  CH10
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  InfArmor1:1  #  InfArmor2:1  #  InfArmor3:1  #  InfArmor4:1
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-2000
+REWARD  #  RESET    #  CHreset

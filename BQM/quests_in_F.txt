@@ -83,6 +83,15 @@ REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # A
 
 // ------->
 
+QUEST   #  Fx04     #  Deep Resonance # 673
+TEXT    #  You find from time to time this strange deep resonance ore. But what to do with it? Well, if I will tell you that it is a powersource capable of giving 10kRF/tick, will you be interrested? Now you have all you need to try it out.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  DRManual:1 # DRGenerator:1 # DRSmelter:1
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
 QUEST   #  Fx20     #  Chemical Reactor # 654
 TEXT    #  So it is finally here, you can build the Chemical Reactor... the MODERN way to produce the rocket fuel.
 PREREQ  #  AND      #  F20

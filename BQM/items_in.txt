@@ -259,6 +259,10 @@ ITEM  #  RsGrid         #  refinedstorage:grid
 ITEM  #  ioAnchor       #  enderio:blockTravelAnchor
 ITEM  #  GEMutAdv       #  gendustry:MutatronAdv
 
+ITEM  #  DRGenerator    # deepresonance:generator_controller
+ITEM  #  DRManual       # deepresonance:dr_manual
+ITEM  #  DRSmelter      # deepresonance:smelter
+
 // Quests G
 ITEM  #  Nether			#  chisel:netherbrick:8
 ITEM  #  TheEnd			#  chisel:endstoneextra:1
@@ -296,7 +300,13 @@ ITEM  #  deMobFarm		#  draconicevolution:grinder
 ITEM  #  deTeleport1	#  draconicevolution:dislocator_advanced
 ITEM  #  ioDimenTrans	#  enderio:blockTransceiver
 
+ITEM  #  egVioliomBl	#  taiga:violium_block
+ITEM  #  egAstriumBl	#  taiga:astrium_block
+ITEM  #  eqAWDracoBl	#  draconicevolution:draconic_block
+ITEM  #  eqKey      	#  bqmie:icon_item:23
+
 // Quests Trade A
+
 ITEM  #  TradeCoinA     #  bqmie:icon_item:4
 ITEM  #  WaterBowl		#  actuallyadditions:itemWaterBowl
 ITEM  #  HCSeed			#  harvestcraft:eggplantseeditem
@@ -695,6 +705,46 @@ ITEM # spPlank 		# immersiveengineering:treatedWood
 ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material": "flint" }
 ITEM # spWool 		# minecraft:wool
 
+ITEM # HCMilk 		# harvestcraft:freshmilkitem
+ITEM # spEgg 		# minecraft:egg
+
+// Quests Trade B
+
+ITEM # HCGrub 		# harvestcraft:grubitem
+ITEM # MAApple2 	# mysticalagriculture:prudentium_apple
+ITEM # EndCrystal 	# minecraft:end_crystal
+ITEM # OnTheWay2	# actuallyadditions:itemBootsQuartz
+ITEM # TradeCoinB	# bqmie:icon_item:11
+ITEM # GhastTear	# minecraft:ghast_tear
+
+ITEM # OxygenTank 	# advancedrocketry:bucketOxygen
+ITEM # HydrogenTank	# advancedrocketry:bucketHydrogen
+ITEM # FullBattery	# actuallyadditions:itemBattery # NBT:{ "Energy": 1000000 }
+
+ITEM # ManyullynBlock # tconstruct:metal:2
+ITEM # dataUnit0 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 1, "Data": 500, "Locked": 0 }
+ITEM # dataUnit1 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 4, "Data": 500, "Locked": 0 }
+ITEM # dataUnit2 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 6, "Data": 500, "Locked": 0 }
+
+ITEM # MASeed00	# mysticalagriculture:tier1_crafting_seed
+ITEM # MASeed01	# mysticalagriculture:tier1_inferium_seeds
+ITEM # MASeed02	# mysticalagriculture:stone_seeds
+ITEM # MASeed03 # mysticalagriculture:dirt_seeds
+ITEM # MASeed04	# mysticalagriculture:nature_seeds
+ITEM # MASeed05	# mysticalagriculture:wood_seeds
+ITEM # MASeed06	# mysticalagriculture:water_seeds
+ITEM # MASeed07	# mysticalagriculture:ice_seeds
+ITEM # MASeed08	# mysticalagriculture:zombie_seeds
+
+ITEM # DilithiumNugget # taiga:dilithium_nugget
+ITEM # RocketTank	 # advancedrocketry:bucketRocketFuel
+ITEM # NitrogenTank	 # advancedrocketry:bucketNitrogen
+ITEM # DilithiumTank # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "dilithium_fluid", "Amount":1000 } }
+ITEM # NucleumTank   # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nucleum_fluid", "Amount":1000 } }
+ITEM # NutrientTank  # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nutrient_distillation", "Amount":1000 } }
+ITEM # MagmaTank     # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "magma_fluid", "Amount":1000 } }
+ITEM # CloudTank     # forestry:capsule:1    # NBT:{ "Fluid": { "FluidName": "cloud_seed", "Amount":1000 } }
+
 // Hoarding quests A
 
 ITEM # SteelIngDict # immersiveengineering:metal:8 # ORE:ingotSteel
@@ -706,6 +756,12 @@ ITEM # Reef1 # coralreef:reef:1
 ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material": "obsidian" }
 ITEM # RabbitFoot #  minecraft:rabbit_foot
 ITEM # BaseSeed #  mysticalagriculture:base_crafting_seed
+ITEM # ElTubeLapis   #  forestry:thermionicTubes:11
+ITEM # ElevatorTrack   #  railcraft:track_elevator
+ITEM # IceSpikes   #  forestry:craftingMaterial:5
+ITEM # MagmaSapling   #  tconstruct:slime_sapling:2
+ITEM # AbyssumDust   #  taiga:abyssum_dust
+ITEM # MagmaSearedTank   #  tconstruct:seared_tank # NBT:{ "FluidName": "lava", "Amount":4000 }
 
 // Cheat quests
 
@@ -729,5 +785,11 @@ ITEM # MetallicGrain   # morebees:grainMetallic
 BEE  # MetallicQueen   # 1 # Queen:20 # morebees.speciesMetallic:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth1:boolTrue:toleranceBoth2 # boolFalse:boolTrue:morebees.flowersOre:floweringSlowest:territoryAverage:effectNone
 
 ITEM # MasterCrystal   # mysticalagriculture:master_infusion_crystal
-ITEM # DragonHeart # draconicevolution:dragon_heart
-ITEM # ChaosShard # draconicevolution:chaos_shard
+ITEM # DragonHeart     # draconicevolution:dragon_heart
+ITEM # ChaosShard      # draconicevolution:chaos_shard
+ITEM # DRCrystal       # deepresonance:resonating_crystal # NBT:{ "efficiency": 75.0, "strength": 75.0, "purity": 100.0, "power": 100.0, "version": 2 }
+
+ITEM # InfArmor1       # mysticalagriculture:inferium_helmet     # NBT:{ "ench": [{"lvl": 1, "id": 128}] }
+ITEM # InfArmor2       # mysticalagriculture:inferium_chestplate # NBT:{ "ench": [{"lvl": 1, "id": 128}], "air": 18000 }
+ITEM # InfArmor3       # mysticalagriculture:inferium_leggings   # NBT:{ "ench": [{"lvl": 1, "id": 128}] }
+ITEM # InfArmor4       # mysticalagriculture:inferium_boots      # NBT:{ "ench": [{"lvl": 1, "id": 128}] }

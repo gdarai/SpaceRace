@@ -1,0 +1,37 @@
+QUEST   #  000      #  Orchard Madness # 0
+TEXT    #  If you want to take it seriously, you can start selling fruits.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  000      #  Chef of the year # 0
+TEXT    #  With professional kitchen, and enough imagination... you can get much more profit then just with selling basic resources.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  000      #  Beeing issue # 0
+TEXT    #  Well, come bees can give you hell. But if you want... at least the worst... you can buy.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  000      #  Harvesting gas planets # 0
+TEXT    #  Gas giants can be harvested. In a big scale... and such vintage mining operations are this year very popular among our viewers.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  000      #  Collecting rarities # 0
+TEXT    #  Little bit crazy but treasure hunters are still in course... Be one and your preferences will go rocket high.
+
+TASK    #  TRIGGER
+REWARD  #  XP       #  Levels:1

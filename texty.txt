@@ -1,10 +1,3 @@
-QUEST   #  000      #  Orchard Madness # 0
-TEXT    #  If you want to take it seriously, you can start selling fruits.
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
 
 QUEST   #  000      #  Chef of the year # 0
 TEXT    #  With professional kitchen, and enough imagination... you can get much more profit then just with selling basic resources.

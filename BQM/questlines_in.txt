@@ -289,6 +289,21 @@ QUEST        #  TA34        #   60:30     #  25    #  BirchDesk
 QUEST        #  TA35        #   80:30     #  25    #  Typewriter
 QUEST        #  TA39        #  100:30     #  30    #  Diamond			# main
 
+QUEST        #  TA04        #  -40:45     #  30    #  Grafter	    	# main
+QUEST        #  TA40        #  -20:45     #  25    #  FCherry
+QUEST        #  TA41        #    0:45  	  #  25    #  FChestnut
+QUEST        #  TA42        #   20:45     #  25    #  FDate
+QUEST        #  TA43        #   40:45     #  25    #  FPlum
+QUEST        #  TA49        #   60:45     #  30    #  Diamond			# main
+
+QUEST        #  TA05        #  -40:60     #  30    #  Toaster	    	# main
+QUEST        #  TA50        #  -20:60     #  25    #  HCToast01
+QUEST        #  TA51        #    0:60  	  #  25    #  HCLarge01
+QUEST        #  TA52        #   20:60     #  25    #  HCLarge03
+QUEST        #  TA53        #   40:60     #  25    #  HCFeast01
+QUEST        #  TA54        #   60:60     #  25    #  HCSauce02
+QUEST        #  TA59        #   80:60     #  30    #  Diamond			# main
+
 // ------------------>
 // Market lines are used for buying material for score
 // ------------------>

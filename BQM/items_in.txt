@@ -708,6 +708,32 @@ ITEM # spWool 		# minecraft:wool
 ITEM # HCMilk 		# harvestcraft:freshmilkitem
 ITEM # spEgg 		# minecraft:egg
 
+ITEM # Grafter      # forestry:grafter
+ITEM # FCherry      # forestry:fruits
+ITEM # FChestnut    # forestry:fruits:2
+ITEM # FDate        # forestry:fruits:5
+ITEM # FCDate       # forestry:crated.forestry.fruits.5
+ITEM # FPlum        # forestry:fruits:4
+ITEM # FCPlum       # forestry:crated.forestry.fruits.4
+ITEM # HoneyedSlice # forestry:honeyedSlice
+
+ITEM # Toaster      # cookingforblockheads:toaster
+ITEM # HCToast01    # harvestcraft:beansontoastitem
+ITEM # HCToast02    # harvestcraft:cinnamontoastitem
+ITEM # HCLarge01    # harvestcraft:spagettiandmeatballsitem
+ITEM # HCLarge02    # harvestcraft:pineapplehamitem
+ITEM # HCLarge03    # harvestcraft:shrimpokrahushpuppiesitem
+ITEM # HCLarge04    # harvestcraft:vindalooitem
+ITEM # HCLarge05    # harvestcraft:delightedmealitem
+ITEM # HCFeast01    # harvestcraft:deluxechickencurryitem
+ITEM # HCFeast02    # harvestcraft:meatfeastpizzaitem
+ITEM # HCSauce01    # harvestcraft:soysauceitem
+ITEM # HCSauce02    # harvestcraft:hoisinsauceitem
+ITEM # HCSauce03    # harvestcraft:sweetandsoursauceitem
+ITEM # HCSauce04    # harvestcraft:hotsauceitem
+ITEM # HCSauce05    # harvestcraft:applesauceitem
+ITEM # HCTurtle     # harvestcraft:turtlerawitem
+
 // Quests Trade B
 
 ITEM # HCGrub 		# harvestcraft:grubitem

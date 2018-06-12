@@ -259,7 +259,7 @@ TEXT    #  First supply requires some cherry fruits.
 PREREQ  #  AND      #  TA04
 
 TASK    #  GIVE		#  FCherry:640
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 
 // ------->
 
@@ -268,7 +268,7 @@ TEXT    #  Now chestnuts.
 PREREQ  #  AND      #  TA40
 
 TASK    #  GIVE		#  FChestnut:1280
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:750
 
 // ------->
 
@@ -277,7 +277,7 @@ TEXT    #  Supply of dates please.
 PREREQ  #  AND      #  TA41
 
 TASK    #  GIVE		#  FCDate:800
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
 
 // ------->
 
@@ -286,7 +286,7 @@ TEXT    #  For what somebody wants crates full of plums is NOT a mystery.
 PREREQ  #  AND      #  TA42
 
 TASK    #  GIVE		#  FCPlum:1000
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
 
 // ------->
 
@@ -321,7 +321,7 @@ TEXT    #  Le's do some slow start
 PREREQ  #  AND      #  TA05
 
 TASK    #  GIVE		#  HCToast01:5  #  HCToast02:5
-REWARD  #  SCORE    #  SCORE:PUBLIC #  add:500
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:300
 
 // ------->
 
@@ -330,7 +330,7 @@ TEXT    #  After the fingerfoods time for some real meal.
 PREREQ  #  AND      #  TA50
 
 TASK    #  GIVE		#  HCLarge01:5  #  HCLarge02:5
-REWARD  #  SCORE    #  SCORE:PUBLIC #  add:750
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:400
 
 // ------->
 
@@ -339,7 +339,7 @@ TEXT    #  Getting more and more tasty.
 PREREQ  #  AND      #  TA51
 
 TASK    #  GIVE		#  HCLarge03:5  #  HCLarge04:5 #  HCLarge05:5
-REWARD  #  SCORE    #  SCORE:PUBLIC #  add:1000
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:500
 
 // ------->
 
@@ -348,7 +348,7 @@ TEXT    #  Overeating is no problem in minecraft.
 PREREQ  #  AND      #  TA52
 
 TASK    #  GIVE		#  HCFeast01:5  #  HCFeast02:5
-REWARD  #  SCORE    #  SCORE:PUBLIC #  add:1250
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:650
 
 // ------->
 
@@ -357,7 +357,7 @@ TEXT    #  Finishing secret is always the sauce.
 PREREQ  #  AND      #  TA53
 
 TASK    #  GIVE		#  HCSauce01:10 #  HCSauce02:10 #  HCSauce03:10 #  HCSauce04:10 #  HCSauce05:10
-REWARD  #  SCORE    #  SCORE:PUBLIC #  add:1500
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:800
 
 // ------->
 

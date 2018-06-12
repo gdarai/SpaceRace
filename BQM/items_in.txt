@@ -734,6 +734,11 @@ ITEM # HCSauce04    # harvestcraft:hotsauceitem
 ITEM # HCSauce05    # harvestcraft:applesauceitem
 ITEM # HCTurtle     # harvestcraft:turtlerawitem
 
+BEE  # SteadfastDrone   # 1 # Drone:40 # speciesSteadfast:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersVanilla:floweringSlowest:territoryAverage:effectNone
+BEE  # JungleDrone      # 1 # Drone:30 # speciesTropical:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersJungle:floweringSlowest:territoryAverage:effectNone
+BEE  # SwampDrone       # 1 # Drone:20 # speciesMarshy:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersMushrooms:floweringSlowest:territoryAverage:effectNone
+
+
 // Quests Trade B
 
 ITEM # HCGrub 		# harvestcraft:grubitem

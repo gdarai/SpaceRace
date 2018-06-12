@@ -1,6 +1,8 @@
-QUEST   #  TB00     #  Victory Points by carts # 1300
+QUEST   #  TB00     #  Victory Points by carts # 1308
 TEXT    #  Bigger scope requires bigger tasks... our viewers are tired of your small flee-trades. So, since space is really big scope, let's try some BIG tasks for you, shell we?
+PREREQ  #  AND      #  TA00
 
+TASK    #  GIVE		#  MoonTurf:1
 TASK    #  TRIGGER
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
 
@@ -8,44 +10,44 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
 // Gas Chain
 // ------->
 
-QUEST   #  TB01     #  Harvesting gas planets # 1301
+QUEST   #  TB01     #  Harvesting gas planets # 1309
 TEXT    #  Gas giants can be harvested. In a big scale... and such vintage mining operations are this year very popular among our viewers.
 PREREQ  #  AND      #  TB00
 
-TASK    #  GIVE		#  WaterBowl:30
+TASK    #  GIVE		#  ARPresTank:10
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 REWARD  #  RESET    #  TB19
 
 // ------->
 
-QUEST   #  TB10     #  Hootch # 1302
+QUEST   #  TB10     #  Hootch # 1317
 TEXT    #  Some don't believe that planet can be made of hootch. Prove them wrong.
 PREREQ  #  XOR      #  TB01
 
-TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
+TASK    #  LIQUID	#  hootch:500000
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
 
-QUEST   #  TB11     #  Nutrient distillation # 1303
+QUEST   #  TB11     #  Nutrient distillation # 1318
 TEXT    #  Yes, you can eat it, you can drink it, you can use it for powering your ship. You can also sell it for the fame.
 PREREQ  #  AND      #  TB10
 
-TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
+TASK    #  LIQUID	#  nutrient_distillation:1000000
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
 
-QUEST   #  TB12     #  Clouds # 1304
+QUEST   #  TB12     #  Clouds # 1319
 TEXT    #  We also decided that selling cloud capsules as souvenirs will be a great business. Will this motivate you to make them for us?
 PREREQ  #  AND      #  TB11
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  GIVE		#  CloudTank:1000
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
 
-QUEST   #  TB19     #  Reset the Gas Chain # 1305
+QUEST   #  TB19     #  Reset the Gas Chain # 1320
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TB12
 
@@ -60,30 +62,30 @@ REWARD  #  RESET    #  TB12
 // Collectors Chain
 // ------->
 
-QUEST   #  TB02     #  Collecting rarities # 1311
+QUEST   #  TB02     #  Collecting rarities # 1321
 TEXT    #  Little bit crazy but treasure hunters are still in course... Be one and your preferences will go rocket high.
 PREREQ  #  AND      #  TB00
 
-TASK    #  GIVE		#  WaterBowl:30
+TASK    #  GIVE		#  GoldenFrame:30
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 REWARD  #  RESET    #  TB29
 
 // ------->
 
-QUEST   #  TB20     #  Rocks from the Moon # 1312
+QUEST   #  TB20     #  Rocks from the Moon # 1322
 TEXT    #  For the poor masses, collect some moon rocks please. And don't forget to do the big jumps on the surface.
 PREREQ  #  XOR      #  TB02
 
-TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
+TASK    #  GIVE		#  MoonTurf:1280
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
 
-QUEST   #  TB21     #  Dilithium caves # 1313
+QUEST   #  TB21     #  Dilithium caves # 1323
 TEXT    #  In the deeps of the Lava world a special form of natural crystal dilithium can be found.
 PREREQ  #  AND      #  TB20
 
-TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
+TASK    #  GIVE		#  DilithiumCrystal:640
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
@@ -92,7 +94,7 @@ QUEST   #  TB22     #  Blue Wood # 1314
 TEXT    #  You have no idea how popular toys from this stuff are. Take picture of you taking the tree down and we can set the prices even higher.
 PREREQ  #  AND      #  TB21
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  GIVE		#  AlienWood:256
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
@@ -101,7 +103,7 @@ QUEST   #  TB23     #  Geodes of Red Moon # 1315
 TEXT    #  Those geode stones are also very good merchandising material. Especially since you cannot find them anywhere else but on the red sand moon surface.
 PREREQ  #  AND      #  TB22
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  GIVE		#  Geode:640
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
@@ -126,7 +128,7 @@ QUEST   #  TB03     #  Expert Manufacturer # 1331
 TEXT    #  So you can travel to distant worlds and harvest a lot of stuff. Believe me or not, you are not the first one. Does it make you local dealer of all the things? No it does not. But if you can change your ship in one giant factory...
 PREREQ  #  AND      #  TB00
 
-TASK    #  GIVE		#  WaterBowl:30
+TASK    #  GIVE		#  iePower03:10
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 REWARD  #  RESET    #  TB39
 
@@ -136,7 +138,7 @@ QUEST   #  TB30     #  Blacksmiths Hammer # 1332
 TEXT    #  Prove your skill by making some more interesting tool parts.
 PREREQ  #  XOR      #  TB03
 
-TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
+TASK    #  GIVE		#  DuranitePlate:64 # gearInvar:64 # gearBrass:64 # TriberiumRod:64
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
@@ -145,16 +147,16 @@ QUEST   #  TB31     #  Collectors Blades # 1333
 TEXT    #  Replicas of ancient weapons are very popular. And with your logo, they can become priceless.
 PREREQ  #  AND      #  TB30
 
-TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
+TASK    #  GIVE		#  ManyullynSword:64 # BronzeKnife:256 # ElectrumScythe:64 # NucleumSword:64
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
 
 QUEST   #  TB32     #  Rolling rails # 1334
-TEXT    #  Space Railways. That is Label which does not need any explanations.
+TEXT    #  Space Railways. That is label which does not need any explanations.
 PREREQ  #  AND      #  TB31
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  GIVE		#  TrackHigh:640 # TrackRein:640 # RailBore:10
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
@@ -163,7 +165,7 @@ QUEST   #  TB33     #  Plating the world # 1335
 TEXT    #  The real task seems always so easy at the beginning. But you can manage, our viewers are now sure of it.
 PREREQ  #  AND      #  TB32
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  GIVE		#  Rplate0:2000 # Rplate1:2000 # Rplate2:2000 # Rplate3:2000 # Rplate4:2000 # Rplate5:2000
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
@@ -188,7 +190,7 @@ QUEST   #  TB04     #  Ender Hunter # 1341
 TEXT    #  And some of us just love to see you fight the end. Entertain the viewers get all the fame.
 PREREQ  #  AND      #  TB00
 
-TASK    #  GIVE		#  WaterBowl:30
+TASK    #  GIVE		#  EndStone:256
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
 REWARD  #  RESET    #  TB49
 
@@ -198,7 +200,7 @@ QUEST   #  TB40     #  Killing the beast # 1342
 TEXT    #  Kill the dragon. That is the deal. How nice and pure is the life of the hunter.
 PREREQ  #  XOR      #  TB04
 
-TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
+TASK    #  HUNT		#  EnderDragon:1
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
@@ -207,7 +209,7 @@ QUEST   #  TB41     #  Beasts Egg # 1343
 TEXT    #  There is also the beasts egg and the beast heart. If you want you can sell that.
 PREREQ  #  AND      #  TB40
 
-TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
+TASK    #  GIVE		#  endEgg:1 # DragonHeart:1
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
 
 // ------->
@@ -216,7 +218,7 @@ QUEST   #  TB42     #  The Dark Secret # 1344
 TEXT    #  You heard the rumor that there is even bigger beast flying around, right? Travel in the end to coordinates 10000 x 0 and you will see. Kill it and become the ultimate hunter.
 PREREQ  #  AND      #  TB41
 
-TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+TASK    #  HUNT		#  draconicevolution.ChaosGuardian:1
 REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->

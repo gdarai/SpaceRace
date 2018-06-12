@@ -314,30 +314,30 @@ TEXT         #  Like basic trading but in space. It has all the B's. It is bigge
 
 QUEST        #  TB00        #  -40:-25 	  #  30    #  NetherStar		# main
 
-QUEST        #  TB01        #  -40:0      #  30    #  WaterBowl			# main
-QUEST        #  TB10        #  -20:0	    #  25    #  HCSeed
-QUEST        #  TB11        #    0:0   	  #  25    #  HCOnion
-QUEST        #  TB12        #   20:0      #  25    #  HCBlueB
+QUEST        #  TB01        #  -40:0      #  30    #  ARPresTank		# main
+QUEST        #  TB10        #  -20:0	  #  25    #  HootchTank
+QUEST        #  TB11        #    0:0   	  #  25    #  NutrientTank
+QUEST        #  TB12        #   20:0      #  25    #  CloudTank
 QUEST        #  TB19        #  100:0      #  30    #  Diamond			# main
 
-QUEST        #  TB02        #  -40:15     #  30    #  FlintPickAxe		# main
-QUEST        #  TB20        #  -20:15     #  25    #  PoorNickel
-QUEST        #  TB21        #    0:15  	  #  25    #  AluOre
-QUEST        #  TB22        #   20:15     #  25    #  RedstoneDust
-QUEST        #  TB23        #   40:15     #  25    #  BasaltBlack
+QUEST        #  TB02        #  -40:15     #  30    #  GoldenFrame		# main
+QUEST        #  TB20        #  -20:15     #  25    #  MoonTurf
+QUEST        #  TB21        #    0:15  	  #  25    #  DilithiumCrystal
+QUEST        #  TB22        #   20:15     #  25    #  AlienWood
+QUEST        #  TB23        #   40:15     #  25    #  Geode
 QUEST        #  TB29        #  100:15     #  30    #  Diamond			# main
 
-QUEST        #  TB03        #  -40:30     #  30    #  ChiselTool		# main
-QUEST        #  TB30        #  -20:30     #  25    #  BrickClay
-QUEST        #  TB31        #    0:30  	  #  25    #  OakStais
-QUEST        #  TB32        #   20:30     #  25    #  GetLog3
-QUEST        #  TB33        #   40:30     #  25    #  CelticMossy
+QUEST        #  TB03        #  -40:30     #  30    #  Gear      		# main
+QUEST        #  TB30        #  -20:30     #  25    #  gearInvar
+QUEST        #  TB31        #    0:30  	  #  25    #  ManyullynSword
+QUEST        #  TB32        #   20:30     #  25    #  TrackHigh
+QUEST        #  TB33        #   40:30     #  25    #  Rplate5
 QUEST        #  TB39        #  100:30     #  30    #  Diamond			# main
 
-QUEST        #  TB04        #  -40:45     #  30    #  Grafter	    	# main
-QUEST        #  TB40        #  -20:45     #  25    #  FCherry
-QUEST        #  TB41        #    0:45  	  #  25    #  FChestnut
-QUEST        #  TB42        #   20:45     #  25    #  FDate
+QUEST        #  TB04        #  -40:45     #  30    #  IronSword	    	# main
+QUEST        #  TB40        #  -20:45     #  25    #  DragonHeart
+QUEST        #  TB41        #    0:45  	  #  25    #  endEgg
+QUEST        #  TB42        #   20:45     #  25    #  ChaosShard
 QUEST        #  TB49        #  100:45     #  30    #  Diamond			# main
 
 // ------------------>
@@ -349,8 +349,6 @@ SIZE         #  2:2        #  50:50
 TEXT         #  Concider this a market, where your seller is the audience. Show them something and if they will be fond of you, they may give you what you will ask for.
 
 QUEST        #  MA00        #  -40:-25 	  #  30    #  NetherStar		# main
-QUEST        #  MAreset     #   50:-25    #  30    #  WaterBowl			# main # chain
-QUEST        #  MAres2      #    0:-25    #  30    #  Skull  			# main # chain
 QUEST        #  MAhalf      #    0:10     #  30    #  OnTheWay 			# main # chain
 
 QUEST        #  MAxi00      #  -55:-5	  #  40    #  HZombie			# chain
@@ -358,18 +356,33 @@ QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			# chain
 QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			# chain
 QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			# chain
 
-QUEST        #  MAxo05      #   60:-10	#  20    #  engBlLight		# chain
-QUEST        #  MAxo06      #   60:0	  #  20    #  bucket			# chain
-QUEST        #  MAxo07      #   60:10	  #  20    #  Carpenter			# chain
-QUEST        #  MAxo08      #   60:20	  #  20    #  iePower02			# chain
-QUEST        #  MAxo09      #   60:30	  #  20    #  spTorch			# chain
-QUEST        #  MAxo11      #   60:40	  #  20    #  BeeHouse			# chain
-QUEST        #  MAxo00      #   40:-10  #  20    #  HCSeed			# chain
+QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
 QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
 QUEST        #  MAxo02      #   40:10	  #  20    #  Ore00				# chain
 QUEST        #  MAxo03      #   40:20	  #  20    #  Ore22				# chain
 QUEST        #  MAxo04      #   40:30	  #  20    #  gearCopper		# chain
-QUEST        #  MAxo10      #   40:40	  #  20    #  BeeHouse			# chain
+QUEST        #  MAxo05      #   40:40	  #  20    #  engBlLight		# chain
+
+QUEST        #  MAxo06      #   80:-10	  #  20    #  bucket			# chain
+QUEST        #  MAxo07      #   80:0	  #  20    #  Carpenter			# chain
+QUEST        #  MAxo08      #   80:10	  #  20    #  iePower02			# chain
+QUEST        #  MAxo09      #   80:20	  #  20    #  spTorch			# chain
+QUEST        #  MAxo10      #   80:30	  #  20    #  BeeHouse			# chain
+QUEST        #  MAxo11      #   80:40	  #  20    #  BeeHouse			# chain
+
+QUEST        #  MAxo00x     #   50:-10    #  10    #  Skull
+QUEST        #  MAxo01x     #   50:0      #  10    #  Skull
+QUEST        #  MAxo02x     #   50:10     #  10    #  Skull
+QUEST        #  MAxo03x     #   50:20     #  10    #  Skull
+QUEST        #  MAxo04x     #   50:30     #  10    #  Skull
+QUEST        #  MAxo05x     #   50:40     #  10    #  Skull
+
+QUEST        #  MAxo06x     #   90:-10    #  10    #  Skull
+QUEST        #  MAxo07x     #   90:0      #  10    #  Skull
+QUEST        #  MAxo08x     #   90:10     #  10    #  Skull
+QUEST        #  MAxo09x     #   90:20     #  10    #  Skull
+QUEST        #  MAxo10x     #   90:30     #  10    #  Skull
+QUEST        #  MAxo11x     #   90:40     #  10    #  Skull
 
 // ------------------>
 // Market B
@@ -390,14 +403,14 @@ QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2 			# chain
 QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal   	# chain
 
 QUEST        #  MBxo00      #   40:-10    #  20    #  OxygenTank		# chain
-QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank	# chain
+QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank	    # chain
 QUEST        #  MBxo02      #   40:0      #  20    #  dataUnit0 		# chain
 QUEST        #  MBxo03      #   60:0      #  20    #  MASeed00  		# chain
-QUEST        #  MBxo04      #   40:10     #  20    #  MASeed00  		# chain
-QUEST        #  MBxo05      #   60:10     #  20    #  MASeed00  		# chain
-QUEST        #  MBxo06      #   40:20     #  20    #  MASeed00  		# chain
-QUEST        #  MBxo07      #   60:20     #  20    #  MASeed00  		# chain
-QUEST        #  MBxo08      #   50:30     #  20    #  MASeed00  		# chain
+QUEST        #  MBxo04      #   40:10     #  20    #  Cloche  	    	# chain
+QUEST        #  MBxo05      #   60:10     #  20    #  TripleBatFull 	# chain
+QUEST        #  MBxo06      #   40:20     #  20    #  IOCrafter  		# chain
+QUEST        #  MBxo07      #   60:20     #  20    #  ARFrame  	    	# chain
+QUEST        #  MBxo08      #   50:30     #  20    #  ARoxy2      		# chain
 
 // ------------------>
 // Hoarding quests

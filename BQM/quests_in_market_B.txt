@@ -123,7 +123,7 @@ TEXT    #  There are some most needed liquids, like dilithium or rocket fuel... 
 PREREQ  #  AND      #  MBhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:500:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1 # xpBottle:8
 TASK    #  TRIGGER
 REWARD  #  PICK     #  RocketTank:5  #  NitrogenTank:4  #  DilithiumTank:2  #  NucleumTank:4  #  NutrientTank:10  #  MagmaTank:4  #  CloudTank:8
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
@@ -135,7 +135,7 @@ TEXT    #  Is your sattelite network too slow? Buy the data from us and you will
 PREREQ  #  AND      #  MBhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # ManyullynBlock:1
+TASK    #  GIVE     #  TradeCoinB:1 # ManyullynBlock:1 # xpBottle:10
 TASK    #  TRIGGER
 REWARD  #  ALL      #  dataUnit0:1  #  dataUnit1:1  #  dataUnit2:1
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000
@@ -146,8 +146,8 @@ QUEST   #  MBxo03   #  Seeds Again # 1423
 TEXT    #  So you forgot your most important seeds home and you need them now? Lucky for you we have some fresh delivery here.
 PREREQ  #  AND      #  MBhalf
 
-TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:500:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1 # xpBottle:4
 TASK    #  TRIGGER
 REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
@@ -158,10 +158,10 @@ QUEST   #  MBxo04   #  Space Farmer 101 # 1430
 TEXT    #  The time when farming equipment was huge and clumsy is over. For good.
 PREREQ  #  AND      #  MBhalf
 
-TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:500:
+TASK    #  GIVE     #  TradeCoinB:1 # xpBottle:10
 TASK    #  TRIGGER
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  PICK     #  AAFarmer:1  #  Cloche:3
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
 
 // ------->
@@ -171,10 +171,10 @@ TEXT    #  If you are just few Mega RF short, then there is nothing better than 
 PREREQ  #  AND      #  MBhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  GIVE     #  TradeCoinB:1 # ManyullynBlock:1 # xpBottle:20
 TASK    #  TRIGGER
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
-REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  ALL     #   TripleBatFull:1 # ZombieGen:4 # NutrientTank:16 # PowerConduit:16
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000
 
 // ------->
 
@@ -182,11 +182,11 @@ QUEST   #  MBxo06   #  Your best friend # 1432
 TEXT    #  Automation is the guidebook to success. So investing into automation is the best thing you can do. Right? RIGHT?
 PREREQ  #  AND      #  MBhalf
 
-TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1500:
 TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
 TASK    #  TRIGGER
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
-REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  ALL      #  IOCrafter:2  #  ioTank:2
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-1500
 
 // ------->
 
@@ -194,11 +194,11 @@ QUEST   #  MBxo07   #  Space junkyard # 1433
 TEXT    #  Don't tell me. You need yet another copper coil. Or is it hatch this time? Never the less we saw you make it a million times now, so don't waste even more, our cheap sale is here for you.
 PREREQ  #  AND      #  MBhalf
 
-TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:2000:
+TASK    #  GIVE     #  TradeCoinB:1 # xpBottle:32
 TASK    #  TRIGGER
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
-REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  PICK     #  ARFrame:16 # ARHatch:16 # ARValve:16 # ARPlug:16 # EngineGold:8 # ARCoil:16
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-2000
 
 // ------->
 
@@ -207,7 +207,7 @@ TEXT    #  There must be way how to get rid of that terrible oxygen mask. And th
 PREREQ  #  AND      #  MBhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
-TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  GIVE     #  TradeCoinB:1 # xpBottle:4
 TASK    #  TRIGGER
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
-REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+REWARD  #  PICK     #  ARoxy0:1  #  ARoxy1:2  #  ARoxy2:2
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000

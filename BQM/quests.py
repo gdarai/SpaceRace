@@ -127,6 +127,17 @@ def writeTaskLines(f, intention, task, items, locs):
 			writeLineCondition(f,intention+1,'},','}', iCnt==iMax)
 		writeLine(f, intention, '],')
 		writeLine(f, intention, '"taskID": "bq_standard:crafting",')
+	elif(type=='LIQUID'):
+		m = task['items'][0].split(':')
+		writeLine(f, intention, '"consume": true,')
+		writeLine(f, intention, '"autoConsume": false,')
+		writeLine(f, intention, '"requiredFluids": [')
+		writeLine(f, intention+1, '{')
+		writeLine(f, intention+2, '"FluidName": "'+m[0]+'",')
+		writeLine(f, intention+2, '"Amount": '+m[1])
+		writeLine(f, intention+1, '}')
+		writeLine(f, intention, '],')
+		writeLine(f, intention, '"taskID": "bq_standard:fluid",')
 	elif(type=='RF_RATE'):
 		m = task['items'][0].split(':')
 		writeLine(f, intention, '"rf": '+m[0]+',')
@@ -195,18 +206,6 @@ def writeTaskLines(f, intention, task, items, locs):
           # "taskID": "bq_standard:meeting",
           # "index": 5
         # },
-        # {
-          # "consume": true,
-          # "autoConsume": true,
-          # "requiredFluids": [
-            # {
-              # "FluidName": "water",
-              # "Amount": 1000
-            # }
-          # ],
-          # "taskID": "bq_standard:fluid",
-          # "index": 6
-        # }
 	else:
 		printError('Unknown task type '+type+': '+str(task))
 		print('Supported types are TRIGGER TRAVEL HAVE CRAFT')

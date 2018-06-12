@@ -773,6 +773,50 @@ ITEM # NucleumTank   # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nu
 ITEM # NutrientTank  # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nutrient_distillation", "Amount":1000 } }
 ITEM # MagmaTank     # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "magma_fluid", "Amount":1000 } }
 ITEM # CloudTank     # forestry:capsule:1    # NBT:{ "Fluid": { "FluidName": "cloud_seed", "Amount":1000 } }
+ITEM # HootchTank    # forestry:capsule:1    # NBT:{ "Fluid": { "FluidName": "hootch", "Amount":1000 } }
+
+ITEM # GoldenFrame      # tconstruct:fancy_frame:5
+ITEM # DilithiumCrystal # taiga:dilithium_crystal
+ITEM # AlienWood        # advancedrocketry:alienWood
+ITEM # Geode            # advancedrocketry:geode
+
+ITEM # DuranitePlate  #  tconstruct:large_plate        #   NBT:{ "Material": "duranite" }
+ITEM # gearInvar 	# railcraft:gear:5
+ITEM # gearBrass 	# railcraft:gear:0
+ITEM # TriberiumRod  #  tconstruct:tough_tool_rod      #   NBT:{ "Material": "triberium" }
+
+ITEM # ManyullynSword #  tconstruct:large_sword_blade   #   NBT:{ "Material": "manyullyn" }
+ITEM # BronzeKnife    #  tconstruct:knife_blade         #   NBT:{ "Material": "bronze" }
+ITEM # ElectrumScythe #  tconstruct:scythe_head         #   NBT:{ "Material": "electrum" }
+ITEM # NucleumSword   #  tconstruct:large_sword_blade   #   NBT:{ "Material": "nucleum" }
+
+ITEM # TrackRein      #  railcraft:track_flex_reinforced
+ITEM # TrackHigh      #  railcraft:track_flex_high_speed
+ITEM # RailBore       #  railcraft:bore
+
+ITEM # Rplate0       #  railcraft:plate:4
+ITEM # Rplate1       #  railcraft:plate:6
+ITEM # Rplate2       #  railcraft:plate:8
+ITEM # Rplate3       #  railcraft:plate:9
+ITEM # Rplate4       #  railcraft:plate:10
+ITEM # Rplate5       #  railcraft:plate:11
+
+ITEM # endEgg 		# minecraft:dragon_egg
+ITEM # IronSword    # minecraft:iron_sword
+
+ITEM # TripleBatFull # actuallyadditions:itemBatteryTriple # NBT:{ "Energy": 4000000 }
+ITEM # PowerConduit  # enderio:itemPowerConduit:1
+ITEM # IOCrafter     # enderio:blockCrafter
+
+ITEM # ARFrame       # libvulpes:structureMachine
+ITEM # ARHatch       # libvulpes:hatch
+ITEM # ARValve       # libvulpes:hatch:2
+ITEM # ARPlug        # libvulpes:forgePowerInput
+ITEM # ARCoil        # libvulpes:coil0:4
+
+ITEM # ARoxy0        # advancedrocketry:oxygenVent
+ITEM # ARoxy1        # advancedrocketry:oxygenScrubber
+ITEM # ARoxy2        # advancedrocketry:carbonScrubberCartridge
 
 // Hoarding quests A
 

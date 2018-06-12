@@ -20,6 +20,13 @@ REWARD  #  RESET    #  MBxi02
 REWARD  #  RESET    #  MBxi03
 REWARD  #  RESET    #  MBxo00
 REWARD  #  RESET    #  MBxo01
+REWARD  #  RESET    #  MBxo02
+REWARD  #  RESET    #  MBxo03
+REWARD  #  RESET    #  MBxo04
+REWARD  #  RESET    #  MBxo05
+REWARD  #  RESET    #  MBxo06
+REWARD  #  RESET    #  MBxo07
+REWARD  #  RESET    #  MBxo08
 
 // ------->
 
@@ -35,7 +42,13 @@ REWARD  #  RESET    #  MBxi02
 REWARD  #  RESET    #  MBxi03
 REWARD  #  RESET    #  MBxo00
 REWARD  #  RESET    #  MBxo01
-
+REWARD  #  RESET    #  MBxo02
+REWARD  #  RESET    #  MBxo03
+REWARD  #  RESET    #  MBxo04
+REWARD  #  RESET    #  MBxo05
+REWARD  #  RESET    #  MBxo06
+REWARD  #  RESET    #  MBxo07
+REWARD  #  RESET    #  MBxo08
 // ------->
 
 QUEST   #  MBhalf   #  Entering the Market # 1403
@@ -131,6 +144,66 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-1000
 
 QUEST   #  MBxo03   #  Seeds Again # 1423
 TEXT    #  So you forgot your most important seeds home and you need them now? Lucky for you we have some fresh delivery here.
+PREREQ  #  AND      #  MBhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  TRIGGER
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+
+// ------->
+
+QUEST   #  MBxo04   #  Space Farmer 101 # 1430
+TEXT    #  The time when farming equipment was huge and clumsy is over. For good.
+PREREQ  #  AND      #  MBhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  TRIGGER
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+
+// ------->
+
+QUEST   #  MBxo05   #  Emergency power # 1431
+TEXT    #  If you are just few Mega RF short, then there is nothing better than our emergency supply.
+PREREQ  #  AND      #  MBhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  TRIGGER
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+
+// ------->
+
+QUEST   #  MBxo06   #  Your best friend # 1432
+TEXT    #  Automation is the guidebook to success. So investing into automation is the best thing you can do. Right? RIGHT?
+PREREQ  #  AND      #  MBhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  TRIGGER
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+
+// ------->
+
+QUEST   #  MBxo07   #  Space junkyard # 1433
+TEXT    #  Don't tell me. You need yet another copper coil. Or is it hatch this time? Never the less we saw you make it a million times now, so don't waste even more, our cheap sale is here for you.
+PREREQ  #  AND      #  MBhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:
+TASK    #  GIVE     #  TradeCoinB:1 # DilithiumNugget:1
+TASK    #  TRIGGER
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-500
+
+// ------->
+
+QUEST   #  MBxo08   #  Sick of the oxygen mask # 1434
+TEXT    #  There must be way how to get rid of that terrible oxygen mask. And there is. Buy it and be the most happy space squatter ever.
 PREREQ  #  AND      #  MBhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:1000:

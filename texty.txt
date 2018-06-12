@@ -2,38 +2,6 @@ BEE  # SteadfastDrone   # 1 # Drone:40 # speciesSteadfast:speedSlower:lifespanSh
 BEE  # JungleDrone      # 1 # Drone:30 # speciesTropical:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersJungle:floweringSlowest:territoryAverage:effectNone
 BEE  # SwampDrone       # 1 # Drone:20 # speciesMarshy:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersMushrooms:floweringSlowest:territoryAverage:effectNone
 
-QUEST   #  000      #  Harvesting gas planets # 0
-TEXT    #  Gas giants can be harvested. In a big scale... and such vintage mining operations are this year very popular among our viewers.
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
-
-QUEST   #  000      #  Collecting rarities # 0
-TEXT    #  Little bit crazy but treasure hunters are still in course... Be one and your preferences will go rocket high.
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
-
-QUEST   #  000      #  Expert Manufacturer # 0
-TEXT    #  So you can travel to distant worlds and harvest a lot of stuff. Believe me or not, you are not the first one. Does it make you local dealer of all the things? No it does not. But if you can change your ship in one giant factory...
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
-
-QUEST   #  000      #  Ender Hunter # 0
-TEXT    #  And some of us just love to see you fight the end. Entertain the viewers get all the fame.
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
-
 QUEST   #  000      #  Space Farmer 101 # 0
 TEXT    #  The time when farming equipment was huge and clumsy is over. For good.
 

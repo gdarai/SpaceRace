@@ -221,7 +221,7 @@ REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:3000
 
 // ------->
 
-QUEST   #  TB39     #  Reset the Hunters Chain # 1345
+QUEST   #  TB49     #  Reset the Hunters Chain # 1345
 TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
 PREREQ  #  OR       #  TB42
 

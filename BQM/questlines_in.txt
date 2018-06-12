@@ -269,7 +269,7 @@ QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
 QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
 QUEST        #  TA13        #   40:0      #  25    #  Wheet
 QUEST        #  TA14        #   60:0      #  25    #  HCPear
-QUEST        #  TA19        #   80:0      #  30    #  Diamond			# main
+QUEST        #  TA19        #  100:0      #  30    #  Diamond			# main
 
 QUEST        #  TA02        #  -40:15     #  30    #  FlintPickAxe		# main
 QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel
@@ -294,7 +294,7 @@ QUEST        #  TA40        #  -20:45     #  25    #  FCherry
 QUEST        #  TA41        #    0:45  	  #  25    #  FChestnut
 QUEST        #  TA42        #   20:45     #  25    #  FDate
 QUEST        #  TA43        #   40:45     #  25    #  FPlum
-QUEST        #  TA49        #   60:45     #  30    #  Diamond			# main
+QUEST        #  TA49        #  100:45     #  30    #  Diamond			# main
 
 QUEST        #  TA05        #  -40:60     #  30    #  Toaster	    	# main
 QUEST        #  TA50        #  -20:60     #  25    #  HCToast01
@@ -302,7 +302,43 @@ QUEST        #  TA51        #    0:60  	  #  25    #  HCLarge01
 QUEST        #  TA52        #   20:60     #  25    #  HCLarge03
 QUEST        #  TA53        #   40:60     #  25    #  HCFeast01
 QUEST        #  TA54        #   60:60     #  25    #  HCSauce02
-QUEST        #  TA59        #   80:60     #  30    #  Diamond			# main
+QUEST        #  TA59        #  100:60     #  30    #  Diamond			# main
+
+// ------------------>
+// Trade lines are used for obtaining score through common tasks.
+// ------------------>
+
+LINE         #  TB         #  Space Trading
+SIZE         #  2:2        #  50:50
+TEXT         #  Like basic trading but in space. It has all the B's. It is bigger, brighter, better and bolder.
+
+QUEST        #  TB00        #  -40:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  TB01        #  -40:0      #  30    #  WaterBowl			# main
+QUEST        #  TB10        #  -20:0	    #  25    #  HCSeed
+QUEST        #  TB11        #    0:0   	  #  25    #  HCOnion
+QUEST        #  TB12        #   20:0      #  25    #  HCBlueB
+QUEST        #  TB19        #  100:0      #  30    #  Diamond			# main
+
+QUEST        #  TB02        #  -40:15     #  30    #  FlintPickAxe		# main
+QUEST        #  TB20        #  -20:15     #  25    #  PoorNickel
+QUEST        #  TB21        #    0:15  	  #  25    #  AluOre
+QUEST        #  TB22        #   20:15     #  25    #  RedstoneDust
+QUEST        #  TB23        #   40:15     #  25    #  BasaltBlack
+QUEST        #  TB29        #  100:15     #  30    #  Diamond			# main
+
+QUEST        #  TB03        #  -40:30     #  30    #  ChiselTool		# main
+QUEST        #  TB30        #  -20:30     #  25    #  BrickClay
+QUEST        #  TB31        #    0:30  	  #  25    #  OakStais
+QUEST        #  TB32        #   20:30     #  25    #  GetLog3
+QUEST        #  TB33        #   40:30     #  25    #  CelticMossy
+QUEST        #  TB39        #  100:30     #  30    #  Diamond			# main
+
+QUEST        #  TB04        #  -40:45     #  30    #  Grafter	    	# main
+QUEST        #  TB40        #  -20:45     #  25    #  FCherry
+QUEST        #  TB41        #    0:45  	  #  25    #  FChestnut
+QUEST        #  TB42        #   20:45     #  25    #  FDate
+QUEST        #  TB49        #  100:45     #  30    #  Diamond			# main
 
 // ------------------>
 // Market lines are used for buying material for score
@@ -345,18 +381,23 @@ TEXT         #  So you have some experience with market... here is advanced mark
 
 QUEST        #  MB00        #  -40:-25 	  #  30    #  NetherStar		# main
 QUEST        #  MBreset     #   50:-25    #  30    #  WaterBowl			# main # chain
-QUEST        #  MBres2      #    0:-25    #  30    #  Skull  			# main # chain
+QUEST        #  MBres2      #    0:-25    #  30    #  Skull  		  	# main # chain
 QUEST        #  MBhalf      #    0:10     #  30    #  OnTheWay2			# main # chain
 
 QUEST        #  MBxi00      #  -55:-5	  #  40    #  GhastTear			# chain
-QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			# chain
+QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			  # chain
 QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2 			# chain
-QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal    	# chain
+QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal   	# chain
 
 QUEST        #  MBxo00      #   40:-10    #  20    #  OxygenTank		# chain
-QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank		# chain
+QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank	# chain
 QUEST        #  MBxo02      #   40:0      #  20    #  dataUnit0 		# chain
 QUEST        #  MBxo03      #   60:0      #  20    #  MASeed00  		# chain
+QUEST        #  MBxo04      #   40:10     #  20    #  MASeed00  		# chain
+QUEST        #  MBxo05      #   60:10     #  20    #  MASeed00  		# chain
+QUEST        #  MBxo06      #   40:20     #  20    #  MASeed00  		# chain
+QUEST        #  MBxo07      #   60:20     #  20    #  MASeed00  		# chain
+QUEST        #  MBxo08      #   50:30     #  20    #  MASeed00  		# chain
 
 // ------------------>
 // Hoarding quests

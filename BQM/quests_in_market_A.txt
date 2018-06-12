@@ -29,6 +29,7 @@ REWARD  #  RESET    #  MAxo07
 REWARD  #  RESET    #  MAxo08
 REWARD  #  RESET    #  MAxo09
 REWARD  #  RESET    #  MAxo10
+REWARD  #  RESET    #  MAxo11
 
 // ------->
 
@@ -64,6 +65,7 @@ REWARD  #  RESET    #  MAxo07
 REWARD  #  RESET    #  MAxo08
 REWARD  #  RESET    #  MAxo09
 REWARD  #  RESET    #  MAxo10
+REWARD  #  RESET    #  MAxo11
 
 // ---------->
 // -- Market In
@@ -233,12 +235,24 @@ REWARD  #  SCORE    #  SCORE:dummy  #  add:-200
 
 // ------->
 
-QUEST   #  MAxo10   #  Beeing issue # 1118
-TEXT    #  Well, come bees can give you hell. But if you want... at least the worst... you can buy.
+QUEST   #  MAxo10   #  Beeing Steadfast issue # 1118
+TEXT    #  Well, come bees can give you hell. But if you want... at least the Steadfast are here for sale.
 PREREQ  #  AND      #  MAhalf
 
 TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:400:
 TASK    #  GIVE		#  TradeCoinA:1 # essInferi:10 # xpBottle:16
 TASK    #  TRIGGER
-REWARD  #  BEE      #  MetallicQueen:10
+REWARD  #  BEE      #  SteadfastDrone:10
+REWARD  #  SCORE    #  SCORE:dummy  #  add:-400
+
+// ------->
+
+QUEST   #  MAxo11   #  Beeing Tropical issue # 1119
+TEXT    #  Well, come bees can give you hell. But if you want... at least the mutated Tropical bees are here for sale.
+PREREQ  #  AND      #  MAhalf
+
+TASK    #  SCORE    #  SCORE  # SCORE:dummy  #  MORE_OR_EQUAL:400:
+TASK    #  GIVE		#  TradeCoinA:1 # essInferi:10 # xpBottle:16
+TASK    #  TRIGGER
+REWARD  #  BEE      #  JungleDrone:10
 REWARD  #  SCORE    #  SCORE:dummy  #  add:-400

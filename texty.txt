@@ -1,16 +1,6 @@
- # JungleDrone:10 # SwampDrone:10
-
 BEE  # SteadfastDrone   # 1 # Drone:40 # speciesSteadfast:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersVanilla:floweringSlowest:territoryAverage:effectNone
 BEE  # JungleDrone      # 1 # Drone:30 # speciesTropical:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersJungle:floweringSlowest:territoryAverage:effectNone
-BEE  # SwampDrone       # 1 # Drone:20 # speciesMarshy:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersMushrooms:floweringSlowest:territoryAverage:effectNone 
- 
-QUEST   #  000      #  Beeing issue # 0
-TEXT    #  Well, come bees can give you hell. But if you want... at least the worst... you can buy.
-
-TASK    #  TRIGGER
-REWARD  #  XP       #  Levels:1
-
-// ------->
+BEE  # SwampDrone       # 1 # Drone:20 # speciesMarshy:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersMushrooms:floweringSlowest:territoryAverage:effectNone
 
 QUEST   #  000      #  Harvesting gas planets # 0
 TEXT    #  Gas giants can be harvested. In a big scale... and such vintage mining operations are this year very popular among our viewers.

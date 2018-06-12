@@ -322,17 +322,18 @@ QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			# chain
 QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			# chain
 QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			# chain
 
-QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain
-QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
-QUEST        #  MAxo02      #   40:10	  #  20    #  Ore00				# chain
-QUEST        #  MAxo03      #   40:20	  #  20    #  Ore22				# chain
-QUEST        #  MAxo04      #   40:30	  #  20    #  gearCopper		# chain
-QUEST        #  MAxo05      #   60:-10	  #  20    #  engBlLight		# chain
+QUEST        #  MAxo05      #   60:-10	#  20    #  engBlLight		# chain
 QUEST        #  MAxo06      #   60:0	  #  20    #  bucket			# chain
 QUEST        #  MAxo07      #   60:10	  #  20    #  Carpenter			# chain
 QUEST        #  MAxo08      #   60:20	  #  20    #  iePower02			# chain
 QUEST        #  MAxo09      #   60:30	  #  20    #  spTorch			# chain
-QUEST        #  MAxo10      #   50:40	  #  20    #  BeeHouse			# chain
+QUEST        #  MAxo11      #   60:40	  #  20    #  BeeHouse			# chain
+QUEST        #  MAxo00      #   40:-10  #  20    #  HCSeed			# chain
+QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain
+QUEST        #  MAxo02      #   40:10	  #  20    #  Ore00				# chain
+QUEST        #  MAxo03      #   40:20	  #  20    #  Ore22				# chain
+QUEST        #  MAxo04      #   40:30	  #  20    #  gearCopper		# chain
+QUEST        #  MAxo10      #   40:40	  #  20    #  BeeHouse			# chain
 
 // ------------------>
 // Market B

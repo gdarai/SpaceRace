@@ -65,12 +65,12 @@ ITEM  #  TrPlank    	#  immersiveengineering:treatedWood
 ITEM  #  AACrate    	#  actuallyadditions:blockGiantChestLarge
 ITEM  #  SmelteryTank	#  tconstruct:seared_tank
 ITEM  #  SmelteryTable	#  tconstruct:casting
-ITEM  #  ConveyorBelt	#  immersiveengineering:conveyor	#	NBT:{"conveyorType": "immersiveengineering:uncontrolled"}
+ITEM  #  ConveyorBelt	#  immersiveengineering:conveyor	#	NBT:{"conveyorType:8": "immersiveengineering:uncontrolled"}
 ITEM  #  HardendCap  	#  harvestcraft:hardenedleatherhelmitem
 ITEM  #  HardendLeather #  harvestcraft:hardenedleatheritem
 ITEM  #  Punji		  	#  tconstruct:punji
 ITEM  #  ToolForge	 	#  tconstruct:toolforge				#	NBT:{"textureBlock:10": {"id:8": "tconstruct:metal", "Count:1": 1, "Damage:2": 3 }}
-ITEM  #  WoodToughRod   #  tconstruct:tough_tool_rod        #   NBT:{ "Material": "wood" }
+ITEM  #  WoodToughRod   #  tconstruct:tough_tool_rod        #   NBT:{ "Material:8": "wood" }
 
 ITEM  #  HcCandle	  	#  harvestcraft:candledeco2
 ITEM  #  FrBee0 	  	#  forestry:beehives:0
@@ -106,10 +106,10 @@ ITEM  #  Presser        #  harvestcraft:presser
 ITEM  #  SoldIron       #  forestry:solderingIron
 ITEM  #  Revolver       #  immersiveengineering:revolver
 
-ITEM  #  SpawnB0        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Pig"}}
-ITEM  #  SpawnB1        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Cow"}}
-ITEM  #  SpawnB2        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Chicken"}}
-ITEM  #  SpawnB3        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Sheep"}}
+ITEM  #  SpawnB0        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Pig"}}
+ITEM  #  SpawnB1        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Cow"}}
+ITEM  #  SpawnB2        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Chicken"}}
+ITEM  #  SpawnB3        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Sheep"}}
 
 // Quests C
 ITEM  #  ObsSword		#  actuallyadditions:itemSwordObsidian
@@ -131,7 +131,7 @@ ITEM  #  Computer		#  opencomputers:case2
 ITEM  #  DEChest		#  draconicevolution:draconium_chest
 ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
 ITEM  #  IERadiator		#  immersiveengineering:metalDecoration0:7
-ITEM  #  CompMan	 	#  gbook:guidebook				#	NBT:{"Book":"gbook:computerBook.xml"}
+ITEM  #  CompMan	 	#  gbook:guidebook				#	NBT:{"Book:8":"gbook:computerBook.xml"}
 
 ITEM  #  GoldScythe		#  tp:golden_scythe
 ITEM  #  PrecAssembler  #  advancedrocketry:precisionassemblingmachine
@@ -142,10 +142,10 @@ ITEM  #  BlazeRod       #  minecraft:blaze_rod
 ITEM  #  SeedNature     #  mysticalagriculture:nature_seeds
 ITEM  #  InfArmor       #  mysticalagriculture:inferium_armor_core
 
-ITEM  #  SpawnC0        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Horse"}}
-ITEM  #  SpawnC1        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Villager"}}
-ITEM  #  SpawnC2        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Slime"}}
-ITEM  #  SpawnC3        #  minecraft:spawn_egg   #	NBT:{"EntityTag": {"id":"Ozelot"}}
+ITEM  #  SpawnC0        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Horse"}}
+ITEM  #  SpawnC1        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Villager"}}
+ITEM  #  SpawnC2        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Slime"}}
+ITEM  #  SpawnC3        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Ozelot"}}
 
 // Quests D
 ITEM  #  ARHelm			#  advancedrocketry:spaceHelmet
@@ -601,7 +601,7 @@ ITEM # Ore22     # immersiveengineering:ore:3
 ITEM # Ore23     # minecraft:diamond_ore
 ITEM # Ore24     # minecraft:emerald_ore
 
-ITEM # FlintPickAxe # tconstruct:pick_head # NBT:{ "Material": "flint" }
+ITEM # FlintPickAxe # tconstruct:pick_head # NBT:{ "Material:8": "flint" }
 ITEM # PoorNickel 	# railcraft:ore_metal_poor:6
 ITEM # PoorZinc 	# railcraft:ore_metal_poor:7
 ITEM # AluOre 		# immersiveengineering:ore:1
@@ -702,7 +702,7 @@ ITEM # spHLeather 	# harvestcraft:hardenedleatheritem
 ITEM # spTorch 		# minecraft:torch
 ITEM # spFabric 	# immersiveengineering:material:5
 ITEM # spPlank 		# immersiveengineering:treatedWood
-ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material": "flint" }
+ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material:8": "flint" }
 ITEM # spWool 		# minecraft:wool
 
 ITEM # HCMilk 		# harvestcraft:freshmilkitem
@@ -748,12 +748,12 @@ ITEM # GhastTear	# minecraft:ghast_tear
 
 ITEM # OxygenTank 	# advancedrocketry:bucketOxygen
 ITEM # HydrogenTank	# advancedrocketry:bucketHydrogen
-ITEM # FullBattery	# actuallyadditions:itemBattery # NBT:{ "Energy": 1000000 }
+ITEM # FullBattery	# actuallyadditions:itemBattery # NBT:{ "Energy:4": 1000000 }
 
 ITEM # ManyullynBlock # tconstruct:metal:2
-ITEM # dataUnit0 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 1, "Data": 500, "Locked": 0 }
-ITEM # dataUnit1 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 4, "Data": 500, "Locked": 0 }
-ITEM # dataUnit2 # advancedrocketry:dataUnit # NBT:{ "maxData": 1000, "DataType": 6, "Data": 500, "Locked": 0 }
+ITEM # dataUnit0 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 1, "Data:4": 500, "Locked:4": 0 }
+ITEM # dataUnit1 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 4, "Data:4": 500, "Locked:4": 0 }
+ITEM # dataUnit2 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 6, "Data:4": 500, "Locked:4": 0 }
 
 ITEM # MASeed00	# mysticalagriculture:tier1_crafting_seed
 ITEM # MASeed01	# mysticalagriculture:tier1_inferium_seeds
@@ -768,27 +768,27 @@ ITEM # MASeed08	# mysticalagriculture:zombie_seeds
 ITEM # DilithiumNugget # taiga:dilithium_nugget
 ITEM # RocketTank	 # advancedrocketry:bucketRocketFuel
 ITEM # NitrogenTank	 # advancedrocketry:bucketNitrogen
-ITEM # DilithiumTank # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "dilithium_fluid", "Amount":1000 } }
-ITEM # NucleumTank   # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nucleum_fluid", "Amount":1000 } }
-ITEM # NutrientTank  # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "nutrient_distillation", "Amount":1000 } }
-ITEM # MagmaTank     # forestry:refractory:1 # NBT:{ "Fluid": { "FluidName": "magma_fluid", "Amount":1000 } }
-ITEM # CloudTank     # forestry:capsule:1    # NBT:{ "Fluid": { "FluidName": "cloud_seed", "Amount":1000 } }
-ITEM # HootchTank    # forestry:capsule:1    # NBT:{ "Fluid": { "FluidName": "hootch", "Amount":1000 } }
+ITEM # DilithiumTank # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "dilithium_fluid", "Amount:4":1000 } }
+ITEM # NucleumTank   # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "nucleum_fluid", "Amount:4":1000 } }
+ITEM # NutrientTank  # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "nutrient_distillation", "Amount:4":1000 } }
+ITEM # MagmaTank     # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "magma_fluid", "Amount:4":1000 } }
+ITEM # CloudTank     # forestry:capsule:1    # NBT:{ "Fluid:10": { "FluidName:8": "cloud_seed", "Amount:4":1000 } }
+ITEM # HootchTank    # forestry:capsule:1    # NBT:{ "Fluid:10": { "FluidName:8": "hootch", "Amount:4":1000 } }
 
 ITEM # GoldenFrame      # tconstruct:fancy_frame:5
 ITEM # DilithiumCrystal # taiga:dilithium_crystal
 ITEM # AlienWood        # advancedrocketry:alienWood
 ITEM # Geode            # advancedrocketry:geode
 
-ITEM # DuranitePlate  #  tconstruct:large_plate        #   NBT:{ "Material": "duranite" }
+ITEM # DuranitePlate  #  tconstruct:large_plate        #   NBT:{ "Material:8": "duranite" }
 ITEM # gearInvar 	# railcraft:gear:5
 ITEM # gearBrass 	# railcraft:gear:0
-ITEM # TriberiumRod  #  tconstruct:tough_tool_rod      #   NBT:{ "Material": "triberium" }
+ITEM # TriberiumRod  #  tconstruct:tough_tool_rod      #   NBT:{ "Material:8": "triberium" }
 
-ITEM # ManyullynSword #  tconstruct:large_sword_blade   #   NBT:{ "Material": "manyullyn" }
-ITEM # BronzeKnife    #  tconstruct:knife_blade         #   NBT:{ "Material": "bronze" }
-ITEM # ElectrumScythe #  tconstruct:scythe_head         #   NBT:{ "Material": "electrum" }
-ITEM # NucleumSword   #  tconstruct:large_sword_blade   #   NBT:{ "Material": "nucleum" }
+ITEM # ManyullynSword #  tconstruct:large_sword_blade   #   NBT:{ "Material:8": "manyullyn" }
+ITEM # BronzeKnife    #  tconstruct:knife_blade         #   NBT:{ "Material:8": "bronze" }
+ITEM # ElectrumScythe #  tconstruct:scythe_head         #   NBT:{ "Material:8": "electrum" }
+ITEM # NucleumSword   #  tconstruct:large_sword_blade   #   NBT:{ "Material:8": "nucleum" }
 
 ITEM # TrackRein      #  railcraft:track_flex_reinforced
 ITEM # TrackHigh      #  railcraft:track_flex_high_speed
@@ -804,7 +804,7 @@ ITEM # Rplate5       #  railcraft:plate:11
 ITEM # endEgg 		# minecraft:dragon_egg
 ITEM # IronSword    # minecraft:iron_sword
 
-ITEM # TripleBatFull # actuallyadditions:itemBatteryTriple # NBT:{ "Energy": 4000000 }
+ITEM # TripleBatFull # actuallyadditions:itemBatteryTriple # NBT:{ "Energy:4": 4000000 }
 ITEM # PowerConduit  # enderio:itemPowerConduit:1
 ITEM # IOCrafter     # enderio:blockCrafter
 
@@ -826,7 +826,7 @@ ITEM # SearedFurnace # tconstruct:seared_furnace_controller
 ITEM # HEggplant # harvestcraft:eggplantitem
 ITEM # Reef0 # coralreef:reef
 ITEM # Reef1 # coralreef:reef:1
-ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material": "obsidian" }
+ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material:8": "obsidian" }
 ITEM # RabbitFoot #  minecraft:rabbit_foot
 ITEM # BaseSeed #  mysticalagriculture:base_crafting_seed
 ITEM # ElTubeLapis   #  forestry:thermionicTubes:11
@@ -834,11 +834,11 @@ ITEM # ElevatorTrack   #  railcraft:track_elevator
 ITEM # IceSpikes   #  forestry:craftingMaterial:5
 ITEM # MagmaSapling   #  tconstruct:slime_sapling:2
 ITEM # AbyssumDust   #  taiga:abyssum_dust
-ITEM # MagmaSearedTank   #  tconstruct:seared_tank # NBT:{ "FluidName": "lava", "Amount":4000 }
+ITEM # MagmaSearedTank   #  tconstruct:seared_tank # NBT:{ "FluidName:8": "lava", "Amount:4":4000 }
 
 // Cheat quests
 
-ITEM # CHteleportHome # draconicevolution:dislocator:19 # NBT:{"IsSet": 1, "Dimension":0, "DimentionName":"Overworld", "X":0, "Y":70, "Z":0, "Yaw":0, "Pitch":0}
+ITEM # CHteleportHome # draconicevolution:dislocator:19 # NBT:{"IsSet:4": 1, "Dimension:4":0, "DimentionName:8":"Overworld", "X:4":0, "Y:4":70, "Z:4":0, "Yaw:4":0, "Pitch:4":0}
 
 ITEM # CHtank         # advancedrocketry:fuelTank
 ITEM # CHengine       # advancedrocketry:rocketmotor
@@ -860,9 +860,9 @@ BEE  # MetallicQueen   # 1 # Queen:20 # morebees.speciesMetallic:speedSlower:lif
 ITEM # MasterCrystal   # mysticalagriculture:master_infusion_crystal
 ITEM # DragonHeart     # draconicevolution:dragon_heart
 ITEM # ChaosShard      # draconicevolution:chaos_shard
-ITEM # DRCrystal       # deepresonance:resonating_crystal # NBT:{ "efficiency": 75.0, "strength": 75.0, "purity": 100.0, "power": 100.0, "version": 2 }
+ITEM # DRCrystal       # deepresonance:resonating_crystal # NBT:{ "efficiency:6": 75.0, "strength:6": 75.0, "purity:6": 100.0, "power:6": 100.0, "version:4": 2 }
 
-ITEM # InfArmor1       # mysticalagriculture:inferium_helmet     # NBT:{ "ench": [{"lvl": 1, "id": 128}] }
-ITEM # InfArmor2       # mysticalagriculture:inferium_chestplate # NBT:{ "ench": [{"lvl": 1, "id": 128}], "air": 18000 }
-ITEM # InfArmor3       # mysticalagriculture:inferium_leggings   # NBT:{ "ench": [{"lvl": 1, "id": 128}] }
-ITEM # InfArmor4       # mysticalagriculture:inferium_boots      # NBT:{ "ench": [{"lvl": 1, "id": 128}] }
+ITEM # InfArmor1       # mysticalagriculture:inferium_helmet     # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }
+ITEM # InfArmor2       # mysticalagriculture:inferium_chestplate # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}}, "air:4": 18000 }
+ITEM # InfArmor3       # mysticalagriculture:inferium_leggings   # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }
+ITEM # InfArmor4       # mysticalagriculture:inferium_boots      # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }

@@ -303,9 +303,11 @@ def writeRewardLines(f, intention, reward, items, quests):
 		m1 = reward['items'][0].split(':')
 		m2 = reward['items'][1].split(':')
 		if(parseName(m2[0])=='set'):
-			m2[0] = 'false'
+			m2[0] = 0
+        elif(parseName(m2[0])=='sub'):
+			m2[0] = -1
 		else:
-			m2[0] = 'true'
+			m2[0] = 1
 		writeLine(f, intention, '"score": "'+m1[0]+'",')
 		writeLine(f, intention, '"type": "'+m1[1]+'",')
 		writeLine(f, intention, '"value": '+m2[1]+',')
@@ -514,7 +516,10 @@ for line in lines:
             'rewards': [],
 			'qid': m[3],
 			'main': 'false',
-			'chain': False
+			'chain': False,
+            'repeat': '-1',
+            'auto': 'true',
+            'simul': 'false',
         }
         if (m[3] in qids):
             confliktQIDs.append(m[3])
@@ -616,6 +621,10 @@ for line in lines:
                 quests[newQ['id']]['main'] = 'true'
             elif(nm=='chain'):
                 quests[newQ['id']]['chain'] = True
+            elif(nm=='repeat'):
+                quests[newQ['id']]['repeat'] = m1[1]
+                quests[newQ['id']]['auto'] = 'false'
+                quests[newQ['id']]['simul'] = 'true'
             else:
                 printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
         theL['quests'].append(newQ)
@@ -675,17 +684,17 @@ for id in questNames:
 	writeLine(f,5,'"icon": {')
 	writeItemLines(f,6,items[q['ico']],'1')
 	writeLine(f,5,'},')
-	writeLine(f,5,'"autoClaim": true,')
-	writeLine(f,5,'"isSilent": false,')
+	writeLine(f,5,'"autoClaim": '+q['auto']+',')
+	writeLine(f,5,'"isSilent": '+q['repeat']+',')
 	writeLine(f,5,'"partySingleReward": false,')
 	if(q['chain']==True):	
 		writeLine(f,5,'"visibility": "CHAIN",')
 	writeLine(f,5,'"isMain": '+q['main']+',')
-	writeLine(f,5,'"simultaneous": false,')
+	writeLine(f,5,'"simultaneous": '+q['simul']+',')
 	writeLine(f,5,'"globalShare": false,')
 	writeLine(f,5,'"lockedProgress": false,')
 	writeLine(f,5,'"taskLogic": "AND",')
-	writeLine(f,5,'"repeatTime": -1,')
+	writeLine(f,5,'"repeatTime": '+q['repeat']+',')
 	if(q['preqType']=='none'):
 		writeLine(f,5,'"questLogic": "AND"')
 	else:

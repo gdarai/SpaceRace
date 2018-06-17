@@ -1,0 +1,5 @@
+
+// Quests Test
+ITEM  #  Bread          #  minecraft:bread
+ITEM  #  Coin           #  minecraft:cobblestone
+ITEM  #  Dirt           #  minecraft:dirt

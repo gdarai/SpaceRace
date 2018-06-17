@@ -1,0 +1,64 @@
+
+// ------------------>
+// Trade B - Selling stuff
+// ------------------>
+
+LINE         #  TB         #  Space Trading
+SIZE         #  2:2        #  50:50
+TEXT         #  Like basic trading but in space. It has all the B's. It is bigger, brighter, better and bolder.
+
+QUEST        #  TB00        #  -40:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  TB01        #  -40:0      #  30    #  ARPresTank		# main
+QUEST        #  TB10        #  -20:0	  #  25    #  HootchTank
+QUEST        #  TB11        #    0:0   	  #  25    #  NutrientTank
+QUEST        #  TB12        #   20:0      #  25    #  CloudTank
+QUEST        #  TB19        #  100:0      #  30    #  Diamond			# main
+
+QUEST        #  TB02        #  -40:15     #  30    #  GoldenFrame		# main
+QUEST        #  TB20        #  -20:15     #  25    #  MoonTurf
+QUEST        #  TB21        #    0:15  	  #  25    #  DilithiumCrystal
+QUEST        #  TB22        #   20:15     #  25    #  AlienWood
+QUEST        #  TB23        #   40:15     #  25    #  Geode
+QUEST        #  TB29        #  100:15     #  30    #  Diamond			# main
+
+QUEST        #  TB03        #  -40:30     #  30    #  Gear      		# main
+QUEST        #  TB30        #  -20:30     #  25    #  gearInvar
+QUEST        #  TB31        #    0:30  	  #  25    #  ManyullynSword
+QUEST        #  TB32        #   20:30     #  25    #  TrackHigh
+QUEST        #  TB33        #   40:30     #  25    #  Rplate5
+QUEST        #  TB39        #  100:30     #  30    #  Diamond			# main
+
+QUEST        #  TB04        #  -40:45     #  30    #  IronSword	    	# main
+QUEST        #  TB40        #  -20:45     #  25    #  DragonHeart
+QUEST        #  TB41        #    0:45  	  #  25    #  endEgg
+QUEST        #  TB42        #   20:45     #  25    #  ChaosShard
+QUEST        #  TB49        #  100:45     #  30    #  Diamond			# main
+
+// ------------------>
+// Market B
+// ------------------>
+
+LINE         #  MB         #  Buying Space Items
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have some experience with market... here is advanced market for you Space travelling folk.
+
+QUEST        #  MB00        #  -40:-25 	  #  30    #  NetherStar		# main
+QUEST        #  MBreset     #   50:-25    #  30    #  WaterBowl			# main # chain
+QUEST        #  MBres2      #    0:-25    #  30    #  Skull  		  	# main # chain
+QUEST        #  MBhalf      #    0:10     #  30    #  OnTheWay2			# main # chain
+
+QUEST        #  MBxi00      #  -55:-5	  #  40    #  GhastTear			# chain
+QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			  # chain
+QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2 			# chain
+QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal   	# chain
+
+QUEST        #  MBxo00      #   40:-10    #  20    #  OxygenTank		# chain
+QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank	    # chain
+QUEST        #  MBxo02      #   40:0      #  20    #  dataUnit0 		# chain
+QUEST        #  MBxo03      #   60:0      #  20    #  MASeed00  		# chain
+QUEST        #  MBxo04      #   40:10     #  20    #  Cloche  	    	# chain
+QUEST        #  MBxo05      #   60:10     #  20    #  TripleBatFull 	# chain
+QUEST        #  MBxo06      #   40:20     #  20    #  IOCrafter  		# chain
+QUEST        #  MBxo07      #   60:20     #  20    #  ARFrame  	    	# chain
+QUEST        #  MBxo08      #   50:30     #  20    #  ARoxy2      		# chain

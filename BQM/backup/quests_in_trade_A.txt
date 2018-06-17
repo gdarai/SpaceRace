@@ -1,0 +1,375 @@
+QUEST   #  TA00     #  Collecting Victory Points # 1000
+TEXT    #  There are multiple ways you can please our viewers. During your journey you will be given several opportunities. Each will be rewarded with victory points. You can exchange those victory points later for material or food or you can just pile them up to prove your viewers that you are the best player they ever saw.
+
+TASK    #  TRIGGER
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  set:200
+
+// ------->
+// Farming Chain
+// ------->
+
+QUEST   #  TA01     #  Are you Farmer? # 1001
+TEXT    #  You must first prove that you are a serious farmer. Deliver 30 waterbowls and I will believe you.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  WaterBowl:30
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:100
+REWARD  #  RESET    #  TA19
+
+// ------->
+
+QUEST   #  TA10     #  Roots # 1002
+TEXT    #  Our viewers want to see you thrive. Deliver some most common seeds to prove you are the master of your land.
+PREREQ  #  XOR      #  TA01
+
+TASK    #  GIVE		#  HSeed0:16 # HSeed1:16 # HSeed2:16 # HSeed3:16 # HSeed4:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA11     #  Vegetables # 1003
+TEXT    #  So you can collect roots, Can you also collect vegetables?
+PREREQ  #  AND      #  TA10
+
+TASK    #  GIVE		#  HVegi0:16 # HVegi1:16 # HVegi2:16 # HVegi3:16 # HVegi4:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA12     #  Berries # 1004
+TEXT    #  Enough Vegetables, time for some Berries.
+PREREQ  #  AND      #  TA11
+
+TASK    #  GIVE		#  HBerry0:16 # HBerry1:16 # HBerry2:16 # HBerry3:16 # HBerry4:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA13     #  Wheats # 1005
+TEXT    #  Can your empire be built up without wheet and rice? Certainly not.
+PREREQ  #  AND      #  TA12
+
+TASK    #  GIVE		#  HWheat0:16 # HWheat1:16 # HWheat2:16 # HWheat3:16 # HWheat4:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA14     #  Fruits # 1006
+TEXT    #  And when you look up instead of down, you want to see great trees with wonderfull fruits.
+PREREQ  #  AND      #  TA13
+
+TASK    #  GIVE		#  HFruit0:16 # HFruit1:16 # HFruit2:16 # HFruit3:16 # HFruit4:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA19     #  Reset the Food Chain # 1007
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA14
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  XP       #  Levels:1
+REWARD  #  RESET    #  TA01
+REWARD  #  RESET    #  TA10
+REWARD  #  RESET    #  TA11
+REWARD  #  RESET    #  TA12
+REWARD  #  RESET    #  TA13
+REWARD  #  RESET    #  TA14
+
+// ------->
+// Mining Chain
+// ------->
+
+QUEST   #  TA02     #  Are you Miner? # 1008
+TEXT    #  You must first prove that you are a serious miner. Deliver 10 flint pickaxe heads to prove it.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  FlintPickAxe:10
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:100
+REWARD  #  RESET    #  TA29
+
+// ------->
+
+QUEST   #  TA20     #  Poor Ores # 1009
+TEXT    #  Look around and deliver some poor nickel ore and poor zinc ore.
+PREREQ  #  AND      #  TA02
+
+TASK    #  GIVE		#  PoorNickel:8 # PoorZinc:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA21     #  Regular Ores # 1010
+TEXT    #  Let's increase the load. We want to see some real Digging.
+PREREQ  #  AND      #  TA20
+
+TASK    #  GIVE		#  AluOre:8 # IronOre:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA22     #  Deep Dusts # 1011
+TEXT    #  Can you go deeper and get some Redstone and Duranium dusts?
+PREREQ  #  AND      #  TA21
+
+TASK    #  GIVE		#  RedstoneDust:64 # DuraniumDust:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA23     #  Basalt # 1012
+TEXT    #  There are two variants of basalt on this world. Deliver both to please the viewers.
+PREREQ  #  AND      #  TA22
+
+TASK    #  GIVE		#  BasaltWhite:16 # BasaltBlack:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA24     #  Going Exotic # 1013
+TEXT    #  Some unique and precious metals should buy our attention.
+PREREQ  #  AND      #  TA23
+
+TASK    #  GIVE		#  GoldOre:16 # SilverOre:16 # OsramOre:8 # EezoOre:8
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA25     #  Going Wild # 1014
+TEXT    #  And what about going DEEP under?
+PREREQ  #  AND      #  TA24
+
+TASK    #  GIVE		#  AbyssumOre:16 # DracoDust:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+
+// ------->
+
+QUEST   #  TA29     #  Reset the Miners Chain # 1015
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA25
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  XP       #  Levels:1
+REWARD  #  RESET    #  TA02
+REWARD  #  RESET    #  TA20
+REWARD  #  RESET    #  TA21
+REWARD  #  RESET    #  TA22
+REWARD  #  RESET    #  TA23
+REWARD  #  RESET    #  TA24
+REWARD  #  RESET    #  TA25
+
+// ------->
+// Building Chain
+// ------->
+
+QUEST   #  TA03     #  Are you Builder? # 1016
+TEXT    #  You must first prove that you are a serious builder. Deliver a chisel tool.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  ChiselTool:1
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:50
+REWARD  #  RESET    #  TA39
+
+// ------->
+
+QUEST   #  TA30     #  Bricks # 1017
+TEXT    #  If you mean it, you must know how to make bricks.
+PREREQ  #  AND      #  TA03
+
+TASK    #  GIVE		#  BrickBlDried:32 # BrickClay:32 # BrickMud:32 # BrickStone:32
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA31     #  Oak Wood Parts # 1018
+TEXT    #  Wood and Stone, Stone And Wood. That is what you need for a good building.
+PREREQ  #  AND      #  TA30
+
+TASK    #  GIVE		#  OakStais:64 # OakSlabs:64 # OakBookshelf:16 # OakChest:16 # OakFancySign:12
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:200
+
+// ------->
+
+QUEST   #  TA32     #  Luxury Wood Parts # 1019
+TEXT    #  To make things nice, you must add some colors and shades, right?
+PREREQ  #  AND      #  TA31
+
+TASK    #  GIVE		#  GetLog0:64 # GetLog1:64 # GetLog2:64 # GetLog3:64
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA33     #  Chiseled Decorations # 1020
+TEXT    #  It is time to add some fanciness to this world. 
+PREREQ  #  AND      #  TA32
+
+TASK    #  GIVE		#  FactoryRusty:64 # TyrianPurple:64 # OrnateBricks:32 # CelticMossy:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA34     #  Furniture 1 # 1021
+TEXT    #  Four walls, roof and floor is what makes house. Furniture is what makes home.
+PREREQ  #  AND      #  TA33
+
+TASK    #  GIVE		#  AccWorkbench:4 # AccSeat:16 # SpruceTable:16 # BirchDesk:8 # JunglePotShelf:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:300
+
+// ------->
+
+QUEST   #  TA35     #  Furniture 2 # 1022
+TEXT    #  Well, there is furniture and then there is luxus.
+PREREQ  #  AND      #  TA34
+
+TASK    #  GIVE		#  FancyLamp:2 # Typewriter:1 # DinnerPlate:16
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+
+// ------->
+
+QUEST   #  TA39     #  Reset the Builders Chain # 1023
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA35
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  ALL      #  AccWorkbench:1 # BirchDesk:1 # OakChest:4
+REWARD  #  RESET    #  TA03
+REWARD  #  RESET    #  TA30
+REWARD  #  RESET    #  TA31
+REWARD  #  RESET    #  TA32
+REWARD  #  RESET    #  TA33
+REWARD  #  RESET    #  TA34
+REWARD  #  RESET    #  TA35
+
+// ------->
+// Orchard Chain
+// ------->
+
+QUEST   #  TA04     #  Orchard Madness # 1024
+TEXT    #  If you want to take it seriously, you can start selling fruits.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  Grafter:1
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:50
+REWARD  #  RESET    #  TA49
+
+// ------->
+
+QUEST   #  TA40     #  Cherry Time # 1025
+TEXT    #  First supply requires some cherry fruits.
+PREREQ  #  AND      #  TA04
+
+TASK    #  GIVE		#  FCherry:640
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+
+// ------->
+
+QUEST   #  TA41     #  Are you Nuts # 1026
+TEXT    #  Now chestnuts.
+PREREQ  #  AND      #  TA40
+
+TASK    #  GIVE		#  FChestnut:1280
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:750
+
+// ------->
+
+QUEST   #  TA42     #  Dates for everybody # 1027
+TEXT    #  Supply of dates please.
+PREREQ  #  AND      #  TA41
+
+TASK    #  GIVE		#  FCDate:800
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+
+// ------->
+
+QUEST   #  TA43     #  Liqor Delivery # 1028
+TEXT    #  For what somebody wants crates full of plums is NOT a mystery.
+PREREQ  #  AND      #  TA42
+
+TASK    #  GIVE		#  FCPlum:1000
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+
+// ------->
+
+QUEST   #  TA49     #  Reset the Orchard Chain # 1029
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA43
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  ALL      #  HoneyedSlice:8
+REWARD  #  RESET    #  TA04
+REWARD  #  RESET    #  TA40
+REWARD  #  RESET    #  TA41
+REWARD  #  RESET    #  TA42
+REWARD  #  RESET    #  TA43
+
+// ------->
+// Cheff Chain
+// ------->
+
+QUEST   #  TA05     #  Chef of the year # 1030
+TEXT    #  With professional kitchen, and enough imagination... you can get much more profit then just with selling basic resources.
+PREREQ  #  AND      #  TA00
+
+TASK    #  GIVE		#  Toaster:1
+REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:250
+REWARD  #  RESET    #  TA59
+
+// ------->
+
+QUEST   #  TA50     #  Toasts # 10301
+TEXT    #  Le's do some slow start
+PREREQ  #  AND      #  TA05
+
+TASK    #  GIVE		#  HCToast01:5  #  HCToast02:5
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:300
+
+// ------->
+
+QUEST   #  TA51     #  Chefs Meals # 1032
+TEXT    #  After the fingerfoods time for some real meal.
+PREREQ  #  AND      #  TA50
+
+TASK    #  GIVE		#  HCLarge01:5  #  HCLarge02:5
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:400
+
+// ------->
+
+QUEST   #  TA52     #  Specialities # 1033
+TEXT    #  Getting more and more tasty.
+PREREQ  #  AND      #  TA51
+
+TASK    #  GIVE		#  HCLarge03:5  #  HCLarge04:5 #  HCLarge05:5
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:500
+
+// ------->
+
+QUEST   #  TA53     #  Feast Madness # 1034
+TEXT    #  Overeating is no problem in minecraft.
+PREREQ  #  AND      #  TA52
+
+TASK    #  GIVE		#  HCFeast01:5  #  HCFeast02:5
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:650
+
+// ------->
+
+QUEST   #  TA54     #  Sauces # 1035
+TEXT    #  Finishing secret is always the sauce.
+PREREQ  #  AND      #  TA53
+
+TASK    #  GIVE		#  HCSauce01:10 #  HCSauce02:10 #  HCSauce03:10 #  HCSauce04:10 #  HCSauce05:10
+REWARD  #  SCORE    #  SCORE:PUBLIC #  add:800
+
+// ------->
+
+QUEST   #  TA59     #  Reset the Chef Chain # 1036
+TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
+PREREQ  #  OR       #  TA54
+
+TASK    #  GIVE		#  Diamond:2
+REWARD  #  ALL      #  HCTurtle:2
+REWARD  #  RESET    #  TA05
+REWARD  #  RESET    #  TA50
+REWARD  #  RESET    #  TA51
+REWARD  #  RESET    #  TA52
+REWARD  #  RESET    #  TA53
+REWARD  #  RESET    #  TA54

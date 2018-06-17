@@ -31,15 +31,15 @@
     },
     {
       "Entity Class": "net.minecraft.entity.monster.EntityPolarBear",
-      "Weight": 100,
-      "Min Group Count": 5,
-      "Max Group Count": 10
+      "Weight": 50,
+      "Min Group Count": 1,
+      "Max Group Count": 2
     },
     {
       "Entity Class": "net.minecraft.entity.monster.EntitySnowman",
-      "Weight": 30,
-      "Min Group Count": 5,
-      "Max Group Count": 10
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     }
   ],
   "Spawnable Water Creatures": [

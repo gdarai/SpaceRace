@@ -1,0 +1,118 @@
+QUEST   #  H00      #  The Distant World # 800
+TEXT    #  Want to get to the Beta Star System? Your first destination there is the Distant World. Now, there are two Ways to get there. You can build the Uranium portal from the Nether, Or you can travel with your Warp Ship, if you will have the Distant World Orb.
+PREREQ  #  AND      #  G00  #  G30
+
+TASK    #  HAVE     #  DistantOrb
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  H10      #  The Ocean World # 801
+TEXT    #  Your next destination is the Ocean World. To get there, you will need the Ocean World Orb.
+PREREQ  #  AND      #  H00
+
+TASK    #  HAVE     #  OceanOrb
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  H20      #  The Mooshroom World # 802
+TEXT    #  Your last destination is the Mooshroom Moon, orbiting the Gas Giant. The Only known source of Aurorium in this corner of the universe. To get there, you will need the Mooshroom World Orb.
+PREREQ  #  AND      #  H10
+
+TASK    #  HAVE     #  MooshroomOrb
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  H30      #  Winning the Race # 803
+TEXT    #  Next to the Mooshroom Moon is a small rock called the Haven. Your final goal is to Terraform this rock and build there a Monument of Victory, using at least 1000 blocks of Violium, 1000 blocks of Astrium and 1000 blocks of Awakened Draconium. In the heart of the shrine must be displayed at least one Golden Player Head.
+PREREQ  #  AND      #  H20
+
+TASK    #  GIVE     #  goldHead:1 # egVioliomBl:1000 # egAstriumBl:1000 # eqAWDracoBl:1000
+REWARD  #  ALL      #  eqKey:1 # goldHead:1 # egVioliomBl:1000 # egAstriumBl:1000 # eqAWDracoBl:1000
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Hx00     #  Draconium Gear # 850
+TEXT    #  Using resources from this Hot World... You may be able of producing the Awakened Draconium Tools and Armor... and maybe go back and defeat the Chaos Guardian?
+PREREQ  #  AND      #  H00
+
+TASK    #  HAVE     #  deHelm1
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx01     #  Terraforming # 851
+TEXT    #  Advanced Rocketry Terraformer is a tool for planetary artists. Are you one of them?
+PREREQ  #  AND      #  H00
+
+TASK    #  HAVE     #  arTerra
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx02     #  Best Power Transfer # 852
+TEXT    #  You may be able to reach the Draconic Power Crystals... the most ultimate RF transfer technology in the universe.
+PREREQ  #  AND      #  H00
+
+TASK    #  HAVE     #  dePowerCry
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx10     #  Draconic Generator # 853
+TEXT    #  Burn the Awakened Draconium? Are you insane?
+PREREQ  #  AND      #  H10
+
+TASK    #  HAVE     #  deReactor
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx11     #  Draconic Teleporter # 854
+TEXT    #  Teleporters and Teleporting Gates? Are we this far?
+PREREQ  #  AND      #  H10
+
+TASK    #  HAVE     #  deTeleport
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx12     #  Staff of Power # 855
+TEXT    #  Did you ever felt infinitely powerful? Try this little one.
+PREREQ  #  AND      #  H10
+
+TASK    #  HAVE     #  deStaff
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx20     #  Ultimate Mob Farm # 856
+TEXT    #  There are no words to describe, what this thing can do. Just expect hordes and hordes of victims.
+PREREQ  #  AND      #  H20
+
+TASK    #  HAVE     #  deMobFarm
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx21     #  Advanced Teleporter # 857
+TEXT    #  There are no words to describe, what this thing can do. Just expect hordes and hordes of victims.
+PREREQ  #  AND      #  H20
+
+TASK    #  HAVE     #  deTeleport1
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4
+
+// ------->
+
+QUEST   #  Hx22     #  Dimensional Transciever # 858
+TEXT    #  What about sending your items across the dimensions? Do you want something like that?
+PREREQ  #  AND      #  H20
+
+TASK    #  HAVE     #  ioDimenTrans
+REWARD  #  PICK     #  HCSo10211:4 # HCSo10365:4 # dracoIngot:16 # maSuperSword:1 # RSInterface:2 # ioSpawner:1 # aaOreLens:1 # xpBottle:64 # FancyLamp:4

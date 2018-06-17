@@ -1,0 +1,68 @@
+LINE         #  0          #  Roadmap
+SIZE         #  2:2        #  50:50
+TEXT         #  Overall guide to this pack.
+
+QUEST        #  000        #  -40:0   	 #  30    #  ExtraLife			# main
+QUEST        #  010        #  -20:0      #  25    #  NetherStar			# main
+QUEST        #  020        #    0:0      #  25    #  GrassBlock			# main
+QUEST        #  030        #   20:0      #  25    #  SmoothEnd			# main
+QUEST        #  040        #   40:0      #  25    #  RocketEngine		# main
+QUEST        #  050        #   60:0      #  25    #  WarpCore			# main
+QUEST        #  060        #   80:0      #  25    #  EnderEye			# main
+QUEST        #  070        #  100:0      #  25    #  NetherStar			# main
+
+QUEST        #  1x1        #  -20:13     #  20    #  Skull
+QUEST        #  2x1        #  -20:-25    #  20    #  CoalOre
+QUEST        #  2x2        #  -10:-25    #  20    #  Dirt
+QUEST        #  2x3        #    0:-25    #  20    #  Dirt
+QUEST        #  2x4        #   10:-25    #  20    #  Dirt
+QUEST        #  2x5        #   20:-25    #  20    #  Dirt
+QUEST        #  2x6        #  -25:-13    #  20    #  Dirt
+QUEST        #  2x7        #  -15:-13    #  20    #  Dirt
+QUEST        #  2x8        #   -5:-13    #  20    #  Dirt
+QUEST        #  2x9        #    5:-13    #  20    #  Dirt
+QUEST        #  2x10       #   15:-13    #  20    #  Dirt
+QUEST        #  2x11       #   25:-13    #  20    #  Dirt
+
+QUEST        #  4x1        #   30:25     #  20    #  Dirt
+QUEST        #  4x2        #   40:25     #  20    #  Dirt
+QUEST        #  4x3        #   50:25     #  20    #  Dirt
+QUEST        #  5x1        #   50:-25    #  20    #  Dirt
+QUEST        #  5x2        #   60:-25    #  20    #  Dirt
+QUEST        #  5x3        #   70:-25    #  20    #  Dirt
+QUEST        #  5x4        #   50:-13    #  20    #  Dirt
+QUEST        #  5x5        #   60:-13    #  20    #  Dirt
+QUEST        #  5x6        #   70:-13    #  20    #  Dirt
+QUEST        #  7x1        #   90:25     #  20    #  Dirt
+QUEST        #  7x2        #  100:25     #  20    #  Dirt
+QUEST        #  7x3        #   90:13     #  20    #  Dirt
+QUEST        #  7x4        #  100:13     #  20    #  Dirt
+
+// ------------------>
+// Market A - lines are used for buying material for score
+// ------------------>
+
+LINE         #  MA         #  Buying Essentials
+SIZE         #  2:2        #  50:50
+TEXT         #  Concider this a market, where your seller is the audience. Show them something and if they will be fond of you, they may give you what you will ask for.
+
+QUEST        #  MA00        #    0:-25 	  #  30    #  Dirt         		 # main
+
+QUEST        #  MAxi00      #  -55:-5	  #  40    #  Dirt   			 # repeat:1000
+QUEST        #  MAxi01      #  -55:25	  #  40    #  Dirt   			 # repeat:1000
+QUEST        #  MAxi02      #  -25:-5	  #  40    #  Dirt     			 # repeat:1000
+QUEST        #  MAxi03      #  -25:25	  #  40    #  Dirt     			 # repeat:1000
+
+QUEST        #  MAxo00      #   80:-8     #  25    #  Dirt
+QUEST        #  MAxo01      #   80:8	  #  25    #  Dirt
+QUEST        #  MAxo02      #   60:-8	  #  25    #  Dirt
+QUEST        #  MAxo03      #   60:8	  #  25    #  Dirt
+QUEST        #  MAxo04      #   40:-8	  #  25    #  Dirt
+QUEST        #  MAxo05      #   40:8	  #  25    #  Dirt
+
+QUEST        #  MAxo10      #   80:22	  #  25    #  Dirt
+QUEST        #  MAxo11      #   80:38	  #  25    #  Dirt
+QUEST        #  MAxo12      #   60:22	  #  25    #  Dirt
+QUEST        #  MAxo13      #   60:38	  #  25    #  Dirt
+QUEST        #  MAxo14      #   40:22	  #  25    #  Dirt
+QUEST        #  MAxo15      #   40:38	  #  25    #  Dirt

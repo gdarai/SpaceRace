@@ -1,0 +1,184 @@
+QUEST   #  MA00     #  Spending Victory Points # 1100
+TEXT    #  Of course you can just pile up your victory points and at the end you will have the biggest score of all times. But, what if you could use those points to get some advantage over your competitors? Wait you don't know you have competitors? Well...
+
+TASK    #  TRIGGER
+REWARD  #  ALL      #  Coin:64
+
+// ---------->
+// -- Market In
+// ---------->
+
+QUEST   #  MAxi00   #  Zombies # 1104
+TEXT    #  You didn't think it will be just... Here you are, take it and go, did you? Well, to earn your entance to the market, you must entertain the audience first.\n\nIn this case by killing Zombies.
+PREREQ  #  AND      #  MA00
+
+TASK    #  HUNT		#  Zombie:5
+REWARD  #  ALL      #  Coin:1
+REWARD  #  ALL      #  Bread:1
+
+// ------->
+
+QUEST   #  MAxi01   #  Witches # 1105
+TEXT    #  You can hunt for witches if you prefer them...
+PREREQ  #  AND      #  MA00
+
+TASK    #  HUNT		#  Witch:3
+REWARD  #  ALL      #  Coin:1
+REWARD  #  ALL      #  Bread:1
+
+// ------->
+
+QUEST   #  MAxi02   #  Milk and Eggs # 1116
+TEXT    #  So ok, if you soo insist, you don't have to hunt. But it won't be cheap.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE     #  HCMilk:32 # spEgg:8 # Fish:8
+REWARD  #  ALL      #  Coin:1
+REWARD  #  ALL      #  Bread:1
+
+// ------->
+
+QUEST   #  MAxi03   #  Sheep Hearder # 1117
+TEXT    #  And the gold third way is to hunt your own animals, like sheeps.
+PREREQ  #  AND      #  MA00
+
+TASK    #  HUNT		#  Sheep:1
+TASK    #  GIVE     #  spWool:16
+REWARD  #  ALL      #  Coin:1
+REWARD  #  ALL      #  Bread:1
+
+// ---------->
+// -- Market Out
+// ---------->
+
+QUEST   #  MAxo00   #  Seeds # 1106
+TEXT    #  Are you missing some seeds? We have some available. Come and pick.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE     #  Bread:1  #  Coin:2
+TASK    #  TRIGGER
+
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo00
+
+// ------->
+
+QUEST   #  MAxo01   #  Food # 1107
+TEXT    #  Soup? Sui vous plait?
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE     #  Bread:1  #  Coin:3
+TASK    #  TRIGGER
+
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo01
+
+// ------->
+
+QUEST   #  MAxo02   #  Materials # 1108
+TEXT    #  Why spend time digging dirt? Would you like to buy some instead?
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE     #  Bread:1  #  Coin:4
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo02
+
+// ------->
+
+QUEST   #  MAxo03   #  Precious Materials # 1109
+TEXT    #  This is the place to buy the shiny little things.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:5
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo03
+
+// ------->
+
+QUEST   #  MAxo04   #  Simple Products # 1115
+TEXT    #  Need some Leather? Cloth? Treated Wood? We have some for you.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:3
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo04
+
+// ------->
+
+QUEST   #  MAxo05   #  Beeing Steadfast issue # 1118
+TEXT    #  Well, come bees can give you hell. But if you want... at least the Steadfast are here for sale.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:4
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo05
+
+// ------->
+
+QUEST   #  MAxo10   #  Machine Components # 1110
+TEXT    #  When the clock engine breaks and you need a quick replacement part, you come here.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:2
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo10
+
+// ------->
+
+QUEST   #  MAxo11   #  Machine Parts # 1111
+TEXT    #  Maybe even some full machine parts are on sale today.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:4
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo11
+
+// ------->
+
+QUEST   #  MAxo12   #  Fluid Transporting # 1112
+TEXT    #  Do you want to buy some basic fluid storage and transport?
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:3
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo12
+
+// ------->
+
+QUEST   #  MAxo13   #  Forestry Machines # 1113
+TEXT    #  Our viewers love watching you... you can pick your reward for their happiness.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:5
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo13
+
+// ------->
+
+QUEST   #  MAxo14   #  Powering Up # 1114
+TEXT    #  Need some more power gadgets?
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:10
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo14
+
+// ------->
+
+QUEST   #  MAxo15   #  Beeing Tropical issue # 1119
+TEXT    #  Well, come bees can give you hell. But if you want... at least the mutated Tropical bees are here for sale.
+PREREQ  #  AND      #  MA00
+
+TASK    #  GIVE		#  Bread:1  #  Coin:8
+TASK    #  TRIGGER
+REWARD  #  PICK     #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt  #  Dirt
+REWARD  #  RESET    #  MAxo15

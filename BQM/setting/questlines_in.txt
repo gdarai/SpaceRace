@@ -1,0 +1,454 @@
+LINE         #  0          #  Roadmap
+SIZE         #  2:2        #  50:50
+TEXT         #  Overall guide to this pack.
+
+QUEST        #  000        #  -40:0   	 #  30    #  ExtraLife			# main
+QUEST        #  010        #  -20:0      #  25    #  NetherStar			# main
+QUEST        #  020        #    0:0      #  25    #  GrassBlock			# main
+QUEST        #  030        #   20:0      #  25    #  SmoothEnd			# main
+QUEST        #  040        #   40:0      #  25    #  RocketEngine		# main
+QUEST        #  050        #   60:0      #  25    #  WarpCore			# main
+QUEST        #  060        #   80:0      #  25    #  EnderEye			# main
+QUEST        #  070        #  100:0      #  25    #  NetherStar			# main
+
+QUEST        #  1x1        #  -20:13     #  20    #  Skull
+QUEST        #  2x1        #  -20:-25    #  20    #  CoalOre
+QUEST        #  2x2        #  -10:-25    #  20    #  SaplingOak
+QUEST        #  2x3        #    0:-25    #  20    #  Poppy
+QUEST        #  2x4        #   10:-25    #  20    #  SaplingJungle
+QUEST        #  2x5        #   20:-25    #  20    #  DeadBush
+QUEST        #  2x6        #  -25:-13    #  20    #  SaplingAcacia
+QUEST        #  2x7        #  -15:-13    #  20    #  Ice
+QUEST        #  2x8        #   -5:-13    #  20    #  Cobble
+QUEST        #  2x9        #    5:-13    #  20    #  SaplingSpruce
+QUEST        #  2x10       #   15:-13    #  20    #  HardenedClay
+QUEST        #  2x11       #   25:-13    #  20    #  Lillypad
+
+QUEST        #  4x1        #   30:25     #  20    #  MoonTurf
+QUEST        #  4x2        #   40:25     #  20    #  FireworkStar
+QUEST        #  4x3        #   50:25     #  20    #  Firework
+QUEST        #  5x1        #   50:-25    #  20    #  LavaBlock
+QUEST        #  5x2        #   60:-25    #  20    #  SaplingAlien
+QUEST        #  5x3        #   70:-25    #  20    #  Diamond
+QUEST        #  5x4        #   50:-13    #  20    #  Sugar
+QUEST        #  5x5        #   60:-13    #  20    #  RedSand
+QUEST        #  5x6        #   70:-13    #  20    #  EndStone
+QUEST        #  7x1        #   90:25     #  20    #  Obsidian
+QUEST        #  7x2        #  100:25     #  20    #  Fish
+QUEST        #  7x3        #   90:13     #  20    #  FireworkStar
+QUEST        #  7x4        #  100:13     #  20    #  Mycelium
+
+// ------->
+
+LINE         #  A          #  Pre-Industrial
+SIZE         #  2:2        #  50:50
+TEXT         #  From first night to Smeltery. This is your first bunch of guides to follow.
+
+QUEST        #  A00        #  -40:0   	 #  30    #  SleepingBag		# main
+QUEST        #  A10        #  -20:0      #  25    #  TTable				# main
+QUEST        #  A20        #    0:-10    #  25    #  Wheet				# main
+QUEST        #  A21        #    0:10     #  25    #  Rope				# main
+QUEST        #  A30        #   20:0      #  25    #  HoneyComb			# main
+QUEST        #  A40        #   40:0      #  25    #  Torch				# main
+QUEST        #  A50        #   60:0      #  30    #  SmelteryController	# main
+
+QUEST        #  Ax10       #  -30:25     #  20    #  Furnace
+QUEST        #  Ax11       #  -20:25     #  20    #  Clay
+QUEST        #  Ax12       #  -10:25     #  20    #  Flint
+QUEST        #  Ax20       #  -10:-25    #  20    #  Charcoal
+QUEST        #  Ax21       #    0:-25    #  20    #  CraftingFrame
+QUEST        #  Ax22       #   10:-25    #  20    #  Drawer
+QUEST        #  Ax30       #   10:25     #  20    #  TrPlank
+QUEST        #  Ax31       #   20:25     #  20    #  AACrate
+QUEST        #  Ax32       #   30:25     #  20    #  SmelteryTank
+QUEST        #  Ax33       #   30:-15    #  20    #  Punji
+QUEST        #  Ax50       #   50:-25    #  20    #  SmelteryTable
+QUEST        #  Ax51       #   60:-25    #  20    #  ConveyorBelt
+QUEST        #  Ax52       #   70:-25    #  20    #  HardendCap
+QUEST        #  Ax53       #   60:25     #  20    #  ToolForge
+
+// ------->
+
+LINE         #  B          #  Early-Industrial
+SIZE         #  2:2        #  50:50
+TEXT         #  You cannot build industry without some serious machinery and that cannot be build from sticks and leather. It is time for machines.
+
+QUEST        #  B00        #  -40:0   	 #  30    #  Gear		# main
+QUEST        #  B10        #  -20:0   	 #  25    #  Plate		# main
+QUEST        #  B20        #    0:0   	 #  25    #  ElTube		# main
+QUEST        #  B30        #   20:0   	 #  25    #  Carpenter	# main
+QUEST        #  B40        #   40:0   	 #  30    #  Steel		# main
+
+QUEST        #  Bx00       #  -40:-25 	 #  20    #  SoyMilk
+QUEST        #  Bx01       #  -30:-25 	 #  20    #  DrawerCont
+QUEST        #  Bx10       #  -20:25 	 #  20    #  Distributor
+QUEST        #  Bx20       #   -5:-25 	 #  20    #  FFarm
+QUEST        #  Bx21       #    5:-25 	 #  20    #  Centrifuge
+QUEST        #  Bx30       #   15:25 	 #  20    #  ShipWheel
+QUEST        #  Bx31       #   25:25 	 #  20    #  Eezo
+QUEST        #  Bx40       #   40:-25 	 #  20    #  WaterWheel
+QUEST        #  Bx41       #   30:-25 	 #  20    #  Circuit
+QUEST        #  Bx42       #   20:-25 	 #  20    #  MedKit
+QUEST        #  Bx43       #   40:25 	 #  20    #  RazorWire
+
+// ------->
+
+LINE         #  C          #  Unified-Electronics
+SIZE         #  2:2        #  50:50
+TEXT         #  Next step is heavy machinery. For that you will need some more sophisticated electronics then just electron tubes. It is time for controll circuits.
+
+QUEST        #  C00        #  -40:0   	 #  30    #  SmoothEnd	# main
+QUEST        #  C10        #  -20:0   	 #  25    #  ObsSword	# main
+QUEST        #  C20        #    0:0   	 #  25    #  FaradayCh	# main
+QUEST        #  C30        #   20:0   	 #  25    #  PallOre	# main
+QUEST        #  C40        #   40:0   	 #  25    #  IOCirc		# main
+QUEST        #  C50        #   60:0   	 #  25    #  Transistor	# main
+QUEST        #  C60        #   80:0   	 #  30    #  EngineGold	# main
+
+QUEST        #  Cx00        #  -40:-25 	 #  20    #  Rifle
+QUEST        #  Cx01        #  -30:-25 	 #  20    #  HoneyComb
+QUEST        #  Cx02        #  -20:-25 	 #  20    #  Hopper
+QUEST        #  Cx03        #  -40:25  	 #  20    #  Turret
+QUEST        #  Cx04        #  -30:25  	 #  20    #  Baloon
+QUEST        #  Cx05        #  -20:25  	 #  20    #  Battery
+QUEST        #  Cx10        #   -5:-25 	 #  20    #  Diamond
+QUEST        #  Cx30        #   15:-25 	 #  20    #  MagicSeed
+QUEST        #  Cx31        #   25:-25 	 #  20    #  MagicTool
+QUEST        #  Cx32        #   15:25  	 #  20    #  LaserTr
+QUEST        #  Cx33        #   25:25  	 #  20    #  ExpRod
+QUEST        #  Cx51        #   60:-25 	 #  20    #  DEChest
+QUEST        #  Cx52        #   60:25 	 #  20    #  AABlink
+QUEST        #  Cx53        #   50:25 	 #  20    #  IERadiator
+
+// ------->
+
+LINE         #  D          #  Early Space Age
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have all the tech. The only thing missing is some serious amount of resources and you can... Walk the Stars. Well, more like tiny steps at the beginning.
+
+QUEST        #  D00        #  -40:0   	 #  30    #  ARHelm			# main
+QUEST        #  D10        #  -20:-10  	 #  25    #  ARPad			# main
+QUEST        #  D11        #  -20:10   	 #  25    #  JerryCan		# main
+QUEST        #  D30        #    0:0   	 #  25    #  RocketEngine	# main
+QUEST        #  D40        #   20:0   	 #  25    #  MoonTurf		# main
+QUEST        #  D50        #   40:0   	 #  25    #  ARLens			# main
+QUEST        #  D60        #   60:0   	 #  30    #  ARSattelite	# main
+
+QUEST        #  Dx00        #  -40:25 	 #  20    #  Gear
+QUEST        #  Dx01        #  -30:25 	 #  20    #  MagicSeed
+QUEST        #  Dx30        #    0:-25 	 #  20    #  ARGadget
+QUEST        #  Dx40        #   25:-25 	 #  20    #  AACoffee
+QUEST        #  Dx41        #   15:-25 	 #  20    #  AACanola
+QUEST        #  Dx42        #   30:25 	 #  20    #  MPHelm
+QUEST        #  Dx43        #   20:25 	 #  20    #  LaserPwr
+QUEST        #  Dx44        #   10:25 	 #  20    #  Computer
+QUEST        #  Dx60        #   50:-25 	 #  20    #  Dilithium
+QUEST        #  Dx61        #   60:-25 	 #  20    #  ZombieGen
+QUEST        #  Dx62        #   60:25 	 #  20    #  ExpStand
+QUEST        #  Dx63        #   50:25 	 #  20    #  ARDataCab
+
+// ------->
+
+LINE         #  E          #  Beyond the Speed of Light
+SIZE         #  2:2        #  50:50
+TEXT         #  Some hard tasks stands between you and your first FTL Flight. Visit the infamous Asteroid Belt and with new materials, construct your own Warp Ship.
+
+QUEST        #  E00        #  -40:0   	 #  30    #  Manyullyn		# main
+QUEST        #  E10        #  -20:0  	 #  25    #  IronBlock		# main
+QUEST        #  E20        #    5:-15  	 #  25    #  SSChip			# main
+QUEST        #  E21        #    0:0   	 #  25    #  Ventilator		# main
+QUEST        #  E22        #    5:15   	 #  25    #  WarpCore		# main
+QUEST        #  E30        #   20:0   	 #  25    #  WorldOrbHW		# main
+QUEST        #  E40        #   40:0   	 #  25    #  UAVAssembler	# main
+QUEST        #  E50        #   58:-10  	 #  25    #  ARTower		# main
+QUEST        #  E51        #   58:10   	 #  25    #  ARIntake		# main
+QUEST        #  E60        #   80:0   	 #  30    #  Nitrogen		# main
+
+QUEST        #  Ex00        #  -40:25 	 #  20    #  IOVat
+QUEST        #  Ex01        #  -30:25 	 #  20    #  IOEngine
+QUEST        #  Ex02        #  -40:-25 	 #  20    #  Mutation
+QUEST        #  Ex03        #  -30:-25 	 #  20    #  Cloche
+QUEST        #  Ex60        #   80:-25 	 #  20    #  AALaserR
+QUEST        #  Ex61        #   70:-25 	 #  20    #  AASolar
+QUEST        #  Ex62        #   80:-15 	 #  20    #  AALaser2
+QUEST        #  Ex63        #   70:-15 	 #  20    #  AALamp
+QUEST        #  Ex64        #   80:25 	 #  20    #  AAFarmer
+QUEST        #  Ex65        #   70:25 	 #  20    #  ARMWPower
+QUEST        #  Ex66        #   80:15 	 #  20    #  ARElevator
+QUEST        #  Ex67        #   70:15 	 #  20    #  ARSpaceLaser
+
+// ------->
+
+LINE         #  F          #  Alpha Star System Planets
+SIZE         #  2:2        #  50:50
+TEXT         #  What will you discover when you will battle your way through the first Star System?
+
+QUEST        #  F00        #  -30:0   	 #  30    #  LavaOrb		# main
+QUEST        #  F10        #  -10:0   	 #  25    #  AlienOrb		# main
+QUEST        #  F20        #   10:-10  	 #  25    #  IridiumDust	# main
+QUEST        #  F21        #   10:10   	 #  25    #  arCrystal		# main
+QUEST        #  F30        #   30:0   	 #  30    #  MysticalOrb	# main
+
+QUEST        #  Fx00       #  -60:-10  	 #  20    #  aaGrinder
+QUEST        #  Fx01       #  -50:-10  	 #  20    #  ioCapac0
+QUEST        #  Fx02       #  -60:0   	 #  20    #  gdFrame
+QUEST        #  Fx03       #  -50:0   	 #  20    #  ioTank
+QUEST        #  Fx04       #  -55:10   	 #  20    #  DRCrystal
+QUEST        #  Fx20       #  -20:-25  	 #  20    #  arReactor
+QUEST        #  Fx21       #  -10:-25  	 #  20    #  ioCapac1
+QUEST        #  Fx22       #    0:-25  	 #  20    #  aaLeafGen
+QUEST        #  Fx23       #   10:-25  	 #  20    #  aaPhbooster
+QUEST        #  Fx24       #   20:-25  	 #  20    #  ioChest
+QUEST        #  Fx25       #   30:-25  	 #  20    #  yetaWrench
+QUEST        #  Fx26       #   40:-25  	 #  20    #  ioInventory
+QUEST        #  Fx210      #  -15:25  	 #  20    #  aaEmpower
+QUEST        #  Fx211      #   -5:25  	 #  20    #  ioCapac2
+QUEST        #  Fx212      #    5:25  	 #  20    #  ioSolar
+QUEST        #  Fx213      #   15:25  	 #  20    #  rsIron
+QUEST        #  Fx214      #   25:25  	 #  20    #  aaPhantomF
+QUEST        #  Fx215      #   35:25  	 #  20    #  arSpaceMine
+QUEST        #  Fx30       #   60:-10  	 #  20    #  dePowerS
+QUEST        #  Fx31       #   60:0   	 #  20    #  ioEnchanter
+QUEST        #  Fx32       #   60:10  	 #  20    #  ioFarm
+QUEST        #  Fx33       #   50:-10  	 #  20    #  ioTravelStaff
+QUEST        #  Fx34       #   50:0   	 #  20    #  Mutation
+QUEST        #  Fx35       #   50:10  	 #  20    #  aaOreLens
+
+// ------->
+
+LINE         #  G          #  Nether and End
+SIZE         #  2:2        #  50:50
+TEXT         #  Heaven and Hell lies in between the Alpha and Beta Star Systems. To get to the latter you must visit them both.
+
+QUEST        #  G00        #  -20:0   	 #  30    #  Nether		# main
+QUEST        #  G30        #   20:0   	 #  30    #  TheEnd		# main
+
+QUEST        #  Gx00       #  -60:-5   	 #  20    #  maSuperSword
+QUEST        #  Gx01       #  -60:5   	 #  20    #  rsDiamond
+QUEST        #  Gx02       #  -50:-5   	 #  20    #  ioSpawner
+QUEST        #  Gx03       #  -50:5   	 #  20    #  gdLabware
+QUEST        #  Gx30       #   60:-5   	 #  20    #  deCrafting
+QUEST        #  Gx31       #   60:5   	 #  20    #  deHelm0
+QUEST        #  Gx32       #   50:-5   	 #  20    #  deWeather
+QUEST        #  Gx33       #   50:5   	 #  20    #  ioTelepad
+
+// ------->
+
+LINE         #  H          #  Beta Star System
+SIZE         #  2:2        #  50:50
+TEXT         #  You are finally there. But your work is not over yet.
+
+QUEST        #  H00        #  -30:0   	 #  30    #  DistantOrb		# main
+QUEST        #  H10        #  -10:0   	 #  25    #  OceanOrb		# main
+QUEST        #  H20        #   10:0   	 #  25    #  MooshroomOrb	# main
+QUEST        #  H30        #   30:0   	 #  30    #  goldHead		# main
+
+QUEST        #  Hx00       #  -40:-25 	 #  20    #  deHelm1
+QUEST        #  Hx01       #  -30:-25  	 #  20    #  arTerra
+QUEST        #  Hx02       #  -20:-25  	 #  20    #  dePowerCry
+QUEST        #  Hx10       #  -20:25   	 #  20    #  deReactor
+QUEST        #  Hx11       #  -10:25  	 #  20    #  deTeleport
+QUEST        #  Hx12       #    0:25  	 #  20    #  deStaff
+QUEST        #  Hx20       #    0:-25  	 #  20    #  deMobFarm
+QUEST        #  Hx21       #   10:-25  	 #  20    #  deTeleport1
+QUEST        #  Hx22       #   20:-25  	 #  20    #  ioDimenTrans
+
+// ------------------>
+// Trade A Trade lines are used for obtaining score through common tasks.
+// ------------------>
+
+LINE         #  TA         #  Basic Trading
+SIZE         #  2:2        #  50:50
+TEXT         #  Some players want to be more farmers then explorers and so they can. Here is a whole quest line about making Quisine. If you want to entertain our viewers by cooking. Here is your opportunity.
+
+QUEST        #  TA00        #  -40:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  TA01        #  -40:0      #  30    #  WaterBowl			# main
+QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed
+QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
+QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
+QUEST        #  TA13        #   40:0      #  25    #  Wheet
+QUEST        #  TA14        #   60:0      #  25    #  HCPear
+QUEST        #  TA19        #  100:0      #  30    #  Diamond			# main
+
+QUEST        #  TA02        #  -40:15     #  30    #  FlintPickAxe		# main
+QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel
+QUEST        #  TA21        #    0:15  	  #  25    #  AluOre
+QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust
+QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack
+QUEST        #  TA24        #   60:15     #  25    #  GoldOre
+QUEST        #  TA25        #   80:15     #  25    #  DracoDust
+QUEST        #  TA29        #  100:15     #  30    #  Diamond			# main
+
+QUEST        #  TA03        #  -40:30     #  30    #  ChiselTool		# main
+QUEST        #  TA30        #  -20:30     #  25    #  BrickClay
+QUEST        #  TA31        #    0:30  	  #  25    #  OakStais
+QUEST        #  TA32        #   20:30     #  25    #  GetLog3
+QUEST        #  TA33        #   40:30     #  25    #  CelticMossy
+QUEST        #  TA34        #   60:30     #  25    #  BirchDesk
+QUEST        #  TA35        #   80:30     #  25    #  Typewriter
+QUEST        #  TA39        #  100:30     #  30    #  Diamond			# main
+
+QUEST        #  TA04        #  -40:45     #  30    #  Grafter	    	# main
+QUEST        #  TA40        #  -20:45     #  25    #  FCherry
+QUEST        #  TA41        #    0:45  	  #  25    #  FChestnut
+QUEST        #  TA42        #   20:45     #  25    #  FDate
+QUEST        #  TA43        #   40:45     #  25    #  FPlum
+QUEST        #  TA49        #  100:45     #  30    #  Diamond			# main
+
+QUEST        #  TA05        #  -40:60     #  30    #  Toaster	    	# main
+QUEST        #  TA50        #  -20:60     #  25    #  HCToast01
+QUEST        #  TA51        #    0:60  	  #  25    #  HCLarge01
+QUEST        #  TA52        #   20:60     #  25    #  HCLarge03
+QUEST        #  TA53        #   40:60     #  25    #  HCFeast01
+QUEST        #  TA54        #   60:60     #  25    #  HCSauce02
+QUEST        #  TA59        #  100:60     #  30    #  Diamond			# main
+
+// ------------------>
+// Market A Market lines are used for buying material for score
+// ------------------>
+
+LINE         #  MA         #  Buying Essentials
+SIZE         #  2:2        #  50:50
+TEXT         #  Concider this a market, where your seller is the audience. Show them something and if they will be fond of you, they may give you what you will ask for.
+
+QUEST        #  MA00        #    0:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  MAxi00      #  -55:-5	  #  40    #  HZombie			# chain # repeat:100
+QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			# chain # repeat:100
+QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			# chain # repeat:100
+QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			# chain # repeat:100
+
+QUEST        #  MAxo00      #   40:-10    #  20    #  HCSeed			# chain # repeat:100
+QUEST        #  MAxo01      #   40:0	  #  20    #  HCMealL			# chain # repeat:100
+QUEST        #  MAxo02      #   40:10	  #  20    #  Ore00				# chain # repeat:100
+QUEST        #  MAxo03      #   40:20	  #  20    #  Ore22				# chain # repeat:100
+QUEST        #  MAxo04      #   40:30	  #  20    #  gearCopper		# chain # repeat:100
+QUEST        #  MAxo05      #   40:40	  #  20    #  engBlLight		# chain # repeat:100
+
+QUEST        #  MAxo06      #   80:-10	  #  20    #  bucket			# chain # repeat:100
+QUEST        #  MAxo07      #   80:0	  #  20    #  Carpenter			# chain # repeat:100
+QUEST        #  MAxo08      #   80:10	  #  20    #  iePower02			# chain # repeat:100
+QUEST        #  MAxo09      #   80:20	  #  20    #  spTorch			# chain # repeat:100
+QUEST        #  MAxo10      #   80:30	  #  20    #  BeeHouse			# chain # repeat:100
+QUEST        #  MAxo11      #   80:40	  #  20    #  BeeHouse			# chain # repeat:100
+
+// ------------------>
+// Trade B Trade lines are used for obtaining score through common tasks.
+// ------------------>
+
+LINE         #  TB         #  Space Trading
+SIZE         #  2:2        #  50:50
+TEXT         #  Like basic trading but in space. It has all the B's. It is bigger, brighter, better and bolder.
+
+QUEST        #  TB00        #  -40:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  TB01        #  -40:0      #  30    #  ARPresTank		# main
+QUEST        #  TB10        #  -20:0	  #  25    #  HootchTank
+QUEST        #  TB11        #    0:0   	  #  25    #  NutrientTank
+QUEST        #  TB12        #   20:0      #  25    #  CloudTank
+QUEST        #  TB19        #  100:0      #  30    #  Diamond			# main
+
+QUEST        #  TB02        #  -40:15     #  30    #  GoldenFrame		# main
+QUEST        #  TB20        #  -20:15     #  25    #  MoonTurf
+QUEST        #  TB21        #    0:15  	  #  25    #  DilithiumCrystal
+QUEST        #  TB22        #   20:15     #  25    #  AlienWood
+QUEST        #  TB23        #   40:15     #  25    #  Geode
+QUEST        #  TB29        #  100:15     #  30    #  Diamond			# main
+
+QUEST        #  TB03        #  -40:30     #  30    #  Gear      		# main
+QUEST        #  TB30        #  -20:30     #  25    #  gearInvar
+QUEST        #  TB31        #    0:30  	  #  25    #  ManyullynSword
+QUEST        #  TB32        #   20:30     #  25    #  TrackHigh
+QUEST        #  TB33        #   40:30     #  25    #  Rplate5
+QUEST        #  TB39        #  100:30     #  30    #  Diamond			# main
+
+QUEST        #  TB04        #  -40:45     #  30    #  IronSword	    	# main
+QUEST        #  TB40        #  -20:45     #  25    #  DragonHeart
+QUEST        #  TB41        #    0:45  	  #  25    #  endEgg
+QUEST        #  TB42        #   20:45     #  25    #  ChaosShard
+QUEST        #  TB49        #  100:45     #  30    #  Diamond			# main
+
+// ------------------>
+// Market B
+// ------------------>
+
+LINE         #  MB         #  Buying Space Items
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have some experience with market... here is advanced market for you Space travelling folk.
+
+QUEST        #  MB00        #  -40:-25 	  #  30    #  NetherStar		# main
+QUEST        #  MBreset     #   50:-25    #  30    #  WaterBowl			# main # chain
+QUEST        #  MBres2      #    0:-25    #  30    #  Skull  		  	# main # chain
+QUEST        #  MBhalf      #    0:10     #  30    #  OnTheWay2			# main # chain
+
+QUEST        #  MBxi00      #  -55:-5	  #  40    #  GhastTear			# chain
+QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			  # chain
+QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2 			# chain
+QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal   	# chain
+
+QUEST        #  MBxo00      #   40:-10    #  20    #  OxygenTank		# chain
+QUEST        #  MBxo01      #   60:-10    #  20    #  DilithiumTank	    # chain
+QUEST        #  MBxo02      #   40:0      #  20    #  dataUnit0 		# chain
+QUEST        #  MBxo03      #   60:0      #  20    #  MASeed00  		# chain
+QUEST        #  MBxo04      #   40:10     #  20    #  Cloche  	    	# chain
+QUEST        #  MBxo05      #   60:10     #  20    #  TripleBatFull 	# chain
+QUEST        #  MBxo06      #   40:20     #  20    #  IOCrafter  		# chain
+QUEST        #  MBxo07      #   60:20     #  20    #  ARFrame  	    	# chain
+QUEST        #  MBxo08      #   50:30     #  20    #  ARoxy2      		# chain
+
+// ------------------>
+// Hoarding quests
+// ------------------>
+
+LINE         #  HA         #  Hoading for beginners
+SIZE         #  2:2        #  50:50
+TEXT         #  What would it be if this Questing Modpack had no hoarding quests?
+
+QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main
+QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main
+QUEST        #  HA20        #   10:-15 	  #  40    #  SoulSand  		# main
+QUEST        #  HA30        #   40:-15 	  #  40    #  BaseSeed  		# main
+
+QUEST        #  HAx0        #  -58:10	  #  25    #  SearedFurnace
+QUEST        #  HAx1        #  -42:10	  #  25    #  HEggplant
+QUEST        #  HAx2        #  -58:30	  #  25    #  Fish
+QUEST        #  HAx3        #  -42:30	  #  25    #  BrickClay
+
+QUEST        #  HAx10       #  -28:10	  #  25    #  HZombie
+QUEST        #  HAx11       #  -12:10	  #  25    #  Reef0
+QUEST        #  HAx12       #  -28:30	  #  25    #  RabbitFoot
+QUEST        #  HAx13       #  -12:30	  #  25    #  ObsidianShard
+
+QUEST        #  HAx20       #    2:10	  #  25    #  ElTubeLapis
+QUEST        #  HAx21       #   18:10	  #  25    #  RazorWire
+QUEST        #  HAx22       #    2:30	  #  25    #  ElevatorTrack
+QUEST        #  HAx23       #   18:30	  #  25    #  IceSpikes
+
+QUEST        #  HAx30       #   32:10	  #  25    #  MagmaSapling
+QUEST        #  HAx31       #   48:10	  #  25    #  NetherStar
+QUEST        #  HAx32       #   32:30	  #  25    #  AbyssumDust
+QUEST        #  HAx33       #   48:30	  #  25    #  LavaBlock
+
+// ------------------>
+// Cheat lines are used when nothing else works
+// ------------------>
+
+LINE         #  CH         #  Cheats
+SIZE         #  2:2        #  50:50
+TEXT         #  You should not open this tab unless you feel REALLY REALLY in deep trouble.
+
+QUEST        #  CHreset     #    0:-25 	  #  30    #  WaterBowl  		# main
+
+QUEST        #  CH1         #  -30:-20    #  20    #  CHboat
+QUEST        #  CH2         #  -45:-20    #  20    #  Mutation
+QUEST        #  CH3         #  -45:-5     #  20    #  LemonFruit
+QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain
+
+QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
+QUEST        #  CH11        #   15:-20    #  20    #  CHglider
+QUEST        #  CH12        #   45:-20    #  20    #  CHengine
+QUEST        #  CH13        #   15:-5     #  20    #  MasterCrystal
+QUEST        #  CH16        #   25:-5     #  20    #  InfArmor1
+QUEST        #  CH15        #   35:-5     #  20    #  DRCrystal
+QUEST        #  CH14        #   45:-5     #  20    #  DragonHeart

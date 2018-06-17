@@ -1,0 +1,870 @@
+LOC  #  Moon              #  0:1000:100:1000        #  10
+
+// ------->
+
+// Quests Test
+ITEM  #  WoodShears     #  woodenshears:wshears
+ITEM  #  SleepingBag    #  sleepingbag:sleepingbag
+ITEM  #  Bread          #  minecraft:bread
+ITEM  #  Dirt           #  minecraft:dirt
+ITEM  #  DryingRack     #  tconstruct:rack:1
+ITEM  #  DriedBrick     #  tconstruct:materials:2
+ITEM  #  Furnace        #  minecraft:furnace
+ITEM  #  OakLog         #  minecraft:log:0
+ITEM  #  SaplingOak     #  minecraft:sapling
+ITEM  #  SaplingSpruce  #  minecraft:sapling:1
+ITEM  #  SaplingBirch   #  minecraft:sapling:2
+ITEM  #  SaplingJungle  #  minecraft:sapling:3
+ITEM  #  SaplingAcacia  #  minecraft:sapling:4
+
+// Quests 0
+ITEM  #  ExtraLife	 	#  betterquesting:extra_life
+ITEM  #  NetherStar	 	#  minecraft:nether_star
+ITEM  #  GrassBlock	 	#  minecraft:grass
+ITEM  #  SmoothEnd	 	#  tp:reinforced_glass
+ITEM  #  RocketEngine 	#  advancedrocketry:advRocketmotor
+ITEM  #  WarpCore	 	#  advancedrocketry:warpCore
+ITEM  #  EnderEye	 	#  minecraft:ender_eye
+
+ITEM  #  Skull			#  minecraft:skull
+ITEM  #  CoalOre		#  minecraft:coal_ore
+ITEM  #  Poppy			#  minecraft:red_flower
+ITEM  #  DeadBush		#  minecraft:deadbush
+ITEM  #  Ice			#  minecraft:ice
+ITEM  #  Cobble			#  minecraft:cobblestone
+ITEM  #  HardenedClay	#  minecraft:stained_hardened_clay:1
+ITEM  #  Lillypad   	#  minecraft:waterlily
+
+ITEM  #  MoonTurf		#  advancedrocketry:moonTurf
+ITEM  #  FireworkStar	#  minecraft:firework_charge
+ITEM  #  Firework		#  minecraft:fireworks
+ITEM  #  LavaBlock		#  minecraft:lava_bucket
+ITEM  #  SaplingAlien	#  advancedrocketry:alienSapling
+ITEM  #  Diamond		#  minecraft:diamond
+ITEM  #  Sugar			#  minecraft:sugar
+ITEM  #  RedSand		#  advancedrocketry:hotTurf
+ITEM  #  EndStone		#  minecraft:end_stone
+ITEM  #  Obsidian		#  minecraft:obsidian
+ITEM  #  Fish			#  minecraft:fish
+ITEM  #  Mycelium		#  minecraft:mycelium
+
+// Quests A
+ITEM  #  TTable    		#  tconstruct:tooltables
+ITEM  #  Wheet    		#  minecraft:wheat
+ITEM  #  Rope    		#  immersiveengineering:wirecoil:3
+ITEM  #  HoneyComb    	#  forestry:beeCombs
+ITEM  #  BeeHouse       #  forestry:bee_house
+ITEM  #  Torch    		#  minecraft:torch
+ITEM  #  SmelteryController	#  tconstruct:smeltery_controller
+ITEM  #  Clay    		#  minecraft:clay_ball
+ITEM  #  Flint    		#  minecraft:flint
+ITEM  #  Charcoal    	#  minecraft:coal:1
+ITEM  #  CraftingFrame	#  supercraftingframe:super_crafting_frame
+ITEM  #  Drawer    		#  storagedrawers:basicDrawers
+ITEM  #  TrPlank    	#  immersiveengineering:treatedWood
+ITEM  #  AACrate    	#  actuallyadditions:blockGiantChestLarge
+ITEM  #  SmelteryTank	#  tconstruct:seared_tank
+ITEM  #  SmelteryTable	#  tconstruct:casting
+ITEM  #  ConveyorBelt	#  immersiveengineering:conveyor	#	NBT:{"conveyorType:8": "immersiveengineering:uncontrolled"}
+ITEM  #  HardendCap  	#  harvestcraft:hardenedleatherhelmitem
+ITEM  #  HardendLeather #  harvestcraft:hardenedleatheritem
+ITEM  #  Punji		  	#  tconstruct:punji
+ITEM  #  ToolForge	 	#  tconstruct:toolforge				#	NBT:{"textureBlock:10": {"id:8": "tconstruct:metal", "Count:1": 1, "Damage:2": 3 }}
+ITEM  #  WoodToughRod   #  tconstruct:tough_tool_rod        #   NBT:{ "Material:8": "wood" }
+
+ITEM  #  HcCandle	  	#  harvestcraft:candledeco2
+ITEM  #  FrBee0 	  	#  forestry:beehives:0
+ITEM  #  FrBee1 	  	#  forestry:beehives:1
+ITEM  #  FrBee2 	  	#  forestry:beehives:2
+ITEM  #  FrBee3 	  	#  forestry:beehives:3
+ITEM  #  FrBee4 	  	#  forestry:beehives:5
+ITEM  #  FrBee5 	  	#  forestry:beehives:6
+ITEM  #  HcBeeHive	  	#  harvestcraft:beehive
+
+// Quests B
+ITEM  #  Gear    		#  enderio:itemMachinePart:1
+ITEM  #  Plate    		#  railcraft:plate:3
+ITEM  #  ElTube    		#  forestry:thermionicTubes:2
+ITEM  #  Carpenter    	#  forestry:carpenter
+ITEM  #  Steel    		#  chisel:blockSteel
+ITEM  #  SoyMilk		#  harvestcraft:soymilkitem
+ITEM  #  DrawerCont 	#  storagedrawers:controller
+ITEM  #  FFarm    		#  forestry:ffarm					#	NBT:{"FarmBlock:4": 0}
+ITEM  #  Circuit    	#  forestry:chipsets				#	NBT:{"T:2": 0}
+ITEM  #  Eezo			#  taiga:eezo_ingot
+ITEM  #  ShipWheel		#  davincisvessels:marker
+ITEM  #  WaterWheel		#  immersiveengineering:woodenDevice1
+ITEM  #  MedKit			#  tp:med_kit
+ITEM  #  Centrifuge		#  forestry:centrifuge
+ITEM  #  Distributor	#  immersiveengineering:woodenDevice0:3
+ITEM  #  RazorWire		#  immersiveengineering:metalDecoration2:5
+
+ITEM  #  CastGear       #  tconstruct:cast_custom:4
+ITEM  #  CastPlate      #  tconstruct:cast_custom:3
+ITEM  #  SteelIngot     #  libvulpes:productingot:6
+ITEM  #  Presser        #  harvestcraft:presser
+ITEM  #  SoldIron       #  forestry:solderingIron
+ITEM  #  Revolver       #  immersiveengineering:revolver
+
+ITEM  #  SpawnB0        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Pig"}}
+ITEM  #  SpawnB1        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Cow"}}
+ITEM  #  SpawnB2        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Chicken"}}
+ITEM  #  SpawnB3        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Sheep"}}
+
+// Quests C
+ITEM  #  ObsSword		#  actuallyadditions:itemSwordObsidian
+ITEM  #  FaradayCh		#  immersiveengineering:faradaySuit_chest
+ITEM  #  PallOre		#  taiga:palladium_ore
+ITEM  #  IOCirc			#  advancedrocketry:ic:4
+ITEM  #  Transistor		#  opencomputers:material:7
+ITEM  #  EngineGold		#  libvulpes:advancedMotor
+ITEM  #  Rifle			#  immersiveengineering:railgun
+ITEM  #  Hopper			#  minecraft:hopper
+ITEM  #  Turret			#  immersiveengineering:metalDevice1:11
+ITEM  #  Baloon			#  immersiveengineering:clothDevice:1
+ITEM  #  Battery		#  actuallyadditions:itemBattery
+ITEM  #  MagicSeed		#  mysticalagriculture:aluminum_brass_seeds
+ITEM  #  MagicTool		#  mysticalagriculture:inferium_pickaxe
+ITEM  #  LaserTr		#  actuallyadditions:blockLaserRelayFluids
+ITEM  #  ExpRod			#  enderio:itemXpTransfer
+ITEM  #  Computer		#  opencomputers:case2
+ITEM  #  DEChest		#  draconicevolution:draconium_chest
+ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
+ITEM  #  IERadiator		#  immersiveengineering:metalDecoration0:7
+ITEM  #  CompMan	 	#  gbook:guidebook				#	NBT:{"Book:8":"gbook:computerBook.xml"}
+
+ITEM  #  GoldScythe		#  tp:golden_scythe
+ITEM  #  PrecAssembler  #  advancedrocketry:precisionassemblingmachine
+ITEM  #  Alveary        #  forestry:alveary.plain
+ITEM  #  DvBaloon		#  davincisvessels:balloon
+ITEM  #  Magnet         #  enderio:itemMagnet
+ITEM  #  BlazeRod       #  minecraft:blaze_rod
+ITEM  #  SeedNature     #  mysticalagriculture:nature_seeds
+ITEM  #  InfArmor       #  mysticalagriculture:inferium_armor_core
+
+ITEM  #  SpawnC0        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Horse"}}
+ITEM  #  SpawnC1        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Villager"}}
+ITEM  #  SpawnC2        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Slime"}}
+ITEM  #  SpawnC3        #  minecraft:spawn_egg   #	NBT:{"EntityTag:10": {"id:8":"Ozelot"}}
+
+// Quests D
+ITEM  #  ARHelm			#  advancedrocketry:spaceHelmet
+ITEM  #  ARPad			#  advancedrocketry:landingPad
+ITEM  #  JerryCan		#  immersiveengineering:jerrycan
+ITEM  #  ARLens			#  advancedrocketry:lens
+ITEM  #  ARSattelite	#  advancedrocketry:satellite
+ITEM  #  ARGadget		#  advancedrocketry:itemUpgrade:2
+ITEM  #  AACoffee		#  actuallyadditions:blockCoffeeMachine
+ITEM  #  AACanola		#  actuallyadditions:itemCanolaSeed
+ITEM  #  MPHelm			#  powersuits:powerArmorHead
+ITEM  #  LaserPwr		#  actuallyadditions:blockLaserRelay
+ITEM  #  Dilithium		#  libvulpes:productcrystal
+ITEM  #  ZombieGen		#  enderio:blockZombieGenerator
+ITEM  #  ExpStand		#  enderio:blockExperienceObelisk
+ITEM  #  ARDataCab		#  advancedrocketry:energyPipe
+
+ITEM  #  RocketFuelBucket #  advancedrocketry:bucketRocketFuel
+ITEM  #  ARRocketMachine  #  advancedrocketry:rocketBuilder
+ITEM  #  MeteoCobble    #  taiga:meteoritecobble_block
+ITEM  #  KarmeOre       #  taiga:karmesine_ore
+ITEM  #  SatOptScanner  #  advancedrocketry:satellitePrimaryFunction
+ITEM  #  SatPanel       #  advancedrocketry:satellitePowerSource
+ITEM  #  SatChip        #  advancedrocketry:satelliteIdChip
+ITEM  #  SatData        #  advancedrocketry:dataUnit
+ITEM  #  SatBuilder     #  advancedrocketry:satelliteBuilder
+ITEM  #  SatMonitor     #  advancedrocketry:satelliteControlCenter
+ITEM  #  SatBay         #  advancedrocketry:loader:1
+ITEM  #  RocketMonitor  #  advancedrocketry:monitoringStation
+ITEM  #  Linker         #  libvulpes:linker
+
+ITEM  #  SuitStation    #  advancedrocketry:suitWorkStation
+ITEM  #  GasFiller      #  advancedrocketry:oxygenCharger
+ITEM  #  Electrolyser   #  advancedrocketry:electrolyser
+ITEM  #  Observatory    #  advancedrocketry:observatory
+ITEM  #  DataProcessor  #  advancedrocketry:planetAnalyser
+ITEM  #  Drill          #  advancedrocketry:drill
+ITEM  #  FuelLoader     #  advancedrocketry:fuelingStation
+ITEM  #  ItemsUnloader  #  advancedrocketry:loader:2
+ITEM  #  IronSeeds      #  mysticalagriculture:iron_seeds
+ITEM  #  OilGenerator   #  actuallyadditions:blockOilGenerator
+ITEM  #  PowerTinkerTab #  powersuits:tile.tinkerTable
+
+// Quests E
+ITEM  #  Manyullyn		#  tconstruct:metal:2
+ITEM  #  IronBlock		#  minecraft:iron_block
+ITEM  #  SSChip			#  advancedrocketry:spaceStationChip
+ITEM  #  Ventilator		#  advancedrocketry:oxygenVent
+ITEM  #  WorldOrbHW		#  bqmie:icon_item:16
+ITEM  #  UAVAssembler	#  advancedrocketry:deployableRocketBuilder
+ITEM  #  ARTower		#  advancedrocketry:structureTower
+ITEM  #  ARIntake		#  advancedrocketry:intake
+ITEM  #  Nitrogen		#  advancedrocketry:bucketNitrogen
+
+ITEM  #  IOVat			#  enderio:blockVat
+ITEM  #  IOEngine		#  enderio:blockCombustionGenerator
+ITEM  #  Mutation		#  gendustry:Waste
+ITEM  #  Cloche			#  immersiveengineering:metalDevice1:13
+ITEM  #  AALaserR		#  actuallyadditions:blockAtomicReconstructor
+ITEM  #  AASolar		#  actuallyadditions:blockFurnaceSolar
+ITEM  #  AALaser2		#  actuallyadditions:blockLaserRelayAdvanced
+ITEM  #  AALamp			#  actuallyadditions:blockColoredLamp
+ITEM  #  AAFarmer		#  actuallyadditions:blockFarmer
+ITEM  #  ARMWPower		#  advancedrocketry:solarGenerator
+ITEM  #  ARElevator		#  advancedrocketry:spaceElevatorController
+ITEM  #  ARSpaceLaser	#  advancedrocketry:railgun
+
+ITEM  #  CobaltOre   	#  tconstruct:ore:0
+ITEM  #  SSBuilder   	#  advancedrocketry:stationBuilder
+ITEM  #  ARScrubber   	#  advancedrocketry:oxygenScrubber
+ITEM  #  ARPresTank     #  advancedrocketry:liquidTank
+ITEM  #  GEMutatron     #  gendustry:Mutatron
+ITEM  #  GEApiary       #  gendustry:IndustrialApiary
+ITEM  #  GEProducer     #  gendustry:MutagenProducer
+ITEM  #  AALampC        #  actuallyadditions:blockLampPowerer
+
+// Quests F
+ITEM  #  LavaOrb		#  bqmie:icon_item:14
+ITEM  #  AlienOrb		#  bqmie:icon_item:17
+ITEM  #  MysticalOrb	#  bqmie:icon_item:13
+ITEM  #  IridiumDust	#  libvulpes:productdust:10
+ITEM  #  arCrystal		#  advancedrocketry:crystal
+
+ITEM  #  aaGrinder		#  actuallyadditions:blockGrinder
+ITEM  #  ioCapac0		#  enderio:itemBasicCapacitor
+ITEM  #  gdFrame		#  gendustry:UpgradeFrame
+ITEM  #  ioTank			#  enderio:blockTank
+ITEM  #  arReactor		#  advancedrocketry:chemicalReactor
+ITEM  #  ioCapac1		#  enderio:itemBasicCapacitor:1
+ITEM  #  aaLeafGen		#  actuallyadditions:blockLeafGenerator
+ITEM  #  aaPhbooster	#  actuallyadditions:blockPhantomBooster
+ITEM  #  ioChest		#  enderio:darkSteel_chestplate
+ITEM  #  yetaWrench		#  enderio:itemYetaWrench
+ITEM  #  ioInventory	#  enderio:blockInventoryPanel
+ITEM  #  aaEmpower		#  actuallyadditions:blockEmpowerer
+ITEM  #  ioCapac2		#  enderio:itemBasicCapacitor:2
+ITEM  #  ioSolar		#  enderio:blockSolarPanel
+ITEM  #  rsIron			#  refinedstorage:processor:3
+ITEM  #  aaOreLens		#  actuallyadditions:itemMiningLens
+ITEM  #  dePowerS		#  draconicevolution:energy_storage_core
+ITEM  #  ioEnchanter	#  enderio:blockEnchanter
+ITEM  #  ioFarm			#  enderio:blockFarmStation
+ITEM  #  ioTravelStaff	#  enderio:itemTravelStaff
+ITEM  #  arSpaceMine	#  advancedrocketry:spaceLaser
+ITEM  #  aaPhantomF		#  actuallyadditions:blockPhantomface
+
+ITEM  #  RsController   #  refinedstorage:controller
+ITEM  #  RsDisk         #  refinedstorage:disk_drive
+ITEM  #  RsSolderer     #  refinedstorage:solderer
+ITEM  #  RsGrid         #  refinedstorage:grid
+ITEM  #  ioAnchor       #  enderio:blockTravelAnchor
+ITEM  #  GEMutAdv       #  gendustry:MutatronAdv
+
+ITEM  #  DRGenerator    # deepresonance:generator_controller
+ITEM  #  DRManual       # deepresonance:dr_manual
+ITEM  #  DRSmelter      # deepresonance:smelter
+
+// Quests G
+ITEM  #  Nether			#  chisel:netherbrick:8
+ITEM  #  TheEnd			#  chisel:endstoneextra:1
+
+ITEM  #  maSuperSword	#  mysticalagriculture:supremium_sword
+ITEM  #  rsDiamond		#  refinedstorage:processor:5
+ITEM  #  ioSpawner		#  enderio:blockPoweredSpawner
+ITEM  #  gdLabware		#  gendustry:Labware
+ITEM  #  deCrafting		#  draconicevolution:fusion_crafting_core
+ITEM  #  deHelm0		#  draconicevolution:wyvern_helm
+ITEM  #  deWeather		#  draconicevolution:celestial_manipulator
+ITEM  #  ioTelepad		#  enderio:blockTelePad
+
+ITEM  #  uranSeed       #  mysticalagriculture:uranium_seeds
+ITEM  #  dracoIngot     #  draconicevolution:draconium_ingot
+ITEM  #  RSInterface    #  refinedstorage:interface
+ITEM  #  GDSample       #  gendustry:GeneSampleBlank
+ITEM  #  GDImprinter    #  gendustry:Imprinter
+ITEM  #  GDSampler      #  gendustry:Sampler
+ITEM  #  DracoTablet    #  draconicevolution:info_tablet
+
+// Quests H
+ITEM  #  DistantOrb		#  bqmie:icon_item:15
+ITEM  #  OceanOrb		#  bqmie:icon_item:18
+ITEM  #  MooshroomOrb	#  bqmie:icon_item:22
+ITEM  #  goldHead		#  tconstruct:materials:50
+
+ITEM  #  deHelm1		#  draconicevolution:draconic_helm
+ITEM  #  arTerra		#  advancedrocketry:terraformer
+ITEM  #  dePowerCry		#  draconicevolution:energy_crystal:2
+ITEM  #  deReactor		#  draconicevolution:reactor_core
+ITEM  #  deTeleport		#  draconicevolution:dislocator
+ITEM  #  deStaff		#  draconicevolution:draconic_staff_of_power
+ITEM  #  deMobFarm		#  draconicevolution:grinder
+ITEM  #  deTeleport1	#  draconicevolution:dislocator_advanced
+ITEM  #  ioDimenTrans	#  enderio:blockTransceiver
+
+ITEM  #  egVioliomBl	#  taiga:violium_block
+ITEM  #  egAstriumBl	#  taiga:astrium_block
+ITEM  #  eqAWDracoBl	#  draconicevolution:draconic_block
+ITEM  #  eqKey      	#  bqmie:icon_item:23
+
+// Quests Trade A
+
+ITEM  #  TradeCoinA     #  bqmie:icon_item:4
+ITEM  #  TradeCoinA1    #  actuallyadditions:itemAxeCrystalBlue
+ITEM  #  TradeCoinA2    #  actuallyadditions:itemAxeCrystalGreen
+ITEM  #  WaterBowl		#  actuallyadditions:itemWaterBowl
+ITEM  #  HCSeed			#  harvestcraft:eggplantseeditem
+ITEM  #  HCOnion		#  harvestcraft:onionitem
+ITEM  #  HCBlueB		#  harvestcraft:blueberryitem
+ITEM  #  HCPear			#  harvestcraft:pampear
+ITEM  #  OnTheWay		#  minecraft:leather_boots
+
+ITEM  #  HZombie		#  minecraft:skull:2
+ITEM  #  HWitch			#  betterbuilderswands:wandIron
+
+ITEM  #  HCMealL		#  harvestcraft:pizzasoupitem
+
+ITEM  #  HSeed0			#  harvestcraft:mustardseeditem
+ITEM  #  HSeed1			#  harvestcraft:bambooshootseeditem
+ITEM  #  HSeed2			#  harvestcraft:cantaloupeseeditem
+ITEM  #  HSeed3			#  harvestcraft:turnipseeditem
+ITEM  #  HSeed4			#  harvestcraft:asparagusseeditem
+
+ITEM  #  HVegi0			#  harvestcraft:zucchiniitem
+ITEM  #  HVegi1			#  harvestcraft:cucumberitem
+ITEM  #  HVegi2			#  harvestcraft:scallionitem
+ITEM  #  HVegi3			#  harvestcraft:parsnipitem
+ITEM  #  HVegi4			#  harvestcraft:onionitem
+
+ITEM  #  HBerry0		#  harvestcraft:blackberryitem
+ITEM  #  HBerry1		#  harvestcraft:blueberryitem
+ITEM  #  HBerry2		#  harvestcraft:raspberryitem
+ITEM  #  HBerry3		#  harvestcraft:strawberryitem
+ITEM  #  HBerry4		#  harvestcraft:cranberryitem
+
+ITEM  #  HWheat0		#  harvestcraft:riceitem
+ITEM  #  HWheat1		#  harvestcraft:oatsitem
+ITEM  #  HWheat2		#  harvestcraft:ryeitem
+ITEM  #  HWheat3		#  harvestcraft:barleyitem
+ITEM  #  HWheat4		#  minecraft:wheat
+
+ITEM  #  HFruit0		#  harvestcraft:lemonitem
+ITEM  #  HFruit1		#  harvestcraft:pearitem
+ITEM  #  HFruit2		#  harvestcraft:oliveitem
+ITEM  #  HFruit3		#  harvestcraft:grapefruititem
+ITEM  #  HFruit4		#  harvestcraft:pomegranateitem
+
+ITEM # HCS000 # harvestcraft:artichokeseeditem
+ITEM # HCS001 # harvestcraft:asparagusseeditem
+ITEM # HCS002 # harvestcraft:bambooshootseeditem
+ITEM # HCS003 # harvestcraft:barleyseeditem
+ITEM # HCS004 # harvestcraft:beanseeditem
+ITEM # HCS005 # harvestcraft:beetseeditem
+ITEM # HCS006 # harvestcraft:bellpepperseeditem
+ITEM # HCS007 # harvestcraft:blackberryseeditem
+ITEM # HCS008 # harvestcraft:blueberryseeditem
+ITEM # HCS009 # harvestcraft:broccoliseeditem
+ITEM # HCS010 # harvestcraft:brusselsproutseeditem
+ITEM # HCS011 # harvestcraft:cabbageseeditem
+ITEM # HCS012 # harvestcraft:cactusfruitseeditem
+ITEM # HCS013 # harvestcraft:candleberryseeditem
+ITEM # HCS014 # harvestcraft:cantaloupeseeditem
+ITEM # HCS015 # harvestcraft:cauliflowerseeditem
+ITEM # HCS016 # harvestcraft:celeryseeditem
+ITEM # HCS017 # harvestcraft:chilipepperseeditem
+ITEM # HCS018 # harvestcraft:coffeeseeditem
+ITEM # HCS019 # harvestcraft:cornseeditem
+ITEM # HCS020 # harvestcraft:cottonseeditem
+ITEM # HCS021 # harvestcraft:cranberryseeditem
+ITEM # HCS022 # harvestcraft:cucumberseeditem
+ITEM # HCS023 # harvestcraft:curryleafseeditem
+ITEM # HCS024 # harvestcraft:eggplantseeditem
+ITEM # HCS025 # harvestcraft:garlicseeditem
+ITEM # HCS026 # harvestcraft:gingerseeditem
+ITEM # HCS027 # harvestcraft:grapeseeditem
+ITEM # HCS028 # harvestcraft:kiwiseeditem
+ITEM # HCS029 # harvestcraft:leekseeditem
+ITEM # HCS030 # harvestcraft:lettuceseeditem
+ITEM # HCS031 # harvestcraft:mustardseeditem
+ITEM # HCS032 # harvestcraft:oatsseeditem
+ITEM # HCS033 # harvestcraft:okraseeditem
+ITEM # HCS034 # harvestcraft:onionseeditem
+ITEM # HCS035 # harvestcraft:parsnipseeditem
+ITEM # HCS036 # harvestcraft:peanutseeditem
+ITEM # HCS037 # harvestcraft:peasseeditem
+ITEM # HCS038 # harvestcraft:pineappleseeditem
+ITEM # HCS039 # harvestcraft:radishseeditem
+ITEM # HCS040 # harvestcraft:raspberryseeditem
+ITEM # HCS041 # harvestcraft:rhubarbseeditem
+ITEM # HCS042 # harvestcraft:riceseeditem
+ITEM # HCS043 # harvestcraft:rutabagaseeditem
+ITEM # HCS044 # harvestcraft:ryeseeditem
+ITEM # HCS045 # harvestcraft:scallionseeditem
+ITEM # HCS046 # harvestcraft:seaweedseeditem
+ITEM # HCS047 # harvestcraft:sesameseedsseeditem
+ITEM # HCS048 # harvestcraft:soybeanseeditem
+ITEM # HCS049 # harvestcraft:spiceleafseeditem
+ITEM # HCS050 # harvestcraft:spinachseeditem
+ITEM # HCS051 # harvestcraft:strawberryseeditem
+ITEM # HCS052 # harvestcraft:sweetpotatoseeditem
+ITEM # HCS053 # harvestcraft:teaseeditem
+ITEM # HCS054 # harvestcraft:tomatoseeditem
+ITEM # HCS055 # harvestcraft:turnipseeditem
+ITEM # HCS056 # harvestcraft:waterchestnutseeditem
+ITEM # HCS057 # harvestcraft:whitemushroomseeditem
+ITEM # HCS058 # harvestcraft:wintersquashseeditem
+ITEM # HCS059 # harvestcraft:zucchiniseeditem
+ITEM # HCS060 # harvestcraft:cottonseeditem
+ITEM # HCS061 # harvestcraft:candleberryseeditem
+ITEM # HCS062 # harvestcraft:spinachseeditem
+ITEM # HCS063 # harvestcraft:kiwiseeditem
+ITEM # HCS064 # harvestcraft:cabbageseeditem
+ITEM # HCS065 # harvestcraft:cornseeditem
+ITEM # HCS066 # harvestcraft:cucumberseeditem
+ITEM # HCS067 # harvestcraft:onionseeditem
+ITEM # HCS068 # harvestcraft:artichokeseeditem
+ITEM # HCS069 # harvestcraft:cottonseeditem
+ITEM # HCS070 # harvestcraft:cactusfruitseeditem
+ITEM # HCS071 # harvestcraft:spiceleafseeditem
+ITEM # HCS072 # harvestcraft:mustardseeditem
+ITEM # HCS073 # harvestcraft:candleberryseeditem
+ITEM # HCS074 # harvestcraft:beetseeditem
+ITEM # HCS075 # harvestcraft:beanseeditem
+ITEM # HCS076 # harvestcraft:eggplantseeditem
+ITEM # HCS077 # harvestcraft:raspberryseeditem
+ITEM # HCS078 # harvestcraft:blueberryseeditem
+ITEM # HCS079 # harvestcraft:chilipepperseeditem
+ITEM # HCS080 # harvestcraft:grapeseeditem
+ITEM # HCS081 # harvestcraft:lettuceseeditem
+ITEM # HCS082 # harvestcraft:curryleafseeditem
+ITEM # HCS083 # harvestcraft:rhubarbseeditem
+ITEM # HCS084 # harvestcraft:gingerseeditem
+ITEM # HCS085 # harvestcraft:asparagusseeditem
+ITEM # HCS086 # harvestcraft:cantaloupeseeditem
+ITEM # HCS087 # harvestcraft:wintersquashseeditem
+ITEM # HCS088 # harvestcraft:rutabagaseeditem
+ITEM # HCS089 # harvestcraft:brusselsproutseeditem
+ITEM # HCS090 # harvestcraft:okraseeditem
+ITEM # HCS091 # harvestcraft:sesameseedsseeditem
+ITEM # HCS092 # harvestcraft:cauliflowerseeditem
+ITEM # HCS093 # harvestcraft:radishseeditem
+ITEM # HCS094 # harvestcraft:broccoliseeditem
+ITEM # HCS095 # harvestcraft:zucchiniseeditem
+ITEM # HCS096 # harvestcraft:tomatoseeditem
+ITEM # HCS097 # harvestcraft:scallionseeditem
+ITEM # HCS098 # harvestcraft:waterchestnutseeditem
+ITEM # HCS099 # harvestcraft:bambooshootseeditem
+ITEM # HCS100 # harvestcraft:celeryseeditem
+ITEM # HCS101 # harvestcraft:peasseeditem
+ITEM # HCS102 # harvestcraft:peanutseeditem
+ITEM # HCS103 # harvestcraft:teaseeditem
+ITEM # HCS104 # harvestcraft:parsnipseeditem
+ITEM # HCS105 # harvestcraft:soybeanseeditem
+ITEM # HCS106 # harvestcraft:garlicseeditem
+ITEM # HCS107 # harvestcraft:coffeeseeditem
+ITEM # HCS108 # harvestcraft:oatsseeditem
+ITEM # HCS109 # harvestcraft:strawberryseeditem
+ITEM # HCS110 # harvestcraft:seaweedseeditem
+ITEM # HCS111 # harvestcraft:barleyseeditem
+ITEM # HCS112 # harvestcraft:whitemushroomseeditem
+ITEM # HCS113 # harvestcraft:riceseeditem
+ITEM # HCS114 # harvestcraft:sweetpotatoseeditem
+ITEM # HCS115 # harvestcraft:leekseeditem
+ITEM # HCS116 # harvestcraft:pineappleseeditem
+ITEM # HCS117 # harvestcraft:blackberryseeditem
+ITEM # HCS118 # harvestcraft:cranberryseeditem
+ITEM # HCS119 # harvestcraft:bellpepperseeditem
+ITEM # HCS120 # harvestcraft:turnipseeditem
+ITEM # HCS121 # harvestcraft:ryeseeditem
+ITEM # HCS122 # harvestcraft:asparagusseeditem
+ITEM # HCS123 # harvestcraft:barleyseeditem
+ITEM # HCS124 # harvestcraft:beanseeditem
+ITEM # HCS125 # harvestcraft:beetseeditem
+ITEM # HCS126 # harvestcraft:broccoliseeditem
+ITEM # HCS127 # harvestcraft:cauliflowerseeditem
+ITEM # HCS128 # harvestcraft:celeryseeditem
+ITEM # HCS129 # harvestcraft:cranberryseeditem
+ITEM # HCS130 # harvestcraft:garlicseeditem
+ITEM # HCS131 # harvestcraft:gingerseeditem
+ITEM # HCS132 # harvestcraft:leekseeditem
+ITEM # HCS133 # harvestcraft:lettuceseeditem
+ITEM # HCS134 # harvestcraft:oatsseeditem
+ITEM # HCS135 # harvestcraft:onionseeditem
+ITEM # HCS136 # harvestcraft:parsnipseeditem
+ITEM # HCS137 # harvestcraft:peanutseeditem
+ITEM # HCS138 # harvestcraft:pineappleseeditem
+ITEM # HCS139 # harvestcraft:radishseeditem
+ITEM # HCS140 # harvestcraft:riceseeditem
+ITEM # HCS141 # harvestcraft:rutabagaseeditem
+ITEM # HCS142 # harvestcraft:ryeseeditem
+ITEM # HCS143 # harvestcraft:scallionseeditem
+ITEM # HCS144 # harvestcraft:soybeanseeditem
+ITEM # HCS145 # harvestcraft:spiceleafseeditem
+ITEM # HCS146 # harvestcraft:sweetpotatoseeditem
+ITEM # HCS147 # harvestcraft:teaseeditem
+ITEM # HCS148 # harvestcraft:turnipseeditem
+ITEM # HCS149 # harvestcraft:whitemushroomseeditem
+ITEM # HCS150 # harvestcraft:artichokeseeditem
+ITEM # HCS151 # harvestcraft:bellpepperseeditem
+ITEM # HCS152 # harvestcraft:blackberryseeditem
+ITEM # HCS153 # harvestcraft:blueberryseeditem
+ITEM # HCS154 # harvestcraft:brusselsproutseeditem
+ITEM # HCS155 # harvestcraft:cabbageseeditem
+ITEM # HCS156 # harvestcraft:cactusfruitseeditem
+ITEM # HCS157 # harvestcraft:cantaloupeseeditem
+ITEM # HCS158 # harvestcraft:chilipepperseeditem
+ITEM # HCS159 # harvestcraft:coffeeseeditem
+ITEM # HCS160 # harvestcraft:cornseeditem
+ITEM # HCS161 # harvestcraft:cucumberseeditem
+ITEM # HCS162 # harvestcraft:eggplantseeditem
+ITEM # HCS163 # harvestcraft:grapeseeditem
+ITEM # HCS164 # harvestcraft:kiwiseeditem
+ITEM # HCS165 # harvestcraft:mustardseeditem
+ITEM # HCS166 # harvestcraft:okraseeditem
+ITEM # HCS167 # harvestcraft:peasseeditem
+ITEM # HCS168 # harvestcraft:raspberryseeditem
+ITEM # HCS169 # harvestcraft:rhubarbseeditem
+ITEM # HCS170 # harvestcraft:seaweedseeditem
+ITEM # HCS171 # harvestcraft:strawberryseeditem
+ITEM # HCS172 # harvestcraft:tomatoseeditem
+ITEM # HCS173 # harvestcraft:wintersquashseeditem
+ITEM # HCS174 # harvestcraft:zucchiniseeditem
+ITEM # HCS175 # harvestcraft:bambooshootseeditem
+ITEM # HCS176 # harvestcraft:spinachseeditem
+ITEM # HCS177 # harvestcraft:curryleafseeditem
+ITEM # HCS178 # harvestcraft:sesameseedsseeditem
+ITEM # HCS179 # harvestcraft:waterchestnutseeditem
+
+ITEM # HCSo2077  # harvestcraft:asparagussoupitem
+ITEM # HCSo2122  # harvestcraft:beetsoupitem
+ITEM # HCSo2165  # harvestcraft:cactussoupitem
+ITEM # HCSo2200  # harvestcraft:carrotsoupitem
+ITEM # HCSo2212  # harvestcraft:celerysoupitem
+ITEM # HCSo2242  # harvestcraft:chickennoodlesoupitem
+ITEM # HCSo2329  # harvestcraft:creamedbroccolisoupitem
+ITEM # HCSo2331  # harvestcraft:creamofavocadosoupitem
+ITEM # HCSo2338  # harvestcraft:cucumbersoupitem
+ITEM # HCSo2412  # harvestcraft:gardensoupitem
+ITEM # HCSo2495  # harvestcraft:hotandsoursoupitem
+ITEM # HCSo2521  # harvestcraft:lambbarleysoupitem
+ITEM # HCSo2530  # harvestcraft:leekbaconsoupitem
+ITEM # HCSo2619  # harvestcraft:oldworldveggiesoupitem
+ITEM # HCSo2627  # harvestcraft:onionsoupitem
+ITEM # HCSo2752  # harvestcraft:peaandhamsoupitem
+ITEM # HCSo2807  # harvestcraft:pizzasoupitem
+ITEM # HCSo2830  # harvestcraft:potatoandleeksoupitem
+ITEM # HCSo2833  # harvestcraft:potatosoupitem
+ITEM # HCSo2846  # harvestcraft:pumpkinsoupitem
+ITEM # HCSo2882  # harvestcraft:ricesoupitem
+ITEM # HCSo2913  # harvestcraft:seedsoupitem
+ITEM # HCSo2945  # harvestcraft:spidereyesoupitem
+ITEM # HCSo2949  # harvestcraft:splitpeasoupitem
+ITEM # HCSo3011  # harvestcraft:tomatosoupitem
+ITEM # HCSo3023  # harvestcraft:turnipsoupitem
+ITEM # HCSo3033  # harvestcraft:vegetablesoupitem
+ITEM # HCSo10161 # harvestcraft:pumpkinsoupitem
+ITEM # HCSo10189 # harvestcraft:carrotsoupitem
+ITEM # HCSo10201 # harvestcraft:potatosoupitem
+ITEM # HCSo10211 # harvestcraft:chickennoodlesoupitem
+ITEM # HCSo10249 # harvestcraft:spidereyesoupitem
+ITEM # HCSo10261 # harvestcraft:vegetablesoupitem
+ITEM # HCSo10271 # harvestcraft:tomatosoupitem
+ITEM # HCSo10295 # harvestcraft:onionsoupitem
+ITEM # HCSo10359 # harvestcraft:cucumbersoupitem
+ITEM # HCSo10365 # harvestcraft:ricesoupitem
+ITEM # HCSo10459 # harvestcraft:beetsoupitem
+ITEM # HCSo10467 # harvestcraft:creamedbroccolisoupitem
+ITEM # HCSo10477 # harvestcraft:splitpeasoupitem
+ITEM # HCSo10485 # harvestcraft:turnipsoupitem
+ITEM # HCSo10521 # harvestcraft:celerysoupitem
+ITEM # HCSo10555 # harvestcraft:creamofavocadosoupitem
+ITEM # HCSo10637 # harvestcraft:cactussoupitem
+ITEM # HCSo10641 # harvestcraft:seedsoupitem
+ITEM # HCSo10755 # harvestcraft:gardensoupitem
+ITEM # HCSo10863 # harvestcraft:oldworldveggiesoupitem
+ITEM # HCSo10869 # harvestcraft:lambbarleysoupitem
+ITEM # HCSo10883 # harvestcraft:leekbaconsoupitem
+ITEM # HCSo11301 # harvestcraft:peaandhamsoupitem
+ITEM # HCSo11315 # harvestcraft:potatoandleeksoupitem
+ITEM # HCSo11325 # harvestcraft:hotandsoursoupitem
+ITEM # HCSo11411 # harvestcraft:pizzasoupitem
+
+ITEM # Ore00     # minecraft:coal_ore
+
+ITEM # Ore10     # minecraft:iron_ore
+ITEM # Ore11     # forestry:resources:1
+ITEM # Ore12     # forestry:resources:2
+ITEM # Ore13     # immersiveengineering:ore:1
+ITEM # Ore14     # immersiveengineering:ore:2
+ITEM # Ore15     # immersiveengineering:ore:4
+ITEM # Ore16     # railcraft:ore_metal:5
+
+ITEM # Ore20     # minecraft:gold_ore
+ITEM # Ore21     # minecraft:redstone_ore
+ITEM # Ore22     # immersiveengineering:ore:3
+ITEM # Ore23     # minecraft:diamond_ore
+ITEM # Ore24     # minecraft:emerald_ore
+
+ITEM # FlintPickAxe # tconstruct:pick_head # NBT:{ "Material:8": "flint" }
+ITEM # PoorNickel 	# railcraft:ore_metal_poor:6
+ITEM # PoorZinc 	# railcraft:ore_metal_poor:7
+ITEM # AluOre 		# immersiveengineering:ore:1
+ITEM # IronOre 		# minecraft:iron_ore
+ITEM # RedstoneDust # minecraft:redstone
+ITEM # DuraniumDust # taiga:duranite_dust
+ITEM # BasaltWhite 	# taiga:basalt_block
+ITEM # BasaltBlack 	# chisel:basaltextra:7
+ITEM # GoldOre 		# minecraft:gold_ore
+ITEM # SilverOre 	# railcraft:ore_metal:3
+ITEM # OsramOre 	# taiga:osram_ore
+ITEM # EezoOre 		# taiga:eezo_ore
+ITEM # AbyssumOre 	# taiga:abyssum_ore
+ITEM # DracoDust 	# draconicevolution:draconium_dust
+
+ITEM # ChiselTool 	# chisel:chisel_iron
+ITEM # BrickBlDried	# tconstruct:dried_clay:1
+ITEM # BrickClay 	# minecraft:brick_block
+ITEM # BrickMud 	# tconstruct:deco_ground
+ITEM # BrickStone 	# minecraft:stonebrick
+
+ITEM # OakStais 	# minecraft:oak_stairs
+ITEM # OakSlabs 	# minecraft:wooden_slab
+ITEM # OakBookshelf	# bibliocraft:Bookcase
+ITEM # OakChest 	# bibliocraft:FramedChest
+ITEM # OakFancySign	# bibliocraft:FancySign
+
+ITEM # GetLog0 # minecraft:log:1
+ITEM # GetLog1 # minecraft:log:2
+ITEM # GetLog2 # minecraft:log:3
+ITEM # GetLog3 # minecraft:log2
+
+ITEM # FactoryRusty # chisel:factory
+ITEM # TyrianPurple # chisel:tyrian:3
+ITEM # OrnateBricks # chisel:bricks1:1
+ITEM # CelticMossy # chisel:cobblestonemossy1:7
+
+ITEM # AccWorkbench	# bibliocraft:FancyWorkbench:4
+ITEM # AccSeat		# bibliocraft:Seat:4
+ITEM # SpruceTable	# bibliocraft:Table:1
+ITEM # BirchDesk	# bibliocraft:Desk:2
+ITEM # JunglePotShelf # bibliocraft:PotionShelf:3
+
+ITEM # FancyLamp 	# bibliocraft:LampGold
+ITEM # Typewriter 	# bibliocraft:Typewriter
+ITEM # DinnerPlate 	# bibliocraft:DinnerPlate
+
+ITEM # OreSpec01 	# taiga:duranite_ore
+ITEM # OreSpec02 	# taiga:basalt_block
+ITEM # OreSpec03 	# taiga:eezo_ore
+ITEM # OreSpec04 	# taiga:osram_ore
+ITEM # OreSpec05 	# taiga:prometheum_ore
+ITEM # OreSpec06 	# minecraft:quartz_ore
+ITEM # SoulSand 	# minecraft:soul_sand
+
+ITEM # essInferi 	# mysticalagriculture:inferium_essence
+ITEM # xpBottle	 	# supercraftingframe:super_xp_bottle
+
+ITEM # stickAlu	 	# immersiveengineering:material:3
+ITEM # stickIron 	# libvulpes:productrod:1
+ITEM # stickSteel 	# libvulpes:productrod:6
+ITEM # plateAlu	 	# libvulpes:productplate:9
+ITEM # plateCopper 	# libvulpes:productplate:4
+ITEM # plateTin 	# libvulpes:productplate:5
+ITEM # plateIron 	# libvulpes:productplate:1
+ITEM # plateNickel 	# railcraft:plate:8
+ITEM # plateSteel 	# libvulpes:productplate:6
+ITEM # gearIron 	# railcraft:gear:1
+ITEM # gearCopper 	# forestry:gearCopper
+ITEM # gearTin	 	# forestry:gearTin
+ITEM # gearBronze 	# railcraft:gear:4
+ITEM # gearSteel 	# railcraft:gear:2
+
+ITEM # engBlLight 	# immersiveengineering:metalDecoration0:4
+ITEM # engBlHeavy 	# immersiveengineering:metalDecoration0:5
+ITEM # engBlRed 	# immersiveengineering:metalDecoration0:3
+ITEM # engBlRad 	# immersiveengineering:metalDecoration0:7
+ITEM # engBlGen 	# immersiveengineering:metalDecoration0:6
+
+ITEM # iePump 		# immersiveengineering:metalDevice0:5
+ITEM # iePipe 		# immersiveengineering:metalDevice1:6
+ITEM # bucket 		# minecraft:bucket
+
+ITEM # TFabricator 	# forestry:fabricator
+ITEM # Squeezer 	# forestry:squeezer
+ITEM # ClockEngine 	# forestry:engine_clockwork
+
+ITEM # iePower00 	# immersiveengineering:connector
+ITEM # iePower01 	# immersiveengineering:connector:1
+ITEM # iePower02 	# immersiveengineering:wirecoil
+ITEM # iePower03 	# immersiveengineering:metalDevice1:2
+ITEM # iePower04 	# immersiveengineering:woodenDevice1:1
+ITEM # iePower05 	# immersiveengineering:metalDevice0
+ITEM # iePower06 	# immersiveengineering:woodenDevice1:3
+
+ITEM # spLeather 	# minecraft:leather
+ITEM # spHLeather 	# harvestcraft:hardenedleatheritem
+ITEM # spTorch 		# minecraft:torch
+ITEM # spFabric 	# immersiveengineering:material:5
+ITEM # spPlank 		# immersiveengineering:treatedWood
+ITEM # spKit 		# tconstruct:sharpening_kit # NBT:{ "Material:8": "flint" }
+ITEM # spWool 		# minecraft:wool
+
+ITEM # HCMilk 		# harvestcraft:freshmilkitem
+ITEM # spEgg 		# minecraft:egg
+
+ITEM # Grafter      # forestry:grafter
+ITEM # FCherry      # forestry:fruits
+ITEM # FChestnut    # forestry:fruits:2
+ITEM # FDate        # forestry:fruits:5
+ITEM # FCDate       # forestry:crated.forestry.fruits.5
+ITEM # FPlum        # forestry:fruits:4
+ITEM # FCPlum       # forestry:crated.forestry.fruits.4
+ITEM # HoneyedSlice # forestry:honeyedSlice
+
+ITEM # Toaster      # cookingforblockheads:toaster
+ITEM # HCToast01    # harvestcraft:beansontoastitem
+ITEM # HCToast02    # harvestcraft:cinnamontoastitem
+ITEM # HCLarge01    # harvestcraft:spagettiandmeatballsitem
+ITEM # HCLarge02    # harvestcraft:pineapplehamitem
+ITEM # HCLarge03    # harvestcraft:shrimpokrahushpuppiesitem
+ITEM # HCLarge04    # harvestcraft:vindalooitem
+ITEM # HCLarge05    # harvestcraft:delightedmealitem
+ITEM # HCFeast01    # harvestcraft:deluxechickencurryitem
+ITEM # HCFeast02    # harvestcraft:meatfeastpizzaitem
+ITEM # HCSauce01    # harvestcraft:soysauceitem
+ITEM # HCSauce02    # harvestcraft:hoisinsauceitem
+ITEM # HCSauce03    # harvestcraft:sweetandsoursauceitem
+ITEM # HCSauce04    # harvestcraft:hotsauceitem
+ITEM # HCSauce05    # harvestcraft:applesauceitem
+ITEM # HCTurtle     # harvestcraft:turtlerawitem
+
+BEE  # SteadfastDrone   # 1 # Drone:40 # speciesSteadfast:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersVanilla:floweringSlowest:territoryAverage:effectNone
+BEE  # JungleDrone      # 1 # Drone:30 # speciesTropical:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth2:boolTrue:toleranceBoth2 # boolFalse:boolTrue:flowersJungle:floweringSlowest:territoryAverage:effectNone
+
+// Quests Trade B
+
+ITEM # HCGrub 		# harvestcraft:grubitem
+ITEM # MAApple2 	# mysticalagriculture:prudentium_apple
+ITEM # EndCrystal 	# minecraft:end_crystal
+ITEM # OnTheWay2	# actuallyadditions:itemBootsQuartz
+ITEM # TradeCoinB	# bqmie:icon_item:11
+ITEM # GhastTear	# minecraft:ghast_tear
+
+ITEM # OxygenTank 	# advancedrocketry:bucketOxygen
+ITEM # HydrogenTank	# advancedrocketry:bucketHydrogen
+ITEM # FullBattery	# actuallyadditions:itemBattery # NBT:{ "Energy:4": 1000000 }
+
+ITEM # ManyullynBlock # tconstruct:metal:2
+ITEM # dataUnit0 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 1, "Data:4": 500, "Locked:4": 0 }
+ITEM # dataUnit1 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 4, "Data:4": 500, "Locked:4": 0 }
+ITEM # dataUnit2 # advancedrocketry:dataUnit # NBT:{ "maxData:4": 1000, "DataType:4": 6, "Data:4": 500, "Locked:4": 0 }
+
+ITEM # MASeed00	# mysticalagriculture:tier1_crafting_seed
+ITEM # MASeed01	# mysticalagriculture:tier1_inferium_seeds
+ITEM # MASeed02	# mysticalagriculture:stone_seeds
+ITEM # MASeed03 # mysticalagriculture:dirt_seeds
+ITEM # MASeed04	# mysticalagriculture:nature_seeds
+ITEM # MASeed05	# mysticalagriculture:wood_seeds
+ITEM # MASeed06	# mysticalagriculture:water_seeds
+ITEM # MASeed07	# mysticalagriculture:ice_seeds
+ITEM # MASeed08	# mysticalagriculture:zombie_seeds
+
+ITEM # DilithiumNugget # taiga:dilithium_nugget
+ITEM # RocketTank	 # advancedrocketry:bucketRocketFuel
+ITEM # NitrogenTank	 # advancedrocketry:bucketNitrogen
+ITEM # DilithiumTank # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "dilithium_fluid", "Amount:4":1000 } }
+ITEM # NucleumTank   # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "nucleum_fluid", "Amount:4":1000 } }
+ITEM # NutrientTank  # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "nutrient_distillation", "Amount:4":1000 } }
+ITEM # MagmaTank     # forestry:refractory:1 # NBT:{ "Fluid:10": { "FluidName:8": "magma_fluid", "Amount:4":1000 } }
+ITEM # CloudTank     # forestry:capsule:1    # NBT:{ "Fluid:10": { "FluidName:8": "cloud_seed", "Amount:4":1000 } }
+ITEM # HootchTank    # forestry:capsule:1    # NBT:{ "Fluid:10": { "FluidName:8": "hootch", "Amount:4":1000 } }
+
+ITEM # GoldenFrame      # tconstruct:fancy_frame:5
+ITEM # DilithiumCrystal # taiga:dilithium_crystal
+ITEM # AlienWood        # advancedrocketry:alienWood
+ITEM # Geode            # advancedrocketry:geode
+
+ITEM # DuranitePlate  #  tconstruct:large_plate        #   NBT:{ "Material:8": "duranite" }
+ITEM # gearInvar 	# railcraft:gear:5
+ITEM # gearBrass 	# railcraft:gear:0
+ITEM # TriberiumRod  #  tconstruct:tough_tool_rod      #   NBT:{ "Material:8": "triberium" }
+
+ITEM # ManyullynSword #  tconstruct:large_sword_blade   #   NBT:{ "Material:8": "manyullyn" }
+ITEM # BronzeKnife    #  tconstruct:knife_blade         #   NBT:{ "Material:8": "bronze" }
+ITEM # ElectrumScythe #  tconstruct:scythe_head         #   NBT:{ "Material:8": "electrum" }
+ITEM # NucleumSword   #  tconstruct:large_sword_blade   #   NBT:{ "Material:8": "nucleum" }
+
+ITEM # TrackRein      #  railcraft:track_flex_reinforced
+ITEM # TrackHigh      #  railcraft:track_flex_high_speed
+ITEM # RailBore       #  railcraft:bore
+
+ITEM # Rplate0       #  railcraft:plate:4
+ITEM # Rplate1       #  railcraft:plate:6
+ITEM # Rplate2       #  railcraft:plate:8
+ITEM # Rplate3       #  railcraft:plate:9
+ITEM # Rplate4       #  railcraft:plate:10
+ITEM # Rplate5       #  railcraft:plate:11
+
+ITEM # endEgg 		# minecraft:dragon_egg
+ITEM # IronSword    # minecraft:iron_sword
+
+ITEM # TripleBatFull # actuallyadditions:itemBatteryTriple # NBT:{ "Energy:4": 4000000 }
+ITEM # PowerConduit  # enderio:itemPowerConduit:1
+ITEM # IOCrafter     # enderio:blockCrafter
+
+ITEM # ARFrame       # libvulpes:structureMachine
+ITEM # ARHatch       # libvulpes:hatch
+ITEM # ARValve       # libvulpes:hatch:2
+ITEM # ARPlug        # libvulpes:forgePowerInput
+ITEM # ARCoil        # libvulpes:coil0:4
+
+ITEM # ARoxy0        # advancedrocketry:oxygenVent
+ITEM # ARoxy1        # advancedrocketry:oxygenScrubber
+ITEM # ARoxy2        # advancedrocketry:carbonScrubberCartridge
+
+// Hoarding quests A
+
+ITEM # SteelIngDict # immersiveengineering:metal:8 # ORE:ingotSteel
+ITEM # SearedBrick  # tconstruct:seared:3
+ITEM # SearedFurnace # tconstruct:seared_furnace_controller
+ITEM # HEggplant # harvestcraft:eggplantitem
+ITEM # Reef0 # coralreef:reef
+ITEM # Reef1 # coralreef:reef:1
+ITEM # ObsidianShard # tconstruct:shard # NBT:{ "Material:8": "obsidian" }
+ITEM # RabbitFoot #  minecraft:rabbit_foot
+ITEM # BaseSeed #  mysticalagriculture:base_crafting_seed
+ITEM # ElTubeLapis   #  forestry:thermionicTubes:11
+ITEM # ElevatorTrack   #  railcraft:track_elevator
+ITEM # IceSpikes   #  forestry:craftingMaterial:5
+ITEM # MagmaSapling   #  tconstruct:slime_sapling:2
+ITEM # AbyssumDust   #  taiga:abyssum_dust
+ITEM # MagmaSearedTank   #  tconstruct:seared_tank # NBT:{ "FluidName:8": "lava", "Amount:4":4000 }
+
+// Cheat quests
+
+ITEM # CHteleportHome # draconicevolution:dislocator:19 # NBT:{"IsSet:4": 1, "Dimension:4":0, "DimentionName:8":"Overworld", "X:4":0, "Y:4":70, "Z:4":0, "Yaw:4":0, "Pitch:4":0}
+
+ITEM # CHtank         # advancedrocketry:fuelTank
+ITEM # CHengine       # advancedrocketry:rocketmotor
+ITEM # CHseat         # advancedrocketry:seat
+ITEM # CHguidance     # advancedrocketry:guidanceComputer
+ITEM # CHplanetChip   # advancedrocketry:planetIdChip
+ITEM # CHfuel         # advancedrocketry:bucketRocketFuel
+ITEM # CHglider       # openglider:hang_glider_basic
+ITEM # CHboat         # minecraft:acacia_boat
+
+ITEM # SoftTofu       # harvestcraft:silkentofuitem
+
+ITEM    # LemonFruit   # forestry:fruits:3
+SAPLING # LemonSapling # 1 # treeLemon:growthLightlevel:heightSmall:saplingsAverage:fruitLemon:yieldLower # plantTypeNone:sappinessAverage:territoryAverage:leavesNone:maturationFaster # i1d:i20d:i4d # fireproofFalse
+
+ITEM # MetallicGrain   # morebees:grainMetallic
+BEE  # MetallicQueen   # 1 # Queen:20 # morebees.speciesMetallic:speedSlower:lifespanShorter:fertilityNormal # toleranceBoth1:boolTrue:toleranceBoth2 # boolFalse:boolTrue:morebees.flowersOre:floweringSlowest:territoryAverage:effectNone
+
+ITEM # MasterCrystal   # mysticalagriculture:master_infusion_crystal
+ITEM # DragonHeart     # draconicevolution:dragon_heart
+ITEM # ChaosShard      # draconicevolution:chaos_shard
+ITEM # DRCrystal       # deepresonance:resonating_crystal # NBT:{ "efficiency:6": 75.0, "strength:6": 75.0, "purity:6": 100.0, "power:6": 100.0, "version:4": 2 }
+
+ITEM # InfArmor1       # mysticalagriculture:inferium_helmet     # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }
+ITEM # InfArmor2       # mysticalagriculture:inferium_chestplate # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}}, "air:4": 18000 }
+ITEM # InfArmor3       # mysticalagriculture:inferium_leggings   # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }
+ITEM # InfArmor4       # mysticalagriculture:inferium_boots      # NBT:{ "ench:9": {"0:10": {"lvl:4": 1, "id:4": 128}} }

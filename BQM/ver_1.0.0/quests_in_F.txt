@@ -1,0 +1,262 @@
+QUEST   #  F00      #  To Lava Planet # 600
+TEXT    #  So it is finally here. Using resources from the gas giant, build the Lava World Orb and travel to your first distant planet.
+PREREQ  #  AND      #  E60
+
+TASK    #  HAVE     #  LavaOrb
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  F10      #  To Alien Planet # 601
+TEXT    #  As you may know, Lava Planet is the best known deposit of Tiberium in this star system. Also Dilithium and Titan deposits are here. Start a mine, harvest the ores and use them to make the Alien World Orb, the key to the next planet in the row.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  AlienOrb
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  F20      #  Mining the Alien Planet # 602
+TEXT    #  Since the Alien Planet is the only source of Iridium in this solar system, you should start a mine also here.
+PREREQ  #  AND      #  F10
+
+TASK    #  HAVE     #  IridiumDust
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  F21      #  Mining the Crystal Moon # 603
+TEXT    #  Did you noticed the strange little moon of the Alien Planet? You should explore it, t contains deposits of Black Quartz and some other crystal structures.
+PREREQ  #  AND      #  F10
+
+TASK    #  HAVE     #  arCrystal
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  F30      #  The Sand Moon # 604
+TEXT    #  Your next stop should be the Red Sand Moon, orbiting the Blue Gas Giant. To get there, you need the Mystical World Orb. There is also the End Moon, but don't try to go there, before you will establish your base of operations on the Sand Moon.
+PREREQ  #  AND      #  F20  #  F21
+
+TASK    #  HAVE     #  MysticalOrb
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+// ----------------------------->
+// -------> Now the side quests
+// ----------------------------->
+// ------->
+
+QUEST   #  Fx00     #  Crush and Smelt # 650
+TEXT    #  The big sturdy Grinder can be now replaced by a much more compact Crusher. If you want. Also Powered Furnace is now available. Also some other utilities, droppers, placers and breakers are now on.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  aaGrinder
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx01     #  Capacitors # 651
+TEXT    #  Some basic crystal tech allows you now to build Capacitors... a fast charge/discharge battery.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  ioCapac0
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx02     #  Apiary Upgrades # 652
+TEXT    #  Your Apiaries can be equipped with some pretty useful upgrades. Now you have the means to build those.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  gdFrame
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx03     #  Liquid Handling # 653
+TEXT    #  Semi Automatic tank, capable of pulling and pushing the liquids from adjescent machines. This is a dream come true.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  ioTank
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx04     #  Deep Resonance # 673
+TEXT    #  You find from time to time this strange deep resonance ore. But what to do with it? Well, if I will tell you that it is a powersource capable of giving 10kRF/tick, will you be interrested? Now you have all you need to try it out.
+PREREQ  #  AND      #  F00
+
+TASK    #  HAVE     #  DRManual:1 # DRGenerator:1 # DRSmelter:1
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx20     #  Chemical Reactor # 654
+TEXT    #  So it is finally here, you can build the Chemical Reactor... the MODERN way to produce the rocket fuel.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  arReactor
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx21     #  Better Capacitor # 655
+TEXT    #  With new materials, you can now build much better capacitors.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  ioCapac1
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx22     #  Leaf Eating Generator # 656
+TEXT    #  Interesting application in the shape of Generator producing RF from consuming leaves is now opened for you.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  aaLeafGen
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx23     #  Better Factory # 657
+TEXT    #  You can also improve your factory now.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  aaPhbooster
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx24     #  Dark Steel Gear # 658
+TEXT    #  Did you noticed the strange new material Dark Steel? Do you know you can make Armor and Tools from it? Do you know that this armor can be Air Tight?
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  ioChest
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx25     #  Conduits # 659
+TEXT    #  Micro Conduits for Redstone Signal, Power, Fluids and even Items are now available to you.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  yetaWrench
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx26     #  Inventory Panel # 660
+TEXT    #  It seems possible now to build a much improved distributed storing system. If you want to try it out.
+PREREQ  #  AND      #  F20
+
+TASK    #  HAVE     #  ioInventory
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx210    #  Empowering # 661
+TEXT    #  Some weird Energy Infusing machine is available now to you. Will it be useful? Maybe. YES of course. Check all the recipes it can do. You mus place 4 display stands around it 2 blocks away. Pump power into the stands.
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  aaEmpower
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx211    #  Superb Capacitor # 662
+TEXT    #  Even more improved Capacitors are now in your reach.
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  ioCapac2
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx212    #  Solar Power # 663
+TEXT    #  New Techs can also be used to improve your Solar Panels.
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  ioSolar
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx213    #  Refined Storage # 664
+TEXT    #  It looks like, you will be able to digitize your items and store them on some portable drives. But are you sure it isn't too early for such a leap forward in tech?
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  RsSolderer # RsController # RsDisk # RsGrid
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx214    #  Phantom Factory # 665
+TEXT    #  Your understanding of the technology now jumped from the realm of Perfect to the realm of Magical.
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  aaPhantomF
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx215    #  Orbital Mining # 666
+TEXT    #  It can be this easy. Aim your beam to a planet, fire and get the resources. Try it out.
+PREREQ  #  AND      #  F21
+
+TASK    #  HAVE     #  arSpaceMine
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx30     #  Draconic Energy # 667
+TEXT    #  New Chapter of Draconic Technologies is now getting into your reach. And what is a better way to open it than with the omniscient Draconic Power Core? And Draconic Energy Crystals?
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  dePowerS
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx31     #  Enchanting with Style # 668
+TEXT    #  You may be tired of random enchants. There is a better way with the new great Ender IO Enchanter.
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  ioEnchanter
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx32     #  Super Farm # 669
+TEXT    #  Another great Farming Tech is now within your reach.
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  ioFarm
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx33     #  Almost Teleport # 670
+TEXT    #  Tired of elevators? Try Traveling Anchors and the Staff of Traveling.
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  ioTravelStaff # ioAnchor
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx34     #  No Random Mutations # 671
+TEXT    #  The Mutatron you used for the bees can be upgraded into the advanced version. No more randomness is necessary.
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  GEMutAdv
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2
+
+// ------->
+
+QUEST   #  Fx35     #  Invoking Ores # 672
+TEXT    #  Also new way of producing ores is now available. A specialized Ore Lens which changes the Atomic Reconstructor into the powerfull Ore Invoker.
+PREREQ  #  AND      #  F30
+
+TASK    #  HAVE     #  aaOreLens
+REWARD  #  PICK     #  HCSo2412:4 # HCSo2530:4 # IronBlock:32 # CobaltOre:32 # ARElevator:1 # AAFarmer:2 # Cloche:2 # IOVat:2

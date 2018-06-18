@@ -98,7 +98,7 @@ REWARD  #  XP       #  Levels:1
 
 // ------->
 
-QUEST   #  000      #  Master's Li Ancient Battle gear # 0
+QUEST   #  000      #  Ancient Battle gear # 0
 TEXT    #  They say that if you collect all the pieces they will come alive and start helping you in your holy quest.
 
 TASK    #  TRIGGER

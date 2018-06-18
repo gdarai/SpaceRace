@@ -44,7 +44,7 @@ TEXT    #  Don't think small, build lava powered furnace early and be cool.
 PREREQ  #  NAND     #  HA00
 
 TASK    #  HAVE     #  SearedBrick:70 #  SearedFurnace:1 #  SmelteryTank:3
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
 
@@ -53,7 +53,7 @@ TEXT    #  Who says you cannot have chests full of Eggplants?
 PREREQ  #  NAND     #  HA00
 
 TASK    #  HAVE     #  HEggplant:300
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
 
@@ -62,7 +62,7 @@ TEXT    #  Do you like fishing? A lot?
 PREREQ  #  NAND     #  HA00
 
 TASK    #  HAVE     #  Fish:32
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
 
@@ -71,7 +71,7 @@ TEXT    #  You don't plan to live in a mud shad right? Get material for a solid 
 PREREQ  #  NAND     #  HA00
 
 TASK    #  HAVE     #  BrickClay:300
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:500
+REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
 // Part B
@@ -82,7 +82,7 @@ TEXT    #  Well hunting zombies is great and all but this? You had to do this on
 PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  HZombie:32
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
@@ -91,7 +91,7 @@ TEXT    #  Are you really going to dive there? Just to get the fame?
 PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  Reef0:128 # Reef1:128
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
@@ -100,7 +100,7 @@ TEXT    #  And you thought those rabbit foots will be worthless. Well, from toda
 PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  RabbitFoot:256
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
@@ -109,7 +109,7 @@ TEXT    #  You don't plan to do this by your own hands... I hope.
 PREREQ  #  NAND     #  HA10
 
 TASK    #  GIVE     #  ObsidianShard:128
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 // Part C
@@ -120,7 +120,7 @@ TEXT    #  So they asked you to make some electron tubes but did not tell you ho
 PREREQ  #  NAND     #  HA20
 
 TASK    #  HAVE     #  ElTubeLapis:512
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
@@ -129,7 +129,7 @@ TEXT    #  They say you are getting ready for the bad time. What do you expect..
 PREREQ  #  NAND     #  HA20
 
 TASK    #  HAVE     #  RazorWire:192
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1000
+REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
@@ -138,7 +138,7 @@ TEXT    #  So I get it, you don't want to bore us by climbing ladders. But do yo
 PREREQ  #  NAND     #  HA20
 
 TASK    #  HAVE     #  ElevatorTrack:512
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
 
@@ -147,7 +147,7 @@ TEXT    #  I almost forgot... you just love bees, right?
 PREREQ  #  NAND     #  HA20
 
 TASK    #  GIVE     #  IceSpikes:64
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
 // Part D
@@ -158,7 +158,7 @@ TEXT    #  You should try to explore the Underend a little bit. There are many n
 PREREQ  #  NAND     #  HA30
 
 TASK    #  GIVE     #  MagmaSapling:16
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:1500
+REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
 
@@ -167,7 +167,7 @@ TEXT    #  So, it is now or never... CAN - YOU - DO - IT ?
 PREREQ  #  NAND     #  HA30
 
 TASK    #  HUNT		#  WitherBoss:1
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+REWARD  #  ALL      #  TradeCurr:40
 
 // ------->
 
@@ -176,7 +176,7 @@ TEXT    #  They say you can get almost infinite ammount of abyssum down there. C
 PREREQ  #  NAND     #  HA30
 
 TASK    #  GIVE     #  AbyssumDust:128
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+REWARD  #  ALL      #  TradeCurr:40
 
 // ------->
 
@@ -185,4 +185,4 @@ TEXT    #  Sure you can get one tank full of lava, but, can you get 256 of them?
 PREREQ  #  NAND     #  HA30
 
 TASK    #  GIVE     #  MagmaSearedTank:256
-REWARD  #  SCORE    #  SCORE:PUBLIC  #  add:2000
+REWARD  #  ALL      #  TradeCurr:40

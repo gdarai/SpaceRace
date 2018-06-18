@@ -1,0 +1,127 @@
+QUEST   #  MB00     #  Trading in Space # 1400
+TEXT    #  So you decided to get into space. That is brave and our market is here to support your effort.
+PREREQ  #  AND      #  TB00
+
+TASK    #  HAVE     #  MoonTurf:1
+REWARD  #  ALL      #  TradeCurr:2
+
+// ---------->
+// -- Market In
+// ---------->
+
+QUEST   #  MBxi00   #  Ghasts !!! # 1412
+TEXT    #  Advanced Market means also advanced safari.
+PREREQ  #  AND      #  MB00
+
+TASK    #  HUNT		#  Ghast:3
+REWARD  #  ALL      #  TradeCoinB:1 #  TradeCurr:2
+
+// ------->
+
+QUEST   #  MBxi01   #  Silverfish # 1413
+TEXT    #  Where to find silverfish in this universe? Well don't worry, they will find you.
+PREREQ  #  AND      #  MB00
+
+TASK    #  HUNT		#  Silverfish:5
+REWARD  #  ALL      #  TradeCoinB:1 #  TradeCurr:2
+
+// ------->
+
+QUEST   #  MBxi02   #  Bees and Apples # 1410
+TEXT    #  As usual, here are some little tasks to amuse our audience. In this case, you must have really strange ship with bees and apple trees.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE		#  HCGrub:3 # MAApple2:4
+REWARD  #  ALL      #  TradeCoinB:1 #  TradeCurr:2
+
+// ------->
+
+QUEST   #  MBxi03   #  End Crystal # 1411
+TEXT    #  Here is also one alternative... For some of us, this IS cheap?
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE		#  EndCrystal:1
+REWARD  #  ALL      #  TradeCoinB:1 #  TradeCurr:2
+
+// ---------->
+// -- Market Out
+// ---------->
+
+QUEST   #  MBxo00   #  Most Needed # 1420
+TEXT    #  Are you in need of some oxygen? Or hydrogen? Or energy?
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:3
+REWARD  #  ALL      #  GasFiller:1  #  OxygenTank:2  #  HydrogenTank:2  #  FullBattery:1
+
+// ------->
+
+QUEST   #  MBxo01   #  Space Liquids # 1421
+TEXT    #  There are some most needed liquids, like dilithium or rocket fuel... but also more advanced ones. If you have some spare dilithium... you can buy some of them.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:10 # DilithiumNugget:1 # xpBottle:8
+REWARD  #  PICK     #  RocketTank:5  #  NitrogenTank:4  #  DilithiumTank:2  #  NucleumTank:4  #  NutrientTank:10  #  MagmaTank:4  #  CloudTank:8
+
+// ------->
+
+QUEST   #  MBxo02   #  Data Transfer # 1422
+TEXT    #  Is your sattelite network too slow? Buy the data from us and you will be done in notime. Well of course it costs something, but you are used to that.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # ManyullynBlock:1 # xpBottle:10
+REWARD  #  ALL      #  dataUnit0:1  #  dataUnit1:1  #  dataUnit2:1
+
+// ------->
+
+QUEST   #  MBxo03   #  Seeds Again # 1423
+TEXT    #  So you forgot your most important seeds home and you need them now? Lucky for you we have some fresh delivery here.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:10 # DilithiumNugget:1 # xpBottle:4
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+
+// ------->
+
+QUEST   #  MBxo04   #  Space Farmer 101 # 1430
+TEXT    #  The time when farming equipment was huge and clumsy is over. For good.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:10 # xpBottle:10
+REWARD  #  PICK     #  AAFarmer:1  #  Cloche:3
+
+// ------->
+
+QUEST   #  MBxo05   #  Emergency power # 1431
+TEXT    #  If you are just few Mega RF short, then there is nothing better than our emergency supply.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # ManyullynBlock:1 # xpBottle:20
+REWARD  #  ALL     #   TripleBatFull:1 # ZombieGen:4 # NutrientTank:16 # PowerConduit:16
+
+// ------->
+
+QUEST   #  MBxo06   #  Your best friend # 1432
+TEXT    #  Automation is the guidebook to success. So investing into automation is the best thing you can do. Right? RIGHT?
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:30 # DilithiumNugget:1
+REWARD  #  ALL      #  IOCrafter:2  #  ioTank:2
+
+// ------->
+
+QUEST   #  MBxo07   #  Space junkyard # 1433
+TEXT    #  Don't tell me. You need yet another copper coil. Or is it hatch this time? Never the less we saw you make it a million times now, so don't waste even more, our cheap sale is here for you.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:40 # xpBottle:32
+REWARD  #  PICK     #  ARFrame:16 # ARHatch:16 # ARValve:16 # ARPlug:16 # EngineGold:8 # ARCoil:16
+
+// ------->
+
+QUEST   #  MBxo08   #  Sick of the oxygen mask # 1434
+TEXT    #  There must be way how to get rid of that terrible oxygen mask. And there is. Buy it and be the most happy space squatter ever.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # xpBottle:4
+REWARD  #  ALL      #  ARoxy0:1  #  ARoxy1:2  #  ARoxy2:2

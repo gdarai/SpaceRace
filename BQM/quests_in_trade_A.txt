@@ -14,7 +14,6 @@ PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  WaterBowl:30
 REWARD  #  ALL      #  TradeCurr:2
-REWARD  #  RESET    #  TA19
 
 // ------->
 
@@ -62,21 +61,6 @@ TASK    #  GIVE		#  HFruit0:16 # HFruit1:16 # HFruit2:16 # HFruit3:16 # HFruit4:
 REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
-
-QUEST   #  TA19     #  Reset the Food Chain # 1007
-TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
-PREREQ  #  OR       #  TA14
-
-TASK    #  GIVE		#  Diamond:2
-REWARD  #  XP       #  Levels:1
-REWARD  #  RESET    #  TA01
-REWARD  #  RESET    #  TA10
-REWARD  #  RESET    #  TA11
-REWARD  #  RESET    #  TA12
-REWARD  #  RESET    #  TA13
-REWARD  #  RESET    #  TA14
-
-// ------->
 // Mining Chain
 // ------->
 
@@ -86,7 +70,6 @@ PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  FlintPickAxe:10
 REWARD  #  ALL      #  TradeCurr:2
-REWARD  #  RESET    #  TA29
 
 // ------->
 
@@ -143,22 +126,6 @@ TASK    #  GIVE		#  AbyssumOre:16 # DracoDust:16
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
-
-QUEST   #  TA29     #  Reset the Miners Chain # 1015
-TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
-PREREQ  #  OR       #  TA25
-
-TASK    #  GIVE		#  Diamond:2
-REWARD  #  XP       #  Levels:1
-REWARD  #  RESET    #  TA02
-REWARD  #  RESET    #  TA20
-REWARD  #  RESET    #  TA21
-REWARD  #  RESET    #  TA22
-REWARD  #  RESET    #  TA23
-REWARD  #  RESET    #  TA24
-REWARD  #  RESET    #  TA25
-
-// ------->
 // Building Chain
 // ------->
 
@@ -168,7 +135,6 @@ PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  ChiselTool:1
 REWARD  #  ALL      #  TradeCurr:1
-REWARD  #  RESET    #  TA39
 
 // ------->
 
@@ -225,22 +191,6 @@ TASK    #  GIVE		#  FancyLamp:2 # Typewriter:1 # DinnerPlate:16
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
-
-QUEST   #  TA39     #  Reset the Builders Chain # 1023
-TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
-PREREQ  #  OR       #  TA35
-
-TASK    #  GIVE		#  Diamond:2
-REWARD  #  ALL      #  AccWorkbench:1 # BirchDesk:1 # OakChest:4
-REWARD  #  RESET    #  TA03
-REWARD  #  RESET    #  TA30
-REWARD  #  RESET    #  TA31
-REWARD  #  RESET    #  TA32
-REWARD  #  RESET    #  TA33
-REWARD  #  RESET    #  TA34
-REWARD  #  RESET    #  TA35
-
-// ------->
 // Orchard Chain
 // ------->
 
@@ -250,7 +200,6 @@ PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  Grafter:1
 REWARD  #  ALL      #  TradeCurr:1
-REWARD  #  RESET    #  TA49
 
 // ------->
 
@@ -289,20 +238,6 @@ TASK    #  GIVE		#  FCPlum:1000
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
-
-QUEST   #  TA49     #  Reset the Orchard Chain # 1029
-TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
-PREREQ  #  OR       #  TA43
-
-TASK    #  GIVE		#  Diamond:2
-REWARD  #  ALL      #  HoneyedSlice:8
-REWARD  #  RESET    #  TA04
-REWARD  #  RESET    #  TA40
-REWARD  #  RESET    #  TA41
-REWARD  #  RESET    #  TA42
-REWARD  #  RESET    #  TA43
-
-// ------->
 // Cheff Chain
 // ------->
 
@@ -312,7 +247,6 @@ PREREQ  #  AND      #  TA00
 
 TASK    #  GIVE		#  Toaster:1
 REWARD  #  ALL      #  TradeCurr:5
-REWARD  #  RESET    #  TA59
 
 // ------->
 
@@ -358,18 +292,3 @@ PREREQ  #  AND      #  TA53
 
 TASK    #  GIVE		#  HCSauce01:10 #  HCSauce02:10 #  HCSauce03:10 #  HCSauce04:10 #  HCSauce05:10
 REWARD  #  ALL      #  TradeCurr:15
-
-// ------->
-
-QUEST   #  TA59     #  Reset the Chef Chain # 1036
-TEXT    #  If you liked this quest chain, you can do it once again for just a small fee.
-PREREQ  #  OR       #  TA54
-
-TASK    #  GIVE		#  Diamond:2
-REWARD  #  ALL      #  HCTurtle:2
-REWARD  #  RESET    #  TA05
-REWARD  #  RESET    #  TA50
-REWARD  #  RESET    #  TA51
-REWARD  #  RESET    #  TA52
-REWARD  #  RESET    #  TA53
-REWARD  #  RESET    #  TA54

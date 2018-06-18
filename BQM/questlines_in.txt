@@ -264,45 +264,40 @@ TEXT         #  Some players want to be more farmers then explorers and so they 
 QUEST        #  TA00        #  -40:-25 	  #  30    #  NetherStar		# main
 
 QUEST        #  TA01        #  -40:0      #  30    #  WaterBowl			# main
-QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed
-QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion
-QUEST        #  TA12        #   20:0      #  25    #  HCBlueB
-QUEST        #  TA13        #   40:0      #  25    #  Wheet
-QUEST        #  TA14        #   60:0      #  25    #  HCPear
-QUEST        #  TA19        #  100:0      #  30    #  Diamond			# main
+QUEST        #  TA10        #  -20:0	  #  25    #  HCSeed			# repeat:24000
+QUEST        #  TA11        #    0:0   	  #  25    #  HCOnion			# repeat:24000
+QUEST        #  TA12        #   20:0      #  25    #  HCBlueB			# repeat:24000
+QUEST        #  TA13        #   40:0      #  25    #  Wheet			    # repeat:24000
+QUEST        #  TA14        #   60:0      #  25    #  HCPear			# repeat:24000
 
 QUEST        #  TA02        #  -40:15     #  30    #  FlintPickAxe		# main
-QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel
-QUEST        #  TA21        #    0:15  	  #  25    #  AluOre
-QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust
-QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack
-QUEST        #  TA24        #   60:15     #  25    #  GoldOre
-QUEST        #  TA25        #   80:15     #  25    #  DracoDust
-QUEST        #  TA29        #  100:15     #  30    #  Diamond			# main
+QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel		# repeat:24000
+QUEST        #  TA21        #    0:15  	  #  25    #  AluOre			# repeat:24000
+QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust		# repeat:24000
+QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack		# repeat:24000
+QUEST        #  TA24        #   60:15     #  25    #  GoldOre			# repeat:24000
+QUEST        #  TA25        #   80:15     #  25    #  DracoDust			# repeat:24000
 
 QUEST        #  TA03        #  -40:30     #  30    #  ChiselTool		# main
-QUEST        #  TA30        #  -20:30     #  25    #  BrickClay
-QUEST        #  TA31        #    0:30  	  #  25    #  OakStais
-QUEST        #  TA32        #   20:30     #  25    #  GetLog3
-QUEST        #  TA33        #   40:30     #  25    #  CelticMossy
-QUEST        #  TA34        #   60:30     #  25    #  BirchDesk
-QUEST        #  TA35        #   80:30     #  25    #  Typewriter
-QUEST        #  TA39        #  100:30     #  30    #  Diamond			# main
+QUEST        #  TA30        #  -20:30     #  25    #  BrickClay			# repeat:24000
+QUEST        #  TA31        #    0:30  	  #  25    #  OakStais			# repeat:24000
+QUEST        #  TA32        #   20:30     #  25    #  GetLog3			# repeat:24000
+QUEST        #  TA33        #   40:30     #  25    #  CelticMossy		# repeat:24000
+QUEST        #  TA34        #   60:30     #  25    #  BirchDesk			# repeat:24000
+QUEST        #  TA35        #   80:30     #  25    #  Typewriter		# repeat:24000
 
 QUEST        #  TA04        #  -40:45     #  30    #  Grafter	    	# main
-QUEST        #  TA40        #  -20:45     #  25    #  FCherry
-QUEST        #  TA41        #    0:45  	  #  25    #  FChestnut
-QUEST        #  TA42        #   20:45     #  25    #  FDate
-QUEST        #  TA43        #   40:45     #  25    #  FPlum
-QUEST        #  TA49        #  100:45     #  30    #  Diamond			# main
+QUEST        #  TA40        #  -20:45     #  25    #  FCherry			# repeat:24000
+QUEST        #  TA41        #    0:45  	  #  25    #  FChestnut			# repeat:24000
+QUEST        #  TA42        #   20:45     #  25    #  FDate			    # repeat:24000
+QUEST        #  TA43        #   40:45     #  25    #  FPlum			    # repeat:24000
 
 QUEST        #  TA05        #  -40:60     #  30    #  Toaster	    	# main
-QUEST        #  TA50        #  -20:60     #  25    #  HCToast01
-QUEST        #  TA51        #    0:60  	  #  25    #  HCLarge01
-QUEST        #  TA52        #   20:60     #  25    #  HCLarge03
-QUEST        #  TA53        #   40:60     #  25    #  HCFeast01
-QUEST        #  TA54        #   60:60     #  25    #  HCSauce02
-QUEST        #  TA59        #  100:60     #  30    #  Diamond			# main
+QUEST        #  TA50        #  -20:60     #  25    #  HCToast01			# repeat:24000
+QUEST        #  TA51        #    0:60  	  #  25    #  HCLarge01			# repeat:24000
+QUEST        #  TA52        #   20:60     #  25    #  HCLarge03			# repeat:24000
+QUEST        #  TA53        #   40:60     #  25    #  HCFeast01			# repeat:24000
+QUEST        #  TA54        #   60:60     #  25    #  HCSauce02			# repeat:24000
 
 // ------------------>
 // Market A - lines are used for buying material for score
@@ -314,24 +309,26 @@ TEXT         #  Concider this a market, where your seller is the audience. Show 
 
 QUEST        #  MA00        #    0:10 	  #  30    #  NetherStar 		 # main
 
-QUEST        #  MAxi00      #  -55:-5	  #  40    #  HZombie			 # repeat:1000
-QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			 # repeat:1000
-QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			 # repeat:1000
-QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			 # repeat:1000
+QUEST        #  MAxi00      #  -55:-5	  #  40    #  HZombie			 # repeat:6000
+QUEST        #  MAxi01      #  -55:25	  #  40    #  HWitch			 # repeat:6000
+QUEST        #  MAxi02      #  -25:-5	  #  40    #  HCMilk  			 # repeat:6000
+QUEST        #  MAxi03      #  -25:25	  #  40    #  spWool  			 # repeat:6000
 
-QUEST        #  MAxo00      #   80:-8     #  25    #  HCSeed  			 # repeat:1000
-QUEST        #  MAxo01      #   80:8	  #  25    #  HCMealL  			 # repeat:1000
-QUEST        #  MAxo02      #   60:-8	  #  25    #  Ore00  			 # repeat:1000
-QUEST        #  MAxo03      #   60:8	  #  25    #  Ore22  			 # repeat:1000
-QUEST        #  MAxo04      #   40:-8	  #  25    #  spTorch  			 # repeat:1000
-QUEST        #  MAxo05      #   40:8	  #  25    #  BeeHouse  		 # repeat:1000
+QUEST        #  MAxo00      #   80:-8     #  25    #  HCSeed  			 # repeat:6000
+QUEST        #  MAxo01      #   80:8	  #  25    #  HCMealL  			 # repeat:6000
+QUEST        #  MAxo02      #   60:-8	  #  25    #  Ore00  			 # repeat:6000
+QUEST        #  MAxo03      #   60:8	  #  25    #  Ore22  			 # repeat:6000
+QUEST        #  MAxo04      #   40:-8	  #  25    #  spTorch  			 # repeat:6000
+QUEST        #  MAxo05      #   40:8	  #  25    #  BeeHouse  		 # repeat:6000
 
-QUEST        #  MAxo10      #   80:22	  #  25    #  gearCopper  		 # repeat:1000
-QUEST        #  MAxo11      #   80:38	  #  25    #  engBlLight  		 # repeat:1000
-QUEST        #  MAxo12      #   60:22	  #  25    #  bucket  			 # repeat:1000
-QUEST        #  MAxo13      #   60:38	  #  25    #  Carpenter  		 # repeat:1000
-QUEST        #  MAxo14      #   40:22	  #  25    #  iePower02  		 # repeat:1000
-QUEST        #  MAxo15      #   40:38	  #  25    #  BeeHouse  		 # repeat:1000
+QUEST        #  MAxo10      #   80:22	  #  25    #  gearCopper  		 # repeat:6000
+QUEST        #  MAxo11      #   80:38	  #  25    #  engBlLight  		 # repeat:6000
+QUEST        #  MAxo12      #   60:22	  #  25    #  bucket  			 # repeat:6000
+QUEST        #  MAxo13      #   60:38	  #  25    #  Carpenter  		 # repeat:6000
+QUEST        #  MAxo14      #   40:22	  #  25    #  iePower02  		 # repeat:6000
+QUEST        #  MAxo15      #   40:38	  #  25    #  BeeHouse  		 # repeat:6000
+
+QUEST        #  MAxo16      #   60:52	  #  25    #  SlimeSling  		 # repeat:6000
 
 // ------------------>
 // Hoarding quests
@@ -367,6 +364,63 @@ QUEST        #  HAx32       #   32:30	  #  25    #  AbyssumDust
 QUEST        #  HAx33       #   48:30	  #  25    #  LavaBlock
 
 // ------------------>
+// Trade B - Trade lines are used for obtaining score through common tasks.
+// ------------------>
+
+LINE         #  TB         #  Space Trading
+SIZE         #  2:2        #  50:50
+TEXT         #  Like basic trading but in space. It has all the B's. It is bigger, brighter, better and bolder.
+
+QUEST        #  TB00        #  -40:-25 	  #  30    #  NetherStar		# main
+
+QUEST        #  TB01        #  -40:0      #  30    #  ARPresTank		# main
+QUEST        #  TB10        #  -20:0	  #  25    #  HootchTank		# repeat:24000
+QUEST        #  TB11        #    0:0   	  #  25    #  NutrientTank		# repeat:24000
+QUEST        #  TB12        #   20:0      #  25    #  CloudTank			# repeat:24000
+
+QUEST        #  TB02        #  -40:15     #  30    #  GoldenFrame		# main
+QUEST        #  TB20        #  -20:15     #  25    #  MoonTurf			# repeat:24000
+QUEST        #  TB21        #    0:15  	  #  25    #  DilithiumCrystal	# repeat:24000
+QUEST        #  TB22        #   20:15     #  25    #  AlienWood			# repeat:24000
+QUEST        #  TB23        #   40:15     #  25    #  Geode			    # repeat:24000
+
+QUEST        #  TB03        #  -40:30     #  30    #  Gear      		# main
+QUEST        #  TB30        #  -20:30     #  25    #  gearInvar			# repeat:24000
+QUEST        #  TB31        #    0:30  	  #  25    #  ManyullynSword	# repeat:24000
+QUEST        #  TB32        #   20:30     #  25    #  TrackHigh			# repeat:24000
+QUEST        #  TB33        #   40:30     #  25    #  Rplate5			# repeat:24000
+
+QUEST        #  TB04        #  -40:45     #  30    #  IronSword	    	# main
+QUEST        #  TB40        #  -20:45     #  25    #  DragonHeart		# repeat:24000
+QUEST        #  TB41        #    0:45  	  #  25    #  endEgg			# repeat:24000
+QUEST        #  TB42        #   20:45     #  25    #  ChaosShard		# repeat:24000
+
+// ------------------>
+// Market B
+// ------------------>
+
+LINE         #  MB         #  Buying Space Items
+SIZE         #  2:2        #  50:50
+TEXT         #  So you have some experience with market... here is advanced market for you Space travelling folk.
+
+QUEST        #  MB00        #    0:10 	  #  30    #  NetherStar		 # main
+
+QUEST        #  MBxi00      #  -55:-5	  #  40    #  GhastTear			 # repeat:6000
+QUEST        #  MBxi01      #  -55:25	  #  40    #  Cobble			 # repeat:6000
+QUEST        #  MBxi02      #  -25:-5	  #  40    #  MAApple2			 # repeat:6000
+QUEST        #  MBxi03      #  -25:25	  #  40    #  EndCrystal		 # repeat:6000
+
+QUEST        #  MBxo00      #   40:-5     #  25    #  OxygenTank		 # repeat:6000
+QUEST        #  MBxo01      #   60:-5     #  25    #  DilithiumTank		 # repeat:6000
+QUEST        #  MBxo02      #   80:-5     #  25    #  dataUnit0			 # repeat:6000
+QUEST        #  MBxo03      #   40:10     #  25    #  MASeed00			 # repeat:6000
+QUEST        #  MBxo04      #   60:10     #  25    #  Cloche			 # repeat:6000
+QUEST        #  MBxo05      #   80:10     #  25    #  TripleBatFull	     # repeat:6000
+QUEST        #  MBxo06      #   40:25     #  25    #  IOCrafter			 # repeat:6000
+QUEST        #  MBxo07      #   60:25     #  25    #  ARFrame			 # repeat:6000
+QUEST        #  MBxo08      #   80:25     #  25    #  ARoxy2			 # repeat:6000
+
+// ------------------>
 // Cheat lines are used when nothing else works
 // ------------------>
 
@@ -374,17 +428,15 @@ LINE         #  CH         #  Cheats
 SIZE         #  2:2        #  50:50
 TEXT         #  You should not open this tab unless you feel REALLY REALLY in deep trouble.
 
-QUEST        #  CHreset     #    0:-25 	  #  30    #  WaterBowl  		# main
-
-QUEST        #  CH1         #  -30:-20    #  20    #  CHboat
-QUEST        #  CH2         #  -45:-20    #  20    #  Mutation
-QUEST        #  CH3         #  -45:-5     #  20    #  LemonFruit
-QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain
+QUEST        #  CH1         #  -30:-20    #  20    #  CHboat  		     # repeat:1200
+QUEST        #  CH2         #  -45:-20    #  20    #  Mutation  		 # repeat:1200
+QUEST        #  CH3         #  -45:-5     #  20    #  LemonFruit  		 # repeat:1200
+QUEST        #  CH4         #  -30:-5     #  20    #  MetallicGrain  	 # repeat:1200
 
 QUEST        #  CH10        #   30:-20    #  15    #  MoonTurf
-QUEST        #  CH11        #   15:-20    #  20    #  CHglider
-QUEST        #  CH12        #   45:-20    #  20    #  CHengine
-QUEST        #  CH13        #   15:-5     #  20    #  MasterCrystal
-QUEST        #  CH16        #   25:-5     #  20    #  InfArmor1
-QUEST        #  CH15        #   35:-5     #  20    #  DRCrystal
-QUEST        #  CH14        #   45:-5     #  20    #  DragonHeart
+QUEST        #  CH11        #   15:-20    #  20    #  CHglider  		 # repeat:3000
+QUEST        #  CH12        #   45:-20    #  20    #  CHengine  		 # repeat:3000
+QUEST        #  CH13        #   15:-5     #  20    #  MasterCrystal  	 # repeat:3000
+QUEST        #  CH16        #   25:-5     #  20    #  InfArmor1  		 # repeat:3000
+QUEST        #  CH15        #   35:-5     #  20    #  DRCrystal  		 # repeat:3000
+QUEST        #  CH14        #   45:-5     #  20    #  DragonHeart  		 # repeat:3000

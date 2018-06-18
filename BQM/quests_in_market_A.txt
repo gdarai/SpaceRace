@@ -73,7 +73,6 @@ TEXT    #  Why spend time digging dirt? Would you like to buy some instead?
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE     #  TradeCoinA:1 #  TradeCurr:5
-TASK    #  TRIGGER
 REWARD  #  PICK     #  Ore00:16 # Ore10:8 # Ore11:8 # Ore12:8 # Ore13:8 # Ore14:8 # Ore15:8 # Ore16:8 # Ore20:4 #  Ore21:4
 
 // ------->
@@ -83,7 +82,6 @@ TEXT    #  This is the place to buy the shiny little things.
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:6 # essInferi:4
-TASK    #  TRIGGER
 REWARD  #  PICK     #  Ore22:4 # Ore23:4 # Ore24:4 # OreSpec01:4 # OreSpec02:4 # OreSpec03:4 # OreSpec04:4 # OreSpec05:4 # OreSpec06:4 # SoulSand:4
 
 // ------->
@@ -93,7 +91,6 @@ TEXT    #  Need some Leather? Cloth? Treated Wood? We have some for you.
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:4 # essInferi:1
-TASK    #  TRIGGER
 REWARD  #  PICK     #  spLeather:24 # spHLeather:12 # spTorch:32 # Rope:8 # spFabric:6 # spPlank:32 # spKit:16 # spWool:4
 
 // ------->
@@ -103,7 +100,6 @@ TEXT    #  Well, come bees can give you hell. But if you want... at least the St
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:7 # essInferi:10 # xpBottle:16
-TASK    #  TRIGGER
 REWARD  #  BEE      #  SteadfastDrone:10
 
 // ------->
@@ -113,7 +109,6 @@ TEXT    #  When the clock engine breaks and you need a quick replacement part, y
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:10 # essInferi:2 # xpBottle:4
-TASK    #  TRIGGER
 REWARD  #  PICK     #  stickAlu:5 # stickIron:5 # stickSteel:5 # plateAlu:3 # plateCopper:3 # plateTin:3 # plateIron:3 # plateNickel:3 # plateSteel:3 # gearIron:1 # gearCopper:1 # gearTin:1 # gearBronze:1 # gearSteel:1
 
 // ------->
@@ -123,7 +118,6 @@ TEXT    #  Maybe even some full machine parts are on sale today.
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:15 # essInferi:4 # xpBottle:8
-TASK    #  TRIGGER
 REWARD  #  PICK     #  engBlLight:4 # engBlHeavy:1 # engBlRed:1 # engBlRad:2 # engBlGen:1 # Hopper:6 # ConveyorBelt:15
 
 // ------->
@@ -133,7 +127,6 @@ TEXT    #  Do you want to buy some basic fluid storage and transport?
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:10 # essInferi:2
-TASK    #  TRIGGER
 REWARD  #  ALL     #  iePump:1 # iePipe:8 # SmelteryTank:2 # bucket:1
 
 // ------->
@@ -143,7 +136,6 @@ TEXT    #  Our viewers love watching you... you can pick your reward for their h
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:20 # essInferi:9 # xpBottle:16
-TASK    #  TRIGGER
 REWARD  #  PICK     #  Carpenter:1 # TFabricator:1 # Centrifuge:1 # Squeezer:2 # FFarm:18 # DrawerCont:2
 REWARD  #  ALL      #  ClockEngine:1
 
@@ -154,7 +146,6 @@ TEXT    #  Need some more power gadgets?
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:20 # essInferi:4 # xpBottle:8
-TASK    #  TRIGGER
 REWARD  #  ALL     #  iePower00:6 # iePower01:8 # iePower02:16 # iePower03:1 # iePower04:1 # iePower05:1 # iePower06:6
 
 // ------->
@@ -164,7 +155,6 @@ TEXT    #  Well, come bees can give you hell. But if you want... at least the mu
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:10 # essInferi:10 # xpBottle:16
-TASK    #  TRIGGER
 REWARD  #  BEE      #  JungleDrone:10
 
 // ------->
@@ -174,5 +164,4 @@ TEXT    #  So yes. Here are some ways, you can get from island to island without
 PREREQ  #  AND      #  MA00
 
 TASK    #  GIVE		#  TradeCoinA:1 #  TradeCurr:8 # essInferi:2 # xpBottle:5
-TASK    #  TRIGGER
-REWARD  #  PICK     #  engBlLight:4 # engBlHeavy:1 # engBlRed:1 # engBlRad:2 # engBlGen:1 # Hopper:6 # ConveyorBelt:15
+REWARD  #  PICK     #  CHglider:1 # SlimeSling:1 # TeleportFrame:2 # TeleportMark:2

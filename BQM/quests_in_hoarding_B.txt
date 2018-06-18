@@ -1,0 +1,143 @@
+QUEST   #  HB00     #  Cochran's Mission # 1500
+TEXT    #  As usual the hoarding quests are split by some milestones. The first one is your first true warp flight.
+PREREQ  #  AND      #  HA30
+
+TASK    #  HAVE     #  LavaOrb
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  HB10     #  Dragon Age # 1501
+TEXT    #  For the next quests you have time, before you kill your first dragon.
+PREREQ  #  AND      #  HB00
+
+TASK    #  HAVE     #  DragonHeart
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  HB20     #  Ultimate Goal # 1502
+TEXT    #  Also the last series of quests is time-limitted. You can complete them only before you create your first Creative Power Source.
+PREREQ  #  AND      #  HB10
+
+TASK    #  HAVE     #  CreativePower
+REWARD  #  XP       #  Levels:1
+
+// ------->
+
+QUEST   #  HB30     #  The Ultimate Victory # 1503
+TEXT    #  The Last Task. Prove that you achieved the rank of gods.
+PREREQ  #  AND      #  HB20
+
+TASK    #  GIVE     #  TradeCurr:1000000 # TradeCoinA:100000 # TradeCoinB:100000
+TASK    #  GIVE     #  ChaosShard:1000000 # DragonHeart:1000000 # NetherStar:1000000
+REWARD  #  XP       #  Levels:1
+
+// ------->
+// ----------------------------->
+// -------> Now the hoarding quests
+// ----------------------------->
+// ------->
+// Part A
+// ------->
+
+QUEST   #  HBx0     #  The biggest gun # 1510
+TEXT    #  Viewers love big guns. If you want to get their attention, build one on your ship and base.
+PREREQ  #  NAND     #  HB00
+
+TASK    #  HAVE     #  Railgun01:2 #  Railgun02:36 #  ARPlug:4 # ARHatch:4 # Railgun03:50 # ARCoil:58
+REWARD  #  ALL      #  TradeCurr:10
+
+// ------->
+
+QUEST   #  HBx1     #  Armored Zeppelin # 1511
+TEXT    #  Can you do it? Armor-up zeppelin in obsidian and fly it among the stars? Our viewers say you cannot. And they started betting against you.
+PREREQ  #  NAND     #  HB00
+
+TASK    #  HAVE     #  ShipWheel:1 # ShipEngine:2 # DvBaloon:292 # Obsidian:232
+REWARD  #  ALL      #  TradeCurr:10
+
+// ------->
+
+QUEST   #  HBx2     #  Which army? # 1512
+TEXT    #  You can still keep saying that it is just for scientific purposes, but we know you better. And we are watching you like hawks.
+PREREQ  #  NAND     #  HB00
+
+TASK    #  HAVE     #  CHengine:1000
+REWARD  #  ALL      #  TradeCurr:10
+
+// ------->
+
+QUEST   #  HBx3     # Stars Everywhere # 1513
+TEXT    #  You are doing this, because you love the shape. Right? It makes you a star.
+PREREQ  #  NAND     #  HB00
+
+TASK    #  GIVE     #  Enori:10000
+REWARD  #  ALL      #  TradeCurr:10
+
+// ------->
+// Part B
+// ------->
+
+QUEST   #  HBx10    #  Moon Explorer # 1520
+TEXT    #  The question is, WHAT is it on the south pole of the moon? People are still talking about it, but nobody was actually there! Solve that mistery.
+PREREQ  #  NAND     #  HB10
+
+TASK    #  TRAVEL   #  MoonPole
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+
+QUEST   #  HBx11    #  Back to the Future # 1521
+TEXT    #  To get back here is the secret threshold 1.21 GW, right? Well can you? CAN YOU?
+PREREQ  #  NAND     #  HB10
+
+TASK    #  RF_RATE  #  50000:2400
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+
+QUEST   #  HBx12    #  Terminator Inside # 1522
+TEXT    #  But this is pure evil. Why would you do such a thing? I know why, the viewers know why... and everybody who can figure out why will watch you until the end of the world and give you all the attention our show wants.
+PREREQ  #  NAND     #  HB10
+
+TASK    #  HAVE     #  Nanobots:1000
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+
+QUEST   #  HBx13    #  Ancient Battle gear # 1523
+TEXT    #  They say that if you collect all the pieces they will come alive and start helping you in your holy quest.
+PREREQ  #  NAND     #  HB10
+
+TASK    #  HAVE     #  DarkArmor1:1 #  DarkArmor2:1 #  DarkArmor3:1 #  DarkArmor4:1 #  DarkArmor5:1 #  DarkArmor6:1
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+// Part C
+// ------->
+
+QUEST   #  HBx20    #  Evil Grass # 1530
+TEXT    #  You are going to deliver this and never use any of it. You MUST promise that?
+PREREQ  #  NAND     #  HB20
+
+TASK    #  HAVE     #  ElTubeLapis:512
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+
+QUEST   #  HBx21    #  We are the End # 1531
+TEXT    #  If you have one or two, they are safe. In this amount? Prepare for running.
+PREREQ  #  NAND     #  HB20
+
+TASK    #  HAVE     #  RazorWire:192
+REWARD  #  ALL      #  TradeCurr:20
+
+// ------->
+
+QUEST   #  HBx22    #  Indiana who? # 1532
+TEXT    #  Sooo... sea monsters. They claim that they saw a sea monsters. And you didn't kill any yet.
+PREREQ  #  NAND     #  HB20
+
+TASK    #  GIVE     #  IceSpikes:64
+REWARD  #  ALL      #  TradeCurr:30

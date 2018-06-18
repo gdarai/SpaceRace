@@ -113,7 +113,7 @@ def writeTaskLines(f, intention, task, items, locs):
 		writeLine(f, intention+2, '"FluidName:8": "'+m[0]+'",')
 		writeLine(f, intention+2, '"Amount:3": '+m[1])
 		writeLine(f, intention+1, '}')
-		writeLine(f, intention, '],')
+		writeLine(f, intention, '},')
 		writeLine(f, intention, '"taskID:8": "bq_standard:fluid",')
 	elif(type=='RF_RATE'):
 		m = task['items'][0].split(':')
@@ -195,10 +195,10 @@ def writeRewardLines(f, intention, reward, items, quests):
 		writeLine(f, intention, '"rewardID:8": "bq_standard:item",')
 	elif(type=='SAPLING'):
 		printTaskItemList(f, intention, 'rewards', reward['items'], items)
-		writeLine(f, intention, '"rewardID:8": "forestryquesting:reward.tree",')
+		writeLine(f, intention, '"rewardID:8": "bq_standard:item",')
 	elif(type=='BEE'):
 		printTaskItemList(f, intention, 'rewards', reward['items'], items)
-		writeLine(f, intention, '"rewardID:8": "forestryquesting:reward.bee",')
+		writeLine(f, intention, '"rewardID:8": "bq_standard:item",')
 	elif(type=='PICK'):
 		printTaskItemList(f, intention, 'choices', reward['items'], items)
 		writeLine(f, intention, '"rewardID:8": "bq_standard:choice",')
@@ -275,6 +275,14 @@ def expandWildchars( lst0, lstFull ):
 		else:
 			lst1.append(it)
 	return lst1
+    
+def addChromozomes  ( chList, attrList ):
+    for attr0 in attrList:
+        attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
+        index = str(len(chList))
+        chList.append('"'+index+':10": { "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+index+' }')
+    return chList
+
 ########
 # Data loading
 
@@ -345,14 +353,11 @@ for line in lines:
             printWarning('Skipping SAPLING: '+name+', parameter 4 must be <i1d:i20:i4d>')
             continue
         chromozomes = []
-        for attr in props1:
-            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        for attr in props2:
-            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        for attr in props3:
-            chromozomes.append('{ "UID1:8": "forestry.'+attr+'", "UID0:8": "forestry.'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        chromozomes.append('{ "UID1:8": "forestry.'+m[6]+'", "UID0:8": "forestry.'+m[6]+'", "Slot:1": '+str(len(chromozomes))+' }')
-        nbt = '{ "IsAnalyzed:1": '+m[2]+', "Genome:10": { "Chromosomes:9": ['+', '.join(chromozomes)+'] } }'
+        chromozomes = addChromozomes(chromozomes, props1)
+        chromozomes = addChromozomes(chromozomes, props2)
+        chromozomes = addChromozomes(chromozomes, props3)
+        chromozomes = addChromozomes(chromozomes, [m[6]])
+        nbt = '{ "IsAnalyzed:1": '+m[2]+', "Genome:10": { "Chromosomes:9": {'+', '.join(chromozomes)+'} } }'
 
         theItem = {
             'package': 'forestry',
@@ -384,16 +389,14 @@ for line in lines:
             printWarning('Skipping BEE: '+name+', parameter 5 must be <bool:bool:flowers:flowering:territory:effect>')
             continue
         chromozomes = []
-        for attr0 in props1:
-            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
-            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        for attr0 in props2:
-            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
-            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        for attr0 in props3:
-            attr = attr0 if len(attr0.split(".")) == 2 else 'forestry.'+attr0
-            chromozomes.append('{ "UID1:8": "'+attr+'", "UID0:8": "'+attr+'", "Slot:1": '+str(len(chromozomes))+' }')
-        nbt = '{ "MaxH:3": '+props0[1]+', "Health:3": '+props0[1]+', "IsAnalyzed:1": '+m[2]+', "Genome:10": { "Chromosomes:9": ['+', '.join(chromozomes)+'] } }'
+        chromozomes = addChromozomes(chromozomes, props1)
+        chromozomes = addChromozomes(chromozomes, props2)
+        chromozomes = addChromozomes(chromozomes, props3)
+        chromoString = '{ "Chromosomes:9": {'+', '.join(chromozomes)+'} }'
+        if props0[0] == 'Queen':
+            nbt = '{ "MaxH:3": '+props0[1]+', "Health:3": '+props0[1]+', "IsAnalyzed:1": '+m[2]+', "Mate:10": '+chromoString+', "Genome:10": '+chromoString+' }'            
+        else:
+            nbt = '{ "MaxH:3": '+props0[1]+', "Health:3": '+props0[1]+', "IsAnalyzed:1": '+m[2]+', "Genome:10": '+chromoString+' }'
 
         theItem = {
             'package': 'forestry',

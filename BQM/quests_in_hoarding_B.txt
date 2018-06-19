@@ -80,7 +80,7 @@ REWARD  #  ALL      #  TradeCurr:10
 // ------->
 
 QUEST   #  HBx10    #  Moon Explorer # 1520
-TEXT    #  The question is, WHAT is it on the south pole of the moon? People are still talking about it, but nobody was actually there! Solve that mistery.
+TEXT    #  The question is, WHAT is it on the south pole of THE MOON? People are still talking about it, but nobody was actually there! Solve that mistery.
 PREREQ  #  NAND     #  HB10
 
 TASK    #  TRAVEL   #  MoonPole
@@ -110,7 +110,7 @@ QUEST   #  HBx13    #  Ancient Battle gear # 1523
 TEXT    #  They say that if you collect all the pieces they will come alive and start helping you in your holy quest.
 PREREQ  #  NAND     #  HB10
 
-TASK    #  HAVE     #  DarkArmor1:1 #  DarkArmor2:1 #  DarkArmor3:1 #  DarkArmor4:1 #  DarkArmor5:1 #  DarkArmor6:1
+TASK    #  HAVE     #  DarkArmor1:1 #  DarkArmor2:1 #  DarkArmor3:1 #  DarkArmor4:1 #  DarkArmor5:1 #  DarkArmor6:1 #  DarkArmor7:1
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -121,7 +121,7 @@ QUEST   #  HBx20    #  Evil Grass # 1530
 TEXT    #  You are going to deliver this and never use any of it. You MUST promise that?
 PREREQ  #  NAND     #  HB20
 
-TASK    #  HAVE     #  ElTubeLapis:512
+TASK    #  GIVE     #  SlimeDirt1:5000
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -130,7 +130,7 @@ QUEST   #  HBx21    #  We are the End # 1531
 TEXT    #  If you have one or two, they are safe. In this amount? Prepare for running.
 PREREQ  #  NAND     #  HB20
 
-TASK    #  HAVE     #  RazorWire:192
+TASK    #  HAVE     #  TrappedEnderMan:1024
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -139,5 +139,5 @@ QUEST   #  HBx22    #  Indiana who? # 1532
 TEXT    #  Sooo... sea monsters. They claim that they saw a sea monsters. And you didn't kill any yet.
 PREREQ  #  NAND     #  HB20
 
-TASK    #  GIVE     #  IceSpikes:64
+TASK    #  HUNT		  #  Zombie:5
 REWARD  #  ALL      #  TradeCurr:30

@@ -303,17 +303,17 @@ for line in lines:
         continue
     if (m[0]=='LOC'):
         name = parseName(m[1])
-        if (len(m)<4):
-            printWarning('Skipping LOC: '+name+', need parameters LOC <name> <dim:x:y:z> <radius>')
+        if (len(m)<5):
+            printWarning('Skipping LOC: '+name+', need parameters LOC#<code>#<name>#<dim:x:y:z>#<radius>')
             continue
-        coords = m[2].split(":")
+        coords = m[3].split(":")
         theLocation = {
-			'name': m[1],
+			'name': m[2],
             'dim': coords[0],
             'x': coords[1],
             'y': coords[2],
             'z': coords[3],
-            'radius': m[3]
+            'radius': m[4]
         }
         locations[name]=theLocation
     if (m[0]=='ITEM'):

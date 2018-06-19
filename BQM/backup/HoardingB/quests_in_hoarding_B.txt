@@ -136,7 +136,7 @@ REWARD  #  ALL      #  TradeCurr:20
 // ------->
 
 QUEST   #  HBx22    #  Indiana who? # 1532
-TEXT    #  Sooo... sea monsters. They claim that they saw sea monsters. And you didn't kill any yet.
+TEXT    #  Sooo... sea monsters. They claim that they saw a sea monsters. And you didn't kill any yet.
 PREREQ  #  NAND     #  HB20
 
 TASK    #  GIVE		#  sponge:5

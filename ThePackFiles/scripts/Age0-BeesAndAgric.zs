@@ -63,6 +63,7 @@ val prosperityShard = <mysticalagriculture:prosperity_shard>;
 
 recipes.remove(infCrystal);
 recipes.addShaped(infCrystal, [[prosperityShard, honeyDew, prosperityShard], [honeyDew, infBlock, honeyDew], [prosperityShard, honeyDew, prosperityShard]]);
+furnace.addRecipe(<advancedrocketry:crystal:4>, infCrystal, 20);
 
 // Torches
 val torch = <minecraft:torch>;

@@ -301,7 +301,7 @@ val chLoaderAdd = <railcraft:worldspike_point>;
 val handFiller = <actuallyadditions:itemFillingWand>;
 val leafBlower = <actuallyadditions:itemLeafBlower>;
 
-val infCrystal = <mysticalagriculture:infusion_crystal>.noReturn();
+val infCrystal = <advancedrocketry:crystal:4>;
 val battery = <actuallyadditions:itemBattery>;
 val obsPlate = <tconstruct:large_plate>.withTag({Material: "obsidian"});
 val handle = <immersiveengineering:material:13>;
@@ -310,7 +310,7 @@ recipes.remove(experienceSolidifier);
 recipes.addShaped(experienceSolidifier, [[null, <actuallyadditions:blockSmileyCloud>, null], [gearBronze, casingWood, gearBronze], [aluScaff, <tconstruct:metal:5>, aluScaff]]);
 
 recipes.remove(experienceRod);
-recipes.addShaped(experienceRod, [[null, tubeEmerald.noReturn(), infCrystal], [tubeEmerald.noReturn(), <ore:ingotIox>.noReturn(), tubeEmerald.noReturn()], [infCrystal, tubeEmerald.noReturn(), null]]);
+recipes.addShaped(experienceRod, [[null, tubeEmerald, infCrystal], [tubeEmerald, <ore:ingotIox>, tubeEmerald], [infCrystal, tubeEmerald, null]]);
 
 // Magnet
 recipes.remove(elMagnet);
@@ -331,7 +331,7 @@ recipes.addShapeless(<railcraft:dust:3>, [<immersiveengineering:tool>.reuse(), <
 
 // Handheld Filler
 recipes.remove(handFiller);
-recipes.addShaped(handFiller, [[null, tubeObsidian.noReturn(), null], [<ore:plateGold>.noReturn(), infCrystal, <ore:plateGold>.noReturn()], [handle.noReturn(), battery.noReturn(), handle.noReturn()]]);
+recipes.addShaped(handFiller, [[null, tubeObsidian, null], [<ore:plateGold>, infCrystal, <ore:plateGold>], [handle, battery, handle]]);
 
 // Leaf Blower
 recipes.remove(leafBlower);

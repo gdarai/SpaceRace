@@ -848,5 +848,24 @@
             "powersuits:powerArmorComponent,1,12",
             "powersuits:powerArmorComponent,1,12"
         ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:dragon_heart",
+        "catalyst": "mysticalagriculture:superium_apple",
+        "energy": 10000000,
+        "tier": 1,
+        "ingredients": [
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"advancedrocketry:liquidTank,1,0,{Fluid:{FluidName:ice, Amount:64000}}",
+			"advancedrocketry:liquidTank,1,0,{Fluid:{FluidName:ice, Amount:64000}}",
+			"bqmie:icon_item,1,19",
+			"bqmie:icon_item,1,19",
+			"advancedrocketry:liquidTank,1,0,{Fluid:{FluidName:ice, Amount:64000}}",
+			"advancedrocketry:liquidTank,1,0,{Fluid:{FluidName:ice, Amount:64000}}",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot"
+        ]
     }
 ]

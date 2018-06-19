@@ -3,7 +3,7 @@ val brickBlock = <minecraft:brick_block>;
 val stoneBrick = <minecraft:stonebrick>;
 val piston = <minecraft:piston>;
 val trPlank = <ore:plankTreatedWood>;
-val crystal = <mysticalagriculture:infusion_crystal>;
+val crystal = <advancedrocketry:crystal:4>;
 val bowString = <mysticalagriculture:mystical_bowstring>;
 val pearl = <ore:materialEnderPearl>;
 val ioSi = <enderio:itemMaterial>;
@@ -228,7 +228,7 @@ recipes.remove(<actuallyadditions:itemTeleStaff>);
 recipes.remove(<actuallyadditions:itemDrill:3>);
 recipes.remove(pearlBlock);
 recipes.remove(<actuallyadditions:itemLeafBlowerAdvanced>);
-recipes.addShaped(<actuallyadditions:itemLaserWrench>,[[null, bowString.noReturn(), crystal.noReturn()],[null, rodSteel.noReturn(), bowString.noReturn()],[rodSteel.noReturn(), null, null]]);
+recipes.addShaped(<actuallyadditions:itemLaserWrench>,[[null, bowString, crystal],[null, rodSteel, bowString],[rodSteel, null, null]]);
 recipes.addShaped(<actuallyadditions:itemTeleStaff>,[[null, bowString, pearlBlock],[null, <actuallyadditions:itemLaserWrench>, bowString],[rodSteel, <actuallyadditions:itemBattery>, null]]);
 mods.forestry.ThermionicFabricator.addCast(pearlBlock, [[pearl, ioSi, pearl], [ioSi, dustDrac, ioSi], [pearl, ioSi, pearl]], 1000, null);
 recipes.addShaped(<actuallyadditions:itemDrill:3>,[[inDiamant0, <railcraft:borehead_steel>, inDiamant0],[<mysticalagriculture:intermedium_tool_core>, <actuallyadditions:itemMisc:16>, <mysticalagriculture:intermedium_tool_core>],[<immersiveengineering:material:13>, <actuallyadditions:itemBatteryDouble>, <immersiveengineering:material:13>]]);
@@ -265,8 +265,8 @@ mods.actuallyadditions.AtomicReconstructor.remove(<actuallyadditions:blockLaserR
 mods.actuallyadditions.AtomicReconstructor.remove(<actuallyadditions:blockLaserRelayItem>);
 recipes.remove(<actuallyadditions:itemFilter>);
 recipes.remove(<actuallyadditions:blockLaserRelayItemWhitelist>);
-recipes.addShaped(<actuallyadditions:blockLaserRelayFluids>*2, [[null, crystal.noReturn(), null], [bowString.noReturn(), eezoCan.noReturn(), bowString.noReturn()], [dustLapis.noReturn(), <bibliocraft:SwordPedestal:*>.noReturn(), dustLapis.noReturn()]]);
-recipes.addShaped(<actuallyadditions:blockLaserRelayItem>*2, [[null, crystal.noReturn(), null], [bowString.noReturn(), eezoCan.noReturn(), bowString.noReturn()], [dustLead.noReturn(), <bibliocraft:SwordPedestal:*>.noReturn(), dustLead.noReturn()]]);
+recipes.addShaped(<actuallyadditions:blockLaserRelayFluids>*2, [[null, crystal, null], [bowString, eezoCan, bowString], [dustLapis, <bibliocraft:SwordPedestal:*>, dustLapis]]);
+recipes.addShaped(<actuallyadditions:blockLaserRelayItem>*2, [[null, crystal, null], [bowString, eezoCan, bowString], [dustLead, <bibliocraft:SwordPedestal:*>, dustLead]]);
 recipes.addShaped(<actuallyadditions:blockLaserRelayItemWhitelist>, [[dustKarm, inRed0, dustKarm], [tankNit, <actuallyadditions:blockLaserRelayItem>, tankNit], [dustKarm, inRed0, dustKarm]]);
 recipes.addShaped(<actuallyadditions:itemFilter>, [[ironBar, prospShard, ironBar], [prospShard, null, prospShard], [ironBar, prospShard, ironBar]]);
 

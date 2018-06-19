@@ -128,7 +128,7 @@ val advancedTank = <advancedrocketry:liquidTank>;
 val airSeal = <bqmie:icon_item:24>;
 val solarCell = <powersuits:powerArmorComponent:18>;
 val magnet = <enderio:itemMagnet>;
-val infCrystal = <mysticalagriculture:infusion_crystal>.noReturn();
+val infCrystal = <advancedrocketry:crystal:4>;
 val battery = <actuallyadditions:itemBattery>;
 val handle = <immersiveengineering:material:13>;
 
@@ -361,8 +361,8 @@ recipes.addShaped(<advancedrocketry:microwaveReciever>, [[opticalSensor, optical
 recipes.addShaped(<advancedrocketry:stationMarker>, [[null, opticalSensor, <actuallyadditions:blockLaserRelay>], [basicBlock, basicBlock, magnet], [null, IERedstoneBlock, <actuallyadditions:blockLaserRelay>]]);
 recipes.addShaped(<advancedrocketry:landingPad>, [[null, null, null], [basicBlock, <advancedrocketry:launchpad>, basicBlock], [null, IERedstoneBlock, null]]);
 recipes.addShaped(<advancedrocketry:smallAirlockDoor>, [[ioSi, ioSi, ioSi], [basicBlock, hiTechDoor, basicBlock], [ioSi, IERedstoneBlock, ioSi]]);
-recipes.addShaped(<advancedrocketry:basicLaserGun>, [[battery.noReturn(), null, null], [ocPCB.noReturn(), infCrystal, infCrystal], [handle.noReturn(), null, null]]);
-recipes.addShaped(<advancedrocketry:jackHammer>, [[null, diamondHead.noReturn(), null], [infCrystal, ocPCB.noReturn(), infCrystal], [handle.noReturn(), <ore:blockObsidiorite>.noReturn(), handle.noReturn()]]);
+recipes.addShaped(<advancedrocketry:basicLaserGun>, [[battery, null, null], [ocPCB, infCrystal, infCrystal], [handle, null, null]]);
+recipes.addShaped(<advancedrocketry:jackHammer>, [[null, diamondHead, null], [infCrystal, ocPCB, infCrystal], [handle, <ore:blockObsidiorite>, handle]]);
 recipes.addShaped(<advancedrocketry:orientationController>, [[opticalSensor, IERedstoneBlock, opticalSensor], [rocketEngine1, basicBlock, rocketEngine1], [advancedTank, IERedstoneBlock, advancedTank]]);
 recipes.addShaped(<advancedrocketry:altitudeController>, [[advancedTank, opticalSensor, advancedTank], [<advancedrocketry:advRocketmotor>, basicBlock, <advancedrocketry:advRocketmotor>], [advancedTank, IERedstoneBlock, advancedTank]]);
 recipes.addShaped(<advancedrocketry:advRocketmotor>, [[pipeLiquid, pipeLiquid, pipeLiquid], [motorEnhanced, advancedTank, motorEnhanced], [IENozzle, rocketEngine1, IENozzle]]);

@@ -446,7 +446,7 @@ QUEST        #  HBx13       #  -12:30	  #  25    #  DarkArmor2
 QUEST        #  HBx20       #    2:10	  #  25    #  SlimeDirt1
 QUEST        #  HBx21       #   18:10	  #  25    #  TrappedEnderMan
 QUEST        #  HBx22       #   10:30	  #  25    #  sponge
-    
+
 // ------------------>
 // Cheat lines are used when nothing else works
 // ------------------>

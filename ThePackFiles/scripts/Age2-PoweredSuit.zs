@@ -25,7 +25,7 @@ val rsDust = <minecraft:redstone>;
 
 val fabric = <immersiveengineering:material:5>;
 val ropeCoil = <immersiveengineering:wirecoil:3>;
-val crystal = <mysticalagriculture:infusion_crystal>.noReturn();
+val crystal = <advancedrocketry:crystal:4>;
 
 val gearBoxIron = <immersiveengineering:material:8>;
 val gearBoxSteel = <immersiveengineering:material:9>;

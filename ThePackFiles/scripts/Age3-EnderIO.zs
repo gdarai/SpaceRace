@@ -132,7 +132,7 @@ mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>
 recipes.addShaped(<enderio:blockSagMill>, [[machineBlock, darkSteelCapsule, machineBlock], [gearTitIri, gearTitIri, gearTitIri], [machineBlock, <actuallyadditions:blockMisc:8>, machineBlock]]);
 recipes.addShaped(<enderio:blockSliceAndSplice>, [[plateTriberium, plateUru, plateTriberium], [<ore:plateUranium>, <advancedrocketry:sawBladeIron>, <ore:plateUranium>], [machineBlock, darkSteelCapsule, machineBlock]]);
 recipes.addShaped(<enderio:blockSoulBinder>, [[plateYrdeen, <railcraft:firestone_refined>.noReturn(), plateYrdeen], [<ore:plateUranium>, <actuallyadditions:blockEmpowerer>, <ore:plateUranium>], [machineBlock, experienceCapsule, machineBlock]]);
-recipes.addShaped(<enderio:blockCrafter>, [[plateTriberium, <ore:craftingTableWood>, plateTriberium], [<ore:craftingPiston>, machineBlock, <ore:craftingPiston>], [capacDouble, machineBlock, capacDouble]]);
+recipes.addShaped(<enderio:blockCrafter>, [[plateTriberium, <ore:craftingTableWood>, plateTriberium], [<ore:craftingPiston>, machineBlock, <ore:craftingPiston>], [capacBasic, machineBlock, capacBasic]]);
 
 // Gadgets
 recipes.remove(<enderio:blockPoweredSpawner>);

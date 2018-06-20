@@ -1,5 +1,5 @@
 <galaxy>
-    <star name="Star A" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
+    <star name="Star A" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0" size="1.0">
         <planet name="Planet A1 LavaWorld" customIcon="marslike" DIMID="22">
 			<artifact>bqmie:icon_item 14 1</artifact>
             <orbitalDistance>20</orbitalDistance>
@@ -96,7 +96,7 @@
             </planet>
         </planet>
     </star>
-    <star name="Star B" temp="200" x="100" y="20" numPlanets="0" numGasGiants="0">
+    <star name="Star B" temp="200" x="100" y="150" numPlanets="0" numGasGiants="0" size="1.0">
         <planet name="Planet B1 DistantWorld" customIcon="marslike" DIMID="30">
 			<artifact>bqmie:icon_item 15 1</artifact>
             <orbitalDistance>50</orbitalDistance>

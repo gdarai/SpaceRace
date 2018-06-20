@@ -444,7 +444,7 @@ for line in lines:
 			'main': '0',
 			'chain': False,
             'repeat': '-1',
-            'auto': '1',
+            'auto': '0',
             'simul': '0',
         }
         if (m[3] in qids):
@@ -549,8 +549,9 @@ for line in lines:
                 quests[newQ['id']]['chain'] = True
             elif(nm=='repeat'):
                 quests[newQ['id']]['repeat'] = m1[1]
-                quests[newQ['id']]['auto'] = '0'
                 quests[newQ['id']]['simul'] = '1'
+            elif(nm=='auto'):
+                quests[newQ['id']]['auto'] = '1'
             else:
                 printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
         theL['quests'].append(newQ)

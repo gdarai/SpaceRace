@@ -338,10 +338,10 @@ LINE         #  HA         #  Hoading for beginners
 SIZE         #  2:2        #  50:50
 TEXT         #  What would it be if this Questing Modpack had no hoarding quests?
 
-QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main
-QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main
-QUEST        #  HA20        #   10:-15 	  #  40    #  SoulSand  		# main
-QUEST        #  HA30        #   40:-15 	  #  40    #  BaseSeed  		# main
+QUEST        #  HA00        #  -50:-15 	  #  40    #  SmelteryTable		# main # auto
+QUEST        #  HA10        #  -20:-15 	  #  40    #  Steel     		# main # auto
+QUEST        #  HA20        #   10:-15 	  #  40    #  SoulSand  		# main # auto
+QUEST        #  HA30        #   40:-15 	  #  40    #  BaseSeed  		# main # auto
 
 QUEST        #  HAx0        #  -58:10	  #  25    #  SearedFurnace
 QUEST        #  HAx1        #  -42:10	  #  25    #  HEggplant
@@ -428,9 +428,9 @@ LINE         #  HB         #  Hoading for experts
 SIZE         #  2:2        #  50:50
 TEXT         #  HORD! HORD! HORD! Well, isn't doing those stupid quests here just the best entertainment ever?
 
-QUEST        #  HB00        #  -50:-15 	  #  40    #  LavaOrb   		# main
-QUEST        #  HB10        #  -20:-15 	  #  40    #  DragonHeart  		# main
-QUEST        #  HB20        #   10:-15 	  #  40    #  CreativePower		# main
+QUEST        #  HB00        #  -50:-15 	  #  40    #  LavaOrb   		# main # auto
+QUEST        #  HB10        #  -20:-15 	  #  40    #  DragonHeart  		# main # auto
+QUEST        #  HB20        #   10:-15 	  #  40    #  CreativePower		# main # auto
 QUEST        #  HB30        #   40:-15 	  #  50    #  ExtraLife  		# main
 
 QUEST        #  HBx0        #  -58:10	  #  25    #  ARCoil

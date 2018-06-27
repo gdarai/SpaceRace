@@ -50,6 +50,7 @@ val plateTitan = <ore:plateTitanium>;
 val plateSilicon = <ore:plateSilicon>;
 val plateTitIri = <ore:plateTitaniumIridium>;
 val plateTriberium = <tconstruct:large_plate>.withTag({"Material":"triberium"});
+val plateTiberium = <tconstruct:large_plate>.withTag({"Material":"tiberium"});
 
 val scaffAlu = <immersiveengineering:metalDecoration1:5>;
 val scaffSteel = <immersiveengineering:metalDecoration1:1>;
@@ -188,7 +189,7 @@ recipes.remove(motorElite);
 recipes.addShaped(motorBasic, [[null, ARCoilCopper, plateSteel], [IELightBlock, IELightBlock, gearSteel], [null, ARCoilCopper, plateSteel]]);
 recipes.addShaped(motorAdvanced, [[null, ARCoilGold, plateSteel], [IELightBlock, IELightBlock, gearSteel], [null, ARCoilGold, plateSteel]]);
 recipes.addShaped(motorEnhanced, [[null, ARCoilAlu, plateTitan], [IEHeavyBlock, IEHeavyBlock, gearTitan], [null, ARCoilAlu, plateTitan]]);
-recipes.addShaped(motorElite, [[null, ARCoilTitan, plateTitan], [IEHeavyBlock, IEHeavyBlock, gearTitan], [null, ARCoilTitan, plateTitan]]);
+recipes.addShaped(motorElite, [[null, ARCoilTitan, plateTiberium], [SheetTitIri, IEHeavyBlock, IEHeavyBlock], [null, ARCoilTitan, plateTiberium]]);
 
 // Rocket Components
 recipes.remove(rocketTank);

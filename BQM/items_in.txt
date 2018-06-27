@@ -84,7 +84,7 @@ ITEM  #  HcBeeHive	  	#  harvestcraft:beehive
 // Quests B
 ITEM  #  Gear    		#  enderio:itemMachinePart:1
 ITEM  #  Plate    		#  railcraft:plate:3
-ITEM  #  ElTube    		#  forestry:thermionicTubes:2
+ITEM  #  ElTube    		#  forestry:thermionicTubes:0
 ITEM  #  Carpenter    	#  forestry:carpenter
 ITEM  #  Steel    		#  chisel:blockSteel
 ITEM  #  SoyMilk		#  harvestcraft:soymilkitem

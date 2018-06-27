@@ -69,3 +69,7 @@ furnace.addRecipe(<taiga:meteorite_ingot>, <taiga:meteorite_dust>);
 furnace.addRecipe(<taiga:basalt_ingot>, <taiga:basalt_dust>);
 furnace.addRecipe(<taiga:obsidiorite_ingot>, <taiga:obsidiorite_dust>);
 furnace.addRecipe(<taiga:dilithium_ingot>, <taiga:dilithium_dust>);
+
+// Adding Tiberium recipe - in electric arc furnace
+// Adding Dilithium block casting
+mods.tconstruct.Casting.addBasinRecipe(<taiga:dilithium_block>, <liquid:dilithium_fluid> * 1296, null, false, 400);

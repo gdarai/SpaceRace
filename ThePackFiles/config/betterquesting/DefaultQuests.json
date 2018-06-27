@@ -2456,7 +2456,7 @@
 						"id:8": "forestry:thermionicTubes",
 						"Count:3": 1,
 						"OreDict:8": "",
-						"Damage:3": 2
+						"Damage:3": 0
 					},
 					"autoClaim:1": 0,
 					"isSilent:1": 0,
@@ -2482,7 +2482,7 @@
 							"id:8": "forestry:thermionicTubes",
 							"Count:3": 1,
 							"OreDict:8": "",
-							"Damage:3": 2
+							"Damage:3": 0
 						}
 					},
 					"taskID:8": "bq_standard:retrieval",
@@ -4723,7 +4723,7 @@
 				},
 				"1:10": {
 					"partialMatch:1": 0,
-					"ignoreNBT:1": 0,
+					"ignoreNBT:1": 1,
 					"consume:1": 0,
 					"groupDetect:1": 0,
 					"autoConsume:1": 0,
@@ -9719,7 +9719,7 @@
 			"tasks:9": {
 				"0:10": {
 					"partialMatch:1": 0,
-					"ignoreNBT:1": 0,
+					"ignoreNBT:1": 1,
 					"consume:1": 0,
 					"groupDetect:1": 0,
 					"autoConsume:1": 0,
@@ -15976,7 +15976,7 @@
 			"tasks:9": {
 				"0:10": {
 					"partialMatch:1": 0,
-					"ignoreNBT:1": 0,
+					"ignoreNBT:1": 1,
 					"consume:1": 0,
 					"groupDetect:1": 0,
 					"autoConsume:1": 0,
@@ -16390,29 +16390,12 @@
 			"tasks:9": {
 				"0:10": {
 					"target:8": "Sheep",
-					"required:3": "1",
+					"required:3": "3",
 					"subtypes:1": 1,
 					"ignoreNBT:1": 1,
 					"targetNBT:10": {},
 					"taskID:8": "bq_standard:hunt",
 					"index:3": 0
-				},
-				"1:10": {
-					"partialMatch:1": 1,
-					"ignoreNBT:1": 0,
-					"consume:1": 1,
-					"groupDetect:1": 0,
-					"autoConsume:1": 0,
-					"requiredItems:9": {
-						"0:10": {
-							"id:8": "minecraft:wool",
-							"Count:3": 16,
-							"OreDict:8": "",
-							"Damage:3": 0
-						}
-					},
-					"taskID:8": "bq_standard:retrieval",
-					"index:3": 1
 				}
 			},
 			"rewards:9": {

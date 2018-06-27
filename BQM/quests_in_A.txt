@@ -2,7 +2,7 @@ QUEST   #  A00      #  Initial Warnings # 100
 TEXT    #  SOME WARNINGS for a new contestant:\n\n1) STAY OUT OF WATER !! Piranha are BAD !!\n2) Build a Bed/Sleeping bag, this is ZOMBIE territory\n3) Sleep through nights\n4) Focus on food variety\n\nTry reading the GuideBook. It contains a lot of useful information.
 
 TASK    #  TRIGGER
-TASK    #  HAVE     #  WoodShears
+TASK    #  HAVE-I     #  WoodShears
 TASK    #  HAVE     #  SleepingBag
 REWARD  #  ALL      #  Bread
 
@@ -42,7 +42,7 @@ QUEST   #  A30      #  Bees and Traps # 104
 TEXT    #  Next goal is wax and leather. So yes... bees from the beginning. Are you excited? The land and water traps can also supply the so much missing meat for your diet.
 PREREQ  #  AND      #  A20 # A21
 
-TASK    #  HAVE     #  HoneyComb:1 # BeeHouse:1
+TASK    #  HAVE-I   #  HoneyComb:1 # BeeHouse:1
 REWARD  #  PICK     #  HCSo2077:4 # HCSo2122:4 # HCSo2165:4 # HCSo2200:4 # HCSo2212:4 # essInferi:2 # spWool:4 # spLeather:2 # spKit:2 # OakLog:8 # HcCandle:8
 REWARD  #  PICK     #  FrBee0:1 # FrBee1:1 # FrBee2:1 # FrBee3:1 # FrBee4:1 # FrBee5:1 # HcBeeHive:1
 
@@ -175,7 +175,7 @@ QUEST   #  Ax51     #  Automation # 161
 TEXT    #  With the access to basic metals, you may want to start making your first factory. Do you know that you can build a timer for example with a conveyor belt?
 PREREQ  #  AND      #  A50
 
-TASK    #  HAVE     #  ConveyorBelt
+TASK    #  HAVE-I   #  ConveyorBelt
 REWARD  #  PICK     #  HCSo2077:4 # HCSo2122:4 # HCSo2165:4 # HCSo2200:4 # HCSo2212:4 # essInferi:2 # spWool:4 # spLeather:2 # spKit:2 # OakLog:8 # HcCandle:8
 
 // ------->

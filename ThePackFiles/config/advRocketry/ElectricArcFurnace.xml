@@ -64,4 +64,14 @@
 			<itemStack>libvulpes:productingot 1 7</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="1600" power ="500">
+		<input>
+			<oreDict>oreTiberium</oreDict>
+			<oreDict>dustImperomite 4</oreDict>
+			<itemStack>mysticalagriculture:soulium_dust 6 0</itemStack>
+		</input>
+		<output>
+			<itemStack>taiga:tiberium_ingot 8 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

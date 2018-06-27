@@ -42,11 +42,11 @@
 	<Recipe timeRequired="600" power ="1000">
 		<input>
 			<fluidStack>hydrogen 1000</fluidStack>
-			<fluidStack>nitrogen 1000</fluidStack>
+			<fluidStack>oxygen 1000</fluidStack>
 			<itemStack>actuallyadditions:itemDust 1 2</itemStack>
 		</input>
 		<output>
-			<fluidStack>rocketfuel 100</fluidStack>
+			<fluidStack>rocketfuel 250</fluidStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="6000" power ="1000">

@@ -40,8 +40,7 @@ QUEST   #  MAxi03   #  Sheep Hearder # 1117
 TEXT    #  And the gold third way is to hunt your own animals, like sheeps.
 PREREQ  #  AND      #  MA00
 
-TASK    #  HUNT		#  Sheep:1
-TASK    #  GIVE     #  spWool:16
+TASK    #  HUNT		#  Sheep:3
 REWARD  #  ALL      #  TradeCoinA:1 #  TradeCurr:1
 
 // ---------->

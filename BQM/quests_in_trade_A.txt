@@ -78,7 +78,7 @@ TEXT    #  Look around and deliver some poor nickel ore and poor zinc ore.
 PREREQ  #  AND      #  TA02
 
 TASK    #  GIVE		#  PoorNickel:8 # PoorZinc:8
-REWARD  #  ALL      #  TradeCurr:4
+REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
 
@@ -87,7 +87,7 @@ TEXT    #  Let's increase the load. We want to see some real Digging.
 PREREQ  #  AND      #  TA20
 
 TASK    #  GIVE		#  AluOre:8 # IronOre:8
-REWARD  #  ALL      #  TradeCurr:4
+REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
 
@@ -96,7 +96,7 @@ TEXT    #  Can you go deeper and get some Redstone and Duranium dusts?
 PREREQ  #  AND      #  TA21
 
 TASK    #  GIVE		#  RedstoneDust:64 # DuraniumDust:16
-REWARD  #  ALL      #  TradeCurr:6
+REWARD  #  ALL      #  TradeCurr:7
 
 // ------->
 
@@ -105,7 +105,7 @@ TEXT    #  There are two variants of basalt on this world. Deliver both to pleas
 PREREQ  #  AND      #  TA22
 
 TASK    #  GIVE		#  BasaltWhite:16 # BasaltBlack:16
-REWARD  #  ALL      #  TradeCurr:6
+REWARD  #  ALL      #  TradeCurr:7
 
 // ------->
 
@@ -113,8 +113,8 @@ QUEST   #  TA24     #  Going Exotic # 1013
 TEXT    #  Some unique and precious metals should buy our attention.
 PREREQ  #  AND      #  TA23
 
-TASK    #  GIVE		#  GoldOre:16 # SilverOre:16 # OsramOre:8 # EezoOre:8
-REWARD  #  ALL      #  TradeCurr:6
+TASK    #  GIVE		#  GoldOre:4 # SilverOre:4 # OsramOre:4 # EezoOre:4
+REWARD  #  ALL      #  TradeCurr:7
 
 // ------->
 
@@ -122,7 +122,7 @@ QUEST   #  TA25     #  Going Wild # 1014
 TEXT    #  And what about going DEEP under?
 PREREQ  #  AND      #  TA24
 
-TASK    #  GIVE		#  AbyssumOre:16 # DracoDust:16
+TASK    #  GIVE		#  AbyssumOre:8 # DracoDust:16
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
@@ -142,7 +142,7 @@ QUEST   #  TA30     #  Bricks # 1017
 TEXT    #  If you mean it, you must know how to make bricks.
 PREREQ  #  AND      #  TA03
 
-TASK    #  GIVE		#  BrickBlDried:32 # BrickClay:32 # BrickMud:32 # BrickStone:32
+TASK    #  GIVE		#  BrickBlDried:8 # BrickClay:8 # BrickMud:8 # BrickStone:16
 REWARD  #  ALL      #  TradeCurr:4
 
 // ------->
@@ -151,7 +151,7 @@ QUEST   #  TA31     #  Oak Wood Parts # 1018
 TEXT    #  Wood and Stone, Stone And Wood. That is what you need for a good building.
 PREREQ  #  AND      #  TA30
 
-TASK    #  GIVE		#  OakStais:64 # OakSlabs:64 # OakBookshelf:16 # OakChest:16 # OakFancySign:12
+TASK    #  GIVE		#  OakStais:32 # OakSlabs:32 # OakBookshelf:8 # OakChest:8 # OakFancySign:12
 REWARD  #  ALL      #  TradeCurr:4
 
 // ------->
@@ -160,7 +160,7 @@ QUEST   #  TA32     #  Luxury Wood Parts # 1019
 TEXT    #  To make things nice, you must add some colors and shades, right?
 PREREQ  #  AND      #  TA31
 
-TASK    #  GIVE		#  GetLog0:64 # GetLog1:64 # GetLog2:64 # GetLog3:64
+TASK    #  GIVE		#  GetLog0:16 # GetLog1:16 # GetLog2:16 # GetLog3:16
 REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
@@ -169,7 +169,7 @@ QUEST   #  TA33     #  Chiseled Decorations # 1020
 TEXT    #  It is time to add some fanciness to this world. 
 PREREQ  #  AND      #  TA32
 
-TASK    #  GIVE		#  FactoryRusty:64 # TyrianPurple:64 # OrnateBricks:32 # CelticMossy:16
+TASK    #  GIVE		#  FactoryRusty:32 # TyrianPurple:32 # OrnateBricks:16 # CelticMossy:16
 REWARD  #  ALL      #  TradeCurr:6
 
 // ------->

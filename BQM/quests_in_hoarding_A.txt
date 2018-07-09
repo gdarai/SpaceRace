@@ -81,16 +81,16 @@ QUEST   #  HAx10    #  Zombie Hunter # 1254
 TEXT    #  Well hunting zombies is great and all but this? You had to do this on purpose.
 PREREQ  #  NAND     #  HA10
 
-TASK    #  GIVE     #  HZombie:32
+TASK    #  GIVE     #  HZombie:5 # RotFlesh:64
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
 
 QUEST   #  HAx11    #  Supreme Diver # 1255
-TEXT    #  Are you really going to dive there? Just to get the fame?
+TEXT    #  Are you really going to dive there? Just to get the fame? Hint, try the yellow ones, they grow in much larger AND DEEPER patches.
 PREREQ  #  NAND     #  HA10
 
-TASK    #  GIVE     #  Reef0:128 # Reef1:128
+TASK    #  GIVE     #  Reef0:128
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -99,7 +99,7 @@ QUEST   #  HAx12    #  Luck for everybody # 1256
 TEXT    #  And you thought those rabbit foots will be worthless. Well, from today on, probably yes.
 PREREQ  #  NAND     #  HA10
 
-TASK    #  GIVE     #  RabbitFoot:256
+TASK    #  GIVE     #  RabbitFoot:32
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -119,7 +119,7 @@ QUEST   #  HAx20    #  Electron maddness # 1260
 TEXT    #  So they asked you to make some electron tubes but did not tell you how many? Really?
 PREREQ  #  NAND     #  HA20
 
-TASK    #  HAVE     #  ElTubeLapis:512
+TASK    #  HAVE     #  ElTubeLapis:256
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -128,7 +128,7 @@ QUEST   #  HAx21    #  Prepper # 1261
 TEXT    #  They say you are getting ready for the bad time. What do you expect... a zombie appocalypse?
 PREREQ  #  NAND     #  HA20
 
-TASK    #  HAVE     #  RazorWire:192
+TASK    #  HAVE     #  RazorWire:64
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -137,16 +137,16 @@ QUEST   #  HAx22    #  Up and Down # 1262
 TEXT    #  So I get it, you don't want to bore us by climbing ladders. But do you realize that this is almost enough to build a Space Elevator?
 PREREQ  #  NAND     #  HA20
 
-TASK    #  HAVE     #  ElevatorTrack:512
+TASK    #  HAVE     #  ElevatorTrack:64
 REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
 
-QUEST   #  HAx23    #  Mood Music # 1263
-TEXT    #  I almost forgot... you just love bees, right?
+QUEST   #  HAx23    #  Bee Master # 1263
+TEXT    #  I almost forgot... you just love bees, right? Let's start with all the colors of the combs. shell we?
 PREREQ  #  NAND     #  HA20
 
-TASK    #  GIVE     #  IceSpikes:64
+TASK    #  GIVE     #  CombBasic1:16 # CombBasic2:16 # CombBasic3:16 # CombBasic4:16 # CombBasic5:16
 REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
@@ -184,5 +184,5 @@ QUEST   #  HAx33    #  Magma Master # 1268
 TEXT    #  Sure you can get one tank full of lava, but, can you get 256 of them?
 PREREQ  #  NAND     #  HA30
 
-TASK    #  GIVE     #  MagmaSearedTank:256
+TASK    #  GIVE     #  MagmaSearedTank:64
 REWARD  #  ALL      #  TradeCurr:40

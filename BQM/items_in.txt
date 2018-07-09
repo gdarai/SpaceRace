@@ -840,6 +840,14 @@ ITEM # IceSpikes   #  forestry:craftingMaterial:5
 ITEM # MagmaSapling   #  tconstruct:slime_sapling:2
 ITEM # AbyssumDust   #  taiga:abyssum_dust
 ITEM # MagmaSearedTank   #  tconstruct:seared_tank # NBT:{ "FluidName:8": "lava", "Amount:4":4000 }
+ITEM # RotFlesh # minecraft:rotten_flesh
+
+ITEM # CombBasic1 # forestry:beeCombs
+ITEM # CombBasic2 # forestry:beeCombs:4
+ITEM # CombBasic3 # forestry:beeCombs:6
+ITEM # CombBasic4 # forestry:beeCombs:7
+ITEM # CombBasic5 # forestry:beeCombs:15
+
 
 // Hoarding B
 

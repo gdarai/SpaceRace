@@ -2,6 +2,8 @@ val flintIngot = <tp:flint_ingot>;
 val netherStar = <minecraft:nether_star>;
 val ingotDyonite = <taiga:dyonite_block>;
 val intermediumApple = <mysticalagriculture:intermedium_apple>;
+val bars = <minecraft:iron_bars>;
+val obsidian = <minecraft:obsidian>;
 
 // Add mising OreDict
 val oreEnder = <ore:oreEnder>;
@@ -28,3 +30,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<tp:growth_block>, <tp:growth_upgrade
 mods.immersiveengineering.BottlingMachine.addRecipe(<tp:med_kit>, <forestry:crate>, <liquid:protein> * 200);
 
 // Apples and Hardened blocks used for Creative recipes
+// Witherproof Obsidian improved with Crushed Ice and Draconium
+recipes.remove(<tp:reinforced_obsidian>);
+mods.forestry.Carpenter.addRecipe(<tp:reinforced_obsidian>, [[bars, obsidian, bars], [obsidian, <draconicevolution:draconium_dust>, obsidian], [bars, obsidian, bars]], 60, <liquid:ice> * 2000, null);
+

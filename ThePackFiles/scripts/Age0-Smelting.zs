@@ -7,6 +7,7 @@ val redCoil = <immersiveengineering:wirecoil:5>;
 
 val steelIng = <ore:ingotSteel>;
 val steelRod = <ore:stickSteel>;
+val steelPlate = <ore:plateSteel>;
 
 recipes.remove(raintank);
 recipes.addShaped(raintank, [[ironPlate, null, ironPlate],[ironPlate, null, ironPlate],[ironPlate, <minecraft:heavy_weighted_pressure_plate>, ironPlate]]);
@@ -233,7 +234,7 @@ recipes.addShaped(<minecraft:hopper>, [[softIngot, null, softIngot],[softIngot, 
 
 // Steel smelting
 mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 144, <immersiveengineering:metalDecoration1:1>, 500);
-mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 288, <immersiveengineering:metalDecoration1>, 500);
+mods.tconstruct.Smeltery.addMelting(<liquid:steel> * 144, <immersiveengineering:metalDecoration1>, 500);
 
 // 3rd way to get a plate
 recipes.addShapeless(<immersiveengineering:metal:32>, [<ore:blockLead>, <immersiveengineering:tool>]);
@@ -393,7 +394,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ov
 
 // Fixing steel fence
 recipes.remove(<immersiveengineering:metalDecoration1>);
-recipes.addShaped(<immersiveengineering:metalDecoration1>*9,[[null, null, null], [steelIng, steelRod, steelIng], [steelIng, null, steelIng]]);
+recipes.addShaped(<immersiveengineering:metalDecoration1>*9,[[steelPlate, steelRod, steelPlate], [steelIng, null, steelIng], [null, null, null]]);
 
 // Adding missing recipes for constantan
 recipes.addShapeless(<immersiveengineering:metal:26>*9, [<ore:ingotConstantan>]);

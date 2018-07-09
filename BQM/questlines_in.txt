@@ -356,7 +356,7 @@ QUEST        #  HAx13       #  -12:30	  #  25    #  ObsidianShard
 QUEST        #  HAx20       #    2:10	  #  25    #  ElTubeLapis
 QUEST        #  HAx21       #   18:10	  #  25    #  RazorWire
 QUEST        #  HAx22       #    2:30	  #  25    #  ElevatorTrack
-QUEST        #  HAx23       #   18:30	  #  25    #  IceSpikes
+QUEST        #  HAx23       #   18:30	  #  25    #  CombBasic4
 
 QUEST        #  HAx30       #   32:10	  #  25    #  MagmaSapling
 QUEST        #  HAx31       #   48:10	  #  25    #  NetherStar

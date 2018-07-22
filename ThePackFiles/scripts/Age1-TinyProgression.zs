@@ -4,6 +4,8 @@ val ingotDyonite = <taiga:dyonite_block>;
 val intermediumApple = <mysticalagriculture:intermedium_apple>;
 val bars = <minecraft:iron_bars>;
 val obsidian = <minecraft:obsidian>;
+val diamondNugget = <ore:nuggetDiamond>;
+val propolis = <forestry:propolis>;
 
 // Add mising OreDict
 val oreEnder = <ore:oreEnder>;
@@ -30,7 +32,12 @@ mods.actuallyadditions.Empowerer.addRecipe(<tp:growth_block>, <tp:growth_upgrade
 mods.immersiveengineering.BottlingMachine.addRecipe(<tp:med_kit>, <forestry:crate>, <liquid:protein> * 200);
 
 // Apples and Hardened blocks used for Creative recipes
+
 // Witherproof Obsidian improved with Crushed Ice and Draconium
 recipes.remove(<tp:reinforced_obsidian>);
-mods.forestry.Carpenter.addRecipe(<tp:reinforced_obsidian>, [[bars, obsidian, bars], [obsidian, <draconicevolution:draconium_dust>, obsidian], [bars, obsidian, bars]], 60, <liquid:ice> * 2000, null);
+mods.forestry.Carpenter.addRecipe(<tp:reinforced_obsidian>, [[bars, obsidian, bars], [obsidian, <draconicevolution:draconium_dust>, obsidian], [bars, obsidian, bars]], 60, <liquid:ice> * 500, null);
+
+// Reinforced glass made much more expensive
+recipes.remove(<tp:reinforced_glass>);
+mods.forestry.Carpenter.addRecipe(<tp:reinforced_glass>, [[obsidian, diamondNugget, obsidian], [diamondNugget, <tp:dirty_glass>, diamondNugget], [obsidian, diamondNugget, obsidian]], 60, <liquid:water> * 1000, propolis);
 

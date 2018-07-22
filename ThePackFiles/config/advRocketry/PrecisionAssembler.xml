@@ -561,7 +561,9 @@
 	</Recipe>
 	<Recipe timeRequired="1200" power ="80">
 		<input>
-			<itemStack>enderio:itemMagnet 3 0</itemStack>
+			<itemStack>enderio:itemMagnet 1 0</itemStack>
+			<itemStack>enderio:itemMagnet 1 0</itemStack>
+			<itemStack>enderio:itemMagnet 1 0</itemStack>
 			<itemStack>enderio:itemBasicCapacitor 2 1</itemStack>
 			<itemStack>taiga:dilithium_crystal 2 0</itemStack>
 			<fluidStack>uranium 250</fluidStack>

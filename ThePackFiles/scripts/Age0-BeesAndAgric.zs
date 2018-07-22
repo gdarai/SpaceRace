@@ -120,6 +120,22 @@ val esNatur = <mysticalagriculture:nature_essence>;
 val esCoal = <mysticalagriculture:coal_essence>;
 val esCreeper = <mysticalagriculture:creeper_essence>;
 
+val maBonemeal = <mysticalagriculture:fertilized_essence>;
+val disipCharge = <forestry:craftingMaterial:4>;
+val sulf = <ore:dustSulfur>;
+val gunp = <ore:gunpowder>;
+
+val xp = <ore:xp>;
+xp.add(<supercraftingframe:super_xp_bottle>);
+xp.add(<actuallyadditions:itemSolidifiedExperience>);
+
+recipes.addShaped(maBonemeal*4, [[sulf, xp, sulf], [xp, disipCharge, xp], [sulf, xp, sulf]]);
+recipes.addShaped(maBonemeal*8, [[gunp, xp, gunp], [xp, disipCharge, xp], [gunp, xp, gunp]]);
+
+mods.forestry.Carpenter.addRecipe(maBonemeal*12, [[sulf, xp, sulf], [xp, disipCharge, xp], [sulf, xp, sulf]], 20, <liquid:ice> * 250, null);
+mods.forestry.Carpenter.addRecipe(maBonemeal*24, [[gunp, xp, gunp], [xp, disipCharge, xp], [gunp, xp, gunp]], 20, <liquid:ice> * 250, null);
+
+
 recipes.removeShaped(<mysticalagriculture:superium_apple>);
 recipes.addShaped(<mysticalagriculture:superium_apple>, [[superWood, ess4, superWood], [ess4, <mysticalagriculture:intermedium_apple>, ess4], [superWood, ess4, superWood]]);
 recipes.removeShaped(<mysticalagriculture:intermedium_apple>);
@@ -155,3 +171,5 @@ mods.actuallyadditions.Crusher.addRecipe(<mysticalagriculture:end_inferium_ore>,
 // Adding agric. recipes
 recipes.addShaped(<minecraft:coal:1>*8, [[esCoal, esNatur, esCoal], [esNatur, <forestry:royalJelly>, esNatur], [esCoal, esNatur, esCoal]]);
 recipes.addShaped(<minecraft:flint>*2, [[esCreeper, esCreeper, esCreeper], [esCreeper, <ore:gravel>, esCreeper], [esCreeper, esCreeper, esCreeper]]);
+
+// Agric Bonemeal

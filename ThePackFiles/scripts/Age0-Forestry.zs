@@ -51,7 +51,7 @@ val powerM = <gendustry:PowerModule>;
 val honeyPot = <forestry:honeyPot>;
 
 val aaRed = <actuallyadditions:itemCrystal>;
-
+val capacSmall = <powersuits:powerArmorComponent:5>;
 // Removing pipette
 recipes.remove(<forestry:pipette>);
 
@@ -72,6 +72,7 @@ recipes.addShaped(<forestry:still>, [[searedTank, pipe, searedTank],[pipe, <mine
 recipes.addShaped(<forestry:moistener>, [[searedTank, barrelWood, searedTank], [IRRope, barrelIron, IRRope], [scaffAlu, tubeCopper, scaffAlu]]);
 mods.forestry.Carpenter.addRecipe(<forestry:portableAlyzer>, [[<advancedrocketry:lens>, <advancedrocketry:lens>, <minecraft:book>], [honeyPot, <forestry:can>, honeyPot], [ioSi, FCi1, ioSi]], 20, <liquid:seed.oil> * 500, <forestry:waxCast>);
 recipes.addShaped(<forestry:bottler>, [[aaRed, searedTank, aaRed], [aaRed, hopper, aaRed], [scaffAlu, powerM, scaffAlu]]);
+recipes.addShaped(<forestry:rainmaker>, [[null, <advancedrocketry:crystal:4>, null],[capacSmall, pipe, capacSmall],[IELightBlock, <actuallyadditions:blockMisc:6>, IELightBlock]]);
 
 // Industrial Oil and Ethanol from Forestry items
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 200, <forestry:fruits:2>, 160);

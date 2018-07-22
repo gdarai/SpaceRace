@@ -105,9 +105,10 @@ recipes.addShapeless(<railcraft:post_metal:15>, [<railcraft:post_metal:*>, <mine
 recipes.addShaped(<railcraft:equipment:2>, [[trPlank, goldCarrot, trPlank], [goldCarrot, <ore:gearBrass>, goldCarrot],[trPlank, goldCarrot, trPlank]]);
 
 // End Dust
-mods.tconstruct.Casting.addTableRecipe(<railcraft:dust:6>, <liquid:ender> * 32, <minecraft:sand:1>, true, 100);
-mods.immersiveengineering.Crusher.addRecipe(<forestry:ash> * 2, <minecraft:end_stone>, 2000, <railcraft:dust:6>, 0.15);
-mods.tconstruct.Smeltery.addMelting(<liquid:ender> * 4, <minecraft:end_stone>, 100);
+mods.tconstruct.Casting.addTableRecipe(<railcraft:dust:6>, <liquid:ender> * 36, <minecraft:sand>, true, 100);
+mods.tconstruct.Casting.addTableRecipe(<railcraft:dust:6>, <liquid:ender> * 27, <minecraft:sand:1>, true, 100);
+mods.immersiveengineering.Crusher.addRecipe(<forestry:ash> * 2, <minecraft:end_stone>, 2000, <railcraft:dust:6>, 0.2);
+mods.tconstruct.Smeltery.addMelting(<liquid:ender> * 9, <minecraft:end_stone>, 100);
 
 // Firestone
 mods.immersiveengineering.Crusher.addRecipe(<railcraft:firestone_raw>, <railcraft:ore_magic>, 2000, <forestry:ash> * 4, 1);

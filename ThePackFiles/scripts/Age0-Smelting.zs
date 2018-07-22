@@ -229,6 +229,7 @@ softIngot.addAll(<ore:ingotBrass>);
 softIngot.addAll(<ore:ingotNickel>);
 softIngot.addAll(<ore:ingotZinc>);
 softIngot.addAll(<ore:ingotAlubrass>);
+
 // Hoppers
 recipes.addShaped(<minecraft:hopper>, [[softIngot, null, softIngot],[softIngot, <minecraft:chest>, softIngot],[null, softIngot, null]]);
 
@@ -403,3 +404,9 @@ recipes.addShapeless(<immersiveengineering:metal:6>*9, [<ore:blockConstantan>]);
 // Adding missing recipes for bronze
 recipes.addShapeless(<railcraft:nugget:6>*9, [<ore:ingotBronze>]);
 recipes.addShapeless(<railcraft:ingot:5>*9, [<ore:blockBronze>]);
+
+// Redoing enderpearl melting
+mods.tconstruct.Smeltery.removeMelting(<minecraft:ender_pearl>);
+mods.tconstruct.Smeltery.addMelting(<liquid:ender> * 288, <minecraft:ender_pearl>, 250);
+mods.tconstruct.Casting.removeTableRecipe(<minecraft:ender_pearl>, <liquid:ender>, <tconstruct:cast_custom:2>);
+mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <liquid:ender>*576, <tconstruct:cast_custom:2>, false, 300);

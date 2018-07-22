@@ -854,7 +854,7 @@ ITEM # CombBasic5 # forestry:beeCombs:15
 ITEM # CreativePower # immersiveengineering:metalDevice0:3
 ITEM # Railgun01 # advancedrocketry:railgun
 ITEM # Railgun02 # libvulpes:metal0:7
-ITEM # Railgun03 # advancedrocketry:advStructureMachine
+ITEM # Railgun03 # libvulpes:advStructureMachine
 ITEM # ShipEngine # davincisvessels:engine
 ITEM # Enori # actuallyadditions:itemCrystal:5
 ITEM # Nanobots # opencomputers:tool:5

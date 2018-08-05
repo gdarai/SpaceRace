@@ -29,6 +29,7 @@ val IEGenerator = <immersiveengineering:metalDecoration0:6>;
 val IERadiator = <immersiveengineering:metalDecoration0:7>;
 
 val shipEngine = <davincisvessels:engine>;
+val searedBrick = <ore:blockSeared>;
 
 val cart = <minecraft:minecart>;
 val cartChest = <minecraft:chest_minecart>;
@@ -113,6 +114,9 @@ mods.tconstruct.Smeltery.addMelting(<liquid:ender> * 9, <minecraft:end_stone>, 1
 // Firestone
 mods.immersiveengineering.Crusher.addRecipe(<railcraft:firestone_raw>, <railcraft:ore_magic>, 2000, <forestry:ash> * 4, 1);
 mods.actuallyadditions.Crusher.addRecipe(<railcraft:ore_magic>, <railcraft:firestone_raw>, <forestry:ash>, 100);
+
+// Smoker
+recipes.addShaped(<railcraft:equipment:3>, [[null, searedBrick, null], [null, searedBrick, null],[null, <minecraft:furnace>, null]]);
 
 // Slag and Ender Eggs
 recipes.addShaped(slag, [[null, theString, null], [theString, <immersiveengineering:material:7>, theString],[null, theString, null]]);

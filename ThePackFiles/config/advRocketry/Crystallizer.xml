@@ -111,7 +111,7 @@
 		<input>
 			<oreDict>dustFractum 2</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
-			<itemStack>actuallyadditions:itemDust 4 6</itemStack>
+			<oreDict>dustCoal 4</oreDict>
 		</input>
 		<output>
 			<itemStack>actuallyadditions:itemCrystal 1 3</itemStack>
@@ -121,7 +121,7 @@
 		<input>
 			<oreDict>dustFractum 2</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
-			<itemStack>actuallyadditions:itemDust 4 3</itemStack>
+			<oreDict>dustEmerald 4</oreDict>
 		</input>
 		<output>
 			<itemStack>actuallyadditions:itemCrystal 1 4</itemStack>

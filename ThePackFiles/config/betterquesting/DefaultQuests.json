@@ -22345,7 +22345,7 @@
 					"snd_complete:8": "minecraft:entity.player.levelup",
 					"snd_update:8": "minecraft:entity.player.levelup",
 					"icon:10": {
-						"id:8": "advancedrocketry:landingPad",
+						"id:8": "advancedrocketry:launchpad",
 						"Count:3": 1,
 						"OreDict:8": "",
 						"Damage:3": 0
@@ -22371,7 +22371,7 @@
 					"autoConsume:1": 0,
 					"requiredItems:9": {
 						"0:10": {
-							"id:8": "advancedrocketry:landingPad",
+							"id:8": "advancedrocketry:launchpad",
 							"Count:3": 1,
 							"OreDict:8": "",
 							"Damage:3": 0

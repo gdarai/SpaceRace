@@ -36,6 +36,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<tp:med_kit>, <forestry:crat
 // Witherproof Obsidian improved with Crushed Ice and Draconium
 recipes.remove(<tp:reinforced_obsidian>);
 mods.forestry.Carpenter.addRecipe(<tp:reinforced_obsidian>, [[bars, obsidian, bars], [obsidian, <draconicevolution:draconium_dust>, obsidian], [bars, obsidian, bars]], 60, <liquid:ice> * 500, null);
+mods.forestry.Carpenter.addRecipe(<tp:reinforced_obsidian>, [[bars, obsidian, bars], [obsidian, <draconicevolution:draconium_dust>, obsidian], [bars, obsidian, bars]], 60, <liquid:lava> * 10000, null);
 
 // Reinforced glass made much more expensive
 recipes.remove(<tp:reinforced_glass>);

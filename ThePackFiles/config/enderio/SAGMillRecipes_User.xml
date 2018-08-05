@@ -131,4 +131,16 @@
 	<recipeGroup name="IC2" enabled="false" />
 	<recipeGroup name="ExtraUtils2" enabled="false" />
 	<recipeGroup name="Draconic" enabled="false" />
+    <recipeGroup name="Common" >
+      <recipe name="Obsidian" energyCost="400" >
+        <input>
+          <itemStack modID="minecraft" itemName="obsidian" />
+        </input>
+        <output>
+          <itemStack oreDictionary="dustObsidian" number="3" />
+          <itemStack oreDictionary="dustObsidian" number="1" chance="0.15" />
+          <itemStack oreDictionary="dustObsidian" number="1" chance="0.025" />
+        </output>
+      </recipe>
+    </recipeGroup>
 </SAGMillRecipes>

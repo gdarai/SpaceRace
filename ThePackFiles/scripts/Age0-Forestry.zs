@@ -78,3 +78,8 @@ recipes.addShaped(<forestry:rainmaker>, [[null, <advancedrocketry:crystal:4>, nu
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 200, <forestry:fruits:2>, 160);
 mods.immersiveengineering.Refinery.addRecipe(<liquid:biodiesel> * 20, <liquid:plantoil> * 8, <liquid:bio.ethanol> * 8, 340);
 mods.immersiveengineering.Refinery.addRecipe(<liquid:biodiesel> * 16, <liquid:seed.oil> * 8, <liquid:bio.ethanol> * 8, 340);
+
+// Fermenting forestry saplings
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 200, <forestry:fruits:2>, 160);
+mods.forestry.Fermenter.addRecipe(<liquid:biomass>, <forestry:sapling>, <liquid:water>, 200, 0.5);
+recipes.addShapeless(<minecraft:sapling>, [<forestry:sapling>]);

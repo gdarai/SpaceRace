@@ -310,7 +310,7 @@ recipes.remove(experienceSolidifier);
 recipes.addShaped(experienceSolidifier, [[null, <actuallyadditions:blockSmileyCloud>, null], [gearBronze, casingWood, gearBronze], [aluScaff, <tconstruct:metal:5>, aluScaff]]);
 
 recipes.remove(experienceRod);
-recipes.addShaped(experienceRod, [[null, tubeEmerald, infCrystal], [tubeEmerald, <ore:ingotIox>, tubeEmerald], [infCrystal, tubeEmerald, null]]);
+recipes.addShaped(experienceRod, [[null, tubeEmerald, infCrystal], [tubeEmerald, <ore:ingotAbyssum>, tubeEmerald], [infCrystal, tubeEmerald, null]]);
 
 // Magnet
 recipes.remove(elMagnet);
@@ -399,3 +399,6 @@ recipes.addShaped(<immersiveengineering:metalDevice1:13>, [[lantern, MVconn, lan
 var torEndHead = <enderio:itemFrankenSkull:4>;
 var basicDECore = <draconicevolution:draconic_core>;
 mods.actuallyadditions.Empowerer.addRecipe(<minecraft:enchanting_table>, <minecraft:end_portal_frame>, torEndHead, basicDECore, torEndHead, basicDECore, 750000, 1200, 0, 0, 0);
+
+// Crushing Obsidian
+mods.actuallyadditions.Crusher.addRecipe(<minecraft:obsidian>, <enderio:itemPowderIngot:7>*3, <enderio:itemPowderIngot:7>*1, 25);

@@ -277,6 +277,13 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<advancedrocketry:bucketOxyg
 mods.immersiveengineering.BottlingMachine.addRecipe(<advancedrocketry:bucketHydrogen>, lightTank, <liquid:hydrogen> * 1000);
 mods.immersiveengineering.BottlingMachine.addRecipe(<advancedrocketry:bucketNitrogen>, lightTank, <liquid:nitrogen> * 1000);
 
+// Improved bottling
+mods.refinedstorage.Solderer.add(<advancedrocketry:bucketRocketFuel>, 2, SheetAlu, <forestry:can:1>.withTag({"Fluid":{"FluidName":"rocketfuel", Amount:1000}}), SheetAlu);
+mods.refinedstorage.Solderer.add(<advancedrocketry:bucketOxygen>, 2, SheetAlu, <forestry:can:1>.withTag({"Fluid":{"FluidName":"oxygen", Amount:1000}}), SheetAlu);
+mods.refinedstorage.Solderer.add(<advancedrocketry:bucketHydrogen>, 2, SheetAlu, <forestry:can:1>.withTag({"Fluid":{"FluidName":"hydrogen", Amount:1000}}), SheetAlu);
+mods.refinedstorage.Solderer.add(<advancedrocketry:bucketNitrogen>, 2, SheetAlu, <forestry:can:1>.withTag({"Fluid":{"FluidName":"nitrogen", Amount:1000}}), SheetAlu);
+
+
 // Sattelite Components
 recipes.remove(opticalSensor);
 recipes.remove(<advancedrocketry:satelliteBuilder>);

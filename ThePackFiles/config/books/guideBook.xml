@@ -241,7 +241,8 @@
 			<stack item="refinedstorage:processor" meta="1" x="40"/>
 			<stack item="refinedstorage:processor" meta="2" x="60"/>
 			<space height="20" />
-			<p>And now the new and better recipes:</p>
+			<p>New recipes:</p>
+			<link ref="ch7:pg40">Seacret Recipes</link>
 			<stack item="refinedstorage:solderer" x="40" y="0"/>
             <small_recipe>
                 <stack item="advancedrocketry:wafer"/>
@@ -355,12 +356,14 @@
 			<stack item="immersiveengineering:metal" meta="1" x="0"/><p indent="20" space="10">Aluminium [40-120]</p>
 			<stack item="forestry:ingotTin" x="0"/><p indent="20" space="10">Tin [30-100]</p>
 			<stack item="forestry:ingotCopper" x="0"/><p indent="20" space="10">Copper [30-120]</p>
+			<stack item="taiga:duranite_ingot" x="0"/><p indent="20" space="10">Duranite [5-15]</p>
 		</page>
 		<page id="pg2">
 			<p bold="true" italics="true">Flower Forrest Islands</p>
 			<stack item="railcraft:ingot" meta="8" x="0"/><p indent="20" space="10">Zinc [30-40]</p>
 			<stack item="minecraft:coal" x="0"/><p indent="20" space="10">Coal [0-120]</p>
 			<stack item="forestry:ingotCopper" x="0"/><p indent="20" space="10">Copper [30-120]</p>
+			<stack item="taiga:duranite_ingot" x="0"/><p indent="20" space="10">Duranite [5-15]</p>
 		</page>
 		<page id="pg3">
 			<p bold="true" italics="true">Jungle Islands</p>
@@ -977,7 +980,8 @@
 			<link ref="ch7:pg37">Warp Tricks</link>
 			<link ref="ch7:pg38">Mining the Gas</link>
 			<link ref="ch7:pg39">Moar Power</link>
-			<link ref="ch7:pg40">Leaving Home</link>
+			<link ref="ch7:pg40">Seacret Recipes</link>
+			<link ref="ch7:pg41">Leaving Home</link>
 		</page>
 		<page />
 		<page id="pg0">
@@ -1487,6 +1491,20 @@
 			<p>Try Zombie Generator or Combustion Engine.</p>
 		</page>
 		<page id="pg40">
+			<p bold="true" italics="true">Secret Recipes</p>
+			<p>When you wil get tired of bottling your nitrogen, there is SOLDERER receipt for them.</p>
+			<space height="5" />
+			<p>Just put into solderer CAN of desired fluid and 2 Aluminium Sheets.</p>
+			<stack item="refinedstorage:solderer" x="0"/>
+			<stack item="libvulpes:productsheet" meta="9" x="30"/>
+			<stack item="forestry:can" x="50"/>
+			<stack item="libvulpes:productsheet" meta="9" x="70"/>
+			<stack item="advancedrocketry:bucketRocketFuel" x="20" y="30"/>
+			<stack item="advancedrocketry:bucketOxygen" x="40" y="30"/>
+			<stack item="advancedrocketry:bucketHydrogen" x="60" y="30"/>
+			<stack item="advancedrocketry:bucketNitrogen" x="80" y="30"/>
+		</page>
+		<page id="pg41">
 			<p bold="true" italics="true">Leaving Home</p>
 			<p>You must have on your ship: Lava World Orb, Dilithium.</p>
 			<p>Should also have: Rocket Fuel Production, Dilithium Production, Food.</p>

@@ -1327,6 +1327,39 @@
 			}
 		},
 
+		"forrest03": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "taiga:duranite_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 9,
+			"min-height": 5,
+			"max-height": 15,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"birch_forest_hills",
+							"forest_hills"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
 		"flower00": {
 			"distribution": "uniform",
 			"generator": {
@@ -1405,6 +1438,38 @@
 			"cluster-count": 40,
 			"min-height": 30,
 			"max-height": 120,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mutated_forest"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+
+		"flower03": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "taiga:duranite_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 9,
+			"min-height": 5,
+			"max-height": 15,
 			"retrogen": true,
 			"biome": {
 				"restriction": "whitelist",

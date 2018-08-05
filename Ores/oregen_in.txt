@@ -49,10 +49,12 @@ swamp05		lead		swamp		0
 forrest00	alu			forrest		0
 forrest01	tin			forrest		0
 forrest02	copper		forrest		0
+forrest03	duranite2	forrest		0
 
 flower00	zinc		flower		0
 flower01	coal		flower		0
 flower02	copper		flower		0
+flower03	duranite2	flower		0
 
 iceberg00	gold		iceberg		0
 iceberg01	lead		iceberg		0

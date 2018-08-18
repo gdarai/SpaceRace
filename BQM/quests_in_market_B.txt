@@ -78,8 +78,8 @@ QUEST   #  MBxo03   #  Seeds Again # 1423
 TEXT    #  So you forgot your most important seeds home and you need them now? Lucky for you we have some fresh delivery here.
 PREREQ  #  AND      #  MB00
 
-TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:10 # DilithiumNugget:1 # xpBottle:4
-REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:10 # xpBottle:4
+REWARD  #  PICK     #  MASeed00:9  #  MASeed01:9  #  MASeed02:9  #  MASeed03:9  #  MASeed04:9  #  MASeed05:9  #  MASeed06:9  #  MASeed07:9  #  MASeed08:9 # MASeedXX:16
 
 // ------->
 

@@ -49,38 +49,38 @@ lead		immersiveengineering:ore	2	no		minecraft:stone			uniform		5		10		15	40
 osram		taiga:osram_ore				0	no		minecraft:stone			uniform		2		15		0	10
 rutil		libvulpes:ore0				8	no		minecraft:stone			uniform		3		6		30	60
 iridium		libvulpes:ore0				10	no		minecraft:stone			uniform		2		5		20	35
-karmesine	taiga:karmesine_ore			0	no		minecraft:stone			uniform		6		3		40	70
+karmesine	taiga:karmesine_ore			0	no		minecraft:stone			uniform		6		10		40	70
 
-ironS		minecraft:iron_ore			0	no		minecraft:stone			uniform		5		5		10	55
-goldS		minecraft:gold_ore			0	no		minecraft:stone			uniform		5		2		5	35
-redstoneS	minecraft:redstone_ore		0	no		minecraft:stone			uniform		5		3		0	16
-lapisS		minecraft:lapis_ore			0	no		minecraft:stone			uniform		5		5		5	25
-diamondS	minecraft:diamond_ore		0	no		minecraft:stone			uniform		4		5		5	25
-emeraldS	minecraft:emerald_ore		0	no		minecraft:stone			uniform		2		6		40	130
+ironS		minecraft:iron_ore			0	no		minecraft:stone			uniform		5		10		10	55
+goldS		minecraft:gold_ore			0	no		minecraft:stone			uniform		5		4		5	35
+redstoneS	minecraft:redstone_ore		0	no		minecraft:stone			uniform		5		6		0	16
+lapisS		minecraft:lapis_ore			0	no		minecraft:stone			uniform		5		10		5	25
+diamondS	minecraft:diamond_ore		0	no		minecraft:stone			uniform		4		10		5	25
+emeraldS	minecraft:emerald_ore		0	no		minecraft:stone			uniform		2		12		40	130
 aluS		immersiveengineering:ore	1	no		minecraft:stone			uniform		4		15		40	120
-copperS		forestry:resources			1	no		minecraft:stone			uniform		5		6		30	120
-tinS		forestry:resources			2	no		minecraft:stone			uniform		8		8		30	100
-zincS		railcraft:ore_metal			5	no		minecraft:stone			uniform		9		1		30	40
-leadS		immersiveengineering:ore	2	no		minecraft:stone			uniform		5		3		15	40
-nickelS		immersiveengineering:ore	4	no		minecraft:stone			uniform		4		5		30	50
-eezoS		taiga:eezo_ore				0	no		minecraft:stone			uniform		8		5		15	40
-osramS		taiga:osram_ore				0	no		minecraft:stone			uniform		2		5		0	10
-basaltS		taiga:basalt_block			0	no		minecraft:stone			uniform		2		7		0	50
+copperS		forestry:resources			1	no		minecraft:stone			uniform		5		12		30	120
+tinS		forestry:resources			2	no		minecraft:stone			uniform		8		16		30	100
+zincS		railcraft:ore_metal			5	no		minecraft:stone			uniform		9		2		30	40
+leadS		immersiveengineering:ore	2	no		minecraft:stone			uniform		5		6		15	40
+nickelS		immersiveengineering:ore	4	no		minecraft:stone			uniform		4		10		30	50
+eezoS		taiga:eezo_ore				0	no		minecraft:stone			uniform		8		10		15	40
+osramS		taiga:osram_ore				0	no		minecraft:stone			uniform		2		10		0	10
+basaltS		taiga:basalt_block			0	no		minecraft:stone			uniform		2		14		0	50
 
 silver		railcraft:ore_metal			3	no		minecraft:stone			uniform		5		8		20	55
-silverS		railcraft:ore_metal			3	no		minecraft:stone			uniform		5		2		20	55
+silverS		railcraft:ore_metal			3	no		minecraft:stone			uniform		5		4		20	55
 
-prometheum	taiga:prometheum_ore			0	no		minecraft:netherrack		uniform		4		15		25	45
+prometheum	taiga:prometheum_ore			0	no		minecraft:netherrack		uniform		8		15		25	45
 
 abyssum		taiga:abyssum_ore			0	no		minecraft:end_stone		uniform		4		20		0	70
 palladium	taiga:palladium_ore			0	no		minecraft:end_stone		uniform		8		30		60	150
-magicProsp	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		20	50
+magicProsp	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		20		20	50
 
-dilithiumS	taiga:dilithium_ore			0	no		minecraft:stone			uniform		2		4		0	15
-oviumS		taiga:ovium_ore				0	no		minecraft:stone			uniform		2		4		10	50
-draconiumS	draconicevolution:draconium_ore		0	no		minecraft:stone			uniform		1		1		0	40
+dilithiumS	taiga:dilithium_ore			0	no		minecraft:stone			uniform		2		8		0	15
+oviumS		taiga:ovium_ore				0	no		minecraft:stone			uniform		2		8		10	50
+draconiumS	draconicevolution:draconium_ore		0	no		minecraft:stone			uniform		1		2		0	40
 draconiumE	draconicevolution:draconium_ore		2	no		minecraft:end_stone		uniform		2		25		50	150
-uruS		taiga:uru_ore				0	no		minecraft:stone			uniform		2		4		25	45
+uruS		taiga:uru_ore				0	no		minecraft:stone			uniform		2		8		25	45
 
 cobaltN		tconstruct:ore				0	no		minecraft:netherrack		uniform		1		10		10	50
 arditeN		tconstruct:ore				1	no		minecraft:netherrack		uniform		2		15		10	50
@@ -89,28 +89,28 @@ quartzN		minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		10		12		10	1
 
 cobaltNS	tconstruct:ore				0	no		minecraft:netherrack		uniform		1		10		10	50
 arditeNS	tconstruct:ore				1	no		minecraft:netherrack		uniform		2		15		10	50
-quartzNS	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		5		10	150
+quartzNS	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		10		10	150
 
 tiberium	taiga:tiberium_ore			0	no		minecraft:netherrack	uniform		3		10		45	65
 valyrium	taiga:valyrium_ore			0	no		minecraft:netherrack	uniform		2		8		10	50
 valyriumN	taiga:valyrium_ore			0	no		minecraft:netherrack	uniform		2		8		110	125
 
-meteorite	taiga:meteoritecobble_block	0	no		minecraft:stone			uniform		4		10		10	50
-apatite		forestry:resources			0	no		minecraft:stone			uniform		7		15		10	50
-dilithium	libvulpes:ore0				0	no		minecraft:stone			uniform		4		8		10	50
-osram		taiga:osram_ore				0	no		minecraft:stone			uniform		3		8		10	50
-blackQuartz	actuallyadditions:blockMisc		3	no		minecraft:stone			uniform		2		13		10	50
-ovium		taiga:ovium_ore				0	no		minecraft:stone			uniform		4		10		10	50
-soulsand	minecraft:soul_sand			0	no		minecraft:sand			uniform		6		8		50	70
-uranium		immersiveengineering:ore		5	no		minecraft:stone			uniform		2		8		10	20
-glowstone	minecraft:glowstone			0	no		minecraft:stone			uniform		2		6		0	30
+meteorite	taiga:meteoritecobble_block	0	no		minecraft:stone			uniform		6		20		10	50
+apatite		forestry:resources			0	no		minecraft:stone			uniform		9		20		10	50
+dilithium	libvulpes:ore0				0	no		minecraft:stone			uniform		4		20		10	50
+osram		taiga:osram_ore				0	no		minecraft:stone			uniform		3		20		10	50
+blackQuartz	actuallyadditions:blockMisc		3	no		minecraft:stone			uniform		2		20		10	50
+ovium		taiga:ovium_ore				0	no		minecraft:stone			uniform		4		20		10	50
+soulsand	minecraft:soul_sand			0	no		minecraft:sand			uniform		6		20		50	70
+uranium		immersiveengineering:ore		5	no		minecraft:stone			uniform		2		20		10	20
+glowstone	minecraft:glowstone			0	no		minecraft:stone			uniform		2		15		0	30
 
-jauxum		taiga:jauxum_ore			0	no		minecraft:stone			uniform		2		8		10	50
-magma		minecraft:magma				0	no		minecraft:stone			uniform		3		13		10	50
-vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		2		5		10	50
-uru			taiga:uru_ore				0	no		minecraft:stone			uniform		4		12		30	60
-enderS		tp:ender_ore				0	no		minecraft:stone			uniform		3		10		45	65
-aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		4		20		10	30
+jauxum		taiga:jauxum_ore			0	no		minecraft:stone			uniform		2		15		10	50
+magma		minecraft:magma				0	no		minecraft:stone			uniform		3		25		10	50
+vibranium	taiga:vibranium_ore			0	no		minecraft:stone			uniform		2		15		10	50
+uru			taiga:uru_ore				0	no		minecraft:stone			uniform		4		25		30	60
+enderS		tp:ender_ore				0	no		minecraft:stone			uniform		3		20		45	65
+aurorium	taiga:aurorium_ore			0	no		minecraft:end_stone		uniform		4		30		10	30
 
 ironA		minecraft:iron_ore			0	no		minecraft:stone			uniform		30		60		50	150
 goldA		minecraft:gold_ore			0	no		minecraft:stone			uniform		30		60		50	150
@@ -140,10 +140,10 @@ arditeNN	tconstruct:ore				1	no		minecraft:netherrack		uniform		2		12		45	65
 quartzNN	minecraft:quartz_ore		0	no		minecraft:netherrack		uniform		8		16		45	65
 
 resonanceA	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		15		60		50	150
-resonanceS	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		3		10		20	40
-resonanceN	deepresonance:resonating_ore	1	no		minecraft:netherrack	uniform		3		10		100	140
+resonanceS	deepresonance:resonating_ore	0	no		minecraft:stone			uniform		3		20		20	40
+resonanceN	deepresonance:resonating_ore	1	no		minecraft:netherrack	uniform		3		20		100	140
 
 resonanceE	deepresonance:resonating_ore	2	no		minecraft:end_stone		uniform		4		30		0	100
 abyssumE	taiga:abyssum_ore				0	no		minecraft:end_stone		uniform		4		40		0	100
 palladiumE	taiga:palladium_ore				0	no		minecraft:end_stone		uniform		8		30		0	100
-magicProspE	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		10		0	100
+magicProspE	mysticalagriculture:end_prosperity_ore	0	no		minecraft:end_stone		uniform		2		30		0	100

@@ -8,7 +8,7 @@ REWARD  #  PICK     #  HCSo11411:4 # HCSo2495:4 # ioCapac2:2 # ioAnchor:2 # ioSo
 // ------->
 
 QUEST   #  G30      #  Unlocking the End # 701
-TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the End, you must craft the Draconium Ingot first. Well go ahead. Do it. After you will have the achievement, to get to the End will be just a question of launching your rocket.
+TEXT    #  If you will check the Restricted Portals Achievements page, you will find out that before you will be allowed to enter the End, you must craft the Wyvern Energy Core first. Well go ahead. Do it. After you will have the achievement, to get to the End will be just a question of launching your rocket. But one last warning... You will 100% loose your rocket on entering the end. So have a spare one with you and also backup your Space Station Id Chip, through the Sattelite Builder.
 PREREQ  #  AND      #  G00
 
 TASK    #  HAVE     #  dracoIngot

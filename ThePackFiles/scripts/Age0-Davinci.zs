@@ -173,6 +173,7 @@ mods.forestry.Fermenter.addRecipe(<liquid:steam>, <minecraft:coal>, <liquid:wate
 mods.forestry.Fermenter.addRecipe(<liquid:steam>, <minecraft:coal:1>, <liquid:water>, 500, 0.2);   
 
 mods.immersiveengineering.BottlingMachine.addRecipe(<davincisvessels:balloon:0>, <powersuits:powerArmorComponent:9>, <liquid:steam> * 2000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<davincisvessels:balloon:0>, <powersuits:powerArmorComponent:9>, <liquid:hydrogen> * 500);
 
 recipes.addShapeless(<davincisvessels:balloon:0>, [<davincisvessels:balloon:*>, <minecraft:dye:15>]);
 recipes.addShapeless(<davincisvessels:balloon:1>, [<davincisvessels:balloon:*>, <minecraft:dye:14>]);

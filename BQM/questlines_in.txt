@@ -271,11 +271,11 @@ QUEST        #  TA13        #   40:0      #  25    #  Wheet			    # repeat:24000
 QUEST        #  TA14        #   60:0      #  25    #  HCPear			# repeat:24000
 
 QUEST        #  TA02        #  -40:15     #  30    #  FlintPickAxe		# main
-QUEST        #  TA20        #  -20:15     #  25    #  PoorNickel		# repeat:24000
-QUEST        #  TA21        #    0:15  	  #  25    #  AluOre			# repeat:24000
-QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust		# repeat:24000
-QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack		# repeat:24000
-QUEST        #  TA24        #   60:15     #  25    #  GoldOre			# repeat:24000
+QUEST        #  TA20        #  -20:15     #  25    #  PoorOre1  		# repeat:24000  #  task:OR
+QUEST        #  TA21        #    0:15  	  #  25    #  AluOre			# repeat:24000  #  task:OR
+QUEST        #  TA22        #   20:15     #  25    #  RedstoneDust		# repeat:24000  #  task:OR
+QUEST        #  TA23        #   40:15     #  25    #  BasaltBlack		# repeat:24000  #  task:OR
+QUEST        #  TA24        #   60:15     #  25    #  GoldOre			# repeat:24000  #  task:OR
 QUEST        #  TA25        #   80:15     #  25    #  DracoDust			# repeat:24000
 
 QUEST        #  TA03        #  -40:30     #  30    #  ChiselTool		# main

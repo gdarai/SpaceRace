@@ -866,7 +866,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 5,
 			"max-height": 25,
 			"retrogen": true,
@@ -1564,7 +1564,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -1769,7 +1769,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -2210,7 +2210,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 20,
 			"max-height": 50,
 			"retrogen": true,
@@ -2433,7 +2433,7 @@
 					"name": "taiga:prometheum_ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 4
+				"cluster-size": 8
 			},
 			"cluster-count": 15,
 			"min-height": 25,
@@ -2597,7 +2597,7 @@
 				"material": "minecraft:netherrack",
 				"cluster-size": 3
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 100,
 			"max-height": 140,
 			"retrogen": true,
@@ -2693,7 +2693,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 10,
+			"cluster-count": 30,
 			"min-height": 0,
 			"max-height": 100,
 			"retrogen": true,
@@ -2791,7 +2791,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 10,
 			"max-height": 55,
 			"retrogen": true,
@@ -2815,7 +2815,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 2,
+			"cluster-count": 4,
 			"min-height": 5,
 			"max-height": 35,
 			"retrogen": true,
@@ -2840,7 +2840,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 3,
+			"cluster-count": 6,
 			"min-height": 0,
 			"max-height": 16,
 			"retrogen": true,
@@ -2865,7 +2865,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 5,
 			"max-height": 25,
 			"retrogen": true,
@@ -2888,7 +2888,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 5,
 			"max-height": 25,
 			"retrogen": true,
@@ -2910,7 +2910,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 6,
+			"cluster-count": 12,
 			"min-height": 40,
 			"max-height": 130,
 			"retrogen": true,
@@ -2960,7 +2960,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 6,
+			"cluster-count": 12,
 			"min-height": 30,
 			"max-height": 120,
 			"retrogen": true,
@@ -2987,7 +2987,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 8,
+			"cluster-count": 16,
 			"min-height": 30,
 			"max-height": 100,
 			"retrogen": true,
@@ -3014,7 +3014,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 9
 			},
-			"cluster-count": 1,
+			"cluster-count": 2,
 			"min-height": 30,
 			"max-height": 40,
 			"retrogen": true,
@@ -3042,7 +3042,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 3,
+			"cluster-count": 6,
 			"min-height": 15,
 			"max-height": 40,
 			"retrogen": true,
@@ -3067,7 +3067,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 30,
 			"max-height": 50,
 			"retrogen": true,
@@ -3093,7 +3093,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 15,
 			"max-height": 40,
 			"retrogen": true,
@@ -3101,6 +3101,7 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
+					20,
 					23,
 					24,
 					31
@@ -3117,7 +3118,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 5,
+			"cluster-count": 10,
 			"min-height": 0,
 			"max-height": 10,
 			"retrogen": true,
@@ -3141,7 +3142,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 7,
+			"cluster-count": 14,
 			"min-height": 0,
 			"max-height": 50,
 			"retrogen": true,
@@ -3165,7 +3166,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 5
 			},
-			"cluster-count": 2,
+			"cluster-count": 4,
 			"min-height": 20,
 			"max-height": 55,
 			"retrogen": true,
@@ -3508,7 +3509,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3586,7 +3587,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 6
 			},
-			"cluster-count": 3,
+			"cluster-count": 10,
 			"min-height": 40,
 			"max-height": 70,
 			"retrogen": true,
@@ -3660,7 +3661,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 4,
+			"cluster-count": 8,
 			"min-height": 0,
 			"max-height": 15,
 			"retrogen": true,
@@ -3682,7 +3683,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 4,
+			"cluster-count": 8,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3706,7 +3707,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},
-			"cluster-count": 1,
+			"cluster-count": 2,
 			"min-height": 0,
 			"max-height": 40,
 			"retrogen": true,
@@ -3726,9 +3727,9 @@
 					"name": "taiga:meteoritecobble_block"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3752,9 +3753,9 @@
 					"name": "forestry:resources"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 7
+				"cluster-size": 9
 			},
-			"cluster-count": 15,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3778,7 +3779,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3786,6 +3787,7 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
+					20,
 					22,
 					23,
 					24
@@ -3803,7 +3805,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 13,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -3943,7 +3945,7 @@
 				"material": "minecraft:sand",
 				"cluster-size": 6
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 50,
 			"max-height": 70,
 			"retrogen": true,
@@ -3967,7 +3969,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 20,
 			"retrogen": true,
@@ -3990,7 +3992,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 6,
+			"cluster-count": 15,
 			"min-height": 0,
 			"max-height": 30,
 			"retrogen": true,
@@ -4035,7 +4037,7 @@
 					"name": "taiga:prometheum_ore"
 				},
 				"material": "minecraft:netherrack",
-				"cluster-size": 4
+				"cluster-size": 8
 			},
 			"cluster-count": 15,
 			"min-height": 25,
@@ -4059,7 +4061,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4081,7 +4083,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 8,
+			"cluster-count": 20,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4103,7 +4105,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 8,
+			"cluster-count": 15,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4126,7 +4128,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 13,
+			"cluster-count": 25,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4192,7 +4194,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 5,
+			"cluster-count": 15,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
@@ -4214,7 +4216,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 12,
+			"cluster-count": 25,
 			"min-height": 30,
 			"max-height": 60,
 			"retrogen": true,
@@ -4236,7 +4238,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 2
 			},
-			"cluster-count": 4,
+			"cluster-count": 8,
 			"min-height": 25,
 			"max-height": 45,
 			"retrogen": true,
@@ -4280,7 +4282,7 @@
 				"material": "minecraft:end_stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 20,
+			"cluster-count": 30,
 			"min-height": 10,
 			"max-height": 30,
 			"retrogen": true,
@@ -4326,7 +4328,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 20,
 			"max-height": 40,
 			"retrogen": true,
@@ -4350,7 +4352,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 3
 			},
-			"cluster-count": 10,
+			"cluster-count": 20,
 			"min-height": 45,
 			"max-height": 65,
 			"retrogen": true,

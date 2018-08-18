@@ -182,7 +182,7 @@ REWARD  #  XP       #  Levels:1
 // ------------------>
 
 QUEST   #  4x1      #  Moon # 62
-TEXT    #  Moon is your closest and easiest target.\n\nDeposites of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Osram, Basalt and Silver.\n\nAlso Meteorite and Karmesine.
+TEXT    #  Moon is your closest and easiest target.\n\nDeposites of Iron, Gold, Redstone, Lapis, Emeralds, Aluminium, Copper, Tin, Zinc, Nickel, Osram, Eezo, Basalt and Silver.\n\nAlso Meteorite and Karmesine.
 PREREQ  #  AND      #  040
 
 TASK    #  TRIGGER

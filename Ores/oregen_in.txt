@@ -114,7 +114,7 @@ space08s	tinS		all		22,23,24,25,33
 space09s	zincS		all		20,22,24,25,30,31
 space10s	leadS		all		23,24,31
 space11s	nickelS		all		20,22,25,30,31
-space13s	eezoS		all		23,24,31
+space13s	eezoS		all		20,23,24,31
 space14s	osramS		all		20,22,23
 space15s	basaltS		all		25,30
 space16s	silverS		all		20,23,24,31
@@ -145,7 +145,7 @@ space22		draconiumS	all		23
 
 space23		meteorite	all		20,22,23,24,25
 space24		apatite		all		22,23,31
-space25		osram		all		22,23,24
+space25		osram		all		20,22,23,24
 space26		blackQuartz	all		24,25,33
 space27n	netherrack	all		22,25
 space27		tiberium	all		22,25

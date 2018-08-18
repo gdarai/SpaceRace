@@ -602,9 +602,28 @@ ITEM # Ore22     # immersiveengineering:ore:3
 ITEM # Ore23     # minecraft:diamond_ore
 ITEM # Ore24     # minecraft:emerald_ore
 
+ITEM # PoorOre0	# railcraft:ore_metal_poor:0
+ITEM # PoorOre1	# railcraft:ore_metal_poor:1
+ITEM # PoorOre2	# railcraft:ore_metal_poor:2
+ITEM # PoorOre3	# railcraft:ore_metal_poor:3
+ITEM # PoorOre4	# railcraft:ore_metal_poor:4
+ITEM # PoorOre5	# railcraft:ore_metal_poor:5
+ITEM # PoorOre6	# railcraft:ore_metal_poor:6
+ITEM # PoorOre7	# railcraft:ore_metal_poor:7
+
+ITEM # CheapOre0 # immersiveengineering:ore:1
+ITEM # CheapOre1 # minecraft:iron_ore
+ITEM # CheapOre2 # forestry:resources:1
+ITEM # CheapOre3 # forestry:resources:2
+ITEM # CheapOre4 # immersiveengineering:ore:4
+ITEM # CheapOre5 # railcraft:ore_metal:5
+ITEM # CheapOre6 # immersiveengineering:ore:2
+
+ITEM # OsramDust 	# taiga:osram_dust
+ITEM # EezoDust 	# taiga:eezo_dust
+ITEM # Emerald		# minecraft:emerald
+
 ITEM # FlintPickAxe # tconstruct:pick_head # NBT:{ "Material:8": "flint" }
-ITEM # PoorNickel 	# railcraft:ore_metal_poor:6
-ITEM # PoorZinc 	# railcraft:ore_metal_poor:7
 ITEM # AluOre 		# immersiveengineering:ore:1
 ITEM # IronOre 		# minecraft:iron_ore
 ITEM # RedstoneDust # minecraft:redstone
@@ -769,6 +788,7 @@ ITEM # MASeed05	# mysticalagriculture:wood_seeds
 ITEM # MASeed06	# mysticalagriculture:water_seeds
 ITEM # MASeed07	# mysticalagriculture:ice_seeds
 ITEM # MASeed08	# mysticalagriculture:zombie_seeds
+ITEM # MASeedXX	# mysticalagriculture:prosperity_shard
 
 ITEM # DilithiumNugget # taiga:dilithium_nugget
 ITEM # RocketTank	 # advancedrocketry:bucketRocketFuel

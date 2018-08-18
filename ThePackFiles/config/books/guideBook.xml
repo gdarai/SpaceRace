@@ -66,6 +66,7 @@
 			<link ref="ch2:d3">Portals</link>
 			<link ref="ch2:d4">Monsters</link>
 			<link ref="ch2:d5">Warp</link>
+			<link ref="ch2:d6">End</link>
 		</page>
 		<page id="d0">
 			<p bold="true" italics="true">Swimming</p>
@@ -125,7 +126,7 @@
 			<stack item="minecraft:flint_and_steel" x="40"/>
 			<space height="20" />
 			<p>For The End is enough to unlock it. To get there use a rocket, it is a moon orbiting the Blue Gas Giant.</p>
-			<stack item="draconicevolution:draconium_ingot" x="0"/>
+			<stack item="draconicevolution:wyvern_energy_core" x="0"/>
 		</page>
 		<page id="d4">
 			<p bold="true" italics="true">Monsters</p>
@@ -153,6 +154,14 @@
 			<stack item="bqmie:icon_item" meta="15" x="80"/>
 			<stack item="bqmie:icon_item" meta="18" x="10" y="20"/>
 			<stack item="bqmie:icon_item" meta="22" x="30" y="20"/>
+		</page>
+		<page id="d6">
+			<p bold="true" italics="true">End</p>
+			<p>End is Special. You will always loose your ship on entering end.</p>
+			<p></p>
+			<p>Have a spare one in your pocket.</p>
+			<p></p>
+			<p>Have your Warp-Ship Space Station Id Chip duplicaed and backuped. This can be done in the Sattelite Builder.</p>
 		</page>
 	</chapter>
 	<chapter id="ch3">
@@ -472,6 +481,8 @@
 			<stack item="railcraft:ingot" meta="4" x="40"/>
 			<stack item="taiga:meteorite_ingot" x="60"/>
 			<stack item="taiga:karmesine_ingot" x="80"/>
+			<space height="20" />
+			<stack item="taiga:eezo_ingot" x="0"/>
 		</page>
 		<page id="pg1">
 			<p bold="true" italics="true">Asteroid Belt</p>
@@ -1508,6 +1519,7 @@
 			<p bold="true" italics="true">Leaving Home</p>
 			<p>You must have on your ship: Lava World Orb, Dilithium.</p>
 			<p>Should also have: Rocket Fuel Production, Dilithium Production, Food.</p>
+            <link ref="ch2">Read the warnings!!</link>
 			<space height="5" />
 			<p>So this is good bye. You are big now and you don't need guidebooks.</p>
 			<space height="5" />

@@ -99,6 +99,8 @@ recipes.addShaped(stoneTorch, [[<minecraft:coal:*>, null], [<ore:rodStone>, null
 recipes.addShapeless(tinyTorch * 2, [torch, <minecraft:stick>, <minecraft:stick>]);
 recipes.addShapeless(tinyTorch, [candle]);
 
+// Gendustry Bee Receptacle
+
 // Mystical Agriculture
 val ess1 = <mysticalagriculture:inferium_essence>;
 val ess2 = <mysticalagriculture:prudentium_essence>;
@@ -128,6 +130,12 @@ val gunp = <ore:gunpowder>;
 val xp = <ore:xp>;
 xp.add(<supercraftingframe:super_xp_bottle>);
 xp.add(<actuallyadditions:itemSolidifiedExperience>);
+
+val skull = <minecraft:skull>;
+val essSkel = <mysticalagriculture:skeleton_essence>;
+val essExp = <mysticalagriculture:experience_essence>;
+val essZomb = <mysticalagriculture:zombie_essence>;
+val essCreep = <mysticalagriculture:creeper_essence>;
 
 recipes.removeShaped(<mysticalagriculture:superium_apple>);
 recipes.addShaped(<mysticalagriculture:superium_apple>, [[superWood, ess4, superWood], [ess4, <mysticalagriculture:intermedium_apple>, ess4], [superWood, ess4, superWood]]);
@@ -173,3 +181,9 @@ mods.forestry.Carpenter.addRecipe(maBonemeal*24, [[gunp, xp, gunp], [xp, disipCh
 
 // Removing deassemling of supremium essence
 recipes.removeShapeless(ess4*4, [ess5]);
+
+// Heads Recepty
+
+recipes.addShaped(skull, [[essSkel, essSkel, essSkel], [essSkel,essSkel, essSkel], [essSkel, essSkel, essSkel]]);
+recipes.addShaped(<minecraft:skull:2>, [[essZomb, essZomb, essZomb], [essExp, skull, essExp], [essZomb, essZomb, essZomb]]);
+recipes.addShaped(<minecraft:skull:4>, [[essCreep, essCreep, essCreep], [essExp, skull, essExp], [essCreep, essCreep, essCreep]]);

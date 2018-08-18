@@ -462,6 +462,7 @@ for line in lines:
             'repeat': '-1',
             'auto': '0',
             'simul': '0',
+            'taskLogic': 'AND',
         }
         if (m[3] in qids):
             confliktQIDs.append(m[3])
@@ -568,6 +569,8 @@ for line in lines:
                 quests[newQ['id']]['simul'] = '1'
             elif(nm=='auto'):
                 quests[newQ['id']]['auto'] = '1'
+            elif(nm=='task'):
+                quests[newQ['id']]['taskLogic'] = m1[1]
             else:
                 printWarning('Quest '+theL['name']+'/'+newQ['id']+': skipping unknown parameter '+p)
         theL['quests'].append(newQ)
@@ -637,7 +640,7 @@ for id in questNames:
 	writeLine(f,5,'"simultaneous:1": '+q['simul']+',')
 	writeLine(f,5,'"globalShare:1": 0,')
 	writeLine(f,5,'"lockedProgress:1": 0,')
-	writeLine(f,5,'"taskLogic:8": "AND",')
+	writeLine(f,5,'"taskLogic:8": "'+q['taskLogic'].upper()+'",')
 	writeLine(f,5,'"repeatTime:3": '+q['repeat']+',')
 	if(q['preqType']=='none'):
 		writeLine(f,5,'"questLogic:8": "AND"')

@@ -77,7 +77,14 @@ QUEST   #  TA20     #  Poor Ores # 1009
 TEXT    #  Look around and deliver some poor nickel ore and poor zinc ore.
 PREREQ  #  AND      #  TA02
 
-TASK    #  GIVE		#  PoorNickel:8 # PoorZinc:8
+TASK    #  GIVE		#  PoorOre0:20
+TASK    #  GIVE		#  PoorOre1:2
+TASK    #  GIVE		#  PoorOre2:6
+TASK    #  GIVE		#  PoorOre3:6
+TASK    #  GIVE		#  PoorOre4:2
+TASK    #  GIVE		#  PoorOre5:2
+TASK    #  GIVE		#  PoorOre6:4
+TASK    #  GIVE		#  PoorOre7:2
 REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
@@ -86,7 +93,13 @@ QUEST   #  TA21     #  Regular Ores # 1010
 TEXT    #  Let's increase the load. We want to see some real Digging.
 PREREQ  #  AND      #  TA20
 
-TASK    #  GIVE		#  AluOre:8 # IronOre:8
+TASK    #  GIVE		#  CheapOre0:8
+TASK    #  GIVE		#  CheapOre1:8
+TASK    #  GIVE		#  CheapOre2:8
+TASK    #  GIVE		#  CheapOre3:8
+TASK    #  GIVE		#  CheapOre4:6
+TASK    #  GIVE		#  CheapOre5:6
+TASK    #  GIVE		#  CheapOre6:6
 REWARD  #  ALL      #  TradeCurr:6
 
 // ------->
@@ -95,7 +108,10 @@ QUEST   #  TA22     #  Deep Dusts # 1011
 TEXT    #  Can you go deeper and get some Redstone and Duranium dusts?
 PREREQ  #  AND      #  TA21
 
-TASK    #  GIVE		#  RedstoneDust:64 # DuraniumDust:16
+TASK    #  GIVE		#  RedstoneDust:32
+TASK    #  GIVE		#  DuraniumDust:8
+TASK    #  GIVE		#  EezoDust:4
+TASK    #  GIVE		#  OsramDust:4
 REWARD  #  ALL      #  TradeCurr:7
 
 // ------->
@@ -104,7 +120,8 @@ QUEST   #  TA23     #  Basalt # 1012
 TEXT    #  There are two variants of basalt on this world. Deliver both to please the viewers.
 PREREQ  #  AND      #  TA22
 
-TASK    #  GIVE		#  BasaltWhite:16 # BasaltBlack:16
+TASK    #  GIVE		#  BasaltWhite:8
+TASK    #  GIVE		#  BasaltBlack:16
 REWARD  #  ALL      #  TradeCurr:7
 
 // ------->
@@ -113,7 +130,10 @@ QUEST   #  TA24     #  Going Exotic # 1013
 TEXT    #  Some unique and precious metals should buy our attention.
 PREREQ  #  AND      #  TA23
 
-TASK    #  GIVE		#  GoldOre:4 # SilverOre:4 # OsramOre:4 # EezoOre:4
+TASK    #  GIVE		#  GoldOre:8
+TASK    #  GIVE		#  SilverOre:6
+TASK    #  GIVE		#  Diamond:6
+TASK    #  GIVE		#  Emerald:6
 REWARD  #  ALL      #  TradeCurr:7
 
 // ------->

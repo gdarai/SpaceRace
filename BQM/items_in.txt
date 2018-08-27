@@ -127,7 +127,7 @@ ITEM  #  MagicSeed		#  mysticalagriculture:aluminum_brass_seeds
 ITEM  #  MagicTool		#  mysticalagriculture:inferium_pickaxe
 ITEM  #  LaserTr		#  actuallyadditions:blockLaserRelayFluids
 ITEM  #  ExpRod			#  enderio:itemXpTransfer
-ITEM  #  Computer		#  opencomputers:case2
+ITEM  #  Computer		#  opencomputers:case1
 ITEM  #  DEChest		#  draconicevolution:draconium_chest
 ITEM  #  AABlink		#  actuallyadditions:itemTeleStaff
 ITEM  #  IERadiator		#  immersiveengineering:metalDecoration0:7
@@ -842,6 +842,24 @@ ITEM # ARCoil        # libvulpes:coil0:4
 ITEM # ARoxy0        # advancedrocketry:oxygenVent
 ITEM # ARoxy1        # advancedrocketry:oxygenScrubber
 ITEM # ARoxy2        # advancedrocketry:carbonScrubberCartridge
+
+ITEM # OreSpec2a	# mysticalagriculture:prosperity_ore
+ITEM # OreSpec2b	# taiga:palladium_ore
+ITEM # OreSpec2c	# taiga:abyssum_ore
+ITEM # OreSpec2d	# minecraft:glowstone
+
+ITEM  #  CircC1     	#  opencomputers:material:8
+ITEM  #  CircC2       	#  opencomputers:material:9
+ITEM  #  CircC3        	#  opencomputers:material:10
+ITEM  #  CircA1       	#  advancedrocketry:ic:3
+ITEM  #  CircA2       	#  advancedrocketry:ic:4
+ITEM  #  CircA3       	#  advancedrocketry:ic:5
+ITEM  #  CircV1       	#  minecraft:repeater
+ITEM  #  CircV2       	#  minecraft:comparator
+
+ITEM  #   SeqLog       	#  forestry:logs.1:3
+SAPLING # SeqSapling    # 1 # treeGigant:growthLightlevel:heightGigantic:saplingsLower:fruitNone:yieldLower # plantTypeNone:sappinessAverage:territoryAverage:leavesNone:maturationFaster # i1d:i20d:i4d # fireproofFalse
+
 
 // Hoarding quests A
 

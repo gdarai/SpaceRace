@@ -7,6 +7,11 @@ local sd = require("sides")
 local sh = require("shell")
 local daraiLib = {}
 
+-- Just print whatever
+function daraiLib.szPrint(item)
+    print(sz.serialize(item))
+end
+
 -- returns formated string s based on formatChar (fmtCh)
 function daraiLib.strFmt(fmtCh, s)
     local len = string.len(s)
@@ -76,11 +81,6 @@ function daraiLib.saveConfigFile(fullFileName, setting)
   local f1 = io.open(fullFileName, "w")
   f1:write(sz.serialize(setting))
   io.close(f1)
-end
-
--- Just print whatever
-function szPrint(item)
-    print(sz.serialize(item))
 end
 
 -- Recursive settings table editor
@@ -496,6 +496,11 @@ end
 -- tweak proxy to be used as inventory controller
 function  daraiLib.getProxy(ic, index)
     return {ic[3][index], nil}
+end
+
+-- get proxy to be used as inventory controller
+function  daraiLib.getProxyByAddress(proxyAddress)
+    return {cc.proxy(proxyAddress), nil}
 end
 
 -- return the side list you can use with this computer

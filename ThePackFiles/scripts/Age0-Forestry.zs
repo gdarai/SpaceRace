@@ -6,7 +6,6 @@ recipes.remove(<forestry:bottler>);
 recipes.remove(<forestry:rainmaker>);
 
 // Variables
-
 val trPlank = <ore:plankTreatedWood>;
 val rodSteel = <ore:stickSteel>;
 

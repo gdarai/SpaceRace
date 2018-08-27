@@ -202,4 +202,94 @@
 			<itemStack>railcraft:plate 8 11</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockBrass</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:gear 4 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockIron</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:gear 4 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockSteel</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:gear 4 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockBronze</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:gear 4 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockInvar</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>railcraft:gear 4 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockTitanium</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productgear 4 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockTitaniumAluminide</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productgear 4 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockTitaniumIridium</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productgear 4 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockCopper</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:gearCopper 4 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="250" power ="250">
+		<input>
+			<oreDict>blockTin</oreDict>
+			<oreDict>gearBushing</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:gearTin 4 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

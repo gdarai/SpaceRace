@@ -45,6 +45,7 @@ blockGlass.remove(<chisel:glassdyedwhite:*>);
 
 val sGlass = <tconstruct:seared_glass>;
 recipes.remove(sGlass);
+mods.immersiveengineering.ArcFurnace.addRecipe(sGlass, <railcraft:glass> * 2, <immersiveengineering:material:7>, 200, 250, [<forestry:ash>*4, <minecraft:cobblestone>*2], "Searding");
 
 // Quartz Dust Oredict
 val quartzDust = <ore:dustAnyQuartz>;

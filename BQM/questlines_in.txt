@@ -419,6 +419,9 @@ QUEST        #  MBxo05      #   80:10     #  25    #  TripleBatFull	     # repea
 QUEST        #  MBxo06      #   40:25     #  25    #  IOCrafter			 # repeat:6000
 QUEST        #  MBxo07      #   60:25     #  25    #  ARFrame			 # repeat:6000
 QUEST        #  MBxo08      #   80:25     #  25    #  ARoxy2			 # repeat:6000
+QUEST        #  MBxo09      #   40:40     #  25    #  Ore22 			 # repeat:6000
+QUEST        #  MBxo10      #   80:40     #  25    #  Circuit			 # repeat:6000
+QUEST        #  MBxo11      #   60:40     #  25    #  SeqLog			 # repeat:6000
 
 // ------------------>
 // Hoarding quests - B

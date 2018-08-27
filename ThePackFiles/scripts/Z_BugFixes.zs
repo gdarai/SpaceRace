@@ -1,3 +1,5 @@
+recipes.remove(<libvulpes:linker>);
+recipes.addShaped(<libvulpes:linker>, [[null, <minecraft:redstone_torch>, null], [null, <railcraft:tool_signal_tuner>, null], [null, <powersuits:powerArmorComponent:15>, null]]);
 recipes.addShapeless(<libvulpes:linker>, [<libvulpes:linker>]);
 
 <bqmie:icon_item:4>.addTooltip(format.gold("Market Key"));

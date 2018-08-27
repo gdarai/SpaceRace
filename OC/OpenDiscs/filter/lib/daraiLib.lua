@@ -78,6 +78,11 @@ function daraiLib.saveConfigFile(fullFileName, setting)
   io.close(f1)
 end
 
+-- Just print whatever
+function szPrint(item)
+    print(sz.serialize(item))
+end
+
 -- Recursive settings table editor
 function daraiLib.editTableKey(input, texts, default, keys)
     local returnVal = "?"
@@ -425,6 +430,20 @@ function daraiLib.itemSlotIndex(ic, side, item)
     return -1
 end
 
+-- get slot index + how many we can insert of specific items in the inventory, but just first not full slot
+function daraiLib.itemSlotNotFull(ic, side, item)
+    local size = daraiLib.getInventorySize(ic, side)
+    for slot = 1,size do
+        local stack = daraiLib.stackInSlot(ic, side, slot)
+        if daraiLib.compareItem(stack, item) then
+            local canInsert = stack.maxSize - stack.size
+            if canInsert > 0 then return {slot, canInsert} end
+        end
+    end
+    return {-1, 0}
+end
+
+
 -- Adds specific key from every object of source into the target list
 -- - if keys = nil, adds whole source
 -- - if keys is a list {"a", 1} it adds source["a"][1]
@@ -462,12 +481,21 @@ function daraiLib.getInventoryController()
     local rc = nil
     if isRobot then rc = require("robot") end
     local ic = nil
+    local ics = {}
+    for k,v in cc.list() do
+        if v == "transposer" then ics[#ics+1] = cc.proxy(k) end
+    end
     if daraiLib.checkForKey(cc, "inventory_controller", true) ~= false then
         ic = cc.inventory_controller
     elseif daraiLib.checkForKey(cc, "transposer", true) ~= false then
-        ic = cc.transposer
+        ic = cc.transposer        
     end
-    return {ic, rc}
+    return {ic, rc, ics}
+end
+
+-- tweak proxy to be used as inventory controller
+function  daraiLib.getProxy(ic, index)
+    return {ic[3][index], nil}
 end
 
 -- return the side list you can use with this computer

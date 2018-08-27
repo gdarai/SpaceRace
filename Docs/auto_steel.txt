@@ -1,0 +1,41 @@
+
+Zasoba ve storu = Soucastky + Ocel (Dost na ploty 5*9 = 5 tyci, 10 platu, 10 Ingotu + 4 fire essence)
+
+Cyclus
+=======
+Malo Cehokoliv => Spustit mnozeni oceli + zacit pocitat prichozi ingoty
+Ingotu tolik, kolik plotu = 5*9 = 45
+1) Prvnich 10 na platy
+2) Druhych 5 na tyce
+3) 10 schovat
+4) 4 na 2 geary
+4) Zbytek podle toho co chybi
++
+Vsechno krome 5 + 10 + 10 posilat na output
+
+Bedna navic obsahuje fire essenci (4 ks, zbytek do output)
+
+Pc controll
+===========
+Output
+ex
+Store
+ex
+Rod, Plate, Craft
+
+Craft cyklus
+============
+filter na outputu
+Fence do pece,
+Lava bucket do Bottleru, Bucket pak zpet do crafteru
+
+Clothe cyclus
+=============
+Produkuje fire essenci a fire seeds
+Fire seeds filtrovat do extra draweru
+Essence do Store
+
+Gear cyclus
+===========
+Geary do extra draweru
+

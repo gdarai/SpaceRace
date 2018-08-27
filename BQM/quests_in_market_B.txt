@@ -125,3 +125,30 @@ PREREQ  #  AND      #  MB00
 
 TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # xpBottle:4
 REWARD  #  ALL      #  ARoxy0:1  #  ARoxy1:2  #  ARoxy2:2
+
+// ------->
+
+QUEST   #  MBxo09   #  Forgot ores # 1435
+TEXT    #  And you are short on some basic resources again. What a surprise.
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # xpBottle:10 # MoonTurf:10
+REWARD  #  PICK     #  Ore23:16 # Ore24:16 # OreSpec01:16 # OreSpec03:16 # OreSpec04:16 # OreSpec05:16 # OreSpec06:16 # OreSpec2a:16 # OreSpec2b:16 # OreSpec2c:16 # OreSpec2d:16
+
+// ------->
+
+QUEST   #  MBxo10   #  Sick of electronics # 1436
+TEXT    #  You really don't want to craft it again... so much that you are willing to pay for it?
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:20 # xpBottle:20 # MoonTurf:10
+REWARD  #  PICK     #  CircC1:8 #  CircC2:6 #  CircC3:4 #  CircA1:4 #  CircA2:4 #  CircA3:4 #  CircV1:32 #  CircV2:32 # Transistor:32
+
+// ------->
+
+QUEST   #  MBxo11   #  Seqoya # 1437
+TEXT    #  Going gigantic? Sure you can... just buy this magical saplings
+PREREQ  #  AND      #  MB00
+
+TASK    #  GIVE     #  TradeCoinB:1 #  TradeCurr:64 # xpBottle:64 # SeqLog:64
+REWARD  #  SAPLING  #  SeqSapling:4

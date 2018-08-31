@@ -29,8 +29,8 @@ QUEST   #  HB30     #  The Ultimate Victory # 1503
 TEXT    #  The Last Task. Prove that you achieved the rank of gods.
 PREREQ  #  AND      #  HB20
 
-TASK    #  GIVE     #  TradeCurr:1000000 # TradeCoinA:100000 # TradeCoinB:100000
-TASK    #  GIVE     #  ChaosShard:1000000 # DragonHeart:1000000 # NetherStar:1000000
+TASK    #  GIVE     #  TradeCurr:256 # TradeCoinA:256 # TradeCoinB:256
+TASK    #  GIVE     #  ChaosShard:256 # DragonHeart:256 # NetherStar:256
 REWARD  #  XP       #  Levels:1
 
 // ------->
@@ -45,7 +45,7 @@ QUEST   #  HBx0     #  The biggest gun # 1510
 TEXT    #  Viewers love big guns. If you want to get their attention, build one on your ship and base.
 PREREQ  #  NAND     #  HB00
 
-TASK    #  HAVE     #  Railgun01:2 #  Railgun02:36 #  ARPlug:4 # ARHatch:4 # Railgun03:50 # ARCoil:58
+TASK    #  HAVE     #  Railgun01:2 #  Railgun02:16 #  ARPlug:4 # ARHatch:4 # Railgun03:50 # ARCoil:58
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
@@ -63,7 +63,7 @@ QUEST   #  HBx2     #  Which army? # 1512
 TEXT    #  You can still keep saying that it is just for scientific purposes, but we know you better. And we are watching you like hawks.
 PREREQ  #  NAND     #  HB00
 
-TASK    #  HAVE     #  CHengine:1000
+TASK    #  HAVE     #  CHengine:256
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
@@ -72,7 +72,7 @@ QUEST   #  HBx3     # Stars Everywhere # 1513
 TEXT    #  You are doing this, because you love the shape. Right? It makes you a star.
 PREREQ  #  NAND     #  HB00
 
-TASK    #  GIVE     #  Enori:10000
+TASK    #  GIVE     #  Enori:640
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
@@ -101,7 +101,7 @@ QUEST   #  HBx12    #  Terminator Inside # 1522
 TEXT    #  But this is pure evil. Why would you do such a thing? I know why, the viewers know why... and everybody who can figure out why will watch you until the end of the world and give you all the attention our show wants.
 PREREQ  #  NAND     #  HB10
 
-TASK    #  HAVE     #  Nanobots:1000
+TASK    #  HAVE     #  Nanobots:256
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -121,7 +121,7 @@ QUEST   #  HBx20    #  Evil Grass # 1530
 TEXT    #  You are going to deliver this and never use any of it. You MUST promise that?
 PREREQ  #  NAND     #  HB20
 
-TASK    #  GIVE     #  SlimeDirt1:5000  #  SlimeDirt2:5000  #  SlimeDirt3:5000
+TASK    #  GIVE     #  SlimeDirt1:512  #  SlimeDirt2:512  #  SlimeDirt3:512
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->

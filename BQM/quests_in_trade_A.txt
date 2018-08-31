@@ -227,7 +227,7 @@ QUEST   #  TA40     #  Cherry Time # 1025
 TEXT    #  First supply requires some cherry fruits.
 PREREQ  #  AND      #  TA04
 
-TASK    #  GIVE		#  FCherry:640
+TASK    #  GIVE		#  FCherryBox:64
 REWARD  #  ALL      #  TradeCurr:10
 
 // ------->
@@ -236,7 +236,7 @@ QUEST   #  TA41     #  Are you Nuts # 1026
 TEXT    #  Now chestnuts.
 PREREQ  #  AND      #  TA40
 
-TASK    #  GIVE		#  FChestnut:1280
+TASK    #  GIVE		#  FChestnutBox:128
 REWARD  #  ALL      #  TradeCurr:15
 
 // ------->
@@ -245,7 +245,7 @@ QUEST   #  TA42     #  Dates for everybody # 1027
 TEXT    #  Supply of dates please.
 PREREQ  #  AND      #  TA41
 
-TASK    #  GIVE		#  FCDate:800
+TASK    #  GIVE		#  FDateBox:192
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->
@@ -254,7 +254,7 @@ QUEST   #  TA43     #  Liqor Delivery # 1028
 TEXT    #  For what somebody wants crates full of plums is NOT a mystery.
 PREREQ  #  AND      #  TA42
 
-TASK    #  GIVE		#  FCPlum:1000
+TASK    #  GIVE		#  FPlumBox:256
 REWARD  #  ALL      #  TradeCurr:20
 
 // ------->

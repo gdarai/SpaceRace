@@ -136,7 +136,7 @@ QUEST   #  TB33     #  Plating the world # 1335
 TEXT    #  The real task seems always so easy at the beginning. But you can manage, our viewers are now sure of it.
 PREREQ  #  AND      #  TB32
 
-TASK    #  GIVE		#  Rplate0:2000 # Rplate1:2000 # Rplate2:2000 # Rplate3:2000 # Rplate4:2000 # Rplate5:2000
+TASK    #  GIVE		#  BlockPlatinum:1000
 REWARD  #  ALL      #  TradeCurr:60
 
 // ------->

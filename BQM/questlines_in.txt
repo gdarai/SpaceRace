@@ -388,7 +388,7 @@ QUEST        #  TB03        #  -40:30     #  30    #  Gear      		# main
 QUEST        #  TB30        #  -20:30     #  25    #  gearInvar			# repeat:24000
 QUEST        #  TB31        #    0:30  	  #  25    #  ManyullynSword	# repeat:24000
 QUEST        #  TB32        #   20:30     #  25    #  TrackHigh			# repeat:24000
-QUEST        #  TB33        #   40:30     #  25    #  Rplate5			# repeat:24000
+QUEST        #  TB33        #   40:30     #  25    #  BlockPlatinum 	# repeat:24000
 
 QUEST        #  TB04        #  -40:45     #  30    #  IronSword	    	# main
 QUEST        #  TB40        #  -20:45     #  25    #  DragonHeart		# repeat:24000

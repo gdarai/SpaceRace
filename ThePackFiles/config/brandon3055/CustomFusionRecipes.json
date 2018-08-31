@@ -867,5 +867,20 @@
 			"draconicevolution:draconic_ingot",
 			"draconicevolution:draconic_ingot"
         ]
+    },
+    {
+        "mode": "ADD",
+        "result": "chisel:blockPlatinum",
+        "catalyst": "immersiveengineering:storage,1,3",
+        "energy": 20000,
+        "tier": 0,
+        "ingredients": [
+			"railcraft:plate,2,4",
+			"railcraft:plate,2,6",
+			"railcraft:plate,2,8",
+			"railcraft:plate,2,9",
+			"railcraft:plate,2,10",
+			"railcraft:plate,2,11"
+        ]
     }
 ]

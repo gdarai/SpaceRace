@@ -730,11 +730,13 @@ ITEM # spEgg 		# minecraft:egg
 
 ITEM # Grafter      # forestry:grafter
 ITEM # FCherry      # forestry:fruits
+ITEM # FCherryBox   # forestry:crated.forestry.fruits.0
 ITEM # FChestnut    # forestry:fruits:2
+ITEM # FChestnutBox # forestry:crated.forestry.fruits.2
 ITEM # FDate        # forestry:fruits:5
-ITEM # FCDate       # forestry:crated.forestry.fruits.5
+ITEM # FDateBox     # forestry:crated.forestry.fruits.5
 ITEM # FPlum        # forestry:fruits:4
-ITEM # FCPlum       # forestry:crated.forestry.fruits.4
+ITEM # FPlumBox     # forestry:crated.forestry.fruits.4
 ITEM # HoneyedSlice # forestry:honeyedSlice
 
 ITEM # Toaster      # cookingforblockheads:toaster
@@ -825,6 +827,7 @@ ITEM # Rplate2       #  railcraft:plate:8
 ITEM # Rplate3       #  railcraft:plate:9
 ITEM # Rplate4       #  railcraft:plate:10
 ITEM # Rplate5       #  railcraft:plate:11
+ITEM # BlockPlatinum #  chisel:blockPlatinum
 
 ITEM # endEgg 		# minecraft:dragon_egg
 ITEM # IronSword    # minecraft:iron_sword

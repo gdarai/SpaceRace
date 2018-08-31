@@ -386,7 +386,7 @@ recipes.addShaped(wheelSegment, [[trStick, trPlank, trStick], [trPlank, oreingot
 // Steel Sheet Metal
 val dustObsidiorite = <ore:dustObsidiorite>;
 recipes.remove(<ore:blockSheetmetalSteel>);
-recipes.addShaped(<immersiveengineering:sheetmetal:8>, [[plateSteel, dustObsidiorite, plateSteel], [dustObsidiorite, <ore:blockManyullyn>, dustObsidiorite], [plateSteel, dustObsidiorite, plateSteel]]); 
+recipes.addShaped(<immersiveengineering:sheetmetal:8>*4, [[plateSteel, dustObsidiorite, plateSteel], [dustObsidiorite, <ore:blockManyullyn>, dustObsidiorite], [plateSteel, dustObsidiorite, plateSteel]]); 
 
 // Lantern, Lamp and cloche
 var lantern = <immersiveengineering:metalDecoration2:4>;

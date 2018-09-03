@@ -52,8 +52,6 @@ recipes.remove(<railcraft:equipment:*>);
 recipes.addShaped(<railcraft:equipment>, [[piston, casingWood, piston], [gearBoxIron, null, gearBoxIron], [<ore:gearStone>, casingWood, <ore:gearStone>]]);
 
 // Gear Bushing and Brass
-
-recipes.remove(ingotBrass);
 recipes.remove(<railcraft:gear:3>);
 
 recipes.addShaped(<railcraft:gear:3>, [[null, ingotBrass, null], [ingotBrass, trStick, ingotBrass], [null, ingotBrass, null]]);

@@ -860,8 +860,8 @@ ITEM  #  CircA3       	#  advancedrocketry:ic:5
 ITEM  #  CircV1       	#  minecraft:repeater
 ITEM  #  CircV2       	#  minecraft:comparator
 
-ITEM  #   SeqLog       	#  forestry:logs.1:3
-SAPLING # SeqSapling    # 1 # treeGigant:growthLightlevel:heightGigantic:saplingsLower:fruitNone:yieldLower # plantTypeNone:sappinessAverage:territoryAverage:leavesNone:maturationFaster # i1d:i20d:i4d # fireproofFalse
+ITEM  #   SeqLog       	#  forestry:logs.fireproof.1:3
+SAPLING # SeqSapling    # 1 # treeGigant:growthLightlevel:heightGigantic:saplingsLower:fruitNone:yieldLowest # plantTypeNone:sappinessLowest:territoryAverage:leavesNone:maturationSlowest # i4d:i20d:i4d # fireproofTrue
 
 
 // Hoarding quests A

@@ -2,7 +2,7 @@ local dl = require("daraiLib")
 
 local configFileName = "assembler.config"
 
-local default = {    
+local default = {
     recipes={
         {
             name={"wood plank"},
@@ -38,7 +38,7 @@ local default = {
     groups={
         {"Basic"}
     }
-    
+
 }
 
 local texts = {
@@ -121,3 +121,39 @@ local texts = {
 dl.printFmt('T', "Assembler Program")
 dl.printFmt('t', "Configuration")
 local config = dl.config(configFileName, texts, default, true)
+
+if ic[2] == nil then
+    dl.printFmt('e', "This program is for ROBOTS only. Sorry.")
+    return 1
+end
+
+if ic[1] == nil then
+    dl.printFmt('e', "No Inventory Controller is Available. Program cannot run without inventory controller card.")
+    return 1
+end
+
+if ic[2].inventorySize() < 16 then
+    dl.printFmt('e', "The robot needs internal invenory.")
+    return 1
+end
+
+ic[3] = dl.getComponent("crafting")
+if ic[3] == nil then
+    dl.printFmt('e', "The robot needs a crafting upgrade.")
+    return 1
+end
+
+if dl.input("Change the configuration", "Yn", false) == "Y" then
+    config = configureTool(config)
+end
+
+if dl.input("Run program or Terminate", "rt", false) == "r" then
+  dl.printFmt("t", "Main Menu (1)")
+  local i1 = ""
+  while i1 ~= "x" do
+    i1 = dl.input("Recipes, Groups, Tools or Exit", "rgtx", true)
+    
+  end
+end
+
+dl.printFmt('t', "Thank you for using assembler program.")

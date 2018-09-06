@@ -1,5 +1,6 @@
 val essBrass = <mysticalagriculture:brass_essence>;
 val scrubberCartridge = <advancedrocketry:carbonScrubberCartridge>;
+val usedCartridge = scrubberCartridge.anyDamage();
 val mash = <forestry:craftingMaterial:3>;
 
 recipes.remove(<libvulpes:linker>);
@@ -12,7 +13,7 @@ recipes.addShapeless(<libvulpes:linker>, [<libvulpes:linker>]);
 <bqmie:icon_item:20>.addTooltip(format.gold("Victory Point"));
 <bqmie:icon_item:21>.addTooltip(format.gold("Burned Firestone"));
 
-recipes.addShaped(scrubberCartridge, [[null, null, null], [mash, scrubberCartridge, mash], [null, null, null]]);
+recipes.addShaped(scrubberCartridge, [[null, null, null], [mash, usedCartridge, mash], [null, null, null]]);
 
 recipes.addShaped(<chisel:limestoneextra:7>, [[<ore:sandstone>, <ore:cobblestone>], [<ore:cobblestone>, <ore:sandstone>]]);
 recipes.addShaped(<chisel:marbleextra:7>, [[<ore:sandstone>, <ore:stone>], [<ore:stone>, <ore:sandstone>]]);

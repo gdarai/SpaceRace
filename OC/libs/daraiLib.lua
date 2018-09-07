@@ -488,7 +488,7 @@ function daraiLib.getInventoryController()
     if daraiLib.checkForKey(cc, "inventory_controller", true) ~= false then
         ic = cc.inventory_controller
     elseif daraiLib.checkForKey(cc, "transposer", true) ~= false then
-        ic = cc.transposer        
+        ic = cc.transposer
     end
     return {ic, rc, ics}
 end
@@ -590,6 +590,12 @@ function daraiLib.getFreeSlot(ic, side, selection)
         end
         return -1
     end
+end
+
+function daraiLib.copyItem(source, fuzzy)
+    local out = {name=source.name, label=source.label, damage=-1}
+    if fuzzy == false then out.damage = source.damage end
+    return out
 end
 
 return daraiLib

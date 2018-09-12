@@ -1,0 +1,50 @@
+NAME
+  assembler - multistep crafting with machines
+
+SYNOPSIS
+  assembler
+
+DESCRIPTION
+  Needs robot with Inventory, Inventory Controller Upgrade and Crafting Upgrade.
+  Makes the robot probe inventory below him for necessary resources and use them to craft the reqested items.
+  The assembler setting is stored in the assembler.config file, best use the configurator in the program itself to set it up.
+  To get back the default configuration, just erase the assembler.config file.
+  
+  It is common case to use internal configurator to auto-load recipes from adjescent inventory, so called receipt inventory, defualtly placed above the robot.
+  Assembler can chain receipts. It strength is not speed, but universality. It can calculate needed resources across all known recipes and report on what is missing. Once complex crafting is started, it can combine various connected machines to make requested item.
+  
+  The assembler holds list of available tools. Such as Furnace, Crafting Table or Crusher. By default only Crafting Table, the tool ID 1 is configured since it is the integral part of the robot. Every tool is identified by PLACE = where the robot should go to face the tools input inventory and Item which says how the tool is recognizable by the receipt-loader. By default the Crafting Tool id item is Stick.  
+  
+  To configure a receipt it is common way to set up the requred tool. And to et up the receipt first in the receipt inventory. This means to put in the slot 1 the item identifying the required tool and then in the row one by one the items of the receipt, For example, Stick, Plank, nothing, nothing, Plank, nothing, nothing, nothing, nothing, nothing... is a receipt for crafting (that is what the first stick says) sticks. The planks are placed in such spots that corresponds to the crafting receipt.
+  
+  Furnace example: Say you have a furnace, which is directly on the left side of the robot. And you have The Furnace tool, with ID ITEM Wool and PLACE L. So you set into the receipt chest Wool and Saplingand nothing saying that this is Furnace Receipt, with one Sapling as input. The empty space in this case terminates the receipt loading.
+  
+  Once a receipt is set in the chest, you can load it and you are given option to (r)ead the expeted output, or to (c)raft it. In case of reading, place the output in the first slot of the receipt chest and confirm. In the case of (c)rafting, wait for the process to complete, then move the output to the first slot of the receipt chest and confirm.
+  
+CONFIGURATION
+  recipes: List or recipes objects
+    { name, group, craftType, input, receipt, output, size }
+        name: Identifier of this receipt.
+        group: Category for better organization.
+        craftType: number specifying which machine is expected to be used, '1' is Crafting Table.
+        input: List of item objects used in the receipt, n case of crafting receipt, 1st is refferenced in the receipt as '1' etc, in case of a machine, receipt is quantity, so 1st char in receipt corresponds to 1st item here.
+          { name, damage, label }
+            name: Minecraft name of the item, string (minecraft:stone)
+            damage: Damage value, number, use -1 to ignore damage (0)
+            label: Just a call name, string (MyStone)
+        receipt: String of letters representing the receipt. In case of crafting it has to be strictly 9 characters and use 'n' to skip a slot use numbers to reffer to items in the input list (n1nn1nn2n) Example is the minecraft sword. In case of other receipt the length can be what ever and allowed are only numbers saying the quantity required. So (13) means 1 first item and 3 second items.
+        output: An item which we expect as the output, (see input)
+        size: The expected number of this items to be crafted
+  types: List or available craftTypes objects.
+    { name, item, position }
+        name: Used name for this crafting type, e.g. Furnace.
+        item: Item used for identification of this type of receipt (see input)
+        position: The path for the robot, from the starting position to face the machine's input inventory. A string, where (LRUD1-9) is allowed, signaling robot moves.
+  groups: List or string objects
+    Every object is a name of one receipt group.
+  sourceSide: On which side is the source inventory, default "down"
+  readSide: On which side is the receipt inventory, default "up"
+  
+EXAMPLES
+  assembler
+    Starts the assembler program

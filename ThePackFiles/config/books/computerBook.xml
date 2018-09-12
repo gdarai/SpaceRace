@@ -31,6 +31,7 @@
             <link ref="program">Available Programs</link>
                 <link indent="8" ref="program:filter">Filter</link>
                 <link indent="8" ref="program:crafter">Crafter (R)</link>
+                <link indent="8" ref="program:assembler">Assembler (R)</link>
                 <link indent="8" ref="program:get" space="6">Downloader Get</link>
             <link ref="computer">Picking the Computer</link>
                 <link indent="8" ref="computer:pc">Setting up Computer</link>
@@ -124,6 +125,50 @@
             <p space="8">"x" for exit  ... and</p>
             <p space="16">"r" for run program.</p>
             <p>To terminate the program run, just hold "Ctrl+c".</p>
+		</page>
+        <page id="assembler">
+            <p bold="true" italics="true">Assembler (Robots Only)</p>
+            <p space="8">Assembler is an advanced crafting automat. You place the robot near some inventory and supply list of recipes. The robot will hold craft recipes, including machine handling recipes and if requested it will calculate and execute necessary crating steps, or warn you about missing resources.</p>
+            <p space="8">Assembler needs the inventory controller upgrade and crafting upgrade to work.</p>
+            <stack item="opencomputers:upgrade" meta="18" count="1"  x="10"/>
+            <stack item="opencomputers:upgrade" meta="11" count="1"  x="30"/>
+			<space height="25" />
+            <p space="8">Every receipt has "craftType" which says if it is crafting or some other connected machine.</p>
+            <p space="8">Robot uses "Resource Chest" and "Working Chest" to organize the items.</p>
+            <link indent="8" ref="computer:robot" space="6">Go here to set up Robot</link>
+		</page>
+		<page>
+            <p bold="true" italics="true">Fast Configuration</p>
+            <p space="8">I expect that you have suitable robot placed and OS and Assembler installed on it. Now, place below him the "resource" chest and above him the "recipt" chest. Place nearby input chests for all the machines you want this robot to controll.</p>
+            <p space="8">The working chest will be the one used for all the item storing and it should be the output chest for all the connected machines. This should be a big chest, like the ActuallyAditions Storage Crate.</p>
+            <p space="8">The recipt chest will be used for configuring recipes and later on for temporal item organization.</p>
+            <p space="8">The recipes has to be set one by one in the gui. First specify the craftTypes. You can assign an item to each craftType so it is easily recognizable later on.</p>
+		</page>
+		<page>
+            <p space="8">As default, Assembler knows only one craftType = Crafing = Item Wooden Stick.</p>
+            <p space="8">To specify crafting receipt, just put into the "recipt" chest the Stick and then the 9items from the receipt. Leave empty slots for spots where nothing should be placed.</p>
+            <p space="8">Say you have new craftType with item Wool. To set receipt for this machine, put into the receipt inventory the wool and then the required items. In this case the amount is also important since some machines can take multiple same items as input.</p>
+            <image src="gbook:ocmanual/assembler01" x="0"   w="70" h="70" tw="70" th="70" />
+            <image src="gbook:ocmanual/assembler02" x="100" w="70" h="70" tw="70" th="70" />
+			<space height="80" />
+		</page>
+		<page>
+            <p space="8">Type following sequence of commands, use ENTER when asked to:</p>
+            <p space="8">"assembler" to start the program</p>
+            <p>"t" to change / set the tools</p>
+            <p space="8">"0" to add new tool.</p>
+            <p>"Furnace" To name the tool</p>
+            <p space="8">"1UL" Here you set the path for the robot to face the input chast for this new machine (the Furnace). In this case I am saying that the robot should move one forward, one up and turn left.</p>
+            <p>"r" to change / set / run a receipt</p>
+            <p>"1" to use the default group</p>
+            <p>Now set the receipt in the "receipt" chest and press "0" for new receipt.</p>
+            <p space="8">Name the receipt, for example "Chest".</p>
+		</page>
+		<page>
+            <p>"c" for trying to craft the receipt right now using the resources from the receipt chest.</p>
+            <p space="8">Wait until the process is done. Than move the outcome to the first slot of the receipt chest and press "enter".</p>
+            <p space="16">Now the receipt is set.</p>
+            <p>To run any receipt use "r" "0" "3" "b" "1" where 0 is the receipt group, 3 is the receipt ID, and 1 is required count of outputting items.</p>
 		</page>
 		<page id="get">
             <p bold="true" italics="true">Get - the Downloader</p>

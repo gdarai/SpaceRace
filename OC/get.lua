@@ -45,6 +45,7 @@ programs = {}
 programs['debug'] = {origin="InitialPrograms/", file="debug.lua", target="/bin"}
 programs['filter'] = {origin="Programs/", file="filter.lua", target="/home"}
 programs['crafter'] = {origin="Programs/", file="crafter.lua", target="/home"}
+programs['assembler'] = {origin="Programs/", file="assembler.lua", target="/home"}
 
 -- If we don't have program selected, give the list
 if #args==0 then

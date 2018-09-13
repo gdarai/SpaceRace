@@ -93,7 +93,7 @@ local config = {
         {"resonanceE", "Resonance Ore", "Normal", 0, 100},
         {"abyssumE", "Abyssum", "Normal", 0, 100},
         {"palladiumE", "Palladium", "Normal", 0, 100},
-        {"magicProspE", "Prosperity", "Normal", 0, 100}        
+        {"magicProspE", "Prosperity", "Normal", 0, 100}
     },
     yields = {
 		{"space00s", "ironS", {23,24,30}},
@@ -185,37 +185,133 @@ local config = {
     },
     planets={
         {
-            name="Moon",
+            name="The Moon",
             place="Orbitting the same Red Giant as the Homeworld",
             item={name="advancedRocketry:moonTurf_dark", damage=0, label="Dark Moon Turf"},
             dimension=20
+        },
+        {
+            name="Lava World",
+            place="Nearest planet of your star is a small Hot rock with significant part of surface covered with floating lava.",
+            item={name="advancedRocketry:moonTurf_dark", damage=-1, label="Hardened Clay"},
+            dimension=22
+        },
+        {
+            name="Alien World",
+            place="In the livable zone, further from the star, is a blue-and-blue world with one gigant moon.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Dirt"},
+            dimension=23
+        },
+        {
+            name="Crystal Moon",
+            place="Orbitting the Alien World, there is small icy ball called the Crystal Moon.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Moon Crystal"},
+            dimension=24
+        },
+        {
+            name="Sand Moon",
+            place="Further from the star than the Red Giant is the Blue Giant. The Sand Moon is the sole large body orbitting there.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Geode"},
+            dimension=25
+        },
+        {
+            name="Distant World",
+            place="First planet accessible in the other star system is this desert Hell-Like world.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Obsidian"},
+            dimension=30
+        },
+        {
+            name="Ocean World",
+            place="This is the most comforting planet of the other star system with a big asteroid belt around it, covered with infinite ocean.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Prismarine Brick"},
+            dimension=31
+        },
+        {
+            name="Mushroom World",
+            place="Orbiting the sole Gas Giant of the other star system, there is the mushroom world. The hidden globe of natural riches.",
+            item={name="advancedRocketry:moonTurf_dark", damage=0, label="Mycelium"},
+            dimension=33
         }
-    }
+    },
+    side="",
 }
 
 -- #################
 -- ##  Code Parts
 -- #################
 function doChecks(ic, config)
-  if ic[2] == nil then
-      dl.printFmt('e', "This program is for ROBOTS only. Sorry.")
-      return 1
-  end
-  if ic[1] == nil then
-      dl.printFmt('e', "No Inventory Controller or Transposer is Available. Program cannot run without inventory access.")
-      return 1
-  end
-  ic[3] = dl.getComponent("hologram")
-  if ic[3] == nil then
-      dl.printFmt('e', "This program needs a hologram projector to work properly.")
-      return 1
-  end
-  for (side, idx) in pairs(dl.getAvailableSides()) do if dl.getInventorySize(ic, side) ~= nil then config["side"] = side end end
-  if config["side"] == "" then
-      dl.printFmt('e', "There is no inventory near the Computer input, place there chest or something.")
-      return 1
-  end  
-  return 0
+    if ic[2] == nil then
+        dl.printFmt('e', "This program is for ROBOTS only. Sorry.")
+        return 1
+    end
+    if ic[1] == nil then
+        dl.printFmt('e', "No Inventory Controller or Transposer is Available. Program cannot run without inventory access.")
+        return 1
+    end
+    ic[3] = dl.getComponent("hologram")
+    if ic[3] == nil then
+        dl.printFmt('e', "This program needs a hologram projector to work properly.")
+        return 1
+    end
+    for (side, idx) in pairs(dl.getAvailableSides()) do if dl.getInventorySize(ic, side) ~= nil then config["side"] = side end end
+    if config["side"] == "" then
+        dl.printFmt('e', "There is no inventory near the Computer input, place there chest or something.")
+        return 1
+    end
+    return 0
+end
+
+function checkPlanetMaterial(ic, config, idx)
+    local planet =  config["planets"][idx]
+    local haveRes = dl.countItems(ic, config["side"],planet["item"]) > 0
+    return haveRes
+end
+
+function scannPlanet(ic, config, idx)
+    local dim = config["planets"][idx]["dimension"]
+    local deposits = {}
+    dl.printFmt('t', "Deposit Name/Size (Depths)" )
+    for (_,r) in pairs(config["resources"]) do
+        deposits[r[1]] = {r[2], r[3], r[4], r[5]}
+    end
+    for (_,y) in pairs(config["yields"]) do
+        local test = false
+        for (_,d) in pairs(y[3]) do
+            if d==dim then test = true end
+        end
+        if test == false then deposits[y[2]][1] = "" end
+    end
+    for (_,r) in pairs(deposits) do
+        if r[1] ~= "" then
+            dl.printFmt('i', r[1] .. "/" .. r[2] .. " (" .. r[3] .. "-" .. r[4] .. ")")
+        end
+    end
+end
+
+-- #################
+-- ##  Printers
+-- #################
+function printPlanetInfo(ic, config, idx)
+    local planet =  config["planets"][idx]
+    local haveRes = dl.countItems(ic, config["side"],planet["item"])
+    dl.printFmt('t', planet["name"])
+    if haveRes then
+        dl.printFmt('i', "All material to analyze this planet is available.")
+    else
+        dl.printFmt('i', "To analyze this planet, supply: " .. planet["item"]["label"] )
+    end
+end
+
+function printPlanetDetailInfo(planet)
+    dl.printFmt('t', planet["name"])
+    dl.printFmt('i', planet["place"])
+    dl.printFmt('i', "Analyzer needs:" .. planet["item"]["label"] )
+end
+
+function scanningAnimation(ic)
+end
+
+function finishedAnimation(ic)
 end
 
 -- #################
@@ -225,9 +321,23 @@ dl.printFmt('T', "Analyzer Program")
 dl.printFmt('i', "This program will analyze any planet to which you provide a local sample and show you the spread of available resources.")
 if doChecks(ic) == 1 then return 1 end
 
-
-
-dl.printFmt("t", "Main Menu (1)")
 local i1 = ""
 while i1 ~= "x" do
-    i1 = dl.input("Recipes, Groups, Tools, Full or Exit", "rgtfx", false)
+    dl.printFmt("t", "Main Menu")
+    i1 = dl.input("List, Scan or Exit", "lsx", false)
+    if i1=="l" then -- List planets
+        dl.printFmt('i', "List available planets")
+        for idx=1,#config["planets"] do
+            printPlanetInfo(ic, config, idx)
+        end
+    else if i1=="s" then -- Scan Planet
+        dl.printFmt('i', "Scan particular planet")
+        i2 = dl.inputIndex("Pick a planet", 1, #config["planets"], false)
+        printPlanetDetailInfo(config["planets"][i2])
+        if checkPlanetMaterial(ic, config, i2) then
+            scanningAnimation(ic)
+            scannPlanet(ic, config, i2)
+            finishedAnimation(ic)
+        end
+    end
+end

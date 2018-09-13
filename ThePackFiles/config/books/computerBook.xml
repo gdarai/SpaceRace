@@ -29,6 +29,7 @@
 			<p bold="true" italics="true">Available Topics</p>            
 			<p space="6">Start by picking up the program you would like to use. It will tell you what computer it can run on. Then use the manual to assemble the computer, install and run the program.</p>
             <link ref="program">Available Programs</link>
+                <link indent="8" ref="program:analyzer">Analyzer (C)</link>
                 <link indent="8" ref="program:filter">Filter</link>
                 <link indent="8" ref="program:crafter">Crafter (R)</link>
                 <link indent="8" ref="program:assembler">Assembler (R)</link>
@@ -49,6 +50,18 @@
             <p space="8">First step is to pick, what for do you want to use the computer. What program (software or SW) you want it to run. That is what decides, what type of computer (hardware or HW) you need.</p>
             <p space="8">Since this guidebook is ment for total non-programmers, it will offer you multiple SW's which can help you in your everyday life, like automatic sorter, or even automatic crafter.</p>
             <p space="8">Read basic descriptions on the available programs and pick one. Then follow the instructions there written.</p>
+		</page>
+		<page id="analyzer">
+            <p bold="true" italics="true">Analyzer</p>
+            <p space="8">Analyzer is a world awareness program, giving you the information about every planet you might visit.</p>
+            <p space="8">It requires Computer + Item Transposer + Holoprojector.</p>
+            <stack item="opencomputers:cable" meta="0" count="1"  x="10"/>
+            <stack item="opencomputers:transposer" meta="0" count="1"  x="30"/>
+            <stack item="opencomputers:hologram1" count="1"  x="120"/>
+			<space height="20" />
+            <p>There is no special setup. Just follow the instructions in the program. If it will ask you for an item, place it in a chest, next to the Transposer.</p>
+			<space height="20" />
+            <link indent="8" ref="computer:pc">Go here to set up the Computer</link>
 		</page>
 		<page id="filter">
             <p bold="true" italics="true">Filter</p>
@@ -254,7 +267,7 @@
 		</page>
 		<page id="floppy">
             <p bold="true" italics="true">Installing from Floppy</p>
-            <p space="8">The easiest way. Get the correct floppy. By crafting the default Black Floppy with some item. Like with Hopper for the Filter Program, or Crafting Table for the Crafter.</p>
+            <p space="8">The easiest way. Get the correct floppy. By crafting the default Black Floppy with some item. Like with Hopper for the Filter Program, or Crafting Table for the Crafter, Or Steel Gear for Assembler or Lens for Analyzer.</p>
             <stack item="opencomputers:storage" meta="1" count="1"  x="10"/>
             <stack item="minecraft:hopper"      meta="0" count="1"  x="30"/>
 			<space height="25" />

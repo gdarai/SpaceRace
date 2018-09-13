@@ -1,0 +1,17 @@
+NAME
+  analyzer - Planet scanning program, more thorrough than the guidebook.
+
+SYNOPSIS
+  analyzer
+
+DESCRIPTION
+  You need a computer with Transposer and Holoprojector for this program to run.
+  You have 2 options in the menu, to List available planets or to Scan one of them. To scan a planet you need to put into the inventory next to the Transposer a particular item. The List will tell you which one and which you allready have.
+  After holographic scanning procedure, the program will give you Size and Depth of every Ore Deposit on that selected planet.
+  
+CONFIGURATION
+  Automatic.
+  
+EXAMPLES
+  analyzer
+    Starts the analyzer program

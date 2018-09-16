@@ -65,6 +65,18 @@ function daraiLib.config(fileName, texts, default, silent)
     end
     local f = io.open(fullFileName, "r")
     local setting = sz.unserialize(f:read("*all"))
+    io.close(f)
+    if #setting == 0 then
+        local backupFileName = fullFileName .. ".backup"
+        haveOne = fs.exists(backupFileName)
+        if haveOne then
+            daraiLib.printFmt('e', "Recovering from config save error.")
+            f = io.open(backupFileName, "r")
+            setting = sz.unserialize(f:read("*all"))
+            io.close(f)
+        end
+    end
+
     if not silent then
         daraiLib.printFmt('r', "Current setting:")
         print(sz.serialize(setting))
@@ -79,8 +91,15 @@ end
 -- Just save config file
 function daraiLib.saveConfigFile(fullFileName, setting)
   local f1 = io.open(fullFileName, "w")
-  f1:write(sz.serialize(setting))
+  local text = sz.serialize(setting)
+  f1:write(text)
   io.close(f1)
+  if text ~= "{}" then
+      local backupFileName = fullFileName .. ".backup"
+      f1 = io.open(backupFileName, "w")
+      f1:write(text)
+      io.close(f1)
+  end
 end
 
 -- Recursive settings table editor

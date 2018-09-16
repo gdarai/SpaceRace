@@ -19,3 +19,5 @@ mods.immersiveengineering.Excavator.addMineral("Tiberium", 5, 10, ["oreApatite",
 mods.immersiveengineering.Excavator.addMineral("Crystal", 5, 10, ["netherrack", "oreQuartz", "oreQuartzBlack", "oreNetherProsperity"], [40, 20, 10, 10], [24, 25, 30, 31, 33], false);
 mods.immersiveengineering.Excavator.addMineral("Abyssal", 5, 10, ["endstone", "oreAbyssum", "orePalladium", "oreEndProsperity", "oreDraconium"], [40, 10, 10, 10, 5], [25, 30, 31, 33], false);
 mods.immersiveengineering.Excavator.addMineral("Vibranium", 5, 10, ["stone", "oreValyrium", "oreVibranium", "oreJauxum", "oreIridium"], [40, 10, 5, 10, 15], [31, 33], false);
+mods.immersiveengineering.Excavator.addMineral("Prosperity", 5, 10, ["stone", "oreUru", "oreProsperity", "oreInferium", "oreIron", "oreNickel", "oreZinc"], [35, 10, 5, 15, 20, 10, 5], [30, 31, 33], false);
+mods.immersiveengineering.Excavator.addMineral("Aurorium", 5, 10, ["endstone", "oreAurorium", "orePalladium", "oreAbyssum", "oreEndProsperity"], [35, 5, 15, 20, 25], [33], false);

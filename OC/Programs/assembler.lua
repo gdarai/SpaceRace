@@ -41,7 +41,12 @@ local default = {
         {"Basic"}
     },
     sourceSide={"down"},
-    readSide={"up"}
+    readSide={"up"},
+    lastUse={
+        group={1},
+        receipt={1},
+        size={1}
+    }
 }
 
 local texts = {
@@ -126,6 +131,22 @@ local texts = {
     readSide={
         type="side",
         text="Side with inventory used as a receipt input"
+    },
+    lastUse={
+        type="table",
+        text="The Last Use Receipt, for FF function",
+        group={
+            type="int",
+            text="Representing the group this receipt is placed into"
+        },
+        receipt={
+            type="int",
+            text="ID of the receipt in question"
+        },
+        size={
+            type="int",
+            text="What was the required ammount?"
+        }
     }
 }
 
@@ -583,8 +604,16 @@ function printTaskResources(task)
     end
     dl.printFmt('i', "Missing " .. task["missing"] .. " items, need " .. #task["tasks"] .. " processing steps.")
 end
-            
-function modifyReceipt(ic, config, idx, i2, groupIdx)
+         
+function setLastUse(config, idx, groupIdx, count)
+    config["lastUse"] = {size={}, receipt={}, group={}}
+    config["lastUse"]["size"][1] = count
+    config["lastUse"]["receipt"][1] = idx
+    config["lastUse"]["group"][1] = groupIdx
+    return config
+end
+         
+function modifyReceipt(ic, config, idx, i2, groupIdx, makeCount)
     -- check, build,       -  - Rename, move, load, delete, new and exit
     if i2 == "r" then -- Rename the receipt
         local new = dl.stringInput()
@@ -683,6 +712,7 @@ function modifyReceipt(ic, config, idx, i2, groupIdx)
         
         config["recipes"][#config["recipes"]+1] = rec
         dl.printFmt('i', "Receipt " .. #config["recipes"] .. " created.")
+        config = setLastUse(config, #config["recipes"], groupIdx, 1)
         
     elseif i2 == "c" then -- Check
         local count = dl.inputIndex("How many", 1, 99, false)
@@ -690,15 +720,28 @@ function modifyReceipt(ic, config, idx, i2, groupIdx)
         dl.printFmt('t', "Check results")
         printTaskResources(task)
         dl.enterToContinue()
+        config = setLastUse(config, idx, groupIdx, count)
     elseif i2 == "b" then -- Build
-        local count = dl.inputIndex("How many", 1, 99, false)
-        local task = calculateTask(ic, config, idx, count)
-        if task["missing"] > 0 then
-            dl.printFmt('t', "Check results")
-            printTaskResources(task)
-            dl.printFmt('e', "Some resources are missing")            
-            dl.enterToContinue()
-            return config
+        local count = makeCount
+        if makeCount > 0 then
+            dl.printFmt('i', "Building predefined ammount " .. makeCount)  
+        else
+            count = dl.inputIndex("How many", 1, 99, false)
+        end
+        local testMissing = true
+        local task = {}
+        while testMissing do
+            task = calculateTask(ic, config, idx, count)
+            if task["missing"] > 0 then
+                dl.printFmt('t', "Check results")
+                printTaskResources(task)
+                dl.printFmt('e', "Some resources are missing")            
+                if dl.input("Abort?", "Yn", false) == "Y" then
+                    return config
+                end
+            else
+                testMissing = false
+            end
         end
         dl.printFmt('t', "Ok, starting work")
         local maxI = #task["tasks"]
@@ -713,9 +756,11 @@ function modifyReceipt(ic, config, idx, i2, groupIdx)
             if test > 0 then return config end
             test = feedMachine(ic, config, rec, t[2])
             if test > 0 then return config end
-            while dl.countItems(ic, side, rec["output"]) < targetCnt do
-                dl.printFmt('i', "Waiting for " .. rec["output"]["label"] .. " ...")
-                os.sleep(10)
+            if i < maxI then
+                while dl.countItems(ic, side, rec["output"]) < targetCnt do
+                    dl.printFmt('i', "Waiting for " .. rec["output"]["label"] .. " ...")
+                    os.sleep(10)
+                end
             end
         end
     end
@@ -766,7 +811,11 @@ if doChecks(ic) == 1 then return 1 end
 dl.printFmt("t", "Main Menu (1)")
 local i1 = ""
 while i1 ~= "x" do
-    i1 = dl.input("Recipes, Groups, Tools, Full or Exit", "rgtfx", false)
+    if config["lastUse"] ~= nil then
+        local name = config["recipes"][config["lastUse"]["receipt"][1]]["name"][1]
+        dl.printFmt('i', "Last used: " .. name)
+    end
+    i1 = dl.input("Recipes, Last, Groups, Tools, Full or Exit", "rlgtfx", false)
     if i1 == "g" then -- Edit Groups
         dl.printFmt("t", "Groups menu (2)")
         local info = getGroupsInfo(config)
@@ -826,12 +875,22 @@ while i1 ~= "x" do
         else -- receipt selected
             printReceiptInfo(config["recipes"][idx], 0, config["types"], idx)
             i2 = dl.input("Rename, move, load, check, build, delete, exit", "rmlcbdx", false)
-        end
-        
+        end        
         if idxg == 0 then idxg = 1 end
-        config = modifyReceipt(ic, config, idx, i2, idxg)
+        config = modifyReceipt(ic, config, idx, i2, idxg, 0)
         dl.saveConfigFile(configFileName, config)
+    elseif i1 == "l" then -- Repeat Last Receipt
+        if config["lastUse"] == nil then
+            dl.printFmt('e', "No Last Use recorded.")
+        else
+            local idx = config["lastUse"]["receipt"][1]
+            local idxg = config["lastUse"]["group"][1]
+            local size = config["lastUse"]["size"][1]
+            printReceiptInfo(config["recipes"][idx], 0, config["types"], idx)
+            config = modifyReceipt(ic, config, idx, "b", idxg, size)
+        end
     elseif i1 == "x" then -- Exit
         dl.printFmt('t', "Thank you for using assembler program.")
     end
+    dl.printFmt("r", "Main Menu (1)")
 end

@@ -44,6 +44,10 @@ CONFIGURATION
     Every object is a name of one receipt group.
   sourceSide: On which side is the source inventory, default "down"
   readSide: On which side is the receipt inventory, default "up"
+  lastUse: Storing the data about the last use receipt
+    group: viz up
+    receipt: the receipt ID
+    size: required size
   
 EXAMPLES
   assembler

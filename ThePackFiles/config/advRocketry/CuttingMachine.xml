@@ -168,6 +168,15 @@
 	</Recipe>
 	<Recipe timeRequired="120" power ="200">
 		<input>
+			<oreDict>blockAluminum</oreDict>
+			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate 8 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="120" power ="200">
+		<input>
 			<oreDict>blockNickel</oreDict>
 			<itemStack>mysticalagriculture:fire_essence 2</itemStack>
 		</input>

@@ -402,3 +402,8 @@ mods.actuallyadditions.Empowerer.addRecipe(<minecraft:enchanting_table>, <minecr
 
 // Crushing Obsidian
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:obsidian>, <enderio:itemPowderIngot:7>*3, <enderio:itemPowderIngot:7>*1, 25);
+
+// Backward compatibility - AA to Electronics
+// PCB from empowered palis
+// CU from empoweed restonia
+// ALU from empowered enori

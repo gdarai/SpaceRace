@@ -109,8 +109,8 @@ QUEST   #  TB30     #  Blacksmiths Hammer # 1332
 TEXT    #  Prove your skill by making some more interesting tool parts.
 PREREQ  #  XOR      #  TB03
 
-TASK    #  GIVE		#  DuranitePlate:64 # gearInvar:64 # gearBrass:64 # TriberiumRod:64
-REWARD  #  ALL      #  TradeCurr:40
+TASK    #  GIVE		#  DuranitePlate:2 # gearTin:64 # gearBrass:64
+REWARD  #  ALL      #  TradeCurr:30
 
 // ------->
 
@@ -118,7 +118,7 @@ QUEST   #  TB31     #  Collectors Blades # 1333
 TEXT    #  Replicas of ancient weapons are very popular. And with your logo, they can become priceless.
 PREREQ  #  AND      #  TB30
 
-TASK    #  GIVE		#  ManyullynSword:64 # BronzeKnife:256 # ElectrumScythe:64 # NucleumSword:64
+TASK    #  GIVE		#  ManyullynSword:8 # BronzeKnife:32 # ElectrumScythe:32 # NucleumSword:8
 REWARD  #  ALL      #  TradeCurr:40
 
 // ------->

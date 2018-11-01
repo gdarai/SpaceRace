@@ -89,7 +89,7 @@
 	</Recipe>
 	<Recipe timeRequired="600" power ="500">
 		<input>
-			<oreDict>dustFractum 2</oreDict>
+			<oreDict>nuggetFractum 1</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
 			<oreDict>dustLapis 4</oreDict>
 		</input>
@@ -99,7 +99,7 @@
 	</Recipe>
 	<Recipe timeRequired="600" power ="2000">
 		<input>
-			<oreDict>dustFractum 2</oreDict>
+			<oreDict>nuggetFractum 1</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
 			<oreDict>dustDiamond 4</oreDict>
 		</input>
@@ -109,7 +109,7 @@
 	</Recipe>
 	<Recipe timeRequired="600" power ="1000">
 		<input>
-			<oreDict>dustFractum 2</oreDict>
+			<oreDict>nuggetFractum 1</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
 			<oreDict>dustCoal 4</oreDict>
 		</input>
@@ -119,7 +119,7 @@
 	</Recipe>
 	<Recipe timeRequired="600" power ="2000">
 		<input>
-			<oreDict>dustFractum 2</oreDict>
+			<oreDict>nuggetFractum 1</oreDict>
 			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
 			<oreDict>dustEmerald 4</oreDict>
 		</input>
@@ -194,6 +194,45 @@
 		</input>
 		<output>
 			<itemStack>minecraft:dragon_egg 1 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="200">
+		<input>
+			<itemStack>actuallyadditions:itemCrystal 1 5</itemStack>
+			<oreDict>dustProxii</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 9 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="200">
+		<input>
+			<itemStack>actuallyadditions:itemCrystalEmpowered 1 3</itemStack>
+			<oreDict>dustIox</oreDict>
+			<oreDict>nuggetIron 3</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 9 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="200">
+		<input>
+			<itemStack>actuallyadditions:itemCrystalEmpowered 1 3</itemStack>
+			<oreDict>dustIox</oreDict>
+			<oreDict>nuggetEezo 3</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 9 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="600" power ="200">
+		<input>
+			<itemStack>actuallyadditions:itemCrystalEmpowered 1 3</itemStack>
+			<oreDict>dustIox</oreDict>
+			<oreDict>dustDiamond 3</oreDict>
+		</input>
+		<output>
+			<itemStack>opencomputers:material 9 10</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

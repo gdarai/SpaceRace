@@ -117,15 +117,9 @@ mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productrod:10>, <ore:i
 mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productrod>, <ore:ingotTitaniumAluminide>, <immersiveengineering:mold:2>, 50000);
 mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:productrod:1>, <ore:ingotTitaniumIridium>*2, <immersiveengineering:mold:2>, 50000);
 
-// Bronze ingots
-recipes.remove(<forestry:ingotBronze>*4);
-recipes.remove(<railcraft:ingot:5>*4);
-
-// Invar ingots
-recipes.remove(<railcraft:ingot:7>*3);
+// Invar
 mods.tconstruct.Casting.addTableRecipe(<railcraft:ingot:7>, <liquid:iron> * 288, <railcraft:ingot:6>, true, 100);
 mods.tconstruct.Casting.addTableRecipe(<railcraft:ingot:7>, <liquid:iron> * 288, <immersiveengineering:metal:4>, true, 100);
-
 
 // Gears fix
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold:1>);
@@ -382,17 +376,16 @@ mods.tconstruct.Smeltery.removeMelting(<libvulpes:productrod:6>);
 mods.tconstruct.Smeltery.removeMelting(<minecraft:bucket>);
 
 // Adding Arc Furnace recipes
-//OutputStack, InputStack, SlagOutput, Time in Ticks, Energy per Tick, AdditiveArray, RecipeTypeString //Either create your own NEI pages with custom strings or use original ones
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:triberium_ingot>, <taiga:tiberium_dust> * 5, <forestry:ash>*4, 1200, 2500, [<taiga:basalt_dust>], "Bonding");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:triberium_ingot>, <taiga:tiberium_dust> * 5, <forestry:ash>*4, 1200, 2500, [<taiga:dilithium_dust>*2], "Bonding");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:fractum_ingot>, <taiga:abyssum_dust>, <forestry:ash>*2, 1200, 2500, [<taiga:triberium_dust>*3, <enderio:itemPowderIngot:7>*8], "Cracking");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:seismum_ingot>, <taiga:eezo_dust>, <forestry:ash>*2, 1200, 2500, [<taiga:triberium_dust>*2, <enderio:itemPowderIngot:7>*16], "Hardening");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:obsidiorite_ingot>, <taiga:meteorite_dust>, <forestry:ash>*1, 1200, 2500, [<enderio:itemPowderIngot:7>*4], "Purifying");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:imperomite_ingot>*2, <taiga:abyssum_dust>, <forestry:ash>*3, 1200, 2500, [<taiga:prometheum_dust>*1, <taiga:duranite_dust>*3], "Phasing");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:proxii_ingot>*3, <taiga:eezo_dust>, <forestry:ash>*3, 1200, 2500, [<taiga:prometheum_dust>*3, <taiga:palladium_dust>*3], "Blending");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:niob_ingot>*3, <taiga:osram_dust>, <forestry:ash>*1, 1200, 2500, [<taiga:duranite_dust>*1, <taiga:palladium_dust>*3], "Refracting");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ovium_dust>, <forestry:ash>*4, 1200, 2500, [<taiga:jauxum_dust>*1, <taiga:karmesine_dust>*1], "Rebasing");
-mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ovium_dust>, <forestry:ash>*4, 1200, 2500, [<taiga:jauxum_dust>*1, <taiga:karmesine_dust>*1], "Rebasing");
+//OutputStack, InputStack, SlagOutput, Time in Ticks, Energy per Tick, AdditiveArray, RecipeTypeString
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:triberium_ingot>, <taiga:tiberium_dust> * 5, <forestry:ash>*4, 1200, 250, [<taiga:basalt_dust>], "Bonding");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:triberium_ingot>, <taiga:tiberium_dust> * 5, <forestry:ash>*4, 1200, 250, [<taiga:dilithium_dust>*2], "Bonding");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:fractum_ingot>, <taiga:abyssum_dust>, <forestry:ash>*2, 1200, 250, [<taiga:triberium_dust>*3, <enderio:itemPowderIngot:7>*8], "Cracking");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:seismum_ingot>, <taiga:eezo_dust>, <forestry:ash>*2, 1200, 250, [<taiga:triberium_dust>*2, <enderio:itemPowderIngot:7>*16], "Hardening");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:obsidiorite_ingot>, <taiga:meteorite_dust>, <forestry:ash>*1, 1200, 250, [<enderio:itemPowderIngot:7>*4], "Purifying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:imperomite_ingot>*2, <taiga:abyssum_dust>, <forestry:ash>*3, 1200, 250, [<taiga:prometheum_dust>*1, <taiga:duranite_dust>*3], "Phasing");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:proxii_ingot>*3, <taiga:eezo_dust>, <forestry:ash>*3, 1200, 250, [<taiga:prometheum_dust>*3, <taiga:palladium_dust>*3], "Blending");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:niob_ingot>*3, <taiga:osram_dust>, <forestry:ash>*1, 1200, 250, [<taiga:duranite_dust>*1, <taiga:palladium_dust>*3], "Refracting");
+mods.immersiveengineering.ArcFurnace.addRecipe(<taiga:terrax_ingot>*2, <taiga:ovium_dust>, <forestry:ash>*4, 1200, 250, [<taiga:jauxum_dust>*1, <taiga:karmesine_dust>*1], "Rebasing");
 
 // Fixing steel fence
 recipes.remove(<immersiveengineering:metalDecoration1>);

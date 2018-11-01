@@ -45,8 +45,8 @@ QUEST   #  HBx0     #  The biggest gun # 1510
 TEXT    #  Viewers love big guns. If you want to get their attention, build one on your ship and base.
 PREREQ  #  NAND     #  HB00
 
-TASK    #  HAVE     #  Railgun01:2 #  Railgun02:16 #  ARPlug:4 # ARHatch:4 # Railgun03:50 # ARCoil:58
-REWARD  #  ALL      #  TradeCurr:10
+TASK    #  HAVE     #  Railgun01:2 #  Railgun02:16 #  ARPlug:32 # ARHatch:16 # Railgun03:14 # ARCoil:58
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 
@@ -55,7 +55,7 @@ TEXT    #  Can you do it? Armor-up zeppelin in obsidian and fly it among the sta
 PREREQ  #  NAND     #  HB00
 
 TASK    #  HAVE     #  ShipWheel:1 # ShipEngine:2 # DvBaloon:292 # Obsidian:232
-REWARD  #  ALL      #  TradeCurr:10
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 
@@ -63,8 +63,8 @@ QUEST   #  HBx2     #  Which army? # 1512
 TEXT    #  You can still keep saying that it is just for scientific purposes, but we know you better. And we are watching you like hawks.
 PREREQ  #  NAND     #  HB00
 
-TASK    #  HAVE     #  CHengine:256
-REWARD  #  ALL      #  TradeCurr:10
+TASK    #  HAVE     #  CHengine:50
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 
@@ -73,7 +73,7 @@ TEXT    #  You are doing this, because you love the shape. Right? It makes you a
 PREREQ  #  NAND     #  HB00
 
 TASK    #  GIVE     #  Enori:640
-REWARD  #  ALL      #  TradeCurr:10
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 // Part B
@@ -84,7 +84,8 @@ TEXT    #  The question is, WHAT is it on the south pole of THE MOON? People are
 PREREQ  #  NAND     #  HB10
 
 TASK    #  TRAVEL   #  MoonPole
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:32
 
 // ------->
 
@@ -93,7 +94,8 @@ TEXT    #  To get back here is the secret threshold 1.21 GW, right? Well can you
 PREREQ  #  NAND     #  HB10
 
 TASK    #  GIVE     #  ParticleGen:256
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:32
 
 // ------->
 
@@ -102,7 +104,8 @@ TEXT    #  But this is pure evil. Why would you do such a thing? I know why, the
 PREREQ  #  NAND     #  HB10
 
 TASK    #  HAVE     #  Nanobots:256
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:32
 
 // ------->
 
@@ -111,7 +114,8 @@ TEXT    #  They say that if you collect all the pieces they will come alive and 
 PREREQ  #  NAND     #  HB10
 
 TASK    #  HAVE     #  DarkArmor1:1 #  DarkArmor2:1 #  DarkArmor3:1 #  DarkArmor4:1 #  DarkArmor5:1 #  DarkArmor6:1 #  DarkArmor7:1
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:32
 
 // ------->
 // Part C
@@ -122,7 +126,8 @@ TEXT    #  You are going to deliver this and never use any of it. You MUST promi
 PREREQ  #  NAND     #  HB20
 
 TASK    #  GIVE     #  SlimeDirt1:512  #  SlimeDirt2:512  #  SlimeDirt3:512
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 
@@ -131,7 +136,8 @@ TEXT    #  If you have one or two, they are safe. In this amount? Prepare for ru
 PREREQ  #  NAND     #  HB20
 
 TASK    #  HAVE     #  TrappedEnderMan:1024
-REWARD  #  ALL      #  TradeCurr:20
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:64
 
 // ------->
 
@@ -140,4 +146,5 @@ TEXT    #  Sooo... sea monsters. They claim that they saw sea monsters. And you 
 PREREQ  #  NAND     #  HB20
 
 TASK    #  GIVE		#  sponge:5
-REWARD  #  ALL      #  TradeCurr:30
+REWARD  #  ALL      #  TradeCurr:64
+REWARD  #  ALL      #  TradeCurr:64

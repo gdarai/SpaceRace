@@ -17,7 +17,9 @@ val scaffSteel = <immersiveengineering:metalDecoration1:1>;
 val plateBrass = <ore:plateBrass>;
 val plateNickel = <ore:plateNickel>;
 val plateTriberium = <tconstruct:large_plate>.withTag({"Material":"triberium"});
+val plateTiberium = <tconstruct:large_plate>.withTag({"Material":"tiberium"});
 val plateTitIri = <ore:plateTitaniumIridium>;
+val plateTitAlu = <ore:plateTitaniumAluminide>;
 val plateTitan = <ore:plateTitanium>;
 val plateUru = <tconstruct:large_plate>.withTag({"Material":"uru"});
 val plateYrdeen = <tconstruct:large_plate>.withTag({"Material":"yrdeen"});
@@ -109,9 +111,9 @@ recipes.addShaped(<enderio:blockStirlingGenerator>, [[plateBrass, plateBrass, pl
 recipes.addShaped(<enderio:blockZombieGenerator>, [[tubeCopper, <ore:crystalDilithium>, tubeTin], [plateBrass, <minecraft:skull:2>, plateBrass], [ingotElectric, <ore:ingotIox>, ingotElectric]]);
 recipes.addShaped(<enderio:blockVat>, [[ingotElectric, ingotElectric, ingotElectric], [searedTank, machineBlock, searedTank], [scaffAlu, IEElectrumCoil, scaffAlu]]);
 recipes.addShaped(<enderio:blockCombustionGenerator>, [[tubeCopper, ingotElectric, tubeTin], [searedTank, machineBlock, searedTank], [scaffSteel, gearBoxSteel, scaffSteel]]);
-recipes.addShaped(<enderio:blockCapBank:1>, [[capacBasic, plateTriberium, capacBasic], [IECapLV, machineBlock, IECapLV], [plateTriberium, IECapLV, plateTriberium]]);
-recipes.addShaped(<enderio:blockCapBank:2>, [[capacDouble, plateTitIri, capacDouble], [IECapMV, machineBlock, IECapMV], [plateTriberium, IECapMV, plateTriberium]]);
-recipes.addShaped(<enderio:blockCapBank:3>, [[capacQuad, <actuallyadditions:blockCrystalEmpowered>, capacQuad], [IECapHV, machineBlock, IECapHV], [plateTriberium, IECapHV, plateTriberium]]);
+recipes.addShaped(<enderio:blockCapBank:1>, [[capacBasic, plateTiberium, capacBasic], [IECapLV, machineBlock, IECapLV], [plateTiberium, IECapLV, plateTiberium]]);
+recipes.addShaped(<enderio:blockCapBank:2>, [[capacDouble, plateTitIri, capacDouble], [IECapMV, machineBlock, IECapMV], [plateTiberium, IECapMV, plateTiberium]]);
+recipes.addShaped(<enderio:blockCapBank:3>, [[capacQuad, <actuallyadditions:blockCrystalEmpowered>, capacQuad], [IECapHV, machineBlock, IECapHV], [plateTiberium, IECapHV, plateTiberium]]);
 mods.forestry.ThermionicFabricator.addCast(<enderio:blockFusedQuartz>*2, [[null, null, null], [<ore:dustQuartz>, aaDiamant0, <ore:dustQuartz>], [null, <ore:dustQuartz>, null]], 1000, <forestry:waxCast>);
 
 // Factory
@@ -127,8 +129,9 @@ recipes.remove(<enderio:blockCrafter>);
 furnace.addRecipe(<bqmie:icon_item:21>, <railcraft:firestone_refined>, 20);
 
 recipes.addShaped(<enderio:blockAlloySmelter>, [[AALaser, <storagedrawers:controller>, AALaser], [coilIridium, machineBlock, coilIridium], [capacBasic, plateTriberium, capacBasic]]);
-recipes.addShaped(<enderio:blockInventoryPanel>, [[plateTitIri, ocRemote, plateTitIri], [darkSteelCapsule, <enderio:itemFunctionUpgrade>, darkSteelCapsule], [gearTitAlu, liquidTank, gearTitAlu]]);
+recipes.addShaped(<enderio:blockInventoryPanel>, [[plateTitAlu, ocRemote, plateTitAlu], [<enderio:itemFunctionUpgrade>, <ore:blockApatite>, <enderio:itemFunctionUpgrade>], [gearTitAlu, liquidTank, gearTitAlu]]);
 recipes.addShaped(<enderio:itemItemConduit>*8, [[binding, binding, binding], [<enderio:itemMaterial:3>, gearTitAlu, <enderio:itemMaterial:3>], [binding, binding, binding]]);
+recipes.addShaped(<enderio:itemLiquidConduit>*3, [[binding, binding, binding], [<ore:blockGlass>, <ore:nuggetTiberium>, <ore:blockGlass>], [binding, binding, binding]]);
 mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>, null], [<actuallyadditions:itemMisc:10>, <minecraft:clay_ball>, <actuallyadditions:itemMisc:10>], [null, <ore:sand>, null]], 20, <liquid:water> * 250, <taiga:osram_dust>);
 mods.forestry.Carpenter.addRecipe(<enderio:itemMaterial:2>*4, [[null, <ore:sand>, null], [<actuallyadditions:itemMisc:11>, <minecraft:clay_ball>, <actuallyadditions:itemMisc:11>], [null, <ore:sand>, null]], 20, <liquid:water> * 250, <taiga:osram_dust>);
 recipes.addShaped(<enderio:blockSagMill>, [[machineBlock, darkSteelCapsule, machineBlock], [gearTitIri, gearTitIri, gearTitIri], [machineBlock, <actuallyadditions:blockMisc:8>, machineBlock]]);
@@ -166,3 +169,6 @@ mods.actuallyadditions.Empowerer.addRecipe(<draconicevolution:crafting_pedestal:
 // Adding crystal cluster
 recipes.addShaped(<bqmie:icon_item:19>, [[eCrystal, eCrystal, eCrystal], [eCrystal, <tconstruct:materials:11>, eCrystal], [eCrystal, eCrystal, eCrystal]]);
 <bqmie:icon_item:19>.addTooltip(format.gold("Crystal Key Cluster"));
+
+// Earlier receipt for item conduits
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:itemAlloy:5>, <ore:ingotIron>, <forestry:ash>, 200, 1000, [<forestry:craftingMaterial:5>*4, <taiga:imperomite_dust>, <forestry:apatite>*4], "Impairing");

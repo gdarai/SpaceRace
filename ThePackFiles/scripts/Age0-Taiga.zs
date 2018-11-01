@@ -73,3 +73,7 @@ furnace.addRecipe(<taiga:dilithium_ingot>, <taiga:dilithium_dust>);
 // Adding Tiberium recipe - in electric arc furnace
 // Adding Dilithium block casting
 mods.tconstruct.Casting.addBasinRecipe(<taiga:dilithium_block>, <liquid:dilithium_fluid> * 1296, null, false, 400);
+
+// Fixing Tiberium Crystal handling
+mods.tconstruct.Smeltery.removeMelting(<taiga:tiberium_crystal>);
+mods.tconstruct.Smeltery.addMelting(<liquid:tiberium_fluid> * 36, <taiga:tiberium_crystal>, 100);

@@ -277,7 +277,7 @@ function modifyTool(ic, config, idx, i2)
     elseif i2 == "i" then -- Change the tool item
         local item = readRecChest(ic, config, 1, true)
         if item ~= nil then
-            local msg = "Replace " .. config["tools"][idx]["item"]["label"] .. " with " .. item["label"]
+            local msg = "Replace " .. config["types"][idx]["item"]["label"] .. " with " .. item["label"]
             if dl.input(msg, "Yn", false) == "Y" then
                 config["types"][idx]["item"] = dl.copyItem(item, false)
             end
